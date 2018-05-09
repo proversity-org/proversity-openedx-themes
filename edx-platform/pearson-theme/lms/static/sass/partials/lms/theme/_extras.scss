@@ -1,0 +1,87 @@
+// Theme overrides for the edunext base theme
+//
+// The _extras.scss file is imported after all other rules by
+// the LMS Sass. For your own theme, you can override this file
+// to add any custom rules that you need. You can also import
+// partials directly into this file so that you can break your
+// rules into modular pieces.
+
+.static-view {
+  h1 {
+    color: $primary-color;
+  }
+
+  h2 {
+    margin-top: 50px;
+    font-size: 1.6rem;
+    color: $primary-color;
+  }
+}
+
+.fa {
+  font-size: 16px;
+}
+
+.content-wrapper {
+  max-width: none;
+  margin-top: 0;
+}
+
+.container-parcial {
+  width: 100%;
+  max-width: $max-width-container;
+  padding: 40px 0;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+
+.course-info {
+  background: transparent;
+}
+
+
+.find-courses header.search {
+  margin-top: 0;
+}
+
+.title {
+  padding: 90px 30px;
+}
+
+.title-super {
+  margin-bottom: 4px;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 1px;
+
+}
+
+.title-sub {
+  margin-top: 50px;
+  margin-bottom: 52px;
+  font-size: 30px;
+  line-height: 1.3;
+}
+
+.banner {
+  min-height: $height-banner;
+  overflow: visible;
+  background-size: cover;
+}
+
+
+@media (min-width: 768px) {
+  .content-wrapper {
+    padding: 0;
+   }
+}
+
+section.courses-container {
+  max-width: $max-width-container;
+  margin: 0 auto;
+}
+
+.find-courses {
+  background: transparent;
+}

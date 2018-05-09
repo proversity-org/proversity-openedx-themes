@@ -1,0 +1,28 @@
+// Initialize the Open edX Bootstrap theme
+// Or set all the vars in https://github.com/edx/edx-bootstrap/blob/master/sass/open-edx/_variables.scss
+@import 'edx-bootstrap/sass/open-edx/theme';
+
+
+//Color
+$body-bg: $gray-100;
+$footer-bg: #45A2D6;
+$header-bg: $black;
+$main-container-color: $body-bg;
+$primary-color: #E63D28 ;
+$action-color: #E63D28 ;
+$container-bg: $gray-100;
+$content-wrapper-bg: $gray-100;
+$form-color-title: #6AB3DC;
+$color-input-search: rgba(255, 255, 255, 0.3);
+$color-card-hover: rgba(0, 0, 0, 0.45);
+
+//Font
+$font-weight-semi-bold: 600;
+
+
+//measurements
+$height-banner: 534px;
+
+//dimensions
+$max-width-container: 1080px;
+$max-width-container-nav: 1180px;
