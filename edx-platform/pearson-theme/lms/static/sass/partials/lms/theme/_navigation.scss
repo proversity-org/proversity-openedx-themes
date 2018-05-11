@@ -1,0 +1,15 @@
+@media (min-width: 992px) {
+  header.global-header .nav-links .secondary a.register-btn {
+    background-color: $button-color-register;
+    color:$secondary;
+    border: none;
+  }
+}
+
+@media (min-width: 992px) {
+  header.global-header .nav-links .secondary a.sign-in-btn {
+    background-color: $button-color-login;
+    border: 1px solid $secondary;
+    color:$secondary;
+  }
+}

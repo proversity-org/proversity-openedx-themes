@@ -1,0 +1,43 @@
+.find-courses,
+.university-profile {
+  background: $background-color-courses;
+}
+
+.courses-container .courses .course
+.course-image .cover-image .learn-more {
+  background: $primary;
+}
+
+.courses-container .courses .course .course-info .course-organization,
+.courses-container .courses .course .course-info .course-code,
+.courses-container .courses .course .course-info .course-date {
+    color: $secondary;
+}
+
+//info
+section.updates div .updates-article {
+  background: $background-color-info;
+}
+
+div.info-wrapper section.updates>ol .updates-article,
+div.info-wrapper section.updates section .updates-article,
+div.info-wrapper section.updates div article.updates-article {
+  background-color: $background-color-info;
+}
+
+.wrapper-course-material .course-tabs li.tab a,
+.wrapper-course-material .course-tabs li.tab a:visited {
+  color: $primary-font-color;
+}
+
+//info-home
+div.home div.page-header-main{
+	.page-title , .page-subtitle {
+	  color: $primary-font-color;
+	}
+}
+
+article.updates-article {
+  color: $primary-font-color;
+}
+
