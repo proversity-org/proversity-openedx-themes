@@ -14,17 +14,7 @@
 @import 'profile';
 
 //general
-.hd-1,
-.hd-2,
-.hd-3,
-.hd-4,
-.hd-5,
-.hd-6,
-.hd-7,
-.hd-8 {
- color: $headings-base-color !important;
-}
 
-html {
-  color: $headings-base-color;
+body, html {
+  color:$primary-font-color !important;
 }

@@ -5,27 +5,45 @@
 // Note: define colors needed by your theme first
 
 // Make the theme white on black
+
+//color
 $primary: #FFB725;
 $inverse: #2A2A2A;
 $secondary: #FFF;
-$container-bg:$inverse;
-$homepage-background:$inverse;
+$container-bg: $inverse;
+$homepage-background: $inverse;
 $body-bg:$inverse;
-$action-primary-bg:$primary;
+$action-primary-bg: $primary;
+$course-profile-bg: $inverse;
+$body-color:$secondary;
+$headings-base-color: $secondary !default;
+$course-header-bg: $inverse;
+$sidebar-color:#3a3a3a;
+$primary-font-color:$secondary;
 
+//color inline
+$uxpl-blue-hover-active: $primary;
+$uxpl-gray-base: $secondary;
+$black: $secondary;
+$gray-d2: $secondary;
+$dark: $secondary;
+$lightest: $inverse;
+$white: $inverse;
+$blue: $primary;
+$gray-d3: $secondary;
+$light: #3a3a3a;
+$gray-l4: $inverse;
+$gray-l5: #3a3a3a;
 
 // Theme fonts
-$font-family-sans-serif: cursive;
-$primary-font-color:$secondary;
-$headings-base-color: $secondary !default;
-
+$font-family-sans-serif: Open Sans;
 
 // Initialize the Open edX Bootstrap theme
 @import 'edx-bootstrap/sass/open-edx/theme';
 
 //navigation
 $button-color-login: $inverse;
-$button-color-register: $blue;
+$button-color-register: #0075b4;
 
 //login and register
 $background-color-form-login-register: $inverse;

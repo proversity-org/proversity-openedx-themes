@@ -11,7 +11,7 @@
 .courses-container .courses .course .course-info .course-organization,
 .courses-container .courses .course .course-info .course-code,
 .courses-container .courses .course .course-info .course-date {
-    color: $secondary;
+  color: $secondary;
 }
 
 //info
@@ -41,3 +41,12 @@ article.updates-article {
   color: $primary-font-color;
 }
 
+//discussion-home
+.view-discussion-home .helpgrid-row th.row-title{
+  background-color: $inverse;
+}
+
+//profile
+.view-profile .wrapper-profile-section-container-one div.wrapper-profile-section-one {
+  background-color:$gray-l5;
+}
