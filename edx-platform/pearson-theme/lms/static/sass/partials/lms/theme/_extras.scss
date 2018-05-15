@@ -20,8 +20,12 @@ html, button, input , textarea {
 }
 
 select {
-  color:$primary-font-color !important;
-  background-color: transparent;
+  color: $primary-font-color !important;
+  background-color: $inverse;
+}
+
+a {
+  color: $primary;
 }
 
 .btn {
