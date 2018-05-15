@@ -13,8 +13,19 @@
 @import 'footer';
 @import 'profile';
 
-//general
+//generals
 
-body, html {
+html, button, input , textarea {
   color:$primary-font-color !important;
+}
+
+select {
+  color:$primary-font-color !important;
+  background-color: transparent;
+}
+
+.btn {
+  border-color: $inverse;
+  background: $primary ;
+  color:$primary-font-color ;
 }

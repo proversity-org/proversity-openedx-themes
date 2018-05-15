@@ -19,7 +19,11 @@ $body-color:$secondary;
 $headings-base-color: $secondary !default;
 $course-header-bg: $inverse;
 $sidebar-color:#3a3a3a;
-$primary-font-color:$secondary;
+$primary-font-color: $secondary;
+$link-color: $secondary;
+$link-hover: $primary;
+$forum-color-copy-light: $secondary;
+$lighter-base-font-color: $secondary;
 
 //color inline
 $uxpl-blue-hover-active: $primary;
@@ -34,9 +38,13 @@ $gray-d3: $secondary;
 $light: #3a3a3a;
 $gray-l4: $inverse;
 $gray-l5: #3a3a3a;
+$dark-gray1: $primary-font-color;
+$dark-gray: $primary-font-color;
+$gray:$secondary;
 
 // Theme fonts
 $font-family-sans-serif: Open Sans;
+$serif: Playfair Display;
 
 // Initialize the Open edX Bootstrap theme
 @import 'edx-bootstrap/sass/open-edx/theme';

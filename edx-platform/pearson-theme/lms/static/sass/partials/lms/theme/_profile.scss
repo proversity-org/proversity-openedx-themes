@@ -1,3 +1,17 @@
 .view-profile .wrapper-profile {
   background-color: $background-color-profile;
 }
+
+
+.wrapper-account-settings {
+  background-color: $background-color-profile;
+}
+
+.account-settings-sections .section {
+  background-color: $background-color-profile;
+}
+
+.account-settings-sections .section
+.account-settings-section-body .u-field .field .field-input {
+  background: $inverse;
+}
