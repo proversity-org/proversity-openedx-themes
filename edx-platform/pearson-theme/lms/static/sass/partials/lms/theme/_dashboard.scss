@@ -3,3 +3,8 @@
   color: $primary-font-color;
   background: $primary;
 }
+
+.wrapper-messages-primary .message.message-upsell .action-upgrade {
+  background: $color-button-upgrade;
+  color: black;
+}
