@@ -23,3 +23,10 @@ button.action.action-primary.action-update.js-register.register-button {
 button.action.action-primary.action-update.js-reset {
   background: $primary;
 }
+
+
+.login-register .status .message-copy {
+  p, p a, li {
+    color: $inverse;
+  }
+}

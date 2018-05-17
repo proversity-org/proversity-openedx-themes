@@ -12,6 +12,8 @@
 @import 'navigation';
 @import 'footer';
 @import 'profile';
+@import 'index';
+@import 'dashboard';
 
 //generals
 
@@ -32,4 +34,11 @@ a {
   border-color: $inverse;
   background: $primary ;
   color:$primary-font-color ;
+}
+
+
+@media (min-width: 768px) {
+  .content-wrapper {
+     padding: 0 0 10px;
+  }
 }
