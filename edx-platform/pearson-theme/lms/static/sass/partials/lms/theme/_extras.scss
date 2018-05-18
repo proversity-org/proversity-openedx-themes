@@ -36,9 +36,19 @@ a {
   color:$primary-font-color ;
 }
 
+.btn:hover, .is-hovered.btn, .btn:focus, .is-focused.btn {
+  border-color: $inverse;
+  background: $primary ;
+}
 
 @media (min-width: 768px) {
   .content-wrapper {
      padding: 0 0 10px;
   }
+}
+
+.btn-primary:disabled, .btn-brand:disabled,
+.btn-primary.is-disabled, .is-disabled.btn-brand {
+  border-color: $pearson-grey;
+  background: $pearson-grey;
 }

@@ -23,6 +23,12 @@ section.updates div .updates-article {
   background: $background-color-info;
 }
 
+.course-outline .block-tree .section ol.outline-item .subsection a.outline-item:hover,
+.course-outline .block-tree .section ol.outline-item .subsection a.outline-item:focus {
+  background-color: $primary;
+  color: $inverse;
+}
+
 div.info-wrapper section.updates>ol .updates-article,
 div.info-wrapper section.updates section .updates-article,
 div.info-wrapper section.updates div article.updates-article {
@@ -37,6 +43,28 @@ div.info-wrapper section.updates div article.updates-article {
 .xmodule_display.xmodule_SequenceModule
 .sequence-nav ol li button .sequence-tooltip {
   color: $primary-font-color;
+}
+
+//course-course
+.xmodule_display.xmodule_SequenceModule .sequence-nav-button.focused .icon,
+.xmodule_display.xmodule_SequenceModule .sequence-nav-button:hover .icon,
+.xmodule_display.xmodule_SequenceModule .sequence-nav-button:active .icon,
+.xmodule_display.xmodule_SequenceModule .sequence-nav-button.active .icon,
+.xmodule_display.xmodule_SequenceModule .sequence-nav button.focused .icon,
+.xmodule_display.xmodule_SequenceModule .sequence-nav button:hover .icon,
+.xmodule_display.xmodule_SequenceModule .sequence-nav button:active .icon,
+.xmodule_display.xmodule_SequenceModule .sequence-nav button.active .icon {
+  color: $secondary;
+}
+
+.xmodule_display.xmodule_SequenceModule
+.sequence-nav ol li button.seq_problem .icon::before {
+  color: $secondary;
+}
+
+.xmodule_display.xmodule_SequenceModule
+.sequence-nav ol li button .sequence-tooltip {
+  color: $secondary;
 }
 
 //info-home

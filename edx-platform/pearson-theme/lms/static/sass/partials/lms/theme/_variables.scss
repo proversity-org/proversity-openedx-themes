@@ -7,7 +7,7 @@
 // Make the theme white on black
 
 //color
-$primary: #FFB725;
+$primary: #D2DB0E;
 $inverse: #2A2A2A;
 $secondary: #FFF;
 $container-bg: $inverse;
@@ -18,13 +18,16 @@ $course-profile-bg: $inverse;
 $body-color:$secondary;
 $headings-base-color: $secondary !default;
 $course-header-bg: $inverse;
-$sidebar-color:#3a3a3a;
+$sidebar-color:#3A3A3A;
 $primary-font-color: $secondary;
 $link-color: $secondary;
 $link-hover: #FFB725;
 $forum-color-copy-light: $secondary;
 $lighter-base-font-color: $secondary;
-$color-button-upgrade: #00b800;
+$color-button-upgrade: #008638;
+$btn-brand-focus-border-color: rgba(210, 219, 14, 0.5);
+$btn-brand-focus-background: rgba(210, 219, 14, 0.5);
+$pearson-grey: grey;
 
 //color inline
 $uxpl-blue-hover-active: $primary;
@@ -36,9 +39,9 @@ $lightest: $inverse;
 $white: $inverse;
 $blue: $primary;
 $gray-d3: $secondary;
-$light: #3a3a3a;
+$light: #3A3A3A;
 $gray-l4: $inverse;
-$gray-l5: #3a3a3a;
+$gray-l5: #3A3A3A;
 $dark-gray1: $primary-font-color;
 $dark-gray: $primary-font-color;
 $gray:$secondary;
@@ -52,7 +55,7 @@ $serif: Playfair Display;
 
 //navigation
 $button-color-login: $inverse;
-$button-color-register: #0075b4;
+$button-color-register: #0075B4;
 
 //login and register
 $background-color-form-login-register: $inverse;

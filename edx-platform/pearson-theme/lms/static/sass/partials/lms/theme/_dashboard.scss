@@ -6,5 +6,10 @@
 
 .wrapper-messages-primary .message.message-upsell .action-upgrade {
   background: $color-button-upgrade;
-  color: black;
+  color: $primary-font-color;
+}
+
+.wrapper-messages-primary .message.message-upsell
+.action-upgrade span {
+  color: $primary-font-color;
 }
