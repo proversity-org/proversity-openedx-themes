@@ -29,6 +29,7 @@ section.updates div .updates-article {
   color: $inverse;
 }
 
+
 div.info-wrapper section.updates>ol .updates-article,
 div.info-wrapper section.updates section .updates-article,
 div.info-wrapper section.updates div article.updates-article {
@@ -44,6 +45,7 @@ div.info-wrapper section.updates div article.updates-article {
 .sequence-nav ol li button .sequence-tooltip {
   color: $primary-font-color;
 }
+
 
 //course-course
 .xmodule_display.xmodule_SequenceModule .sequence-nav-button.focused .icon,
@@ -62,9 +64,14 @@ div.info-wrapper section.updates div article.updates-article {
   color: $secondary;
 }
 
-.xmodule_display.xmodule_SequenceModule
-.sequence-nav ol li button .sequence-tooltip {
+div.xmodule_display.xmodule_SequenceModule
+.sequence-nav ol li button span.icon {
   color: $secondary;
+}
+
+.xmodule_display.xmodule_SequenceModule
+.sequence-nav button:hover .icon {
+  color: #bfbfbf;
 }
 
 //info-home

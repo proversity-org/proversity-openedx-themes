@@ -47,8 +47,11 @@ a {
   }
 }
 
-.btn-primary:disabled, .btn-brand:disabled,
-.btn-primary.is-disabled, .is-disabled.btn-brand {
-  border-color: $pearson-grey;
-  background: $pearson-grey;
+.submit-attempt-container {
+  .btn-primary:disabled, .btn-brand:disabled,
+  .btn-primary.is-disabled, .is-disabled.btn-brand {
+    border-color: $pearson-grey;
+    background: $pearson-grey;
+  }
 }
+
