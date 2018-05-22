@@ -42,10 +42,9 @@ div.info-wrapper section.updates div article.updates-article {
 }
 
 .xmodule_display.xmodule_SequenceModule
-.sequence-nav ol li button .sequence-tooltip {
+.sequence-nav ol li button div.sequence-tooltip {
   color: $primary-font-color;
 }
-
 
 //course-course
 .xmodule_display.xmodule_SequenceModule .sequence-nav-button.focused .icon,
@@ -70,8 +69,25 @@ div.xmodule_display.xmodule_SequenceModule
 }
 
 .xmodule_display.xmodule_SequenceModule
-.sequence-nav button:hover .icon {
-  color: #bfbfbf;
+.sequence-nav button:hover span.icon {
+  color: $color-hover-icon-courses;
+}
+
+.xmodule_display.xmodule_SequenceModule
+.sequence-nav button.active span.icon {
+  color: $color-hover-icon-courses;
+}
+
+.xmodule_display.xmodule_SequenceModule .sequence-nav button:hover {
+  span.icon {
+    color: $color-hover-icon-courses;
+  }
+}
+
+.xmodule_display.xmodule_SequenceModule .sequence-nav-button:hover {
+  span.icon {
+    color: $color-hover-icon-courses;
+  }
 }
 
 //info-home
