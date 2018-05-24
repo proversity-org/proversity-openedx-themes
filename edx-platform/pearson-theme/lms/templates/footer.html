@@ -1,0 +1,120 @@
+<%page expression_filter="h"/>
+<%!
+  from django.core.urlresolvers import reverse
+  from django.utils.translation import ugettext as _
+  from branding.api import get_footer
+  from openedx.core.djangoapps.lang_pref.api import footer_language_selector_is_enabled
+%>
+<% footer = get_footer(is_secure=is_secure) %>
+<%namespace name='static' file='static_content.html'/>
+
+% if uses_bootstrap:
+  <div class="container-fluid wrapper-footer">
+    <footer>
+      <div class="row">
+        <div class="col-md-9">
+          <nav class="navbar site-nav navbar-toggleable-sm navbar-light" aria-label="${_('About')}">
+              <ul class="navbar-nav">
+              <a href="${marketing_link('ABOUT')}" target="_blank">${_("About")}</a>
+              <a href="${marketing_link('CONTACT')}" target="_blank">${_("Contact")}</a>
+              <a href="${marketing_link('FAQ')}" target="_blank">${_("FAQ")}</a>
+              <a href="${marketing_link('SUPPORT_SITE_LINK')}" target="_blank">${_("Support")}</a>
+              <a href="${marketing_link('TOS')}" target="_blank">${_("Terms of Service")}</a>
+              <a href="${marketing_link('HONOR')}" target="_blank">${_("Honor Code")}</a>
+              <a href="${marketing_link('PRIVACY')}" target="_blank">${_("Privacy Policy")}</a>
+              <a href="${marketing_link('COOKIES')}" target="_blank">${_("Cookie Policy")}</a>
+            </ul>
+          </nav>
+
+        </div>
+        <div class="col-md-3">
+          ## Please leave this link and use one of the logos provided
+          ## The OpenEdX link may be hidden when this view is served
+          ## through an API to partner sites (such as marketing sites or blogs),
+          ## which are not technically powered by Open edX.
+          % if not hide_openedx_link:
+            <div class="footer-about-openedx">
+              <p>
+                  <a href="${marketing_link('HOME')}">
+                    <img src="/static/proversity-theme/images/built.png" alt="Built by Proversity" />
+                  </a>
+                  <a href="${footer['openedx_link']['url']}">
+                    <img src="/static/proversity-theme/images/powered.png" alt="${footer['openedx_link']['title']}" />
+                  </a>
+              </p>
+            </div>
+          % endif
+        </div>
+      </div>
+    </footer>
+  </div>
+% else:
+  <div class="wrapper-footer">
+    <footer id="footer-edx-v3" class="footer" role="contentinfo" aria-label="${_("Page Footer")}"
+      ## When rendering the footer through the branding API,
+      ## the direction may not be set on the parent element,
+      ## so we set it here.
+      % if bidi:
+        dir=${bidi}
+      % endif
+    >
+      <div class="footer-content-wrapper">
+        <div class="site-details">
+          <nav class="site-nav" aria-label="About edX">
+            <a href="${marketing_link('ABOUT')}" target="_blank">${_("About")}</a>
+            <a href="${marketing_link('CONTACT')}" target="_blank">${_("Contact")}</a>
+            <a href="${marketing_link('FAQ')}" target="_blank">${_("FAQ")}</a>
+            <a href="${marketing_link('SUPPORT_SITE_LINK')}" target="_blank">${_("Support")}</a>
+            <a href="${marketing_link('TOS')}" target="_blank">${_("Terms of Service")}</a>
+            <a href="${marketing_link('HONOR')}" target="_blank">${_("Honor Code")}</a>
+            <a href="${marketing_link('PRIVACY')}" target="_blank">${_("Privacy Policy")}</a>
+            <a href="${marketing_link('COOKIES')}" target="_blank">${_("Cookie Policy")}</a>
+          </nav>
+        </div>
+      </div>
+      % if context.get('include_language_selector', footer_language_selector_is_enabled()):
+        <%include file="${static.get_template_path('/widgets/footer-language-selector.html')}"/>
+      % endif
+
+      <div class="footer-about-openedx">
+        <p>
+          <a href="${marketing_link('HOME')}">
+            <img src="/static/pearson-theme/images/built.png" alt="Built by Proversity" />
+          </a>
+          <a href="${footer['openedx_link']['url']}">
+            <img src="/static/pearson-theme/images/powered.png" alt="${footer['openedx_link']['title']}" />
+          </a>
+        </p>
+      </div>
+
+    </footer>
+  </div>
+% endif
+
+% if include_dependencies:
+  <%static:js group='base_vendor'/>
+  <%static:css group='style-vendor'/>
+  <%include file="widgets/segment-io.html" />
+  <%include file="widgets/segment-io-footer.html" />
+% endif
+% if footer_css_urls:
+  % for url in footer_css_urls:
+    <link rel="stylesheet" type="text/css" href="${url}"></link>
+  % endfor
+% endif
+
+% if settings.FEATURES.get('ENABLE_COOKIE_CONSENT', False):
+<!-- Cookie Consent -->
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.js"></script>
+<script>
+  window.cookieconsent.initialise({
+    palette:{
+      popup: {background: "#323538", text: "#ffffff"},
+      button: {background: "#06a8e0"},
+    },
+    theme: "classic"
+  });
+  $('.cc-window').css("font-family", "Lato");
+</script>
+% endif
