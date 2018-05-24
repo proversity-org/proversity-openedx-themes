@@ -1,3 +1,4 @@
+## mako
 <%page expression_filter="h"/>
 <%!
   from django.core.urlresolvers import reverse
@@ -13,19 +14,31 @@
     <footer>
       <div class="row">
         <div class="col-md-9">
-          <nav class="navbar site-nav navbar-toggleable-sm navbar-light" aria-label="${_('About')}">
-              <ul class="navbar-nav">
-              <a href="${marketing_link('ABOUT')}" target="_blank">${_("About")}</a>
-              <a href="${marketing_link('CONTACT')}" target="_blank">${_("Contact")}</a>
-              <a href="${marketing_link('FAQ')}" target="_blank">${_("FAQ")}</a>
-              <a href="${marketing_link('SUPPORT_SITE_LINK')}" target="_blank">${_("Support")}</a>
-              <a href="${marketing_link('TOS')}" target="_blank">${_("Terms of Service")}</a>
-              <a href="${marketing_link('HONOR')}" target="_blank">${_("Honor Code")}</a>
-              <a href="${marketing_link('PRIVACY')}" target="_blank">${_("Privacy Policy")}</a>
-              <a href="${marketing_link('COOKIES')}" target="_blank">${_("Cookie Policy")}</a>
+          <nav class="navbar site-nav navbar-expand-sm" aria-label="${_('About')}">
+            <ul class="navbar-nav">
+              % for item_num, link in enumerate(footer['navigation_links'], start=1):
+                <li class="nav-item">
+                  <a class="nav-link" href="${link['url']}">${link['title']}</a>
+                </li>
+              % endfor
             </ul>
           </nav>
 
+          ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
+          <p class="copyright">${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}</p>
+
+          <nav class="navbar legal-nav navbar-expand-sm" aria-label="${_('Legal')}">
+            <ul class="navbar-nav">
+              % for item_num, link in enumerate(footer['legal_links'], start=1):
+                <li class="nav-item">
+                  <a class="nav-link" href="${link['url']}">${link['title']}</a>
+                </li>
+              % endfor
+              <li class="nav-item">
+                <a class="nav-link" href="${footer['edx_org_link']['url']}">${footer['edx_org_link']['text']}</a>
+              </li>
+            </ul>
+          </nav>
         </div>
         <div class="col-md-3">
           ## Please leave this link and use one of the logos provided
@@ -35,12 +48,9 @@
           % if not hide_openedx_link:
             <div class="footer-about-openedx">
               <p>
-                  <a href="${marketing_link('HOME')}">
-                    <img src="/static/proversity-theme/images/built.png" alt="Built by Proversity" />
-                  </a>
-                  <a href="${footer['openedx_link']['url']}">
-                    <img src="/static/proversity-theme/images/powered.png" alt="${footer['openedx_link']['title']}" />
-                  </a>
+                <a href="${footer['openedx_link']['url']}">
+                  <img src="${footer['openedx_link']['image']}" alt="${footer['openedx_link']['title']}" width="140" />
+                </a>
               </p>
             </div>
           % endif
@@ -49,8 +59,8 @@
     </footer>
   </div>
 % else:
-  <div class="wrapper-footer">
-    <footer id="footer-edx-v3" class="footer" role="contentinfo" aria-label="${_("Page Footer")}"
+  <div class="wrapper wrapper-footer">
+    <footer id="footer-openedx" class="grid-container"
       ## When rendering the footer through the branding API,
       ## the direction may not be set on the parent element,
       ## so we set it here.
@@ -58,39 +68,67 @@
         dir=${bidi}
       % endif
     >
-      <div class="footer-content-wrapper">
-        <div class="site-details">
-          <nav class="site-nav" aria-label="About edX">
-            <a href="${marketing_link('ABOUT')}" target="_blank">${_("About")}</a>
-            <a href="${marketing_link('CONTACT')}" target="_blank">${_("Contact")}</a>
-            <a href="${marketing_link('FAQ')}" target="_blank">${_("FAQ")}</a>
-            <a href="${marketing_link('SUPPORT_SITE_LINK')}" target="_blank">${_("Support")}</a>
-            <a href="${marketing_link('TOS')}" target="_blank">${_("Terms of Service")}</a>
-            <a href="${marketing_link('HONOR')}" target="_blank">${_("Honor Code")}</a>
-            <a href="${marketing_link('PRIVACY')}" target="_blank">${_("Privacy Policy")}</a>
-            <a href="${marketing_link('COOKIES')}" target="_blank">${_("Cookie Policy")}</a>
-          </nav>
-        </div>
-      </div>
-      % if context.get('include_language_selector', footer_language_selector_is_enabled()):
-        <%include file="${static.get_template_path('/widgets/footer-language-selector.html')}"/>
-      % endif
+      <div class="colophon">
+        <nav class="nav-colophon" aria-label="${_('About')}">
+          <ol>
+              % for item_num, link in enumerate(footer['navigation_links'], start=1):
+              <li class="nav-colophon-0${item_num}">
+                <a id="${link['name']}" href="${link['url']}">${link['title']}</a>
+              </li>
+              % endfor
+          </ol>
+        </nav>
 
+        % if context.get('include_language_selector', footer_language_selector_is_enabled()):
+            <%include file="${static.get_template_path('widgets/footer-language-selector.html')}"/>
+        % endif
+
+        <div class="wrapper-logo">
+          <p>
+            <a href="/">
+              ## The default logo is a placeholder.
+              ## You can either replace this link entirely or update
+              ## the FOOTER_ORGANIZATION_IMAGE in Django settings.
+              ## If you customize FOOTER_ORGANIZATION_IMAGE, then the image
+              ## can be included in the footer on other sites
+              ## (e.g. a blog or marketing front-end) to provide a consistent
+              ## user experience.  See the branding app for details.
+              <img alt="organization logo" src="${footer['logo_image']}">
+            </a>
+          </p>
+        </div>
+
+        ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
+        <p class="copyright">${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}</p>
+
+        <nav class="nav-legal" aria-label="${_('Legal')}">
+          <ul>
+            % for item_num, link in enumerate(footer['legal_links'], start=1):
+              <li class="nav-legal-0${item_num}">
+                <a href="${link['url']}">${link['title']}</a>
+              </li>
+            % endfor
+            <li><a href="/static/pearson-theme/images/built.png">${footer['edx_org_link']['text']}</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      ## Please leave this link and use one of the logos provided
+      ## The OpenEdX link may be hidden when this view is served
+      ## through an API to partner sites (such as marketing sites or blogs),
+      ## which are not technically powered by OpenEdX.
+      % if not hide_openedx_link:
       <div class="footer-about-openedx">
         <p>
-          <a href="${marketing_link('HOME')}">
-            <img src="/static/pearson-theme/images/built.png" alt="Built by Proversity" />
-          </a>
           <a href="${footer['openedx_link']['url']}">
-            <img src="/static/pearson-theme/images/powered.png" alt="${footer['openedx_link']['title']}" />
+            <img src="/static/pearson-theme/images/powered.png" alt="${footer['openedx_link']['title']}" width="140" />
           </a>
         </p>
       </div>
-
+      % endif
     </footer>
   </div>
 % endif
-
 % if include_dependencies:
   <%static:js group='base_vendor'/>
   <%static:css group='style-vendor'/>
@@ -101,20 +139,4 @@
   % for url in footer_css_urls:
     <link rel="stylesheet" type="text/css" href="${url}"></link>
   % endfor
-% endif
-
-% if settings.FEATURES.get('ENABLE_COOKIE_CONSENT', False):
-<!-- Cookie Consent -->
-<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.css" />
-<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.js"></script>
-<script>
-  window.cookieconsent.initialise({
-    palette:{
-      popup: {background: "#323538", text: "#ffffff"},
-      button: {background: "#06a8e0"},
-    },
-    theme: "classic"
-  });
-  $('.cc-window').css("font-family", "Lato");
-</script>
 % endif
