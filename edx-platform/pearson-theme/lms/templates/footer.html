@@ -85,16 +85,6 @@
 
         <div class="wrapper-logo">
           <p>
-            <a href="/">
-              ## The default logo is a placeholder.
-              ## You can either replace this link entirely or update
-              ## the FOOTER_ORGANIZATION_IMAGE in Django settings.
-              ## If you customize FOOTER_ORGANIZATION_IMAGE, then the image
-              ## can be included in the footer on other sites
-              ## (e.g. a blog or marketing front-end) to provide a consistent
-              ## user experience.  See the branding app for details.
-              <img alt="organization logo" src="/static/pearson-theme/images/built.png">
-            </a>
           </p>
         </div>
 
@@ -120,9 +110,12 @@
       % if not hide_openedx_link:
       <div class="footer-about-openedx">
         <p>
-          <a href="${footer['openedx_link']['url']}">
-            <img src="/static/pearson-theme/images/powered.png" alt="${footer['openedx_link']['title']}" width="140" />
-          </a>
+            <a href="http://open.edx.org">
+              <img src="/static/pearson-theme/images/powered.png" alt="Powered by Open edX" width="140">
+            </a>
+            <a href="/">
+              <img src="/static/pearson-theme/images/built.png" alt="organization logo" width="140">
+            </a>
         </p>
       </div>
       % endif
