@@ -14,15 +14,34 @@
 @import 'profile';
 @import 'index';
 @import 'dashboard';
+@import 'support';
 
 //generals
 
-html, button, input , textarea {
+body, html, button, input , textarea {
   color:$primary-font-color !important;
 }
 
-select {
+
+select, option, optgroup {
   color: $primary-font-color !important;
+  background-color: $inverse !important;
+  -webkit-appearance: menulist !important;
+  -moz-appearance: menulist !important;
+  -ms-appearance: menulist !important;
+  -o-appearance: menulist !important;
+}
+
+textarea {
+  color: $primary-font-color !important;
+  background-color: $inverse !important;
+}
+
+.field-label{
+  color: $primary-font-color;
+}
+
+.field-input{
   background-color: $inverse;
 }
 
@@ -39,6 +58,20 @@ a {
 .btn:hover, .is-hovered.btn, .btn:focus, .is-focused.btn {
   border-color: $inverse;
   background: $primary ;
+}
+
+.contact-us-wrapper .btn-primary,
+.contact-us-wrapper .btn-brand {
+  border-color: $primary;
+}
+
+.contact-us-wrapper .btn-primary:hover,
+.contact-us-wrapper .btn-brand:hover,
+.contact-us-wrapper .btn-primary:focus,
+.contact-us-wrapper .btn-brand:focus {
+    background-image: none;
+    background-color: $primary;
+    border-color: $primary;
 }
 
 @media (min-width: 768px) {
