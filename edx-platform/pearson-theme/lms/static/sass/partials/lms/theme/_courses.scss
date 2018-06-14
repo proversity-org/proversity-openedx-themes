@@ -110,7 +110,37 @@ article.updates-article {
   background-color: $inverse;
 }
 
+.forum-nav-thread .forum-nav-thread-link ,
+.forum-nav-thread-list .thread-preview-body{
+  background-color:$gray-l5;
+  color: $primary-font-color;
+}
+
+.forum-nav-thread .forum-nav-thread-link:hover {
+  background-color:$gray-l5;
+}
+
+span.forum-nav-thread-comments-count {
+  background-color: $secondary;
+  color: $inverse;
+}
+
+.discussion .post-label.post-label-following {
+  color: $primary;
+}
+
+.forum-nav-thread .forum-nav-thread-link.is-active {
+  background-color: $gray-l5;
+}
+
 //profile
 .view-profile .wrapper-profile-section-container-one div.wrapper-profile-section-one {
   background-color:$gray-l5;
+}
+
+//instructor
+input.instructor-dashboard-content-2 input[type="button"] {
+  background-color: $primary;
+  color: $inverse;
+  border: 1px solid $primary;
 }
