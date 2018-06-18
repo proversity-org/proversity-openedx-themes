@@ -14,19 +14,54 @@
 @import 'profile';
 @import 'index';
 @import 'dashboard';
+@import 'support';
 
 //generals
 
-html, button, input , textarea {
+body, html, button, textarea {
   color:$primary-font-color !important;
 }
 
-select {
+input::not(input[type="button"]) {
+  color:$primary-font-color !important;
+}
+
+select, option, optgroup {
   color: $primary-font-color !important;
+  background-color: $inverse !important;
+  -webkit-appearance: menulist !important;
+  -moz-appearance: menulist !important;
+  -ms-appearance: menulist !important;
+  -o-appearance: menulist !important;
+}
+
+textarea {
+  color: $primary-font-color !important;
+  background-color: $inverse !important;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  color: $primary-font-color;
+}
+
+input[type="submit"].btn-blue:hover:not(:disabled),
+input.btn-blue:hover:not(:disabled),
+button.btn-blue:hover:not(:disabled) {
+  background: $primary;
+  background-image: none;
+}
+
+.field-label{
+  color: $primary-font-color;
+}
+
+.field-input{
   background-color: $inverse;
 }
 
-a {
+a, a:visited:not(.btn) {
   color: $primary;
 }
 
@@ -39,6 +74,32 @@ a {
 .btn:hover, .is-hovered.btn, .btn:focus, .is-focused.btn {
   border-color: $inverse;
   background: $primary ;
+}
+
+div.prompt.warning.has-actions
+nav.nav-actions li.nav-item button.action-primary {
+  background-color: $primary;
+  border: 1px solid $primary;
+  border-color: $primary;
+}
+
+.wrapper-prompt div.prompt.warning div.copy {
+    background: $gray-l5;
+    border-top-color: $primary;
+}
+
+.contact-us-wrapper .btn-primary,
+.contact-us-wrapper .btn-brand {
+  border-color: $primary;
+}
+
+.contact-us-wrapper .btn-primary:hover,
+.contact-us-wrapper .btn-brand:hover,
+.contact-us-wrapper .btn-primary:focus,
+.contact-us-wrapper .btn-brand:focus {
+    background-image: none;
+    background-color: $primary;
+    border-color: $primary;
 }
 
 @media (min-width: 768px) {

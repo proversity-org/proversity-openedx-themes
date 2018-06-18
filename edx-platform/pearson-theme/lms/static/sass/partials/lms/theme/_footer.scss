@@ -1,9 +1,7 @@
 .wrapper-footer footer#footer-openedx {
-  .colophon .nav-colophon li a {
-    color: $primary;
-  }
 
-  .copyright {
+ a, .copyright,
+ .colophon .nav-colophon li a {
     color: $primary;
   }
 }

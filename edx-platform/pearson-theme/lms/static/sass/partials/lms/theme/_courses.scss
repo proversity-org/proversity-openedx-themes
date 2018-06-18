@@ -110,7 +110,94 @@ article.updates-article {
   background-color: $inverse;
 }
 
+.forum-nav-thread .forum-nav-thread-link ,
+.forum-nav-thread-list .thread-preview-body{
+  background-color:$gray-l5;
+  color: $primary-font-color;
+}
+
+.forum-nav-thread .forum-nav-thread-link:hover {
+  background-color:$gray-l5;
+}
+
+span.forum-nav-thread-comments-count {
+  background-color: $secondary;
+  color: $inverse;
+}
+
+.discussion .post-label.post-label-following {
+  color: $primary;
+}
+
+.forum-nav-thread .forum-nav-thread-link.is-active {
+  background-color: $gray-l5;
+}
+
 //profile
 .view-profile .wrapper-profile-section-container-one div.wrapper-profile-section-one {
   background-color:$gray-l5;
 }
+
+//instructor
+section.instructor-dashboard-content-2 {
+  input[type="button"], input[type="button"]:hover:not(:disabled) {
+    background-color: $primary;
+    background-image: none;
+    color: $primary-font-color;
+    border: 1px solid $primary;
+  }
+}
+
+.instructor-dashboard-wrapper-2
+section.idash-section#membership
+.member-lists-management .auth-list-container
+.member-list-widget div.bottom-bar {
+  background-color: $gray-l5;
+}
+
+.idash-section div.message-warning {
+  background: $gray-l5;
+}
+
+//instructor-certificates
+.instructor-dashboard-wrapper-2
+.customBrowseBtn {
+
+  div.file-browse {
+    border: 0;
+    background: transparent;
+    bottom: -10px;
+
+    span.browse {
+      margin-left: 248px;
+    }
+
+    input.file_field {
+      padding: 14px 0 0;
+      left: -25%;
+      top: 1px;
+      color: $primary-font-color;
+    }
+
+  }
+
+}
+
+button.btn-blue, .view-teams .action-primary,
+.instructor-dashboard-wrapper-2 button.btn-blue {
+  color: $primary-font-color;
+}
+
+div.instructor-dashboard-wrapper-2 button.btn-blue {
+    background: $primary;
+    color: $primary-font-color;
+}
+
+//team
+.join-team.form-actions
+button.action.action-primary {
+  background: $primary;
+  color: $primary-font-color;
+}
+
+

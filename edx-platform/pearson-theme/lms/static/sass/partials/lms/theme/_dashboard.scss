@@ -9,12 +9,211 @@
   color: $primary-font-color;
 }
 
-
 .wrapper-messages-primary .message.message-upsell
 .action-upgrade span {
   color: $primary-font-color;
 }
 
 div.my-courses div.empty-dashboard-message {
-  background: $gray-l5;
+	background: $gray-l5;
+}
+
+.dashboard .main-container .my-courses
+.course .details .course-actions
+.wrapper-action-more div.actions-dropdown {
+  min-width: 108px;
+}
+
+//dashboard-subcription
+
+.view-dashboard div.item {
+  margin: 0 auto;
+  padding: 40px 0;
+  max-width: 1180px;
+  min-width: 760px;
+  width: 100%;
+
+  .wrapper-header-courses .header-courses {
+    padding-right: 10px;
+  }
+
+  li.course-item {
+    list-style: none;
+    .course-container {
+      border: 1px solid $gray-l5;
+      border-radius: 3px;
+    }
+ }
+
+  .wrapper-header-courses {
+   margin-bottom: 10px;
+  }
+
+  .items.course.single-course {
+   margin-bottom: 20px;
+   line-height: 26.64px;
+  }
+
+  .wrapper-course-image {
+    float: left;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    max-height: 150px;
+    overflow: hidden;
+  }
+
+  .course-item .course-container {
+    border: 1px solid $gray-l5;
+    border-radius: 3px;
+  }
+
+
+  .course-container .course .details .wrapper-course-image .cover,
+  .course-container .course .details .wrapper-course-image a.fade-cover {
+    box-sizing: border-box;
+    transition: all 0.15s linear 0s;
+    float: left;
+    position: relative;
+  }
+
+  .course .details .wrapper-course-image .cover .course-image,
+  .course .details .wrapper-course-image a.fade-cover .course-image {
+    width: 100%;
+  }
+
+  .course .details .wrapper-course-details {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    margin-bottom: 10px;
+    justify-content: space-between;
+  }
+
+  .course .details .wrapper-course-details .course-title {
+    flex-basis: 100%;
+    padding-top: 10px;
+  }
+
+  .course .details .wrapper-course-details .course-title a,
+  .course .details .wrapper-course-details .course-title span {
+    display: inline-block;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+
+  .course .details .wrapper-course-details .course-title {
+  	font-size: 24px;
+    line-height: 35.52px;
+  }
+
+  .course .details .wrapper-course-details .course-info [class*="info-"] {
+    color: $pearson-grey-font;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20.72px;
+  }
+
+  .course .details .wrapper-course-details
+  .course-info .info-date-block-container {
+    display: block;
+    color: $pearson-grey-font;
+  }
+
+  .course .details .wrapper-course-details .course-info
+  .info-date-block-container .info-date-block {
+    color: $secondary;
+  }
+
+  .course .details .wrapper-course-details
+  .wrapper-course-actions {
+    margin-right: 20px;
+    margin-top: 20px;
+    align-self: flex-end;
+  }
+
+  .course .details .enter-course {
+    color: $secondary;
+    background: $primary;
+    float: right;
+    font-size: 16px;
+    line-height: 23.68px;
+    box-sizing: border-box;
+    letter-spacing: 0;
+    border: 1px solid $primary;
+    border-radius: 3px;
+    padding: 8px 20px;
+    text-align: center;
+
+  }
+
+  .course .details .course-actions .wrapper-action-more,
+  .course .details .course-actions .entitlement-actions-wrapper {
+    display: inline-block;
+    position: relative;
+    float: right;
+  }
+
+  .course .details .course-actions .wrapper-action-more .action-more,
+  .course .details .course-actions .entitlement-actions-wrapper .action-more,
+  .course .details .course-actions .wrapper-action-more .entitlement-action-more,
+  .course .details .course-actions .entitlement-actions-wrapper .entitlement-action-more {
+    font-size: 14px;
+    box-shadow: none;
+    background: $inverse;
+    background-image: none;
+    line-height: 16px;
+    text-shadow: none;
+    box-sizing: border-box;
+    margin-right: 10px;
+    float: right;
+    min-width: 40px;
+    border-radius: 3px;
+    padding: 12px;
+    border: 1px solid $inverse;
+    text-align: center;
+  }
+
+  .course .details .course-actions
+  .wrapper-action-more div.actions-dropdown {
+  	min-width: 108px;
+  	display: none;
+    position: absolute;
+    top: 40px;
+    right: 19px;
+    pointer-events: none;
+  }
+
+  .wrapper-action-more .actions-dropdown
+  .actions-dropdown-list {
+  	box-sizing: border-box;
+    display: table;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    position: relative;
+    width: 100%;
+    border-radius: 3px;
+    margin: 5px 0 0 0;
+    border: 1px solid $secondary;
+    padding: 5px 10px;
+    background: $inverse;
+  }
+
+  .course .details .course-actions .wrapper-action-more
+  .actions-dropdown.is-visible{
+  	display: block;
+    pointer-events: auto;
+  }
+  .course .details .course-actions .wrapper-action-more
+  .actions-dropdown .actions-dropdown-list {
+  	box-sizing: border-box;
+    display: table;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    position: relative;
+    width: 100%;
+    border-radius: 3px;
+    margin: 5px 0 0 0;
+    border: 1px solid $secondary;
+    padding: 5px 10px;
+    background: $inverse;
+  }
+
 }
