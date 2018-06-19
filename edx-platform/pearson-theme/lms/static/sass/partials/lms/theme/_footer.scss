@@ -9,3 +9,10 @@
 .wrapper-footer {
   border-top: 1px solid $primary;
 }
+
+
+div.wrapper-footer footer#footer-openedx .colophon .nav-colophon li a:hover,
+div.wrapper-footer footer#footer-openedx .colophon .nav-colophon li a:focus,
+div.wrapper-footer footer#footer-openedx .colophon .nav-colophon li a:active {
+  color: $primary;
+}

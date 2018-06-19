@@ -141,10 +141,11 @@ span.forum-nav-thread-comments-count {
 //instructor
 section.instructor-dashboard-content-2 {
   input[type="button"], input[type="button"]:hover:not(:disabled) {
-    background-color: $primary;
+    background-color: $primary-black;
     background-image: none;
     color: $primary-font-color;
-    border: 1px solid $primary;
+    border: 1px solid $primary-black;
+    font-weight: 400;
   }
 }
 
@@ -200,4 +201,6 @@ button.action.action-primary {
   color: $primary-font-color;
 }
 
-
+div.page-header-main nav.breadcrumbs a.nav-item {
+  color: $primary;
+}

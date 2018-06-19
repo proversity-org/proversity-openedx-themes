@@ -40,6 +40,10 @@ textarea {
   background-color: $inverse !important;
 }
 
+a, a:visited:not(.btn) {
+  color: $primary ;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -59,10 +63,6 @@ button.btn-blue:hover:not(:disabled) {
 
 .field-input{
   background-color: $inverse;
-}
-
-a, a:visited:not(.btn) {
-  color: $primary;
 }
 
 .btn {
