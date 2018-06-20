@@ -76,6 +76,11 @@ button.btn-blue:hover:not(:disabled) {
   background: $primary ;
 }
 
+div.page-banner div.alert.alert-warning {
+  background-color: $gray-l5;
+  border-color: $gray-l5;
+}
+
 div.prompt.warning.has-actions
 nav.nav-actions li.nav-item button.action-primary {
   background-color: $primary;
