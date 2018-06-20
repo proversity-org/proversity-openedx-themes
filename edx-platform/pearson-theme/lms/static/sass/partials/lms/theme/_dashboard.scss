@@ -81,15 +81,6 @@ div.my-courses div.empty-dashboard-message {
     width: 100%;
   }
 
-  /*
-  .course .details .wrapper-course-details {
-    display: flex;
-    flex-flow: row wrap;
-    padding: 0;
-    margin-bottom: 10px;
-    justify-content: space-between;
-  }*/
-
   .course .details .wrapper-course-details  {
     display: flex;
     flex-flow: row wrap;
@@ -111,14 +102,6 @@ div.my-courses div.empty-dashboard-message {
       }
     }
   }
-
-  /*
-  .course .details .wrapper-course-details .course-title a,
-  .course .details .wrapper-course-details .course-title span {
-    display: inline-block;
-    margin-bottom: 10px;
-    text-decoration: none;
-  }*/
 
   .course .details .wrapper-course-details .course-info [class*="info-"] {
     color: $pearson-grey-font;
