@@ -40,6 +40,10 @@ textarea {
   background-color: $inverse !important;
 }
 
+a, a:visited:not(.btn) {
+  color: $primary ;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -61,10 +65,6 @@ button.btn-blue:hover:not(:disabled) {
   background-color: $inverse;
 }
 
-a, a:visited:not(.btn) {
-  color: $primary;
-}
-
 .btn {
   border-color: $inverse;
   background: $primary ;
@@ -74,6 +74,11 @@ a, a:visited:not(.btn) {
 .btn:hover, .is-hovered.btn, .btn:focus, .is-focused.btn {
   border-color: $inverse;
   background: $primary ;
+}
+
+div.page-banner div.alert.alert-warning {
+  background-color: $gray-l5;
+  border-color: $gray-l5;
 }
 
 div.prompt.warning.has-actions
@@ -115,4 +120,3 @@ nav.nav-actions li.nav-item button.action-primary {
     background: $pearson-grey;
   }
 }
-
