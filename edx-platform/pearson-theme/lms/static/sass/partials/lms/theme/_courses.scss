@@ -204,3 +204,9 @@ button.action.action-primary {
 div.page-header-main nav.breadcrumbs a.nav-item {
   color: $primary;
 }
+
+@media (max-width: 767px) {
+  .view-teams div.team-profile div.page-content-main {
+    width: 100%;
+  }
+}
