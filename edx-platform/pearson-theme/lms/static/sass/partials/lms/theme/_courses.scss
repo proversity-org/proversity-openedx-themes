@@ -190,8 +190,8 @@ button.btn-blue, .view-teams .action-primary,
 }
 
 div.instructor-dashboard-wrapper-2 button.btn-blue {
-    background: $primary;
-    color: $primary-font-color;
+  background: $primary;
+  color: $primary-font-color;
 }
 
 //team
@@ -206,7 +206,26 @@ div.page-header-main nav.breadcrumbs a.nav-item {
 }
 
 @media (max-width: 767px) {
-  .view-teams div.team-profile div.page-content-main {
-    width: 100%;
+  .view-teams  {
+    div.team-profile div.page-content-main,
+    div.team-profile div.page-content-secondary {
+      width: 100%;
+    }
+
+    li.card.list-card div.card-actions,
+    li.card.square-card.topic-card.has-pennant {
+      width: 100%;
+    }
   }
+
+}
+
+div.gradebook-wrapper section.gradebook-content
+table.student-table td a {
+  color: $pearson-grey;
+}
+
+div.gradebook-wrapper section.gradebook-content
+table.grade-table td {
+  color: $inverse;
 }
