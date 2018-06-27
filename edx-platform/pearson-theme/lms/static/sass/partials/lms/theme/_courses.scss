@@ -229,3 +229,29 @@ div.gradebook-wrapper section.gradebook-content
 table.grade-table td {
   color: $inverse;
 }
+.ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix {
+  background: $inverse;
+  border: 1px solid;
+}
+
+span.ui-button-icon-primary.ui-icon.ui-icon-closethick {
+  margin: -9px;
+}
+
+li.errors {
+  color: red;
+}
+
+li.success {
+  color: white;
+}
+
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable {
+  background: $gray-l5;
+}
+
+span.ui-button-icon-primary.ui-icon.ui-icon-closethick {
+  width: 16px;
+  height: 16px;
+  background-image: url(/static/css/vendor/ui-lightness/images/ui-icons_222222_256x240.9e54416cb586.png);
+}
