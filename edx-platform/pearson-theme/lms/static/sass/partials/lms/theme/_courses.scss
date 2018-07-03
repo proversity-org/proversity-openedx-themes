@@ -133,6 +133,10 @@ span.forum-nav-thread-comments-count {
   background-color: $gray-l5;
 }
 
+aside.forum-nav div.search-alert {
+  background-color: $gray-l5;
+}
+
 //profile
 .view-profile .wrapper-profile-section-container-one div.wrapper-profile-section-one {
   background-color:$gray-l5;
@@ -248,10 +252,4 @@ li.success {
 
 .ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable {
   background: $gray-l5;
-}
-
-span.ui-button-icon-primary.ui-icon.ui-icon-closethick {
-  width: 16px;
-  height: 16px;
-  background-image: url(/static/css/vendor/ui-lightness/images/ui-icons_222222_256x240.9e54416cb586.png);
 }
