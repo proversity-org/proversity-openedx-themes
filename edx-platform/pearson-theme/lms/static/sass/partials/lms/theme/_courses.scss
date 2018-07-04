@@ -133,6 +133,10 @@ span.forum-nav-thread-comments-count {
   background-color: $gray-l5;
 }
 
+aside.forum-nav div.search-alert {
+  background-color: $gray-l5;
+}
+
 //profile
 .view-profile .wrapper-profile-section-container-one div.wrapper-profile-section-one {
   background-color:$gray-l5;
@@ -250,8 +254,18 @@ li.success {
   background: $gray-l5;
 }
 
-span.ui-button-icon-primary.ui-icon.ui-icon-closethick {
-  width: 16px;
-  height: 16px;
-  background-image: url(/static/css/vendor/ui-lightness/images/ui-icons_222222_256x240.9e54416cb586.png);
+.instructor-dashboard-wrapper-2
+section.idash-section#membership
+.enroll-option div.hint.auto-enroll-hint,
+.instructor-dashboard-wrapper-2 section.idash-section#membership
+.enroll-option div.hint.email-students-hint {
+  background: $gray-l5;
+}
+
+.instructor-dashboard-wrapper-2 section.idash-section#membership
+.enroll-option .hint span.hint-caret {
+  border-right: 8px solid $gray-l5;
+  border-left: 8px solid transparent;
+  border-top: 8px solid $gray-l5;
+  border-bottom: 8px solid transparent;
 }

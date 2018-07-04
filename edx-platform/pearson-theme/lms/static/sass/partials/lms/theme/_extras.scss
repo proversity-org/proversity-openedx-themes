@@ -120,3 +120,15 @@ nav.nav-actions li.nav-item button.action-primary {
     background: $pearson-grey;
   }
 }
+
+input.js-post-title.field-input,
+form.forum-new-post-form input[type=text].field-input,
+form.forum-new-post-form input[type=text].wrapper-custom-select,
+.edit-post-form input[type=text].field-input,
+.edit-post-form input[type=text].wrapper-custom-select {
+  color: $primary-font-color;
+}
+
+div.wmd-panel.wmd-preview p {
+  color: $inverse;
+}
