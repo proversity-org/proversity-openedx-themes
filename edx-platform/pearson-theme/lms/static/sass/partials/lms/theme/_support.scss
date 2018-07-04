@@ -14,3 +14,9 @@ select, textarea {
     background-color: $inverse;
   }
 }
+
+div.contact-us-wrapper a.btn.btn-secondary.help-button:hover,
+div.contact-us-wrapper a.btn.btn-secondary.help-button:focus {
+  color: $inverse;
+  background: $primary !important;
+}

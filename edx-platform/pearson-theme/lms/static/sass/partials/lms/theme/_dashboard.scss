@@ -24,6 +24,10 @@ div.my-courses div.empty-dashboard-message {
   min-width: 108px;
 }
 
+div.course-caption p.localized-datetime {
+  display: none;
+}
+
 //dashboard-subcription
 
 .view-dashboard div.item {
