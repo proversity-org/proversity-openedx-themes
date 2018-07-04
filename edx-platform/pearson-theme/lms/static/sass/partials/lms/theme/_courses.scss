@@ -253,3 +253,19 @@ li.success {
 .ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable {
   background: $gray-l5;
 }
+
+.instructor-dashboard-wrapper-2
+section.idash-section#membership
+.enroll-option div.hint.auto-enroll-hint,
+.instructor-dashboard-wrapper-2 section.idash-section#membership
+.enroll-option div.hint.email-students-hint {
+  background: $gray-l5;
+}
+
+.instructor-dashboard-wrapper-2 section.idash-section#membership
+.enroll-option .hint span.hint-caret {
+  border-right: 8px solid $gray-l5;
+  border-left: 8px solid transparent;
+  border-top: 8px solid $gray-l5;
+  border-bottom: 8px solid transparent;
+}
