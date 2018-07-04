@@ -133,6 +133,10 @@ span.forum-nav-thread-comments-count {
   background-color: $gray-l5;
 }
 
+aside.forum-nav div.search-alert {
+  background-color: $gray-l5;
+}
+
 //profile
 .view-profile .wrapper-profile-section-container-one div.wrapper-profile-section-one {
   background-color:$gray-l5;
@@ -228,4 +232,40 @@ table.student-table td a {
 div.gradebook-wrapper section.gradebook-content
 table.grade-table td {
   color: $inverse;
+}
+.ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix {
+  background: $inverse;
+  border: 1px solid;
+}
+
+span.ui-button-icon-primary.ui-icon.ui-icon-closethick {
+  margin: -9px;
+}
+
+li.errors {
+  color: red;
+}
+
+li.success {
+  color: white;
+}
+
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable {
+  background: $gray-l5;
+}
+
+.instructor-dashboard-wrapper-2
+section.idash-section#membership
+.enroll-option div.hint.auto-enroll-hint,
+.instructor-dashboard-wrapper-2 section.idash-section#membership
+.enroll-option div.hint.email-students-hint {
+  background: $gray-l5;
+}
+
+.instructor-dashboard-wrapper-2 section.idash-section#membership
+.enroll-option .hint span.hint-caret {
+  border-right: 8px solid $gray-l5;
+  border-left: 8px solid transparent;
+  border-top: 8px solid $gray-l5;
+  border-bottom: 8px solid transparent;
 }
