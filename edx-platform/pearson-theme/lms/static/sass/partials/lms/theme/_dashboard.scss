@@ -293,3 +293,33 @@ section[role=courses] div.container.no-border {
     min-width: 0;
   }
 }
+
+input.btn.btn-lg.btn-default {
+  color: $primary-font-color;
+  background: $primary;
+  float: right;
+  font-size: 16px;
+  line-height: 23.68px;
+  box-sizing: border-box;
+  letter-spacing: 0;
+  border: 1px solid $primary;
+  border-radius: 3px;
+  padding: 8px 20px;
+  text-align: center;
+}
+
+div#unenroll-modal {
+  background: $gray-l5;
+}
+
+p#track-info {
+  padding: 20px;
+}
+
+div.modal-content .modal-header button.close {
+  background: transparent;
+  float: right;
+  font-size: 26px;
+  border: 0;
+  box-shadow: none;
+}
