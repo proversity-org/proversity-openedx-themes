@@ -42,8 +42,9 @@ section[role=courses] div.container.no-border {
       margin-bottom: 40px;
     }
 
+    a.btn.btn-lg.btn-default,
     a.btn.btn-lg.btn-default:hover {
-      color: $primary-font-color;
+      color: $inverse;
     }
   }
 }
