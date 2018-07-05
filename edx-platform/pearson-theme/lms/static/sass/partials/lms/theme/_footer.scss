@@ -39,3 +39,12 @@ div.colophon nav.nav-legal ul {
 li.nav-legal-01 {
   display: none;
 }
+
+.wrapper-footer footer#footer-openedx .nav-legal li.nav-legal-01 {
+  display: none;
+}
+
+.wrapper-footer footer#footer-openedx
+nav.nav-legal li:not(:first-child) a::before {
+  content: "";
+}
