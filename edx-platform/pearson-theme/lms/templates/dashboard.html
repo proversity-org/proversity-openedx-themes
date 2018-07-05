@@ -227,7 +227,7 @@ getattr(settings, 'SOCIAL_SHARING_SETTINGS', {})
 
       % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
         <a href="${marketing_link('COURSES')}" class="btn btn-lg btn-default">
-          ${_("Explore courses")}
+          ${_("Discover new")}
         </a>
       %endif
 
@@ -251,7 +251,7 @@ getattr(settings, 'SOCIAL_SHARING_SETTINGS', {})
       % endfor
       </div>
     % endif
-    
+
      %if sidebar_account_activation_message:
     <div class="sidebar-notification">
       ${sidebar_account_activation_message | n, decode.utf8}
