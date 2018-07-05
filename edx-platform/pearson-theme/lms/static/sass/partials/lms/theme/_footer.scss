@@ -10,9 +10,32 @@
   border-top: 1px solid $primary;
 }
 
-
 div.wrapper-footer footer#footer-openedx .colophon .nav-colophon li a:hover,
 div.wrapper-footer footer#footer-openedx .colophon .nav-colophon li a:focus,
 div.wrapper-footer footer#footer-openedx .colophon .nav-colophon li a:active {
   color: $primary;
+}
+
+nav.nav-colophon {
+    display: none;
+}
+
+div.wrapper-footer footer#footer-openedx {
+  box-sizing: border-box;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+}
+
+div.colophon nav.nav-legal ul {
+  margin-left: 0;
+}
+
+.wrapper-footer footer#footer-openedx div.wrapper-logo {
+  margin: 0;
+}
+
+li.nav-legal-01 {
+  display: none;
 }

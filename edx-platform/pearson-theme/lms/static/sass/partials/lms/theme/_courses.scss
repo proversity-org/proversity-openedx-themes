@@ -18,6 +18,10 @@
   color: $secondary;
 }
 
+div.content-wrapper.main-container {
+  min-height: 442px;
+}
+
 //info
 section.updates div .updates-article {
   background: $background-color-info;
