@@ -18,6 +18,10 @@
   color: $secondary;
 }
 
+div.content-wrapper.main-container {
+  min-height: 442px;
+}
+
 //info
 section.updates div .updates-article {
   background: $background-color-info;
@@ -89,6 +93,7 @@ div.xmodule_display.xmodule_SequenceModule
     color: $color-hover-icon-courses;
   }
 }
+
 
 //info-home
 div.home div.page-header-main{
@@ -233,6 +238,11 @@ div.gradebook-wrapper section.gradebook-content
 table.grade-table td {
   color: $inverse;
 }
+
+div.gradebook-wrapper section.gradebook-content .student-search-field {
+  color: $inverse;
+}
+
 .ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix {
   background: $inverse;
   border: 1px solid;

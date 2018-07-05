@@ -28,6 +28,27 @@ div.course-caption p.localized-datetime {
   display: none;
 }
 
+section[role=courses] div.container.no-border {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background: $gray-l5;
+
+    p {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    a.btn.btn-lg.btn-default,
+    a.btn.btn-lg.btn-default:hover {
+      color: $inverse;
+    }
+  }
+}
+
 //dashboard-subcription
 
 .view-dashboard div.item {
