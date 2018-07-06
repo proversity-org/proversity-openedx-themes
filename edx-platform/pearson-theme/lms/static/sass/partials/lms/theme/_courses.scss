@@ -22,6 +22,21 @@ div.content-wrapper.main-container {
   min-height: 442px;
 }
 
+//about
+.course-info header.course-profile .intro-inner-wrapper
+section.intro div.main-cta a strong {
+  background: $primary;
+  box-shadow: none;
+  border: 0;
+  color: $inverse;
+}
+
+@media (max-width: 767px){
+  .course-info header.course-profile .intro-inner-wrapper div.media {
+    display: none;
+  }
+}
+
 //info
 section.updates div .updates-article {
   background: $background-color-info;
@@ -262,6 +277,24 @@ li.success {
 
 .ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable {
   background: $gray-l5;
+}
+
+
+@media (max-width: 767px) {
+  .instructor-dashboard-wrapper-2 section.idash-section#membership
+  .member-lists-management .auth-list-container
+  div.member-list-widget div.bottom-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .instructor-dashboard-wrapper-2 section.idash-section#membership
+  .member-lists-management div.auth-list-container
+  .member-list-widget input[type="button"].add {
+    position: relative;
+    right: inherit;
+  }
 }
 
 .instructor-dashboard-wrapper-2
