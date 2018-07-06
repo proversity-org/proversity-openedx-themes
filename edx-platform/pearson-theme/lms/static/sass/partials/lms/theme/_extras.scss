@@ -18,10 +18,13 @@
 
 //generals
 
-body, html, button, input , textarea {
+body, html, button, textarea {
   color:$primary-font-color !important;
 }
 
+input::not(input[type="button"]) {
+  color:$primary-font-color !important;
+}
 
 select, option, optgroup {
   color: $primary-font-color !important;
@@ -37,16 +40,29 @@ textarea {
   background-color: $inverse !important;
 }
 
+a, a:visited:not(.btn) {
+  color: $primary ;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  color: $primary-font-color;
+}
+
+input[type="submit"].btn-blue:hover:not(:disabled),
+input.btn-blue:hover:not(:disabled),
+button.btn-blue:hover:not(:disabled) {
+  background: $primary;
+  background-image: none;
+}
+
 .field-label{
   color: $primary-font-color;
 }
 
 .field-input{
   background-color: $inverse;
-}
-
-a {
-  color: $primary;
 }
 
 .btn {
@@ -58,6 +74,23 @@ a {
 .btn:hover, .is-hovered.btn, .btn:focus, .is-focused.btn {
   border-color: $inverse;
   background: $primary ;
+}
+
+div.page-banner div.alert.alert-warning {
+  background-color: $gray-l5;
+  border-color: $gray-l5;
+}
+
+div.prompt.warning.has-actions
+nav.nav-actions li.nav-item button.action-primary {
+  background-color: $primary;
+  border: 1px solid $primary;
+  border-color: $primary;
+}
+
+.wrapper-prompt div.prompt.warning div.copy {
+    background: $gray-l5;
+    border-top-color: $primary;
 }
 
 .contact-us-wrapper .btn-primary,
@@ -88,3 +121,14 @@ a {
   }
 }
 
+input.js-post-title.field-input,
+form.forum-new-post-form input[type=text].field-input,
+form.forum-new-post-form input[type=text].wrapper-custom-select,
+.edit-post-form input[type=text].field-input,
+.edit-post-form input[type=text].wrapper-custom-select {
+  color: $primary-font-color;
+}
+
+div.wmd-panel.wmd-preview p {
+  color: $inverse;
+}
