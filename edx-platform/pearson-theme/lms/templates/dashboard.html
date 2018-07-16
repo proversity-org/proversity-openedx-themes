@@ -388,7 +388,7 @@ getattr(settings, 'SOCIAL_SHARING_SETTINGS', {})
         </div>
 
         <div class="modal-body">
-          
+
           <form id="email_settings_form" method="post">
             <input name="course_id" id="email_settings_course_id" type="hidden" />
             <label><input type="checkbox" id="receive_emails" name="receive_emails" /> ${_("Receive course emails")}</label>
@@ -411,7 +411,7 @@ getattr(settings, 'SOCIAL_SHARING_SETTINGS', {})
         </div>
 
         <div class="modal-body">
-          
+
           <p id="track-info"></p>
           <p id="refund-info"></p>
 
@@ -433,5 +433,9 @@ getattr(settings, 'SOCIAL_SHARING_SETTINGS', {})
 <script>
   $(document).ready(function () {
     $("link[href*='/static/css/lms-main-v1']").remove();
+  });
+  $('div.modal-content .modal-header button.close').click(function() {
+    $("#unenroll-modal").css("display", "none");
+    $("#lean_overlay").css("display", "none");
   });
 </script>
