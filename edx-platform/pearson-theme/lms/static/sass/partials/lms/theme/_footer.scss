@@ -35,8 +35,3 @@ div.colophon nav.nav-legal ul {
 .wrapper-footer footer#footer-openedx div.wrapper-logo {
   margin: 0;
 }
-
-.wrapper-footer footer#footer-openedx
-nav.nav-legal li:not(:first-child) a::before {
-  content: "";
-}
