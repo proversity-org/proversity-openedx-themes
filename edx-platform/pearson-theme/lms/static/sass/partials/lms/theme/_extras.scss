@@ -145,7 +145,12 @@ section.container.about {
   margin-bottom: 30px;
 
   h1,
-  h2 {
+  h2,
+  a, {
     color: $primary;
+  }
+
+  ol {
+    list-style-type: none;
   }
 }
