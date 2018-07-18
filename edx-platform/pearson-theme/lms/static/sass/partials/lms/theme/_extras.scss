@@ -136,3 +136,21 @@ form.forum-new-post-form input[type=text].wrapper-custom-select,
 div.wmd-panel.wmd-preview p {
   color: $inverse;
 }
+
+//static-tamplate
+
+section.container.about {
+  border-left: 1px solid $primary;
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+  h1,
+  h2,
+  a, {
+    color: $primary;
+  }
+
+  ol {
+    list-style-type: none;
+  }
+}
