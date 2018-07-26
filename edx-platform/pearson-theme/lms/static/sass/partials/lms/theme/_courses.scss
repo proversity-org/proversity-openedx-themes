@@ -77,6 +77,23 @@ div.info-wrapper section.updates div article.updates-article {
   color: $secondary;
 }
 
+div.team-activity-description {
+  display: none;
+}
+
+.sga-block p.upload label {
+  float: left;
+}
+
+.xblock .xblock h2.team-activity-title {
+  background: transparent;
+  font-size: 1.2em;
+
+  span.icon-toggle{
+    display: none;
+  }
+}
+
 .xmodule_display.xmodule_SequenceModule
 .sequence-nav ol li button.seq_problem .icon::before {
   color: $secondary;
