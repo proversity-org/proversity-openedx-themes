@@ -154,3 +154,16 @@ section.container.about {
     list-style-type: none;
   }
 }
+
+// Rocket chat tab service
+
+iframe.rocket-chat-view {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+
+.rocket_chat_error_message {
+  text-align: center;
+  color: red;
+}
