@@ -19,7 +19,7 @@
 //generals
 
 body, html, button, textarea {
-  color:$primary-font-color !important;
+  color:$primary-font-color ;
 }
 
 html {
@@ -54,12 +54,28 @@ input[type="password"] {
   color: $primary-font-color;
 }
 
+
+.light-button:hover:not(:disabled),
+div.history-controls input[type="submit"]:hover:not(:disabled),
+a.light-button:hover:not(:disabled),
+div.info-wrapper section.handouts ol li div.hitarea:hover+h4.light-button:not(:disabled),
+div.info-wrapper section.handouts ol li div.hitarea:focus+h4.light-button:not(:disabled),
+.gray-button:hover:not(:disabled),
+input[type="reset"]:hover:not(:disabled),
+input[type="submit"]:hover:not(:disabled),
+input[type="button"]:hover:not(:disabled),
+button:hover:not(:disabled),
+.button:hover:not(:disabled),
+.xmodule_display.xmodule_LTIModule div.lti.wrapper-lti-link
+.lti-link .link_lti_new_window:hover:not(:disabled),
 input[type="submit"].btn-blue:hover:not(:disabled),
 input.btn-blue:hover:not(:disabled),
 button.btn-blue:hover:not(:disabled) {
   background: $primary;
   background-image: none;
 }
+
+
 
 .field-label{
   color: $primary-font-color;
@@ -72,7 +88,7 @@ button.btn-blue:hover:not(:disabled) {
 .btn {
   border-color: $inverse;
   background: $primary ;
-  color:$primary-font-color ;
+  color:$inverse ;
 }
 
 .btn:hover, .is-hovered.btn, .btn:focus, .is-focused.btn {
@@ -93,8 +109,8 @@ nav.nav-actions li.nav-item button.action-primary {
 }
 
 .wrapper-prompt div.prompt.warning div.copy {
-    background: $gray-l5;
-    border-top-color: $primary;
+  background: $gray-l5;
+  border-top-color: $primary;
 }
 
 .contact-us-wrapper .btn-primary,
@@ -135,4 +151,10 @@ form.forum-new-post-form input[type=text].wrapper-custom-select,
 
 div.wmd-panel.wmd-preview p {
   color: $inverse;
+}
+
+.alert.warning .action-secondary,
+.notification.warning .action-secondary,
+.prompt.warning .action-secondary {
+  color: $primary;
 }
