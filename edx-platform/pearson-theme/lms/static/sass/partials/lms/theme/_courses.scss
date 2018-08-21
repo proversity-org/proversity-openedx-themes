@@ -65,6 +65,14 @@ div.info-wrapper section.updates div article.updates-article {
   color: $primary-font-color;
 }
 
+body.view-in-course div.info-wrapper section.handouts a {
+  color: $primary;
+}
+
+div.info-wrapper section.updates div article .toggle-visibility-element {
+  color: $primary;
+}
+
 //course-course
 .xmodule_display.xmodule_SequenceModule .sequence-nav-button.focused .icon,
 .xmodule_display.xmodule_SequenceModule .sequence-nav-button:hover .icon,
@@ -116,13 +124,13 @@ div.xmodule_display.xmodule_SequenceModule
 
 .xmodule_display.xmodule_SequenceModule .sequence-nav button:hover {
   span.icon {
-    color: $color-hover-icon-courses;
+    color: $secondary;
   }
 }
 
 .xmodule_display.xmodule_SequenceModule .sequence-nav-button:hover {
   span.icon {
-    color: $color-hover-icon-courses;
+    color: $secondary;
   }
 }
 
@@ -135,7 +143,7 @@ div.home div.page-header-main{
 }
 
 .xmodule_display.xmodule_SequenceModule .sequence-nav-button:hover {
-  color:white;
+  color:$secondary;
 }
 
 article.updates-article {
@@ -182,10 +190,9 @@ aside.forum-nav div.search-alert {
 //instructor
 section.instructor-dashboard-content-2 {
   input[type="button"], input[type="button"]:hover:not(:disabled) {
-    background-color: $primary-black;
-    background-image: none;
-    color: $primary-font-color;
-    border: 1px solid $primary-black;
+    background: $primary;
+    color: $inverse;
+    border: 1px solid $primary;
     font-weight: 400;
   }
 }
@@ -195,6 +202,12 @@ section.idash-section#membership
 .member-lists-management .auth-list-container
 .member-list-widget div.bottom-bar {
   background-color: $gray-l5;
+}
+
+.instructor-dashboard-content-2 .instructor-nav .nav-item button.btn-link:hover,
+.instructor-dashboard-content-2 .instructor-nav .nav-item button.btn-link:focus {
+    background: $inverse;
+    color: $secondary;
 }
 
 .idash-section div.message-warning {
@@ -267,6 +280,11 @@ button.action.action-primary {
   color: $primary-font-color;
 }
 
+li.card.list-card.team-card,
+li.card.square-card.topic-card.has-pennant {
+  border: 1px solid $secondary;
+}
+
 div.page-header-main nav.breadcrumbs a.nav-item {
   color: $primary;
 }
@@ -301,8 +319,17 @@ div.gradebook-wrapper section.gradebook-content .student-search-field {
 }
 
 .ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix {
-  background: $inverse;
+  background: $primary;
   border: 1px solid;
+}
+
+.view-teams div.wrapper-msg {
+  background: $secondary;
+  border-top: 3px solid $primary;
+}
+
+.wrapper-prompt .prompt div.nav-actions {
+  background: $secondary;
 }
 
 span.ui-button-icon-primary.ui-icon.ui-icon-closethick {
@@ -314,7 +341,7 @@ li.errors {
 }
 
 li.success {
-  color: white;
+  color: $secondary;
 }
 
 .ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable {
