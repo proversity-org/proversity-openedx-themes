@@ -37,6 +37,34 @@ section.intro div.main-cta a strong {
   }
 }
 
+.wrapper-course-material .course-tabs {
+  padding: 0;
+}
+
+.tabs .tab a, .tabs .tab a:visited {
+  padding: 10px 15px 7px 15px;
+}
+
+body.view-in-course .wrapper-course-material .course-material .course-tabs {
+  padding: 0;
+}
+
+div.wrapper-course-material .course-tabs .tab a,
+div.wrapper-course-material .course-tabs .tab a:visited {
+  padding: 10px 15px 7px 15px;
+}
+
+.course-wrapper section#course-content #main {
+  max-width: 980px;
+  display: block;
+  margin: 0 auto;
+}
+
+div.course-wrapper .course-content .xblock.xblock-student_view-vertical,
+div.course-wrapper .courseware-results-wrapper .xblock.xblock-student_view-vertical {
+  max-width: 100%;
+}
+
 //info
 section.updates div .updates-article {
   background: $background-color-info;
@@ -65,67 +93,206 @@ div.info-wrapper section.updates div article.updates-article {
   color: $primary-font-color;
 }
 
-//course-course
-.xmodule_display.xmodule_SequenceModule .sequence-nav-button.focused .icon,
-.xmodule_display.xmodule_SequenceModule .sequence-nav-button:hover .icon,
-.xmodule_display.xmodule_SequenceModule .sequence-nav-button:active .icon,
-.xmodule_display.xmodule_SequenceModule .sequence-nav-button.active .icon,
-.xmodule_display.xmodule_SequenceModule .sequence-nav button.focused .icon,
-.xmodule_display.xmodule_SequenceModule .sequence-nav button:hover .icon,
-.xmodule_display.xmodule_SequenceModule .sequence-nav button:active .icon,
-.xmodule_display.xmodule_SequenceModule .sequence-nav button.active .icon {
-  color: $secondary;
+body.view-in-course div.info-wrapper section.handouts a {
+  color: $primary;
 }
 
-div.team-activity-description {
+div.info-wrapper section.updates div article .toggle-visibility-element {
+  color: $primary;
+}
+
+//course-course
+.xmodule_display.xmodule_SequenceModule div.sequence-nav ol li button span.icon {
+  font-size: 100%;
+  color: $pearson-dark-blue-courseware;
+}
+
+h2.hd.hd-2.unit-title,
+.xblock .xblock h2 {
+  font-size: 2.25em;
+}
+
+.course-content div.bookmark-button-wrapper {
+  margin-bottom: 10px;
+}
+
+div.content-wrapper.main-container .container {
+  div.home {
+    border: 0;
+    box-shadow: none;
+  }
+
+  div.info-wrapper,
+  div.info-wrapper section.updates div article.updates-article {
+    background-color: $pearson-grey-courseware-3;
+    border:0;
+    box-shadow: none;
+  }
+}
+
+.content-wrapper .page-header {
+  border: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+header.page-header.has-secondary {
+  padding-bottom: 0;
+}
+
+.xmodule_display.xmodule_SequenceModule .sequence-nav ol li button.past .icon {
+  color: $pearson-grey-courseware-4;
+}
+
+.xmodule_display.xmodule_SequenceModule .sequence-nav-button.focused .icon, .xmodule_display.xmodule_SequenceModule .sequence-nav-button:hover .icon, .xmodule_display.xmodule_SequenceModule .sequence-nav-button:active .icon, .xmodule_display.xmodule_SequenceModule .sequence-nav-button.active .icon, .xmodule_display.xmodule_SequenceModule .sequence-nav button.focused .icon, .xmodule_display.xmodule_SequenceModule .sequence-nav button:hover .icon, .xmodule_display.xmodule_SequenceModule .sequence-nav {
+  color: $pearson-dark-blue-courseware;
+}
+
+button:active .icon, .xmodule_display.xmodule_SequenceModule .sequence-nav button.active .icon {
+  font-size: 110%;
+  color: $pearson-blue-courseware !important;
+}
+
+body.view-in-course .wrapper-course-material, body.view-in-course .wrapper-preview-menu {
+  border-bottom: 1px solid $pearson-grey-courseware;
+}
+
+.bookmark-button {
   display: none;
 }
 
-.sga-block p.upload label {
-  float: left;
+div.xmodule_display.xmodule_SequenceModule .sequence-nav ol li button .sequence-tooltip {
+  background: $inverse;
+  border: 1px solid $pearson-blue-courseware;
+  color: $pearson-blue-courseware;
 }
 
-.xblock .xblock h2.team-activity-title {
-  background: transparent;
-  font-size: 1.2em;
-
-  span.icon-toggle{
-    display: none;
-  }
+div.xmodule_display.xmodule_SequenceModule .sequence-nav ol li button .sequence-tooltip::after {
+  background: $inverse;
+  border-top: 1px solid $pearson-blue-courseware;
+  border-left: 1px solid $pearson-blue-courseware;
+  top: -6px;
 }
 
-.xmodule_display.xmodule_SequenceModule
-.sequence-nav ol li button.seq_problem .icon::before {
-  color: $secondary;
+div.xmodule_display.xmodule_SequenceModule .sequence-nav ol li button .sequence-tooltip {
+  text-shadow: none;
 }
 
-div.xmodule_display.xmodule_SequenceModule
-.sequence-nav ol li button span.icon {
-  color: $secondary;
+div.xmodule_display.xmodule_SequenceModule .sequence-nav ol li button .icon::before {
+  content: "\f1db";
 }
 
-.xmodule_display.xmodule_SequenceModule
-.sequence-nav button:hover span.icon {
-  color: $color-hover-icon-courses;
+div.xmodule_display.xmodule_SequenceModule .sequence-nav ol li button.seq_other .icon::before {
+  content: "\f1db";
 }
 
-.xmodule_display.xmodule_SequenceModule
-.sequence-nav button.active span.icon {
-  color: $color-hover-icon-courses;
+div.xmodule_display.xmodule_SequenceModule .sequence-nav ol li button.seq_problem .icon::before {
+  content: "\f1db";
 }
 
-.xmodule_display.xmodule_SequenceModule .sequence-nav button:hover {
-  span.icon {
-    color: $color-hover-icon-courses;
-  }
+div.xmodule_display.xmodule_SequenceModule .sequence-nav ol li button.seq_video .icon::before {
+  content: "\f1db";
 }
 
-.xmodule_display.xmodule_SequenceModule .sequence-nav-button:hover {
-  span.icon {
-    color: $color-hover-icon-courses;
-  }
+div.xmodule_display.xmodule_SequenceModule .sequence-nav ol li button.past .icon::before {
+  content: "\f111";
 }
 
+div.xmodule_display.xmodule_SequenceModule .sequence-nav ol li button.seq_other.past .icon::before {
+  content: "\f111";
+}
+
+div.xmodule_display.xmodule_SequenceModule .sequence-nav ol li button.seq_problem.past .icon::before {
+  content: "\f111";
+}
+
+div.xmodule_display.xmodule_SequenceModule .sequence-nav ol li button.seq_video.past .icon::before {
+  content: "\f111";
+}
+
+div.xmodule_display.xmodule_SequenceModule .sequence-nav button.active {
+  border-bottom: 3px solid $pearson-blue-courseware;
+}
+
+div.xmodule_display.xmodule_SequenceModule .sequence-nav ol li button.active .icon::before {
+  content: "\f111";
+}
+
+div.xmodule_display.xmodule_SequenceModule .sequence-nav {
+  margin: 20px auto 30px;
+}
+
+.content-wrapper > .container {
+  max-width: 1920px !important;
+  width: 100%;
+}
+
+#main > .container {
+  border: none !important;
+}
+
+.content-wrapper .page-content-container {
+  border: none !important;
+}
+
+nav.courseware {
+  border-bottom: 1px solid $pearson-grey-courseware;
+}
+
+div.xmodule_display.xmodule_SequenceModule .sequence-nav-button.focused,
+div.xmodule_display.xmodule_SequenceModule .sequence-nav-button:hover,
+div.xmodule_display.xmodule_SequenceModule .sequence-nav-button:active,
+div.xmodule_display.xmodule_SequenceModule .sequence-nav-button.active,
+div.xmodule_display.xmodule_SequenceModule .sequence-nav button.focused,
+div.xmodule_display.xmodule_SequenceModule .sequence-nav button:hover,
+div.xmodule_display.xmodule_SequenceModule .sequence-nav button:active,
+div.xmodule_display.xmodule_SequenceModule .sequence-nav button.active {
+  background-color: transparent;
+}
+
+div.xmodule_display.xmodule_SequenceModule .sequence-nav-button.focused .icon,
+div.xmodule_display.xmodule_SequenceModule .sequence-nav-button:hover .icon,
+div.xmodule_display.xmodule_SequenceModule .sequence-nav-button:active .icon,
+div.xmodule_display.xmodule_SequenceModule .sequence-nav-button.active .icon,
+div.xmodule_display.xmodule_SequenceModule .sequence-nav button.focused .icon,
+div.xmodule_display.xmodule_SequenceModule .sequence-nav button:hover .icon,
+div.xmodule_display.xmodule_SequenceModule .sequence-nav button:active .icon,
+div.xmodule_display.xmodule_SequenceModule .sequence-nav button.active .icon {
+  font-size: 110% !important;
+}
+
+div.xmodule_display.xmodule_VideoModule .video {
+  background: none;
+  margin: 15px 0;
+  padding: 0;
+  box-shadow: 4px 0px 20px 1px rgba(0,0,0,0.3);
+}
+
+div.xmodule_display.xmodule_SequenceModule .sequence-nav ol li {
+  border-top-color: $pearson-grey-courseware;
+  border-left-color: $inverse;
+  border-right-color: $inverse;
+}
+
+.xblock--drag-and-drop .feedback {
+  border: none !important;
+}
+
+div.course-wrapper .course-content .vert-mod .vert, .course-wrapper .courseware-results-wrapper .vert-mod .vert {
+  border: none !important;
+}
+
+.sponsors > li > a > img {
+  width: 50%;
+}
+
+.sponsors > li:first-child {
+  text-align: right;
+}
+
+.sponsors > li:last-child {
+  text-align: left;
+}
 
 //info-home
 div.home div.page-header-main{
@@ -135,7 +302,7 @@ div.home div.page-header-main{
 }
 
 .xmodule_display.xmodule_SequenceModule .sequence-nav-button:hover {
-  color:white;
+  color:$secondary;
 }
 
 article.updates-article {
@@ -182,10 +349,9 @@ aside.forum-nav div.search-alert {
 //instructor
 section.instructor-dashboard-content-2 {
   input[type="button"], input[type="button"]:hover:not(:disabled) {
-    background-color: $primary-black;
-    background-image: none;
-    color: $primary-font-color;
-    border: 1px solid $primary-black;
+    background: $primary;
+    color: $inverse;
+    border: 1px solid $primary;
     font-weight: 400;
   }
 }
@@ -197,6 +363,12 @@ section.idash-section#membership
   background-color: $gray-l5;
 }
 
+.instructor-dashboard-content-2 .instructor-nav .nav-item button.btn-link:hover,
+.instructor-dashboard-content-2 .instructor-nav .nav-item button.btn-link:focus {
+    background: $inverse;
+    color: $secondary;
+}
+
 .idash-section div.message-warning {
   background: $gray-l5;
 }
@@ -204,6 +376,25 @@ section.idash-section#membership
 
 .wiki-wrapper section.wiki ul.nav-tabs li.active a {
   background-color: $gray-l5;
+}
+
+section#wiki-content {
+  border: 1px solid $pearson-grey-courseware-2;
+}
+
+div.wiki-wrapper {
+  box-shadow: none;
+  border: 0;
+}
+
+.wiki-wrapper section.wiki ul.breadcrumb {
+  margin: 0 0 0 13px;
+}
+
+.wiki-wrapper section.wiki .breadcrumbs-header
+div.global-functions.pull-right
+a.add-article-btn.btn.pull-left {
+  color: $inverse;
 }
 
 div.global-functions.pull-right a.add-article-btn.btn.pull-left,
@@ -267,6 +458,11 @@ button.action.action-primary {
   color: $primary-font-color;
 }
 
+li.card.list-card.team-card,
+li.card.square-card.topic-card.has-pennant {
+  border: 1px solid $secondary;
+}
+
 div.page-header-main nav.breadcrumbs a.nav-item {
   color: $primary;
 }
@@ -301,8 +497,17 @@ div.gradebook-wrapper section.gradebook-content .student-search-field {
 }
 
 .ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix {
-  background: $inverse;
+  background: $primary;
   border: 1px solid;
+}
+
+.view-teams div.wrapper-msg {
+  background: $inverse;
+  border-top: 3px solid $primary;
+}
+
+.wrapper-prompt .prompt div.nav-actions {
+  background: $secondary;
 }
 
 span.ui-button-icon-primary.ui-icon.ui-icon-closethick {
@@ -314,7 +519,7 @@ li.errors {
 }
 
 li.success {
-  color: white;
+  color: $secondary;
 }
 
 .ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable {
@@ -337,6 +542,12 @@ li.success {
     position: relative;
     right: inherit;
   }
+
+  article.updates-article
+  .toggle-visibility-element.article-content {
+    font-size: 0.6rem;
+  }
+
 }
 
 .instructor-dashboard-wrapper-2
@@ -354,3 +565,18 @@ section.idash-section#membership
   border-top: 8px solid $gray-l5;
   border-bottom: 8px solid transparent;
 }
+
+div.container>div {
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+section#instructor-dashboard-content,
+.view-teams div.page-content,
+section#course-info-progress,
+.content-wrapper header.page-header,
+div.content-wrapper.main-container div.container div.home {
+  padding-left: 13px;
+  padding-right: 13px;
+}
+

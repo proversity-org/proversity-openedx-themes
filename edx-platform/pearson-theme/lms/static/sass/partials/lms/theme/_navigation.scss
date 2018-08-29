@@ -1,7 +1,13 @@
+.global-header h1.header-logo a .logo {
+    float: left;
+    height: 38px;
+    margin-left: 3px;
+}
+
 @media (min-width: 992px) {
   header.global-header .nav-links .secondary a.register-btn {
     background-color: $button-color-register;
-    color:$secondary;
+    color:$font-color-register;
     border: none;
   }
 }
@@ -9,8 +15,8 @@
 @media (min-width: 992px) {
   header.global-header .nav-links .secondary a.sign-in-btn {
     background-color: $button-color-login;
-    border: 1px solid $secondary;
-    color:$secondary;
+    border: 1px solid $primary;
+    color:$primary;
   }
 }
 
@@ -23,5 +29,22 @@
 @media (min-width: 992px){
   .global-header .nav-links .main .nav-tab a {
       padding: 10px;
+  }
+}
+
+@media (max-width: 992px){
+  .global-header .nav-links .main .nav-tab a {
+      padding: 10px;
+  }
+
+  div.mobile-menu div.mobile-nav-link a {
+    background-color: $light-gray;
+    border-bottom: 1px solid $primary;
+  }
+}
+
+@media (min-width: 768px) {
+  div.content-wrapper {
+    padding: 0 34px 10px;
   }
 }
