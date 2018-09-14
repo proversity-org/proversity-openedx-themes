@@ -54,7 +54,8 @@ div.wrapper-course-material .course-tabs .tab a:visited {
   padding: 10px 15px 7px 15px;
 }
 
-.course-wrapper section#course-content #main {
+#main {
+  width: 100%;
   max-width: 980px;
   display: block;
   margin: 0 auto;
