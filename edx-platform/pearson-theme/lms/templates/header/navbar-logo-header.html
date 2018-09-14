@@ -13,14 +13,11 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
 from branding import api as branding_api
 %>
 <h1 class="header-logo">
-  <!--
+
   <a href="${configuration_helpers.get_value('LMS_ROOT_URL')}">
-    <img  class="logo" src="${branding_api.get_logo_url(is_secure)}" alt="${_("{platform_name} Home Page").format(platform_name=static.get_platform_name())}"/>
-  </a>-->
-    <a href="${configuration_helpers.get_value('LMS_ROOT_URL')}">
-    <%block name="navigation_logo">
-    <img  class="logo" src="https://pfn.proversity.org/static/pearson-theme/images/PearsonLogo_Horizontal_Blk_RGB.bde3de365707.png" alt="${_("{platform_name} Home Page").format(platform_name=static.get_platform_name())}"/>
-    </%block>
+      <%block name="navigation_logo">
+      <img  class="logo" src="${branding_api.get_logo_url(is_secure)}" alt="${_("{platform_name} Home Page").format(platform_name=static.get_platform_name())}"/>
+      </%block>
   </a>
   % if course:
     <div class="course-header">
