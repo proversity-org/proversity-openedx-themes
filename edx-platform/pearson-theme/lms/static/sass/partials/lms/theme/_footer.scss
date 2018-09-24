@@ -40,3 +40,28 @@ div.wrapper-footer footer#footer-openedx
 .footer-about-openedx a {
   margin-left: 8px;
 }
+
+@media (max-width: 991px) {
+  div.wrapper-footer footer#footer-openedx {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .wrapper-footer footer#footer-openedx .colophon {
+    margin-right: 0;
+  }
+
+  .wrapper-footer footer#footer-openedx .copyright {
+    text-align: center;
+  }
+
+  .wrapper-footer footer#footer-openedx .nav-legal {
+    text-align: center;
+  }
+
+  .wrapper-footer footer#footer-openedx .footer-about-openedx {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
