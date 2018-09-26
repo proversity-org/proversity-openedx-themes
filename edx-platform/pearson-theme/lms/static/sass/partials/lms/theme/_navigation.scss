@@ -48,3 +48,13 @@
     padding: 0 34px 10px;
   }
 }
+
+@media (max-width: 991px) {
+  header.global-header h1.header-logo a .logo {
+      margin-left: -50%;
+  }
+}
+
+.wrapper-course-material .course-material .tab:first-child {
+  display:none;
+}
