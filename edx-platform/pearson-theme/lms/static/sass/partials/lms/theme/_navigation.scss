@@ -1,3 +1,9 @@
+.global-header h1.header-logo a .logo {
+    float: left;
+    height: 38px;
+    margin-left: 3px;
+}
+
 @media (min-width: 992px) {
   header.global-header .nav-links .secondary a.register-btn {
     background-color: $button-color-register;
@@ -37,3 +43,18 @@
   }
 }
 
+@media (min-width: 768px) {
+  div.content-wrapper {
+    padding: 0 34px 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  header.global-header h1.header-logo a .logo {
+      margin-left: -50%;
+  }
+}
+
+.wrapper-course-material .course-material .tab:first-child {
+  display:none;
+}

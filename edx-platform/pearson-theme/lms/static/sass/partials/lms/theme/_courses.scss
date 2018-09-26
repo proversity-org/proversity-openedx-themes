@@ -54,9 +54,8 @@ div.wrapper-course-material .course-tabs .tab a:visited {
   padding: 10px 15px 7px 15px;
 }
 
-#main {
-  max-width: 100%;
-  width: 80%;
+.course-wrapper section#course-content #main {
+  max-width: 980px;
   display: block;
   margin: 0 auto;
 }
@@ -108,6 +107,15 @@ div.info-wrapper section.updates div article .toggle-visibility-element {
   color: $pearson-dark-blue-courseware;
 }
 
+h2.hd.hd-2.unit-title,
+.xblock .xblock h2 {
+  font-size: 2.25em;
+}
+
+.course-content div.bookmark-button-wrapper {
+  margin-bottom: 10px;
+}
+
 div.content-wrapper.main-container .container {
   div.home {
     border: 0;
@@ -124,8 +132,13 @@ div.content-wrapper.main-container .container {
 
 .content-wrapper .page-header {
   border: 0;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
+header.page-header.has-secondary {
+  padding-bottom: 0;
+}
 
 .xmodule_display.xmodule_SequenceModule .sequence-nav ol li button.past .icon {
   color: $pearson-grey-courseware-4;
@@ -374,6 +387,10 @@ div.wiki-wrapper {
   border: 0;
 }
 
+.wiki-wrapper section.wiki ul.breadcrumb {
+  margin: 0 0 0 13px;
+}
+
 .wiki-wrapper section.wiki .breadcrumbs-header
 div.global-functions.pull-right
 a.add-article-btn.btn.pull-left {
@@ -485,7 +502,7 @@ div.gradebook-wrapper section.gradebook-content .student-search-field {
 }
 
 .view-teams div.wrapper-msg {
-  background: $secondary;
+  background: $inverse;
   border-top: 3px solid $primary;
 }
 
@@ -548,3 +565,18 @@ section.idash-section#membership
   border-top: 8px solid $gray-l5;
   border-bottom: 8px solid transparent;
 }
+
+div.container>div {
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+section#instructor-dashboard-content,
+.view-teams div.page-content,
+section#course-info-progress,
+.content-wrapper header.page-header,
+div.content-wrapper.main-container div.container div.home {
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
