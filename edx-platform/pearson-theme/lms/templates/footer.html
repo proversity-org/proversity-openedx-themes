@@ -94,9 +94,11 @@
         <nav class="nav-legal" aria-label="${_('Legal')}">
           <ul>
             % for item_num, link in enumerate(footer['legal_links'], start=1):
+              % if not link['title'] == 'Honor Code':
               <li class="nav-legal-0${item_num}">
                 <a href="${link['url']}">${link['title']}</a>
               </li>
+              % endif
             % endfor
           </ul>
         </nav>
