@@ -40,6 +40,7 @@
   div.mobile-menu div.mobile-nav-link a {
     background-color: $light-gray;
     border-bottom: 1px solid $primary;
+    color: $primary;
   }
 }
 
@@ -53,6 +54,11 @@
   header.global-header h1.header-logo a .logo {
       margin-left: -50%;
   }
+
+  .global-header .hamburger-menu {
+    position: relative;
+  }
+
 }
 
 .wrapper-course-material .course-material .tab:first-child {
