@@ -504,6 +504,9 @@ div.gradebook-wrapper section.gradebook-content .student-search-field {
 .view-teams div.wrapper-msg {
   background: $inverse;
   border-top: 3px solid $primary;
+  .right-floater button {
+    color: $primary;
+  }
 }
 
 .wrapper-prompt .prompt div.nav-actions {
