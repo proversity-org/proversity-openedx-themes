@@ -1,6 +1,24 @@
 header.banner {
-  background: url(/static/pearson-theme/images/banner_pearson_white.jpg) 50% 0;
   background-size: cover;
-  min-height: 534px;
+  min-height: 65vh;
   overflow: visible;
+}
+
+.home-banner {
+
+	.title {
+		color: #fff;
+	    float: right;
+	    padding: 50px;
+	    margin-right: 8%;
+	    margin-top: 5%;
+	}
+
+	.title-super {
+		font-size: 5rem;
+	}
+
+	.title-sub {
+		font-size: 2.5rem;
+	}
 }
