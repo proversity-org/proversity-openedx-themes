@@ -160,6 +160,9 @@
                             {% elif processor.NAME == 'paypal' %}
                                 {# Translators: Do NOT translate the name PayPal. #}
                                 {% trans "Checkout with PayPal" %}
+                            {% elif processor.NAME == 'paypal_pro' %}
+                                {# Translators: Do NOT translate the name PayPal. #}
+                                {% trans "Checkout with PayPal Pro" %}
                             {% endif %}
                         </button>
                     {% endfor %}
@@ -167,7 +170,13 @@
             </div>
         </div>
     </div>
-
+    <div class="paypal-pro-iframe" style="display: none">
+        {% for processor in payment_processors %}
+            {% if processor.NAME == 'paypal_pro'%}
+                <iframe name="{{ processor.NAME }}" width="570px" height="440px" style="border: none;"></iframe>
+            {% endif %}
+        {% endfor %}
+    </div>
     <div class="row verification-note">
         <div class="col-sm-12">
             <span><i class="fa fa-exclamation-circle"></i></span>

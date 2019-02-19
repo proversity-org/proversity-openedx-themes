@@ -1,6 +1,49 @@
 header.banner {
-  background: url(/static/pearson-theme/images/banner_pearson_white.jpg) 50% 0;
   background-size: cover;
-  min-height: 534px;
+  min-height: 65vh;
   overflow: visible;
+}
+
+.home-banner .title {
+    color: #fff;
+    float: right;
+    padding: 50px;
+    margin-right: 30px;
+    margin-top: 5%;
+    max-width: 500px;
+    background: #007FA3;
+}
+
+.home-banner .title .title-super {
+    font-family: Playfair Display;
+  font-size:4rem;
+}
+.home-banner .title .title-sub {
+  font-size:2rem;
+}
+
+@media (max-width: 1100px) {
+  .home-banner .title {
+    margin-right:15px;
+    padding:20px 10px;
+    margin-top:35vh;
+  }
+}
+
+@media (max-width: 550px) {
+  .home-banner .title {
+    float:none;
+    background: none;
+    margin:10px auto;
+    padding:10px;
+  }
+  .home-banner .title .title-super {
+    font-size: 2.6rem;
+
+  }
+  .home-banner .title .title-sub {
+    font-size: 1.4rem;
+    line-height: 1.1;
+    margin-top:7px;
+  }
 }
