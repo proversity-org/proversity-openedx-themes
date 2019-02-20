@@ -19,7 +19,7 @@
                 <div class="basket-items">
                     {% if line_data.seat_type %}
                         <p class="certificate_type">
-                            {% trans "Earn a valuable certificate to showcase the skills you learn in" %}
+                            {% trans "Access online learning and earn a valuable certificate to showcase your skills" %}
                         </p>
                     {% endif %}
                     <div class="row">
@@ -93,7 +93,7 @@
                             {% for voucher in basket.vouchers.all %}
                                 <p class="voucher">
                                     {% blocktrans with voucher_code=voucher.code %}
-                                        Coupon code {{ voucher_code }} applied
+                                        Discount code {{ voucher_code }} applied
                                     {% endblocktrans %}
                                 <form action="{% url 'basket:vouchers-remove' pk=voucher.id %}" method="POST">
                                     {% csrf_token %}
@@ -108,7 +108,7 @@
                         {% if voucher_form %}
                             <div class="use-voucher col-sm-7 col-xs-8">
                                 <p id="voucher_form_link">
-                                    <a href="#voucher">{% trans "Apply a coupon code" %}</a>
+                                    <a href="#voucher">{% trans "Apply a discount code" %}</a>
                                 </p>
                                 {% include 'basket/partials/add_voucher_form.html' %}
                             </div>
@@ -162,7 +162,7 @@
                                 {% trans "Checkout with PayPal" %}
                             {% elif processor.NAME == 'paypal_pro' %}
                                 {# Translators: Do NOT translate the name PayPal. #}
-                                {% trans "Checkout with PayPal Pro" %}
+                                {% trans "Pay securely now" %}
                             {% endif %}
                         </button>
                     {% endfor %}
@@ -184,14 +184,20 @@
             {% if display_verification_message %}
                 {% trans "<strong>Note:</strong> To earn a verified certificate, you must verify your identity with a <strong>webcam</strong> and a <strong>government-issued photo ID</strong>. " %}
             {% else %}
-                {% trans "<strong>Note:</strong> To complete your enrollment, select Checkout with PayPal." %}
+            {% blocktrans%}
+            <strong>Note:</strong> By pressing &lsquo;Pay securely now&rsquo; you are agreeing to Africa Legal's <a href="https://www.africa-legal.com/terms-conditions/">Terms and conditions</a> and committing to make a payment."
+            {% endblocktrans %}
+
             {% endif %}
         </div>
     </div>
     <div class="row help">
         <div class="col-sm-12">
             <p><strong>{% trans "Have questions?" %}</strong></p>
-            <a href="{{ support_url }}">{% trans "Please read our FAQs to view common questions about our certificates." %}</a>
+            <p>
+                {% blocktrans %}
+                Please get in touch with one of our team at <a href="mailto:support@africa-legal.com ">support@africa-legal.com </a>
+                {%endblocktrans%}</p>
         </div>
     </div>
 </div>
