@@ -37,11 +37,14 @@
                 <a href="mailto:{{ order.user.email }}">
               {% endcaptureas %}
               {% blocktrans trimmed with email=order.user.email link_end="</a>" %}
-                Congratulations; your order with Africa Legal (Africa Professional Services group Ltd)
+                <p>Congratulations; your order with Africa Legal (Africa Professional Services group Ltd)
                 is complete and you now have a seat on the course! If you need a receipt, you can print this page.
-                You will also receive a confirmation message with this information at
-                {{ link_start }}{{ email }}{{ link_end }}. If you need any additional information about your
-              purchase or how to access the course please contact us on <a href="mailto:support@africa-legal.com">support@africa-legal.com</a>. You'll find our <a href="https://www.africa-legal.com/terms-conditions/">Terms and Conditions here</a>.
+                  </p>
+                <p>You will also receive a confirmation message with this information at
+                {{ link_start }}{{ email }}{{ link_end }}.
+                  </p>
+              <p>If you need any additional information about your
+                purchase or how to access the course please contact us on <a href="mailto:support@africa-legal.com">support@africa-legal.com</a>. You'll find our <a href="https://www.africa-legal.com/terms-conditions/">Terms and Conditions here</a>.</p>
               {% endblocktrans %}
             </div>
 
