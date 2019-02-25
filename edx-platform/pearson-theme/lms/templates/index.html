@@ -42,7 +42,7 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
       </header> -->
       <section class="home-banner">
           <header class="banner" style="background-image: url(${static.url(configuration_helpers.get_value('banner_image_url', 'pearson-theme/images/banner_pearson_white.jpg'))});">
-             <h1 class="title">
+             <h1 class="title ${configuration_helpers.get_value('styles_title_box_class', ' ')}">
 
                 <span class="title-super">
                   ${configuration_helpers.get_value('home_page_title',' ')}
