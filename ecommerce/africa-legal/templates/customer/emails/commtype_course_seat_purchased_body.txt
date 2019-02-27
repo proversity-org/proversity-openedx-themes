@@ -1,15 +1,21 @@
 {% load i18n %}
-{% trans "Receipt Confirmation for: " %}{{course_title}}
+{% trans "Payment confirmation for:  " %}{{course_title}}
 
 {% blocktrans %}Hi {{full_name}},{% endblocktrans %}
 
-{% blocktrans with course_title=course_title platform_name=platform_name %}Thank you for purchasing {{course_title}}. The charge below will appear on your next credit or debit card statement with a company name of {{platform_name}}.{% endblocktrans %}
+{% blocktrans with course_title=course_title platform_name=platform_name %}Thank you for purchasing a seat on {{course_title}}. The charge below will appear on your next credit or debit card statement with a company name of Africa Professional Services Group Ltd.{% endblocktrans %}
 
 {% blocktrans %}You can access your course on your {{platform_name}} dashboard. {% endblocktrans %}
-{% blocktrans %}To explore other great courses, visit the {{platform_name}} website. More courses are added every day!{% endblocktrans %}
 
-{% trans "Thank you. We hope you enjoy the course!" %}
+{% blocktrans %}If you have purchased an early bird seat you will have access to the course on the 'Go live' date.  If you have purchased the course on or after the go live date you will receive immediate access.{% endblocktrans %}
 
-{% blocktrans %}{{platform_name}} team{% endblocktrans %}
+{% blocktrans %}If you have any questions at all please so not hesitate to contact us on support@africa-legal.com{% endblocktrans %}
 
-{% trans "The Africa Legal team" %}
+{% blocktrans %}Thank you for joining Africa Legal's learning community.{% endblocktrans %}
+
+{% blocktrans %}
+Kind regards
+Scott Cowan
+CEO and Co-Founder
+{% endblocktrans %}
+
