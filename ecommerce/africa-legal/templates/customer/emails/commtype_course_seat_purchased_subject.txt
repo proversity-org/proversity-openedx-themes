@@ -1,2 +1,2 @@
 {% load i18n %}
-{% trans "Order Placed" %}
+{% trans "Payment confirmation for: " %}{{course_title}}
