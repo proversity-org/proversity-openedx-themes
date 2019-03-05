@@ -10,11 +10,12 @@
         <br>
         <p>{% blocktrans with course_title=course_title platform_name=platform_name %}Thank you for purchasing a seat on {{course_title}}. The charge below will appear on your next credit or debit card statement with a company name of Africa Professional Services Group Ltd.{% endblocktrans %}</p>
         <br>
-        <p>{% blocktrans %}You can access your course on your {{platform_name}} dashboard. {% endblocktrans %} </p>
 
         <p>{% blocktrans %}If you have purchased an early bird seat you will have access to the course on the 'Go live' date.  If you have purchased the course on or after the go live date you will receive immediate access.{% endblocktrans %}</p>
 
-        <p>{% blocktrans %}If you have any questions at all please so not hesitate to contact us on
+        <p><a href="{{lms_dashboard_url}}">{% blocktrans %}View your courses here. {% endblocktrans %} </a></p>
+
+        <p>{% blocktrans %}If you have any questions at all please do not hesitate to contact us on
             <a href="mailto:support@africa-legal.com">support@africa-legal.com</a>{% endblocktrans %}</p>
 
         <p>{% blocktrans %}Thank you for joining Africa Legal's learning community.{% endblocktrans %}</p>

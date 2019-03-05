@@ -1,0 +1,44 @@
+{% extends 'edx/base.html' %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block title %}
+    {% trans "Pending Payment" %}
+{% endblock %}
+
+{% block navbar %}
+    {% include 'edx/partials/_student_navbar.html' %}
+{% endblock %}
+
+{% block content %}
+    <div id="error-message">
+        <div class="container">
+            <div class="depth depth-2 message-error-content">
+                <h1>{% trans "Pending Payment" %}</h1>
+                {% if message %}
+                    <p>{% trans message %} </p>
+                {% else %}
+                {% with "<a class='dashboard-link nav-link' href='"|add:dashboard_url|add:"'>"|safe as start_link %}
+                    {% blocktrans %}
+
+                <h2>Your order is pending</h2>
+
+                <p>Thank you for your order with Africa Legal (Africa Professional Services Group Ltd).</p>
+
+                <p>Your order is currently pending.  This usually happens when you pay via your PayPal account and have not linked a debit or credit card to your account.  This process is managed and controlled by PayPal and you will receive updates directly from PayPal on the progress of your order.</p>
+
+                <p>As soon as your payment has cleared you will receive access to the course.  If the course is not yet open you will receive access when the course goes live as indicated on the 'About course' page.</p>
+
+                <p>If you need any additional information or support please do not hesitate contact us on <a href="mailto:support@africa-legal.com">support@africa-legal.com</a></p>
+
+                <p>{{start_link}}Back to my courses page</a></p>
+
+
+                    {% endblocktrans %}
+                {% endwith %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
