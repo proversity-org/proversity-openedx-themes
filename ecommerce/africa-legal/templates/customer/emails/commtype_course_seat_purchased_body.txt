@@ -10,7 +10,7 @@
 
 {% blocktrans %}You can access your course on your {{platform_name}} dashboard here ({{lms_dashboard_url}}). {% endblocktrans %}
 
-{% blocktrans %}If you have any questions at all please so not hesitate to contact us on support@africa-legal.com{% endblocktrans %}
+{% blocktrans %}If you have any questions at all please do not hesitate to contact us on support@africa-legal.com{% endblocktrans %}
 
 {% blocktrans %}Thank you for joining Africa Legal's learning community.{% endblocktrans %}
 
