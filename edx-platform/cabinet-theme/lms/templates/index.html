@@ -12,32 +12,32 @@ import third_party_auth
 from third_party_auth import provider, pipeline
 %>
 
-<%block name="js_extra">
-  <script type="text/javascript">
+## <%block name="js_extra">
+##   <script type="text/javascript">
 
-    function thirdPartySignin(event, url) {
-      event.preventDefault();
-      window.location.href = url;
-    }
+##     function thirdPartySignin(event, url) {
+##       event.preventDefault();
+##       window.location.href = url;
+##     }
 
-    (function post_form_if_pipeline_running(pipeline_running) {
-       // If the pipeline is running, the user has already authenticated via a
-       // third-party provider. We want to invoke /login_ajax to loop in the
-       // code that does logging and sets cookies on the request. It is most
-       // consistent to do that by using the same mechanism that is used when
-       // the use does first-party sign-in: POSTing the sign-in form.
-       if (pipeline_running) {
-         $('#login-form').submit();
-       }
-    })(${pipeline_running})
+##     (function post_form_if_pipeline_running(pipeline_running) {
+##        // If the pipeline is running, the user has already authenticated via a
+##        // third-party provider. We want to invoke /login_ajax to loop in the
+##        // code that does logging and sets cookies on the request. It is most
+##        // consistent to do that by using the same mechanism that is used when
+##        // the use does first-party sign-in: POSTing the sign-in form.
+##        if (pipeline_running) {
+##          $('#login-form').submit();
+##        }
+##     })(${pipeline_running})
 
-    $(window).load(function() {
-         if(getParameterByName('next')) {
-              $('#login').trigger("click");
-         }
-      })
-  </script>
-</%block>
+##     $(window).load(function() {
+##          if(getParameterByName('next')) {
+##               $('#login').trigger("click");
+##          }
+##       })
+##   </script>
+## </%block>
 <link href="https://fonts.googleapis.com/css?family=Raleway:600,700i,800" rel="stylesheet">
 
 <section class="banner" role="default">

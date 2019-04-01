@@ -154,6 +154,23 @@ from student.models import CourseEnrollment
 
     <h1>${_("My Courses")}</h1>
 
+    % if settings.FEATURES.get('ENABLE_DASHBOARD_SEARCH'):
+            <div id="dashboard-search-bar" class="search-bar dashboard-search-bar" role="search" aria-label="Dashboard">
+              <form class="search-form">
+                  <div class="search-field-wrapper">
+                    <input id="dashboard-search-input" type="text" class="search-field" placeholder="${_('Search')}" />
+                    <button type="submit" class="search-button" title="${_('Search')}">
+                      <span class="icon fa fa-search" aria-hidden="true"></span>
+                    </button>
+                    <button type="button" class="cancel-button" title="${_('Clear search')}">
+                      <span class="icon fa fa-remove" aria-hidden="true"></span>
+                    </button>
+                  </div>
+              </form>
+            </div>
+            <div id="dashboard-search-results" class="search-results dashboard-search-results"></div>
+          % endif
+
       <div class="grid">
         <div class="item">
            <%
