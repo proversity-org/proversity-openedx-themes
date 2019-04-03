@@ -1,0 +1,33 @@
+## mako
+<%! from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers %>
+<%namespace name='static' file='/static_content.html'/>
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700i,800" rel="stylesheet">
+
+% if False:
+  <script>
+  var $buoop = {
+    notify:${'{e:10,f:-3,o:-3,s:-3,c:-3}' | n, decode.utf8},
+    api:5,
+    reminder:0
+  };
+  function $buo_f(){
+   var e = document.createElement("script");
+   e.src = "//browser-update.org/update.min.js";
+   document.body.appendChild(e);
+  };
+  try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+  catch(e){window.attachEvent("onload", $buo_f)}
+  </script>
+% endif
+
+
+  <script src="${static.url('js/jquery.mobile.1.4.5.js')}"></script>
+  <script src="${static.url('js/jquery.waypoints.js')}"></script>
+  <script src="${static.url('js/velocity.js')}"></script>
+  <script src="${static.url('js/velocity.ui.js')}"></script>
+  <script src="${static.url('js/bootstrap.js')}"></script>
+  <script src="${static.url('js/jquery.initialize.js')}"></script>
+
+  <script src="${static.url('js/app.js')}"></script>
+ ## <link rel="stylesheet" type="text/css" href="${static.url(style_overrides_file)}" /> 
