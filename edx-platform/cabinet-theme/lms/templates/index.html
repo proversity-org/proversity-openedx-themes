@@ -38,21 +38,23 @@ from third_party_auth import provider, pipeline
 ##       })
 ##   </script>
 ## </%block>
-<link href="https://fonts.googleapis.com/css?family=Raleway:600,700i,800" rel="stylesheet">
+
 
 <section class="banner" role="default">
 
   <div class="container no-border">
     <div class="row row-course-banner">
-      <div class="col-md-7  banner-text">
+      <div class="col-md-12  banner-text">
         <div class="wrapper waypoint">
           <form class="default">
             <div class="default">
               % if False:
                 <img src="${static.url('GCS/images/sunrise.heading.png')}" class="img-responsive" />
               % endif
-              <h2>${_("Welcome to Government Communications eLearning")}</h2>
-              % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
+              <h2 class="text-center">${_("Government Communications eLearning")}</h2>
+              <h3 class="text-center">${_("Welcome to Government Communications eLearning")}</h3>
+              <div class="home-buttons">
+                % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
                     % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
                         <a href="${reverse('course-specific-login', args=[course.id.to_deprecated_string()])}${login_query()}" class="btn btn-lg btn-default">${_("Sign in")}</a>
                     % else:
@@ -85,8 +87,9 @@ from third_party_auth import provider, pipeline
                         % endif
 
                     % endif
-                % endif
-
+                % endif 
+              </div>
+             
               <!-- <p><a href="/register" id="register">${_("Register")}</a></p> -->
             </div>
           </form>
@@ -94,7 +97,7 @@ from third_party_auth import provider, pipeline
       </div>
 
 
-       <div class="col-md-5  banner-course">
+       <div class="col-md-10  banner-course">
          <%include file="courses_list.html" />
       </div>
     </div>

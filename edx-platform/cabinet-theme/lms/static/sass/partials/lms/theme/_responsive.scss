@@ -2000,10 +2000,27 @@
     float: none !important;
     margin: 0 auto;
   }
+
+  .home-buttons {
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 768px) {
   .lead {
     font-size: 21px;
+  }
+}
+
+@media (min-width: 576px) {
+  .window-wrap .xmodule_display.xmodule_SequenceModule .sequence-nav-button.focused,
+  .window-wrap .xmodule_display.xmodule_SequenceModule .sequence-nav-button:hover,
+  .window-wrap .xmodule_display.xmodule_SequenceModule .sequence-nav-button:active,
+  .window-wrap .xmodule_display.xmodule_SequenceModule .sequence-nav-button.active,
+  .window-wrap .xmodule_display.xmodule_SequenceModule .sequence-nav button.focused,
+  .window-wrap .xmodule_display.xmodule_SequenceModule .sequence-nav button:hover,
+  .window-wrap .xmodule_display.xmodule_SequenceModule .sequence-nav button:active,
+  .window-wrap .xmodule_display.xmodule_SequenceModule .sequence-nav button.active {
+    padding-top: 8px;
   }
 }

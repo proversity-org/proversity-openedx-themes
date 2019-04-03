@@ -1390,6 +1390,16 @@ img {
   height: auto;
 }
 
+#carousel-mobile {
+  .img-responsive {
+    width: 100%;
+  }
+
+  .course-caption {
+    min-height: 150px;
+  }
+} 
+
 .thumbnail {
   > img, a > img {
     display: block;
@@ -6079,7 +6089,7 @@ div {
           padding: 0;
           div {
             &.course-text {
-              padding: 15px;
+              padding: 30px 20px;
               background: #21368b !important;
               h4 {
                 color: #fff !important;
@@ -6126,16 +6136,16 @@ div {
       border-radius: 0 0 10px 10px;
     }
     .banner-text {
-      padding-top: 136px;
+      
       a.btn.btn-lg {
         &.btn-secondary {
           border: 1px solid;
           border-radius: 0;
+
           &:hover {
-            background: #580041;
-            color: #fff !important;
-            font-weight: bold;
-            border: 0;
+            background: #fff !important;
+            color: #580041 !important;
+            border: 1px solid #fff;
           }
         }
         &.btn-default {
@@ -6146,7 +6156,6 @@ div {
           &:hover {
             background: #580041;
             color: #fff !important;
-            font-weight: bold;
             border: 0;
           }
         }
@@ -6163,12 +6172,14 @@ div {
           padding: 2px;
           div.grid div.single-course {
             max-width: 100%;
-            margin: 0;
+            margin: 0 20px;
             box-shadow: 0 1px 10px 0 #000;
             border-radius: 10px 10px 10px 10px;
             a img {
+              min-height: 260px;
+              padding-top: 25px;
+              background: #21368b !important;
               border-radius: 10px 10px 0 0;
-              min-height: 248px;
             }
           }
         }
@@ -6176,7 +6187,6 @@ div {
     }
   }
   .container.no-border .wrapper form .default h2 {
-    text-align: start;
     font-size: 2.25em;
     font-weight: 800;
   }
@@ -13261,7 +13271,7 @@ iframe {
   flex-shrink: 0;
 }
 
-.content-wrapper .course-tabs {
+.window-wrap .content-wrapper .course-tabs {
   font-size: 16px;
   overflow-x: auto;
 }

@@ -84,3 +84,8 @@ a.btn.disabled, fieldset[disabled] a.btn {
     background: #070e26;
   }
 }
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+}

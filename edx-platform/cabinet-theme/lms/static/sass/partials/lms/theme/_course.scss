@@ -284,12 +284,12 @@
     border: none;
 }
 
-.container-about-page {
+.window-wrap .content-wrapper .container-about-page {
   max-width: 1300px !important;
   border-bottom: 1px solid #000;
 
   .row {
     max-width: 1170px !important;
+    margin: 0 auto;
   }
-
 } 

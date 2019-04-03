@@ -2,6 +2,26 @@
 <%namespace name='static' file='/static_content.html'/>
 <%! from django.utils.translation import ugettext as _ %>
 
+<% 
+carousel_courses = []
+carousel_courses.append([])
+current_index = 0
+limit = 4
+%>
+
+<div class="hidden">
+  % for course in courses:
+  % if len(carousel_courses[current_index]) < limit:
+    ${carousel_courses[current_index].append(course)}
+  % else:
+    ${carousel_courses.append([])}
+    ${current_index = current_index + 1}
+    ${carousel_courses[current_index].append(course)}
+  % endif
+% endfor
+</div>
+
+
 % if courses:
 
   % if len(courses) > 0:
@@ -15,12 +35,12 @@
 
           % if len(courses) == 1:
 
-            % for index in enumerate(courses):
+            % for index, car_courses in enumerate(carousel_courses):
               % if index == 0:
                 <div class="item active">
                   <div class="grid">
                     <div class="item">
-                      % for course in courses:
+                      % for course in car_courses:
                         <%include file="course.html" args="course=course" />
                       % endfor
                     </div>
@@ -30,7 +50,7 @@
                 <div class="item">
                   <div class="grid">
                     <div class="item">
-                      % for course in courses:
+                      % for course in car_courses:
                         <%include file="course.html" args="course=course" />
                       % endfor
                     </div>
@@ -43,12 +63,12 @@
 
           % if len(courses) == 2:
 
-            % for index in enumerate(courses):
+            % for index, car_courses in enumerate(carousel_courses):
               % if index == 0:
                 <div class="item active">
                   <div class="grid">
                     <div class="item">
-                      % for course in ourses:
+                      % for course in car_courses:
                         <%include file="course.html" args="course=course" />
                       % endfor
                     </div>
@@ -58,7 +78,7 @@
                 <div class="item">
                   <div class="grid">
                     <div class="item">
-                      % for course in courses:
+                      % for course in car_courses:
                         <%include file="course.html" args="course=course" />
                       % endfor
                     </div>
@@ -71,12 +91,12 @@
 
           % if len(courses) >= 3:
 
-            % for index in enumerate(courses):
+            % for index, car_courses in enumerate(carousel_courses):
               % if index == 0:
                 <div class="item active">
                   <div class="grid">
                     <div class="item">
-                      % for course in courses:
+                      % for course in car_courses:
                         <%include file="course.html" args="course=course" />
                       % endfor
                     </div>
@@ -86,7 +106,7 @@
                 <div class="item">
                   <div class="grid">
                     <div class="item">
-                      % for course in courses:
+                      % for course in car_courses:
                         <%include file="course.html" args="course=course" />
                       % endfor
                     </div>
@@ -107,7 +127,7 @@
 
         </div>
 
-        % if len(courses) > 1:
+        % if len(carousel_courses) > 1:
           <a class="left carousel-control hidden-sm" href="#carousel-desktop" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>

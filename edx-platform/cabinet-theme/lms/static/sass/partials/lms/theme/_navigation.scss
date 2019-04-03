@@ -218,7 +218,7 @@
   }
 }
 
-.navbar-nav .navbar-toggle {
+.window-wrap .navbar-nav .navbar-toggle {
   position: relative;
   float: right;
   padding: 9px 10px;
@@ -227,7 +227,6 @@
   margin-bottom: 8px;
   background-color: transparent;
   background-image: none;
-  border: 1px solid transparent;
   border-radius: 4px;
   box-shadow: none;
 
@@ -839,10 +838,10 @@
   background-repeat: no-repeat;
   background-position: right;
   padding: 0;
+}
 
-  .container-fluid {
-    display: block;
-  }
+.window-wrap .navbar-default .container-fluid {
+  display: block;
 }
 
 .navbar-right {
