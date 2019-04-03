@@ -218,7 +218,7 @@
   }
 }
 
-.navbar-toggle {
+.navbar-nav .navbar-toggle {
   position: relative;
   float: right;
   padding: 9px 10px;
@@ -229,8 +229,13 @@
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
-  &:focus {
+  box-shadow: none;
+
+  &:focus,
+  &:active,
+  &:hover {
     outline: 0;
+    border: none;
   }
   .icon-bar {
     display: block;
@@ -334,15 +339,7 @@
       }
     }
   }
-  .navbar-toggle {
-    border-color: #ddd;
-    &:hover, &:focus {
-      background-color: #ddd;
-    }
-    .icon-bar {
-      background-color: #888;
-    }
-  }
+  
   .navbar-collapse, .navbar-form {
     border-color: #e7e7e7;
   }
@@ -467,9 +464,10 @@
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-    &:hover, &:focus {
+    &:hover, &:focus, &:actives {
       background: none;
       border: none !important;
+      box-shadow: none;
     }
     &:hover .icon-bar, &:focus .icon-bar {
       background: #fff;
@@ -805,7 +803,7 @@
         }
       }
     }
-    .navbar-content-close-btn {
+    a.navbar-content-close-btn {
       position: absolute;
       top: 0;
       right: 25px;

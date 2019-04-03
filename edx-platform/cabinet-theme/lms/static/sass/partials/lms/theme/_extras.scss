@@ -7656,10 +7656,10 @@ h2, h3, h4 {
 }
 
 body {
-  font-family: "Raleway","Helvetica",Sans-Serif;
+  font-family: "Raleway","Helvetica",Sans-Serif !important;
   font-weight: normal;
   font-style: normal;
-  font-size: 19px;
+  font-size: 19px !important;
   text-align: left;
 }
 
@@ -8427,6 +8427,8 @@ section {
       filter: blur(0px) opacity(25%) grayscale(0%);
     }
     .container {
+      max-width: 1170px!important;
+
       .course-details {
         background: none;
         padding: 15px;
@@ -8448,8 +8450,6 @@ section {
           }
           ul {
             list-style-type: none;
-            border-top: 1px solid #fff;
-            border-bottom: 1px solid #fff;
             padding: 15px 0;
             margin: 15px 0;
             width: 100%;
@@ -12076,7 +12076,7 @@ div.info-wrapper section.handouts ol li a {
   }
 }
 
-.main-container {
+.window-wrap .main-container {
   padding: 0 20px;
   margin: 0;
 }
@@ -12677,7 +12677,6 @@ body.view-in-course .wrapper-course-material .course-material .course-tabs {
 
 #main {
   max-width: 100%;
-  width: 80%;
   display: block;
   margin: 0 auto;
 }
@@ -12741,7 +12740,7 @@ body.view-in-course {
   display: none;
 }
 
-.xmodule_display.xmodule_SequenceModule .sequence-nav {
+.window-wrap .xmodule_display.xmodule_SequenceModule .sequence-nav {
   ol li button {
     .sequence-tooltip {
       background: #ffffff;

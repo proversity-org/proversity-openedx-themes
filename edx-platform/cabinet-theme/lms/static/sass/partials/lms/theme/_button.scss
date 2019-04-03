@@ -68,3 +68,19 @@ a.btn.disabled, fieldset[disabled] a.btn {
     border-color: #adadad;
   }
 }
+
+#expand-collapse-outline-all-button {
+  border: 1px solid #0f1d4e;
+
+  span {
+    color: #0f1d4e !important;
+  }
+}
+
+.form-actions .action-resume-course {
+  background: #0f1d4e;
+
+  &:hover {
+    background: #070e26;
+  }
+}
