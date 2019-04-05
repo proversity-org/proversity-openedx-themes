@@ -171,6 +171,12 @@ from student.models import CourseEnrollment
             <div id="dashboard-search-results" class="search-results dashboard-search-results"></div>
           % endif
 
+          %if display_sidebar_account_activation_message: 
+      <div class="sidebar-notification">
+        <%include file="registration/account_activation_sidebar_notice.html" />
+      </div>
+    %endif
+
       <div class="grid">
         <div class="item">
            <%
@@ -269,11 +275,6 @@ from student.models import CourseEnrollment
             </div>
           % endif
 
-      %if display_sidebar_account_activation_message: 
-      <div class="sidebar-notification">
-        ${sidebar_account_activation_message | n, decode.utf8}
-      </div>
-    %endif
     </div>
 </section>
 
@@ -282,9 +283,9 @@ from student.models import CourseEnrollment
     <div class="row">
       <div class="col-md-12 col-xs-12">
         <div class="side-container">
-          %if sidebar_account_activation_message:
+          %if display_sidebar_account_activation_message: 
             <div class="sidebar-notification">
-              ${sidebar_account_activation_message | n, decode.utf8}
+              <%include file="registration/account_activation_sidebar_notice.html" />
             </div>
           %endif
 
