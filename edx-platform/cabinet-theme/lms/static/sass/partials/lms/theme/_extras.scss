@@ -10091,7 +10091,8 @@ body.view-in-course .wrapper-course-material .course-material .course-tabs {
   text-align: left;
 }
 
-.tabs .tab a {
+.tabs .tab a,
+.navbar.course-tabs .nav-link {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: 400;
   line-height: 20.72px;
@@ -11410,7 +11411,9 @@ input[name="subject"] {
   color: #fff;
 }
 
-body, p, label {
+html body,
+html p,
+html label {
   font-family: "Raleway","Helvetica",Sans-Serif;
   font-size: 19px;
 }
