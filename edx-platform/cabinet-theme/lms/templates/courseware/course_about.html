@@ -168,22 +168,15 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
           </ul>
 
           % if user.is_authenticated and registered:
-            %if show_courseware_link and user_is_active:
-              <a href="${course_target}" class="btn btn-lg btn-default">
-                ${_("View Course")}
-              </a>
-            %else:
-              </a>
+            %if show_courseware_link:
+              <a class="btn btn-lg btn-default" href="${course_target}">
+            %endif
 
-              <p>
-                %if user_is_active:
-                <b> ${_("course has not started yet")}
-                %else:
-                <b>${_("Activate Your {platform_name} Account").format(
-                    platform_name=configuration_helpers.get_value('PLATFORM_NAME', settings.PLATFORM_NAME
-                ))}</b>
-                %endif
-              </p>
+            <span class="register disabled">${_("You are enrolled in this course")}</span>
+
+            %if show_courseware_link:
+              <strong>${_("View Course")}</strong>
+              </a>
             %endif
           %elif in_cart:
           <span class="add-to-cart">
@@ -193,12 +186,12 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
 
             ${_("Course is full")}  
           % elif invitation_only and not can_enroll:
-            <span class="register disabled">${_("Enrollment in this course is by invitation only")}</span>
+            <span class="register disabled">${_("Enrolment in this course is by invitation only")}</span>
           ## Shib courses need the enrollment button to be displayed even when can_enroll is False,
           ## because AnonymousUsers cause can_enroll for shib courses to be False, but we need them to be able to click
           ## so that they can register and become a real user that can enroll.
           % elif not is_shib_course and not can_enroll:
-          <span class="register disabled">${_("Enrollment is Closed")}</span>
+          <span class="register disabled">${_("Enrolment is Closed")}</span>
           %elif can_add_course_to_cart:
           <%
           if user.is_authenticated:
