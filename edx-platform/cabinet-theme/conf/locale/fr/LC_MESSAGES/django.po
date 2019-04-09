@@ -7,8 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: support@edunext.co\n"
-"POT-Creation-Date: 2019-04-02 18:05-0500\n"
-"PO-Revision-Date: 2019-04-03 16:41-0500\n"
+"POT-Creation-Date: 2019-04-09 17:11-0500\n"
+"PO-Revision-Date: 2019-04-09 17:16-0500\n"
+"Last-Translator: \n"
 "Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
@@ -16,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
-"Last-Translator: \n"
 "X-Generator: Poedit 1.8.7.1\n"
 
 #: edx-platform/cabinet-theme/lms/templates/course.html:28
@@ -40,7 +40,7 @@ msgstr ""
 msgid "Enrol Now"
 msgstr "Inscrivez-vous maintenant"
 
-#: edx-platform/cabinet-theme/lms/templates/courses_list.html:104
+#: edx-platform/cabinet-theme/lms/templates/courses_list.html:124
 msgid "View all Courses"
 msgstr ""
 
@@ -62,57 +62,57 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard.html:161
 #: edx-platform/cabinet-theme/lms/templates/dashboard.html:162
-#: edx-platform/cabinet-theme/lms/templates/dashboard.html:297
+#: edx-platform/cabinet-theme/lms/templates/dashboard.html:298
 msgid "Search"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard.html:165
-#: edx-platform/cabinet-theme/lms/templates/dashboard.html:300
+#: edx-platform/cabinet-theme/lms/templates/dashboard.html:301
 msgid "Clear search"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/dashboard.html:246
+#: edx-platform/cabinet-theme/lms/templates/dashboard.html:252
 msgid "You are not enrolled in any courses yet."
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/dashboard.html:249
+#: edx-platform/cabinet-theme/lms/templates/dashboard.html:255
 #: edx-platform/cabinet-theme/lms/templates/navigation/bootstrap/navbar-authenticated.html:32
 #: edx-platform/cabinet-theme/lms/templates/navigation/bootstrap/navbar-not-authenticated.html:32
 msgid "Explore courses"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/dashboard.html:257
+#: edx-platform/cabinet-theme/lms/templates/dashboard.html:263
 msgid "Course-loading errors"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/dashboard.html:294
+#: edx-platform/cabinet-theme/lms/templates/dashboard.html:295
 msgid "Search Your Courses"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/dashboard.html:312
-#: edx-platform/cabinet-theme/lms/templates/dashboard.html:340
+#: edx-platform/cabinet-theme/lms/templates/dashboard.html:313
+#: edx-platform/cabinet-theme/lms/templates/dashboard.html:341
 msgid "Account Status Info"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/dashboard.html:319
-#: edx-platform/cabinet-theme/lms/templates/dashboard.html:346
+#: edx-platform/cabinet-theme/lms/templates/dashboard.html:320
+#: edx-platform/cabinet-theme/lms/templates/dashboard.html:347
 msgid "Order History"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/dashboard.html:370
+#: edx-platform/cabinet-theme/lms/templates/dashboard.html:371
 msgid "Email Settings for {course_number}"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/dashboard.html:378
+#: edx-platform/cabinet-theme/lms/templates/dashboard.html:379
 msgid "Receive course emails"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/dashboard.html:380
+#: edx-platform/cabinet-theme/lms/templates/dashboard.html:381
 msgid "Save Settings"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/dashboard.html:394
-#: edx-platform/cabinet-theme/lms/templates/dashboard.html:408
+#: edx-platform/cabinet-theme/lms/templates/dashboard.html:395
+#: edx-platform/cabinet-theme/lms/templates/dashboard.html:409
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_course_listing.html:260
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_course_listing.html:272
 msgid "Unenroll"
@@ -362,11 +362,15 @@ msgid "Please try again later."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/index.html:54
+msgid "Government Communications eLearning"
+msgstr ""
+
+#: edx-platform/cabinet-theme/lms/templates/index.html:55
 msgid "Welcome to Government Communications eLearning"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/index.html:57
-#: edx-platform/cabinet-theme/lms/templates/index.html:80
+#: edx-platform/cabinet-theme/lms/templates/index.html:59
+#: edx-platform/cabinet-theme/lms/templates/index.html:82
 #: edx-platform/cabinet-theme/lms/templates/login.html:150
 #: edx-platform/cabinet-theme/lms/templates/navigation/bootstrap/navbar-not-authenticated.html:51
 #: edx-platform/cabinet-theme/lms/templates/navigation/bootstrap/navbar-not-authenticated.html:55
@@ -377,12 +381,12 @@ msgstr ""
 msgid "Sign in"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/index.html:72
+#: edx-platform/cabinet-theme/lms/templates/index.html:74
 msgid "Sign in or Sign up"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/index.html:84
-#: edx-platform/cabinet-theme/lms/templates/index.html:90
+#: edx-platform/cabinet-theme/lms/templates/index.html:86
+#: edx-platform/cabinet-theme/lms/templates/index.html:93
 #: edx-platform/cabinet-theme/lms/templates/login.html:193
 #: edx-platform/cabinet-theme/lms/templates/navigation/bootstrap/navbar-not-authenticated.html:37
 #: edx-platform/cabinet-theme/lms/templates/navigation/bootstrap/navbar-not-authenticated.html:41
@@ -806,91 +810,88 @@ msgstr ""
 msgid "Price"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:173
-#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:226
+#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:175
+msgid "You are enrolled in this course"
+msgstr ""
+
+#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:178
+#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:219
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_course_listing.html:167
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_course_listing.html:169
 msgid "View Course"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:180
-msgid "course has not started yet"
-msgstr ""
-
-#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:182
-msgid "Activate Your {platform_name} Account"
-msgstr ""
-
-#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:190
+#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:183
 msgid "This course is in your <a href=\"{cart_link}\">cart</a>."
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:194
+#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:187
 msgid "Course is full"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:196
-msgid "Enrollment in this course is by invitation only"
+#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:189
+msgid "Enrolment in this course is by invitation only"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:201
-msgid "Enrollment is Closed"
+#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:194
+msgid "Enrolment is Closed"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:216
+#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:209
 msgid "Add {course_name} to Cart {start_span}({price} USD){end_span}"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:241
-msgid "Enroll now"
+#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:234
+msgid "Enrol now"
 msgstr "Inscrivez-vous maintenant"
 
-#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:246
+#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:239
 msgid "Or explore other courses"
 msgstr "Ou explorer d'autres cours"
 
-#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:275
+#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:268
 msgid "View About Page in studio"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:284
+#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:277
 msgid "Prerequisites"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:288
+#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:281
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_course_listing.html:510
 msgid ""
 "You must successfully complete {link_start}{prc_display}{link_end} before you "
 "begin this course."
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:298
+#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:291
 msgid "Requirements"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:306
+#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:299
 msgid "Additional Resources"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:327
+#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:320
 msgctxt "self"
 msgid "Enroll"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:332
+#: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:325
 msgctxt "self"
 msgid "enroll"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/courseware/course_navigation.html:47
+#: edx-platform/cabinet-theme/lms/templates/courseware/course_navigation.html:62
 msgid "current location"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/courseware/course_navigation.html:52
+#: edx-platform/cabinet-theme/lms/templates/courseware/course_navigation.html:67
+#: edx-platform/cabinet-theme/lms/templates/courseware/tabs.html:34
 msgid "needs attention"
 msgstr ""
 
-#: edx-platform/cabinet-theme/lms/templates/courseware/course_navigation.html:61
+#: edx-platform/cabinet-theme/lms/templates/courseware/course_navigation.html:76
 msgid "Course Material"
 msgstr ""
 
@@ -1497,13 +1498,6 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/registration/account_activation_sidebar_notice.html:16
 msgid "Activate your account!"
-msgstr ""
-
-#: edx-platform/cabinet-theme/lms/templates/registration/account_activation_sidebar_notice.html:18
-msgid ""
-"Check your {email_start}{email}{email_end} inbox for an account activation link "
-"from {platform_name}. If you need help, contact {link_start}{platform_name} "
-"Support{link_end}."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/registration/activate_account_notice.html:9
@@ -3820,31 +3814,28 @@ msgstr ""
 msgid "Got it!"
 msgstr ""
 
-# Manually added translation
-#: cabinet-theme/lms/templates/student_account/login_and_register.html
-msgid ""
-"Usernames can only contain letters (A-Z, a-z), numerals (0-9), underscores "
-"(_), and hyphens (-). "
-"The name that will identify you in your courses. "
-"It cannot be changed later."
-msgstr ""
-"Les noms d'utilisateur peuvent seulement contenir des lettres (A-Z, a-z), "
-"des chiffres (0-9), des tirets bas (_) et des traits d'union (-). "
-"Le nom qui permettra de vous identifier en cours. Il ne pourra pas être "
-"modifié plus tard."
+#~ msgid "Enroll now"
+#~ msgstr "Inscrivez-vous maintenant"
 
 # Manually added translation
-#: cabinet-theme/lms/templates/student_account/login_and_register.html
-msgid ""
-"Passwords must have a minimum length of 8 characters, "
-"contain a mix of upper and lowercase letters, "
-"and have at least 1 number."
-msgstr ""
-"Les mots de passe doivent posséder un minimum de 8 caractères, "
-"contenir un mélange de lettres majuscules et minuscules, "
-"et avoir au moins 1 chiffre."
+#~ msgid ""
+#~ "Usernames can only contain letters (A-Z, a-z), numerals (0-9), underscores "
+#~ "(_), and hyphens (-). The name that will identify you in your courses. It "
+#~ "cannot be changed later."
+#~ msgstr ""
+#~ "Les noms d'utilisateur peuvent seulement contenir des lettres (A-Z, a-z), "
+#~ "des chiffres (0-9), des tirets bas (_) et des traits d'union (-). Le nom qui "
+#~ "permettra de vous identifier en cours. Il ne pourra pas être modifié plus "
+#~ "tard."
 
 # Manually added translation
-#: Courseware tab added manually in studio
-msgid "Resources"
-msgstr "Ressources"
+#~ msgid ""
+#~ "Passwords must have a minimum length of 8 characters, contain a mix of upper "
+#~ "and lowercase letters, and have at least 1 number."
+#~ msgstr ""
+#~ "Les mots de passe doivent posséder un minimum de 8 caractères, contenir un "
+#~ "mélange de lettres majuscules et minuscules, et avoir au moins 1 chiffre."
+
+# Manually added translation
+#~ msgid "Resources"
+#~ msgstr "Ressources"
