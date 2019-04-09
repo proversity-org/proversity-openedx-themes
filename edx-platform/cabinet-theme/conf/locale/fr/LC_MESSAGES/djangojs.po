@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: support@edunext.co\n"
 "POT-Creation-Date: 2019-04-03 15:59-0500\n"
-"PO-Revision-Date: 2019-04-03 15:54-0500\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2019-04-09 13:33-0500\n"
 "Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Last-Translator: \n"
+"X-Generator: Poedit 1.8.7.1\n"
 
 #: edx-platform/cabinet-theme/lms/templates/course.html:28
 #: edx-platform/cabinet-theme/lms/templates/course.html:47
@@ -37,7 +38,7 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/course.html:55
 msgid "Enrol Now"
-msgstr ""
+msgstr "Inscrivez-vous maintenant"
 
 #: edx-platform/cabinet-theme/lms/templates/courses_list.html:104
 msgid "View all Courses"
@@ -139,7 +140,7 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/footer.html:60
 #: edx-platform/cabinet-theme/lms/templates/footer.html:94
 msgid "Terms of Service and Honour Code"
-msgstr ""
+msgstr "Conditions d'utilisation et Code d'honneur"
 
 #: edx-platform/cabinet-theme/lms/templates/footer.html:31
 #: edx-platform/cabinet-theme/lms/templates/footer.html:61
@@ -155,7 +156,7 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/footer.html:96
 #: edx-platform/cabinet-theme/lms/templates/static_templates/cookies.html:9
 msgid "Cookie Policy"
-msgstr ""
+msgstr "Politique de cookie"
 
 #: edx-platform/cabinet-theme/lms/templates/forgot_password_modal.html:8
 #: edx-platform/cabinet-theme/lms/templates/forgot_password_modal.html:14
@@ -164,8 +165,8 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/forgot_password_modal.html:20
 msgid ""
-"Please enter your e-mail address below, and we will e-mail instructions "
-"for setting a new password."
+"Please enter your e-mail address below, and we will e-mail instructions for "
+"setting a new password."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/forgot_password_modal.html:24
@@ -197,9 +198,10 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/help_modal.html:28
 msgid ""
-"Have a question about something? You can contact the support team "
-"directly:"
+"Have a question about something? You can contact the support team directly:"
 msgstr ""
+"Vous avez une question sur quelque chose? Vous pouvez contacter l'équipe "
+"d'assistance directement:"
 
 #: edx-platform/cabinet-theme/lms/templates/help_modal.html:38
 msgid "Report a problem"
@@ -223,14 +225,14 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/help_modal.html:56
 msgid "Briefly describe your issue"
-msgstr ""
+msgstr "Décrivez brièvement votre suggestion"
 
 #: edx-platform/cabinet-theme/lms/templates/help_modal.html:58
 #: edx-platform/cabinet-theme/lms/templates/help_modal.html:59
 msgid ""
 "Describe what you were doing when you encountered the issue. Include any "
-"details that will help us to troubleshoot, including error messages that "
-"you saw."
+"details that will help us to troubleshoot, including error messages that you "
+"saw."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/help_modal.html:67
@@ -245,14 +247,16 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/help_modal.html:96
 msgid "Briefly describe your suggestion"
-msgstr ""
+msgstr "Décrivez brièvement votre suggestion"
 
 #: edx-platform/cabinet-theme/lms/templates/help_modal.html:98
 #: edx-platform/cabinet-theme/lms/templates/help_modal.html:99
 msgid ""
-"Please give us specific details of where in the course your suggestion is"
-" related to, and why you are making that suggestion."
+"Please give us specific details of where in the course your suggestion is "
+"related to, and why you are making that suggestion."
 msgstr ""
+"S'il vous plaît, donnez-nous des détails précis sur la relation entre votre "
+"suggestion et la raison pour laquelle vous faites cette suggestion."
 
 #: edx-platform/cabinet-theme/lms/templates/help_modal.html:118
 msgid "Ask a question"
@@ -260,21 +264,25 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/help_modal.html:136
 msgid "Briefly state your question here"
-msgstr ""
+msgstr "Brièvement énoncez vos questions ici"
 
 #: edx-platform/cabinet-theme/lms/templates/help_modal.html:138
 #: edx-platform/cabinet-theme/lms/templates/help_modal.html:139
 msgid ""
-"Please tell us the details of where in the course your question relates "
-"to so that we can give you a detailed answer."
+"Please tell us the details of where in the course your question relates to so "
+"that we can give you a detailed answer."
 msgstr ""
+"Veuillez nous indiquer les détails du cours auquel votre question se rapporte "
+"afin que nous puissions vous donner une réponse détaillée."
 
 #: edx-platform/cabinet-theme/lms/templates/help_modal.html:157
 msgid ""
-"Please note: The support team is English speaking. While we will do our "
-"best to address your inquiry in any language, our responses will be in "
-"English."
+"Please note: The support team is English speaking. While we will do our best to "
+"address your inquiry in any language, our responses will be in English."
 msgstr ""
+"L'équipe de support est anglophone. Bien que nous fassions de notre mieux pour "
+"répondre à votre demande dans n'importe quelle langue, nos réponses seront en "
+"anglais."
 
 #: edx-platform/cabinet-theme/lms/templates/help_modal.html:167
 msgid "Thank You!"
@@ -282,11 +290,10 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/help_modal.html:181
 msgid ""
-"Thank you for your inquiry or feedback.  We typically respond to a "
-"request within one business day (Monday to Friday, {open_time} UTC to "
-"{close_time} UTC.) In the meantime, please review our "
-"{link_start}detailed FAQs{link_end} where most questions have already "
-"been answered."
+"Thank you for your inquiry or feedback.  We typically respond to a request "
+"within one business day (Monday to Friday, {open_time} UTC to {close_time} "
+"UTC.) In the meantime, please review our {link_start}detailed FAQs{link_end} "
+"where most questions have already been answered."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/help_modal.html:230
@@ -403,8 +410,8 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/login.html:153
 msgid ""
-"Please provide the following information to log into your {platform_name}"
-" account."
+"Please provide the following information to log into your {platform_name} "
+"account."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/login.html:156
@@ -420,8 +427,7 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/login.html:159
 msgid ""
-"This is the e-mail address or username you used to register with "
-"{platform} "
+"This is the e-mail address or username you used to register with {platform} "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/login.html:161
@@ -496,8 +502,8 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/register-form.html:63
 msgid ""
-"Required fields are noted by <strong class=\"indicator\">bold text and an"
-" asterisk (*)</strong>."
+"Required fields are noted by <strong class=\"indicator\">bold text and an "
+"asterisk (*)</strong>."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/register-form.html:73
@@ -625,10 +631,9 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/register-sidebar.html:30
 msgid ""
-"Registering with {platform_name} gives you access to all of our current, "
-"future free and paid-for places. Not ready to take a course just yet? "
-"Registering puts you on our mailing list - we will update you as courses "
-"are added."
+"Registering with {platform_name} gives you access to all of our current, future "
+"free and paid-for places. Not ready to take a course just yet? Registering puts "
+"you on our mailing list - we will update you as courses are added."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/register-sidebar.html:34
@@ -637,10 +642,10 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/register-sidebar.html:35
 msgid ""
-"As part of joining {platform_name}, you will receive an email message "
-"with instructions for activating your account. Don't see the email? Check"
-" your spam folder and mark {platform_name} emails as 'not spam'. At "
-"{platform_name}, we communicate mostly through email."
+"As part of joining {platform_name}, you will receive an email message with "
+"instructions for activating your account. Don't see the email? Check your spam "
+"folder and mark {platform_name} emails as 'not spam'. At {platform_name}, we "
+"communicate mostly through email."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/register-sidebar.html:40
@@ -657,9 +662,8 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/register-sidebar.html:45
 msgid ""
-"You can find the answers to most of your questions in our list of FAQs. "
-"After you enroll in a course, you can also find answers in the course "
-"discussions."
+"You can find the answers to most of your questions in our list of FAQs. After "
+"you enroll in a course, you can also find answers in the course discussions."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/register.html:16
@@ -767,10 +771,9 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/certificates/invalid.html:10
 msgid ""
-"We cannot find a certificate with this URL or ID number. If you are "
-"trying to validate a certificate, make sure that the URL or ID number is "
-"correct. If you are sure that the URL or ID number is correct, contact "
-"support."
+"We cannot find a certificate with this URL or ID number. If you are trying to "
+"validate a certificate, make sure that the URL or ID number is correct. If you "
+"are sure that the URL or ID number is correct, contact support."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:42
@@ -781,10 +784,10 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:62
 msgid ""
-"The currently logged-in user account does not have permission to enroll "
-"in this course. You may need to {start_logout_tag}log out{end_tag} then "
-"try the enroll button again. Please visit the {start_help_tag}help "
-"page{end_tag} for a possible solution."
+"The currently logged-in user account does not have permission to enroll in this "
+"course. You may need to {start_logout_tag}log out{end_tag} then try the enroll "
+"button again. Please visit the {start_help_tag}help page{end_tag} for a "
+"possible solution."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:125
@@ -840,11 +843,11 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:241
 msgid "Enroll now"
-msgstr ""
+msgstr "Inscrivez-vous maintenant"
 
 #: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:246
 msgid "Or explore other courses"
-msgstr ""
+msgstr "Ou explorer d'autres cours"
 
 #: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:275
 msgid "View About Page in studio"
@@ -857,8 +860,8 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:288
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_course_listing.html:510
 msgid ""
-"You must successfully complete {link_start}{prc_display}{link_end} before"
-" you begin this course."
+"You must successfully complete {link_start}{prc_display}{link_end} before you "
+"begin this course."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/courseware/course_about.html:298
@@ -920,8 +923,7 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/courseware/info.html:31
 msgid ""
-"You are not currently enrolled in this course. {link_start}Sign up "
-"now{link_end}"
+"You are not currently enrolled in this course. {link_start}Sign up now{link_end}"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/courseware/info.html:66
@@ -976,27 +978,27 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_certificate_information.html:58
 msgid ""
-"Your verified {cert_name_long} is being held pending confirmation that "
-"the issuance of your {cert_name_short} is in compliance with strict U.S. "
-"embargoes on Iran, Cuba, Syria and Sudan. If you think our system has "
-"mistakenly identified you as being connected with one of those countries,"
-" please let us know by contacting {email}. If you would like a refund on "
-"your {cert_name_long}, please contact our billing address {billing_email}"
+"Your verified {cert_name_long} is being held pending confirmation that the "
+"issuance of your {cert_name_short} is in compliance with strict U.S. embargoes "
+"on Iran, Cuba, Syria and Sudan. If you think our system has mistakenly "
+"identified you as being connected with one of those countries, please let us "
+"know by contacting {email}. If you would like a refund on your "
+"{cert_name_long}, please contact our billing address {billing_email}"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_certificate_information.html:62
 msgid ""
-"Your {cert_name_long} is being held pending confirmation that the "
-"issuance of your {cert_name_short} is in compliance with strict U.S. "
-"embargoes on Iran, Cuba, Syria and Sudan. If you think our system has "
-"mistakenly identified you as being connected with one of those countries,"
-" please let us know by contacting {email}."
+"Your {cert_name_long} is being held pending confirmation that the issuance of "
+"your {cert_name_short} is in compliance with strict U.S. embargoes on Iran, "
+"Cuba, Syria and Sudan. If you think our system has mistakenly identified you as "
+"being connected with one of those countries, please let us know by contacting "
+"{email}."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_certificate_information.html:66
 msgid ""
-"Your certificate was not issued because you do not have a current "
-"verified identity with {platform_name}. "
+"Your certificate was not issued because you do not have a current verified "
+"identity with {platform_name}. "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_certificate_information.html:67
@@ -1030,8 +1032,7 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_certificate_information.html:105
 msgid ""
-"This link will open/download a PDF document of your verified "
-"{cert_name_long}."
+"This link will open/download a PDF document of your verified {cert_name_long}."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_certificate_information.html:106
@@ -1052,10 +1053,9 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_certificate_information.html:140
 msgid ""
-"Since we did not have a valid set of verification photos from you when "
-"your {cert_name_long} was generated, we could not grant you a verified "
-"{cert_name_short}. An honor code {cert_name_short} has been granted "
-"instead."
+"Since we did not have a valid set of verification photos from you when your "
+"{cert_name_long} was generated, we could not grant you a verified "
+"{cert_name_short}. An honor code {cert_name_short} has been granted instead."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_course_listing.html:63
@@ -1170,18 +1170,18 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_course_listing.html:373
 msgid ""
-"You can no longer access this course because payment has not yet been "
-"received. You can contact the account holder to request payment, or you "
-"can unenroll from this course"
+"You can no longer access this course because payment has not yet been received. "
+"You can contact the account holder to request payment, or you can unenroll from "
+"this course"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_course_listing.html:377
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_course_listing.html:483
 msgid ""
-"You can no longer access this course because payment has not yet been "
-"received. You can {contact_link_start}contact the account "
-"holder{contact_link_end} to request payment, or you can "
-"{unenroll_link_start}unenroll{unenroll_link_end} from this course"
+"You can no longer access this course because payment has not yet been received. "
+"You can {contact_link_start}contact the account holder{contact_link_end} to "
+"request payment, or you can {unenroll_link_start}unenroll{unenroll_link_end} "
+"from this course"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_course_listing.html:405
@@ -1212,8 +1212,8 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_course_listing.html:421
 msgid ""
-"You will see a message on your dashboard when the verification process is"
-" complete (usually within 1-2 days)."
+"You will see a message on your dashboard when the verification process is "
+"complete (usually within 1-2 days)."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_course_listing.html:423
@@ -1222,9 +1222,9 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_course_listing.html:424
 msgid ""
-"You have submitted your reverification information. You will see a "
-"message on your dashboard when the verification process is complete "
-"(usually within 1-2 days)."
+"You have submitted your reverification information. You will see a message on "
+"your dashboard when the verification process is complete (usually within 1-2 "
+"days)."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_course_listing.html:426
@@ -1241,22 +1241,21 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_course_listing.html:434
 msgid ""
-"Your current verification will expire in {days} days. {start_link}Re-"
-"verify your identity now{end_link} using a webcam and a government-issued"
-" photo ID."
+"Your current verification will expire in {days} days. {start_link}Re-verify "
+"your identity now{end_link} using a webcam and a government-issued photo ID."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_course_listing.html:450
 msgid ""
-"Pursue a {cert_name_long} to highlight the knowledge and skills you gain "
-"in this course."
+"Pursue a {cert_name_long} to highlight the knowledge and skills you gain in "
+"this course."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_course_listing.html:452
 msgid ""
-"It's official. It's easily shareable. It's a proven motivator to complete"
-" the course. {line_break}{link_start}Learn more about the verified "
-"{cert_name_long}{link_end}."
+"It's official. It's easily shareable. It's a proven motivator to complete the "
+"course. {line_break}{link_start}Learn more about the verified {cert_name_long}"
+"{link_end}."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_course_listing.html:472
@@ -1265,8 +1264,8 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_credit_info.html:17
 msgid ""
-"You have completed this course and are eligible to purchase course "
-"credit. Select <strong>Get Credit</strong> to get started."
+"You have completed this course and are eligible to purchase course credit. "
+"Select <strong>Get Credit</strong> to get started."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_credit_info.html:19
@@ -1279,9 +1278,9 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_credit_info.html:35
 msgid ""
-"Thank you for your payment. To receive course credit, you must now "
-"request credit at the {link_to_provider_site} website. Select <b>Request "
-"Credit</b> to get started."
+"Thank you for your payment. To receive course credit, you must now request "
+"credit at the {link_to_provider_site} website. Select <b>Request Credit</b> to "
+"get started."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_credit_info.html:40
@@ -1290,8 +1289,8 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_credit_info.html:45
 msgid ""
-"{provider_name} has received your course credit request. We will update "
-"you when credit processing is complete."
+"{provider_name} has received your course credit request. We will update you "
+"when credit processing is complete."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_credit_info.html:47
@@ -1300,9 +1299,8 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_credit_info.html:52
 msgid ""
-"<b>Congratulations!</b> {provider_name} has approved your request for "
-"course credit. To see your course credit, visit the "
-"{link_to_provider_site} website."
+"<b>Congratulations!</b> {provider_name} has approved your request for course "
+"credit. To see your course credit, visit the {link_to_provider_site} website."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_credit_info.html:58
@@ -1317,8 +1315,7 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_credit_info.html:73
 msgid ""
-"An error occurred with this transaction. For help, contact "
-"{support_email}."
+"An error occurred with this transaction. For help, contact {support_email}."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_status_verification.html:10
@@ -1327,8 +1324,8 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_status_verification.html:11
 msgid ""
-"Your edX verification has been approved. Your verification is effective "
-"for one year after submission."
+"Your edX verification has been approved. Your verification is effective for one "
+"year after submission."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_status_verification.html:15
@@ -1337,8 +1334,8 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_status_verification.html:16
 msgid ""
-"Your edX ID verification is pending. Your verification information has "
-"been submitted and will be reviewed shortly."
+"Your edX ID verification is pending. Your verification information has been "
+"submitted and will be reviewed shortly."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_status_verification.html:20
@@ -1348,8 +1345,8 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_status_verification.html:22
 msgid ""
 "Your verification submission was not accepted. To receive a verified "
-"certificate, you must submit a new photo of yourself and your government-"
-"issued photo ID before the verification deadline for your course."
+"certificate, you must submit a new photo of yourself and your government-issued "
+"photo ID before the verification deadline for your course."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_status_verification.html:26
@@ -1367,9 +1364,9 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_status_verification.html:41
 msgid ""
-"Your verification has expired. To receive a verified certificate, you "
-"must submit a new photo of yourself and your government-issued photo ID "
-"before the verification deadline for your course."
+"Your verification has expired. To receive a verified certificate, you must "
+"submit a new photo of yourself and your government-issued photo ID before the "
+"verification deadline for your course."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/dashboard/_dashboard_third_party_error.html:7
@@ -1460,7 +1457,7 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/navigation/navbar-logo-header.html:153
 msgid "Hi"
-msgstr ""
+msgstr "Hé"
 
 #: edx-platform/cabinet-theme/lms/templates/navigation/navbar-logo-header.html:159
 msgid "Toggle navigation"
@@ -1482,8 +1479,8 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/navigation/navigation.html:57
 msgid ""
-"{begin_strong}Warning:{end_strong} Your browser is not fully supported. "
-"We strongly recommend using {chrome_link} or {ff_link}."
+"{begin_strong}Warning:{end_strong} Your browser is not fully supported. We "
+"strongly recommend using {chrome_link} or {ff_link}."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/navigation/bootstrap/navbar-authenticated.html:44
@@ -1504,9 +1501,9 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/registration/account_activation_sidebar_notice.html:18
 msgid ""
-"Check your {email_start}{email}{email_end} inbox for an account "
-"activation link from {platform_name}. If you need help, contact "
-"{link_start}{platform_name} Support{link_end}."
+"Check your {email_start}{email}{email_end} inbox for an account activation link "
+"from {platform_name}. If you need help, contact {link_start}{platform_name} "
+"Support{link_end}."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/registration/activate_account_notice.html:9
@@ -1515,10 +1512,10 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/registration/activate_account_notice.html:11
 msgid ""
-"There's just one more step: Before you enroll in a course, you need to "
-"activate your account. We've sent an email message to "
-"{email_start}{email}{email_end} with instructions for activating your "
-"account. If you don't receive this message, check your spam folder."
+"There's just one more step: Before you enroll in a course, you need to activate "
+"your account. We've sent an email message to {email_start}{email}{email_end} "
+"with instructions for activating your account. If you don't receive this "
+"message, check your spam folder."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/registration/password_reset_complete.html:13
@@ -1532,8 +1529,7 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/registration/password_reset_complete.html:38
 msgid ""
-"Your password has been reset. {start_link}Sign-in to your "
-"account.{end_link}"
+"Your password has been reset. {start_link}Sign-in to your account.{end_link}"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/registration/password_reset_confirm.html:45
@@ -1574,8 +1570,8 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/registration/password_reset_done.html:8
 msgid ""
-"We've e-mailed you instructions for setting your password to the e-mail "
-"address you submitted. You should be receiving it shortly."
+"We've e-mailed you instructions for setting your password to the e-mail address "
+"you submitted. You should be receiving it shortly."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/cookies.html:15
@@ -1593,13 +1589,12 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/cookies.html:18
 msgid ""
-"As is common practice with almost all professional websites this site "
-"uses cookies, which are tiny files that are downloaded to your computer, "
-"to improve your experience. This page describes what information they "
-"gather, how we use it and why we sometimes need to store these cookies. "
-"We will also share how you can prevent these cookies from being stored "
-"however this may downgrade or 'break' certain elements of the sites "
-"functionality"
+"As is common practice with almost all professional websites this site uses "
+"cookies, which are tiny files that are downloaded to your computer, to improve "
+"your experience. This page describes what information they gather, how we use "
+"it and why we sometimes need to store these cookies. We will also share how you "
+"can prevent these cookies from being stored however this may downgrade or "
+"'break' certain elements of the sites functionality"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/cookies.html:19
@@ -1608,12 +1603,11 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/cookies.html:20
 msgid ""
-"We use cookies for a variety of reasons detailed below. Unfortunately in "
-"most cases there are no industry standard options for disabling cookies "
-"without completely disabling the functionality and features they add to "
-"this site. It is recommended that you leave on all cookies if you are not"
-" sure whether you need them or not in case they are used to provide a "
-"service that you use"
+"We use cookies for a variety of reasons detailed below. Unfortunately in most "
+"cases there are no industry standard options for disabling cookies without "
+"completely disabling the functionality and features they add to this site. It "
+"is recommended that you leave on all cookies if you are not sure whether you "
+"need them or not in case they are used to provide a service that you use"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/cookies.html:21
@@ -1623,11 +1617,11 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/static_templates/cookies.html:22
 msgid ""
 "You can prevent the setting of cookies by adjusting the settings on your "
-"browser (see your browser Help for how to do this). Be aware that "
-"disabling cookies will affect the functionality of this and many other "
-"websites that you visit. Disabling cookies will usually result in also "
-"disabling certain functionality and features of the this site. Therefore "
-"it is recommended that you do not disable cookies"
+"browser (see your browser Help for how to do this). Be aware that disabling "
+"cookies will affect the functionality of this and many other websites that you "
+"visit. Disabling cookies will usually result in also disabling certain "
+"functionality and features of the this site. Therefore it is recommended that "
+"you do not disable cookies"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/cookies.html:23
@@ -1636,36 +1630,34 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/cookies.html:24
 msgid ""
-"If you create an account with us then we will use cookies for the "
-"management of the signup process and general administration. These "
-"cookies will usually be deleted when you log out however in some cases "
-"they may remain afterwards to remember your site preferences when logged "
-"out"
+"If you create an account with us then we will use cookies for the management of "
+"the signup process and general administration. These cookies will usually be "
+"deleted when you log out however in some cases they may remain afterwards to "
+"remember your site preferences when logged out"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/cookies.html:25
 msgid ""
-"We use cookies when you are logged in so that we can remember this fact. "
-"This prevents you from having to log in every single time you visit a new"
-" page. These cookies are typically removed or cleared when you log out to"
-" ensure that you can only access restricted features and areas when "
-"logged in"
+"We use cookies when you are logged in so that we can remember this fact. This "
+"prevents you from having to log in every single time you visit a new page. "
+"These cookies are typically removed or cleared when you log out to ensure that "
+"you can only access restricted features and areas when logged in"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/cookies.html:26
 msgid ""
-"When you submit data to through a form such as those found on contact "
-"pages or comment forms cookies may be set to remember your user details "
-"for future correspondence"
+"When you submit data to through a form such as those found on contact pages or "
+"comment forms cookies may be set to remember your user details for future "
+"correspondence"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/cookies.html:27
 msgid ""
-"In order to provide you with a great experience on this site we provide "
-"the functionality to set your preferences for how this site runs when you"
-" use it. In order to remember your preferences we need to set cookies so "
-"that this information can be called whenever you interact with a page is "
-"affected by your preferences"
+"In order to provide you with a great experience on this site we provide the "
+"functionality to set your preferences for how this site runs when you use it. "
+"In order to remember your preferences we need to set cookies so that this "
+"information can be called whenever you interact with a page is affected by your "
+"preferences"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/cookies.html:28
@@ -1674,19 +1666,19 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/cookies.html:29
 msgid ""
-"In some special cases we also use cookies provided by trusted third "
-"parties. The following section details which third party cookies you "
-"might encounter through this site"
+"In some special cases we also use cookies provided by trusted third parties. "
+"The following section details which third party cookies you might encounter "
+"through this site"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/cookies.html:30
 msgid ""
-"This site uses Google Analytics which is one of the most widespread and "
-"trusted analytics solution on the web for helping us to understand how "
-"you use the site and ways that we can improve your experience. These "
-"cookies may track things such as how long you spend on the site and the "
-"pages that you visit so we can continue to produce engaging content. For "
-"more information on Google Analytics cookies, see the official"
+"This site uses Google Analytics which is one of the most widespread and trusted "
+"analytics solution on the web for helping us to understand how you use the site "
+"and ways that we can improve your experience. These cookies may track things "
+"such as how long you spend on the site and the pages that you visit so we can "
+"continue to produce engaging content. For more information on Google Analytics "
+"cookies, see the official"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/cookies.html:30
@@ -1695,10 +1687,10 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/cookies.html:31
 msgid ""
-"In some cases we may provide you with custom content based on what you "
-"tell us about yourself either directly or indirectly by linking a social "
-"media account. These types of cookies simply allow us to provide you with"
-" content that we feel may be of interest to you"
+"In some cases we may provide you with custom content based on what you tell us "
+"about yourself either directly or indirectly by linking a social media account. "
+"These types of cookies simply allow us to provide you with content that we feel "
+"may be of interest to you"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/cookies.html:32
@@ -1707,12 +1699,11 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/cookies.html:33
 msgid ""
-"Hopefully that has clarified things for you and as was previously "
-"mentioned if there is something that you aren't sure whether you need or "
-"not it's usually safer to leave cookies enabled in case it does interact "
-"with one of the features you use on our site. However if you are still "
-"looking for more information then you can contact us through one of our "
-"preferred contact methods"
+"Hopefully that has clarified things for you and as was previously mentioned if "
+"there is something that you aren't sure whether you need or not it's usually "
+"safer to leave cookies enabled in case it does interact with one of the "
+"features you use on our site. However if you are still looking for more "
+"information then you can contact us through one of our preferred contact methods"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:11
@@ -1750,34 +1741,32 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:19
 msgid ""
-"prior to registering or using any portion of the website (the 'Site,' "
-"which consists of all content and pages located within the"
+"prior to registering or using any portion of the website (the 'Site,' which "
+"consists of all content and pages located within the"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:19
 msgid ""
-"web domain), including accessing any course material, chat rooms, or "
-"other electronic services. These TOS, the Privacy Policy and the Honor "
-"Code are agreements (the 'Agreements') between you and"
+"web domain), including accessing any course material, chat rooms, or other "
+"electronic services. These TOS, the Privacy Policy and the Honor Code are "
+"agreements (the 'Agreements') between you and"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:19
 msgid ""
-"By using the Site, you accept and agree to be legally bound by the "
-"Agreements, whether or not you are a registered user. If you do not "
-"understand or do not wish to be bound by the terms of the Agreements, you"
-" should not use the Site."
+"By using the Site, you accept and agree to be legally bound by the Agreements, "
+"whether or not you are a registered user. If you do not understand or do not "
+"wish to be bound by the terms of the Agreements, you should not use the Site."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:20
 msgid ""
-"reserves the right to modify these TOS at any time without advance "
-"notice. Any changes to these TOS will be effective immediately upon "
-"posting on this page, with an updated effective date. By accessing the "
-"Site after any changes have been made, you signify your agreement on a "
-"prospective basis to the modified TOS and all of the changes. Be sure to "
-"return to this page periodically to ensure familiarity with the most "
-"current version of these TOS."
+"reserves the right to modify these TOS at any time without advance notice. Any "
+"changes to these TOS will be effective immediately upon posting on this page, "
+"with an updated effective date. By accessing the Site after any changes have "
+"been made, you signify your agreement on a prospective basis to the modified "
+"TOS and all of the changes. Be sure to return to this page periodically to "
+"ensure familiarity with the most current version of these TOS."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:21
@@ -1786,10 +1775,10 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:22
 msgid ""
-"offers online courses that include opportunities for instructor-to-"
-"student and student-to-student interactivity, individual assessment of a "
-"student's work and, for students who demonstrate their mastery of "
-"subjects, a professional certificate or other acknowledgment."
+"offers online courses that include opportunities for instructor-to-student and "
+"student-to-student interactivity, individual assessment of a student's work "
+"and, for students who demonstrate their mastery of subjects, a professional "
+"certificate or other acknowledgment."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:23
@@ -1800,15 +1789,14 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:24
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:24
 msgid ""
-"You agree that you are responsible for your own use of the Site and for "
-"your User Postings. 'User Postings' include all content submitted, "
-"posted, published or distributed on the Site by you or other users of the"
-" Site, including but not limited to all forum posts, wiki edits, notes, "
-"questions, comments, videos and file uploads. You agree that you will use"
-" the Site in compliance with these TOS and all applicable local, national"
-" and international laws, rules and regulations, including copyright laws,"
-" any laws regarding the transmission of technical data exported from your"
-" country of residence."
+"You agree that you are responsible for your own use of the Site and for your "
+"User Postings. 'User Postings' include all content submitted, posted, published "
+"or distributed on the Site by you or other users of the Site, including but not "
+"limited to all forum posts, wiki edits, notes, questions, comments, videos and "
+"file uploads. You agree that you will use the Site in compliance with these TOS "
+"and all applicable local, national and international laws, rules and "
+"regulations, including copyright laws, any laws regarding the transmission of "
+"technical data exported from your country of residence."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:25
@@ -1817,8 +1805,8 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:25
 msgid ""
-"services, you will not use the Site in any manner intended to damage, "
-"disable, overburden or impair any"
+"services, you will not use the Site in any manner intended to damage, disable, "
+"overburden or impair any"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:25
@@ -1827,17 +1815,17 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:25
 msgid ""
-"server or to interfere with any other party's use and enjoyment of the "
-"Site. You may not attempt to gain unauthorized access to the Site, other "
-"accounts, computer systems or networks connected to any"
+"server or to interfere with any other party's use and enjoyment of the Site. "
+"You may not attempt to gain unauthorized access to the Site, other accounts, "
+"computer systems or networks connected to any"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:25
 msgid ""
-"server through hacking, password mining or any other means. You may not "
-"obtain or attempt to obtain any materials or information stored on the "
-"Site, its servers or associated computers through any means not "
-"intentionally made available through the Site."
+"server through hacking, password mining or any other means. You may not obtain "
+"or attempt to obtain any materials or information stored on the Site, its "
+"servers or associated computers through any means not intentionally made "
+"available through the Site."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:26
@@ -1858,8 +1846,8 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:31
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:31
 msgid ""
-"Content that infringes another's intellectual property, including, but "
-"not limited to, copyrights or trademarks;"
+"Content that infringes another's intellectual property, including, but not "
+"limited to, copyrights or trademarks;"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:32
@@ -1880,28 +1868,27 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:35
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:35
 msgid ""
-"Viruses, trojan horses, worms, time bombs, corrupted files, malware, "
-"spyware or any other similar software that may damage the operation of "
-"another's computer or property;"
+"Viruses, trojan horses, worms, time bombs, corrupted files, malware, spyware or "
+"any other similar software that may damage the operation of another's computer "
+"or property;"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:36
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:36
 msgid ""
-"Content that contains intentionally inaccurate information or that is "
-"posted with the intent of misleading others."
+"Content that contains intentionally inaccurate information or that is posted "
+"with the intent of misleading others."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:39
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:39
 msgid ""
-"Furthermore, you agree not to scrape, or otherwise download in bulk, any "
-"Site content, including but not limited to a list or directory of users "
-"on the system, on-line textbooks, User Postings or user information. You "
-"agree not to misrepresent or attempt to misrepresent your identity while "
-"using the Site (although you are welcome and encouraged to use an "
-"anonymous username in the forums and to act in a manner that keeps your "
-"identity concealed)."
+"Furthermore, you agree not to scrape, or otherwise download in bulk, any Site "
+"content, including but not limited to a list or directory of users on the "
+"system, on-line textbooks, User Postings or user information. You agree not to "
+"misrepresent or attempt to misrepresent your identity while using the Site "
+"(although you are welcome and encouraged to use an anonymous username in the "
+"forums and to act in a manner that keeps your identity concealed)."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:40
@@ -1912,21 +1899,21 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:41
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:41
 msgid ""
-"In order to participate fully in Site activities, you must provide your "
-"name, an email address and a user password in order to create a user "
-"account ('User Account'). You agree that you will never divulge or share "
-"access or access information for your User Account with any third party "
-"for any reason. In setting up your User Account, you may be prompted to "
-"enter additional optional information (e.g., your address). You represent"
-" that all information provided by you is accurate and current. You agree "
-"to maintain and update your information to keep it accurate and current."
+"In order to participate fully in Site activities, you must provide your name, "
+"an email address and a user password in order to create a user account ('User "
+"Account'). You agree that you will never divulge or share access or access "
+"information for your User Account with any third party for any reason. In "
+"setting up your User Account, you may be prompted to enter additional optional "
+"information (e.g., your address). You represent that all information provided "
+"by you is accurate and current. You agree to maintain and update your "
+"information to keep it accurate and current."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:42
 msgid ""
-"We care about the confidentiality and security of your personal "
-"information. Please see our Privacy Policy for more information about "
-"what information about you"
+"We care about the confidentiality and security of your personal information. "
+"Please see our Privacy Policy for more information about what information about "
+"you"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:42
@@ -1944,23 +1931,22 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:44
 msgid ""
-"Unless indicated as being in the public domain, the content on the Site "
-"is protected by United Kingdom and foreign copyright laws unless covered "
-"by"
+"Unless indicated as being in the public domain, the content on the Site is "
+"protected by United Kingdom and foreign copyright laws unless covered by"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:45
 msgid ""
-"Unless otherwise expressly stated on the Site, the texts, exams, video, "
-"images and other instructional materials provided with the courses "
-"offered on this Site are for your personal use in connection with those "
-"courses only. We aim to make much of the"
+"Unless otherwise expressly stated on the Site, the texts, exams, video, images "
+"and other instructional materials provided with the courses offered on this "
+"Site are for your personal use in connection with those courses only. We aim to "
+"make much of the"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:45
 msgid ""
-"course content available under more open license terms that will help "
-"create a vibrant ecosystem of contributors and further"
+"course content available under more open license terms that will help create a "
+"vibrant ecosystem of contributors and further"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:45
@@ -1970,19 +1956,19 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:46
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:46
 msgid ""
-"Certain videos, reference documents, digital textbooks, articles and "
-"other information on the Site are used with the permission of third "
-"parties, and use of that information is subject to certain rules and "
-"conditions, which will be posted along with the information. By using "
-"this Site you agree to abide by all such rules and conditions."
+"Certain videos, reference documents, digital textbooks, articles and other "
+"information on the Site are used with the permission of third parties, and use "
+"of that information is subject to certain rules and conditions, which will be "
+"posted along with the information. By using this Site you agree to abide by all "
+"such rules and conditions."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:47
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:47
 msgid ""
-"You agree to retain all copyright and other notices on any content you "
-"obtain from the Site. All rights in the Site and its content, if not "
-"expressly granted, are reserved."
+"You agree to retain all copyright and other notices on any content you obtain "
+"from the Site. All rights in the Site and its content, if not expressly "
+"granted, are reserved."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:48
@@ -1997,25 +1983,24 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:50
 msgid ""
-"By submitting or distributing your User Postings, you affirm, represent "
-"and warrant (1) that you have the necessary rights, licenses, consents "
-"and/or permissions to reproduce and publish the User Postings and to "
-"authorize"
+"By submitting or distributing your User Postings, you affirm, represent and "
+"warrant (1) that you have the necessary rights, licenses, consents and/or "
+"permissions to reproduce and publish the User Postings and to authorize"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:50
 msgid ""
-"and its users to reproduce, modify, publish and otherwise use and "
-"distribute your User Postings in a manner consistent with the licenses "
-"granted by you below, and (2) that neither your submission of your User "
-"Postings nor the exercise of the licenses granted below will infringe or "
-"violate the rights of any third party. You, and not"
+"and its users to reproduce, modify, publish and otherwise use and distribute "
+"your User Postings in a manner consistent with the licenses granted by you "
+"below, and (2) that neither your submission of your User Postings nor the "
+"exercise of the licenses granted below will infringe or violate the rights of "
+"any third party. You, and not"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:50
 msgid ""
-"are solely responsible for your User Postings and the consequences of "
-"posting or publishing them."
+"are solely responsible for your User Postings and the consequences of posting "
+"or publishing them."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:51
@@ -2028,12 +2013,12 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:52
 msgid ""
-"a worldwide, non-exclusive, transferable, assignable, sub licensable, "
-"fully paid-up, royalty-free, perpetual, irrevocable right and license to "
-"host, transfer, display, perform, reproduce, modify, distribute, re-"
-"distribute, relicense and otherwise use, make available and exploit your "
-"User Postings, in whole or in part, in any form and in any media formats "
-"and through any media channels (now known or hereafter developed)."
+"a worldwide, non-exclusive, transferable, assignable, sub licensable, fully "
+"paid-up, royalty-free, perpetual, irrevocable right and license to host, "
+"transfer, display, perform, reproduce, modify, distribute, re-distribute, "
+"relicense and otherwise use, make available and exploit your User Postings, in "
+"whole or in part, in any form and in any media formats and through any media "
+"channels (now known or hereafter developed)."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:53
@@ -2047,10 +2032,9 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:54
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:54
 msgid ""
-"By submitting or distributing your User Postings, you hereby grant to "
-"each user of the Site a non-exclusive license to access and use your User"
-" Postings in connection with their use of the Site for their own personal"
-" purposes."
+"By submitting or distributing your User Postings, you hereby grant to each user "
+"of the Site a non-exclusive license to access and use your User Postings in "
+"connection with their use of the Site for their own personal purposes."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:55
@@ -2061,10 +2045,9 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:56
 msgid ""
 "and the employers providing courses on the Site (collectively, the 'X "
-"employers') may offer a certificate of achievement or other "
-"acknowledgment (a 'Professional Certificate') for students who, in their "
-"judgment, have satisfactorily demonstrated mastery of the course "
-"material."
+"employers') may offer a certificate of achievement or other acknowledgment (a "
+"'Professional Certificate') for students who, in their judgment, have "
+"satisfactorily demonstrated mastery of the course material."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:57
@@ -2073,21 +2056,21 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:57
 msgid ""
-"under the name of the underlying X employer from where the course "
-"originated, i.e. British Council, Tech.IO. etc."
+"under the name of the underlying X employer from where the course originated, i."
+"e. British Council, Tech.IO. etc."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:58
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:58
 msgid ""
-"The decision whether a Certificate will be awarded to a given student "
-"will be solely within the discretion of the awarding X employer."
+"The decision whether a Certificate will be awarded to a given student will be "
+"solely within the discretion of the awarding X employer."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:59
 msgid ""
-"and/or the X employers providing courses on the Site may choose not to "
-"offer a Certificate for some courses."
+"and/or the X employers providing courses on the Site may choose not to offer a "
+"Certificate for some courses."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:60
@@ -2096,17 +2079,16 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:60
 msgid ""
-"you will not be an applicant for admission to, or enrolled in, any degree"
-" program of the X employer as a result of registering for or completing a"
-" course provided by such X employer through"
+"you will not be an applicant for admission to, or enrolled in, any degree "
+"program of the X employer as a result of registering for or completing a course "
+"provided by such X employer through"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:60
 msgid ""
-"You will not be entitled to use any of the resources of the X employer "
-"beyond the online courses provided on the Site, nor will you be eligible "
-"to employment privileges or benefits provided to employees of the X "
-"employer."
+"You will not be entitled to use any of the resources of the X employer beyond "
+"the online courses provided on the Site, nor will you be eligible to employment "
+"privileges or benefits provided to employees of the X employer."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:61
@@ -2133,14 +2115,13 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:64
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:64
 msgid ""
-"Likewise, the names, logos, and seals of the other X employers are "
-"Trademarks owned by the respective X employer. You may not use any of "
-"these Trademarks, or any variations thereof, without the owner's prior "
-"written consent. You may not use any of these Trademarks, or any "
-"variations thereof, for promotional purposes, or in any way that "
-"deliberately or inadvertently claims, suggests or, in these institutions'"
-" sole judgment, gives the appearance or impression of a relationship with"
-" or endorsement by these organisations."
+"Likewise, the names, logos, and seals of the other X employers are Trademarks "
+"owned by the respective X employer. You may not use any of these Trademarks, or "
+"any variations thereof, without the owner's prior written consent. You may not "
+"use any of these Trademarks, or any variations thereof, for promotional "
+"purposes, or in any way that deliberately or inadvertently claims, suggests or, "
+"in these institutions' sole judgment, gives the appearance or impression of a "
+"relationship with or endorsement by these organisations."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:65
@@ -2149,18 +2130,18 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:65
 msgid ""
-"or the X employers that appear on the Site or on or through the services "
-"made available on or through the Site, if any, are the property of their "
-"respective owners."
+"or the X employers that appear on the Site or on or through the services made "
+"available on or through the Site, if any, are the property of their respective "
+"owners."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:66
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:66
 msgid ""
-"Nothing contained on the Site should be construed as granting, by "
-"implication, estoppel or otherwise, any license or right to use any "
-"Trademark displayed on the Site without the written permission of the "
-"owner of the applicable Trademark."
+"Nothing contained on the Site should be construed as granting, by implication, "
+"estoppel or otherwise, any license or right to use any Trademark displayed on "
+"the Site without the written permission of the owner of the applicable "
+"Trademark."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:67
@@ -2170,8 +2151,8 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:68
 msgid ""
-"Copyright owners who believe their material has been infringed on the "
-"Site should contact"
+"Copyright owners who believe their material has been infringed on the Site "
+"should contact"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:68
@@ -2186,40 +2167,37 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:72
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:72
 msgid ""
-"Identification of the copyrighted work, or, in the case of multiple works"
-" at the same location, a representative list of such works at that site."
+"Identification of the copyrighted work, or, in the case of multiple works at "
+"the same location, a representative list of such works at that site."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:73
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:73
 msgid ""
-"Identification of the material that is claimed to be infringing or to be "
-"the subject of infringing activity. You must include sufficient "
-"information for us to locate the material (e.g., URL, IP address, "
-"computer name)."
+"Identification of the material that is claimed to be infringing or to be the "
+"subject of infringing activity. You must include sufficient information for us "
+"to locate the material (e.g., URL, IP address, computer name)."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:74
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:74
 msgid ""
-"Information for us to be able to contact the complaining party (e.g., "
-"email address, phone number)."
+"Information for us to be able to contact the complaining party (e.g., email "
+"address, phone number)."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:75
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:75
 msgid ""
-"A statement that the complaining party believes that the use of the "
-"material has not been authorized by the copyright owner or an authorized "
-"agent."
+"A statement that the complaining party believes that the use of the material "
+"has not been authorized by the copyright owner or an authorized agent."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:76
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:76
 msgid ""
-"A statement that the information in the notification is accurate and that"
-" the complaining party is authorized to act on behalf of the copyright "
-"owner."
+"A statement that the information in the notification is accurate and that the "
+"complaining party is authorized to act on behalf of the copyright owner."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:79
@@ -2230,12 +2208,12 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:80
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:80
 msgid ""
-"THE SITE AND ANY INFORMATION, CONTENT OR SERVICES MADE AVAILABLE ON OR "
-"THROUGH THE SITE ARE PROVIDED 'AS IS' AND 'AS AVAILABLE' WITHOUT WARRANTY"
-" OF ANY KIND (EXPRESS, IMPLIED OR OTHERWISE), INCLUDING, WITHOUT "
-"LIMITATION, ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A "
-"PARTICULAR PURPOSE AND NON-INFRINGEMENT, EXCEPT INSOFAR AS ANY SUCH "
-"IMPLIED WARRANTIES MAY NOT BE DISCLAIMED UNDER APPLICABLE LAW."
+"THE SITE AND ANY INFORMATION, CONTENT OR SERVICES MADE AVAILABLE ON OR THROUGH "
+"THE SITE ARE PROVIDED 'AS IS' AND 'AS AVAILABLE' WITHOUT WARRANTY OF ANY KIND "
+"(EXPRESS, IMPLIED OR OTHERWISE), INCLUDING, WITHOUT LIMITATION, ANY IMPLIED "
+"WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-"
+"INFRINGEMENT, EXCEPT INSOFAR AS ANY SUCH IMPLIED WARRANTIES MAY NOT BE "
+"DISCLAIMED UNDER APPLICABLE LAW."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:81
@@ -2244,35 +2222,33 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:81
 msgid ""
-"PARTICIPANTS (AS HERINAFTER DEFINED) DO NOT WARRANT THAT THE SITE WILL "
-"OPERATE IN AN UNINTERRUPTED OR ERROR-FREE MANNER, THAT THE SITE IS FREE "
-"OF VIRUSES OR OTHER HARMFUL COMPONENTS, OR THAT THE COURSES OR CONTENT "
-"PROVIDED WILL MEET YOUR NEEDS OR EXPECTATIONS."
+"PARTICIPANTS (AS HERINAFTER DEFINED) DO NOT WARRANT THAT THE SITE WILL OPERATE "
+"IN AN UNINTERRUPTED OR ERROR-FREE MANNER, THAT THE SITE IS FREE OF VIRUSES OR "
+"OTHER HARMFUL COMPONENTS, OR THAT THE COURSES OR CONTENT PROVIDED WILL MEET "
+"YOUR NEEDS OR EXPECTATIONS."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:81
 msgid ""
 "PARTICIPANTS ALSO MAKE NO WARRANTY ABOUT THE ACCURACY, COMPLETENESS, "
-"TIMELINESS, OR QUALITY OF THE SITE OR ANY COURSES OR CONTENT, OR THAT ANY"
-" PARTICULAR COURSES OR CONTENT WILL CONTINUE TO BE MADE AVAILABLE."
+"TIMELINESS, OR QUALITY OF THE SITE OR ANY COURSES OR CONTENT, OR THAT ANY "
+"PARTICULAR COURSES OR CONTENT WILL CONTINUE TO BE MADE AVAILABLE."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:81
 msgid ""
-"PARTICIPANTS' MEANS THE OTHER X EMPLOYERS, THE ENTITIES PROVIDING "
-"INFORMATION, CONTENT OR SERVICES FOR THE SITE, THE COURSE INSTRUCTORS AND"
-" THEIR STAFFS."
+"PARTICIPANTS' MEANS THE OTHER X EMPLOYERS, THE ENTITIES PROVIDING INFORMATION, "
+"CONTENT OR SERVICES FOR THE SITE, THE COURSE INSTRUCTORS AND THEIR STAFFS."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:82
 msgid ""
-"USE OF THE SITE, AND THE CONTENT AND SERVICES OBTAINED FROM OR THROUGH "
-"THE SITE, IS AT YOUR OWN RISK. YOUR ACCESS TO OR DOWNLOAD OF INFORMATION,"
-" MATERIALS OR DATA THROUGH THE SITE OR ANY REFERENCE SITES IS AT YOUR OWN"
-" DISCRETION AND RISK, AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE "
-"TO YOUR PROPERTY (INCLUDING YOUR COMPUTER SYSTEM) OR LOSS OF DATA THAT "
-"RESULTS FROM THE DOWNLOAD OR USE OF SUCH MATERIAL OR DATA, UNLESS "
-"OTHERWISE EXPRESSLY PROVIDED FOR IN THE"
+"USE OF THE SITE, AND THE CONTENT AND SERVICES OBTAINED FROM OR THROUGH THE "
+"SITE, IS AT YOUR OWN RISK. YOUR ACCESS TO OR DOWNLOAD OF INFORMATION, MATERIALS "
+"OR DATA THROUGH THE SITE OR ANY REFERENCE SITES IS AT YOUR OWN DISCRETION AND "
+"RISK, AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR PROPERTY "
+"(INCLUDING YOUR COMPUTER SYSTEM) OR LOSS OF DATA THAT RESULTS FROM THE DOWNLOAD "
+"OR USE OF SUCH MATERIAL OR DATA, UNLESS OTHERWISE EXPRESSLY PROVIDED FOR IN THE"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:82
@@ -2290,12 +2266,12 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:83
 msgid ""
-"PARTICIPANTS WILL BE LIABLE TO YOU FOR ANY LOSS OR DAMAGES, EITHER ACTUAL"
-" OR CONSEQUENTIAL, ARISING OUT OF OR RELATING TO THESE TERMS OF SERVICE, "
-"OR YOUR (OR ANY THIRD PARTY'S) USE OF OR INABILITY TO USE THE SITE, OR "
-"YOUR PLACEMENT OF CONTENT ON THE SITE, OR YOUR RELIANCE UPON INFORMATION "
-"OBTAINED FROM OR THROUGH THE SITE, WHETHER YOUR CLAIM IS BASED IN "
-"CONTRACT, TORT, STATUTORY OR OTHER LAW."
+"PARTICIPANTS WILL BE LIABLE TO YOU FOR ANY LOSS OR DAMAGES, EITHER ACTUAL OR "
+"CONSEQUENTIAL, ARISING OUT OF OR RELATING TO THESE TERMS OF SERVICE, OR YOUR "
+"(OR ANY THIRD PARTY'S) USE OF OR INABILITY TO USE THE SITE, OR YOUR PLACEMENT "
+"OF CONTENT ON THE SITE, OR YOUR RELIANCE UPON INFORMATION OBTAINED FROM OR "
+"THROUGH THE SITE, WHETHER YOUR CLAIM IS BASED IN CONTRACT, TORT, STATUTORY OR "
+"OTHER LAW."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:84
@@ -2304,9 +2280,9 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:84
 msgid ""
-"PARTICIPANTS WILL HAVE ANY LIABILITY FOR ANY CONSEQUENTIAL, INDIRECT, "
-"PUNITIVE, SPECIAL, EXEMPLARY OR INCIDENTAL DAMAGES, WHETHER FORESEEABLE "
-"OR UNFORESEEABLE AND WHETHER OR NOT"
+"PARTICIPANTS WILL HAVE ANY LIABILITY FOR ANY CONSEQUENTIAL, INDIRECT, PUNITIVE, "
+"SPECIAL, EXEMPLARY OR INCIDENTAL DAMAGES, WHETHER FORESEEABLE OR UNFORESEEABLE "
+"AND WHETHER OR NOT"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:84
@@ -2315,18 +2291,18 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:84
 msgid ""
-"PARTICIPANTS HAS BEEN NEGLIGENT OR OTHERWISE AT FAULT (INCLUDING, BUT NOT"
-" LIMITED TO, CLAIMS FOR DEFAMATION, ERRORS, LOSS OF PROFITS, LOSS OF DATA"
-" OR INTERRUPTION IN AVAILABILITY OF DATA)."
+"PARTICIPANTS HAS BEEN NEGLIGENT OR OTHERWISE AT FAULT (INCLUDING, BUT NOT "
+"LIMITED TO, CLAIMS FOR DEFAMATION, ERRORS, LOSS OF PROFITS, LOSS OF DATA OR "
+"INTERRUPTION IN AVAILABILITY OF DATA)."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:85
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:85
 msgid ""
 "CERTAIN STATE LAWS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE "
-"EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF THESE LAWS APPLY TO YOU, "
-"SOME OR ALL OF THE ABOVE DISCLAIMERS, EXCLUSIONS, OR LIMITATIONS MAY NOT "
-"APPLY TO YOU, AND YOU MIGHT HAVE ADDITIONAL RIGHTS."
+"EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR "
+"ALL OF THE ABOVE DISCLAIMERS, EXCLUSIONS, OR LIMITATIONS MAY NOT APPLY TO YOU, "
+"AND YOU MIGHT HAVE ADDITIONAL RIGHTS."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:86
@@ -2336,8 +2312,8 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:87
 msgid ""
-"You understand that when using the Site you will be exposed to User "
-"Postings from a variety of sources and that neither"
+"You understand that when using the Site you will be exposed to User Postings "
+"from a variety of sources and that neither"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:87
@@ -2346,12 +2322,12 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:87
 msgid ""
-"Participants are responsible for the accuracy, usefulness, reliability or"
-" intellectual property rights of or relating to such User Postings. You "
-"further understand and acknowledge that you may be exposed to User "
-"Postings that are inaccurate, offensive, defamatory, indecent or "
-"objectionable and you agree to waive, and hereby do waive, any legal or "
-"equitable rights or remedies you have or may have against"
+"Participants are responsible for the accuracy, usefulness, reliability or "
+"intellectual property rights of or relating to such User Postings. You further "
+"understand and acknowledge that you may be exposed to User Postings that are "
+"inaccurate, offensive, defamatory, indecent or objectionable and you agree to "
+"waive, and hereby do waive, any legal or equitable rights or remedies you have "
+"or may have against"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:87
@@ -2369,14 +2345,14 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:87
 msgid ""
-"Participants endorse any User Postings or any opinion, recommendation or "
-"advice expressed therein. Neither"
+"Participants endorse any User Postings or any opinion, recommendation or advice "
+"expressed therein. Neither"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:87
 msgid ""
-"Participants have any obligation to monitor any User Postings or any "
-"other user communications through the Site."
+"Participants have any obligation to monitor any User Postings or any other user "
+"communications through the Site."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:88
@@ -2385,23 +2361,23 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:88
 msgid ""
-"reserves the right to review User Postings and to exercise its sole "
-"discretion to edit or remove, in whole or in part, any User Posting at "
-"any time and for any reason, or to allow the"
+"reserves the right to review User Postings and to exercise its sole discretion "
+"to edit or remove, in whole or in part, any User Posting at any time and for "
+"any reason, or to allow the"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:88
 msgid ""
-"Participants to do so. Without limiting the foregoing, upon receiving "
-"notice from a user or a content owner that a User Posting allegedly does "
-"not conform to these TOS,"
+"Participants to do so. Without limiting the foregoing, upon receiving notice "
+"from a user or a content owner that a User Posting allegedly does not conform "
+"to these TOS,"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:88
 msgid ""
-"may investigate the allegation and determine in its sole discretion "
-"whether to remove the User Posting, which it reserves the right to do at "
-"any time and without notice."
+"may investigate the allegation and determine in its sole discretion whether to "
+"remove the User Posting, which it reserves the right to do at any time and "
+"without notice."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:89
@@ -2411,16 +2387,15 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:90
 msgid ""
-"The Site may include hyperlinks to sites maintained or controlled by "
-"others."
+"The Site may include hyperlinks to sites maintained or controlled by others."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:90
 msgid ""
-"Participants are not responsible for and do not routinely screen, "
-"approve, review or endorse the contents of or use of any of the products "
-"or services that may be offered at these sites. If you decide to access "
-"linked third-party websites, you do so at your own risk."
+"Participants are not responsible for and do not routinely screen, approve, "
+"review or endorse the contents of or use of any of the products or services "
+"that may be offered at these sites. If you decide to access linked third-party "
+"websites, you do so at your own risk."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:91
@@ -2434,13 +2409,13 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:92
 msgid ""
-"Participants, and their respective subsidiaries, affiliates, officers, "
-"faculty, students, fellows, governing board members, agents and employees"
-" from and against any third-party claims, actions or demands arising out "
-"of, resulting from or in any way related to your use of the Site, "
-"including any liability or expense arising from any and all claims, "
-"losses, damages (actual and consequential), suits, judgments, litigation "
-"costs and attorneys' fees, of every kind and nature. In such a case,"
+"Participants, and their respective subsidiaries, affiliates, officers, faculty, "
+"students, fellows, governing board members, agents and employees from and "
+"against any third-party claims, actions or demands arising out of, resulting "
+"from or in any way related to your use of the Site, including any liability or "
+"expense arising from any and all claims, losses, damages (actual and "
+"consequential), suits, judgments, litigation costs and attorneys' fees, of "
+"every kind and nature. In such a case,"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:92
@@ -2449,8 +2424,7 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:92
 msgid ""
-"Participants will provide you with written notice of such claim, suit or "
-"action."
+"Participants will provide you with written notice of such claim, suit or action."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:93
@@ -2470,36 +2444,34 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:95
 msgid ""
 "in its sole discretion, may terminate your use of the Site or your "
-"participation in it, for any reason or no reason, upon notice to you. It "
-"is"
+"participation in it, for any reason or no reason, upon notice to you. It is"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:95
 msgid ""
-"policy to terminate in appropriate circumstances users of the Site who "
-"are repeat copyright infringers."
+"policy to terminate in appropriate circumstances users of the Site who are "
+"repeat copyright infringers."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:95
 msgid ""
-"Participants reserve the right at any time in their sole discretion to "
-"cancel, delay, reschedule or alter the format of any course offered "
-"through"
+"Participants reserve the right at any time in their sole discretion to cancel, "
+"delay, reschedule or alter the format of any course offered through"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:95
 msgid ""
-"or to cease providing any part or all of the Site content or related "
-"services, and you agree that neither"
+"or to cease providing any part or all of the Site content or related services, "
+"and you agree that neither"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:95
 msgid ""
-"Participants will have any liability to you for such an action. If you no"
-" longer desire to participate in the Site, you may terminate your "
-"participation at any time. The rights granted to you hereunder will "
-"terminate upon any termination of your right to use the Site, but the "
-"other provisions of these TOS will survive any such termination."
+"Participants will have any liability to you for such an action. If you no "
+"longer desire to participate in the Site, you may terminate your participation "
+"at any time. The rights granted to you hereunder will terminate upon any "
+"termination of your right to use the Site, but the other provisions of these "
+"TOS will survive any such termination."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:96
@@ -2509,14 +2481,14 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:97
 msgid ""
-"These TOS, and the Privacy Policy together constitute the entire "
-"agreement between you and"
+"These TOS, and the Privacy Policy together constitute the entire agreement "
+"between you and"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:97
 msgid ""
-"with respect to your use of the Site, superseding any prior agreements "
-"between you and"
+"with respect to your use of the Site, superseding any prior agreements between "
+"you and"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:97
@@ -2534,12 +2506,12 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:99
 msgid ""
-"to exercise or enforce any right or provision of these TOS shall not "
-"constitute a waiver of such right or provision. If any provision of these"
-" TOS is found by a court of competent jurisdiction to be invalid, the "
-"parties nevertheless agree that the court should endeavor to give effect "
-"to the parties' intentions as reflected in the provision and the other "
-"provisions of these TOS shall remain in full force and effect."
+"to exercise or enforce any right or provision of these TOS shall not constitute "
+"a waiver of such right or provision. If any provision of these TOS is found by "
+"a court of competent jurisdiction to be invalid, the parties nevertheless agree "
+"that the court should endeavor to give effect to the parties' intentions as "
+"reflected in the provision and the other provisions of these TOS shall remain "
+"in full force and effect."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:100
@@ -2550,15 +2522,14 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:101
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:101
 msgid ""
-"You agree that these TOS and any claim or dispute arising out of or "
-"relating to these TOS or any content or service obtained from or through "
-"the Site will be governed by the laws of England and Wales. You agree "
-"that all such claims and disputes will be heard and resolved exclusively "
-"in the federal or state courts located in England and Wales. You consent "
-"to the personal jurisdiction of those courts over you for this purpose, "
-"and you waive and agree not to assert any objection to such proceedings "
-"in those courts (including any defense or objection of lack of proper "
-"jurisdiction or venue or inconvenience of forum)."
+"You agree that these TOS and any claim or dispute arising out of or relating to "
+"these TOS or any content or service obtained from or through the Site will be "
+"governed by the laws of England and Wales. You agree that all such claims and "
+"disputes will be heard and resolved exclusively in the federal or state courts "
+"located in England and Wales. You consent to the personal jurisdiction of those "
+"courts over you for this purpose, and you waive and agree not to assert any "
+"objection to such proceedings in those courts (including any defense or "
+"objection of lack of proper jurisdiction or venue or inconvenience of forum)."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:103
@@ -2577,15 +2548,14 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:105
 msgid ""
-"you are joining a special worldwide community of learners. The aspiration"
-" of"
+"you are joining a special worldwide community of learners. The aspiration of"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:105
 msgid ""
-"is to provide anyone in the world who has the motivation and ability to "
-"engage coursework from a group of forward thinking employers. You are "
-"part of the community who will help"
+"is to provide anyone in the world who has the motivation and ability to engage "
+"coursework from a group of forward thinking employers. You are part of the "
+"community who will help"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:105
@@ -2594,15 +2564,15 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:106
 msgid ""
-"depends upon your motivation to learn the material and to do so with "
-"honesty. In order to participate in"
+"depends upon your motivation to learn the material and to do so with honesty. "
+"In order to participate in"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:106
 msgid ""
-"you must agree to the Honor Code below and any additional terms specific "
-"to a class. This Honor Code, and any additional terms, will be posted on "
-"each class website."
+"you must agree to the Honor Code below and any additional terms specific to a "
+"class. This Honor Code, and any additional terms, will be posted on each class "
+"website."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:107
@@ -2621,15 +2591,15 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:111
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:111
 msgid ""
-"Complete all essays and exams with my own work and only my own work. I "
-"will not submit the work of any other person."
+"Complete all essays and exams with my own work and only my own work. I will not "
+"submit the work of any other person."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:112
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:112
 msgid ""
-"Maintain only one user account and not let anyone else use my username "
-"and/or password."
+"Maintain only one user account and not let anyone else use my username and/or "
+"password."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:113
@@ -2642,8 +2612,7 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:114
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:114
 msgid ""
-"Not post answers to problems that are being used to assess student "
-"performance."
+"Not post answers to problems that are being used to assess student performance."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:117
@@ -2661,8 +2630,7 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:120
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:120
 msgid ""
-"Collaborate with others on the lecture videos, exercises, homework and "
-"labs."
+"Collaborate with others on the lecture videos, exercises, homework and labs."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:121
@@ -2686,13 +2654,13 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/static_templates/honor.html:126
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:126
 msgid ""
-"Please note that we review and may make changes to this Honor Code from "
-"time to time. Any changes to this Honor Code will be effective "
-"immediately upon posting on this page, with an updated effective date. By"
-" accessing the Site after any changes have been made, you signify your "
-"agreement on a prospective basis to the modified Honor Code and any "
-"changes contained therein.  Be sure to return to this page periodically "
-"to ensure familiarity with the most current version of this Honor Code."
+"Please note that we review and may make changes to this Honor Code from time to "
+"time. Any changes to this Honor Code will be effective immediately upon posting "
+"on this page, with an updated effective date. By accessing the Site after any "
+"changes have been made, you signify your agreement on a prospective basis to "
+"the modified Honor Code and any changes contained therein.  Be sure to return "
+"to this page periodically to ensure familiarity with the most current version "
+"of this Honor Code."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:17
@@ -2702,15 +2670,15 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:18
 msgid ""
-"Privacy Notice - Government Communication Service International elearning"
-" (Campaigning Excellence)"
+"Privacy Notice - Government Communication Service International elearning "
+"(Campaigning Excellence)"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:19
 msgid ""
-"This notice sets out how we will use your personal data, and your rights."
-" It is made under Articles 13 and/or 14 of the General Data Protection "
-"Regulation (GDPR). Further information on these can be found "
+"This notice sets out how we will use your personal data, and your rights. It is "
+"made under Articles 13 and/or 14 of the General Data Protection Regulation "
+"(GDPR). Further information on these can be found "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:19
@@ -2739,14 +2707,13 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:28
 msgid ""
-"To allow interaction between participants and with course leaders, "
-"including through text-based conversation and live video sessions"
+"To allow interaction between participants and with course leaders, including "
+"through text-based conversation and live video sessions"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:29
 msgid ""
-"To verify effectiveness of learning materials through analytics and "
-"assessment"
+"To verify effectiveness of learning materials through analytics and assessment"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:33
@@ -2804,22 +2771,21 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:52
 msgid ""
-"- Processing is necessary for the performance of a task carried out in "
-"the public interest or in the exercise of official authority vested in "
-"the data controller. In this case that is GCS International's task to "
-"work to provide support to governments and institutions internationally."
+"- Processing is necessary for the performance of a task carried out in the "
+"public interest or in the exercise of official authority vested in the data "
+"controller. In this case that is GCS International's task to work to provide "
+"support to governments and institutions internationally."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:53
 msgid ""
-"Sensitive personal data is personal data revealing racial or ethnic "
-"origin, political opinions, religious or philosophical beliefs, or trade "
-"union membership, and the processing of genetic data, biometric data for "
-"the purpose of uniquely identifying a natural person, data concerning "
-"health or data concerning a natural person's sex life or sexual "
-"orientation. We do not require sensitive personal data, but the legal "
-"basis for processing any sensitive personal data you voluntarily provide "
-"is:"
+"Sensitive personal data is personal data revealing racial or ethnic origin, "
+"political opinions, religious or philosophical beliefs, or trade union "
+"membership, and the processing of genetic data, biometric data for the purpose "
+"of uniquely identifying a natural person, data concerning health or data "
+"concerning a natural person's sex life or sexual orientation. We do not require "
+"sensitive personal data, but the legal basis for processing any sensitive "
+"personal data you voluntarily provide is:"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:56
@@ -2828,8 +2794,8 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:57
 msgid ""
-"Your personal data will be shared by us with our e-learning platform "
-"provider and web hosting company."
+"Your personal data will be shared by us with our e-learning platform provider "
+"and web hosting company."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:59
@@ -2838,16 +2804,15 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:60
 msgid ""
-"Data will be held for a year following completion of the course. "
-"Completion of the course in this case refers to the receipt of a final "
-"mark of achievement."
+"Data will be held for a year following completion of the course. Completion of "
+"the course in this case refers to the receipt of a final mark of achievement."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:61
 msgid ""
-"After this period of retention, participants will be contacted to verify "
-"that they would like to continue having access to the course materials "
-"and being contacted by GCSI, as alumni members of the course."
+"After this period of retention, participants will be contacted to verify that "
+"they would like to continue having access to the course materials and being "
+"contacted by GCSI, as alumni members of the course."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:63
@@ -2860,39 +2825,38 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:66
 msgid ""
-"You have the right to request information about how your personal data "
-"are processed, and to request a copy of that personal data."
+"You have the right to request information about how your personal data are "
+"processed, and to request a copy of that personal data."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:67
 msgid ""
-"You have the right to request that any inaccuracies in your personal data"
-" are rectified without delay."
+"You have the right to request that any inaccuracies in your personal data are "
+"rectified without delay."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:68
 msgid ""
-"You have the right to request that any incomplete personal data are "
-"completed, including by means of a supplementary statement."
+"You have the right to request that any incomplete personal data are completed, "
+"including by means of a supplementary statement."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:69
 msgid ""
-"You have the right to request that your personal data are erased if there"
-" is no longer a justification for them to be processed."
+"You have the right to request that your personal data are erased if there is no "
+"longer a justification for them to be processed."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:70
 msgid ""
-"You have the right in certain circumstances (for example, where accuracy "
-"is contested) to request that the processing of your personal data is "
-"restricted."
+"You have the right in certain circumstances (for example, where accuracy is "
+"contested) to request that the processing of your personal data is restricted."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:71
 msgid ""
-"You have the right to object to the processing of your personal data "
-"where it is processed for direct marketing purposes."
+"You have the right to object to the processing of your personal data where it "
+"is processed for direct marketing purposes."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:72
@@ -2907,21 +2871,20 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:74
 msgid ""
-"In relation to images, videos or biographical information voluntarily "
-"provided:"
+"In relation to images, videos or biographical information voluntarily provided:"
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:75
 msgid ""
-"You have the right to withdraw consent to the processing of your personal"
-" data at any time."
+"You have the right to withdraw consent to the processing of your personal data "
+"at any time."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:76
 msgid ""
-"You have the right to request a copy of any personal data you have "
-"provided, and for this to be provided in a structured, commonly used and "
-"machine-readable format."
+"You have the right to request a copy of any personal data you have provided, "
+"and for this to be provided in a structured, commonly used and machine-readable "
+"format."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:78
@@ -2930,10 +2893,10 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:79
 msgid ""
-"Your data may be transferred outside the European Union to provide access"
-" for you to the learning materials, or to provide user IT support. Where "
-"that is the case it will receive equivalent legal protection through "
-"reliance on Model Contract Clauses."
+"Your data may be transferred outside the European Union to provide access for "
+"you to the learning materials, or to provide user IT support. Where that is the "
+"case it will receive equivalent legal protection through reliance on Model "
+"Contract Clauses."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:81
@@ -2942,13 +2905,13 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:82
 msgid ""
-"If you consider that your personal data has been misused or mishandled, "
-"you may make a complaint to the UK Information Commissioner, who is an "
-"independent regulator.  The Information Commissioner can be contacted at:"
-"  Information Commissioner's Office, Wycliffe House, Water Lane, "
-"Wilmslow, Cheshire, SK9 5AF, or 0303 123 1113, or casework@ico.org.uk.  "
-"Any complaint to the Information Commissioner is without prejudice to "
-"your right to seek redress through the courts."
+"If you consider that your personal data has been misused or mishandled, you may "
+"make a complaint to the UK Information Commissioner, who is an independent "
+"regulator.  The Information Commissioner can be contacted at:  Information "
+"Commissioner's Office, Wycliffe House, Water Lane, Wilmslow, Cheshire, SK9 5AF, "
+"or 0303 123 1113, or casework@ico.org.uk.  Any complaint to the Information "
+"Commissioner is without prejudice to your right to seek redress through the "
+"courts."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:84
@@ -2957,29 +2920,28 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:85
 msgid ""
-"The data controller for your personal data is the UK Government Cabinet "
-"Office. Government Communications Service International is part of the "
-"Cabinet Office."
+"The data controller for your personal data is the UK Government Cabinet Office. "
+"Government Communications Service International is part of the Cabinet Office."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:86
 msgid ""
-"The contact details for the data controller are: Cabinet Office, 70 "
-"Whitehall, London, SW1A 2AS, or 0207 276 1234, or "
-"publiccorrespondence@cabinetoffice.gov.uk."
+"The contact details for the data controller are: Cabinet Office, 70 Whitehall, "
+"London, SW1A 2AS, or 0207 276 1234, or publiccorrespondence@cabinetoffice.gov."
+"uk."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:87
 msgid ""
-"The contact details for the data controller's Data Protection Officer "
-"are: Stephen Jones, Data Protection Officer, Cabinet Office, 70 "
-"Whitehall, London, SW1A 2AS, or dpo@cabinetoffice.gov.uk."
+"The contact details for the data controller's Data Protection Officer are: "
+"Stephen Jones, Data Protection Officer, Cabinet Office, 70 Whitehall, London, "
+"SW1A 2AS, or dpo@cabinetoffice.gov.uk."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:88
 msgid ""
-"The Data Protection Officer provides independent advice and monitoring of"
-" Cabinet Office's use of personal information."
+"The Data Protection Officer provides independent advice and monitoring of "
+"Cabinet Office's use of personal information."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:90
@@ -2988,12 +2950,12 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:91
 msgid ""
-"This Policy only applies to information that we collect through the "
-"gcs.proversity.org Website (the 'Site,' which consists of all content and"
-" pages located within the gcs.proversity.org (domain) and does not apply "
-"to information that we may collect from you in other ways (for example, "
-"this policy does not apply to information that you may provide to us over"
-" the phone, by fax or through conventional mail)."
+"This Policy only applies to information that we collect through the gcs."
+"proversity.org Website (the 'Site,' which consists of all content and pages "
+"located within the gcs.proversity.org (domain) and does not apply to "
+"information that we may collect from you in other ways (for example, this "
+"policy does not apply to information that you may provide to us over the phone, "
+"by fax or through conventional mail)."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:93
@@ -3002,17 +2964,17 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:94
 msgid ""
-"Comments or other information posted by you to our forums, wikis or other"
-" areas of the Site designed for public communications or communications "
-"among registered class members may be viewed and downloaded by others who"
-" visit the Site."
+"Comments or other information posted by you to our forums, wikis or other areas "
+"of the Site designed for public communications or communications among "
+"registered class members may be viewed and downloaded by others who visit the "
+"Site."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:95
 msgid ""
-"For this reason, we encourage you to use discretion when deciding whether"
-" to post any information that can be used to identify you to those forums"
-" (or other public or classwide areas)."
+"For this reason, we encourage you to use discretion when deciding whether to "
+"post any information that can be used to identify you to those forums (or other "
+"public or classwide areas)."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:97
@@ -3021,29 +2983,27 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:98
 msgid ""
-"We collect information, including Personal Information (described above),"
-" when you sign up for a user account, participate in online courses, send"
-" us email messages and/or participate in our public forums. We also "
-"collect certain usage information about student performance and patterns "
-"of learning. In addition, we track information indicating, among other "
-"things, which pages of our Site were visited, the order in which they "
-"were visited, when they were visited and which hyperlinks and other user "
-"interface controls were used."
+"We collect information, including Personal Information (described above), when "
+"you sign up for a user account, participate in online courses, send us email "
+"messages and/or participate in our public forums. We also collect certain usage "
+"information about student performance and patterns of learning. In addition, we "
+"track information indicating, among other things, which pages of our Site were "
+"visited, the order in which they were visited, when they were visited and which "
+"hyperlinks and other user interface controls were used."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:99
 msgid ""
-"We may log the IP address, operating system and browser software used by "
-"each user of the Site, and we may be able to determine from an IP address"
-" a user's Internet Service Provider and the geographic location of his or"
-" her point of connectivity. Various web analytics tools are used to "
-"collect this information. Some of the information is collected through "
-"cookies (small text files placed on your computer that store information "
-"about you, which can be accessed by the Site). You should be able to "
-"control how and whether cookies will be accepted by your web browser. "
-"Most browsers offer instructions on how to reset the browser to reject "
-"cookies in the 'Help' section of the toolbar. If you reject our cookies, "
-"many functions and conveniences of this Site may not work properly."
+"We may log the IP address, operating system and browser software used by each "
+"user of the Site, and we may be able to determine from an IP address a user's "
+"Internet Service Provider and the geographic location of his or her point of "
+"connectivity. Various web analytics tools are used to collect this information. "
+"Some of the information is collected through cookies (small text files placed "
+"on your computer that store information about you, which can be accessed by the "
+"Site). You should be able to control how and whether cookies will be accepted "
+"by your web browser. Most browsers offer instructions on how to reset the "
+"browser to reject cookies in the 'Help' section of the toolbar. If you reject "
+"our cookies, many functions and conveniences of this Site may not work properly."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:101
@@ -3052,17 +3012,16 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:102
 msgid ""
-"Our goal is to provide current and future visitors with the best possible"
-" educational experience. To further this goal, we sometimes present "
-"different users with different versions of course materials and software."
-" We do this to personalize the experience to the individual learner "
-"(assess the learner's level of ability and learning style, and present "
-"materials best suited to the learner), to evaluate the effectiveness of "
-"our course materials, to improve our understanding of the learning "
-"process and to otherwise improve the effectiveness of our offerings. We "
-"may publish or otherwise publicize results from this process, but, unless"
-" otherwise permitted under this Policy, those publications or public "
-"disclosures will not include Personal Information."
+"Our goal is to provide current and future visitors with the best possible "
+"educational experience. To further this goal, we sometimes present different "
+"users with different versions of course materials and software. We do this to "
+"personalize the experience to the individual learner (assess the learner's "
+"level of ability and learning style, and present materials best suited to the "
+"learner), to evaluate the effectiveness of our course materials, to improve our "
+"understanding of the learning process and to otherwise improve the "
+"effectiveness of our offerings. We may publish or otherwise publicize results "
+"from this process, but, unless otherwise permitted under this Policy, those "
+"publications or public disclosures will not include Personal Information."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:104
@@ -3071,19 +3030,18 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:105
 msgid ""
-"The Site contains links to websites published by third parties, including"
-" other content providers as well as certain service providers, such as "
-"those who process payments on behalf of "
+"The Site contains links to websites published by third parties, including other "
+"content providers as well as certain service providers, such as those who "
+"process payments on behalf of "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:105
 msgid ""
-"These other websites are not under our control, and you acknowledge and "
-"agree that we are not responsible for the collection and use of your "
-"information by such websites, unless we have otherwise indicated in this "
-"Policy. We encourage you to be aware when you are be redirected to a "
-"third party website and review the privacy policies of each website you "
-"visit and use."
+"These other websites are not under our control, and you acknowledge and agree "
+"that we are not responsible for the collection and use of your information by "
+"such websites, unless we have otherwise indicated in this Policy. We encourage "
+"you to be aware when you are be redirected to a third party website and review "
+"the privacy policies of each website you visit and use."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:107
@@ -3093,14 +3051,13 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:108
 #, python-format
 msgid ""
-" has a program designed to protect Personal Information in its possession"
-" or control. This is done through a variety of privacy and security "
-"policies, processes and procedures, including administrative, physical, "
-"and technical safeguards that reasonably and appropriately protect the "
-"confidentiality, integrity, and availability of the Personal Information "
-"that it creates, receives, maintains, or transmits. Nonetheless, no "
-"method of transmission over the Internet, or method of electronic "
-"storage, is 100% secure; and therefore, "
+" has a program designed to protect Personal Information in its possession or "
+"control. This is done through a variety of privacy and security policies, "
+"processes and procedures, including administrative, physical, and technical "
+"safeguards that reasonably and appropriately protect the confidentiality, "
+"integrity, and availability of the Personal Information that it creates, "
+"receives, maintains, or transmits. Nonetheless, no method of transmission over "
+"the Internet, or method of electronic storage, is 100% secure; and therefore, "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:108
@@ -3113,17 +3070,16 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/privacy.html:111
 msgid ""
-"Please note that we review and may make changes to this Policy from time "
-"to time. When changes are made, the Policy link will include a notation "
-"'Revised (date).' indicating that you should review the new terms, which "
-"will be effective immediately upon posting on this page, with an updated "
-"effective date. The notation will be included in the Policy link for at "
-"least seven (7) days after the update has been made. By accessing the "
-"Site after any changes have been made, you signify your agreement on a "
-"prospective basis to the modified Policy and any changes contained "
-"therein. In case you miss the notification referenced above, be sure to "
-"return to this page periodically to ensure familiarity with the most "
-"current version of this Policy."
+"Please note that we review and may make changes to this Policy from time to "
+"time. When changes are made, the Policy link will include a notation 'Revised "
+"(date).' indicating that you should review the new terms, which will be "
+"effective immediately upon posting on this page, with an updated effective "
+"date. The notation will be included in the Policy link for at least seven (7) "
+"days after the update has been made. By accessing the Site after any changes "
+"have been made, you signify your agreement on a prospective basis to the "
+"modified Policy and any changes contained therein. In case you miss the "
+"notification referenced above, be sure to return to this page periodically to "
+"ensure familiarity with the most current version of this Policy."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:19
@@ -3136,34 +3092,32 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:19
 msgid ""
-" prior to registering or using any portion of the website (the 'Site,' "
-"which consists of all content and pages located within the "
+" prior to registering or using any portion of the website (the 'Site,' which "
+"consists of all content and pages located within the "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:19
 msgid ""
-" web domain), including accessing any course material, chat rooms, or "
-"other electronic services. These TOS, the Privacy Policy and the Honor "
-"Code are agreements (the 'Agreements') between you and "
+" web domain), including accessing any course material, chat rooms, or other "
+"electronic services. These TOS, the Privacy Policy and the Honor Code are "
+"agreements (the 'Agreements') between you and "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:19
 msgid ""
-" By using the Site, you accept and agree to be legally bound by the "
-"Agreements, whether or not you are a registered user. If you do not "
-"understand or do not wish to be bound by the terms of the Agreements, you"
-" should not use the Site."
+" By using the Site, you accept and agree to be legally bound by the Agreements, "
+"whether or not you are a registered user. If you do not understand or do not "
+"wish to be bound by the terms of the Agreements, you should not use the Site."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:20
 msgid ""
-" reserves the right to modify these TOS at any time without advance "
-"notice. Any changes to these TOS will be effective immediately upon "
-"posting on this page, with an updated effective date. By accessing the "
-"Site after any changes have been made, you signify your agreement on a "
-"prospective basis to the modified TOS and all of the changes. Be sure to "
-"return to this page periodically to ensure familiarity with the most "
-"current version of these TOS."
+" reserves the right to modify these TOS at any time without advance notice. Any "
+"changes to these TOS will be effective immediately upon posting on this page, "
+"with an updated effective date. By accessing the Site after any changes have "
+"been made, you signify your agreement on a prospective basis to the modified "
+"TOS and all of the changes. Be sure to return to this page periodically to "
+"ensure familiarity with the most current version of these TOS."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:21
@@ -3172,10 +3126,10 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:22
 msgid ""
-" offers online courses that include opportunities for instructor-to-"
-"student and student-to-student interactivity, individual assessment of a "
-"student's work and, for students who demonstrate their mastery of "
-"subjects, a professional certificate or other acknowledgment."
+" offers online courses that include opportunities for instructor-to-student and "
+"student-to-student interactivity, individual assessment of a student's work "
+"and, for students who demonstrate their mastery of subjects, a professional "
+"certificate or other acknowledgment."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:25
@@ -3184,8 +3138,8 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:25
 msgid ""
-" services, you will not use the Site in any manner intended to damage, "
-"disable, overburden or impair any "
+" services, you will not use the Site in any manner intended to damage, disable, "
+"overburden or impair any "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:25
@@ -3194,24 +3148,24 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:25
 msgid ""
-" server or to interfere with any other party's use and enjoyment of the "
-"Site. You may not attempt to gain unauthorized access to the Site, other "
-"accounts, computer systems or networks connected to any "
+" server or to interfere with any other party's use and enjoyment of the Site. "
+"You may not attempt to gain unauthorized access to the Site, other accounts, "
+"computer systems or networks connected to any "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:25
 msgid ""
-" server through hacking, password mining or any other means. You may not "
-"obtain or attempt to obtain any materials or information stored on the "
-"Site, its servers or associated computers through any means not "
-"intentionally made available through the Site."
+" server through hacking, password mining or any other means. You may not obtain "
+"or attempt to obtain any materials or information stored on the Site, its "
+"servers or associated computers through any means not intentionally made "
+"available through the Site."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:42
 msgid ""
-"We care about the confidentiality and security of your personal "
-"information. Please see our Privacy Policy for more information about "
-"what information about you "
+"We care about the confidentiality and security of your personal information. "
+"Please see our Privacy Policy for more information about what information about "
+"you "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:42
@@ -3224,23 +3178,22 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:44
 msgid ""
-"Unless indicated as being in the public domain, the content on the Site "
-"is protected by United Kingdom and foreign copyright laws unless covered "
-"by "
+"Unless indicated as being in the public domain, the content on the Site is "
+"protected by United Kingdom and foreign copyright laws unless covered by "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:45
 msgid ""
-"Unless otherwise expressly stated on the Site, the texts, exams, video, "
-"images and other instructional materials provided with the courses "
-"offered on this Site are for your personal use in connection with those "
-"courses only. We aim to make much of the "
+"Unless otherwise expressly stated on the Site, the texts, exams, video, images "
+"and other instructional materials provided with the courses offered on this "
+"Site are for your personal use in connection with those courses only. We aim to "
+"make much of the "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:45
 msgid ""
-" course content available under more open license terms that will help "
-"create a vibrant ecosystem of contributors and further "
+" course content available under more open license terms that will help create a "
+"vibrant ecosystem of contributors and further "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:45
@@ -3249,25 +3202,24 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:50
 msgid ""
-"By submitting or distributing your User Postings, you affirm, represent "
-"and warrant (1) that you have the necessary rights, licenses, consents "
-"and/or permissions to reproduce and publish the User Postings and to "
-"authorize "
+"By submitting or distributing your User Postings, you affirm, represent and "
+"warrant (1) that you have the necessary rights, licenses, consents and/or "
+"permissions to reproduce and publish the User Postings and to authorize "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:50
 msgid ""
-" and its users to reproduce, modify, publish and otherwise use and "
-"distribute your User Postings in a manner consistent with the licenses "
-"granted by you below, and (2) that neither your submission of your User "
-"Postings nor the exercise of the licenses granted below will infringe or "
-"violate the rights of any third party. You, and not "
+" and its users to reproduce, modify, publish and otherwise use and distribute "
+"your User Postings in a manner consistent with the licenses granted by you "
+"below, and (2) that neither your submission of your User Postings nor the "
+"exercise of the licenses granted below will infringe or violate the rights of "
+"any third party. You, and not "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:50
 msgid ""
-" are solely responsible for your User Postings and the consequences of "
-"posting or publishing them."
+" are solely responsible for your User Postings and the consequences of posting "
+"or publishing them."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:51
@@ -3280,12 +3232,12 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:52
 msgid ""
-" a worldwide, non-exclusive, transferable, assignable, sub licensable, "
-"fully paid-up, royalty-free, perpetual, irrevocable right and license to "
-"host, transfer, display, perform, reproduce, modify, distribute, re-"
-"distribute, relicense and otherwise use, make available and exploit your "
-"User Postings, in whole or in part, in any form and in any media formats "
-"and through any media channels (now known or hereafter developed)."
+" a worldwide, non-exclusive, transferable, assignable, sub licensable, fully "
+"paid-up, royalty-free, perpetual, irrevocable right and license to host, "
+"transfer, display, perform, reproduce, modify, distribute, re-distribute, "
+"relicense and otherwise use, make available and exploit your User Postings, in "
+"whole or in part, in any form and in any media formats and through any media "
+"channels (now known or hereafter developed)."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:53
@@ -3299,10 +3251,9 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:56
 msgid ""
 " and the employers providing courses on the Site (collectively, the 'X "
-"employers') may offer a certificate of achievement or other "
-"acknowledgment (a 'Professional Certificate') for students who, in their "
-"judgment, have satisfactorily demonstrated mastery of the course "
-"material."
+"employers') may offer a certificate of achievement or other acknowledgment (a "
+"'Professional Certificate') for students who, in their judgment, have "
+"satisfactorily demonstrated mastery of the course material."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:57
@@ -3311,14 +3262,14 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:57
 msgid ""
-" under the name of the underlying X employer from where the course "
-"originated, i.e. British Council, Tech.IO. etc."
+" under the name of the underlying X employer from where the course originated, "
+"i.e. British Council, Tech.IO. etc."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:59
 msgid ""
-" and/or the X employers providing courses on the Site may choose not to "
-"offer a Certificate for some courses."
+" and/or the X employers providing courses on the Site may choose not to offer a "
+"Certificate for some courses."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:60
@@ -3327,17 +3278,16 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:60
 msgid ""
-" you will not be an applicant for admission to, or enrolled in, any "
-"degree program of the X employer as a result of registering for or "
-"completing a course provided by such X employer through "
+" you will not be an applicant for admission to, or enrolled in, any degree "
+"program of the X employer as a result of registering for or completing a course "
+"provided by such X employer through "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:60
 msgid ""
-" You will not be entitled to use any of the resources of the X employer "
-"beyond the online courses provided on the Site, nor will you be eligible "
-"to employment privileges or benefits provided to employees of the X "
-"employer."
+" You will not be entitled to use any of the resources of the X employer beyond "
+"the online courses provided on the Site, nor will you be eligible to employment "
+"privileges or benefits provided to employees of the X employer."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:62
@@ -3362,15 +3312,15 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:65
 msgid ""
-" or the X employers that appear on the Site or on or through the services"
-" made available on or through the Site, if any, are the property of their"
-" respective owners."
+" or the X employers that appear on the Site or on or through the services made "
+"available on or through the Site, if any, are the property of their respective "
+"owners."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:68
 msgid ""
-"Copyright owners who believe their material has been infringed on the "
-"Site should contact "
+"Copyright owners who believe their material has been infringed on the Site "
+"should contact "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:68
@@ -3383,35 +3333,33 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:81
 msgid ""
-" PARTICIPANTS (AS HERINAFTER DEFINED) DO NOT WARRANT THAT THE SITE WILL "
-"OPERATE IN AN UNINTERRUPTED OR ERROR-FREE MANNER, THAT THE SITE IS FREE "
-"OF VIRUSES OR OTHER HARMFUL COMPONENTS, OR THAT THE COURSES OR CONTENT "
-"PROVIDED WILL MEET YOUR NEEDS OR EXPECTATIONS. "
+" PARTICIPANTS (AS HERINAFTER DEFINED) DO NOT WARRANT THAT THE SITE WILL OPERATE "
+"IN AN UNINTERRUPTED OR ERROR-FREE MANNER, THAT THE SITE IS FREE OF VIRUSES OR "
+"OTHER HARMFUL COMPONENTS, OR THAT THE COURSES OR CONTENT PROVIDED WILL MEET "
+"YOUR NEEDS OR EXPECTATIONS. "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:81
 msgid ""
 " PARTICIPANTS ALSO MAKE NO WARRANTY ABOUT THE ACCURACY, COMPLETENESS, "
-"TIMELINESS, OR QUALITY OF THE SITE OR ANY COURSES OR CONTENT, OR THAT ANY"
-" PARTICULAR COURSES OR CONTENT WILL CONTINUE TO BE MADE AVAILABLE. "
+"TIMELINESS, OR QUALITY OF THE SITE OR ANY COURSES OR CONTENT, OR THAT ANY "
+"PARTICULAR COURSES OR CONTENT WILL CONTINUE TO BE MADE AVAILABLE. "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:81
 msgid ""
-" PARTICIPANTS' MEANS THE OTHER X EMPLOYERS, THE ENTITIES PROVIDING "
-"INFORMATION, CONTENT OR SERVICES FOR THE SITE, THE COURSE INSTRUCTORS AND"
-" THEIR STAFFS."
+" PARTICIPANTS' MEANS THE OTHER X EMPLOYERS, THE ENTITIES PROVIDING INFORMATION, "
+"CONTENT OR SERVICES FOR THE SITE, THE COURSE INSTRUCTORS AND THEIR STAFFS."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:82
 msgid ""
-"USE OF THE SITE, AND THE CONTENT AND SERVICES OBTAINED FROM OR THROUGH "
-"THE SITE, IS AT YOUR OWN RISK. YOUR ACCESS TO OR DOWNLOAD OF INFORMATION,"
-" MATERIALS OR DATA THROUGH THE SITE OR ANY REFERENCE SITES IS AT YOUR OWN"
-" DISCRETION AND RISK, AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE "
-"TO YOUR PROPERTY (INCLUDING YOUR COMPUTER SYSTEM) OR LOSS OF DATA THAT "
-"RESULTS FROM THE DOWNLOAD OR USE OF SUCH MATERIAL OR DATA, UNLESS "
-"OTHERWISE EXPRESSLY PROVIDED FOR IN THE "
+"USE OF THE SITE, AND THE CONTENT AND SERVICES OBTAINED FROM OR THROUGH THE "
+"SITE, IS AT YOUR OWN RISK. YOUR ACCESS TO OR DOWNLOAD OF INFORMATION, MATERIALS "
+"OR DATA THROUGH THE SITE OR ANY REFERENCE SITES IS AT YOUR OWN DISCRETION AND "
+"RISK, AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR PROPERTY "
+"(INCLUDING YOUR COMPUTER SYSTEM) OR LOSS OF DATA THAT RESULTS FROM THE DOWNLOAD "
+"OR USE OF SUCH MATERIAL OR DATA, UNLESS OTHERWISE EXPRESSLY PROVIDED FOR IN THE "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:82
@@ -3429,12 +3377,12 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:83
 msgid ""
-" PARTICIPANTS WILL BE LIABLE TO YOU FOR ANY LOSS OR DAMAGES, EITHER "
-"ACTUAL OR CONSEQUENTIAL, ARISING OUT OF OR RELATING TO THESE TERMS OF "
-"SERVICE, OR YOUR (OR ANY THIRD PARTY'S) USE OF OR INABILITY TO USE THE "
-"SITE, OR YOUR PLACEMENT OF CONTENT ON THE SITE, OR YOUR RELIANCE UPON "
-"INFORMATION OBTAINED FROM OR THROUGH THE SITE, WHETHER YOUR CLAIM IS "
-"BASED IN CONTRACT, TORT, STATUTORY OR OTHER LAW."
+" PARTICIPANTS WILL BE LIABLE TO YOU FOR ANY LOSS OR DAMAGES, EITHER ACTUAL OR "
+"CONSEQUENTIAL, ARISING OUT OF OR RELATING TO THESE TERMS OF SERVICE, OR YOUR "
+"(OR ANY THIRD PARTY'S) USE OF OR INABILITY TO USE THE SITE, OR YOUR PLACEMENT "
+"OF CONTENT ON THE SITE, OR YOUR RELIANCE UPON INFORMATION OBTAINED FROM OR "
+"THROUGH THE SITE, WHETHER YOUR CLAIM IS BASED IN CONTRACT, TORT, STATUTORY OR "
+"OTHER LAW."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:84
@@ -3444,8 +3392,8 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:84
 msgid ""
 " PARTICIPANTS WILL HAVE ANY LIABILITY FOR ANY CONSEQUENTIAL, INDIRECT, "
-"PUNITIVE, SPECIAL, EXEMPLARY OR INCIDENTAL DAMAGES, WHETHER FORESEEABLE "
-"OR UNFORESEEABLE AND WHETHER OR NOT "
+"PUNITIVE, SPECIAL, EXEMPLARY OR INCIDENTAL DAMAGES, WHETHER FORESEEABLE OR "
+"UNFORESEEABLE AND WHETHER OR NOT "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:84
@@ -3454,15 +3402,15 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:84
 msgid ""
-" PARTICIPANTS HAS BEEN NEGLIGENT OR OTHERWISE AT FAULT (INCLUDING, BUT "
-"NOT LIMITED TO, CLAIMS FOR DEFAMATION, ERRORS, LOSS OF PROFITS, LOSS OF "
-"DATA OR INTERRUPTION IN AVAILABILITY OF DATA)."
+" PARTICIPANTS HAS BEEN NEGLIGENT OR OTHERWISE AT FAULT (INCLUDING, BUT NOT "
+"LIMITED TO, CLAIMS FOR DEFAMATION, ERRORS, LOSS OF PROFITS, LOSS OF DATA OR "
+"INTERRUPTION IN AVAILABILITY OF DATA)."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:87
 msgid ""
-"You understand that when using the Site you will be exposed to User "
-"Postings from a variety of sources and that neither "
+"You understand that when using the Site you will be exposed to User Postings "
+"from a variety of sources and that neither "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:87
@@ -3471,12 +3419,12 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:87
 msgid ""
-" Participants are responsible for the accuracy, usefulness, reliability "
-"or intellectual property rights of or relating to such User Postings. You"
-" further understand and acknowledge that you may be exposed to User "
-"Postings that are inaccurate, offensive, defamatory, indecent or "
-"objectionable and you agree to waive, and hereby do waive, any legal or "
-"equitable rights or remedies you have or may have against "
+" Participants are responsible for the accuracy, usefulness, reliability or "
+"intellectual property rights of or relating to such User Postings. You further "
+"understand and acknowledge that you may be exposed to User Postings that are "
+"inaccurate, offensive, defamatory, indecent or objectionable and you agree to "
+"waive, and hereby do waive, any legal or equitable rights or remedies you have "
+"or may have against "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:87
@@ -3494,14 +3442,14 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:87
 msgid ""
-" Participants endorse any User Postings or any opinion, recommendation or"
-" advice expressed therein. Neither "
+" Participants endorse any User Postings or any opinion, recommendation or "
+"advice expressed therein. Neither "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:87
 msgid ""
-" Participants have any obligation to monitor any User Postings or any "
-"other user communications through the Site. "
+" Participants have any obligation to monitor any User Postings or any other "
+"user communications through the Site. "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:88
@@ -3510,29 +3458,28 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:88
 msgid ""
-" reserves the right to review User Postings and to exercise its sole "
-"discretion to edit or remove, in whole or in part, any User Posting at "
-"any time and for any reason, or to allow the "
+" reserves the right to review User Postings and to exercise its sole discretion "
+"to edit or remove, in whole or in part, any User Posting at any time and for "
+"any reason, or to allow the "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:88
 msgid ""
-" Participants to do so. Without limiting the foregoing, upon receiving "
-"notice from a user or a content owner that a User Posting allegedly does "
-"not conform to these TOS, "
+" Participants to do so. Without limiting the foregoing, upon receiving notice "
+"from a user or a content owner that a User Posting allegedly does not conform "
+"to these TOS, "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:88
 msgid ""
-" may investigate the allegation and determine in its sole discretion "
-"whether to remove the User Posting, which it reserves the right to do at "
-"any time and without notice."
+" may investigate the allegation and determine in its sole discretion whether to "
+"remove the User Posting, which it reserves the right to do at any time and "
+"without notice."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:90
 msgid ""
-"The Site may include hyperlinks to sites maintained or controlled by "
-"others. "
+"The Site may include hyperlinks to sites maintained or controlled by others. "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:90
@@ -3543,10 +3490,10 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:90
 msgid ""
-" Participants are not responsible for and do not routinely screen, "
-"approve, review or endorse the contents of or use of any of the products "
-"or services that may be offered at these sites. If you decide to access "
-"linked third-party websites, you do so at your own risk."
+" Participants are not responsible for and do not routinely screen, approve, "
+"review or endorse the contents of or use of any of the products or services "
+"that may be offered at these sites. If you decide to access linked third-party "
+"websites, you do so at your own risk."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:92
@@ -3556,12 +3503,12 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:92
 msgid ""
 " Participants, and their respective subsidiaries, affiliates, officers, "
-"faculty, students, fellows, governing board members, agents and employees"
-" from and against any third-party claims, actions or demands arising out "
-"of, resulting from or in any way related to your use of the Site, "
-"including any liability or expense arising from any and all claims, "
-"losses, damages (actual and consequential), suits, judgments, litigation "
-"costs and attorneys' fees, of every kind and nature. In such a case, "
+"faculty, students, fellows, governing board members, agents and employees from "
+"and against any third-party claims, actions or demands arising out of, "
+"resulting from or in any way related to your use of the Site, including any "
+"liability or expense arising from any and all claims, losses, damages (actual "
+"and consequential), suits, judgments, litigation costs and attorneys' fees, of "
+"every kind and nature. In such a case, "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:92
@@ -3570,8 +3517,8 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:92
 msgid ""
-" Participants will provide you with written notice of such claim, suit or"
-" action."
+" Participants will provide you with written notice of such claim, suit or "
+"action."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:95
@@ -3581,48 +3528,46 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:95
 msgid ""
 " in its sole discretion, may terminate your use of the Site or your "
-"participation in it, for any reason or no reason, upon notice to you. It "
-"is "
+"participation in it, for any reason or no reason, upon notice to you. It is "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:95
 msgid ""
-" policy to terminate in appropriate circumstances users of the Site who "
-"are repeat copyright infringers. "
+" policy to terminate in appropriate circumstances users of the Site who are "
+"repeat copyright infringers. "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:95
 msgid ""
-" Participants reserve the right at any time in their sole discretion to "
-"cancel, delay, reschedule or alter the format of any course offered "
-"through "
+" Participants reserve the right at any time in their sole discretion to cancel, "
+"delay, reschedule or alter the format of any course offered through "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:95
 msgid ""
-" or to cease providing any part or all of the Site content or related "
-"services, and you agree that neither "
+" or to cease providing any part or all of the Site content or related services, "
+"and you agree that neither "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:95
 msgid ""
-" Participants will have any liability to you for such an action. If you "
-"no longer desire to participate in the Site, you may terminate your "
-"participation at any time. The rights granted to you hereunder will "
-"terminate upon any termination of your right to use the Site, but the "
-"other provisions of these TOS will survive any such termination."
+" Participants will have any liability to you for such an action. If you no "
+"longer desire to participate in the Site, you may terminate your participation "
+"at any time. The rights granted to you hereunder will terminate upon any "
+"termination of your right to use the Site, but the other provisions of these "
+"TOS will survive any such termination."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:97
 msgid ""
-"These TOS, and the Privacy Policy together constitute the entire "
-"agreement between you and "
-msgstr ""
-
-#: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:97
-msgid ""
-" with respect to your use of the Site, superseding any prior agreements "
+"These TOS, and the Privacy Policy together constitute the entire agreement "
 "between you and "
+msgstr ""
+
+#: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:97
+msgid ""
+" with respect to your use of the Site, superseding any prior agreements between "
+"you and "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:97
@@ -3636,11 +3581,11 @@ msgstr ""
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:99
 msgid ""
 " to exercise or enforce any right or provision of these TOS shall not "
-"constitute a waiver of such right or provision. If any provision of these"
-" TOS is found by a court of competent jurisdiction to be invalid, the "
-"parties nevertheless agree that the court should endeavor to give effect "
-"to the parties' intentions as reflected in the provision and the other "
-"provisions of these TOS shall remain in full force and effect."
+"constitute a waiver of such right or provision. If any provision of these TOS "
+"is found by a court of competent jurisdiction to be invalid, the parties "
+"nevertheless agree that the court should endeavor to give effect to the "
+"parties' intentions as reflected in the provision and the other provisions of "
+"these TOS shall remain in full force and effect."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:105
@@ -3649,15 +3594,14 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:105
 msgid ""
-" you are joining a special worldwide community of learners. The "
-"aspiration of "
+" you are joining a special worldwide community of learners. The aspiration of "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:105
 msgid ""
-" is to provide anyone in the world who has the motivation and ability to "
-"engage coursework from a group of forward thinking employers. You are "
-"part of the community who will help "
+" is to provide anyone in the world who has the motivation and ability to engage "
+"coursework from a group of forward thinking employers. You are part of the "
+"community who will help "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:105
@@ -3666,15 +3610,15 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:106
 msgid ""
-" depends upon your motivation to learn the material and to do so with "
-"honesty. In order to participate in "
+" depends upon your motivation to learn the material and to do so with honesty. "
+"In order to participate in "
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:106
 msgid ""
-" you must agree to the Honor Code below and any additional terms specific"
-" to a class. This Honor Code, and any additional terms, will be posted on"
-" each class website."
+" you must agree to the Honor Code below and any additional terms specific to a "
+"class. This Honor Code, and any additional terms, will be posted on each class "
+"website."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/static_templates/tos.html:108
@@ -3783,8 +3727,8 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/student_account/login.underscore:19
 msgid ""
-"Sign in here using your email address and password, or use one of the "
-"providers listed below."
+"Sign in here using your email address and password, or use one of the providers "
+"listed below."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/student_account/login.underscore:21
@@ -3819,8 +3763,8 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/student_account/password_reset.underscore:8
 msgid ""
-"Please enter your email address below and we will send you instructions "
-"for setting a new password."
+"Please enter your email address below and we will send you instructions for "
+"setting a new password."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/student_account/password_reset.underscore:12
@@ -3867,59 +3811,34 @@ msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/widgets/cookie-consent.html:20
 msgid ""
-"This website uses cookies to ensure you get the best experience on our "
-"website. If you continue browsing this site, we understand that you "
-"accept the use of cookies."
+"This website uses cookies to ensure you get the best experience on our website. "
+"If you continue browsing this site, we understand that you accept the use of "
+"cookies."
 msgstr ""
 
 #: edx-platform/cabinet-theme/lms/templates/widgets/cookie-consent.html:21
 msgid "Got it!"
 msgstr ""
 
-#~ msgid ""
-#~ "You're receiving this e-mail because you"
-#~ " requested a password reset for your"
-#~ " user account at %(platform_name)s."
-#~ msgstr ""
-
-#~ msgid "Please go to the following page and choose a new password:"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "If you didn't request this change, "
-#~ "you can disregard this email - we"
-#~ " have not yet reset your password."
-#~ msgstr ""
-
-#~ msgid "Thanks for using our site!"
-#~ msgstr ""
-
-#~ msgid "The %(platform_name)s Team"
-#~ msgstr ""
+# Manually added translation
+#: cabinet-theme/lms/templates/student_account/login_and_register.html
+msgid ""
+"Usernames can only contain letters (A-Z, a-z), numerals (0-9), underscores (_), "
+"and hyphens (-). The name that will identify you in your courses. It cannot be "
+"changed later."
+msgstr ""
+"Les noms d'utilisateur peuvent seulement contenir des lettres (A-Z, a-z), des "
+"chiffres (0-9), des tirets bas (_) et des traits d'union (-). Le nom qui "
+"permettra de vous identifier en cours. Il ne pourra pas être modifié plus tard."
 
 # Manually added translation
 #: cabinet-theme/lms/templates/student_account/login_and_register.html
 msgid ""
-"Usernames can only contain letters (A-Z, a-z), numerals (0-9), underscores "
-"(_), and hyphens (-). "
-"The name that will identify you in your courses. "
-"It cannot be changed later."
+"Passwords must have a minimum length of 8 characters, contain a mix of upper "
+"and lowercase letters, and have at least 1 number."
 msgstr ""
-"Les noms d'utilisateur peuvent seulement contenir des lettres (A-Z, a-z), "
-"des chiffres (0-9), des tirets bas (_) et des traits d'union (-). "
-"Le nom qui permettra de vous identifier en cours. Il ne pourra pas être "
-"modifié plus tard."
-
-# Manually added translation
-#: cabinet-theme/lms/templates/student_account/login_and_register.html
-msgid ""
-"Passwords must have a minimum length of 8 characters, "
-"contain a mix of upper and lowercase letters, "
-"and have at least 1 number."
-msgstr ""
-"Les mots de passe doivent posséder un minimum de 8 caractères, "
-"contenir un mélange de lettres majuscules et minuscules, "
-"et avoir au moins 1 chiffre."
+"Les mots de passe doivent posséder un minimum de 8 caractères, contenir un "
+"mélange de lettres majuscules et minuscules, et avoir au moins 1 chiffre."
 
 # Manually added translation
 #: Courseware tab added manually in studio
