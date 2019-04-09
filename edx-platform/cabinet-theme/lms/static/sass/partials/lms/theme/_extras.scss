@@ -3585,11 +3585,7 @@ div {
               margin: 0;
               padding: 0;
               i.fa.fa-caret-right {
-                position: absolute;
-                bottom: 17px;
-                right: 136px;
-                font-size: 23px;
-                color: #21368b;
+                padding: 3px 10px;
               }
               a {
                 width: 100% !important;
@@ -10363,3 +10359,9 @@ iframe {
   font-size: 16px;
   overflow-x: auto;
 }
+
+.content-wrapper section.outside-app h1 {
+  text-align: center;
+}
+
+

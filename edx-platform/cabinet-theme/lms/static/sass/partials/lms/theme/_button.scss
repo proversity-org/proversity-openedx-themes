@@ -1595,10 +1595,17 @@ button.list-group-item-danger.active:focus {
   border-color: #126f9a;
   transition: all 0.3s;
   border-radius: 4px;
+  padding: 8px 20px;
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     color: #fff !important;
     border-color: #0f1d4e !important;
+    background: #0f1d4e !important;
+    box-shadow: none;
+    text-decoration: none !important;
+    outline: none;
   }
 }
 
@@ -1646,10 +1653,14 @@ button.list-group-item-danger.active:focus {
   color: #fff;
 }
 
-.btn {
-  font-family: "Raleway","Helvetica",Sans-Serif;
-  margin: 20px 20px 20px 20px;
+.window-wrap .btn,
+.window-wrap button {
+  font-family: "Raleway","Helvetica", Sans-Serif;
   text-transform: none;
+}
+
+.btn {
+  margin: 20px 20px 20px 20px;
 }
 
 .btn-lg {
@@ -1804,4 +1815,9 @@ form {
     text-shadow: none;
     padding: 7px 10px;
   }
+}
+
+.wmd-prompt-dialog .form .btn {
+  background-color: #fff;
+  color: #0075b4!important;
 }
