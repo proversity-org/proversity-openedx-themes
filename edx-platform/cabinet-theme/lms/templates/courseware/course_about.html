@@ -168,22 +168,15 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
           </ul>
 
           % if user.is_authenticated and registered:
-            %if show_courseware_link and user_is_active:
-              <a href="${course_target}" class="btn btn-lg btn-default">
-                ${_("View Course")}
-              </a>
-            %else:
-              </a>
+            %if show_courseware_link:
+              <a class="btn" href="${course_target}">
+            %endif
 
-              <p>
-                %if user_is_active:
-                <b> ${_("course has not started yet")}
-                %else:
-                <b>${_("Activate Your {platform_name} Account").format(
-                    platform_name=configuration_helpers.get_value('PLATFORM_NAME', settings.PLATFORM_NAME
-                ))}</b>
-                %endif
-              </p>
+            <span class="register disabled">${_("You are enroled in this course")}</span>
+
+            %if show_courseware_link:
+              <strong>${_("View Course")}</strong>
+              </a>
             %endif
           %elif in_cart:
           <span class="add-to-cart">
