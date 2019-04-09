@@ -169,10 +169,10 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
 
           % if user.is_authenticated and registered:
             %if show_courseware_link:
-              <a class="btn" href="${course_target}">
+              <a class="btn btn-lg btn-default" href="${course_target}">
             %endif
 
-            <span class="register disabled">${_("You are enroled in this course")}</span>
+            <span class="register disabled">${_("You are enrolled in this course")}</span>
 
             %if show_courseware_link:
               <strong>${_("View Course")}</strong>
@@ -186,12 +186,12 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
 
             ${_("Course is full")}  
           % elif invitation_only and not can_enroll:
-            <span class="register disabled">${_("Enrollment in this course is by invitation only")}</span>
+            <span class="register disabled">${_("Enrolment in this course is by invitation only")}</span>
           ## Shib courses need the enrollment button to be displayed even when can_enroll is False,
           ## because AnonymousUsers cause can_enroll for shib courses to be False, but we need them to be able to click
           ## so that they can register and become a real user that can enroll.
           % elif not is_shib_course and not can_enroll:
-          <span class="register disabled">${_("Enrollment is Closed")}</span>
+          <span class="register disabled">${_("Enrolment is Closed")}</span>
           %elif can_add_course_to_cart:
           <%
           if user.is_authenticated:
