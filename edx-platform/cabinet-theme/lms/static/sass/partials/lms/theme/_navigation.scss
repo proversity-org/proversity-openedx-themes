@@ -875,3 +875,7 @@
     50% {background-color: transparent;}
     100% {background-color: red;}
 }
+
+.dropdown-options .dropdown-toggle::after {
+  display: none;
+}
