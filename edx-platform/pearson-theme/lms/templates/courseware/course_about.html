@@ -1,14 +1,14 @@
 <%namespace name='static' file='../static_content.html'/>
 <%!
-  from django.utils.translation import ugettext as _
-from django.core.urlresolvers import reverse
 from courseware.courses import get_course_about_section
 from django.conf import settings
-from six import text_type
+from django.core.urlresolvers import reverse
+from django.utils.translation import ugettext as _
 from edxmako.shortcuts import marketing_link
+from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
 from openedx.core.djangolib.markup import HTML
 from openedx.core.lib.courses import course_image_url
-from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
+from six import text_type
 from six import string_types
 %>
 
@@ -236,6 +236,9 @@ from six import string_types
               ))}</b>
             </p>
           %endif
+
+        %elif course.pay_now_link:
+        <a href="${course.pay_now_link}" class="btn pay-now-button">${_("Buy Now")}</a>
 
         %elif in_cart:
           <span class="add-to-cart">
@@ -502,19 +505,21 @@ from six import string_types
 ## Need to put this hidden form on the page so that the registration button works.
 ## Since it's no harm to display a hidden form, we display it with the most permissive conditional
 ## which is when the student is not registered.
-%if active_reg_button or is_shib_course or needs_to_verify_age:
-  <div style="display: none;">
-    <form id="class_enroll_form" method="post" data-remote="true" action="${reverse('change_enrollment')}">
-      <fieldset class="enroll_fieldset">
-        <legend class="sr">${_("Enroll")}</legend>
-        <input name="course_id" type="hidden" value="${course.id | h}">
-        <input name="enrollment_action" type="hidden" value="enroll">
-      </fieldset>
-      <div class="submit">
-        <input name="submit" type="submit" value="${_('enroll')}">
-      </div>
-    </form>
-  </div>
+%if not course.pay_now_link:
+  %if active_reg_button or is_shib_course or needs_to_verify_age:
+    <div style="display: none;">
+      <form id="class_enroll_form" method="post" data-remote="true" action="${reverse('change_enrollment')}">
+        <fieldset class="enroll_fieldset">
+          <legend class="sr">${_("Enroll")}</legend>
+          <input name="course_id" type="hidden" value="${course.id | h}">
+          <input name="enrollment_action" type="hidden" value="enroll">
+        </fieldset>
+        <div class="submit">
+          <input name="submit" type="submit" value="${_('enroll')}">
+        </div>
+      </form>
+    </div>
+  %endif
 %endif
 
 <%include file="../video_modal.html" />
