@@ -1,0 +1,46 @@
+{% extends 'customer/email_base.html' %}
+{% load i18n %}
+{% block body %}
+<!-- Message Body -->
+<tr>
+    <td class="container-padding" bgcolor="#ffffff" style="background-color: #ffffff; padding-left: 30px; padding-right: 30px; font-size: 13px; line-height: 20px; font-family: Open Sans, sans-serif; color: #333; border-radius: 5px;" align="left">
+        <br>
+        <!--/message HTML content -->
+        <p>{% blocktrans %}Hi {{full_name}},{% endblocktrans %}</p>
+        <br>
+        <p>{% blocktrans with course_title=course_title platform_name=platform_name %}Thank you for purchasing a seat on {{course_title}}. The charge below will appear on your next credit or debit card statement with a company name of Africa Professional Services Group Ltd.{% endblocktrans %}</p>
+        <br>
+
+        <p>{% blocktrans %}If you have purchased an early bird seat you will have access to the course on the 'Go live' date.  If you have purchased the course on or after the go live date you will receive immediate access.{% endblocktrans %}</p>
+
+        <p><a href="{{lms_dashboard_url}}">{% blocktrans %}View your courses here. {% endblocktrans %} </a></p>
+
+        <p>{% blocktrans %}If you have any questions at all please do not hesitate to contact us on
+            <a href="mailto:support@africa-legal.com">support@africa-legal.com</a>{% endblocktrans %}</p>
+
+        <p>{% blocktrans %}Thank you for joining Africa Legal's learning community.{% endblocktrans %}</p>
+
+        <p>{% blocktrans %}Kind regards<br/>
+            Scott Cowan<br/>
+            CEO and Co-Founder
+            {% endblocktrans %}</p>
+
+        <!--/message HTML content -->
+        <br><br>
+    </td>
+</tr>
+
+<tr>
+    <td class="footer-padding" style="padding-left: 30px; padding-right: 30px; font-size: 13px; line-height: 20px; font-family: Open Sans, sans-serif; color: #002D40; background-color: #f3f3f3;" align="left">
+        <!--footer content -->
+        <br>
+        <p>{% blocktrans with course_title=course_title platform_name=platform_name %}You are receiving this email because you purchased a seat in the {{platform_name}} course {{course_title}}.{% endblocktrans %}</p>
+        <br>
+        <!--/ end footer content -->
+    </td>
+</tr>
+<!--/100% wrapper-->
+<br>
+<br>
+{% endblock body %}
+

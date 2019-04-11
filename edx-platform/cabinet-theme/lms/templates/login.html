@@ -1,0 +1,229 @@
+<%inherit file="/main.html" />
+<%namespace name='static' file='/static_content.html'/>
+
+<%!
+from django.core.urlresolvers import reverse
+from django.utils.translation import ugettext as _
+import third_party_auth
+from third_party_auth import provider, pipeline
+%>
+
+<%block name="pagetitle">${_("Log into your {platform_name} Account").format(platform_name=platform_name)}</%block>
+
+<%block name="bodyclass">view-login</%block>
+
+<%block name="js_extra">
+  <script type="text/javascript">
+    $(function() {
+
+      // adding js class for styling with accessibility in mind
+      $('body').addClass('js');
+
+      // show forgot password modal UI if URL contains matching DOM ID
+      if ($.deparam.fragment()['forgot-password-modal'] !== undefined) {
+        $('.pwd-reset').click();
+      }
+
+      // new window/tab opening
+      $('a[rel="external"], a[class="new-vp"]')
+      .click( function() {
+        window.open( $(this).attr('href') );
+        return false;
+      });
+
+      // form field label styling on focus
+      $("form :input").focus(function() {
+        $("label[for='" + this.id + "']").parent().addClass("is-focused");
+      }).blur(function() {
+        $("label").parent().removeClass("is-focused");
+      });
+
+      $("#email").focus();
+    });
+
+    (function() {
+      toggleSubmitButton(true);
+
+      $('#login-form').on('submit', function() {
+        toggleSubmitButton(false);
+      });
+
+      $('#login-form').on('ajax:error', function(event, request, status_string) {
+        toggleSubmitButton(true);
+
+        if (request.status === 403) {
+          $('.message.submission-error').addClass('hidden');
+          $('.third-party-signin.message').removeClass('hidden').focus();
+          $('.third-party-signin.message .instructions').html(request.responseText);
+        } else {
+          $('.third-party-signin.message').addClass('hidden');
+          $('.message.submission-error').removeClass('hidden').focus();
+          $('.message.submission-error').html(gettext("Your request could not be completed.  Please try again."));
+        }
+      });
+
+      $('#login-form').on('ajax:success', function(event, json, xhr) {
+
+        if(json.success) {
+
+          var nextUrl = "${login_redirect_url}";
+          if (json.redirect_url) {
+            nextUrl = json.redirect_url; // Most likely third party auth completion. This trumps 'nextUrl' above.
+          }
+
+          if (!isExternal(nextUrl)) {
+            location.href=nextUrl;
+
+          } else {
+            location.href="${reverse('dashboard')}";
+          }
+        } else if(json.hasOwnProperty('redirect')) {
+
+          // Shibboleth authentication redirect requested by the server:
+          var u=decodeURI(window.location.search);
+          if (!isExternal(json.redirect)) { // a paranoid check.  Our server is the one providing json.redirect
+              location.href=json.redirect+u;
+          } // else we just remain on this page, which is fine since this particular path implies a login failure
+            // that has been generated via packet tampering (json.redirect has been messed with).
+        } else {
+          toggleSubmitButton(true);
+          $('.message.submission-error').removeClass('hidden').focus();
+          $('.message.submission-error p .message-copy').html(json.value);
+        }
+      });
+      $("#forgot-password-link").click(function() {
+        $("#forgot-password-modal").show();
+        $("#forgot-password-modal .close-modal").focus();
+      });
+
+    })(this);
+
+    function toggleSubmitButton(enable) {
+      var $submitButton = $('form .form-actions #submit');
+
+      if(enable) {
+        $submitButton.
+          removeClass('is-disabled').
+          attr('aria-disabled', false).
+          prop('disabled', false).
+          html("${_('Log in')}");
+      }
+      else {
+        $submitButton.
+          addClass('is-disabled').
+          prop('disabled', true).
+          text("${_(u'Processing your account information')}");
+      }
+    }
+
+    function thirdPartySignin(event, url) {
+      event.preventDefault();
+      window.location.href = url;
+    }
+
+    (function post_form_if_pipeline_running(pipeline_running) {
+       // If the pipeline is running, the user has already authenticated via a
+       // third-party provider. We want to invoke /login_ajax to loop in the
+       // code that does logging and sets cookies on the request. It is most
+       // consistent to do that by using the same mechanism that is used when
+       // the use does first-party sign-in: POSTing the sign-in form.
+       if (pipeline_running) {
+         $('#login-form').submit();
+       }
+    })(${pipeline_running})
+  </script>
+</%block>
+
+<%include file="forgot_password_modal.html" />
+
+<section role="default">
+  <div class="section-media"></div>
+
+  <div class="container no-border">
+    <div class="row">
+      <div class="col-md-12 col-xs-12">
+        <div class="wrapper waypoint">
+
+          <form role="form" id="login-form" method="post" data-remote="true" action="/login_ajax" novalidate>
+
+            <div class="signin">
+              <h1>${_("Sign in")}</h1>
+
+              <p class="instructions sr">
+                ${_('Please provide the following information to log into your {platform_name} account.').format(platform_name=platform_name)}
+              </p>
+
+              <label for="email">${_('E-mail')} or ${_('username')}</label>
+              <input class="" id="email" type="email" name="email" value="" placeholder="${_('example: username@domain.com')} or ${_('username')}" required aria-required="true" aria-described-by="email-tip" />
+
+              <span class="tip tip-input" id="email-tip">${_("This is the e-mail address or username you used to register with {platform} ").format(platform=platform_name)}</span>
+
+              <label for="password">${_('Password')}</label>
+              <input id="password" type="password" name="password" value="" required aria-required="true" />
+
+              <div class="message user-message user-error hidden">
+                <p><span class="glyphicon glyphicon-remove"></span> ${_("We're Sorry, {platform_name} accounts are unavailable currently").format(platform_name=platform_name)}</p>
+              </div>
+
+              <div class="message user-message user-error hidden submission-error">
+                <p><span class="glyphicon glyphicon-remove"></span> ${_("We couldn't log you in.")} <br /> <span class="message-copy">${_("Your email or password is incorrect")}</span></p>
+              </div>
+
+              <div class="user-message user-error hidden third-party-signin">
+                <p class="instructions"><span class="glyphicon glyphicon-remove"></span></p>
+              </div>
+
+              % if third_party_auth_error:
+                <div class="user-message user-error hidden third-party-auth-error">
+                  <p><span class="glyphicon glyphicon-remove"></span>${_("An error occurred when signing you in to {platform_name}.").format(platform_name=platform_name)} <br /> ${third_party_auth_error}</p>
+                </div>
+              % endif
+
+              <ul id="field-remember">
+                <li><input id="remember-yes" type="checkbox" name="remember" value="true" /></li>
+                <li><label for="remember-yes">${_('Remember me')}</label></li>
+              </ul>
+
+              <div class="form-actions">
+                <button name="submit" type="submit" id="submit" class="btn btn-lg btn-default"></button>
+              </div>
+
+              <p><a href="#" data-toggle="modal" data-target="#forgotPasswordModal">${_('Forgot password?')}</a></p>
+
+              <p><a href="/register">${_("Register")}</a></p>
+            </div>
+
+          </form>
+
+          % if third_party_auth.is_enabled():
+
+            <span class="deco-divider">
+              ## Developers: this is a sentence fragment, which is usually frowned upon. The design of the pags uses this fragment to provide an "else" clause underneath a number of choices.  It's OK to leave it.
+              ## Translators: this is the last choice of a number of choices of how to log in to the site.
+              <span class="copy">${_('or')}</span>
+            </span>
+
+            <div class="form-actions form-third-party-auth">
+
+              % for enabled in provider.Registry.displayed_for_login():
+                ## Translators: provider_name is the name of an external, third-party user authentication provider (like Google or LinkedIn).
+                <button type="submit" class="button button-primary button-${enabled.provider_id} login-${enabled.provider_id}" onclick="thirdPartySignin(event, '${pipeline_url[enabled.provider_id]}');">
+                  % if enabled.icon_class:
+                  <span class="icon fa ${enabled.icon_class}" aria-hidden="true"></span>
+                  % else:
+                  <span class="icon" aria-hidden="true"><img class="icon-image" src="${enabled.icon_image.url}" alt="${enabled.name} icon" /></span>
+                  % endif
+                  ${_('Sign in with {provider_name}').format(provider_name=enabled.name)}
+                </button>
+              % endfor
+
+            </div>
+
+          % endif
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -6,6 +6,7 @@ from django.utils.translation import ugettext as _
 from django.core.urlresolvers import reverse
 
 from openedx.core.djangolib.markup import HTML, Text
+from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
 %>
 
 <main id="main" aria-label="Content" tabindex="-1">
@@ -40,16 +41,15 @@ from openedx.core.djangolib.markup import HTML, Text
 
       </header> -->
       <section class="home-banner">
-          <header class="banner">
-
+          <header class="banner ${configuration_helpers.get_value('site_title_box_class', ' ')}" style="background-image: url(${static.url(configuration_helpers.get_value('banner_image_url', 'pearson-theme/images/banner_pearson_white.jpg'))});">
              <h1 class="title">
 
                 <span class="title-super">
-
+                  ${configuration_helpers.get_value('home_page_title',' ')}
                 </span>
 
                 <p class="title-sub">
-
+                  ${configuration_helpers.get_value('home_page_subtitle',' ')}
                 </p>
 
              </h1>
