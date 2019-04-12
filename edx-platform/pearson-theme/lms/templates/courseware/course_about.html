@@ -8,6 +8,7 @@ from edxmako.shortcuts import marketing_link
 from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
 from openedx.core.djangolib.markup import HTML
 from openedx.core.lib.courses import course_image_url
+
 from six import text_type
 from six import string_types
 %>
@@ -238,7 +239,7 @@ from six import string_types
           %endif
 
         %elif course.pay_now_link:
-        <a href="${course.pay_now_link}" class="btn pay-now-button">${_("Buy Now")}</a>
+          <a href="${course.pay_now_link}" class="btn pay-now-button">${_("Buy Now")}</a>
 
         %elif in_cart:
           <span class="add-to-cart">
@@ -519,7 +520,6 @@ from six import string_types
     </form>
   </div>
 %endif
-
 
 <%include file="../video_modal.html" />
 
