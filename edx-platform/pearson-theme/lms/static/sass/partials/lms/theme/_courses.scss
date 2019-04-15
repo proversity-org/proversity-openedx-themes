@@ -31,6 +31,10 @@ section.intro div.main-cta a strong {
   color: $inverse;
 }
 
+.content-wrapper .course-info header.course-profile {
+  height: auto;
+}
+
 @media (max-width: 767px){
   .course-info header.course-profile .intro-inner-wrapper div.media {
     display: none;
