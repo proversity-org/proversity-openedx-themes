@@ -8,6 +8,10 @@ from django.core.urlresolvers import reverse
 from openedx.core.djangolib.markup import HTML, Text
 from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
 %>
+<%
+search_courses_home = configuration_helpers.get_value('search_courses_home', '')
+quick_filters_home = configuration_helpers.get_value('quick_filters_home', [])
+%>
 
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="home">
@@ -55,6 +59,28 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
              </h1>
           </header>
         </section>
+
+        %if search_courses_home:
+          <div class="course-search-home">
+            <label><span >${_("Search for a course")}</span></label>
+            <div class="search-home-container">
+              <input id="search-input" type="text" placeholder="${_("Search for a course")}"></input>
+              <span class="icon fa fa-remove clear-search-icon"></span>
+            </div>
+            
+            %if quick_filters_home:
+              <div class="quick-filters-home">
+                <div class="quick-filter-label">${_("Quick Filters:")}</div>
+                <ul>
+                  %for filter_item in quick_filters_home:
+                    <li class="quick-filter-item">${filter_item}</li>
+                  %endfor
+                </ul>  
+              </div>
+            %endif
+          </div>
+        %endif
+
       <%include file="${courses_list}" />
 
     </section>
@@ -85,3 +111,57 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
   $(window).load(function() {$('#signup_action').trigger("click");});
 </script>
 % endif
+
+%if search_courses_home:
+  <script type="text/javascript">
+    var searchHome = (function() {
+      'use strict';
+
+      var inputField, coursesList, filters, iconClear, valueInput, textCourse;
+
+      function initElements() {
+        inputField = $("#search-input");
+        coursesList = $(".courses-listing li");
+        filters = $(".quick-filter-item");
+        iconClear = $(".clear-search-icon");
+      }
+
+      function eventSearch() {
+        inputField.on("input", function() {
+          valueInput = $(this).val().toLowerCase();
+          coursesList.filter(function(){
+            textCourse = $(this).text().toLowerCase();
+            $(this).toggle(textCourse.indexOf(valueInput) > -1);
+          });
+        });
+      } 
+
+      function eventFilters() {
+        filters.on("click", function() {
+          inputField.val($(this).text()).trigger("input");  
+        });
+      }
+
+      function clearSearch() {
+        iconClear.on("click", function() {
+          inputField.val("").trigger("input");
+        });
+      }
+
+      return {
+        initElements: initElements,
+        eventSearch: eventSearch,
+        eventFilters: eventFilters,
+        clearSearch: clearSearch
+      };
+    }());
+
+    $(window).load(function() {
+      searchHome.initElements();
+      searchHome.eventSearch();
+      searchHome.eventFilters();
+      searchHome.clearSearch();
+    });
+
+  </script>
+%endif
