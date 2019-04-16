@@ -191,3 +191,13 @@ iframe.rocket-chat-view {
 .prompt.warning .action-secondary {
   color: $primary;
 }
+
+.pay-now-button.btn {
+  background-color: $pearson-dark-blue-courseware;
+  border: 1px solid $pearson-dark-blue-courseware;
+  padding: 10px 0;
+  width: 40%;
+  display: block;
+  font: normal 1.2rem/1.6rem Open Sans;
+  text-align: center;
+}
