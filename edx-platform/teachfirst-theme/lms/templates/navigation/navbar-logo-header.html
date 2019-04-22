@@ -22,7 +22,7 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
 %>
 
 % if False:
-  <nav class="navbar navbar-default" style="background-image: url(${static.url('CEL/images/navigation.background.png')})">
+  <nav class="navbar navbar-default" style="background-image: url(${static.url('images/navigation.background.png')})">
 % else:
   <nav class="navbar navbar-default">
 % endif
@@ -37,32 +37,32 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
               % if False:
                 <li>
                   <a href="">
-                    <img src="${static.url('CEL/images/brand.svg')}" class="img-responsive" />
+                    <img src="${static.url('images/brand.svg')}" class="img-responsive" />
                   </a>
                 </li>
               % else:
                 <li>
                   <a href="${marketing_link('ROOT')}">
-                    <img src="${static.url('CEL/images/brand.svg')}" class="img-responsive" />
+                    <img src="${static.url('images/brand.svg')}" class="img-responsive" />
                   </a>
                 </li>
               % endif
             </li>
             <li class="brand-alt-left hidden-xs">
-              <img src="${static.url('CEL/images/brand.alt.svg')}" class="img-responsive" />
+              <img src="${static.url('images/brand.alt.svg')}" class="img-responsive" />
             </li>
           </ul>
           <ul class="nav navbar-nav hidden-lg hidden-md hidden-sm">
             % if False:
               <li>
                 <a href="">
-                  <img src="${static.url('CEL/images/brand.sm.svg')}" class="img-responsive" />
+                  <img src="${static.url('images/brand.sm.svg')}" class="img-responsive" />
                 </a>
               </li>
             % else:
               <li>
                 <a href="${marketing_link('ROOT')}">
-                  <img src="${static.url('CEL/images/brand.sm.svg')}" class="img-responsive" />
+                  <img src="${static.url('images/brand.sm.svg')}" class="img-responsive" />
                 </a>
               </li>
             % endif
@@ -73,7 +73,7 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
       <div>
         <ul class="nav navbar-nav navbar-right">
           <li class="brand-alt-right hidden-xs">
-            <img src="${static.url('CEL/images/brand.alt.svg')}" class="img-responsive" />
+            <img src="${static.url('images/brand.alt.svg')}" class="img-responsive" />
           </li>
           % if user.is_authenticated():
 

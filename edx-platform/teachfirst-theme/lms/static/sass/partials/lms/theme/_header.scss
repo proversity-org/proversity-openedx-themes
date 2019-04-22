@@ -399,8 +399,14 @@
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
-  &:focus {
+  box-shadow: none;
+
+  &:focus,
+  &:hover,
+  &:active {
     outline: 0;
+    box-shadow: none;
+    border: none;
   }
   .icon-bar {
     display: block;
@@ -696,6 +702,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   border-top-color: transparent;
   border-left-color: transparent;
   border-right-color: transparent;
+  padding: 0;
+  
   .navbar-nav {
     display: -webkit-box;
     display: -moz-box;
@@ -709,6 +717,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     align-content: center;
     margin: 0;
     height: 1px;
+    flex-direction: inherit;
+
     .brand-alt-left {
       display: none;
     }
@@ -810,6 +820,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   -ms-flex-line-pack: center;
   align-content: center;
   float: none;
+  width: 100%;
+
   div {
     &:last-child {
       width: 100%;
@@ -1327,4 +1339,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
       }
     }
   }
+}
+
+.window-wrap .navbar-default .container-fluid {
+  display: block;
 }

@@ -10,55 +10,6 @@
 <% footer = get_footer(is_secure=is_secure) %>
 <%namespace name='static' file='/static_content.html'/>
   
-% if uses_bootstrap:
-  <div class="container-fluid wrapper-footer no-print">
-    <footer>
-      <div class="row">
-        <div class="col-md-9">
-          <nav class="navbar site-nav navbar-toggleable-sm navbar-light" aria-label="${_('About')}">
-            <ul class="navbar-nav">
-              <li><a href="" target="_blank">${_("About")}</a></li>
-              <li><a href="" target="_blank">${_("Contact")}</a></li>
-              <li><a href="${marketing_link('TOS')}" target="_blank">${_("Terms of Service")}</a></li>
-              <li><a href="${marketing_link('HONOR')}" target="_blank">${_("Honour Code")}</a></li>
-              <li><a href="${marketing_link('PRIVACY')}" target="_blank">${_("Privacy Policy")}</a></li>
-              <li><a href="${marketing_link('COOKIES')}" target="_blank">${_("Cookie Policy")}</a></li>
-            </ul>
-
-            <ul class="navbar-nav">
-              % if configuration_helpers.get_value('ENABLE_EXTEND_FOOTER_MENU', False):
-                % for menu_item in configuration_helpers.get_value('EXTENDED_MENU', []):
-                  <% display_name, url = menu_item.split(",") %>
-                  <li>
-                    <a href="${url}" target="blank">${_(display_name)}</a>
-                  </li>
-                % endfor
-              % endif
-            </ul>
-
-            <ul class="sponsors">
-              <li><a href="https://proversity.org/"><img src="/static/CEL/images/proversity.svg" /></a></li>
-              <li><a href="${footer['openedx_link']['url']}"><img src="/static/CEL/images/openedx.svg" /></a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="col-md-3">
-          ## Please leave this link and use one of the logos provided
-          ## The OpenEdX link may be hidden when this view is served
-          ## through an API to partner sites (such as marketing sites or blogs),
-          ## which are not technically powered by Open edX.
-          % if not hide_openedx_link:
-            <div class="footer-about-openedx">
-              <p>
-                  <p>${_("Built by")} <a href="https://proversity.org/" target="_blank">Proversity</a> | ${_("Powered by")} <a href="${footer['openedx_link']['url']}" target="_blank">Open edX</a></p>
-              </p>
-            </div>
-          % endif
-        </div>
-      </div>
-    </footer>
-  </div>
-% else:
 
 <footer class="footer" aria-label="${_("Page Footer")}"
     ## When rendering the footer through the branding API,
@@ -94,8 +45,8 @@
             </ul>
 
             <ul class="sponsors">
-              <li><a href="https://proversity.org/" target="_blank"><img src="/static/CEL/images/proversity.svg" /></a></li>
-              <li><a href="${footer['openedx_link']['url']}" target="_blank"><img src="/static/CEL/images/openedx.svg" /></a></li>
+              <li><a href="https://proversity.org/" target="_blank"><img src="${static.url('images/proversity.svg')}" /></a></li>
+              <li><a href="${footer['openedx_link']['url']}" target="_blank"><img src="${static.url('images/openedx.svg')}" /></a></li>
             </ul>
           </div>
         </div>
@@ -128,8 +79,8 @@
         <div class="items">
           <div>
             <ul class="sponsors">
-              <li><a href="https://proversity.org/" target="_blank"><img src="/static/CEL/images/proversity.svg" /></a></li>
-              <li><a href="${footer['openedx_link']['url']}" target="_blank"><img src="/static/CEL/images/openedx.svg" /></a></li>
+              <li><a href="https://proversity.org/" target="_blank"><img src="${static.url('images/proversity.svg')}" /></a></li>
+              <li><a href="${footer['openedx_link']['url']}" target="_blank"><img src="${static.url('images/openedx.svg')}" /></a></li>
             </ul>
           </div>
         </div>
@@ -162,8 +113,8 @@
         <div class="items">
           <div>
             <ul class="sponsors">
-              <li><a href="https://proversity.org/" target="_blank"><img src="/static/CEL/images/proversity.svg" /></a></li>
-              <li><a href="${footer['openedx_link']['url']}" target="_blank"><img src="/static/CEL/images/openedx.svg" /></a></li>
+              <li><a href="https://proversity.org/" target="_blank"><img src="${static.url('images/proversity.svg')}" /></a></li>
+              <li><a href="${footer['openedx_link']['url']}" target="_blank"><img src="${static.url('images/openedx.svg')}" /></a></li>
             </ul>
           </div>
         </div>
@@ -172,8 +123,6 @@
 
   </div>
 </footer>
-
-% endif
 
 
 % if include_dependencies:

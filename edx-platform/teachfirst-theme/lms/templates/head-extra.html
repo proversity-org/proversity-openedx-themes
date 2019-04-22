@@ -20,16 +20,15 @@
   </script>
 % endif
 
-% if style_overrides_file:
-  <link rel="stylesheet" type="text/css" href="${static.url('CEL/css/style.css')}" />
 
-  <script src="${static.url('CEL/static/js/jquery.mobile.1.4.5.js')}"></script>
-  <script src="${static.url('CEL/static/js/jquery.waypoints.js')}"></script>
-  <script src="${static.url('CEL/static/js/velocity.js')}"></script>
-  <script src="${static.url('CEL/static/js/velocity.ui.js')}"></script>
-  <script src="${static.url('CEL/static/js/bootstrap.js')}"></script>
-  <script src="${static.url('CEL/static/js/jquery.initialize.js')}"></script>
+  ## <link rel="stylesheet" type="text/css" href="${static.url('CEL/css/style.css')}" />
 
-  <script src="${static.url('CEL/static/js/app.js')}"></script>
+  <script src="${static.url('js/jquery.mobile.1.4.5.js')}"></script>
+  <script src="${static.url('js/jquery.waypoints.js')}"></script>
+  <script src="${static.url('js/velocity.js')}"></script>
+  <script src="${static.url('js/velocity.ui.js')}"></script>
+  <script src="${static.url('js/bootstrap.js')}"></script>
+  <script src="${static.url('js/jquery.initialize.js')}"></script>
+
+  <script src="${static.url('js/app.js')}"></script>
 <!-- <link rel="stylesheet" type="text/css" href="${static.url(style_overrides_file)}" /> -->
-% endif
