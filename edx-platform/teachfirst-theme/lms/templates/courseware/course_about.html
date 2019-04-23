@@ -1,124 +1,54 @@
-<%namespace name='static' file='/static_content.html'/>
+<%page expression_filter="h" />
+<%namespace name='static' file='../static_content.html'/>
 <%!
 from django.utils.translation import ugettext as _
-from django.core.urlresolvers import reverse
+from django.utils.translation import pgettext
+from django.urls import reverse
 from courseware.courses import get_course_about_section
 from django.conf import settings
 from six import text_type
 from edxmako.shortcuts import marketing_link
-from openedx.core.djangolib.markup import HTML
+from openedx.core.djangolib.markup import HTML, Text
 from openedx.core.lib.courses import course_image_url
-from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
+from six import string_types
 import third_party_auth
 from third_party_auth import provider, pipeline
+from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
 %>
 
-<%inherit file="/main.html" />
+<%inherit file="../main.html" />
 <%block name="headextra">
   ## OG (Open Graph) title and description added below to give social media info to display
   ## (https://developers.facebook.com/docs/opengraph/howtos/maximizing-distribution-media-content#tags)
-  <meta property="og:title" content="${course.display_name_with_default_escaped}" />
+  <meta property="og:title" content="${course.display_name_with_default}" />
   <meta property="og:description" content="${get_course_about_section(request, course, 'short_description')}" />
 </%block>
 
 <%block name="js_extra">
-  ## CourseTalk widget js script
-  % if show_coursetalk_widget:
-      <script src="//d3q6qq2zt8nhwv.cloudfront.net/s/js/widgets/coursetalk-read-reviews.js"></script>
-  % endif
+
   <script type="text/javascript">
   (function() {
-
-    var course_id = '${course.id}';
-
-    var ageCallBack = function() {
-      $('#ageModal').modal('toggle');
-      $('#modalButton').css('display', 'none');
-    };
-
-    var registerEnroll = function() {
+    $(".register").click(function(event) {
       $("#class_enroll_form").submit();
       event.preventDefault();
-    };
-
-    var registerComplete = function(event, xhr) {
-      if(xhr.status == 200) {
-            if (xhr.responseText == "") {
-              location.href = "${reverse('dashboard')}";
-            }
-            else {
-              location.href = xhr.responseText;
-            }
-          } else if (xhr.status == 403) {
-              location.href = "${reverse('register_user')}?course_id=${course.id | u}&enrollment_action=enroll";
-          } else {
-            $('#register_error').html(
-                (xhr.responseText ? xhr.responseText : "${_("An error occurred. Please try again later.")}")
-            ).css("display", "block");
-          }
-    }
-
-    // focus the Yes button on modal
-    $('.modal').on('shown.bs.modal', function () {
-      $('#age-confirmation').focus();
     });
-
-    // Deal with age confirmation click
-    $('#age-confirmation').on('click', function(event) {
-      event.preventDefault();
-      ageCallBack();
-      $('.main-cta').prepend('<a href="#" class="register">${_("Enrol now")}</a>')
-
-      // Submit the enroll form
-      $(".register").on('click', function(event) {
-         registerEnroll();
-      });
-
-      // Check status of enroll form submission
-      $('#class_enroll_form').on('ajax:complete', registerComplete);
-
-      // Store the response in localStorage
-      localStorage.setItem(course_id, 'yes');
-    });
-
-    // Deal with Age denial click
-    $('#age-denial').on('click', function(event) {
-      event.preventDefault();
-      ageCallBack();
-      $('.main-cta').prepend('<span class="register disabled">${_("You are not old enough to enrol")}</span>');
-
-      // Store the response in localStorage
-      localStorage.setItem(course_id, 'no');
-    });
-
-    // Toggle the overlay when the modal is hidden
-    $('.modal').on('hidden.bs.modal', function () {
-        $('#lean_overlay').fadeToggle();
-      });
-
-    // Submit the enroll form
-    $(".register").on('click', function(event) {
-      registerEnroll();
-    });
-
     % if can_add_course_to_cart:
       add_course_complete_handler = function(jqXHR, textStatus) {
         if (jqXHR.status == 200) {
-          location.href = "${cart_link}";
+          location.href = "${cart_link | n, decode.utf8}";
         }
         if (jqXHR.status == 400) {
-          $("#register_error")
-            .html(jqXHR.responseText ? jqXHR.responseText : "${_("An error occurred. Please try again later.")}")
+          $("#register_error").text(
+            jqXHR.responseText ? jqXHR.responseText : "${_("An error occurred. Please try again later.") | n, decode.utf8}")
             .css("display", "block");
         }
         else if (jqXHR.status == 403) {
-            location.href = "${reg_then_add_to_cart_link}";
+            location.href = "${reg_then_add_to_cart_link | n, decode.utf8}";
         }
       };
-
       $("#add_to_cart_post").click(function(event){
         $.ajax({
-          url: "${reverse('add_course_to_cart', args=[text_type(course.id)])}",
+          url: "${reverse('add_course_to_cart', args=[text_type(course.id)]) | n, decode.utf8}",
           type: "POST",
           /* Rant: HAD TO USE COMPLETE B/C PROMISE.DONE FOR SOME REASON DOES NOT WORK ON THIS PAGE. */
           complete: add_course_complete_handler
@@ -126,305 +56,166 @@ from third_party_auth import provider, pipeline
         event.preventDefault();
       });
     % endif
-
     ## making the conditional around this entire JS block for sanity
     %if settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
       <%
-        perms_error = _('The currently logged-in user account does not have permission to enroll in this course. '
+        perms_error = Text(_('The currently logged-in user account does not have permission to enroll in this course. '
                         'You may need to {start_logout_tag}log out{end_tag} then try the enroll button again. '
-                        'Please visit the {start_help_tag}help page{end_tag} for a possible solution.').format(
-                          start_help_tag="<a href='{url}'>".format(url=marketing_link('FAQ')), end_tag='</a>',
-                          start_logout_tag="<a href='{url}'>".format(url=reverse('logout'))
+                        'Please visit the {start_help_tag}help page{end_tag} for a possible solution.')).format(
+                          start_help_tag=HTML("<a href='{url}'>").format(url=marketing_link('FAQ')), end_tag=HTML('</a>'),
+                          start_logout_tag=HTML("<a href='{url}'>").format(url=reverse('logout'))
                           )
       %>
     $('#class_enroll_form').on('ajax:complete', function(event, xhr) {
       if(xhr.status == 200) {
-        location.href = "${reverse('dashboard')}";
+        location.href = "${reverse('dashboard') | n, decode.utf8}";
       } else if (xhr.status == 403) {
-        location.href = "${reverse('course-specific-register', args=[text_type(course.id)])}?course_id=${course.id | u}&enrollment_action=enroll";
+        location.href = "${reverse('course-specific-register', args=[text_type(course.id)]) | n, decode.utf8 }?course_id=${course.id | n, decode.utf8 }&enrollment_action=enroll";
       } else if (xhr.status == 400) { //This means the user did not have permission
-        $('#register_error').html("${perms_error}").css("display", "block");
+        $('#register_error').text("${perms_error | n, decode.utf8}").css("display", "block");
       } else {
-        $('#register_error').html(
-            (xhr.responseText ? xhr.responseText : "${_("An error occurred. Please try again later.")}")
+        $('#register_error').text(
+            (xhr.responseText ? xhr.responseText : "${_("An error occurred. Please try again later.") | n, decode.utf8}")
         ).css("display", "block");
       }
     });
-
     %else:
-
     $('#class_enroll_form').on('ajax:complete', function(event, xhr) {
       if(xhr.status == 200) {
         if (xhr.responseText == "") {
-          location.href = "${reverse('dashboard')}";
+          location.href = "${reverse('dashboard') | n, decode.utf8}";
         }
         else {
           location.href = xhr.responseText;
         }
       } else if (xhr.status == 403) {
-          location.href = "${reverse('register_user')}?course_id=${course.id | u}&enrollment_action=enroll";
+          location.href = "${reverse('register_user') | n, decode.utf8  }?course_id=${course.id | n, decode.utf8 }&enrollment_action=enroll";
       } else {
-        $('#register_error').html(
-            (xhr.responseText ? xhr.responseText : "${_("An error occurred. Please try again later.")}")
+        $('#register_error').text(
+            (xhr.responseText ? xhr.responseText : "${_("An error occurred. Please try again later.") | n, decode.utf8}")
         ).css("display", "block");
       }
     });
-
     %endif
-
   })(this)
-
-  function thirdPartySignin(event, url) {
-      event.preventDefault();
-      window.location.href = url;
-    }
-
-  (function post_form_if_pipeline_running(pipeline_running) {
-     // If the pipeline is running, the user has already authenticated via a
-     // third-party provider. We want to invoke /login_ajax to loop in the
-     // code that does logging and sets cookies on the request. It is most
-     // consistent to do that by using the same mechanism that is used when
-     // the use does first-party sign-in: POSTing the sign-in form.
-     if (pipeline_running) {
-       $('#login-form').submit();
-     }
-  })(${pipeline_running})
-
-  $(window).load(function() {
-       if(getParameterByName('next')) {
-            $('#login').trigger("click");
-       }
-    })
   </script>
 
   <script src="${static.url('js/course_info.js')}"></script>
 </%block>
 
-<%block name="pagetitle">${course.display_name_with_default_escaped}</%block>
-
-<div class="video-lightbox">
-  <a href="#" class="watch-video-close-btn">&times;</a>
-
-  ${get_course_about_section(request, course, "video")}
-</div>
-
-<div class="scroll-animation-default"></div>
+<%block name="pagetitle">${course.display_name_with_default}</%block>
 
 <section role="course">
 
   <div class="section-media"></div>
 
   <div class="container waypoint no-border">
-
     <div class="course-details">
-
       <div class="row">
         <div class="col-md-12">
-          <h1 class="waypoint">${course.display_name_with_default_escaped}</h1>
+          <h1 class="waypoint">${course.display_name_with_default}</h1>
 
           <ul>
-            <!-- <li>${_("Course Number")} ${course.display_number_with_default | h}</li> -->
-
+            <li>
             % if not course.start_date_is_still_default:
-              <li>
-                
-                <%
-                    course_start_date = course.start
-                %>
-                  <i class="fa fa-calendar" aria-hidden="true"></i> ${_("Classes Start")}
+              <%
+                  course_start_date = course.advertised_start or course.start
+              %>
+              <span class="icon fa fa-calendar" aria-hidden="true"></span>
+              ${_("Classes Start")}
+              % if isinstance(course_start_date, string_types):
+                  <span class="localized_datetime">${course_start_date}</span>
+              % else:
+                  <%
+                     course_date_string = course_start_date.strftime('%Y-%m-%dT%H:%M:%S%z')
+                  %>
+                  <span class="localized_datetime" data-format="shortDate" data-datetime="${course_date_string}" data-language="${LANGUAGE_CODE}"></span>
+              % endif
+            </li>
+          % endif
 
-                  % if isinstance(course_start_date, str):
-                      ${course_start_date}
-                  % else:
-                      <%
-                         course_date_string = course_start_date.strftime('%Y-%m-%dT%H:%M:%S%z')
-                      %>
-                      <span class="localized_datetime" data-format="shortDate" data-datetime="${course_date_string}"></span>
-                  % endif
-                
-              </li>
-            % endif
-
-            ## We plan to ditch end_date (which is not stored in course metadata),
-            ## but for backwards compatibility, show about/end_date blob if it exists.
-
-            % if get_course_about_section(request, course, "end_date") or course.end:
-              <li>
+          % if get_course_about_section(request, course, "end_date") or course.end:
                 <%
                     course_end_date = course.end
                 %>
+            <li class="important-dates-item">
+                <span class="icon fa fa-calendar" aria-hidden="true"></span>
+                ${_("Classes End")}
+                  % if isinstance(course_end_date, string_types):
+                      <span class="important-dates-item-text final-date">${course_end_date}</span>
+                  % else:
+                    <%
+                        course_date_string = course_end_date.strftime('%Y-%m-%dT%H:%M:%S%z')
+                    %>
+                    <span class="important-dates-item-text final-date localized_datetime" data-format="shortDate" data-datetime="${course_date_string}" data-language="${LANGUAGE_CODE}"></span>
+                  % endif
+            </li>
+          % endif
 
-                  <i class="fa fa-calendar" aria-hidden="true"></i> ${_("Classes End")}
-
-                    % if isinstance(course_end_date, str):
-                        ${course_end_date}
-                    % else:
-                      <%
-                          course_date_string = course_end_date.strftime('%Y-%m-%dT%H:%M:%S%z')
-                      %>
-                      <span class="localized_datetime" data-format="shortDate" data-datetime="${course_date_string}"></span>
-                    % endif
-              </li>
-            % endif
-
-            % if get_course_about_section(request, course, "effort"):
+          % if get_course_about_section(request, course, "effort"):
               <li>
                 <i class="fa fa-pencil" aria-hidden="true"></i> ${_("Estimated duration")} ${get_course_about_section(request, course, "effort")}
               </li>
-            % endif
+          % endif
 
-            <!-- <li>
-              <i class="fa fa-clock-o" aria-hidden="true"></i> ${_('Course length')} ${_('{number} weeks').format(number=15)}
-            </li> -->
-
-            %if course_price and (can_add_course_to_cart or is_cosmetic_price_enabled):
-              <li>
-                <i class="icon fa fa-money" aria-hidden="true"></i> ${_("Price")} ${course_price}
-              </li>
-            %endif
+          %if course_price and (can_add_course_to_cart or is_cosmetic_price_enabled):
+            <li class="important-dates-item">
+              <span class="icon fa fa-money" aria-hidden="true"></span>
+              ${_("Price")}
+              ${course_price}
+            </li>
+          %endif
           </ul>
 
-          %if user.is_authenticated() and registered:
-
-            %if show_courseware_link and user_is_active:
-              <a href="${course_target}" class="btn btn-lg btn-default">
-                ${_("View Course")}
+          % if user.is_authenticated and registered:
+            %if show_courseware_link:
+              <a class="btn btn-lg btn-default" href="${course_target}">
+              <strong>${_("View Course")}</strong>
               </a>
-            %else:
-              </a>
-
-              <p>
-                %if user_is_active:
-                <b> ${_("course has not started yet")}
-                %else:
-                <b>${_("Activate Your {platform_name} Account").format(
-                    platform_name=configuration_helpers.get_value('PLATFORM_NAME', settings.PLATFORM_NAME
-                ))}</b>
-                %endif
-              </p>
             %endif
-
           %elif in_cart:
-
-            ${_('This course is in your <a href="{cart_link}">cart</a>.').format(cart_link=cart_link)}
-
+          <span class="add-to-cart">
+            ${Text(_('This course is in your <a href="{cart_link}">cart</a>.')).format(cart_link=cart_link)}
+          </span>
           %elif is_course_full:
 
-            ${_("Course is full")}
-
-          %elif invitation_only and not can_enroll:
-
-            <h4>${_("Enrolment in this course is by invitation only")}</h4>
-
-            ## Shib courses need the enrollment button to be displayed even when can_enroll is False,
-            ## because AnonymousUsers cause can_enroll for shib courses to be False, but we need them to be able to click
-            ## so that they can register and become a real user that can enroll.
-            %elif not is_shib_course and not can_enroll:
-
-            <h4>${_("Enrolment is closed")}</h4>
-
-          %elif needs_to_verify_age:
-
-            <script type="text/javascript" src="${static.url('js/bootstrap-modal.js')}"></script>
-            <script>
-              $(document).ready(function(){
-
-                var course_id = '${course.id}';
-
-
-                // Check if the user has verified their age on page load/reload, check localStorage and display proper register buttons
-
-                if (localStorage.getItem(course_id) === null) {
-                  $('.main-cta').prepend("<button class='verifyAge' type='button' id='modalButton' class='btn btn-primary btn-lg' data-toggle='modal' >${_('Enrol now')}</button>");
-
-                  // Bind functions to injected button
-                  $('#modalButton').on('click', function() {
-                    $('#ageModal').modal('show');
-                    $('#lean_overlay').fadeToggle()
-                  });
-                }
-
-                if (localStorage.getItem(course_id) != null) {
-                  var response = localStorage.getItem(course_id);
-
-                  var registerEnroll = function() {
-                    $("#class_enroll_form").submit();
-                    event.preventDefault();
-                  };
-
-                  var registerComplete = function(event, xhr) {
-                    if(xhr.status == 200) {
-                          if (xhr.responseText == "") {
-                            location.href = "${reverse('dashboard')}";
-                          }
-                          else {
-                            location.href = xhr.responseText;
-                          }
-                        } else if (xhr.status == 403) {
-                            location.href = "${reverse('register_user')}?course_id=${course.id | u}&enrollment_action=enroll";
-                        } else {
-                          $('#register_error').html(
-                              (xhr.responseText ? xhr.responseText : "${_("An error occurred. Please try again later.")}")
-                          ).css("display", "block");
-                        }
-                  }
-
-                  // if user has verified their age, allow them to enroll, otherwise display "Not old enough"
-                  if (response == 'yes') {
-                    $('.main-cta').prepend('<a href="#" class="register">${_("Enrol now")}</a>')
-                    // Submit the enroll form
-                    $(".register").on('click', function(event) {
-                      registerEnroll();
-                    });
-                    // Check status of enroll form submission
-                    $('#class_enroll_form').on('ajax:complete', registerComplete);
-                  } else {
-                    $('.main-cta').prepend('<span class="register disabled">${_("You are not old enough to enrol")}</span>');
-                  }
-                }
-              });
-            </script>
-
-          %elif not is_old_enough:
-
-            <p>${_("You are not old enough to enroll")}</p>
-
+            ${_("Course is full")}  
+          % elif invitation_only and not can_enroll:
+            <span class="register disabled">${_("Enrolment in this course is by invitation only")}</span>
+          ## Shib courses need the enrollment button to be displayed even when can_enroll is False,
+          ## because AnonymousUsers cause can_enroll for shib courses to be False, but we need them to be able to click
+          ## so that they can register and become a real user that can enroll.
+          % elif not is_shib_course and not can_enroll:
+          <span class="register disabled">${_("Enrolment is Closed")}</span>
           %elif can_add_course_to_cart:
-
-            <%
-            if user.is_authenticated():
-              reg_href = "#"
-              reg_element_id = "add_to_cart_post"
-            else:
-              reg_href = reg_then_add_to_cart_link
-              reg_element_id = "reg_then_add_to_cart"
-            %>
-            <% if ecommerce_checkout:
-                reg_href = ecommerce_checkout_link
-                reg_element_id = ""
-            %>
-            <a href="${reg_href}" class="add-to-cart" id="${reg_element_id}">
-              ${_("Add {course_name} to Cart <span>({price} USD)</span>")\
-                .format(course_name=course.display_number_with_default, price=course_price)}
+          <%
+          if user.is_authenticated:
+            reg_href = "#"
+            reg_element_id = "add_to_cart_post"
+          else:
+            reg_href = reg_then_add_to_cart_link
+            reg_element_id = "reg_then_add_to_cart"
+          %>
+          <% if ecommerce_checkout:
+              reg_href = ecommerce_checkout_link
+              reg_element_id = ""
+          %>
+          <a href="${reg_href}" class="add-to-cart" id="${reg_element_id}">
+            ${Text(_("Add {course_name} to Cart {start_span}({price} USD){end_span}")).format(
+                course_name=course.display_number_with_default,
+                start_span=HTML("<span>"),
+                end_span=HTML("</span>"),
+                price=course_price)}
+          </a>
+          <div id="register_error"></div>  
+          %elif allow_anonymous:
+          %if show_courseware_link:
+            <a href="${course_target}">
+            <strong>${_("View Course")}</strong>
             </a>
-
-            <div id="register_error"></div>
-
-          %elif not user.is_authenticated() and configuration_helpers.get_value('hide_login_screen', False):
-
-               % if third_party_auth.is_enabled():
-
-                   % for enabled in provider.Registry.displayed_for_login():
-                       <button type="submit" class="btn btn-lg btn-default button-${enabled.provider_id} login-${enabled.provider_id}" onclick="thirdPartySignin(event, '${pipeline_url[enabled.provider_id]}');">
-                       ${_('Sign in or Sign up')}
-                       </button>
-                   % endfor
-
-               % endif
-
+          %endif
           %else:
-
-            <%
+            <% 
               if ecommerce_checkout:
                 reg_href = ecommerce_checkout_link
               else:
@@ -438,16 +229,13 @@ from third_party_auth import provider, pipeline
               ${_("Enrol now")}
             </a>
             <div id="register_error"></div>
-
-          %endif
+          % endif
 
           <p><a href="/courses">${_("Or explore other courses")}</a></p>
         </div>
       </div>
-
       <div class="row">
-
-          % if get_course_about_section(request, course, "video"):
+        % if get_course_about_section(request, course, "video"):
 
             <div class="course-video watch-video">
               <i class="fa fa-play-circle faa-pulse animated" aria-hidden="true"></i>
@@ -462,121 +250,81 @@ from third_party_auth import provider, pipeline
             </div>
 
           % endif
-          
       </div>
-
     </div>
-
   </div>
-
 </section>
 
-<div class="container no-border">
-
+<div class="container container-about-page no-border">
   <div class="row">
-
     <div class="col-md-12">
       % if staff_access and studio_url is not None:
-        <div class="btn-center">
-          <a class="btn btn-primary" href="${studio_url}">${_("View About Page in studio")}</a>
+        <div class="wrap-instructor-info studio-view">
+          <a class="instructor-info-action" href="${studio_url}">${_("View About Page in studio")}</a>
         </div>
       % endif
 
-      ${get_course_about_section(request, course, "overview")}
+      ${HTML(get_course_about_section(request, course, "overview"))}
 
-      % if pre_requisite_courses:
-        <% prc_target = reverse('about_course', args=[unicode(pre_requisite_courses[0]['key'])]) %>
-          <h2>${_("Prerequisites")}</h2>
+          % if pre_requisite_courses:
+          <% prc_target = reverse('about_course', args=[unicode(pre_requisite_courses[0]['key'])]) %>
+          <li class="prerequisite-course important-dates-item">
+            <h2>${_("Prerequisites")}</h2>
+            ## Multiple pre-requisite courses are not supported on frontend that's why we are pulling first element
+            <a href="${prc_target}">${pre_requisite_courses[0]['display']}</a>
+            <p>
+            ${Text(_("You must successfully complete {link_start}{prc_display}{link_end} before you begin this course.")).format(
+              link_start=HTML('<a href="{}">').format(prc_target),
+              link_end=HTML('</a>'),
+              prc_display=pre_requisite_courses[0]['display'],
+            )}
+            </p>
+          </li>
+          % endif
 
-          ## Multiple pre-requisite courses are not supported on frontend that's why we are pulling first element
-          <a href="${prc_target}">${pre_requisite_courses[0]['display']}</a>
+           % if get_course_about_section(request, course, "prerequisites"):
+            <h2>${_("Requirements")}</h2>
 
-          <p>
-          ${_("You must successfully complete {link_start}{prc_display}{link_end} before you begin this course.").format(
-            link_start='<a href="{}">'.format(prc_target),
-            link_end='</a>',
-            prc_display=pre_requisite_courses[0]['display'],
-          )}
-          </p>
-      % endif
-      
-      % if get_course_about_section(request, course, "prerequisites"):
-        <h2>${_("Requirements")}</h2>
+            <p>${get_course_about_section(request, course, "prerequisites")}</p>
+          % endif
 
-        <p>${get_course_about_section(request, course, "prerequisites")}</p>
-      % endif
+          ## For now, ocw links are the only thing that goes in additional resources
+        % if get_course_about_section(request, course, "ocw_links"):
 
-      ## For now, ocw links are the only thing that goes in additional resources
-      % if get_course_about_section(request, course, "ocw_links"):
-        <h2>${_("Additional Resources")}</h2>
+              <h2>${_("Additional Resources")}</h2>
+          
+              ## "MITOpenCourseware" should *not* be translated
+              <h2 >MITOpenCourseware</h2>
+                 ${get_course_about_section(request, course, "ocw_links")}
+            
+        </div>
+        %endif
 
-        ## "MITOpenCourseware" should *not* be translated
-        <h2>MITOpenCourseware</h2>
-           ${get_course_about_section(request, course, "ocw_links")}
-      %endif
-    </div>
-
-  </div>
-  
-</div>
-
-<!-- Age verification modal must be positioned here -->
-
-<div class="modal" style="z-index: 4; top: 30%; left: 30%;" data-backdrop="false" id="ageModal" tabindex="-1" role="dialog" aria-labelledby="ageModalLabel" >
-  <div class="inner-wrapper modal-dialog" role="document">
-    <div class="modal-content" style="padding: 10px;">
-      <div class="modal-header">
-         <button class="close-modal" data-dismiss="modal">
-          <span class="icon fa fa-remove" aria-hidden="true"></span>
-          <span class="sr">
-            ## Translators: this is a control to allow users to exit out of this modal interface (a menu or piece of UI that takes the full focus of the screen)
-            ${_("Close")}
-          </span>
-        </button>
-        <h2 class="modal-title" id="ageModalLabel"><center>Please verify that you meet the course age minimum</center></h2>
-      </div>
-      <div class="modal-body">
-        <center>
-          ${_("Are you {min_age} years or older?").format(min_age=int(course.minimum_age))}
-        </center>
-      </div>
-      <div class="modal-footer" style="padding-top: 15px;">
-        <center>
-          <input name="submit" id='age-confirmation' type="submit" value="${_("Yes")}" />
-          <input name="submit" id='age-denial' type="submit" value="${_("No")}" />
-        </center>
-      </div>
     </div>
   </div>
 </div>
-<div id="lean_overlay" style="display: block; opacity: 1; display:none; z-index:3;"></div>
+
 
 ## Need to put this hidden form on the page so that the registration button works.
 ## Since it's no harm to display a hidden form, we display it with the most permissive conditional
 ## which is when the student is not registered.
-%if active_reg_button or is_shib_course or needs_to_verify_age:
+%if active_reg_button or is_shib_course:
   <div style="display: none;">
     <form id="class_enroll_form" method="post" data-remote="true" action="${reverse('change_enrollment')}">
       <fieldset class="enroll_fieldset">
-        <legend class="sr">${_("Enrol now")}</legend>
-        <input name="course_id" type="hidden" value="${course.id | h}">
+        <legend class="sr">${pgettext("self","Enroll")}</legend>
+        <input name="course_id" type="hidden" value="${course.id }">
         <input name="enrollment_action" type="hidden" value="enroll">
       </fieldset>
       <div class="submit">
-        <input name="submit" type="submit" value="${_('enroll')}">
+        <input name="submit" type="submit" value="${pgettext('self','enroll')}">
       </div>
     </form>
   </div>
 %endif
 
-<%include file="/video_modal.html" />
+<%include file="../video_modal.html" />
 
 <%static:require_module_async module_name="js/dateutil_factory" class_name="DateUtilFactory">
     DateUtilFactory.transform(iterationKey=".localized_datetime");
 </%static:require_module_async>
-
-<script>
-  $(document).ready(function () {
-    $("link[href*='/static/css/lms-main-v1']").remove();
-  });
-</script>

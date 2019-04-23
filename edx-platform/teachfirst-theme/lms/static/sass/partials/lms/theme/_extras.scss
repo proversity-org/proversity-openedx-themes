@@ -6722,13 +6722,13 @@ section {
       width: 100%;
       z-index: 1;
       background-color: #002663;
-      background-image: url("/static/CEL/images/sunrise.png");
+      // background-image: url("/static/CEL/images/sunrise.png");
       background-position: top;
       background-repeat: no-repeat;
       background-size: cover;
       filter: alpha(opacity = 70);
       -webkit-filter: blur(0px) opacity(40%) grayscale(0%);
-      filter: blur(0px) opacity(40%) grayscale(0%);
+      filter: blur(0px) opacity(70%) grayscale(0%);
     }
     .extra-message {
       position: absolute;
@@ -7071,7 +7071,7 @@ section {
       height: 100%;
       width: 100%;
       z-index: 1;
-      background-image: url("/static/CEL/images/sunrise.png");
+      // background-image: url("/static/CEL/images/sunrise.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -10767,7 +10767,7 @@ input[name="subject"] {
   margin: 15px 30px 15px 0 !important;
 }
 
-.profile-self .wrapper-profile-field-account-privacy .u-field-account_privacy {
+.view-profile .profile-self .wrapper-profile-field-account-privacy .u-field-account_privacy {
   max-width: 1920px !important;
 }
 
@@ -11587,4 +11587,12 @@ iframe {
 
 .content-wrapper #unenroll-modal {
   margin-top: 0;
+}
+
+.banner-center {
+  background-position: center!important;
+}
+
+.banner-full-size {
+  height: 100%!important;
 }

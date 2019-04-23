@@ -2,6 +2,25 @@
 <%namespace name='static' file='/static_content.html'/>
 <%! from django.utils.translation import ugettext as _ %>
 
+<% 
+carousel_courses = []
+carousel_courses.append([])
+current_index = 0
+limit = 4
+%>
+
+<div class="hidden">
+  % for course in courses:
+  % if len(carousel_courses[current_index]) < limit:
+    ${carousel_courses[current_index].append(course)}
+  % else:
+    ${carousel_courses.append([])}
+    ${current_index = current_index + 1}
+    ${carousel_courses[current_index].append(course)}
+  % endif
+% endfor
+</div>
+
 % if courses:
 
   % if len(courses) > 0:

@@ -12,49 +12,54 @@ import third_party_auth
 from third_party_auth import provider, pipeline
 %>
 
-<%block name="js_extra">
-  <script type="text/javascript">
-    
-    function thirdPartySignin(event, url) {
-      event.preventDefault();
-      window.location.href = url;
-    }
+<%
+home_page_title = configuration_helpers.get_value('home_page_title', ' ')
+home_page_subtitle = configuration_helpers.get_value('home_page_subtitle', ' ')
+home_page_extra_message = configuration_helpers.get_value('home_page_extra_message', ' ')
+home_banner_class = configuration_helpers.get_value('home_banner_class', ' ')
+home_banner_image_class = configuration_helpers.get_value('home_banner_image_class', ' ')
+%>
 
-    (function post_form_if_pipeline_running(pipeline_running) {
-       // If the pipeline is running, the user has already authenticated via a
-       // third-party provider. We want to invoke /login_ajax to loop in the
-       // code that does logging and sets cookies on the request. It is most
-       // consistent to do that by using the same mechanism that is used when
-       // the use does first-party sign-in: POSTing the sign-in form.
-       if (pipeline_running) {
-         $('#login-form').submit();
-       }
-    })(${pipeline_running})
+## <%block name="js_extra">
+##   <script type="text/javascript">
     
-    $(window).load(function() {
-         if(getParameterByName('next')) {
-              $('#login').trigger("click");
-         }
-      })
-  </script>
-</%block>
+##     function thirdPartySignin(event, url) {
+##       event.preventDefault();
+##       window.location.href = url;
+##     }
+
+##     (function post_form_if_pipeline_running(pipeline_running) {
+##        // If the pipeline is running, the user has already authenticated via a
+##        // third-party provider. We want to invoke /login_ajax to loop in the
+##        // code that does logging and sets cookies on the request. It is most
+##        // consistent to do that by using the same mechanism that is used when
+##        // the use does first-party sign-in: POSTing the sign-in form.
+##        if (pipeline_running) {
+##          $('#login-form').submit();
+##        }
+##     })(${pipeline_running})
+    
+##     $(window).load(function() {
+##          if(getParameterByName('next')) {
+##               $('#login').trigger("click");
+##          }
+##       })
+##   </script>
+## </%block>
 
 <div class="scroll-animation-default"></div>
 
 <section role="default">
-  <div class="section-media"></div>
+  <div class="section-media ${home_banner_image_class}" style="background-image: url(${static.url(configuration_helpers.get_value('banner_image_url'))});"></div>
 
-  <div class="container no-border">
+  <div class="container no-border ${home_banner_class}">
     <div class="row">
       <div class="col-md-12 col-xs-12">
         <div class="wrapper waypoint">
           <form class="default">
             <div class="default">
-              % if False:
-                <img src="${static.url('CEL/images/sunrise.heading.png')}" class="img-responsive" />
-              % endif 
-              <h1>${_("Welcome to the Careers and Employability Leadership Programme")}</h1>
-              <h2>${_("Preparing young people for success beyond school")}</h2>
+              <h1>${home_page_title}</h1>
+              <h2>${home_page_subtitle}</h2>
               % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
                     % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
                         <a href="${reverse('course-specific-login', args=[course.id.to_deprecated_string()])}${login_query()}" class="btn btn-lg btn-default">${_("Sign in")}</a>
@@ -80,7 +85,7 @@ from third_party_auth import provider, pipeline
 
                             % endif
                         % else:
-                            <a href="/login?next=dashboard" class="btn btn-lg btn-secondary">${_("Sign in")}</a>
+                            <a href="/login?next=dashboard" class="btn btn-lg btn-login">${_("Sign in")}</a>
                         % endif
 
                         % if True:
@@ -99,7 +104,7 @@ from third_party_auth import provider, pipeline
     </div>
   </div>
 
-  <div class="extra-message"><p>${_("")}</p></div>
+  <div class="extra-message"><p>${home_page_extra_message}</p></div>
 </section>
 
 <%include file="courses_list.html" />
@@ -118,8 +123,8 @@ from third_party_auth import provider, pipeline
           % else:
             <div class="btn-center">
               <ul>
-                <li><a href="https://itunes.apple.com/us/app/celp/id1400762847?mt=8" target="_blank"><img src="${static.url('CEL/images/appstore.png')}" /></a></li>
-                <li><a href="https://play.google.com/store/apps/details?id=org.proversity.cel" target="_blank"><img src="${static.url('CEL/images/playstore.png')}" /></a></li>
+                <li><a href="https://itunes.apple.com/us/app/celp/id1400762847?mt=8" target="_blank"><img src="${static.url('images/appstore.png')}" /></a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=org.proversity.cel" target="_blank"><img src="${static.url('images/playstore.png')}" /></a></li>
               </ul>
             </div>
           % endif
@@ -127,7 +132,7 @@ from third_party_auth import provider, pipeline
       </div>
 
       <div class="items hidden-xs">
-        <img src="${static.url('CEL/images/app.gif')}" class="img-responsive pull-right" />
+        <img src="${static.url('images/app.gif')}" class="img-responsive pull-right" />
       </div>
     </div>
   </div>
@@ -148,9 +153,3 @@ from third_party_auth import provider, pipeline
   $(window).load(function() {$('#signup_action').trigger("click");});
 </script>
 % endif
-
-<script>
-  $(document).ready(function () {
-    $("link[href*='/static/css/lms-main-v1']").remove();
-  });
-</script>

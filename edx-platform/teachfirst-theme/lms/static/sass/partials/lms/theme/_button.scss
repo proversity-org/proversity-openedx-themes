@@ -1730,3 +1730,14 @@ button {
     color: #0f1d4e !important;
   }
 }
+
+.wrapper.waypoint .btn-login {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+
+  &:hover {
+    background: #fff;
+    color: #0088CE;
+  }
+}
