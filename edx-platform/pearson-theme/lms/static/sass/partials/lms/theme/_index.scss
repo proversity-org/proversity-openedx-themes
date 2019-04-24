@@ -77,3 +77,57 @@ header.banner {
     margin-top:7px;
   }
 }
+
+.course-search-home {
+  display: flex;
+  flex-direction: column;
+
+  label,
+  input {
+    font-style: normal;
+    width: 100%;
+  }
+
+  label {
+    cursor: none;
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  .quick-filters-home {
+    display: flex;
+    padding: 10px 5px;
+
+    .quick-filter-label {
+      display: flex;
+      align-items: center;
+    }
+
+    ul {
+      margin: 0;
+      display: flex;
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 5px;
+      cursor: pointer;
+      background: $primary;
+      color: $white;
+      border-radius: 5px;
+      margin: 0 5px;
+    }
+  }
+
+  .search-home-container {
+    position: relative;
+
+    .icon {
+      position: absolute;
+      top: 8px;
+      right: 15px;
+      cursor: pointer;
+    }
+  }
+}
