@@ -7,7 +7,10 @@
   from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_enabled, released_languages
   from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
 %>
-<% footer = get_footer(is_secure=is_secure) %>
+<% 
+footer = get_footer(is_secure=is_secure) 
+footer_about_link = 
+%>
 <%namespace name='static' file='/static_content.html'/>
   
 
