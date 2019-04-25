@@ -388,7 +388,7 @@
   }
 }
 
-.navbar-toggle {
+.window-wrap .navbar-nav .navbar-toggle {
   position: relative;
   float: right;
   padding: 9px 10px;
@@ -397,7 +397,7 @@
   margin-bottom: 8px;
   background-color: transparent;
   background-image: none;
-  border: 1px solid transparent;
+  border: none;
   border-radius: 4px;
   box-shadow: none;
 
@@ -408,6 +408,7 @@
     box-shadow: none;
     border: none;
   }
+
   .icon-bar {
     display: block;
     width: 22px;

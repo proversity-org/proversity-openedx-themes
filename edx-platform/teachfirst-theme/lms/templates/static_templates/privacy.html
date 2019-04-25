@@ -4,6 +4,13 @@
 <%namespace name='static' file='/static_content.html'/>
 <%!
 from django.utils.translation import ugettext as _
+
+from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
+%>
+
+<%
+platform_name = configuration_helpers.get_value('PLATFORM_NAME', settings.PLATFORM_NAME)
+site_domain = configuration_helpers.get_value('site_domain', settings.SITE_NAME)
 %>
 
 <%block name="title"><title>${_("Privacy Policy")}</title></%block>
@@ -17,7 +24,7 @@ from django.utils.translation import ugettext as _
         <p>${_("As used in this Privacy Policy (the 'Policy'), 'we,' 'us' and 'our' refer to")} <em>${platform_name}</em>.</p>
         <p>${_("'Personal Information' is defined in section (3) below.")}</p>
         <p>${_("At")} <em>${platform_name}</em>, ${_("we care about the confidentiality and security of your Personal Information. We will make all commercially reasonable efforts to keep your Personal Information secure in compliance with this Policy.")}</p>
-        <p>${_("This Policy only applies to information that we collect through the")} <a href='celp.teachfirst.org.uk' target='_blank'>celp.teachfirst.org.uk</a> ${_("Website (the 'Site,' which consists of all content and pages located within the")} <a href='celp.teachfirst.org.uk'>celp.teachfirst.org.uk</a> ${_("(domain) and does not apply to information that we may collect from you in other ways (for example, this policy does not apply to information that you may provide to us over the phone, by fax or through conventional mail).")}</p>
+        <p>${_("This Policy only applies to information that we collect through the")} <a href='${site_domain}' target='_blank'>${site_domain}</a> ${_("Website (the 'Site,' which consists of all content and pages located within the")} <a href='${site_domain}'>${site_domain}</a> ${_("(domain) and does not apply to information that we may collect from you in other ways (for example, this policy does not apply to information that you may provide to us over the phone, by fax or through conventional mail).")}</p>
         <h3>${_("1. Usernames And Postings")}</h3>
         <p>${_("Comments or other information posted by you to our forums, wikis or other areas of the Site designed for public communications or communications among registered class members may be viewed and downloaded by others who visit the Site.")}</p>
         <p>${_("For this reason, we encourage you to use discretion when deciding whether to post any information that can be used to identify you to those forums (or other public or classwide areas).")}</p>

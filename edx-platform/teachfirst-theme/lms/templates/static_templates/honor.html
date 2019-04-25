@@ -4,6 +4,13 @@
 <%namespace name='static' file='/static_content.html'/>
 <%!
 from django.utils.translation import ugettext as _
+
+from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
+%>
+
+<%
+platform_name = configuration_helpers.get_value('PLATFORM_NAME', settings.PLATFORM_NAME)
+site_domain = configuration_helpers.get_value('site_domain', settings.SITE_NAME)
 %>
 
 <%block name="title"><title>${_("Terms of Service and Honor Code")}</title></%block>
@@ -14,7 +21,7 @@ from django.utils.translation import ugettext as _
       <div class="col-md-12 col-xs-12">
         <button type="button" class="btn btn-default pull-right print">${_("Print Terms of Service and Honor Code")}</button>
         <h2>${_("TERMS OF SERVICE")}</h2>
-        <p>${_("Please read these Terms of Service ('TOS'), the")} <a href='celp.teachfirst.org.uk'>${_("Honor Code")}</a> ${_("and the")} <a href='celp.teachfirst.org.uk'>${_("Privacy Policy")}</a> ${_("prior to registering or using any portion of the website (the 'Site,' which consists of all content and pages located within the")} <em>${platform_name}</em> ${_("web domain), including accessing any course material, chat rooms, or other electronic services. These TOS, the Privacy Policy and the Honor Code are agreements (the 'Agreements') between you and")} <em>${platform_name}</em>. ${_("By using the Site, you accept and agree to be legally bound by the Agreements, whether or not you are a registered user. If you do not understand or do not wish to be bound by the terms of the Agreements, you should not use the Site.")}</p>
+        <p>${_("Please read these Terms of Service ('TOS'), the")} <a href='${site_domain}'>${_("Honor Code")}</a> ${_("and the")} <a href='${site_domain}'>${_("Privacy Policy")}</a> ${_("prior to registering or using any portion of the website (the 'Site,' which consists of all content and pages located within the")} <em>${platform_name}</em> ${_("web domain), including accessing any course material, chat rooms, or other electronic services. These TOS, the Privacy Policy and the Honor Code are agreements (the 'Agreements') between you and")} <em>${platform_name}</em>. ${_("By using the Site, you accept and agree to be legally bound by the Agreements, whether or not you are a registered user. If you do not understand or do not wish to be bound by the terms of the Agreements, you should not use the Site.")}</p>
         <p><em>${platform_name}</em> ${_("reserves the right to modify these TOS at any time without advance notice. Any changes to these TOS will be effective immediately upon posting on this page, with an updated effective date. By accessing the Site after any changes have been made, you signify your agreement on a prospective basis to the modified TOS and all of the changes. Be sure to return to this page periodically to ensure familiarity with the most current version of these TOS.")}</p>
         <h3>${_("1. Description Of")} <em>${platform_name}</em></h3>
         <p><em>${platform_name}</em> ${_("offers online courses that include opportunities for instructor-to-student and student-to-student interactivity, individual assessment of a student's work and, for students who demonstrate their mastery of subjects, a professional certificate or other acknowledgment.")}</p>

@@ -9,7 +9,8 @@
 %>
 <% 
 footer = get_footer(is_secure=is_secure) 
-footer_about_link = 
+footer_about_link = configuration_helpers.get_value('footer_about_link', 'https://www.teachfirst.org.uk/our-mission')
+footer_contact_link = configuration_helpers.get_value('footer_contact_link', 'https://www.teachfirst.org.uk/contact-us')
 %>
 <%namespace name='static' file='/static_content.html'/>
   
@@ -29,8 +30,8 @@ footer_about_link =
         <div class="items">
           <div>
             <ul>
-              <li><a href="" target="_blank">${_("About")}</a></li>
-              <li><a href="" target="_blank">${_("Contact")}</a></li>
+              <li><a href="${footer_about_link}" target="_blank">${_("About")}</a></li>
+              <li><a href="${footer_contact_link}" target="_blank">${_("Contact")}</a></li>
               <li><a href="${marketing_link('HONOR')}" target="_blank">${_("Terms of Service")}</a></li>
               <li><a href="${marketing_link('PRIVACY')}" target="_blank">${_("Privacy Policy")}</a></li>
               <li><a href="${marketing_link('COOKIES')}" target="_blank">${_("Cookie Policy")}</a></li>
@@ -59,8 +60,8 @@ footer_about_link =
         <div class="items">
           <div>
             <ul>
-              <li><a href="" target="_blank">${_("About")}</a></li>
-              <li><a href="" target="_blank">${_("Contact")}</a></li>
+              <li><a href="${footer_about_link}" target="_blank">${_("About")}</a></li>
+              <li><a href="${footer_contact_link}" target="_blank">${_("Contact")}</a></li>
               <li><a href="${marketing_link('HONOR')}" target="_blank">${_("Terms of Service")}</a></li>
               <li><a href="${marketing_link('PRIVACY')}" target="_blank">${_("Privacy Policy")}</a></li>
               <li><a href="${marketing_link('COOKIES')}" target="_blank">${_("Cookie Policy")}</a></li>
@@ -93,8 +94,8 @@ footer_about_link =
         <div class="items">
           <div>
             <ul>
-              <li><a href="" target="_blank">${_("About")}</a></li>
-              <li><a href="" target="_blank">${_("Contact")}</a></li>
+              <li><a href="${footer_about_link}" target="_blank">${_("About")}</a></li>
+              <li><a href="${footer_contact_link}" target="_blank">${_("Contact")}</a></li>
               <li><a href="${marketing_link('HONOR')}" target="_blank">${_("Terms of Service")}</a></li>
               <li><a href="${marketing_link('PRIVACY')}" target="_blank">${_("Privacy Policy")}</a></li>
               <li><a href="${marketing_link('COOKIES')}" target="_blank">${_("Cookie Policy")}</a></li>
