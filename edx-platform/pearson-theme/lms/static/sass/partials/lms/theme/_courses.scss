@@ -33,11 +33,36 @@ section.intro div.main-cta a strong {
 
 .content-wrapper .course-info header.course-profile {
   height: auto;
+  padding-top: 0;
 }
 
 @media (max-width: 767px){
-  .course-info header.course-profile .intro-inner-wrapper div.media {
-    display: none;
+  .course-info header.course-profile .intro-inner-wrapper div.table {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .intro {
+      width: 100%;
+      text-align: center;
+    }
+
+    .pay-now-button {
+      margin: 0 auto;
+    }
+
+    .media {
+      width: fit-content;
+      margin: 0 auto;
+    }
+
+    img {
+      height: 160px;
+      max-width: 264px;
+    }
+  }
+
+  .course-info .container .course-sidebar {
+    width: 100%;
   }
 }
 
