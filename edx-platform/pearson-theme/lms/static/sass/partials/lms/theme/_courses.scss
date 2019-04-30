@@ -612,3 +612,26 @@ div.content-wrapper.main-container div.container div.home {
   padding-right: 13px;
 }
 
+.content-wrapper .course-info .container {
+  padding-bottom: 0;
+}
+
+.course-info .button-enroll-bottom {
+  margin-bottom: 15px;
+  text-align: center;
+
+  .pay-now-button {
+    margin: 0 auto;
+  }
+
+  a {
+    background: #ccc;
+    padding: 10px;
+
+    &.register {
+      background: $pearson-dark-blue-courseware;
+      color: $white;
+      font-size: 1.2rem;
+    }
+  }
+} 
