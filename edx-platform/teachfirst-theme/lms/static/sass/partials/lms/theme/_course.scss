@@ -290,3 +290,22 @@
 		text-decoration: none!important;
 	}
 }
+
+.activetable_block {
+	overflow-x: auto;
+
+	.activetable-help {
+		width: auto !important;
+
+		#activetable-help-button {
+			float: none;
+		}
+	} 
+}
+
+@media (max-width: 768px) {
+	.xblock .activetable_block 	table {
+		width: 100%;
+		table-layout: fixed;
+	}
+}
