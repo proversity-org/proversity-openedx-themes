@@ -15,6 +15,10 @@ from django.utils.translation import ugettext as _
 
 from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
 from openedx.core.djangoapps.user_api.accounts.image_helpers import get_profile_image_urls_for_user
+from social_django.models import UserSocialAuth
+%>
+<%
+link_return_portal = configuration_helpers.get_value('link_return_portal', ' ')
 %>
 
 % if uses_bootstrap:
@@ -26,6 +30,15 @@ from openedx.core.djangoapps.user_api.accounts.image_helpers import get_profile_
         </li>
         <li><a href="${reverse('dashboard')}">${_("Dashboard")}</a></li>
         <li class="hidden-md"><a href="/courses">${_("Explore Courses")}</a></li>
+
+        % for social_auth in UserSocialAuth.get_social_auth_for_user(user):
+            % if social_auth.provider == "teachfirst-oauth2":
+                <li class="hidden-xs">
+                    <a href="${link_return_portal}">${_("Return to portal")}</a>
+                </li>
+            % endif
+        % endfor
+        
         % if not configuration_helpers.get_value('hide_login_screen', False):
             <li><a href="${reverse('learner_profile', kwargs={'username': self.real_user.username})}">${_("Profile")}</a></li>
             <li><a href="${reverse('account_settings')}">${_("Account")}</a></li>
@@ -63,6 +76,15 @@ from openedx.core.djangoapps.user_api.accounts.image_helpers import get_profile_
         </li>
         <li><a href="${reverse('dashboard')}">${_("Dashboard")}</a></li>
         <li class="hidden-md"><a href="/courses">${_("Explore Courses")}</a></li>
+
+        % for social_auth in UserSocialAuth.get_social_auth_for_user(user):
+            % if social_auth.provider == "teachfirst-oauth2":
+                <li class="hidden-xs">
+                    <a href="${link_return_portal}">${_("Return to portal")}</a>
+                </li>
+            % endif
+        % endfor
+
         % if not configuration_helpers.get_value('hide_login_screen', False):
             <li><a href="${reverse('learner_profile', kwargs={'username': self.real_user.username})}">${_("Profile")}</a></li>
             <li><a href="${reverse('account_settings')}">${_("Account")}</a></li>
@@ -100,6 +122,15 @@ from openedx.core.djangoapps.user_api.accounts.image_helpers import get_profile_
         </li>
         <li><a href="${reverse('dashboard')}">${_("Dashboard")}</a></li>
         <li class="hidden-md"><a href="/courses">${_("Explore Courses")}</a></li>
+
+        % for social_auth in UserSocialAuth.get_social_auth_for_user(user):
+            % if social_auth.provider == "teachfirst-oauth2":
+                <li class="hidden-xs">
+                    <a href="${link_return_portal}">${_("Return to portal")}</a>
+                </li>
+            % endif
+        % endfor
+
         % if not configuration_helpers.get_value('hide_login_screen', False):
             <li><a href="${reverse('learner_profile', kwargs={'username': self.real_user.username})}">${_("Profile")}</a></li>
             <li><a href="${reverse('account_settings')}">${_("Account")}</a></li>

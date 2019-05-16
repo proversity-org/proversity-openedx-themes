@@ -19,6 +19,10 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
 # App that handles subdomain specific branding
 from branding import api as branding_api
 from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_enabled, released_languages
+from social_django.models import UserSocialAuth
+%>
+<%
+link_return_portal = configuration_helpers.get_value('link_return_portal', ' ')
 %>
 
 % if False:
@@ -122,6 +126,16 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
           <li class="hidden-xs">
             <a href="/courses">${_("Explore Courses")}</a>
           </li>
+          
+          % if user.is_authenticated():
+            % for social_auth in UserSocialAuth.get_social_auth_for_user(user):
+              % if social_auth.provider == "teachfirst-oauth2":
+                  <li class="hidden-xs">
+                    <a href="${link_return_portal}">${_("Return to portal")}</a>
+                  </li>
+              % endif
+            % endfor
+          % endif
 
           <li class="hidden-xs">
             % if header_language_selector_is_enabled():
