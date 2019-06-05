@@ -1,0 +1,66 @@
+<%page expression_filter="h"/>
+<%inherit file="/main.html" />
+<%namespace name='static' file='/static_content.html'/>
+<%namespace file='/main.html' import="login_query"/>
+<%!
+from django.utils.translation import ugettext as _
+from django.core.urlresolvers import reverse
+
+from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
+from openedx.core.djangolib.markup import HTML, Text
+import third_party_auth
+from third_party_auth import provider, pipeline
+%>
+
+<section role="maintenance">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-xs-12">
+        <h1>Proversity services are currently under maintenance.</h1>
+        <h2>We take quality very seriously. We'll be up again shortly.</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="grid">
+      <div class="item support">
+        <div>
+          <h1>Support</h1>
+          <h2>Our support teams are ready to assist you</h2>
+        </div>
+      </div>
+
+      <div class="item support-image">
+        <div>
+          <img src="assets/imgs/support.png" class="img-responsive" />
+        </div>
+      </div>
+
+      <div class="item">
+        <div>
+          <img src="assets/imgs/under-construction.png" class="img-responsive" />
+        </div>
+      </div>
+
+      <div class="item company-img">
+        <div>
+          <img src="assets/imgs/proversity.png" class="img-responsive" />
+        </div>
+      </div>
+
+      <div class="item company">
+        <div>
+          <h1>Explore</h1>
+          <h2>Read more about us on our company website</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  $(document).ready(function () {
+    $("link[href*='/static/css/lms-main-v1']").remove();
+  });
+</script>
