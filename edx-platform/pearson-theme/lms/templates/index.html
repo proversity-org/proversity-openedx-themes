@@ -10,7 +10,7 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
 %>
 <%
 search_courses_home = configuration_helpers.get_value('search_courses_home', '')
-quick_filters_home = configuration_helpers.get_value('quick_filters_home', '')
+quick_filters_home = configuration_helpers.get_value('quick_filters_home', [])
 %>
 
 <main id="main" aria-label="Content" tabindex="-1">
@@ -73,7 +73,7 @@ quick_filters_home = configuration_helpers.get_value('quick_filters_home', '')
                 <div class="quick-filter-label">${_("Quick Filters:")}</div>
                 <ul>
                   %for filter_item in quick_filters_home:
-                  <li class="quick-filter-item">${filter_item}</li>
+                    <li class="quick-filter-item">${filter_item}</li>
                   %endfor
                 </ul>  
               </div>
@@ -114,40 +114,54 @@ quick_filters_home = configuration_helpers.get_value('quick_filters_home', '')
 
 %if search_courses_home:
   <script type="text/javascript">
-    var inputField = "#search-input";
-    
-    function eventSearch() {
-      var valueInput,
-      coursesList = ".courses-listing li";
+    var searchHome = (function() {
+      'use strict';
 
-      $(inputField).on("input", function(){
-        valueInput = $(this).val().toLowerCase();
-        $(coursesList).filter(function(){
-         $(this).toggle($(this).text().toLowerCase().indexOf(valueInput) > -1)
-       });
-      });
-    } 
+      var inputField, coursesList, filters, iconClear, valueInput, textCourse;
 
-    function eventFilters() {
-      var filters = ".quick-filter-item";
+      function initElements() {
+        inputField = $("#search-input");
+        coursesList = $(".courses-listing li");
+        filters = $(".quick-filter-item");
+        iconClear = $(".clear-search-icon");
+      }
 
-      $(filters).on("click", function(){
-        $(inputField).val($(this).text()).trigger("input");  
-      })
-    }
+      function eventSearch() {
+        inputField.on("input", function() {
+          valueInput = $(this).val().toLowerCase();
+          coursesList.filter(function(){
+            textCourse = $(this).text().toLowerCase();
+            $(this).toggle(textCourse.indexOf(valueInput) > -1);
+          });
+        });
+      } 
 
-    function clearSearch() {
-      var iconClear = ".clear-search-icon";
+      function eventFilters() {
+        filters.on("click", function() {
+          inputField.val($(this).text()).trigger("input");  
+        });
+      }
 
-      $(iconClear).on("click", function() {
-        $(inputField).val('').trigger("input");
-      })
-    }
+      function clearSearch() {
+        iconClear.on("click", function() {
+          inputField.val("").trigger("input");
+        });
+      }
 
-    $(window).load(function(){
-      eventSearch();
-      eventFilters();
-      clearSearch();
-    })
+      return {
+        initElements: initElements,
+        eventSearch: eventSearch,
+        eventFilters: eventFilters,
+        clearSearch: clearSearch
+      };
+    }());
+
+    $(window).load(function() {
+      searchHome.initElements();
+      searchHome.eventSearch();
+      searchHome.eventFilters();
+      searchHome.clearSearch();
+    });
+
   </script>
 %endif
