@@ -1,96 +1,161 @@
-<%page expression_filter="h"/>
-<%! from django.utils.translation import ugettext as _ %>
+## mako
 
-<%inherit file="../main.html" />
-
-<%block name="pagetitle">${_("Privacy Policy")}</%block>
-
+<%inherit file="/main.html" />
+<%namespace name='static' file='/static_content.html'/>
 <%!
-from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
-
-# App that handles subdomain specific branding
-from branding import api as branding_api
+from django.utils.translation import ugettext as _
+from openedx.core.djangolib.markup import HTML, Text
 %>
 
-<main id="main" aria-label="Content" tabindex="-1">
-    <section class="container about">
+<%block name="title"><title>${_("Privacy Notice")}</title></%block>
 
-		<h1>PRIVACY POLICY</h1>
+<section role="legal">
+  <div class="container no-border">
+    <div class="row">
+      <div class="col-md-12 col-xs-12">
+        <button type="button" class="btn btn-default pull-right print">${_("Print Privacy Notice")}</button>
 
-        <p>As used in this Privacy Policy (the 'Policy'), 'we,' 'us' and 'our' refer to <em>Pearson</em>.</p>
-        <p>'Personal Information' is defined in section (3) below.</p>
-        <p>At <em>Pearson</em>, we care about the confidentiality and security of your Personal Information. We will make all commercially reasonable efforts to keep your Personal Information secure in compliance with this Policy.</p>
-        <p>This Policy only applies to information that we collect through the <a href="${configuration_helpers.get_value('LMS_ROOT_URL')}" target="_blank">${configuration_helpers.get_value('SITE_NAME')}</a> Website (the 'Site,' which consists of all content and pages located within the <a href="${configuration_helpers.get_value('LMS_ROOT_URL')}">${configuration_helpers.get_value('SITE_NAME')}</a> (domain) and does not apply to information that we may collect from you in other ways (for example, this policy does not apply to information that you may provide to us over the phone, by fax or through conventional mail).</p>
-        <h2>1. Usernames And Postings</h2>
-        <p>Comments or other information posted by you to our forums, wikis or other areas of the Site designed for public communications or communications among registered class members may be viewed and downloaded by others who visit the Site.</p>
-        <p>For this reason, we encourage you to use discretion when deciding whether to post any information that can be used to identify you to those forums (or other public or classwide areas).</p>
-        <h2>2. Consent To Processing Outside Home Country</h2>
-        <p>By using our Site, or providing information to <em>Pearson</em>, you understand and unambiguously consent to the collection, use, disclosure and retention of information in the United Kingdom and other countries and territories, for the purposes set forth in this Policy and the <em>Pearson</em> Terms of Service.</p>
-        <p>You hereby consent to the collection, use, disclosure and retention by <em>Pearson</em> of your Personal Information as described under this Policy, including but not limited to the transfer of your personal data between <em>Pearson</em> and the third parties, affiliates and subsidiaries described in this Policy.</p>
-        <p>For further certainty, any consent relating to a right to transfer information referred to in this paragraph shall be deemed to include your consent to the transfer of the applicable Personal Information to a jurisdiction which may provide a different level of privacy protection than that available in your own country.</p>
-        <p>If you do not agree with these terms, then please do not access, browse, or register for the Site. If you choose not to provide us with certain information required to provide you with various services offered on our Site, you may not be able to establish a user account and we may not be able to provide you with those services.</p>
-        <h2>3. Personal Information</h2>
-        <p>As used in this Policy, 'Personal Information' means any information about yourself that you may provide to us when using the Site, such as when you sign up for a user account or enter into a transaction through the Site, which may include (but is not limited to) your name, contact information, gender, date of birth and work experience.</p>
-        <p>We endeavor to limit the collection of Personal Information to what we need with respect to specific Site activities in order to satisfy business, legal or regulatory requirements.</p>
-        <h2>4. Information We Collect And How We Use It</h2>
-        <p>We collect information, including Personal Information (described above), when you sign up for a user account, participate in online courses, send us email messages and/or participate in our public forums. We also collect certain usage information about student performance and patterns of learning. In addition, we track information indicating, among other things, which pages of our Site were visited, the order in which they were visited, when they were visited and which hyperlinks and other user interface controls were used.</p>
-        <p>We may log the IP address, operating system and browser software used by each user of the Site, and we may be able to determine from an IP address a user's Internet Service Provider and the geographic location of his or her point of connectivity. Various web analytics tools are used to collect this information. Some of the information is collected through cookies (small text files placed on your computer that store information about you, which can be accessed by the Site). You should be able to control how and whether cookies will be accepted by your web browser. Most browsers offer instructions on how to reset the browser to reject cookies in the 'Help' section of the toolbar. If you reject our cookies, many functions and conveniences of this Site may not work properly.</p>
-        <h2>5. Use And Disclosure To Third Parties</h2>
-        <p>Among other things, we and the educational institutions that provide courses through <em>Pearson</em> (the 'Employers') may use the information about you collected through the Site (including your Personal Information) in connection with the following. In cases where we share or disclose your Personal Information: (1) the third party recipients are required to handle the Personal Information in a confidential manner and to maintain adequate security to protect the information from loss, misuse, unauthorized access or disclosure, alteration, and destruction; and (2) we will only disclose and share the Personal Information that is required by the third party to fulfill the purpose stated at the time of collection.</p>
-        <p>
-          </p><ul>
-            <li>To enable the employers to assess your To enable the employers to provide, administer and improve the courses</li>
-            <li>To help us and the employers improve <em>Pearson</em> offerings, both individually (e.g., by course staff when working with a student) and in aggregate, and to individualize the experience and to evaluate the access and use of the Site and the impact of <em>Pearson</em> on the worldwide educational community.</li>
-            <li>For purposes of scientific research, particularly, for example, in the areas of cognitive science and education.</li>
-            <li>For the purpose for which you specifically provided the information, for example, to respond to a specific inquiry or provide you with access to the specific course content and/or services you select.</li>
-            <li>To track both individual and aggregate attendance, progress and completion of an online course, and to analyze statistics on student performance and how students learn.</li>
-            <li>To monitor and detect violations of the Honor Code, the Terms of Service, as well as other misuses and potential misuses of the Site.</li>
-            <li>To publish information, but not Personal Information, gathered about <em>Pearson</em> access, use, impact and student performance.</li>
-            <li>To send you updates about online courses offered by <em>Pearson</em> or other events, to send you communications about products or services of <em>Pearson</em>, <em>Pearson</em> affiliates, or selected business partners that may be of interest to you, or to send you email messages about Site maintenance or updates.</li>
-            <li>To archive this information and/or use it for future communications with you.</li>
-            <li>To maintain and improve the functioning and security of the Site and our software, systems and network.</li>
-            <li>For purposes described elsewhere in this Policy (including, e.g., Sharing with Third Parties).</li>
-            <li>As otherwise described to you at the point of collection, pursuant to your consent, or as otherwise permitted by law.</li>
-            <li>To authenticate your identity when you register for a paid certificate.</li>
-            <li>To process refunds, as applicable.</li>
-          </ul>
-        <p></p>
-        <p>We will share information we collect with the employers, and we and the employers may share this information (including Personal Information) with third parties as follows:</p>
-        <p>
-          </p><ul>
-            <li>With service providers or contractors that perform certain functions on our or the employers' behalf, including processing information that you provide to us on the Site, processing purchases via third party providers, and other transactions through the Site, operating the Site or portions of it, providing or administering courses, or in connection with other aspects of  <em>Pearson</em>  or University services.</li>
-            <li>With other visitors to the Site, to the extent that you submit comments, course work or other information or content (collectively, 'Postings') to a portion of the Site designed for public communications; and with other members of an  <em>Pearson</em>  class of which you are a member, to the extent you submit Postings to a portion of the Site designed for viewing by those class members. We may provide your Postings to students who later enroll in the same classes as you, within the context of the forums, the courseware or otherwise. If we do re-post your Postings originally made to non-public portions of the Site, we will post them without your real name and e-mail (except with your express permission), but we may use your username without your consent.</li>
-            <li>For purposes of scientific research, particularly, for example, in the areas of cognitive science and education. However, we will only share Personal Information about you for this purpose to the extent doing so complies with applicable law and is limited to the Personal Information required to fulfill the purposes stated at the time of collection.</li>
-            <li>To provide opportunities for you to communicate with other users who may have similar interests or educational goals. For instance, we may recommend specific study partners or connect potential student mentees and mentors. In such cases, we may use all information collected about you to determine who might be interested in communicating with you, but we will only provide other users your username, and not disclose your real name or e-mail address to your contact.</li>
-            <li>To respond to subpoenas, court orders, or other legal process; in response to a request for cooperation from law enforcement or another government agency; to investigate, prevent or take action regarding illegal activities, suspected fraud, security or technical issues, or to enforce our Terms of Service, Honor Code or this Policy; as otherwise may be required by applicable law; or to protect our rights, property or safety or those of others.</li>
-            <li>With affiliates of  <em>Pearson</em>  or the employers, or with successors in the event of a merger, acquisition or reorganization, for their use consistent with this Policy.</li>
-            <li>As otherwise described to you at the point of collection, pursuant to your consent, or otherwise as permitted by law (e.g., disclosures permitted under FERPA, to the extent FERPA applies to the information).</li>
-            <li>For integration with third party services. For example, videos and other content may be hosted on YouTube and other websites not controlled by  <em>Pearson</em>.</li>
-          </ul>
-        <p></p>
-        <p><em>Pearson</em>  also acts as, among other things, venues for employers to post job opportunities and search for and evaluate job candidates and candidates to post CVs and Profiles and search for and evaluate job opportunities.</p>
-        <p><em>Pearson</em>  does not screen or censor the listings, including Profiles offered.  <em>Pearson</em>  is not involved in the actual transaction between employers and candidates. As a result,  <em>Pearson</em>  is not responsible for User Content, the quality, safety or legality of the jobs or CVs posted, the truth or accuracy of the listings, the ability of employers to offer job opportunities to candidates or the ability of candidates to fill job openings and  <em>Pearson</em>  makes no representations about any jobs, CVs or User Content on  <em>Pearson</em>  </p>
-        <p>While  <em>Pearson</em>  reserves the right in its sole discretion to remove User Content, job postings, CVs or other material from  <em>Pearson</em>  from time to time,  <em>Pearson</em>  does not assume any obligation to do so and to the fullest extent permitted by law, disclaims any liability for failing to take any such action.</p>
-        <p>Note that there are risks, including but not limited to the risk of physical harm, of dealing with strangers, underage persons or people acting under false pretenses. You assume all risks associated with dealing with other users with whom you come in contact through  <em>Pearson</em>  </p>
-        <p>By its very nature other people's information may be offensive, harmful or inaccurate, and in some cases will be mislabeled or deceptively labeled. We expect that You will use caution and common sense when using the  <em>Pearson</em></p>
-        <p>Because learner authentication on the Internet is difficult,  <em>Pearson</em>  cannot and does not confirm that each User is who they claim to be.</p>
-        <p>Because we do not and cannot be involved in learner to learner dealings or control the behavior of participants on  <em>Pearson</em>,  in the event that You have a dispute with one or more learners, you release  <em>Pearson</em>  (and our agents and employees) from claims, demands and damages (actual and consequential and direct and indirect) of every kind and nature, known and unknown, suspected and unsuspected, disclosed and undisclosed, arising out of or in any way connected with such disputes to the fullest extent permitted by law.</p>
-        <p>The  <em>Pearson</em>  Sites and the  <em>Pearson</em>  Content may contain inaccuracies or typographical errors.  <em>Pearson</em>  makes no representations about the accuracy, reliability, completeness, or timeliness of any  <em>Pearson</em>  Site or the  <em>Pearson</em>  Content. </p>
-        <p><em>Pearson</em>  encourages You to keep a back-up copy of any of Your User Content. To the extent permitted by law, in no event shall  <em>Pearson</em>  be liable for the deletion, loss, or unauthorized modification of any learner content.</p>
-        <p><em>Pearson</em>  does not provide or make any representation as to the quality or nature of any of the third party products or services purchased through any  <em>Pearson</em>  Site, or any other representation, warranty or guaranty. Any such undertaking, representation, warranty or guaranty would be furnished solely by the provider of such third party products or services, under the terms agreed to by the provider.</p>
-        <p>In addition, we may share aggregated information that does not personally identify you with the public and with third parties, including but not limited to researchers and business partners.</p>
-        <h2>6. Use For Personalization And Pedagogical Improvements</h2>
-        <p>Our goal is to provide current and future visitors with the best possible educational experience. To further this goal, we sometimes present different users with different versions of course materials and software. We do this to personalize the experience to the individual learner (assess the learner's level of ability and learning style, and present materials best suited to the learner), to evaluate the effectiveness of our course materials, to improve our understanding of the learning process and to otherwise improve the effectiveness of our offerings. We may publish or otherwise publicize results from this process, but, unless otherwise permitted under this Policy, those publications or public disclosures will not include Personal Information.</p>
-        <h2>7. Links To Other Websites</h2>
-        <p>The Site contains links to websites published by third parties, including other content providers as well as certain service providers, such as those who process payments on behalf of  <em>Pearson</em>.  These other websites are not under our control, and you acknowledge and agree that we are not responsible for the collection and use of your information by such websites, unless we have otherwise indicated in this Policy. We encourage you to be aware when you are be redirected to a third party website and review the privacy policies of each website you visit and use.</p>
-        <h2>8. Security</h2>
-        <p><em>Pearson</em>  has a program designed to protect Personal Information in its possession or control. This is done through a variety of privacy and security policies, processes and procedures, including administrative, physical, and technical safeguards that reasonably and appropriately protect the confidentiality, integrity, and availability of the Personal Information that it creates, receives, maintains, or transmits. Nonetheless, no method of transmission over the Internet, or method of electronic storage, is 100% secure; and therefore,  <em>Pearson</em>  cannot guarantee its absolute security.</p>
-        <h2>9. Changing Our Policy</h2>
-        <p>Please note that we review and may make changes to this Policy from time to time. When changes are made, the Policy link will include a notation 'Revised (date).' indicating that you should review the new terms, which will be effective immediately upon posting on this page, with an updated effective date. The notation will be included in the Policy link for at least seven (7) days after the update has been made. By accessing the Site after any changes have been made, you signify your agreement on a prospective basis to the modified Policy and any changes contained therein. In case you miss the notification referenced above, be sure to return to this page periodically to ensure familiarity with the most current version of this Policy.</p>
-        <h2>10. Minors</h2>
-        <p>Our Site is not intended for use by individuals under the age of 15, and  <em>Pearson</em>  does not knowingly collect personal data from those in this age group. If we become aware that someone under the age of 15 has registered, we will expunge any related Personal Information from our records.</p>
-        <h2>11. Privacy Concerns</h2>
-        <p>If you have privacy concerns, have disclosed data you would prefer to keep private, or would like to access the information we maintain about you, please contact us at  <a href="mailto:info@proversity.org" target="_blank">info@proversity.org</a></p>
+<h2>${_("Privacy Notice")}</h2>
+<p>${_("Updated 20 June 2018")}</p>
+<p>${_("Here, you can find out how we safeguard your information and how we use it to improve our products and services for the benefit of all our customers and website users.&nbsp;")}</p>
+<p>${_("The nature of our business means that, from time to time, we&rsquo;ll require some personal details from our customers and website users.")}</p>
+<p>${_("The data we collect could just be a name and an email address, but depending on your level of engagement with Pearson, it could be much more than that.")}</p>
+<p>${_("The personal information you&rsquo;ve shared with us, along with data on how you use our websites - what you search for and what preferences you select, for example - help us to better understand our customers as a group and as individuals. This in turn helps us to provide a range of products and services that meet your needs.")}</p>
+<h2>${_("How we protect your data")}</h2>
+<p>${_("When you share your personal information with any company, you have a right to expect that information to be treated with total confidentiality.&nbsp;")}</p>
+<p>${_("Your privacy is extremely important to us. We&rsquo;re committed to protecting any personal information you&rsquo;ve given us, and we comply with all relevant data protection laws.")}</p>
+<p>${_("This means that:")}</p>
+<ul>
+<ul>
+<li>${_("<strong>We take full responsibility for the information we hold about you</strong>")}</li>
+<li>${_("<strong>We will protect your privacy at all times</strong>")}</li>
+<li>${_("<strong>We will never sell your personal information.</strong>")}</li>
+</ul>
+</ul>
+<p>${_("Whether you&rsquo;ve supplied your personal details online, by phone or text, by email or in a letter, we will never use them without a lawful reason to do so. We&rsquo;ll use them for the purposes for which they were initially requested and as fully explained in this Privacy Notice.&nbsp; These explain how your personal data is being managed and safeguarded by us, including:")}</p>
+<ul>
+<ul>
+<li>${_("what information we collect about you")}</li>
+<li>${_("how we collect and use this information")}</li>
+<li>${_("how we safeguard the information you&rsquo;ve provided")}</li>
+<li>${_("your rights in relation to the information we hold about you")}</li>
+<li>${_("how to report abuse.")}</li>
+</ul>
+</ul>
+<p>${_("At Pearson, we know that you care how your personal information is used and we appreciate that you trust us to do that carefully and sensibly.")}</p>
+<p>${_("This Privacy Notice is designed to help you understand how we and other companies in our group collect and use your personal information. We want you to make informed decisions when using our websites and any features on them, including any registration and e-commerce services.")}</p>
+<p>${_("This Privacy Notice applies to all the pages on our sites linking to this Privacy Notice and any features of them and any e-commerce, purchasing or other areas which require registration on our sites. However, it won&rsquo;t apply to any third-party sites which are linked to our sites. We recommend that you read the privacy notice of any such sites that you visit as we are not responsible for them.")}</p>
+<p>${_("When we refer to our website or sites, we mean any of our websites or applications from which you have accessed this Privacy Notice.")}</p>
+<p>${_("We have included full details of who we and our group companies are at the end of this Privacy Notice.")}</p>
+<h2>${_("What information does Pearson collect about me?&nbsp;")}</h2>
+<p>${_("Personal information that we collect may include your name, contact details (phone numbers, email address and addresses), your date of birth, job, course information, your personal interests, credit card or billing information, shopping selections and data about the pages you visit and your other activity on our site, as well as any other personal information relating to you that you supply to us.&nbsp;")}</p>
+<p>${_("Some of our sites may also collect other information that you supply to us, such as information relating to your education, skills or job experience, where relevant in the context of the site or the services provided through the site.&nbsp; Except where stated otherwise on the site at the time such personal information is submitted, it is only processed for the purposes for which you have submitted it to us.&nbsp;")}</p>
+<h2>${_("How does Person collect my personal information?&nbsp;")}</h2>
+<p>${_("We collect your information in two ways:")}</p>
+<p>${_("1. Personal information you choose to disclose. You may, for example, provide us with your information when you post something on our site, when you register for any features on our site that require registration, when you contact us (online or offline) or when you order goods or services from us.&nbsp;")}</p>
+<p>${_("2. Information collected by us when you interact with our site or when you open our email communications. We use cookies (a small piece of computer code that we store for a period of time on your computer or mobile device) and other similar technologies to collect this information.")}</p>
+<p>${_("We will inform you prior to collecting your personal information if it is requested on a voluntary basis and the consequences of not providing voluntary personal information.&nbsp;")}</p>
+<p>${_("In a separate automatic operation the web server will collect your IP address and browser type and details of the website, application or email communication you came from before entering our site. This information is used to:")}</p>
+<ul>
+<ul>
+<li>${_("work out how many times our site has been visited")}</li>
+<li>${_("record which parts of our site have been visited so we can improve the content and layout of the site")}</li>
+<li>${_("understand the effectiveness of our email communications.")}</li>
+</ul>
+</ul>
+<p>${_("We may from time to time supply this data to third parties in an anonymised form for uses in connection with our site.")}</p>
+<h2>${_("What will Pearson do with my personal information?&nbsp;")}</h2>
+<p>${_("We and our group companies use your personal information for a variety of business purposes which are in our legitimate interests (\"Business Purposes\"), and/or in order to enter into or perform a contract with you (\"Contractual\"), and/or with your consent (\"Consent\"), and/or compliance with our legal obligations (\"Legal Reasons\"). For example, we may use your personal information:")}</p>
+<ul>
+<ul>
+<li>${_("to provide you with the relevant services through our applicable site for Contractual reasons&nbsp;")}</li>
+<li>${_("to process your online purchases for Contractual reasons")}</li>
+<li>${_("to inform you about and provide more information on products and services offered by us and our group companies for our Business Purposes or with your Consent")}</li>
+<li>${_("to invite you to participate in surveys, discussions and prize draws and ask for your views on our services via online surveys and discussion forums for our Business Purposes and/or with your Consent&nbsp;")}</li>
+<li>${_("to improve the products and services offered to you for our Business Purposes")}</li>
+<li>${_("for marketing for our Business Purposes and/or with your Consent")}</li>
+<li>${_("for statistical or analytical purposes for our Business Purposes")}</li>
+<li>${_("to detect, prevent or investigate security breaches or fraud for our Business Purposes and/or Legal Reasons")}</li>
+<li>${_("to otherwise to better meet the needs and preferences of our customers for our Business Purposes.&nbsp;")}</li>
+</ul>
+</ul>
+<p>${_("We will not allow unrelated third parties to use your personal information for marketing without your consent. Where we rely on your consent, you have the right to withdraw it at any time.&nbsp;")}</p>
+<p>${_("We also use personal information to identify types of user, audit how our sites are used and to help with the strategic development of our sites. When doing so, we remove any direct identifiers.&nbsp;")}</p>
+<p>${_("We will show your username on any content you submit or post on our sites (including discussions, bulletin boards and forums).")}</p>
+<h2>${_("Will Pearson share my personal information with anyone else?&nbsp;")}</h2>
+<p>${_("We will never sell your personal information. We may disclose and share your personal information with:")}</p>
+<ul>
+<ul>
+<li>${_("our group companies&nbsp;")}</li>
+<li>${_("any entity which acquires any part of our business&nbsp;")}</li>
+<li>${_("our service providers (including, for example, credit reference agencies and payment processors, distributors/agents of our products, suppliers who develop or host our sites)")}</li>
+<li>${_("third-party search engines that may index user profile pages and usernames as part of the URL of the user profile page by default if required or permitted by law")}</li>
+<li>${_("relevant third parties (such as your employer, your school, your internet service provider, law enforcement agencies) if we reasonably believe you may be in breach of the law (e.g. if you have posted defamatory content on our sites) or if required to do so in accordance with applicable law")}</li>
+<li>${_("other third parties with your consent.")}</li>
+</ul>
+</ul>
+<h2>${_("How does Pearson keep my personal information safe?&nbsp;")}</h2>
+<p>${_("We seek to protect the safety of all your personal information by implementing appropriate technical and organisational measures. For example, provided your browser accepts HTTPS (Hyper Text Transfer Protocol Secure) encryption, we seek to protect your payment information against unauthorised access through a secure server. Where we use third parties to process personal information, we require them to ensure the safety of your information.")}</p>
+<p>${_("Any personal information that you voluntarily post on a public area of our site, such as a bulletin board or discussion forum, or an interactive area requiring registration and/or subscription, may be collected and used by others. Please be careful what personal information you disclose in this way. You understand that we cannot control the actions of other users.")}</p>
+<h2>${_("Will Pearson send my personal information to another country?")}</h2>
+<p>${_("We may transfer your personal information to other countries around the world, including countries outside of the European Economic Area (\"EEA\"), which may not have the same data protection laws as those of the country where you access our sites. Where we transfer your personal information to countries outside of the EEA we will take appropriate steps to ensure your personal information is afforded the same level of protection as described in this Privacy Notice. We have entered into an intercompany data processing agreement using the European Commission standard contractual clauses (in the absence of an adequacy decision) for data transfers to our group companies located outside of the EEA. We rely on adequacy decisions or any adequate data transfer mechanisms adopted by the European Commission or a supervisory authority from time to time for transfers to third parties located in countries outside of the UK or the EEA.")}</p>
+<h2>${_("For how long will Pearson keep my personal information?&nbsp;")}</h2>
+<p>${_("We will keep your personal information only for as long as necessary to fulfil the purposes for which we are processing your personal information unless the law permits or requires longer. For example, we might need to keep your personal data for quality assurance of the service we have provided, or we might need to keep it to defend future legal claims.&nbsp;")}</p>
+<h2>${_("What if I am under 16 years old?&nbsp;")}</h2>
+<p>${_("If you are under 16, please be sure to read this Privacy Notice with your parent or guardian and ask them questions about anything you don&rsquo;t understand.&nbsp;")}</p>
+<h2>${_("What rights do I have?&nbsp;")}</h2>
+<p>${_("In some regions, such as the EEA (European Economic Area), you may have certain rights in relation to your personal information, including the right to:&nbsp;")}</p>
+<ul>
+<ul>
+<li>${_("request access to and obtain a copy of your personal information")}</li>
+<li>${_("rectification of your personal information if it is no longer accurate or erasure of your personal information if our retention is no longer necessary for the purposes for which it was collected")}</li>
+<li>${_("restrict or object to the processing of your personal information in certain circumstances&nbsp;")}</li>
+<li>${_("data portability (if applicable).&nbsp;")}</li>
+</ul>
+</ul>
+<p>${_("If you wish to exercise any of your rights in relation to your personal information please send your request to us using the details set out in the \"Contacting Pearson\" section below. We will consider and act upon any request in accordance with applicable data protection laws.&nbsp;")}</p>
+<p>${_("You may also have the right to complain to the Information Commissioner (if you are in the UK) or to your local data protection supervisory authority if you are unhappy with our privacy practices notified under this Privacy Notice.&nbsp;")}</p>
+<h2>${_("Misuse of personal information")}</h2>
+<p>${_("Any improper collection or misuse of personal information is in violation of this Privacy Notice and of our Legal Notice or terms of use. Please report it by emailing ")}<a href="mailto:dataprivacy@pearson.com " target="_blank">dataprivacy@pearson.com</a>.</p>
+<p>${_("You agree not to misuse any personal information available on our sites or to gather it or use robots or other automated scripts, codes or functionalities to do so.")}</p>
+<p>${_("We may immediately suspend or terminate your access to our site without notice if we become aware that you are in breach of applicable terms and conditions of use or of this Privacy Notice.")}</p>
+<h2>${_("Changes to this Privacy Notice&nbsp;")}</h2>
+<p>${_("We may update this Privacy Notice from time to time. We will always include the date of a new version so that you know when there has been a change.&nbsp;")}</p>
+<h2>${_("Contacting Pearson&nbsp;")}</h2>
+<p>${_("If you have any questions about our Privacy Notice, please do not hesitate to contact us at:")}</p>
+<ul>
+<li type="none">${_("Data Protection Officer")}</li>
+<li type="none">${_("Pearson")}</li>
+<li type="none">${_("80 Strand")}</li>
+<li type="none">${_("London")}</li>
+<li type="none">${_("WC2R 0RL")}</li>
+<li type="none">${_("United Kingdom")}</li>
+</ul>
+<p>${Text(_("or email us at {link_start}dataprivacy@pearson.com{link_end}.")).format(
+    link_start=HTML("<a href=\"mailto:dataprivacy@pearson.com\" target=\"_blank\">"),
+    link_end=HTML('</a>')
+    )}</p>
+<p>${_("This Privacy Notice is provided on behalf of Pearson plc and its group companies.&nbsp; This means all companies owned or controlled by Pearson plc (registered office 80 Strand, London WC2R 0RL, United Kingdom, registered number 53723).")}</p>
+<p>${_("")}</p>
 
-    </section>
-</main>
+
+        <button type="button" class="btn btn-default pull-right print">${_("Print Privacy Notice")}</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  $(document).ready(function() {
+    $('#content section .container .row div button.print').click(function() {
+      window.print();
+      return false;
+    });
+  });
+</script>
+
+<script>
+  $(document).ready(function () {
+    $("link[href*='/static/css/lms-main-v1']").remove();
+  });
+</script>
