@@ -409,28 +409,21 @@ button_enroll_bottom = configuration_helpers.get_value('button_enroll_bottom', '
           % if not course.start_date_is_still_default:
             <%
               course_start_date = course.advertised_start or course.start
-              course_start_date_string = course_start_date.strftime('%Y-%m-%d')
-              date_today_string = datetime.today().strftime('%Y-%m-%d') 
+
+              ## For ITP we skip displaying the course start date if the course is self-paced and the start date is passed
+              skip_course_start_display = false
+              if configuration_helpers.get_value('date_itp_validation', false):
+                if course.self_paced:
+                  course_start_date_string = course.start.strftime('%Y-%m-%d')
+                  date_today_string = datetime.today().strftime('%Y-%m-%d')
+                  if course_start_date_string >= date_today_string:
+                    skip_course_start_display = true
+                  endif
+                endif
+              endif
             %>
 
-            %if configuration_helpers.get_value('date_itp_validation', false):
-              %if not course.self_paced:
-                %if course_start_date_string >= date_today_string:
-                  <li class="important-dates-item">
-                    <span class="icon fa fa-calendar" aria-hidden="true"></span>
-                    <p class="important-dates-item-title">${_("Classes Start")}</p>
-                    % if isinstance(course_start_date, string_types):
-                        <span class="important-dates-item-text start-date">${course_start_date}</span>
-                    % else:
-                        <%
-                           course_date_string = course_start_date.strftime('%Y-%m-%dT%H:%M:%S%z')
-                        %>
-                        <span class="important-dates-item-text start-date localized_datetime" data-format="shortDate" data-datetime="${course_date_string}"></span>
-                    % endif
-                  </li>
-                %endif
-              %endif
-            %else:
+            %if not skip_course_start_display:
               <li class="important-dates-item">
                 <span class="icon fa fa-calendar" aria-hidden="true"></span>
                 <p class="important-dates-item-title">${_("Classes Start")}</p>
