@@ -73,46 +73,20 @@ from openedx.core.djangolib.markup import HTML, Text
         </ul>
         <p>${_("We will not allow unrelated third parties to use your personal information for marketing without your consent. Where we rely on your consent, you have the right to withdraw it at any time.&nbsp;")}</p>
         <p>${_("We also use personal information to identify types of user, audit how our sites are used and to help with the strategic development of our sites. When doing so, we remove any direct identifiers.&nbsp;")}</p>
-
         % if user.is_authenticated():
-
-            <p>${_("We will show your username on any content you submit or post on our sites (including discussions, bulletin boards and forums).")}</p>
-
-                <h2>${_("Will Pearson share my personal information with anyone else?&nbsp;")}</h2>
-                <p>${_("We will never sell your personal information. We may disclose and share your personal information with:")}</p>
-                <ul>
-                <li>${_("our group companies&nbsp;")}</li>
-                <li>${_("any entity which acquires any part of our business&nbsp;")}</li>
-                <li>${_("our service providers (including, for example, credit reference agencies and payment processors, distributors/agents of our products, suppliers who develop or host our sites)")}</li>
-                <li>${_("third-party search engines that may index user profile pages and usernames as part of the URL of the user profile page by default if required or permitted by law")}</li>
-                <li>${_("relevant third parties (such as your employer, your school, your internet service provider, law enforcement agencies) if we reasonably believe you may be in breach of the law (e.g. if you have posted defamatory content on our sites) or if required to do so in accordance with applicable law")}</li>
-                <li>${_("other third parties with your consent.")}</li>
-                </ul>
-
-        % else:
-
-            <p>${_("Participation in surveys and discussion forums is entirely voluntary. You may unsubscribe from being contacted for these purposes at any time. Survey information will be used for market research with the aim of improving our services.")}</p>
-
-            <p>${_("We will show your username on any content you submit or post on our sites (including discussions, bulletin boards and forums).")}</p>
-
-                <h2>${_("Will Pearson share my personal information with anyone else?&nbsp;")}</h2>
-                <p>${_("We will never sell your personal information. We may disclose and share your personal information with:")}</p>
-                <ul>
-                <li>${_("our group companies&nbsp;")}</li>
-                <li>${_("any entity which acquires any part of our business&nbsp;")}</li>
-                <li>${_("our service providers (including, for example, credit reference agencies and payment processors, distributors/agents of our products, suppliers who develop or host our sites)")}</li>
-                <li>${_("third-party search engines that may index user profile pages and usernames as part of the URL of the user profile page by default if required or permitted by law")}</li>
-                <li>${_("relevant third parties (such as your employer, your school, your internet service provider, law enforcement agencies) if we reasonably believe you may be in breach of the law (e.g. if you have posted defamatory content on our sites) or if required to do so in accordance with applicable law")}</li>
-                <li>${_("other third parties with your consent.")}</li>
-                </ul>
-
-                <h2>${_("Email marketing and opt-out")}</h2>
-                <p>${_("We will not send you marketing emails if you have opted out of receiving them. Any marketing emails we send you will include an unsubscribe link at the end of the email. ")}</p>
-                <p>${_("Some Pearson sites also provide contact details you may use if you want to contact us by email, post or telephone in order to unsubscribe. In addition, some Pearson sites have a "My Account" page where you can choose whether or not to receive marketing communications from us.")}</p>
-
+        <p>${_("Participation in surveys and discussion forums is entirely voluntary. You may unsubscribe from being contacted for these purposes at any time. Survey information will be used for market research with the aim of improving our services.")}</p>
            % endif
-        
-
+        <p>${_("We will show your username on any content you submit or post on our sites (including discussions, bulletin boards and forums).")}</p>
+        <h2>${_("Will Pearson share my personal information with anyone else?&nbsp;")}</h2>
+        <p>${_("We will never sell your personal information. We may disclose and share your personal information with:")}</p>
+        <ul>
+        <li>${_("our group companies&nbsp;")}</li>
+        <li>${_("any entity which acquires any part of our business&nbsp;")}</li>
+        <li>${_("our service providers (including, for example, credit reference agencies and payment processors, distributors/agents of our products, suppliers who develop or host our sites)")}</li>
+        <li>${_("third-party search engines that may index user profile pages and usernames as part of the URL of the user profile page by default if required or permitted by law")}</li>
+        <li>${_("relevant third parties (such as your employer, your school, your internet service provider, law enforcement agencies) if we reasonably believe you may be in breach of the law (e.g. if you have posted defamatory content on our sites) or if required to do so in accordance with applicable law")}</li>
+        <li>${_("other third parties with your consent.")}</li>
+        </ul>
         <h2>${_("How does Pearson keep my personal information safe?&nbsp;")}</h2>
         <p>${_("We seek to protect the safety of all your personal information by implementing appropriate technical and organisational measures. For example, provided your browser accepts HTTPS (Hyper Text Transfer Protocol Secure) encryption, we seek to protect your payment information against unauthorised access through a secure server. Where we use third parties to process personal information, we require them to ensure the safety of your information.")}</p>
         <p>${_("Any personal information that you voluntarily post on a public area of our site, such as a bulletin board or discussion forum, or an interactive area requiring registration and/or subscription, may be collected and used by others. Please be careful what personal information you disclose in this way. You understand that we cannot control the actions of other users.")}</p>
