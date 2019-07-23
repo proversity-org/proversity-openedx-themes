@@ -9990,6 +9990,11 @@ input {
   }
 }
 
+.sga-block input {
+  border: 1px solid #c8c8c8 !important;
+  margin: 15px auto !important;
+}
+
 textarea {
   background: none;
   border: 1px solid #fff;
