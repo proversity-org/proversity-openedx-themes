@@ -16,6 +16,15 @@
 @import 'dashboard';
 @import 'support';
 
+//certificate text alignment adjustment
+.layout-accomplishment .accomplishment-rendering .accomplishment-summary, .layout-accomplishment .accomplishment-rendering .accomplishment-statement-detail { 
+  width: 100%;
+}
+
+.certificate .accomplishment-rendering .accomplishment-course {
+  width: 100%;
+}
+
 //generals
 
 body, html, button, textarea {
