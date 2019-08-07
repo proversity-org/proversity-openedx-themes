@@ -11,6 +11,16 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
+.freetextresponse .action .check {
+  background-color: #0f1d4e;
+  background-image: none;
+}
+
+.freetextresponse .action .check:active, .freetextresponse .action .check:focus, .freetextresponse .action .check:focus {
+  box-shadow:none;
+}
+
+
 body {
   margin: 0;
 }
@@ -1400,7 +1410,7 @@ img {
   .course-caption {
     min-height: 150px;
   }
-} 
+}
 
 .thumbnail {
   > img, a > img {
@@ -3612,7 +3622,7 @@ div {
       border-radius: 0 0 10px 10px;
     }
     .banner-text {
-      
+
       a.btn.btn-lg {
         &.btn-secondary {
           border: 1px solid;
@@ -10368,5 +10378,3 @@ iframe {
 .content-wrapper section.outside-app h1 {
   text-align: center;
 }
-
-
