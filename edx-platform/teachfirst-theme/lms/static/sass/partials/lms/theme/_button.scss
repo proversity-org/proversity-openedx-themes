@@ -1271,7 +1271,7 @@ select[multiple].input-group-sm > {
 }
 
 .btn {
-  font-family: "ProximaNovaLight","Helvetica",Sans-Serif;
+  font-family: "Barlow","Helvetica",Sans-Serif;
   margin: 20px 20px 20px 20px;
   text-transform: none;
 }
@@ -1299,7 +1299,7 @@ select[multiple].input-group-sm > {
 }
 
 .btn-default {
-  background: #0088CE;
+  background: #3764f0;
   color: #fff !important;
   border-top: none;
   border-left: none;
@@ -1357,7 +1357,7 @@ select[multiple].input-group-sm > {
 }
 
 .btn-secondary {
-  background: #0088CE;
+  background: #3764f0;
   border: none;
   border-color: #fff;
   color: #fff;
@@ -1738,6 +1738,6 @@ button {
 
   &:hover {
     background: #fff;
-    color: #0088CE;
+    color: #3764f0;
   }
 }

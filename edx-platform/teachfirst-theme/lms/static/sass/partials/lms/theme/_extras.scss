@@ -333,6 +333,11 @@ th {
   url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 
+@font-face {
+  font-family: 'Noe Text';
+  src: url("../fonts/NoeTextBookItalic.ttf") format("truetype"),
+  url("../fonts/NoeTextBookSemibold.ttf") format("truetype");
+}
 
 .glyphicon {
   position: relative;
@@ -6386,20 +6391,24 @@ button.close {
 }
 
 @font-face {
-  font-family: ProximaNovaBold;
-  src: url("../fonts/ProximaNovaBold.otf");
+  font-family: "Noe Text";
+  src: url("../fonts/NoeTextSemibold.ttf");
+}
+
+@font-face {
+  font-family: "Noe Text";
+  src: url("../fonts/NoeTextSemibold.otf");
 }
 
 
 @font-face {
-  font-family: ProximaNovaSemibold;
-  src: url("../fonts/ProximaNovaSemibold.otf");
+  font-family: "Noe Text It";
+  src: url("../fonts/NoeTextBookItalic.ttf");
 }
 
-
 @font-face {
-  font-family: ProximaNovaLight;
-  src: url("../fonts/ProximaNovaLight.otf");
+  font-family: "Noe Text It";
+  src: url("../fonts/NoeTextBookItalic.otf");
 }
 
 
@@ -6407,7 +6416,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "ProximaNovaBold","Helvetica",Sans-Serif;
+  font-family: "Noe Text", Serif;
   font-weight: bold;
   font-style: normal;
   color: #002663;
@@ -6415,28 +6424,24 @@ h4 {
 }
 
 h1 {
-  font-family: "ProximaNovaBold","Helvetica",Sans-Serif;
+  font-family: "Noe Text", Serif;
   font-weight: 400;
   font-style: normal;
   color: #323538;
   font-size: 3em;
 }
 
-
-
 h2,
 h3,
 h4 {
-  font-family: "ProximaNovaBold","Helvetica",Sans-Serif;
+  font-family: "Noe Text", Serif;
   font-weight: 400;
   font-style: normal;
   color: #323538;
 }
 
-
-
-body {
-  font-family: "ProximaNovaLight","Helvetica",Sans-Serif;
+body, p {
+  font-family: "Barlow","Helvetica",Sans-Serif;
   font-weight: normal;
   font-style: normal;
   font-size: 18px;
@@ -6482,7 +6487,7 @@ body {
   &.right {
     background: none;
   }
-  color: #0088CE;
+  color: #3764f0;
   text-shadow: none;
   .glyphicon-chevron-left,
   .glyphicon-menu-left,
@@ -6525,8 +6530,8 @@ body {
   margin-bottom: 0;
   li {
     margin: 1px 5px 1px 1px;
-    background: #0088CE;
-    border: 5px solid #0088CE;
+    background: #3764f0;
+    border: 5px solid #3764f0;
     width: 25px;
     height: 25px;
     border-radius: 25px;
@@ -6536,8 +6541,8 @@ body {
   }
   .active {
     margin: 1px 5px 1px 1px;
-    background: #0088CE;
-    border: 5px solid #0088CE;
+    background: #3764f0;
+    border: 5px solid #3764f0;
     width: 25px;
     height: 25px;
     &:last-child {
@@ -6659,8 +6664,8 @@ body {
 }
 
 .panel-heading {
-  background: #0088CE !important;
-  border: #0088CE !important;
+  background: #3764f0 !important;
+  border: #3764f0 !important;
   color: #fff !important;
   border-radius: 0;
   text-align: center;
@@ -7060,7 +7065,7 @@ section {
     }
   }
   &[role="courseware"] {
-    background-color: #0088CE;
+    background-color: #3764f0;
     position: relative;
     padding: 15px 0 0 0;
     margin: 0 -20px;
@@ -7109,7 +7114,7 @@ section {
         margin: 5px 0;
         text-align: left;
         &:focus {
-          border: 1px solid #0088CE;
+          border: 1px solid #3764f0;
           -webkit-box-shadow: 0 0 20px rgba(0, 38, 99, 0.6);
           box-shadow: 0 0 20px rgba(0, 38, 99, 0.6);
         }
@@ -7134,7 +7139,7 @@ section {
       transition: all 0.3s;
       &:hover,
       &:focus {
-        color: #0088CE;
+        color: #3764f0;
       }
     }
     .container .row {
@@ -7426,7 +7431,7 @@ section {
   height: 100vh;
   left: 94vh;
   top: 57vh;
-  background: #0088CE;
+  background: #3764f0;
   overflow: hidden;
   width: 1px;
   height: 1px;
@@ -7577,7 +7582,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "ProximaNovaBold","Helvetica",Sans-Serif;
+  font-family: "Noe Text", Serif;
   font-weight: bold;
   font-style: normal;
   color: #002663;
@@ -7585,7 +7590,7 @@ h4 {
 }
 
 h1 {
-  font-family: "ProximaNovaBold","Helvetica",Sans-Serif;
+  font-family: "Noe Text", Serif;
   font-weight: 400;
   font-style: normal;
   color: #323538;
@@ -7593,25 +7598,24 @@ h1 {
 }
 
 h2 {
-  font-family: "ProximaNovaBold","Helvetica",Sans-Serif;
+  font-family: "Noe Text", Serif;
   font-weight: 400;
   font-style: normal;
   color: #323538;
 }
 
 h3 {
-  font-family: "ProximaNovaBold","Helvetica",Sans-Serif;
+  font-family: "Noe Text", Serif;
   font-weight: 400;
   font-style: normal;
   color: #323538;
-  font-family: "ProximaNovaBold","Helvetica",Sans-Serif;
   font-weight: 400;
   font-style: normal;
   color: #323538;
 }
 
 body {
-  font-family: "ProximaNovaLight","Helvetica",Sans-Serif;
+  font-family: "Barlow","Helvetica",Sans-Serif;
   font-weight: normal;
   font-style: normal;
   font-size: 18px;
@@ -7747,7 +7751,7 @@ section[role="maintenance"] {
   width: calc(50% - 4em);
   padding: 1em;
   background: #fff;
-  color: #0088CE;
+  color: #3764f0;
   text-align: center;
   opacity: 1;
   &:before {
@@ -7849,16 +7853,16 @@ section[role="maintenance"] {
 .section-heading {
   margin-top: 0;
   margin-bottom: .25em;
-  color: #0088CE !important;
+  color: #3764f0 !important;
 }
 
 .section-text {
-  color: #0088CE;
+  color: #3764f0;
   &:last-child {
     margin-bottom: 0;
   }
   h4 {
-    color: #0088CE;
+    color: #3764f0;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
@@ -7868,13 +7872,13 @@ section[role="maintenance"] {
     }
   }
   div {
-    border-bottom: 1px solid #0088CE;
+    border-bottom: 1px solid #3764f0;
     padding: 15px 0;
     &:last-child {
       border: none;
     }
     a {
-      color: #0088CE;
+      color: #3764f0;
       -webkit-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s;
@@ -7926,7 +7930,7 @@ section[role="maintenance"] {
     }
   }
   #buorgul {
-    background-color: #0088CE;
+    background-color: #3764f0;
   }
   #buorgig {
     background-color: #002663;
@@ -8313,7 +8317,7 @@ span {
 .financial-assistance-wrapper .financial-assistance-form .submission-error .message-title,
 .login-register .system-error .message-title,
 .financial-assistance-wrapper .financial-assistance-form .system-error .message-title {
-  font-family: "ProximaNovaLight","Helvetica",Sans-Serif;
+  font-family: "Barlow","Helvetica",Sans-Serif;
   font-size: 18px;
   font-weight: bold;
   text-shadow: none;
@@ -8326,7 +8330,7 @@ span {
 .financial-assistance-wrapper .financial-assistance-form .submission-error .message-copy,
 .login-register .submission-error .message-copy p,
 .financial-assistance-wrapper .financial-assistance-form .submission-error .message-copy p {
-  font-family: "ProximaNovaLight","Helvetica",Sans-Serif;
+  font-family: "Barlow","Helvetica",Sans-Serif;
   font-size: 18px;
   color: #a94442 !important;
   margin: 15px 0 0 0;
@@ -8351,7 +8355,7 @@ span {
 
 .login-register .submission-success .message-title,
 .financial-assistance-wrapper .financial-assistance-form .submission-success .message-title {
-  font-family: "ProximaNovaLight","Helvetica",Sans-Serif;
+  font-family: "Barlow","Helvetica",Sans-Serif;
   font-size: 18px;
   font-weight: bold;
   text-shadow: none;
@@ -8364,7 +8368,7 @@ span {
 .financial-assistance-wrapper .financial-assistance-form .status .message-copy,
 .login-register .status .message-copy p,
 .financial-assistance-wrapper .financial-assistance-form .status .message-copy p {
-  font-family: "ProximaNovaLight","Helvetica",Sans-Serif;
+  font-family: "Barlow","Helvetica",Sans-Serif;
   font-size: 18px;
   color: #3c763d;
   margin: 15px 0 0 0;
@@ -8544,7 +8548,7 @@ body.view-in-course .wrapper-course-material .course-material .course-tabs {
 }
 
 .tabs .tab a {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "Barlow", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: 400;
   line-height: 20.72px;
   font-size: 14px;
@@ -8837,7 +8841,7 @@ input {
   color: #002663;
   &:hover,
   &:focus {
-    color: #0088CE;
+    color: #3764f0;
     text-decoration: none;
   }
 }
@@ -8849,29 +8853,29 @@ p {
       color: #323538;
     }
     &:hover {
-      color: #0088CE;
+      color: #3764f0;
     }
   }
   div.info-wrapper section.handouts ol li div.hitarea:hover + h4 {
-    color: #0088CE;
+    color: #3764f0;
   }
 }
 
 div.info-wrapper section.handouts ol li p div.hitarea:hover + h4,
 p div.info-wrapper section.handouts ol li div.hitarea:focus + h4,
 div.info-wrapper section.handouts ol li p div.hitarea:focus + h4 {
-  color: #0088CE;
+  color: #3764f0;
 }
 
 p {
   a {
     &:focus,
     &:visited:hover {
-      color: #0088CE;
+      color: #3764f0;
     }
   }
   div.info-wrapper section.handouts ol li div.hitarea:hover + h4:visited {
-    color: #0088CE;
+    color: #3764f0;
   }
 }
 
@@ -8879,7 +8883,7 @@ div.info-wrapper section.handouts ol li p div.hitarea:hover + h4:visited,
 p div.info-wrapper section.handouts ol li div.hitarea:focus + h4:visited,
 div.info-wrapper section.handouts ol li p div.hitarea:focus + h4:visited,
 p a:visited:focus {
-  color: #0088CE;
+  color: #3764f0;
 }
 
 .tabs .tab a.active {
@@ -8888,7 +8892,7 @@ p a:visited:focus {
 
 .wrapper-course-material .course-tabs {
   li a {
-    font-family: "ProximaNovaLight","Helvetica",Sans-Serif;
+    font-family: "Barlow","Helvetica",Sans-Serif;
     &:hover {
       color: #002663;
       border-bottom-color: #002663;
@@ -9757,7 +9761,7 @@ input[name="subject"] {
 body,
 p,
 label {
-  font-family: "ProximaNovaLight","Helvetica",Sans-Serif;
+  font-family: "Barlow","Helvetica",Sans-Serif;
   font-size: 18px;
 }
 
@@ -10046,7 +10050,7 @@ input#action-preview-username {
     label {
       color: #002663;
       text-shadow: none;
-      font-family: "ProximaNovaLight","Helvetica",Sans-Serif;
+      font-family: "Barlow","Helvetica",Sans-Serif;
     }
     input {
       color: #002663;
@@ -10085,7 +10089,7 @@ input#action-preview-username {
 .modal .inner-wrapper header h2,
 .leanModal_box .inner-wrapper header h2,
 .wmd-prompt-dialog .inner-wrapper header h2 {
-  font-family: "ProximaNovaBold","Helvetica",Sans-Serif;
+  font-family: "Noe Text", Serif;
 }
 
 .hd-4,
@@ -10385,7 +10389,7 @@ div.info-wrapper section.handouts ol li a {
 
 #password-reset-complete > div > h4,
 #password-reset-confirm-form > div > h4 {
-  font-family: "ProximaNovaBold","Helvetica",Sans-Serif;
+  font-family: "Barlow","Helvetica",Sans-Serif;
   font-size: 18px;
   font-weight: normal;
   line-height: inherit;
@@ -10404,14 +10408,14 @@ div.info-wrapper section.handouts ol li a {
 
 #password-reset-confirm-form > form > button {
   background: #002663;
-  font-family: "ProximaNovaLight","Helvetica",Sans-Serif;
+  font-family: "Barlow","Helvetica",Sans-Serif;
   font-weight: normal;
   font-style: normal;
   font-size: 18px;
   &:hover,
   &:focus {
     background: #002663;
-    font-family: "ProximaNovaLight","Helvetica",Sans-Serif;
+    font-family: "Barlow","Helvetica",Sans-Serif;
     font-weight: normal;
     font-style: normal;
     font-size: 18px;
@@ -10420,7 +10424,7 @@ div.info-wrapper section.handouts ol li a {
 
 .login-register .action-label,
 .financial-assistance-wrapper .financial-assistance-form .action-label {
-  font-family: "ProximaNovaLight","Helvetica",Sans-Serif;
+  font-family: "Barlow","Helvetica",Sans-Serif;
   font-weight: normal;
   font-style: normal;
   font-size: 18px;
@@ -10474,6 +10478,7 @@ div.info-wrapper section.handouts a {
   color: #002663;
   text-decoration: none;
 }
+
 
 .wrapper-preview-menu {
   background: #cecece;
@@ -10588,7 +10593,7 @@ body.view-in-course {
 }
 
 .xmodule_display.xmodule_HtmlModule a:link {
-  color: #0088CE;
+  color: #3764f0;
   text-decoration: underline;
 }
 
@@ -10731,7 +10736,7 @@ input[name="subject"] {
 }
 
 .wrap-instructor-info .instructor-info-action {
-  background: #0088CE;
+  background: #3764f0;
   color: #fff !important;
   border-top: none;
   border-left: none;
@@ -10775,7 +10780,7 @@ input[name="subject"] {
   text-align: center;
   .u-field-account_privacy .btn-change-privacy {
     margin: 0 !important;
-    background: #0088CE;
+    background: #3764f0;
     color: #fff !important;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -10819,7 +10824,7 @@ input[name="subject"] {
     }
   }
   .btn-small {
-    background: #0088CE;
+    background: #3764f0;
     color: #fff !important;
     border-top: none;
     border-left: none;
@@ -10846,7 +10851,7 @@ input[name="subject"] {
     }
   }
   .btn-brand {
-    background: #0088CE;
+    background: #3764f0;
     color: #fff !important;
     border-top: none;
     border-left: none;
@@ -10872,7 +10877,7 @@ input[name="subject"] {
     }
   }
   .btn-default {
-    background: #0088CE;
+    background: #3764f0;
     color: #fff !important;
     border-top: none;
     border-left: none;
@@ -11115,7 +11120,7 @@ body {
 }
 
 a {
-  color: #0088CE;
+  color: #3764f0;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
@@ -11167,7 +11172,7 @@ textarea {
   padding: 5px;
   width: 50%;
   &:focus {
-    border: 1px solid #0088CE;
+    border: 1px solid #3764f0;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
@@ -11273,13 +11278,13 @@ iframe {
         text-align: center;
       }
       h1 {
-        font-family: ProximaNovaBold;
+        font-family: "Noe Text", Serif;
         font-style: normal;
         font-weight: 700;
         font-size: 4em;
       }
       h2 {
-        font-family: ProximaNovaLight;
+        font-family: "Noe Text", Serif;
         font-style: normal;
         font-weight: 400;
         font-size: 3em;
@@ -11489,7 +11494,7 @@ iframe {
 }
 
 .footer {
-  background: #002663;
+  background: #3764f0;
   position: static;
   text-align: center;
   color: #fff;
