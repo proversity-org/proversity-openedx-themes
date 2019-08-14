@@ -94,7 +94,7 @@ from openedx.core.djangolib.markup import HTML, Text
 		  
         </section>
 		
-        % if course.course_home_sidebar_enabled:
+       <!-- % if course.course_home_sidebar_enabled: --> 
         <section aria-label="${_('Handout Navigation')}" class="handouts">
 		   % if course_tools:
             <h3 class="hd hd-3 handouts-header">${_("Course Tools")}</h3>
@@ -112,10 +112,10 @@ from openedx.core.djangolib.markup import HTML, Text
             <h4 class="handouts-header">${_(course.info_sidebar_name)}</h4>
             ${HTML(get_course_info_section(request, masquerade_user, course, 'handouts'))}
         </section>
-        % endif
+      <!--  % endif --> 
 
       % else:
-        % if course.course_home_sidebar_enabled:
+       <!-- % if course.course_home_sidebar_enabled: --> 
         <section class="updates">
           <h1 class="handouts-header">${_("Course Updates and News")}</h1>
           ${HTML(get_course_info_section(request, masquerade_user, course, 'guest_updates'))}
@@ -124,7 +124,7 @@ from openedx.core.djangolib.markup import HTML, Text
           <h1 class="handouts-header">${_("Course Handouts")}</h1>
           ${HTML(get_course_info_section(request, masquerade_user, course, 'guest_handouts'))}
         </section> -->
-        % endif
+       <!-- % endif --> 
         % endif
       </div>
   </div>
