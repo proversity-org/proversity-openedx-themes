@@ -2,18 +2,79 @@
 
  a, .copyright,
  .colophon .nav-colophon li a {
-    color: $primary;
+    color: $inverse;
   }
 }
 
+ .wrapper-footer footer#footer-openedx .colophon {
+    float: none;
+    margin: auto;
+    min-height: 30px;
+  }
+
+.wrapper-footer footer#footer-openedx .footer-about-openedx:last-child {
+  margin: auto;
+  float: none;
+  width: 85%;
+  margin-top: 20px;
+}
+
+.wrapper-footer footer#footer-openedx .footer-about-openedx {
+  margin: auto;
+  width: 100%;
+}
+
+div.wrapper-footer footer#footer-openedx .footer-about-openedx a{
+  padding-left:30px;
+  float:left;
+}
+
+.wrapper-footer footer#footer-openedx .copyright {
+  color: $inverse;
+  width: 50%;
+  text-align: right;
+  float: left;
+}
+
+.wrapper-footer footer#footer-openedx .nav-legal {
+    text-align: center;
+    color: $inverse;
+    float: none;
+  }
+
+header.global-header .nav-links .secondary a.sign-in-btn {
+    background-color: $button-color-login;
+    border: 1px solid $primary;
+    color:$font-color-login;
+  }
+
 .wrapper-footer {
   border-top: 1px solid $primary;
+  background-color: $primary;
+  color: $inverse;
+}
+
+.wrapper .wrapper-footer {
+  border-top: 1px solid $primary;
+  background-color: $primary;
+  color: $inverse;
+   text-align: center;
+}
+
+.container-fluid .wrapper-footer {
+  border-top: 1px solid $primary;
+  background-color: $primary;
+  color: $inverse;
+}
+
+.wrapper-footer footer#footer-openedx ul {
+ font-size: 1.2rem;
 }
 
 div.wrapper-footer footer#footer-openedx .colophon .nav-colophon li a:hover,
 div.wrapper-footer footer#footer-openedx .colophon .nav-colophon li a:focus,
 div.wrapper-footer footer#footer-openedx .colophon .nav-colophon li a:active {
-  color: $primary;
+  color: $inverse;
 }
 
 nav.nav-colophon {
@@ -26,6 +87,8 @@ div.wrapper-footer footer#footer-openedx {
   margin-left: auto;
   margin-right: auto;
   margin: 0 auto;
+  background-color: $primary;
+  color: $inverse;
 }
 
 div.colophon nav.nav-legal ul {
@@ -48,20 +111,32 @@ div.wrapper-footer footer#footer-openedx
   }
 
   .wrapper-footer footer#footer-openedx .colophon {
-    margin-right: 0;
+    color: $inverse;
   }
 
   .wrapper-footer footer#footer-openedx .copyright {
-    text-align: center;
+    //text-align: center;
+    color: $inverse;
   }
+
 
   .wrapper-footer footer#footer-openedx .nav-legal {
     text-align: center;
+    color: $inverse;
   }
 
   .wrapper-footer footer#footer-openedx .footer-about-openedx {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .wrapper-footer footer#footer-openedx .copyright {
+    text-align: center;
+    color: $inverse;
   }
 }

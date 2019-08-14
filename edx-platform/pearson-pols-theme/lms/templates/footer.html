@@ -49,7 +49,7 @@
             <div class="footer-about-openedx">
               <p>
                 <a href="${footer['openedx_link']['url']}">
-                  <img src="${footer['openedx_link']['image']}" alt="${footer['openedx_link']['title']}" width="140" />
+                  <img src="/static/pearson-pols-theme/images/openedx.svg" alt="${footer['openedx_link']['title']}" width="150" />
                 </a>
               </p>
             </div>
@@ -88,8 +88,7 @@
           </p>
         </div>
 
-        ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
-        <p class="copyright">${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}</p>
+       
 
         <nav class="nav-legal" aria-label="${_('Legal')}">
           <ul>
@@ -110,11 +109,13 @@
       ## which are not technically powered by OpenEdX.
       % if not hide_openedx_link:
       <div class="footer-about-openedx">
-        <p>
+         ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
+        <p class="copyright">${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}</p>
+        
             <a href="https://open.edx.org">
-              <img src="/static/pearson-theme/images/openedx-grey.svg" alt="Powered by Open edX" width="110">
+              <img src="/static/pearson-pols-theme/images/openedx.svg" alt="Powered by Open edX" width="150">
             </a>
-        </p>
+        
       </div>
       % endif
     </footer>

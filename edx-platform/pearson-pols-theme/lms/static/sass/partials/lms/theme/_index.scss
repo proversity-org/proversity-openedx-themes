@@ -1,25 +1,101 @@
+//Course catalog
+.find-courses .courses-container {
+  padding: 20px;
+}
+
+div.content-wrapper.main-container {
+  margin-bottom:0px;
+}
+
+
+//Landing  page
 header.banner {
   background-size: cover;
   background-position: center center;
-  min-height: 65vh;
+  min-height: 10vh;
   overflow: hidden;
-  width:100%;
+  max-height: 300px;
 }
 
 .home-banner .title {
     color: #007FA3;
-    float: left;
-    padding: 50px;
     margin-right: 30px;
     margin-top: 3%;
+    background-color:#fff;
+    width:100%;
+    padding:0px;
+    margin-top:3%;
+}
+
+.course-info header.course-profile .intro-inner-wrapper .media .hero {
+  border: 1px solid #D4EAE4;
+}
+
+.course-info .details {
+  padding: 10px 2% 10px 4%;
+  width: 62%;
+  margin-right: 0px;
+}
+
+div.course-summary {
+  padding: 10px 20px 10px 20px;
+}
+
+body.view-in-course .wrapper-course-material .course-material {
+   height: 45px;
+}
+
+
+.course-info header.course-profile .intro-inner-wrapper .intro>.heading-group {
+  border-bottom: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+
+
+.course-info .button-enroll-bottom {
+  padding: 20px;
+}
+
+.course-info .details h2 {
+   font-family: Playfair Display, serif;
+   font-weight: 700;
+   margin-bottom: 15px;
+   font-size: 1.6rem; 
+}
+
+.course-info header.course-profile .intro-inner-wrapper .intro>.heading-group h1 {
+  font-family: Playfair Display, serif;
+  text-shadow: none; 
+}
+
+p {
+  font-family: Open Sans, sans-serif; 
+}
+
+
+.course-info header.course-profile .intro-inner-wrapper {
+  margin: 20px;
+  background-color: #F3F3F3;
+  box-shadow: none;
+}
+
+.course-info header.course-profile {
+  border-bottom: none;
+  box-shadow: none;
 }
 
 .home-banner .title .title-super {
   font-family: Playfair Display, serif;
-  font-size:4rem;
+  font-size: 4rem;
+  line-height: 4rem;
 }
 .home-banner .title .title-sub {
-  font-size:2rem;
+  font-family: Open Sans, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  padding-top: 20px;
 }
 
 .banner.itp-site {
@@ -33,7 +109,7 @@ header.banner {
     }
   }
   .title .title-super {
-    font-family: Playfair Display, serif;
+    font-family: Playfair Display, sans-serif;
     font-size: 4rem;
 
     @media (max-width: 550px) {
@@ -70,9 +146,7 @@ header.banner {
 
   @media (max-width: 1100px) {
     .home-banner .title {
-      margin-right: 15px;
       padding: 20px 10px;
-      margin-top: 1vh;
     }
   }
 
@@ -80,7 +154,6 @@ header.banner {
     .home-banner .title {
       float:none;
       background: none;
-      margin:10px auto;
       padding:10px;
     }
     .home-banner .title .title-super {
@@ -92,6 +165,36 @@ header.banner {
       line-height: 1.1;
       margin-top:7px;
     }
+  }
+
+  .content-wrapper .course-info .container {
+    max-width: none;
+    padding-top:20px;
+  }
+
+  .course-info .h3 {
+    font-weight: 600;
+    font-size: 1.1em;
+  }
+
+  div.content-wrapper.main-container {
+    padding: 0px;
+    margin-top: 0px;
+  }
+
+  .courses-container {
+    background-color: #F5F5F5;
+    padding: 0px 30px 0 30px;
+  }
+
+  .course-info .course-sidebar {
+    float: right;
+  }
+
+
+
+  .courses-container .courses .course {
+    border: none;
   }
 
   .course-search-home {
@@ -147,4 +250,9 @@ header.banner {
       }
     }
   }
+
+  // overrides
+
+
+
 

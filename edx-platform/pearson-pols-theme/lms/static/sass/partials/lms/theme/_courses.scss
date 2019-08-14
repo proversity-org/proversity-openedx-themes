@@ -1,3 +1,50 @@
+
+.highlighted-courses .courses .course a{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.highlighted-courses .courses .course a:hover {
+  color: $primary;
+}
+
+.courses-container .courses .course:hover .cover-image::before, .courses-container .courses .course:focus .cover-image::before {
+ opacity:0;
+}
+
+.btn-learnmore {
+  border-style: solid;
+  border-radius: 0.1875rem;
+  border-width: 1px;
+  box-shadow: none;
+  padding: 0.625rem 1.25rem;
+  font-size: 16px;
+  font-weight: normal;
+  text-shadow: none;
+  color: $inverse;
+  background-color: $primary;
+  margin: auto;
+  margin: 10px 15px 20px 15px;
+}
+
+.btn-learnmore:hover {
+  color: $primary;
+  background-color: $inverse;
+}
+
+
+.courses-container .courses .course .course-info h2 {
+  margin-bottom: 5px;
+}
+
+.courses-container .courses .course .course-info .course-date {
+  margin-bottom: 5px;
+}
+
+.courses-container .courses .course .course-info .course-title{
+  margin: 10px 0 15px 0;
+}
+
 .courses-container {
   padding: 40px 10px 0 10px;
 }
@@ -29,6 +76,40 @@ section.intro div.main-cta a strong {
   box-shadow: none;
   border: 0;
   color: $inverse;
+}
+
+.course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register, .course-info .button-enroll-bottom a.register, .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.add-to-cart  {
+  border: none;
+  background-image: none;
+  text-decoration: none;
+  text-shadow: none; 
+  background-color: $primary;
+  color: #fff;
+  border-radius: 3px;
+  border: 1px solid white;
+}
+
+.course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register:hover:not(:disabled), .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register:focus:not(:disabled), .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register:active:not(:disabled), .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.add-to-cart:hover:not(:disabled), .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.add-to-cart:focus:not(:disabled), .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.add-to-cart:active:not(:disabled) {
+  border: 1px solid $primary;
+  background-image: none;
+  text-decoration: none;
+  text-shadow: none;
+  background-color: #fff;
+  color: $primary;
+  box-shadow: none;
+}
+
+.course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register:hover, .course-info .button-enroll-bottom a.register:hover, .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.add-to-cart:hover, .course-info .button-enroll-bottom a.add-to-cart:hover  {
+  border: none;
+  background-image: none;
+  text-decoration: none;
+  text-shadow: none;
+  background-color: #fff;
+  color: $primary;
+}
+
+.course-info header.course-profile .intro-inner-wrapper {
+  box-shadow:none !important;
 }
 
 .content-wrapper .course-info header.course-profile {
@@ -137,9 +218,38 @@ div.info-wrapper section.updates div article .toggle-visibility-element {
 }
 
 h2.hd.hd-2.unit-title,
-.xblock .xblock h2 {
+.xblock .xblock h2,  {
   font-size: 2.25em;
+  font-family: Playfair Display, serif;
 }
+
+.course-outline .block-tree .section .section-name .section-title {
+  font-family: Playfair Display, serif;
+  font-size: 1.3rem;
+}
+
+.instructor-dashboard-content-2 input[type="button"] {
+  text-shadow: none;
+  font-weight: bold;
+  box-shadow: none;
+}
+
+.forum-nav .search-alert-content .message {
+  color: black;
+}
+
+
+.hd.hd-3.discussion-module-title, .hd-2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1.4em;
+  font-family: Playfair Display, serif;
+}
+
+.discussion-module .inline-discussion-topic {
+  font-size: 1rem;
+}
+
 
 .course-content div.bookmark-button-wrapper {
   margin-bottom: 10px;
@@ -169,6 +279,10 @@ header.page-header.has-secondary {
   padding-bottom: 0;
 }
 
+.xmodule_display.xmodule_VideoModule .video .wrapper-downloads {
+  padding:10px;
+}
+
 .xmodule_display.xmodule_SequenceModule .sequence-nav ol li button.past .icon {
   color: $pearson-grey-courseware-4;
 }
@@ -179,7 +293,7 @@ header.page-header.has-secondary {
 
 button:active .icon, .xmodule_display.xmodule_SequenceModule .sequence-nav button.active .icon {
   font-size: 110%;
-  color: $pearson-blue-courseware !important;
+  color: $pearson-dark-blue-courseware !important;
 }
 
 body.view-in-course .wrapper-course-material, body.view-in-course .wrapper-preview-menu {
@@ -190,23 +304,25 @@ body.view-in-course .wrapper-course-material, body.view-in-course .wrapper-previ
   display: none;
 }
 
+
+
 div.xmodule_display.xmodule_SequenceModule .sequence-nav ol li button .sequence-tooltip {
   background: $inverse;
-  border: 1px solid $pearson-blue-courseware;
-  color: $pearson-blue-courseware;
+  border: 1px solid $pearson-dark-blue-courseware;
+  color: $pearson-dark-blue-courseware;
 }
 
 div.xmodule_display.xmodule_SequenceModule .sequence-nav ol li button .sequence-tooltip::after {
   background: $inverse;
-  border-top: 1px solid $pearson-blue-courseware;
-  border-left: 1px solid $pearson-blue-courseware;
+  border-top: 1px solid $pearson-dark-blue-courseware;
+  border-left: 1px solid $pearson-dark-blue-courseware;
   top: -6px;
 }
 
 div.xmodule_display.xmodule_SequenceModule .sequence-nav ol li button .sequence-tooltip {
   text-shadow: none;
 }
-
+/*
 div.xmodule_display.xmodule_SequenceModule .sequence-nav ol li button .icon::before {
   content: "\f1db";
 }
@@ -237,15 +353,15 @@ div.xmodule_display.xmodule_SequenceModule .sequence-nav ol li button.seq_proble
 
 div.xmodule_display.xmodule_SequenceModule .sequence-nav ol li button.seq_video.past .icon::before {
   content: "\f111";
-}
+} */
 
 div.xmodule_display.xmodule_SequenceModule .sequence-nav button.active {
-  border-bottom: 3px solid $pearson-blue-courseware;
+  border-bottom: 3px solid $pearson-dark-blue-courseware;
 }
-
+/*
 div.xmodule_display.xmodule_SequenceModule .sequence-nav ol li button.active .icon::before {
   content: "\f111";
-}
+} */
 
 div.xmodule_display.xmodule_SequenceModule .sequence-nav {
   margin: 20px auto 30px;
@@ -290,12 +406,14 @@ div.xmodule_display.xmodule_SequenceModule .sequence-nav button.active .icon {
   font-size: 110% !important;
 }
 
+/*
+
 div.xmodule_display.xmodule_VideoModule .video {
   background: none;
   margin: 15px 0;
   padding: 0;
   box-shadow: 4px 0px 20px 1px rgba(0,0,0,0.3);
-}
+}  */
 
 div.xmodule_display.xmodule_SequenceModule .sequence-nav ol li {
   border-top-color: $pearson-grey-courseware;

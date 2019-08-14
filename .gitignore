@@ -5,3 +5,4 @@ edx-platform/*/*/static/css/*
 # Common environment artifacts
 node_modules/
 venv/
+**/.DS_Store

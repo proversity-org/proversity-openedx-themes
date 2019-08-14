@@ -15,7 +15,7 @@ quick_filters_home = configuration_helpers.get_value('quick_filters_home', [])
 
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="home">
-     <!-- <header>
+   <!--   <header>
         <div class="outer-wrapper">
           <div class="title">
             <div class="heading-group">
@@ -40,24 +40,27 @@ quick_filters_home = configuration_helpers.get_value('quick_filters_home', [])
 
           </div>
 
-          <%include file="index_promo_video.html" />
+          <%include file="index_promo_video.html" /> 
         </div>
 
       </header> -->
       <section class="home-banner">
-          <header class="banner ${configuration_helpers.get_value('site_title_box_class', ' ')}" style="background-image: url(${static.url(configuration_helpers.get_value('banner_image_url', 'pearson-theme/images/banner_pearson_white.jpg'))});">
+          <header class="banner ${configuration_helpers.get_value('site_title_box_class', ' ')}" >
+
+          <img style="width:100%" src="/static/pearson-pols-theme/images/banner-pols.jpg" />
+            </header>
              <h1 class="title">
 
                 <span class="title-super">
-                  ${configuration_helpers.get_value('home_page_title',' ')}
+                  ${configuration_helpers.get_value('home_page_title','Welcome')}
                 </span>
 
                 <p class="title-sub">
-                  ${configuration_helpers.get_value('home_page_subtitle',' ')}
+                  ${configuration_helpers.get_value('home_page_subtitle','We think you might be interested in these programs')}
                 </p>
 
              </h1>
-          </header>
+          
         </section>
 
         %if search_courses_home:
