@@ -4,20 +4,35 @@
     margin-left: 3px;
 }
 
+
 @media (min-width: 992px) {
   header.global-header .nav-links .secondary a.register-btn {
     background-color: $button-color-register;
     color:$font-color-register;
     border: none;
   }
+
+  header.global-header .nav-links .secondary a.register-btn:hover {
+    background-color: $font-color-login;
+    border: 1px solid $primary;
+    color:$button-color-login;
+  }
 }
 
 @media (min-width: 992px) {
   header.global-header .nav-links .secondary a.sign-in-btn {
     background-color: $button-color-login;
-    border: 1px solid $primary;
-    color:$primary;
+    border: none;
+    color:$font-color-login;
   }
+
+  header.global-header .nav-links .secondary a.sign-in-btn:hover {
+    background-color: $font-color-login;
+    border: 1px solid $primary;
+    color:$button-color-login;
+  }
+
+  
 }
 
  .main-header .nav-links .main
@@ -59,8 +74,4 @@
     position: relative;
   }
 
-}
-
-.wrapper-course-material .course-material .tab:first-child {
-  display:none;
 }

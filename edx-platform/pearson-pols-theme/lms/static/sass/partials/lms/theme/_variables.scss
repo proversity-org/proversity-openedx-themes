@@ -10,7 +10,7 @@
 $primary: #007FA3;
 $primary-black: #007FA3;
 $inverse: #FFF;
-$secondary: #4F4F4F;
+$secondary: #003057;
 $container-bg: $inverse;
 $homepage-background: $inverse;
 $body-bg:$inverse;
@@ -73,9 +73,9 @@ $serif: Playfair Display;
 @import 'edx-bootstrap/sass/open-edx/theme';
 
 //navigation
-$button-color-login: $inverse;
+$button-color-login: #003057;
 $font-color-login: #FFF;
-$button-color-register: $primary;
+$button-color-register: #003057;
 $font-color-register: #FFF;
 
 //login and register
