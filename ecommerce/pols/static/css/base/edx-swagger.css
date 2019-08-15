@@ -1,0 +1,11 @@
+body {
+  background-color: white; }
+
+#django-rest-swagger {
+  background-color: white;
+  color: #999999; }
+  #django-rest-swagger a {
+    color: inherit; }
+
+.swagger-ui-wrap .container {
+  width: initial; }
