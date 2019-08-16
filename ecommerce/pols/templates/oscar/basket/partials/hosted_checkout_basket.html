@@ -13,17 +13,17 @@
         <form action="." method="post">
             {% csrf_token %}
             {{ formset.management_form }}
-
+  <p class="certificate_type">
+                            {% trans "Order Summary" %}
+                        </p>
             {% for form, line_data in formset_lines_data %}
                 {% purchase_info_for_line request line_data.line as session %}
 <!--
                 <img class="brand-logo" alt="{{ platform_name }} logo" src="/static/pols/images/logo.png"/>--> 
 
-                   {% if line_data.seat_type %}
-                        <p class="certificate_type">
-                            {% trans "Order Summary" %}
-                        </p>
-                    {% endif %}
+                <!--   {% if line_data.seat_type %}
+                      
+                    {% endif %} -->
 
 
                 <div class="basket-items">
