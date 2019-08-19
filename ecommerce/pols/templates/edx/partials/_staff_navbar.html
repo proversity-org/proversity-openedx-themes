@@ -15,7 +15,7 @@
         </a>
     {% elif admin == "program_offers" %}
         <a class="navbar-brand" href="{% url 'programs:offers:list' %}">
-            <img class="navbar-brand-logo" alt="{{ platform_name }} logo" src="{% static 'images/PearsonLogo_Horizontal_Blk_RGB.jpg %}"/>
+            <img class="navbar-brand-logo" alt="{{ platform_name }} logo" src="{% static 'images/PearsonLogo_Horizontal_Blk_RGB.jpg' %}"/>
             <div class="navbar-brand-app">{% trans "E-Commerce Program Offers Administration" %}</div>
         </a>
     {% else %}
