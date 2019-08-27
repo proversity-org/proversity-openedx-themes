@@ -6,6 +6,14 @@
   }
 }
 
+.vue-footer {
+  background-color: $vue-header-footer !important;
+}
+
+.apprenticeships-footer {
+   background-color: $app-header-footer !important;
+}
+
  .wrapper-footer footer#footer-openedx .colophon {
     float: none;
     margin: auto;
@@ -40,12 +48,6 @@ div.wrapper-footer footer#footer-openedx .footer-about-openedx a{
     text-align: center;
     color: $inverse;
     float: none;
-  }
-
-header.global-header .nav-links .secondary a.sign-in-btn {
-    background-color: $button-color-login;
-    border: 1px solid $primary;
-    color:$font-color-login;
   }
 
 .wrapper-footer {
@@ -87,7 +89,7 @@ div.wrapper-footer footer#footer-openedx {
   margin-left: auto;
   margin-right: auto;
   margin: 0 auto;
-  background-color: $primary;
+  background-color: none;
   color: $inverse;
 }
 

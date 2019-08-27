@@ -11,7 +11,12 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
 <%
 search_courses_home = configuration_helpers.get_value('search_courses_home', '')
 quick_filters_home = configuration_helpers.get_value('quick_filters_home', [])
+home_page_title = configuration_helpers.get_value('home_page_title', 'Welcome')
+home_page_subtitle = configuration_helpers.get_value('home_page_subtitle', 'We think you might be interested in these programs')
+banner_image_url = configuration_helpers.get_value('banner_image_url', '/static/pearson-pols-theme/images/banner-pols.jpg')
+theme = configuration_helpers.get_value('theme', '')
 %>
+
 
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="home">
@@ -47,16 +52,16 @@ quick_filters_home = configuration_helpers.get_value('quick_filters_home', [])
       <section class="home-banner">
           <header class="banner ${configuration_helpers.get_value('site_title_box_class', ' ')}" >
 
-          <img style="width:100%" src="/static/pearson-pols-theme/images/banner-pols.jpg" />
+          <img style="width:100%" src="${static.url(configuration_helpers.get_value('banner_image_url', '/static/pearson-pols-theme/images/banner-pols.jpg'))}" />
             </header>
-             <h1 class="title">
+             <h1 class="title ${theme}">
 
                 <span class="title-super">
-                  ${configuration_helpers.get_value('home_page_title','Welcome')}
+                  ${home_page_title}
                 </span>
 
                 <p class="title-sub">
-                  ${configuration_helpers.get_value('home_page_subtitle','We think you might be interested in these programs')}
+                  ${home_page_subtitle}
                 </p>
 
              </h1>
@@ -88,6 +93,36 @@ quick_filters_home = configuration_helpers.get_value('quick_filters_home', [])
 
     </section>
 </main>
+
+
+<section>
+  <div class="container no-border">
+    <div class="grid">
+      <div class="items">
+        <div>
+          <h1>${_("Access courses on the go")}</h1>
+
+          <p>${_("Download the app and access your courses wherever you are. Sync videos to your device and watch offline, at a time that suits you.")}</p>
+
+          % if False:
+            <p><strong>Coming soon</strong></p>
+          % else:
+            <div class="btn-center">
+              <ul>
+                <li><a href="https://itunes.apple.com/us/app/" target="_blank"><img src="${static.url('images/appstore.png')}" /></a></li>
+                <li><a href="https://play.google.com/store/apps/" target="_blank"><img src="${static.url('images/playstore.png')}" /></a></li>
+              </ul>
+            </div>
+          % endif
+        </div>
+      </div>
+
+      <div class="items hidden-xs">
+        <img src="${static.url('images/app.gif')}" class="img-responsive pull-right" />
+      </div>
+    </div>
+  </div>
+</section>
 
 % if show_homepage_promo_video:
   <section id="video-modal" class="modal home-page-video-modal video-modal">

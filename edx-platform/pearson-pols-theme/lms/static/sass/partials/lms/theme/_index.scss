@@ -3,10 +3,117 @@
   padding: 20px;
 }
 
+
+
+.find-courses {
+  padding: 0px;
+}
+
 div.content-wrapper.main-container {
   margin-bottom:0px;
 }
+//app banner
+@media (max-width: 480px) {
+  .btn-center ul li {
+    padding: 0;
+  }
+}
 
+
+.btn-center button {
+      padding: 6px 30px;
+    }
+
+
+.btn-center {
+  text-align: center;
+  margin: 15px 0;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline;
+      padding: 0 15px 0 0;
+      &:last-child {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.grid {
+  display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 15px -15px;
+    background: none !important;
+}
+
+.grid .items {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    min-height: 150px;
+    min-width: 15%;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+
+    h1 {  
+      font-family: "Playfair Display", serif; 
+    }
+}
+
+@media (max-width: 768px) {
+  .grid .items {
+    min-height: 1px;
+    min-width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid .items {
+    min-height: 1px;
+    min-width: 100%;
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+
+.pull-right {
+  float: right !important;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 //Landing  page
 header.banner {
@@ -17,14 +124,24 @@ header.banner {
   max-height: 300px;
 }
 
-.home-banner .title {
-    color: #007FA3;
-    margin-right: 30px;
-    margin-top: 3%;
-    background-color:#fff;
-    width:100%;
-    padding:0px;
-    margin-top:3%;
+.home-banner {
+  .title {
+    color: #ffffff;
+    margin: 0px;
+    background-color:#000000;
+    width: 95%;
+    padding: 5%;
+  }
+
+  .vue {
+    color: $vue-banner-text;
+    background-color: $vue-banner-bg;
+  }
+
+  .apprenticeships {
+    color: $app-banner-text;
+    background-color: $app-banner-bg;
+  }
 }
 
 .course-info header.course-profile .intro-inner-wrapper .media .hero {
@@ -145,17 +262,44 @@ p {
 
 
   @media (max-width: 1100px) {
-    .home-banner .title {
-      padding: 20px 10px;
-    }
-  }
+    .home-banner {
+      .title {
+          width: 95%;
+          padding: 5%;
+        }
 
+       .vue {
+          color: $vue-banner-text;
+          background-color: $vue-banner-bg;
+        }
+
+      .apprenticeships {
+          color: $app-banner-text;
+          background-color: $app-banner-bg;
+        }
+    }
+}
   @media (max-width: 550px) {
-    .home-banner .title {
+    .home-banner {
+
+      .title {
       float:none;
       background: none;
-      padding:10px;
-    }
+      width: 95%;
+      padding: 5%;
+      }
+
+      .vue {
+          color: $vue-banner-text;
+          background-color: $vue-banner-bg;
+        }
+
+      .apprenticeships {
+          color: $app-banner-text;
+          background-color: $app-banner-bg;
+        }
+
+  }
     .home-banner .title .title-super {
       font-size: 2.6rem;
 
@@ -165,6 +309,8 @@ p {
       line-height: 1.1;
       margin-top:7px;
     }
+
+
   }
 
   .content-wrapper .course-info .container {
@@ -185,13 +331,20 @@ p {
   .courses-container {
     background-color: #F5F5F5;
     padding: 0px 30px 0 30px;
+   // margin-top:-40px;
+  }
+
+  .vue-container {
+    background-color: $vue-courses-bg !important;
+  }
+
+  .courses-container-apprenticeships {
+    background-color: $app-courses-bg !important;
   }
 
   .course-info .course-sidebar {
     float: right;
   }
-
-
 
   .courses-container .courses .course {
     border: none;

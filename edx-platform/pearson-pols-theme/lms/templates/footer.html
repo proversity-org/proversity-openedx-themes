@@ -5,12 +5,21 @@
   from django.utils.translation import ugettext as _
   from branding.api import get_footer
   from openedx.core.djangoapps.lang_pref.api import footer_language_selector_is_enabled
+  from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
 %>
+<%
+theme = configuration_helpers.get_value('theme', '')
+%>
+
 <% footer = get_footer(is_secure=is_secure) %>
 <%namespace name='static' file='static_content.html'/>
 
-% if uses_bootstrap:
+% if uses_bootstrap: 
+  % if theme:
+  <div class="container-fluid wrapper-footer ${theme}-footer">
+  % else: 
   <div class="container-fluid wrapper-footer">
+  % endif
     <footer>
       <div class="row">
         <div class="col-md-9">
@@ -59,7 +68,11 @@
     </footer>
   </div>
 % else:
+  % if theme:
+  <div class="wrapper wrapper-footer ${theme}-footer">
+  % else: 
   <div class="wrapper wrapper-footer">
+  % endif
     <footer id="footer-openedx" class="grid-container"
       ## When rendering the footer through the branding API,
       ## the direction may not be set on the parent element,
