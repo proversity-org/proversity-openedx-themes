@@ -4,8 +4,63 @@
     margin-left: 3px;
 }
 
+.global-header {
+  min-height: 70px;
+}
+
+.vue-header {
+  background-color: $vue-header-footer !important;
+  border: none;
+  color: $vue-btn-text; 
+
+  @media (min-width: 992px) {
+    .tab-nav-link {
+      color: $vue-btn-text !important;
+    }   
+  }
+
+  .nav-links .secondary .nav-item a {
+    color: $vue-btn-text !important;
+  }
+
+  .nav-links .secondary .dropdown-user-menu .dropdown-item a {
+     color: $vue-dark !important;
+  }
+}
+
+.apprenticeships-header {
+  background-color: $app-header-footer !important;
+  border: none;
+  color: $app-btn-text;
+  
+  @media (min-width: 992px) {
+    .tab-nav-link {
+      color: $app-btn-text !important;
+    }
+  }
+
+   .nav-links .secondary .nav-item a {
+      color: $app-btn !important;
+    }
+
+    .nav-links .secondary .dropdown-user-menu .dropdown-item a {
+     color: $app-dark !important;
+  }
+}
+
+.vue-btn:hover, .apprencticeships-btn:hover {
+  background-color: $font-color-login !important;
+  border: 1px solid $primary !important;
+  color:$button-color-login !important;
+}
+
 .settings-language-form {
   position: absolute;
+}
+
+select, option, optgroup {
+  color: #fff !important;
+  background-color: #003057 !important;
 }
 
 
@@ -13,7 +68,7 @@
   header.global-header .nav-links .secondary a.register-btn {
     background-color: $button-color-register;
     color:$font-color-register;
-    border: none;
+    border: 1px solid $button-color-register;
   }
 
   header.global-header .nav-links .secondary a.register-btn:hover {
@@ -21,11 +76,30 @@
     border: 1px solid $primary;
     color:$button-color-login;
   }
+
+  .vue-btn {
+    background-color: $vue-btn !important;
+    border: 1px solid $vue-btn !important;
+    color: $vue-btn-text !important;
+  }
+
+  .apprencticeships-btn {
+    background-color: $app-btn !important;
+    border: 1px solid $app-btn !important;
+    color: $app-btn-text !important;
+  }
+
+   .vue-btn:hover, .apprencticeships-btn:hover {
+    background-color: $font-color-login;
+    border: 1px solid $primary;
+    color:$button-color-login;
+  }
 }
+
 
 header.global-header .nav-links .secondary a.sign-in-btn {
     background-color: $button-color-login;
-    border: none;
+    border: 1px solid $button-color-login;
     color:$font-color-login;
   }
 
@@ -33,7 +107,7 @@ header.global-header .nav-links .secondary a.sign-in-btn {
 @media (min-width: 992px) {
   header.global-header .nav-links .secondary a.sign-in-btn {
     background-color: $button-color-login;
-    border: none;
+    border: 1px solid $button-color-login;
     color:$font-color-login;
   }
 
@@ -66,7 +140,7 @@ header.global-header .nav-links .secondary a.sign-in-btn {
   div.mobile-menu div.mobile-nav-link a {
     background-color: $light-gray;
     border-bottom: 1px solid $primary;
-    color: $primary;
+    color: #003057;
   }
 }
 

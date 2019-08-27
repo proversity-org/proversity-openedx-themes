@@ -23,8 +23,8 @@
   text-shadow: none;
   color: $inverse;
   background-color: $primary;
-  margin: auto;
   margin: 10px 15px 20px 15px;
+  text-align: center; 
 }
 
 .btn-learnmore:hover {
@@ -732,6 +732,10 @@ div.content-wrapper.main-container div.container div.home {
 
 .content-wrapper .course-info .container {
   padding-bottom: 0;
+}
+
+.content {
+  padding: 0px 30px;
 }
 
 .course-info .button-enroll-bottom {
