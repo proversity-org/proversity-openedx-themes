@@ -19,7 +19,7 @@ theme = configuration_helpers.get_value('theme', '')
 
 
 <main id="main" aria-label="Content" tabindex="-1">
-    <section class="home">
+    <section class="home ${theme}">
    <!--   <header>
         <div class="outer-wrapper">
           <div class="title">
@@ -91,38 +91,39 @@ theme = configuration_helpers.get_value('theme', '')
 
       <%include file="${courses_list}" />
 
+
+        <div class="container no-border">
+          <div class="grid">
+            <div class="items">
+              <div>
+                <h1>${_("Access courses on the go")}</h1>
+
+                <p>${_("Download the app and access your courses wherever you are. Sync videos to your device and watch offline, at a time that suits you.")}</p>
+
+                % if False:
+                  <p><strong>Coming soon</strong></p>
+                % else:
+                  <div class="btn-center">
+                    <ul>
+                      <li><a href="https://itunes.apple.com/us/app/" target="_blank"><img src="${static.url('images/appstore.png')}" /></a></li>
+                      <li><a href="https://play.google.com/store/apps/" target="_blank"><img src="${static.url('images/playstore.png')}" /></a></li>
+                    </ul>
+                  </div>
+                % endif
+              </div>
+            </div>
+
+            <div class="items hidden-xs">
+              <img src="${static.url('images/app.gif')}" class="img-responsive pull-right" />
+            </div>
+          </div>
+        </div>
+     
+
     </section>
 </main>
 
 
-<section>
-  <div class="container no-border">
-    <div class="grid">
-      <div class="items">
-        <div>
-          <h1>${_("Access courses on the go")}</h1>
-
-          <p>${_("Download the app and access your courses wherever you are. Sync videos to your device and watch offline, at a time that suits you.")}</p>
-
-          % if False:
-            <p><strong>Coming soon</strong></p>
-          % else:
-            <div class="btn-center">
-              <ul>
-                <li><a href="https://itunes.apple.com/us/app/" target="_blank"><img src="${static.url('images/appstore.png')}" /></a></li>
-                <li><a href="https://play.google.com/store/apps/" target="_blank"><img src="${static.url('images/playstore.png')}" /></a></li>
-              </ul>
-            </div>
-          % endif
-        </div>
-      </div>
-
-      <div class="items hidden-xs">
-        <img src="${static.url('images/app.gif')}" class="img-responsive pull-right" />
-      </div>
-    </div>
-  </div>
-</section>
 
 % if show_homepage_promo_video:
   <section id="video-modal" class="modal home-page-video-modal video-modal">
