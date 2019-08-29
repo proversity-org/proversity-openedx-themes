@@ -8,6 +8,10 @@
   color: $primary;
 }
 
+.highlighted-courses .courses {
+  padding: 0px;
+}
+
 .courses-container .courses .course:hover .cover-image::before, .courses-container .courses .course:focus .cover-image::before {
  opacity:0;
 }
@@ -45,9 +49,6 @@
   margin: 10px 0 15px 0;
 }
 
-.courses-container {
-  padding: 40px 10px 0 10px;
-}
 
 .find-courses,
 .university-profile {
@@ -719,6 +720,7 @@ section.idash-section#membership
 div.container>div {
   border: 0 !important;
   box-shadow: none !important;
+  margin: 0px;
 }
 
 section#instructor-dashboard-content,

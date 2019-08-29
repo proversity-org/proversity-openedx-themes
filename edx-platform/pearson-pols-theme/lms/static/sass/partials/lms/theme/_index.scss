@@ -3,8 +3,6 @@
   padding: 20px;
 }
 
-
-
 .find-courses {
   padding: 0px;
 }
@@ -80,6 +78,7 @@ div.content-wrapper.main-container {
 
     h1 {  
       font-family: "Playfair Display", serif; 
+      margin-bottom: 10px;
     }
 }
 
@@ -124,24 +123,35 @@ header.banner {
   max-height: 300px;
 }
 
+  .vue {
+ //   color: $vue-banner-text;
+    background-color: $vue-banner-bg;
+  }
+
+  .apprenticeships {
+//    color: $app-banner-text;
+    background-color: $app-banner-bg;
+  }
+
+
 .home-banner {
   .title {
-    color: #ffffff;
+    color: #007FA3;
     margin: 0px;
-    background-color:#000000;
+    background-color: none;
     width: 95%;
     padding: 5%;
   }
 
   .vue {
     color: $vue-banner-text;
-    background-color: $vue-banner-bg;
+  //  background-color: $vue-banner-bg;
   }
 
   .apprenticeships {
     color: $app-banner-text;
-    background-color: $app-banner-bg;
-  }
+   // background-color: $app-banner-bg;
+  } 
 }
 
 .course-info header.course-profile .intro-inner-wrapper .media .hero {
@@ -218,7 +228,7 @@ p {
 .banner.itp-site {
   .title {
     float: right;
-    max-width:500px;
+    max-width: 500px;
     
     @media (max-width:550px) {
       float: none;
@@ -264,7 +274,7 @@ p {
   @media (max-width: 1100px) {
     .home-banner {
       .title {
-          width: 95%;
+          width: 90%;
           padding: 5%;
         }
 
@@ -285,7 +295,7 @@ p {
       .title {
       float:none;
       background: none;
-      width: 95%;
+      width: 90%;
       padding: 5%;
       }
 
@@ -330,8 +340,7 @@ p {
 
   .courses-container {
     background-color: #F5F5F5;
-    padding: 0px 30px 0 30px;
-   // margin-top:-40px;
+    padding: 40px;
   }
 
   .vue-container {

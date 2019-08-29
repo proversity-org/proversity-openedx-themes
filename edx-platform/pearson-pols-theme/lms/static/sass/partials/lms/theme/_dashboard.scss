@@ -22,10 +22,16 @@
 
 .view-dashboard div.item li.course-item {
   width: 100%;
+  box-shadow: 0 1px 10px 0 rgba(0,48,87,0.125), inset 0 0 0 1px rgba(255,255,255,0.75);
+}
+
+.view-dashboard div.item li.course-item:hover {
+  box-shadow: 0 1px 4px 0 rgba(0,127,163,0.4);
 }
 
 div.course-image {
-  min-height: 160px;
+    height: 170px;
+    overflow: hidden;
 
   img {
     width: 100%;
@@ -203,6 +209,15 @@ section[role=courses] div.container.no-border {
   }
 }
 
+
+section[role=courses] div.container.no-border {
+  h1 {
+    font: normal 3em/1.6em Playfair Display;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
 //dashboard-subcription
 
 .view-dashboard div.item {
@@ -219,7 +234,7 @@ section[role=courses] div.container.no-border {
   li.course-item {
     list-style: none;
     .course-container {
-      border: 1px solid $gray-l5;
+     // border: 1px solid $gray-l5;
       border-radius: 3px;
     }
  }
@@ -353,7 +368,7 @@ section[role=courses] div.container.no-border {
   	min-width: 108px;
   	display: none;
     position: absolute;
-    top: 50px;
+    top: 40px;
     width: 100%;
    // right: 19px;
     pointer-events: none;
