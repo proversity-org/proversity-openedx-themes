@@ -1,3 +1,164 @@
+// Change cards from landscape to portrait
+
+.view-dashboard div.item .items.course.single-course {
+  float: left;
+  margin: 1%;
+  min-width: 250px;
+  padding: 0px;
+  width: 23%;
+}
+
+@media (max-width: 850px) {
+  .view-dashboard div.item .items.course.single-course {
+    width: 48%;
+  }
+}
+
+@media (max-width: 650px) {
+  .view-dashboard div.item .items.course.single-course {
+  width: 98%;
+  }
+}
+
+.view-dashboard div.item li.course-item {
+  width: 100%;
+  box-shadow: 0 1px 10px 0 rgba(0,48,87,0.125), inset 0 0 0 1px rgba(255,255,255,0.75);
+}
+
+.view-dashboard div.item li.course-item:hover {
+  box-shadow: 0 1px 4px 0 rgba(0,127,163,0.4);
+}
+
+div.course-image {
+    height: 170px;
+    overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+}
+/*
+.view-dashboard div.item {
+  padding: 0px 40px;
+} */
+
+@media (max-width: 991px) {
+  .view-dashboard div.item .course .details {
+    padding-left: 0px !important;
+  }
+}
+
+
+.view-dashboard div.item .course .details .wrapper-course-details { 
+  padding: 0px 10px !important;
+
+  .course-title {
+    text-align: left;
+  }
+
+  .course-info [class*="info-"], 
+  .view-dashboard div.item .course .details .wrapper-course-details .course-info [class*="info-"] {
+    color: #003057 !important;
+  }
+
+  .wrapper-course-actions {
+    margin: 20px 0px 0px;
+  }
+
+}
+
+.view-dashboard div.item .course .details {
+
+  .enter-course {
+    width: 100%;
+  }
+
+  .course-actions .wrapper-action-more {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .course-actions .wrapper-action-more .action-more {
+    margin-right: 0px;
+    width: 100%;
+    padding: 0px;
+  //  margin-top: 5px;
+  }
+
+
+  .course-actions .wrapper-action-more .btn  {
+    color: #007FA3;
+    background: #fff;
+    float: right;
+    font-size: 16px;
+    line-height: 24px;
+    box-sizing: border-box;
+    letter-spacing: 0;
+    border: 1px solid #007FA3;
+    border-radius: 3px;
+    padding: 8px 20px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.grid .item {
+  padding: 40px;
+}
+
+.view-dashboard div.item .course .details .wrapper-course-details .wrapper-course-actions {
+  margin-right: 0px;
+  width: 100%;
+}
+
+.dashboard .main-container .my-courses
+.course .details .course-actions
+.wrapper-action-more div.actions-dropdown {
+  min-width: 108px;
+  width:100%;
+  right: 0px;
+  top: 50px;
+}
+
+//Upgrade button
+
+.wrapper-messages-primary { 
+
+  .message.is-shown {
+    padding: 0px 0px 10px 0px;
+  }
+
+  .message.message-upsell {
+
+    .wrapper-extended .message-copy {
+      display: none;
+    }
+
+    .action-upgrade-container {
+      width: 100%;
+      margin: 0px !important;
+    }
+
+    .action-upgrade {
+      width: 100%;
+      color: #003057;
+      max-width: 192px; 
+      background-color: #D2DB0E !important; 
+      }
+    
+    .action-upgrade:hover {
+      background-color: #84BD00;
+    }
+
+    .wrapper-extended {
+      padding: 0px; 
+    }
+  }
+}
+
+
+// General styling
+
 .dashboard .main-container .my-courses
 .course .details .enter-course {
   color: $primary-font-color;
@@ -18,17 +179,16 @@ div.my-courses div.empty-dashboard-message {
 	background: $gray-l5;
 }
 
-.dashboard .main-container .my-courses
-.course .details .course-actions
-.wrapper-action-more div.actions-dropdown {
-  min-width: 108px;
-}
+
 
 div.course-caption p.localized-datetime {
   display: none;
 }
 
 section[role=courses] div.container.no-border {
+  max-width: 2100px; 
+  min-height: 77vh;
+
   header {
     display: flex;
     flex-wrap: wrap;
@@ -49,12 +209,21 @@ section[role=courses] div.container.no-border {
   }
 }
 
+
+section[role=courses] div.container.no-border {
+  h1 {
+    font: normal 3em/1.6em Playfair Display;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
 //dashboard-subcription
 
 .view-dashboard div.item {
   margin: 0 auto;
-  padding: 40px 0;
-  max-width: 1180px;
+  padding: 0px 40px;
+  max-width: 2180px;
   min-width: 760px;
   width: 100%;
 
@@ -65,7 +234,7 @@ section[role=courses] div.container.no-border {
   li.course-item {
     list-style: none;
     .course-container {
-      border: 1px solid $gray-l5;
+     // border: 1px solid $gray-l5;
       border-radius: 3px;
     }
  }
@@ -147,7 +316,7 @@ section[role=courses] div.container.no-border {
 
   .course .details .wrapper-course-details
   .wrapper-course-actions {
-    margin-right: 20px;
+   //margin-right: 20px;
     margin-top: 20px;
     align-self: flex-end;
   }
@@ -185,11 +354,11 @@ section[role=courses] div.container.no-border {
     line-height: 16px;
     text-shadow: none;
     box-sizing: border-box;
-    margin-right: 10px;
+   // margin-right: 10px;
     float: right;
     min-width: 40px;
     border-radius: 3px;
-    padding: 12px;
+   // padding: 12px;
     border: 1px solid $inverse;
     text-align: center;
   }
@@ -200,7 +369,8 @@ section[role=courses] div.container.no-border {
   	display: none;
     position: absolute;
     top: 40px;
-    right: 19px;
+    width: 100%;
+   // right: 19px;
     pointer-events: none;
   }
 
@@ -213,9 +383,9 @@ section[role=courses] div.container.no-border {
     width: 100%;
     border-radius: 3px;
     margin: 5px 0 0 0;
-    border: 1px solid $secondary;
+  //  border: 1px solid $secondary;
     padding: 5px 10px;
-    background: $inverse;
+    background: #D4EAE4;
     list-style: none;
   }
 
@@ -233,9 +403,9 @@ section[role=courses] div.container.no-border {
     width: 100%;
     border-radius: 3px;
     margin: 5px 0 0 0;
-    border: 1px solid $secondary;
+  //  border: 1px solid $secondary;
     padding: 5px 10px;
-    background: $inverse;
+    background: #D4EAE4;
   }
 
   //dashboard-subcription-mobile
@@ -253,7 +423,7 @@ section[role=courses] div.container.no-border {
 
   @media (max-width: 767px){
     .course .details .wrapper-course-details {
-      width: 100%;
+     // width: 100%;
       display: flex;
       flex-direction: column;
     }
@@ -263,6 +433,7 @@ section[role=courses] div.container.no-border {
     .course .details .wrapper-course-details .course-info,
     .course .details .wrapper-course-details .wrapper-course-actions {
       flex-grow: 1;
+      text-align: left;
     }
   }
 
