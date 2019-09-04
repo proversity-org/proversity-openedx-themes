@@ -565,7 +565,7 @@ p.voucher_form_link a:hover {
     margin: 0px 20px 20px 0px; } }
 
 /* extra Small devices (phones, 768px and lower) */
-@media (max-width: 767px) {
+@media (max-width: 467px) {
   .basket .container .payment-buttons .payment-button {
     width: 100%;
     margin-bottom: 2px; }
@@ -659,7 +659,7 @@ p.voucher_form_link a:hover {
   margin-bottom: 5px; }
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (min-width: 468px) {
   .credit-checkout .payment-button {
     width: 49%; }
   .credit-checkout .course-details {
@@ -907,11 +907,11 @@ p.voucher_form_link a:hover {
     #offer .container .row .discount-multiple-courses .box-shadow {
       padding: 10px 0 0 0;
       box-shadow: 1px 1px 3px gray; }
-    @media (min-width: 768px) {
+    @media (min-width: 468px) {
       #offer .container .row .discount-multiple-courses .img-responsive {
         height: 150px;
         width: 100%; } }
-    @media (max-width: 767px) {
+    @media (max-width: 467px) {
       #offer .container .row .discount-multiple-courses .img-responsive {
         min-height: 150px;
         width: 100%; } }
