@@ -45,8 +45,18 @@
   margin-bottom: 5px;
 }
 
-.courses-container .courses .course .course-info .course-title{
-  margin: 10px 0 15px 0;
+.courses-container .courses .course .course-info .course-title {
+//  margin: 10px 0 15px 0;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.3;
+  text-align: left;
+  height: 45px;
+  padding-top: 5px;
 }
 
 
