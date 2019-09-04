@@ -33,7 +33,7 @@ from xmodule.tabs import CourseTabList
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
                   <div class="panel panel-default">
-                    <div class="panel-heading" role="button" data-toggle="collapse" data-parent="#accordion" href="#reportAProblem" aria-expanded="true" aria-controls="reportAProblem">
+                    <div id="feedback_link_problem" class="panel-heading" role="button" data-toggle="collapse" data-parent="#accordion" href="#reportAProblem" aria-expanded="true" aria-controls="reportAProblem">
                       <h4 class="panel-title">
                         ${_('Report a problem')}
                       </h4>
@@ -41,7 +41,6 @@ from xmodule.tabs import CourseTabList
 
                     <div id="reportAProblem" class="panel-collapse collapse" role="tabpanel" aria-labelledby="reportAProblem">
                       <div class="panel-body">
-                        
                         <form id="feedback_form" class="feedback_form" method="post" data-remote="true" action="/submit_feedback">
                             <div class="feedback-form-error" aria-live="polite">
                               <div id="feedback_error" class="modal-form-error" tabindex="-1"></div>
@@ -73,7 +72,7 @@ from xmodule.tabs import CourseTabList
                   </div>
 
                   <div class="panel panel-default">
-                    <div class="panel-heading" role="button" data-toggle="collapse" data-parent="#accordion" href="#makeASuggestion" aria-expanded="true" aria-controls="makeASuggestion">
+                    <div id="feedback_link_suggestion" class="panel-heading" role="button" data-toggle="collapse" data-parent="#accordion" href="#makeASuggestion" aria-expanded="true" aria-controls="makeASuggestion">
                       <h4 class="panel-title">
                         ${_('Make a suggestion')}
                       </h4>
@@ -81,7 +80,6 @@ from xmodule.tabs import CourseTabList
 
                     <div id="makeASuggestion" class="panel-collapse collapse" role="tabpanel" aria-labelledby="makeASuggestion">
                       <div class="panel-body">
-                        
                         <form id="feedback_form" class="feedback_form" method="post" data-remote="true" action="/submit_feedback">
                             <div class="feedback-form-error" aria-live="polite">
                               <div id="feedback_error" class="modal-form-error" tabindex="-1"></div>
@@ -113,7 +111,7 @@ from xmodule.tabs import CourseTabList
                   </div>
 
                   <div class="panel panel-default">
-                    <div class="panel-heading" role="button" data-toggle="collapse" data-parent="#accordion" href="#askAQuestion" aria-expanded="true" aria-controls="askAQuestion">
+                    <div id="feedback_link_question" class="panel-heading" role="button" data-toggle="collapse" data-parent="#accordion" href="#askAQuestion" aria-expanded="true" aria-controls="askAQuestion">
                       <h4 class="panel-title">
                         ${_('Ask a question')}
                       </h4>
@@ -121,7 +119,6 @@ from xmodule.tabs import CourseTabList
 
                     <div id="askAQuestion" class="panel-collapse collapse" role="tabpanel" aria-labelledby="askAQuestion">
                       <div class="panel-body">
-                        
                         <form id="feedback_form" class="feedback_form" method="post" data-remote="true" action="/submit_feedback">
                             <div class="feedback-form-error" aria-live="polite">
                               <div id="feedback_error" class="modal-form-error" tabindex="-1"></div>
@@ -209,7 +206,7 @@ var currentCourseId,
         $helpModal = $("#help-modal"),
         $closeButton = $("#help-modal .close-modal"),
         $leanOverlay = $("#lean_overlay"),
-        $feedbackForm = $("#feedback_form"),
+        $feedbackForm = $(".feedback_form"),
         onModalClose = function() {
             $closeButton.off("click");
             $leanOverlay.off("click");
@@ -220,7 +217,6 @@ var currentCourseId,
         },
         showFeedback = function(event, issue_type, title, subject_label, details_label) {
             event.preventDefault();
-            DialogTabControls.initializeTabKeyValues("#feedback_form_wrapper", $closeButton);
             $("#feedback_form input[name='issue_type']").val(issue_type);
             $("#feedback_form_wrapper header").html("<h2>" + title + "</h2><hr>");
             $("#feedback_form_wrapper label[data-field='subject']").html(subject_label);
@@ -314,7 +310,9 @@ var currentCourseId,
         $helpModal.css("position", "absolute");
         DialogTabControls.initializeTabKeyValues("#help_wrapper", $closeButton);
         $(".field-error").removeClass("field-error");
-        $feedbackForm[0].reset();
+        for (var feedbackForm of $feedbackForm) {
+          feedbackForm.reset();
+        }
         $("#feedback_form input[type='submit']").removeAttr("disabled");
         $("#feedback_form_wrapper").css("display", "none");
         $("#feedback_error").css("display", "none");
@@ -368,7 +366,6 @@ var currentCourseId,
     $feedbackForm.on("ajax:success", function(event, data, status, xhr) {
         $(".feedback_forms").css("display", "none");
         $(".feedback_success").css("display", "block");
-        DialogTabControls.initializeTabKeyValues("#feedback_success_wrapper", $closeButton);
         $closeButton.focus();
     });
     $feedbackForm.on("ajax:error", function(event, xhr, status, error) {
@@ -380,7 +377,7 @@ var currentCourseId,
         }
         if (responseData) {
             $("[data-field='"+responseData.field+"']").addClass("field-error").attr("aria-invalid", "true");
-            $("#feedback_error").html(responseData.error).stop().css("display", "block");
+            $(".modal-form-error").html(responseData.error).stop().css("display", "block");
         } else {
             // If no data (or malformed data) is returned, a server error occurred
             htmlStr = "${_('An error has occurred.') | n, js_escaped_string}";
@@ -394,7 +391,7 @@ var currentCourseId,
             // ask the user to try again later
             htmlStr += " " + "${_('Please try again later.') | n, js_escaped_string}";
 % endif
-            $("#feedback_error").html(htmlStr).stop().css("display", "block");
+            $(".modal-form-error").html(htmlStr).stop().css("display", "block");
 % if settings.FEEDBACK_SUBMISSION_EMAIL:
             $("#feedback_email").click(function(e) {
                 mailto = "mailto:" + "${settings.FEEDBACK_SUBMISSION_EMAIL | n, js_escaped_string}" +
@@ -406,7 +403,7 @@ var currentCourseId,
 %endif
         }
         // Make change explicit to assistive technology
-        $("#feedback_error").focus();
+        $(".modal-form-error").focus();
     });
 });
 </script>
