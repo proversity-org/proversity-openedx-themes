@@ -27,6 +27,7 @@
 }
 
 .view-dashboard div.item li.course-item {
+  text-align: left;
   width: 100%;
   box-shadow: 0 1px 10px 0 rgba(0,48,87,0.125), inset 0 0 0 1px rgba(255,255,255,0.75);
 }
@@ -139,13 +140,29 @@ div.course-image {
   top: 50px;
 }
 
-//Upgrade button
+//Upgrade button style and verify button hide
 
 .wrapper-messages-primary { 
 
   .message.is-shown {
     padding: 0px 0px 10px 0px;
   }
+
+  //verify
+
+  .message.message-status {
+
+    .verification-reminder {
+      display: none;
+    }
+
+    .verification-cta {
+      display: none;
+    }
+
+  }
+
+  //upgrade
 
   .message.message-upsell {
 
