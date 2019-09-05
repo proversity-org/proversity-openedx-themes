@@ -10,6 +10,9 @@ from django.utils.translation import ugettext as _
 from six import text_type
 from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
 %>
+  <%
+contact_url = configuration_helpers.get_value('contact_url', 'https://www.teachfirst.org.uk/contact-us')
+%>
 
 <div class="row">
   <div class="col-md-12">
@@ -72,7 +75,7 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
       % if settings.FEATURES.get('ENABLE_FEEDBACK_SUBMISSION', False):
         <li><a href="#" data-toggle="modal" data-target="#supportModal">${_("Support")}</a></li>
       % endif
-      <li><a href="" target="_blank">${_("Contact")}</a></li>
+      <li><a href="${contact_url}" target="_blank">${_("Contact")}</a></li>
     </ul>
 
   </div>

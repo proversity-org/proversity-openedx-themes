@@ -381,8 +381,8 @@ from util.course import get_link_for_about_page, get_encoded_course_sharing_utm_
         %endif
 
 
-        % if verification_status.get('status') in [VERIFY_STATUS_NEED_TO_VERIFY, VERIFY_STATUS_SUBMITTED, VERIFY_STATUS_RESUBMITTED, VERIFY_STATUS_APPROVED, VERIFY_STATUS_NEED_TO_REVERIFY]:
-        <!--  <div class="message message-status wrapper-message-primary is-shown">
+        % if configuration_helpers.get_value('show_verification', True) and verification_status.get('status') in [VERIFY_STATUS_NEED_TO_VERIFY, VERIFY_STATUS_SUBMITTED, VERIFY_STATUS_RESUBMITTED, VERIFY_STATUS_APPROVED, VERIFY_STATUS_NEED_TO_REVERIFY]:
+          <div class="message message-status wrapper-message-primary is-shown">
             % if verification_status['status'] == VERIFY_STATUS_NEED_TO_VERIFY:
               <div class="verification-reminder">
                 % if verification_status['days_until_deadline'] is not None:
@@ -394,7 +394,7 @@ from util.course import get_link_for_about_page, get_encoded_course_sharing_utm_
                   ).format(days=verification_status['days_until_deadline'])}</p>
                 % else:
                   <h4 class="message-title">${_('Almost there!')}</h4>
-                  <p class="message-copy">${_('You still need to verify for this course.')}</p>--> 
+                  <p class="message-copy">${_('You still need to verify for this course.')}</p>
                 % endif
               </div>
               <div class="verification-cta">
