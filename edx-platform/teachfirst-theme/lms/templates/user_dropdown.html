@@ -16,6 +16,10 @@ from django.utils.translation import ugettext as _
 from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
 from openedx.core.djangoapps.user_api.accounts.image_helpers import get_profile_image_urls_for_user
 %>
+    
+    <%
+contact_url = configuration_helpers.get_value('contact_url', 'https://www.teachfirst.org.uk/contact-us')
+%>
 
 % if uses_bootstrap:
     <ul>
@@ -115,7 +119,7 @@ from openedx.core.djangoapps.user_api.accounts.image_helpers import get_profile_
         % if settings.FEATURES.get('ENABLE_FEEDBACK_SUBMISSION', False):
             <li><a href="#" data-toggle="modal" data-target="#supportModal">${_("Support")}</a></li>
         % endif
-        <li><a href="" target="_blank">${_("Contact")}</a></li>
+        <li><a href="${contact_url}" target="_blank">${_("Contact")}</a></li>
         <!-- <li><a href="${get_online_help_info(online_help_token)['doc_url']}" target="_blank">${_("Help")}</a></li> -->
         % if false:
             <li>

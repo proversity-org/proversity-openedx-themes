@@ -1,3 +1,19 @@
+.freetextresponse .action {
+  .save, .check {
+    color: #fff;
+    background-color: #3764f0;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none; 
+    font-size: 1rem;
+  }
+
+  .save:hover, .check:hover {
+    background-color: #1a1a97;
+  }
+
+}
+
 .course-caption {
 	position: relative;
 	display: -webkit-box;
