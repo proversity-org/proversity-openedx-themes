@@ -14,11 +14,9 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
 
 <%
 theme = configuration_helpers.get_value('theme', '')
-login_url = configuration_helpers.get_value('login_url','/login${login_query()')
-register_url = configuration_helpers.get_value('register_url', '/register${login_query()}')
-%>
-
-<%
+login_url = configuration_helpers.get_value('login_url', '')
+register_url = configuration_helpers.get_value('register_url', '')
+%
   mktg_site_enabled = static.get_value('ENABLE_MKTG_SITE', settings.FEATURES.get('ENABLE_MKTG_SITE', False))
   courses_are_browsable = settings.FEATURES.get('COURSES_ARE_BROWSABLE')
   allows_login = not settings.FEATURES['DISABLE_LOGIN_BUTTON'] and not combined_login_and_register
@@ -70,18 +68,34 @@ register_url = configuration_helpers.get_value('register_url', '/register${login
         % else:
           % if allow_public_account_creation:
             <div class="mobile-nav-item hidden-mobile nav-item">
-              %if theme: 
-                <a class="register-btn btn ${theme}-btn" href="${register_url}">${_("Register")}</a>
+              %if theme:
+                % if register_url:
+                  <a class="register-btn btn ${theme}-btn" href="${register_url}">${_("Register")}</a>
+                % else:
+                  <a class="register-btn btn ${theme}-btn" href="/register${login_query()}">${_("Register")}</a>
+                % endif                  
               % else:
-                <a class="register-btn btn" href="${register_url}">${_("Register")}</a>
+                % if register_url:
+                  <a class="register-btn btn" href="${register_url}">${_("Register")}</a>
+                % else:
+                  <a class="register-btn btn" href="/register${login_query()}">${_("Register")}</a>
+                % endif 
               % endif
             </div>
           % endif
           <div class="mobile-nav-item hidden-mobile nav-item">
-              %if theme: 
-                <a class="sign-in-btn btn ${theme}-btn" href="${login_url}">${_("Sign in")}</a>
+              %if theme:
+                % if login_url:
+                  <a class="sign-in-btn btn ${theme}-btn" href="${login_url}">${_("Sign in")}</a>
+                % else:
+                  <a class="sign-in-btn btn ${theme}-btn" href="/login${login_query()}">${_("Sign in")}</a>
+                % endif                  
               % else:
-                <a class="sign-in-btn btn" href="${login_url}">${_("Sign in")}</a>
+                % if login_url:
+                  <a class="sign-in-btn btn" href="${login_url}">${_("Sign in")}</a>
+                % else:
+                  <a class="sign-in-btn btn" href="/login${login_query()}">${_("Sign in")}</a>
+                % endif    
             % endif
           </div>
         % endif
