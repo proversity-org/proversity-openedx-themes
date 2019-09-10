@@ -16,7 +16,9 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
 theme = configuration_helpers.get_value('theme', '')
 login_url = configuration_helpers.get_value('login_url', '')
 register_url = configuration_helpers.get_value('register_url', '')
-%
+%>
+
+<%
   mktg_site_enabled = static.get_value('ENABLE_MKTG_SITE', settings.FEATURES.get('ENABLE_MKTG_SITE', False))
   courses_are_browsable = settings.FEATURES.get('COURSES_ARE_BROWSABLE')
   allows_login = not settings.FEATURES['DISABLE_LOGIN_BUTTON'] and not combined_login_and_register
