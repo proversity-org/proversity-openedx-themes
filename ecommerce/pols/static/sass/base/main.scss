@@ -1,6 +1,19 @@
 @import 'ecommerce/static/sass/base/main.scss';
 @import 'default';
 
+#cta-nav-links a.dashboard-link {
+		padding: 15px 20px;
+    margin: 15px 0px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFB81C;
+    font-size: 18px;
+    border: 2px solid #505759;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    text-decoration: none;
+    display: inline-block; 
+}
 
 .element-invisible {
   position: absolute;
