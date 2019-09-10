@@ -38,3 +38,17 @@ button.action.action-primary.action-update.js-reset {
 div.login-register div.toggle-form a.form-toggle {
   color: $primary;
 }
+
+#login-form .toggle-form,
+#login-form .form-field,
+#login-form .login-button,
+#login-form .login-providers .section-title,
+#register-form .toggle-form,
+#register-form .required-fields,
+#register-form .form-field,
+#register-form .register-button,
+#register-form .section-title {display: none;}
+
+#register-form .login-providers .section-title {display: block;}
+
+#login-form h2{text-align: center;}

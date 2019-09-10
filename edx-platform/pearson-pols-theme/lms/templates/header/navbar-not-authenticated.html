@@ -14,6 +14,8 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
 
 <%
 theme = configuration_helpers.get_value('theme', '')
+login_url = configuration_helpers.get_value('login_url','/login${login_query()')
+register_url = configuration_helpers.get_value('register_url', '/register${login_query()}')
 %>
 
 <%
@@ -69,17 +71,17 @@ theme = configuration_helpers.get_value('theme', '')
           % if allow_public_account_creation:
             <div class="mobile-nav-item hidden-mobile nav-item">
               %if theme: 
-                <a class="register-btn btn ${theme}-btn" href="/register${login_query()}">${_("Register")}</a>
+                <a class="register-btn btn ${theme}-btn" href="${register_url}">${_("Register")}</a>
               % else:
-                <a class="register-btn btn" href="/register${login_query()}">${_("Register")}</a>
+                <a class="register-btn btn" href="${register_url}">${_("Register")}</a>
               % endif
             </div>
           % endif
           <div class="mobile-nav-item hidden-mobile nav-item">
               %if theme: 
-                <a class="sign-in-btn btn ${theme}-btn" href="/login${login_query()}">${_("Sign in")}</a>
+                <a class="sign-in-btn btn ${theme}-btn" href="${login_url}">${_("Sign in")}</a>
               % else:
-                <a class="sign-in-btn btn" href="/login${login_query()}">${_("Sign in")}</a>
+                <a class="sign-in-btn btn" href="${login_url}">${_("Sign in")}</a>
             % endif
           </div>
         % endif
