@@ -1,12 +1,12 @@
 @import 'ecommerce/static/sass/base/main.scss';
 @import 'default';
 
-.receipt .dashboard-link {
+.receipt .dashboard-link, .receipt .nav-link {
   padding: 15px 20px;
   margin: 50px 0px;
   font-family: 'Open Sans', sans-serif;
   background-color: #FFB81C;
-  font-size: 18px;
+  font-size: 18px !important;
   border: 2px solid #505759;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -14,15 +14,15 @@
   text-decoration: none;
   display: inline-block; 
   color: #000000;
-  line-height: 1.3rem;
+  line-height: 1.3rem !important;
 }
 
-.receipt .dashboard-link a:hover, .receipt .nav-link a:hover  {
+.receipt a.dashboard-link:hover, .receipt a.nav-link:hover  {
 	border: 2px solid #505759;
 }
 
 .receipt .order-headers, .receipt h2, .receipt a {
-  color: #007FA3;
+  color: #007FA3 !important;
 }
 
 .element-invisible {
@@ -122,8 +122,6 @@
 
 .dropdown-menu .nav-link {
   transition: none; }
-  .dropdown-menu .nav-link:hover, .dropdown-menu .nav-link:focus {
-    border-bottom-color: transparent; }
 
 html,
 body {
@@ -1193,10 +1191,7 @@ i.fa {
   .receipt .is-ready {
     background: #e8f6fc none repeat scroll 0 0; }
   .receipt .nav-link {
-    border-bottom: none;
     text-decoration: none !important; }
-    .receipt .nav-link:active, .receipt .nav-link:hover, .receipt .nav-link:focus {
-      border-bottom: 1px dotted #0079bc; }
   .receipt .nav-wizard {
     padding: 15px 20px;
     margin: 0;
@@ -1258,7 +1253,6 @@ i.fa {
     color: #1d1d1d;
     font-size: 18px; }
   .receipt .order-headers {
-    color: #0079bc;
     font-size: 22px; }
   .receipt .order-line-data {
     color: #1d1d1d;
