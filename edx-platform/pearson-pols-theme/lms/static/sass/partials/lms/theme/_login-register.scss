@@ -3,8 +3,9 @@ div.login-register-content {
 }
 
 .login-register .login-provider {
-  width: auto;
-  padding-right: 10px;
+  width: auto !important;
+  padding-right: 10px !important;
+  min-width: 165px;
 }
 
 .login-register {
