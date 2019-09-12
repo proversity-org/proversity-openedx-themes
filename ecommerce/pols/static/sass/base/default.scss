@@ -1174,10 +1174,7 @@ i.fa {
   .receipt .is-ready {
     background: #e8f6fc none repeat scroll 0 0; }
   .receipt .nav-link {
-    border-bottom: none;
     text-decoration: none !important; }
-    .receipt .nav-link:active, .receipt .nav-link:hover, .receipt .nav-link:focus {
-      border-bottom: 1px dotted #0079bc; }
   .receipt .nav-wizard {
     padding: 15px 20px;
     margin: 0;
@@ -1239,7 +1236,6 @@ i.fa {
     color: #1d1d1d;
     font-size: 18px; }
   .receipt .order-headers {
-    color: #0079bc;
     font-size: 22px; }
   .receipt .order-line-data {
     color: #1d1d1d;
