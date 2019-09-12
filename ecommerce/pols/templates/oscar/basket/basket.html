@@ -1,0 +1,68 @@
+{% extends 'edx/base.html' %}
+
+{% load core_extras %}
+{% load i18n %}
+{% load static %}
+
+{% block title %}
+{% trans 'Basket' %}
+{% endblock title %}
+
+{% block navbar %}
+    {% include 'edx/partials/_student_navbar.html' %}
+{% endblock navbar %}
+
+{% block javascript %}
+  <script src="{% static 'js/apps/basket_app.js' %}"></script>
+
+  <script>
+    window.paymentErrorPath = "{% url 'payment_error' %}";
+  </script>
+{% endblock %}
+
+{% block skip_link %}
+    <div id="skip-link">
+        <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+    </div>
+{% endblock skip_link %}
+
+{% block content %}
+    <main id="main-content" aria-label="Checkout" tabindex=-1>
+        <div class="basket {% if enable_client_side_checkout %}basket-client-side{% endif %}">
+            <div class="container">
+                {# Use a partial template so that AJAX can be used to re-render basket #}
+                {% if basket.is_empty %}
+                    {% block emptybasket %}
+                        <div class="depth depth-2 message-error-content">
+                            <h3>{% trans "Your basket is empty" %}</h3>
+                            {% captureas dashboard_link_start %}
+                                <a href="{{ homepage_url }}">
+                            {% endcaptureas %}
+
+                            {% captureas support_link_start %}
+                                <a href="{{ support_url }}">
+                            {% endcaptureas %}
+
+                            {% blocktrans with link_end="</a>" %}
+                                If you attempted to make a purchase, you have not been charged. Return to your {{ dashboard_link_start }}dashboard{{ link_end }}.
+                            {% endblocktrans %}
+                        </div>
+                    {% endblock %}
+                {% else %}
+                    {% if enable_client_side_checkout %}
+                        {% include 'basket/partials/client_side_checkout_basket.html' %}
+                    {% else %}
+                        {% include 'basket/partials/hosted_checkout_basket.html' %}
+                    {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    </main>
+{% endblock content %}
+
+{% block post_js %}
+  {# Load payment processor code after the basket app to ensure that all neccessary hooks are in place. #}
+  {% if enable_client_side_checkout %}
+    {% include client_side_payment_processor.get_template_name %}
+  {% endif %}
+{% endblock %}

@@ -20,8 +20,10 @@
         </a>
     {% else %}
         <h1 class="navbar-brand">
+            <a href="{{ lms_dashboard_url }}"> 
             <img class="navbar-brand-logo" alt="{{ platform_name }} logo" src="{% static 'images/PearsonLogo_Horizontal_Blk_RGB.jpg' %}"/>
-        </h1> 
+            </a>
+       </h1> 
     {% endif %}
 {% endblock navbar_brand %}
 
