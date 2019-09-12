@@ -15,7 +15,7 @@
             <div class="login-providers">
                 <div class="section-title lines">
                     <h3>
-                        <span class="text"><%- gettext("Create an account using") %></span>
+                        <span class="text"><%- gettext("Welcome") %></span>
                     </h3>
                 </div>
                 <%
