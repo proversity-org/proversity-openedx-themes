@@ -14,7 +14,7 @@
   text-decoration: none;
   display: inline-block; 
   color: #000000;
-  line-height: 1.3rem;
+  line-height: 1.3rem !important;
 }
 
 .receipt a.dashboard-link:hover, .receipt a.nav-link:hover  {
@@ -122,8 +122,6 @@
 
 .dropdown-menu .nav-link {
   transition: none; }
-  .dropdown-menu .nav-link:hover, .dropdown-menu .nav-link:focus {
-    border-bottom-color: transparent; }
 
 html,
 body {
