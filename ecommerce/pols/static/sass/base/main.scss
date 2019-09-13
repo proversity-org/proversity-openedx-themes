@@ -14,10 +14,10 @@
   text-decoration: none;
   display: inline-block; 
   color: #000000;
-  line-height: 1.3rem !important;
+  line-height: 20px !important;
 }
 
-.receipt a.dashboard-link:hover, .receipt a.nav-link:hover  {
+.receipt .dashboard-link:hover, .receipt .nav-link:hover  {
 	border: 2px solid #505759;
 }
 
