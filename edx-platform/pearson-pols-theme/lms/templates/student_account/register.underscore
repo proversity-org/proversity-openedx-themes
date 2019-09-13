@@ -15,7 +15,7 @@
             <div class="login-providers">
                 <div class="section-title lines">
                     <h3>
-                        <span class="text"><%- gettext("Welcome") %></span>
+                        <span class="text"><%- gettext("Create an account using") %></span>
                     </h3>
                 </div>
                 <%
@@ -45,7 +45,8 @@
                 </h3>
             </div>
         <% } else { %>
-            <h2><%- gettext('Create an Account')%></h2>
+            <h2 class="intro-welcome" style="display: none"><%- gettext("Welcome") %></h2>
+             <h2 class="intro-default"><%- gettext("Create an Account") %></h2>
         <% } %>
     <% } else if (context.autoRegisterWelcomeMessage) { %>
         <span class="auto-register-message"><%- context.autoRegisterWelcomeMessage %></span>
