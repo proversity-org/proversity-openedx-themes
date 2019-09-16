@@ -1,6 +1,10 @@
 <div class="js-form-feedback" aria-live="assertive" tabindex="-1">
 </div>
 
+<%
+    hide_edx_login = context.hide_edx_login
+%>
+
 
         <% if ( context.createAccountOption !== false && !context.syncLearnerProfileData && !context.enterpriseName) { %>
                 <div class="toggle-form">
@@ -24,8 +28,11 @@
             </p>
             <p><%- gettext("To continue learning with this account, sign in below.") %></p>
         <% } else { %>
-            <h2 class="intro-welcome" style="display: none"><%- gettext("Welcome") %></h2>
-            <h2 class="intro-default"><%- gettext("Sign in") %></h2>
+            <% if (hide_edx_login == true) { %>
+                    <h2><%- gettext("Welcome") %></h2>
+                <%  } else { %>
+                   <h2><%- gettext("Sign in") %></h2>
+                <% } %>
         <% } %>
 
         <form id="login" class="login-form" tabindex="-1" method="POST">
