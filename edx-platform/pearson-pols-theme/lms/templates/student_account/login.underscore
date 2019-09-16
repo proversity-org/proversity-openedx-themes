@@ -28,7 +28,7 @@
             </p>
             <p><%- gettext("To continue learning with this account, sign in below.") %></p>
         <% } else { %>
-            <% if (hide_edx_login = true) { %>
+            <% if (hide_edx_login == true) { %>
                     <h2><%- gettext("Welcome") %></h2>
                 <%  } else { %>
                    <h2><%- gettext("Sign in") %></h2>
