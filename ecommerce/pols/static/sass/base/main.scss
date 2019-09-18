@@ -14,7 +14,7 @@
   text-decoration: none;
   display: inline-block; 
   color: #000000;
-  line-height: 20px !important;
+  line-height: 16px !important;
 }
 
 .receipt .dashboard-link:hover, .receipt .nav-link:hover  {
@@ -1244,7 +1244,6 @@ i.fa {
       font-size: 18px;
       padding: 10px 15px; }
   .receipt .dashboard-link {
-    line-height: 20px;
     font-size: 13px; }
   .receipt .order-summary dt {
     font-weight: 500; }
