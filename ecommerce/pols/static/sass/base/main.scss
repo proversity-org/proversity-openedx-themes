@@ -14,11 +14,11 @@
   text-decoration: none;
   display: inline-block; 
   color: #000000;
-  line-height: 1.3rem !important;
+  line-height: 16px !important;
 }
 
-.receipt a.dashboard-link:hover, .receipt a.nav-link:hover  {
-	border: 2px solid #505759;
+.receipt .dashboard-link:hover, .receipt .nav-link:hover  {
+  border: 2px solid #505759 !important;
 }
 
 .receipt .order-headers, .receipt h2, .receipt a {
@@ -1244,7 +1244,6 @@ i.fa {
       font-size: 18px;
       padding: 10px 15px; }
   .receipt .dashboard-link {
-    line-height: 20px;
     font-size: 13px; }
   .receipt .order-summary dt {
     font-weight: 500; }
