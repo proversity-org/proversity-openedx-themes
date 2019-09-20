@@ -1,0 +1,22 @@
+  .contact-us-wrapper .help-button {
+    color: $inverse;
+
+    &:hover,
+    &:focus {
+      color: $blue;
+      background-color: $inverse;
+    }
+}
+
+select, textarea {
+  .form-control {
+    color: $primary-font-color ;
+    background-color: $inverse;
+  }
+}
+
+div.contact-us-wrapper a.btn.btn-secondary.help-button:hover,
+div.contact-us-wrapper a.btn.btn-secondary.help-button:focus {
+  color: $inverse;
+  background: $primary !important;
+}
