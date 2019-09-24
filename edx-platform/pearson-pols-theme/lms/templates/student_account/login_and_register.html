@@ -5,7 +5,6 @@
     from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
     from openedx.core.djangolib.js_utils import dump_js_escaped_json
     from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_enabled, released_languages
-    hide_edx_login = configuration_helpers.get_value('hide_edx_login', False)
 %>
 <%namespace name='static' file='/static_content.html'/>
 
@@ -31,13 +30,13 @@
     % endif
 </%block>
 
-% if hide_edx_login: 
+% if configuration_helpers.get_value('hide_edx_login', False):
     <style>
       #login-form .toggle-form,
       #login-form .form-field,
       #login-form .login-button,
       #login-form .login-providers .section-title,
-      #register-form .login-providers .section-title, 
+      #register-form .login-providers .section-title,
       #register-form .toggle-form,
       #register-form .required-fields,
       #register-form .form-field,
@@ -49,7 +48,6 @@
         text-align: center;
       }
    </style>
-
 % endif
 
 <%block name="header_extras">

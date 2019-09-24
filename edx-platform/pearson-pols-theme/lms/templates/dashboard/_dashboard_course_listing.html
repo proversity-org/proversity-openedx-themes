@@ -7,8 +7,9 @@ from django.utils.translation import ugettext as _
 from django.utils.translation import ungettext
 from django.core.urlresolvers import reverse
 from course_modes.models import CourseMode
-from course_modes.helpers import enrollment_mode_display
+from course_modes.helpers import enrollment_mode_display,is_external_course
 from openedx.core.djangolib.js_utils import dump_js_escaped_json, js_escaped_string
+from openedx.core.djangoapps.plugins.plugin_extension_points import run_extension_point
 from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
 from openedx.core.djangolib.markup import HTML, Text
 from openedx.features.course_experience import course_home_url_name
@@ -34,6 +35,10 @@ from util.course import get_link_for_about_page, get_encoded_course_sharing_utm_
   if cert_name_long == "":
     cert_name_long = settings.CERT_NAME_LONG
   billing_email = settings.PAYMENT_SUPPORT_EMAIL
+
+  course_display_tab = '_self'
+  if is_external_course(course_overview.id):
+    course_display_tab = '_blank'
 %>
 
 <%namespace name='static' file='../static_content.html'/>
@@ -175,9 +180,9 @@ from util.course import get_link_for_about_page, get_encoded_course_sharing_utm_
                 % endif
               % else:
                 % if not is_course_blocked:
-                  <a href="${course_target}" class="enter-course ${'hidden' if is_unfulfilled_entitlement else ''}" data-course-key="${enrollment.course_id}">${_('View Course')}<span class="sr">&nbsp;${course_overview.display_name_with_default}</span></a>
+                  <a href="${course_target}" class="enter-course ${'hidden' if is_unfulfilled_entitlement else ''}" data-course-key="${enrollment.course_id}" target="${course_display_tab}">${_('View Course')}<span class="sr">&nbsp;${course_overview.display_name_with_default}</span></a>
                 % else:
-                  <a class="enter-course-blocked" data-course-key="${enrollment.course_id}">${_('View Course')}<span class="sr">&nbsp;${course_overview.display_name_with_default}</span></a>
+                  <a class="enter-course-blocked" data-course-key="${enrollment.course_id}" target="${course_display_tab}">${_('View Course')}<span class="sr">&nbsp;${course_overview.display_name_with_default}</span></a>
                 % endif
               % endif
             % endif
