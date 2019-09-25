@@ -50,14 +50,11 @@
                 </h3>
             </div>
         <% } else { %>
-	     
 	      <% if (hide_edx_login == true) { %>
                     <h2><%- gettext("Welcome") %></h2>
                 <%  } else { %>
                    <h2><%- gettext("Create an Account") %></h2>
                 <% } %>
-	     
-	     
         <% } %>
     <% } else if (context.autoRegisterWelcomeMessage) { %>
         <span class="auto-register-message"><%- context.autoRegisterWelcomeMessage %></span>
