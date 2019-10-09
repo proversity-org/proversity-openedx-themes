@@ -105,8 +105,16 @@ theme = configuration_helpers.get_value('theme', '')
                 % else:
                   <div class="btn-center">
                     <ul>
-                      <li><a href="https://itunes.apple.com/us/app/" target="_blank"><img src="${static.url('images/appstore.png')}" /></a></li>
-                      <li><a href="https://play.google.com/store/apps/" target="_blank"><img src="${static.url('images/playstore.png')}" /></a></li>
+                      <li>
+                        <a href="${configuration_helpers.get_value('ios_app_url', 'https://itunes.apple.com/us/app/')}" target="_blank">
+                          <img src="${static.url('images/appstore.png')}" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="${configuration_helpers.get_value('android_app_url', 'https://play.google.com/store/apps/')}" target="_blank">
+                          <img src="${static.url('images/playstore.png')}" />
+                        </a>
+                      </li>
                     </ul>
                   </div>
                 % endif
