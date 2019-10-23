@@ -1,6 +1,7 @@
 <%page expression_filter="h"/>
 <%!
 from django.utils.translation import ugettext as _
+from courseware.access import get_user_role
 from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
 from openedx.core.djangolib.markup import HTML, Text
 %>
@@ -91,7 +92,7 @@ from openedx.core.djangolib.markup import HTML, Text
             %for member in ccx_members:
             <tr>
               <td>${member.user}</td>
-              % if not member.user.is_staff:
+              % if not member.user.is_staff and get_user_role(member.user, course) == 'student':
                 <td>${member.user.email}</td>
               % else:
                 <td>${_("This email is private.")}</td>
