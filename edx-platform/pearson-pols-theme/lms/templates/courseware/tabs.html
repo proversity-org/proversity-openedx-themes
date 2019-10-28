@@ -16,6 +16,7 @@ def url_class(is_active):
 %>
 
 <%ALTERNAVITE_STRINGS = configuration_helpers.get_value('ALTERNAVITE_STRINGS', {})%>
+
 % for tab in tab_list:
   <%
     tab_is_active = tab.tab_id in (active_page, default_tab)
