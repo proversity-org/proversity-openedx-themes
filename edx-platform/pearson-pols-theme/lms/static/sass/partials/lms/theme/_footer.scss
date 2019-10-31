@@ -42,13 +42,33 @@ div.wrapper-footer footer#footer-openedx .footer-about-openedx a{
   width: 50%;
   text-align: right;
   float: left;
+  margin: -($baseline*0.1) 0 $baseline*0.4 0;
+  font-size: 0.6875em;
+}
+
+.wrapper-footer footer#footer-openedx.grid-container {
+  display: grid;
 }
 
 .wrapper-footer footer#footer-openedx .nav-legal {
-    text-align: center;
-    color: $inverse;
-    float: none;
+  text-align: center;
+  color: $inverse;
+  float: none;
+
+  ul {
+    list-style:none;
   }
+
+  li {
+    display: inline-block;
+    font-size: 0.6875em;
+  }
+
+  li::before{
+    content: "-";
+    margin-right: $baseline*0.25;
+  }
+}
 
 .wrapper-footer {
   border-top: 1px solid $primary;
@@ -60,7 +80,13 @@ div.wrapper-footer footer#footer-openedx .footer-about-openedx a{
   border-top: 1px solid $primary;
   background-color: $primary;
   color: $inverse;
-   text-align: center;
+  text-align: center;
+  margin-top: $baseline*2;
+  padding: $baseline*1.25 2% $baseline*1.5 2%;
+  line-height: 1em;
+  box-shadow: 0 -($baseline*0.05) $baseline*0.25 0 rgba(0,0,0,0.1);
+  background: $inverse;
+  clear: both;
 }
 
 .container-fluid .wrapper-footer {
