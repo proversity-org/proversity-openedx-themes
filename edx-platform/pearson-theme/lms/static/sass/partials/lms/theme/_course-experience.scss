@@ -1,0 +1,61 @@
+.course-outline {
+  .block-tree {
+    .section {
+
+      .section-name {
+        padding: ($baseline / 2) 0 ($baseline / 2) ($baseline / 2);
+        border-radius: $baseline/4;
+      }
+
+      .section-name:hover {
+        .section-title {
+          color: $inverse;
+        }
+
+        .fa {
+          color: $inverse;
+        }
+      }
+
+      ol.outline-item {
+
+        .subsection {
+
+          .subsection-text {
+            padding: ($baseline / 2) 0 ($baseline / 2) ($baseline / 2);
+            border-radius: $baseline/4;
+          }
+
+          .subsection-text:hover {
+            .subsection-title {
+              color: $inverse;
+            }
+
+            .fa {
+              color: $inverse;
+            }
+          }
+
+          .vertical {
+            a.outline-item {
+              padding: ($baseline / 2) 0 ($baseline / 2) ($baseline / 2);
+              border-radius: $baseline/4;
+            }
+
+            a.outline-item:hover {
+              text-decoration: none;
+
+              .vertical-details {
+                text-decoration: underline;
+              }
+
+              .complete-checkmark {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

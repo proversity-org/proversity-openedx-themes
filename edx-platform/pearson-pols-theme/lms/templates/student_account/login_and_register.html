@@ -4,7 +4,6 @@
     from django.utils.translation import ugettext as _
     from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
     from openedx.core.djangolib.js_utils import dump_js_escaped_json
-    from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_enabled, released_languages
 %>
 <%namespace name='static' file='/static_content.html'/>
 
@@ -74,69 +73,3 @@
         </div>
     </main>
 </div>
-
-<% languages = released_languages() %>
-
-<script>
-  function setLanguage(data) {
-    $.ajax({
-      type: 'POST',
-      url: '/i18n/setlang/',
-      data: data,
-      dataType: 'html',
-      success: function() {
-        location.reload();
-      },
-      error: function() {}
-    });
-  }
-
-  function prefLanguage(data, setLangData) {
-    $.ajax({
-      type: 'PATCH',
-      url: '/lang_pref/session_language/',
-      data: JSON.stringify(data),
-      contentType: "application/json",
-      success: function() {
-        setLanguage(setLangData);
-      },
-      error: function() {}
-    });
-  }
-
-  function prefUserLanguage(data, setLangData) {
-    $.ajax({
-      type: 'PATCH',
-      url: '/api/user/v1/preferences/${user.username}' ,
-      data: JSON.stringify(data),
-      contentType: "application/merge-patch+json",
-      success: function() {
-        prefLanguage(data, setLangData);
-      },
-      error: function() {}
-    });
-  }
-
-  % for language in languages:
-    $( "#lang-${language[0]}" ).click(function(e) {
-      e.preventDefault()
-      var data = {
-        'pref-lang': '${language[0]}',
-        'csrfmiddlewaretoken': '${csrf_token}'
-      };
-
-      var setLangData = { 'language': '${language[0]}' };
-      % if user.is_authenticated():
-        prefUserLanguage(data, setLangData);
-      % else:
-        prefLanguage(data, setLangData);
-      % endif
-    });
-  % endfor
-
-  $(document).ready(function () {
-    var selectedLanguage = $("#languageSelector .selected a").text();
-    $("#selectedLanguage").text(selectedLanguage)
-  })
-  
-</script>
