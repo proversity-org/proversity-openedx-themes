@@ -13,7 +13,9 @@
         <div class="container">
             <div class="depth depth-2 message-error-content">
                 <h3>{{ error }}</h3>
-                {% trans "If you need assistance, contact Pearson support." %}
+                {% blocktrans with link=request.site.siteconfiguration.payment_support_email %}
+                    If you need assistance, contact <a href="mailto:{{ link }}">Pearson</a> support.
+                {% endblocktrans %}
             </div>
         </div>
     </div>
