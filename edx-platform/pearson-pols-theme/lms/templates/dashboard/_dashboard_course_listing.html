@@ -6,10 +6,10 @@ import urllib
 from django.utils.translation import ugettext as _
 from django.utils.translation import ungettext
 from django.urls import reverse
+from courseware.courses import get_course_by_id
 from course_modes.models import CourseMode
-from course_modes.helpers import enrollment_mode_display,is_external_course
+from course_modes.helpers import enrollment_mode_display
 from openedx.core.djangolib.js_utils import dump_js_escaped_json, js_escaped_string
-from openedx.core.djangoapps.plugins.plugin_extension_points import run_extension_point
 from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
 from openedx.core.djangolib.markup import HTML, Text
 from openedx.features.course_experience import course_home_url_name
@@ -26,6 +26,7 @@ from util.course import get_link_for_about_page, get_encoded_course_sharing_utm_
 %>
 
 <%
+  course = get_course_by_id(course_overview.id)
   reverify_link = reverse('verify_student_reverify')
   cert_name_short = course_overview.cert_name_short
   if cert_name_short == "":
@@ -37,9 +38,8 @@ from util.course import get_link_for_about_page, get_encoded_course_sharing_utm_
   billing_email = settings.PAYMENT_SUPPORT_EMAIL
 
   is_course_expired = hasattr(show_courseware_link, 'error_code') and show_courseware_link.error_code == 'audit_expired'
-  course_display_tab = '_self'
-  if is_external_course(course_overview.id):
-    course_display_tab = '_blank'
+  course_display_tab = '_blank' if course.other_course_settings.get('external_course_run_id')\
+    and course.other_course_settings.get('external_course_target') else '_self'
 %>
 
 <%namespace name='static' file='../static_content.html'/>
