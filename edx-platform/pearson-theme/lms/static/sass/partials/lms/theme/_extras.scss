@@ -211,3 +211,29 @@ iframe.rocket-chat-view {
   font: normal 1.2rem/1.6rem Open Sans;
   text-align: center;
 }
+
+.u-field-date_joined .u-field-title {
+  cursor: text;
+}
+
+.tabpaneḷ{
+  .badge-set-display{
+    min-width: auto;
+
+    .badge-list {
+      padding: 0;
+    }
+
+    .badge-display {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .tabpaneḷ{
+    .badge-set-display{
+      min-width: auto;
+    }
+  }
+}
