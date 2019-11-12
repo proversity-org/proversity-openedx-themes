@@ -17,7 +17,7 @@ banner_image_url = configuration_helpers.get_value('banner_image_url', '/static/
 theme = configuration_helpers.get_value('theme', '')
 %>
 
-    <!-- Google Tag Manager -->
+<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -28,10 +28,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WH8WWQD"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    
-
 <main id="main" aria-label="Content" tabindex="-1">
-    
+
     <section class="home ${theme}">
    <!--   <header>
         <div class="outer-wrapper">
@@ -58,7 +56,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
           </div>
 
-          <%include file="index_promo_video.html" /> 
+          <%include file="index_promo_video.html" />
         </div>
 
       </header> -->
@@ -78,7 +76,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </p>
 
              </h1>
-          
+
         </section>
 
         %if search_courses_home:
@@ -88,7 +86,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <input id="search-input" type="text" placeholder="${_("Search for a course")}"></input>
               <span class="icon fa fa-remove clear-search-icon"></span>
             </div>
-            
+
             %if quick_filters_home:
               <div class="quick-filters-home">
                 <div class="quick-filter-label">${_("Quick Filters:")}</div>
@@ -96,7 +94,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   %for filter_item in quick_filters_home:
                     <li class="quick-filter-item">${filter_item}</li>
                   %endfor
-                </ul>  
+                </ul>
               </div>
             %endif
           </div>
@@ -139,7 +137,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
           </div>
         </div>
-     
+
 
     </section>
 </main>
@@ -153,8 +151,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 % endif
-    
-    
+
+
 
 <%block name="js_extra">
    <script type="text/javascript">
@@ -196,11 +194,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             $(this).toggle(textCourse.indexOf(valueInput) > -1);
           });
         });
-      } 
+      }
 
       function eventFilters() {
         filters.on("click", function() {
-          inputField.val($(this).text()).trigger("input");  
+          inputField.val($(this).text()).trigger("input");
         });
       }
 
