@@ -6,6 +6,8 @@
   )
 %>
 
+<%ALTERNAVITE_STRINGS = configuration_helpers.get_value('ALTERNAVITE_STRINGS', {})%>
+
 <style>
   .ccx-change-course-name-feedback {
     display: none;
@@ -41,14 +43,14 @@
   }
 </style>
 
-<h2 class="hd hd-2">${_("Change CCX Course Name")}</h2>
+<h2 class="hd hd-2">${_(ALTERNAVITE_STRINGS.get("Change CCX course name.", "Change CCX course name."))}</h2>
 <hr>
-<p>${_("Please enter the new name for your CCX course.")}</p>
+<p>${_(ALTERNAVITE_STRINGS.get("Please enter the new name for your CCX course.", "Please enter the new name for your CCX course."))}</p>
 
 %if ccx:
   <form id="ccx-change-course-name-form" class="ccx-change-course-name-form" method="patch" data-remote="true" action="/api/ccx/v0/ccx/${ccx.locator}">
     <input id="ccx-display-name" type="text" name="display_name" value="${ccx.display_name | n, js_escaped_string}" style="margin: 0.5em 0;"></input></br>
-    <input type="submit" name="enrollment-button" class="enrollment-button" value="${_('Change CCX course name.')}">
+    <input type="submit" name="enrollment-button" class="enrollment-button" value="${_(ALTERNAVITE_STRINGS.get('Change CCX course name.', 'Change CCX course name.'))}">
     <i class="fa fa-refresh fa-2x ccx-change-course-name-spinner" aria-hidden="true"></i>
   </form>
   <div class="ccx-change-course-name-feedback"></div>
@@ -71,7 +73,7 @@
   });
 
   $ccxChangeCourseNameForm.on("ajax:success", function(event, data, status, xhr) {
-    $ccxChangeCourseNameFeedBack.text("${_('The CCX display name was successfully changed.')}");
+    $ccxChangeCourseNameFeedBack.text("${_(ALTERNAVITE_STRINGS.get('The CCX display name was successfully changed.', 'The CCX display name was successfully changed.'))}");
   });
 
   $ccxChangeCourseNameForm.on("ajax:error", function(event, xhr, status, error) {
