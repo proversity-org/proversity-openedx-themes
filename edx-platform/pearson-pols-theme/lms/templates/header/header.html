@@ -40,6 +40,11 @@ theme = configuration_helpers.get_value('theme', '')
 course_id = course.id if course else None
 site_status_msg = get_site_status_msg(course_id)
 %>
+
+% if configuration_helpers.get_value('GOOGLE_TAG_MANAGER_SNIPPET'):
+    ${configuration_helpers.get_value('GOOGLE_TAG_MANAGER_SNIPPET') | n}
+% endif
+
 % if site_status_msg:
   <div class="site-status">
     <div class="inner-wrapper">
