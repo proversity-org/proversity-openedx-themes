@@ -1,11 +1,18 @@
 {% load i18n %}
 {% load ace %}
+{% load static %}
 
 {% get_current_language as LANGUAGE_CODE %}
 {% get_current_language_bidi as LANGUAGE_BIDI %}
 
 {# This is preview text that is visible in the inbox view of many email clients but not visible in the actual #}
 {# email itself. #}
+
+<style type="text/css">
+    .logo-image {
+        width: 225px;
+    }
+</style>
 
 <div lang="{{ LANGUAGE_CODE|default:"en" }}" style="
     display:none;
@@ -25,6 +32,7 @@
 {% endfor %}
 
 {% google_analytics_tracking_pixel %}
+{% static 'images/certificate.brand.png' as logo_url%}
 
 <div bgcolor="#f5f5f5" lang="{{ LANGUAGE_CODE|default:"en" }}" dir="{{ LANGUAGE_BIDI|yesno:"rtl,ltr" }}" style="
     margin: 0;
@@ -60,9 +68,9 @@
                 <table role="presentation" width="100%" align="left" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                         <td width="70">
-                            <a href="{% with_link_tracking homepage_url %}"><img
-                                    src="https://www.teachfirst.org.uk/profiles/charity/themes/ultimate/logo.svg" width="225"
-                                    height="40" alt="{% blocktrans %}Go to {{ platform_name }} Home Page{% endblocktrans %}"/></a>
+                            <a href="{% with_link_tracking homepage_url %}">
+                                <img class="logo-image" src="{% with_link_tracking logo_url %}"  alt="{% blocktrans %}Go to {{ platform_name }} Home Page{% endblocktrans %}"/>
+                            </a>
                         </td>
                         <td align="right" style="text-align: {{ LANGUAGE_BIDI|yesno:"left,right" }};">
                             <a class="login" href="{% with_link_tracking dashboard_url %}" style="color: #005686;">{%  trans "Sign In" %}</a>
