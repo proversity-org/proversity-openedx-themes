@@ -23,6 +23,7 @@ from student.models import CourseEnrollment
 <%
   cert_name_short = settings.CERT_NAME_SHORT
   cert_name_long = settings.CERT_NAME_LONG
+  search_courses_dashboard = configuration_helpers.get_value('SEARCH_COURSES_DASHBOARD', False)
 %>
 
 
@@ -155,6 +156,15 @@ from student.models import CourseEnrollment
     % endif
 
     <h1>${_("My Courses")}</h1>
+
+%if search_courses_dashboard:
+  <div class="course-search-home">
+    <div class="search-home-container">
+      <input id="search-input" type="text" placeholder="${_("Search for a course")}"></input>
+      <span class="icon fa fa-remove clear-search-icon"></span>
+    </div>
+  </div>
+%endif
 
 <div class="grid">
 
@@ -446,3 +456,57 @@ ccx_courses = user.customcourseforedx_set.filter(coach_id=user.id) if show_ccx_m
     $("#lean_overlay").css("display", "none");
   });
 </script>
+
+%if search_courses_dashboard:
+  <script type="text/javascript">
+    var searchHome = (function() {
+      'use strict';
+
+      var inputField, coursesList, filters, iconClear, valueInput, textCourse;
+
+      function initElements() {
+        inputField = $("#search-input");
+        coursesList = $(".single-course li");
+        filters = $(".quick-filter-item");
+        iconClear = $(".clear-search-icon");
+      }
+
+      function eventSearch() {
+        inputField.on("input", function() {
+          valueInput = $(this).val().toLowerCase();
+          coursesList.filter(function(){
+            textCourse = $(this).text().toLowerCase();
+            $(this).toggle(textCourse.indexOf(valueInput) > -1);
+          });
+        });
+      }
+
+      function eventFilters() {
+        filters.on("click", function() {
+          inputField.val($(this).text()).trigger("input");
+        });
+      }
+
+      function clearSearch() {
+        iconClear.on("click", function() {
+          inputField.val("").trigger("input");
+        });
+      }
+
+      return {
+        initElements: initElements,
+        eventSearch: eventSearch,
+        eventFilters: eventFilters,
+        clearSearch: clearSearch
+      };
+    }());
+
+    $(window).load(function() {
+      searchHome.initElements();
+      searchHome.eventSearch();
+      searchHome.eventFilters();
+      searchHome.clearSearch();
+    });
+
+  </script>
+%endif
