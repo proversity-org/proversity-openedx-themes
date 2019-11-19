@@ -30,6 +30,7 @@
     <main id="main-content" aria-label="Checkout" tabindex=-1>
         <div class="basket {% if enable_client_side_checkout %}basket-client-side{% endif %}">
             <div class="container">
+                {{ custom_settings.GOOGLE_TAG_MANAGER_SNIPPET|safe }}
                 {# Use a partial template so that AJAX can be used to re-render basket #}
                 {% if basket.is_empty %}
                     {% block emptybasket %}
