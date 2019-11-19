@@ -8,12 +8,6 @@
 {# This is preview text that is visible in the inbox view of many email clients but not visible in the actual #}
 {# email itself. #}
 
-<style type="text/css">
-    .logo-image {
-        width: 225px;
-    }
-</style>
-
 <div lang="{{ LANGUAGE_CODE|default:"en" }}" style="
     display:none;
     font-size:1px;
@@ -69,7 +63,7 @@
                     <tr>
                         <td width="70">
                             <a href="{% with_link_tracking homepage_url %}">
-                                <img class="logo-image" src="{% with_link_tracking logo_url %}"  alt="{% blocktrans %}Go to {{ platform_name }} Home Page{% endblocktrans %}"/>
+                                <img class="logo-image" src="{% with_link_tracking logo_url %}"  alt="{% blocktrans %}Go to {{ platform_name }} Home Page{% endblocktrans %}" style="width: 225px;"/>
                             </a>
                         </td>
                         <td align="right" style="text-align: {{ LANGUAGE_BIDI|yesno:"left,right" }};">
