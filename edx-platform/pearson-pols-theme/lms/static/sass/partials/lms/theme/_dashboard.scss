@@ -532,7 +532,6 @@ div.modal-content .modal-header button.close {
 }
 
 .course-search-home .search-home-container {
-
   padding: 10px;
 
   .icon {
@@ -544,7 +543,7 @@ div.modal-content .modal-header button.close {
     width: 25%;
     float: right;
 
-    @media (max-width: 767px){
+    @media (max-width: 767px) {
       width: 100%;
     }
   }
