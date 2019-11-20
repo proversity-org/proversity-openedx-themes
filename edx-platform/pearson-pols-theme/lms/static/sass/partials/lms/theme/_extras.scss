@@ -227,7 +227,7 @@ iframe.rocket-chat-view {
   cursor: text;
 }
 
-.tabpaneḷ {
+.view-profile .tabpanel {
   .badge-set-display {
     min-width: auto;
 
@@ -242,7 +242,7 @@ iframe.rocket-chat-view {
 }
 
 @media (min-width: 768px) {
-  .tabpaneḷ {
+  .view-profile .tabpanel {
     .badge-set-display {
       min-width: auto;
     }
