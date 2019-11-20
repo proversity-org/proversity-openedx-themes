@@ -36,6 +36,11 @@ theme = configuration_helpers.get_value('theme', '')
 <%
   unsupported_browser_alert_versions = configuration_helpers.get_value('UNSUPPORTED_BROWSER_ALERT_VERSIONS', settings.FEATURES.get('UNSUPPORTED_BROWSER_ALERT_VERSIONS'))
 %>
+
+% if configuration_helpers.get_value('GOOGLE_TAG_MANAGER_SNIPPET'):
+    ${configuration_helpers.get_value('GOOGLE_TAG_MANAGER_SNIPPET') | n}
+% endif
+
 % if waffle.switch_is_active('enable_unsupported_browser_alert'):
   <script>
     var $buoop = {
