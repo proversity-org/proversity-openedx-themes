@@ -530,3 +530,21 @@ div.modal-content .modal-header button.close {
   border: 0;
   box-shadow: none;
 }
+
+.course-search-home .search-home-container {
+  padding: 10px;
+
+  .icon {
+    top: 18px;
+    right: 25px;
+  }
+
+  #search-input {
+    width: 25%;
+    float: right;
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+}
