@@ -1,0 +1,208 @@
+## mako
+
+<%page expression_filter="h" args="online_help_token"/>
+
+<%namespace name='static' file='/static_content.html'/>
+
+## This template should not use the target student's details when masquerading, see TNL-4895
+<%
+self.real_user = getattr(user, 'real_user', user)
+username = self.real_user.username
+%>
+
+<%!
+from django.urls import reverse
+from django.utils.translation import ugettext as _
+from lms.djangoapps.ccx.overrides import get_current_ccx
+from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
+
+# App that handles subdomain specific branding
+from branding import api as branding_api
+from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_enabled, released_languages
+%>
+
+% if False:
+  <nav class="navbar navbar-default" style="background-image: url(${static.url('images/navigation.background.png')})">
+% else:
+  <nav class="navbar navbar-default">
+% endif
+
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+      <%block name="navigation_logo">
+        <div>
+          <ul class="nav navbar-nav hidden-xs">
+            <li>
+              % if False:
+                <li>
+                  <a href="">
+                    <img src="${static.url('images/brand.svg')}" class="img-responsive" />
+                  </a>
+                </li>
+              % else:
+                <li>
+                  <a href="${marketing_link('ROOT')}">
+                    <img src="${static.url('images/brand.svg')}" class="img-responsive" />
+                  </a>
+                </li>
+              % endif
+            </li>
+            <li class="brand-alt-left hidden-xs">
+              <img src="${static.url('images/brand.alt.svg')}" class="img-responsive" />
+            </li>
+          </ul>
+          <ul class="nav navbar-nav hidden-lg hidden-md hidden-sm">
+            % if False:
+              <li>
+                <a href="">
+                  <img src="${static.url('images/brand.sm.svg')}" class="img-responsive" />
+                </a>
+              </li>
+            % else:
+              <li>
+                <a href="${marketing_link('ROOT')}">
+                  <img src="${static.url('images/brand.sm.svg')}" class="img-responsive" />
+                </a>
+              </li>
+            % endif
+          </ul>
+        </div>
+      </%block>
+
+      <div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="brand-alt-right hidden-xs">
+            <img src="${static.url('images/brand.alt.svg')}" class="img-responsive" />
+          </li>
+          % if user.is_authenticated:
+
+            % if settings.FEATURES.get('ENABLE_DASHBOARD_SEARCH'):
+              <li>
+                <form>
+                  <div class="search hidden-xs">
+                    <input type="text" id="searchCourses" placeholder="${_("Search your courses")}" />
+
+                    <button class="search-button" type="submit">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </form>
+
+                % if settings.FEATURES.get('ENABLE_DASHBOARD_SEARCH'):
+                  <div id="dashboard-search-results" class="search-results dashboard-search-results"></div>
+                % endif
+              </li>
+            % endif
+
+          % else:
+
+            % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
+              <li>
+                <form method="get" action="/courses">
+                  <div class="search hidden-xs">
+                    <input type="text" id="searchCourses" placeholder="${_("Search for a course")}" />
+
+                    <button class="search-button" type="submit">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </form>
+              </li>
+            % endif
+
+          % endif
+
+          % if user.is_authenticated:
+            <li>
+              <a href="${reverse('dashboard')}">${_("Dashboard")}</a>
+            </li>
+          % endif
+
+          <li class="hidden-xs">
+            <a href="/courses">${_("")}</a>
+          </li>
+
+          <li class="hidden-xs">
+            % if header_language_selector_is_enabled():
+              <% languages = released_languages() %>
+
+              % if len(languages) > 1:
+                <div class="dropdown-options">
+                  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span id="navBarSelectedLanguage"></span>
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" id="navBarLanguageSelector" aria-labelledby="languageSelector">
+                    % for language in languages:
+                      % if language[0] == LANGUAGE_CODE:
+                        <li class="selected"><a href="#" type="submit" value="${language[0]}" id="lang-${language[0]}">${language[1]}</a></li>
+                      % else:
+                        <li><a href="#" type="submit" value="${language[0]}" id="lang-${language[0]}">${language[1]}</a></li>
+                      % endif
+                    % endfor
+                  </ul>
+                </div>
+              % endif
+              
+            % endif
+          </li>
+
+          % if user.is_authenticated:
+            <li class="hidden-xs">
+              Hi, ${username}
+            </li>
+          % endif
+
+          <li>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">${_("Toggle navigation")}</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+  </div>
+</nav>
+
+<div class="navbar-content">
+  <div>
+    <a href="#" class="navbar-content-close-btn">&times;</a>
+
+    <h2 class="navbar-title">${_("Menu")}</h2>
+
+    <div class="hidden-md hidden-lg">
+      % if header_language_selector_is_enabled():
+        <% languages = released_languages() %>
+
+        % if len(languages) > 1:
+          <div class="dropdown-options">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <span id="sideBarSelectedLanguage"></span>
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" id="sideBarLanguageSelector" aria-labelledby="languageSelector">
+              % for language in languages:
+                % if language[0] == LANGUAGE_CODE:
+                  <li class="selected"><a href="#" type="submit" value="${language[0]}" id="lang-${language[0]}">${language[1]}</a></li>
+                % else:
+                  <li><a href="#" type="submit" value="${language[0]}" id="lang-${language[0]}">${language[1]}</a></li>
+                % endif
+              % endfor
+            </ul>
+          </div>
+        % endif
+
+      % endif
+    </div>
+
+    % if user.is_authenticated:
+      <%include file="navbar-authenticated.html" args="online_help_token=online_help_token"/>
+    % else:
+      <%include file="navbar-not-authenticated.html" args="online_help_token=online_help_token"/>
+    % endif
+  </div>
+</div>
