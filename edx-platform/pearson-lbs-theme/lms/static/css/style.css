@@ -14792,7 +14792,10 @@ button.btn.btn-primary.submit {
 .login-form input[type="email"],
 .login-form input[type="email"],
 .login-form input[type="password"] {
-    border: 1px solid #fff
+    border: 1px solid #fff;
+    background: none;
+    margin: 15px auto;
+    width: 50%;
 }
 
 .login-form span {
@@ -17062,4 +17065,27 @@ iframe {
 
 .course-outline .block-tree .section ol.outline-item .subsection .vertical a.outline-item {
     padding: 10px 0 10px 10px;
+}
+
+#login-email-desc {
+    color: white;
+}
+
+.login-register .form-field .forgot-password.field-link {
+    display: inline-block;
+    padding: 7px 10px;
+    color: white; 
+    text-decoration: underline;
+}
+
+#ogin-and-registration-container .btn.btn-default.action.action-primary {
+    background: #001E62;
+    color: #fff !important;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
