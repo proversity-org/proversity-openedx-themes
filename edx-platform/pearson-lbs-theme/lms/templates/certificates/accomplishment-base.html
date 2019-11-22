@@ -1,0 +1,75 @@
+<%namespace name='static' file='/static_content.html'/>
+<%! from django.utils.translation import ugettext as _ %>
+
+<%
+# set doc language direction
+from django.utils.translation import get_language_bidi
+dir_rtl = 'rtl' if get_language_bidi() else 'ltr'
+course_mode_class = course_mode if course_mode else ''
+%>
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head dir="${dir_rtl}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>${document_title}</title>
+
+    <%static:css group='style-certificates'/>
+    <link rel="stylesheet" type="text/css" href="/static/proversity-theme/css/certificates.css"></link>
+    <link rel="stylesheet" type="text/css" href="/static/proversity-theme/css/lms-footer.css"></link>
+    <link rel="stylesheet" type="text/css" href="/static/proversity-theme/css/lms-footer-edx.css"></link>
+    <link rel="stylesheet" type="text/css" href="/static/css/overrides.css"></link>
+    <link rel="stylesheet" type="text/css" href="${static.url('css/style.css')}" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body class="layout-accomplishment view-valid-accomplishment ${dir_rtl} certificate certificate-${course_mode_class}" data-view="valid-accomplishment">
+
+    <div class="wrapper-view" dir="${dir_rtl}">
+        <%include file="/certificates/_accomplishment-header.html" />
+
+        ${self.body()}
+
+        <%include file="../footer.html" />
+    </div>
+
+    <%include file="/certificates/_assets-secondary.html" />
+    %if badges:
+        <%include file="/certificates/_badges-modal.html" />
+    %endif
+
+    <script>
+        $(document).ready(function () {
+
+            var numberOfImages = $(".accomplishment-type-symbol > img").length;
+
+            console.log(numberOfImages);
+
+            $(".certificate .accomplishment-rendering .accomplishment-type .accomplishment-type-symbol").css({
+                "max-width": "100%"
+            });
+
+            if (numberOfImages == 1) {
+
+                $(".certificate .accomplishment-rendering .accomplishment-type .accomplishment-type-symbol > img").css({
+                    "margin": "0 auto",
+                    "width": "100%"
+                });
+
+            } else if (numberOfImages == 2) {
+
+                $(".certificate .accomplishment-rendering .accomplishment-type .accomplishment-type-symbol > img").css({
+                    "display": "inline-block",
+                    "width": "100%"
+                });
+
+            }
+
+        });
+    </script>
+</body>
+</html>
