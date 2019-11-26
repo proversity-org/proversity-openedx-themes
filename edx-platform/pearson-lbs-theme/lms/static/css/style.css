@@ -14797,6 +14797,7 @@ button.btn.btn-primary.submit {
     border: 1px solid #fff;
     background: none;
     margin: 15px auto;
+    width: 50%;
 }
 
 .login-form span {
@@ -14817,6 +14818,7 @@ button.btn.btn-primary.submit {
 .register-form input[type="password"] {
     border: 1px solid #fff;
     background: none;
+    width: 100%;
 }
 
 .register-form textarea {
@@ -17100,8 +17102,9 @@ iframe {
     padding: 0;
 }
 
-.register-form label[for="register-email"],
-.register-form label[for="register-name"],
-.register-form label[for="register-password"] {
+.login-register .form-field label.focus-out[for="register-email"],
+.login-register .form-field label.focus-out[for="register-name"],
+.login-register .form-field label.focus-out[for="register-password"],
+.login-register .form-field label.focus-out[for="register-username"] {
     position: inherit;
 }
