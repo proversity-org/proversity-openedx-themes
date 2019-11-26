@@ -14772,7 +14772,9 @@ button.btn.btn-primary.submit {
 
 #register-anchor,
 #login-anchor {
-    overflow: visible
+    overflow: visible;
+    max-width: none;
+    margin: 0;
 }
 
 .form-field label {
@@ -14795,7 +14797,6 @@ button.btn.btn-primary.submit {
     border: 1px solid #fff;
     background: none;
     margin: 15px auto;
-    width: 50%;
 }
 
 .login-form span {
@@ -14814,7 +14815,8 @@ button.btn.btn-primary.submit {
 .register-form input[type="email"],
 .register-form input[type="text"],
 .register-form input[type="password"] {
-    border: 1px solid #fff
+    border: 1px solid #fff;
+    background: none;
 }
 
 .register-form textarea {
@@ -17078,7 +17080,7 @@ iframe {
     text-decoration: underline;
 }
 
-#ogin-and-registration-container .btn.btn-default.action.action-primary {
+#login-and-registration-container .btn.btn-default.action.action-primary {
     background: #001E62;
     color: #fff !important;
     border-top: none;
@@ -17088,4 +17090,18 @@ iframe {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+}
+
+#login .toggle-form {
+    font-size: 14px;
+}
+
+#register-form {
+    padding: 0;
+}
+
+.register-form label[for="register-email"],
+.register-form label[for="register-name"],
+.register-form label[for="register-password"] {
+    position: inherit;
 }
