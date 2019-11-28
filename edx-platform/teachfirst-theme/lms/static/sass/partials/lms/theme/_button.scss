@@ -1750,4 +1750,8 @@ button {
 .recap_actions .btn {
   background: #3764F0;
   border: none;
+
+  &:hover {
+    background: #172092;
+  }
 }
