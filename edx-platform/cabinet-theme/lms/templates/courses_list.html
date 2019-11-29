@@ -6,6 +6,11 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
 %>
 
 <%
+## Add a new list of lists containing the courses in groups of CAROUSEL_LIMIT_COURSES number.
+## [
+##   ['course one', 'course two', 'course three', 'course four'],
+##   ['course one', ...], ...
+## ]
 CAROUSEL_LIMIT_COURSES = configuration_helpers.get_value('CAROUSEL_LIMIT_COURSES', 4)
 carousel_courses = []
 
