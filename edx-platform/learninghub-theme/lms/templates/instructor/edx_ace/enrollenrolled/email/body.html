@@ -1,95 +1,184 @@
-{% extends 'ace_common/edx_ace/common/base_body.html' %}
-
 {% load i18n %}
+{% load ace %}
 {% load static %}
 {% block content %}
-<table width="100%" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation">
-    <tr>
-        <td>
-            <h1>
-                {% blocktrans %}
-                    
-                {% endblocktrans %}
-            </h1>
 
-            <p style="color: rgba(0,0,0,.75);">
-                
-                <br />
-            </p>
+{% static 'images/PearsonLogo_Horizontal_Blk_RGB_color.png' as logo_url%}
+{% static 'images/learninghub-email-banner.png' as banner_url%}
 
-            
+<div style="
+    background-color: #efefef;
+    font-family: arial,helvetica,
+    sans-serif;font-size: 16px;
+    color: #808080;
+    line-height: 1;
+    padding: 20px;">
 
-            <p style="color: rgba(0,0,0,.75);">
-                {% blocktrans %}This email was automatically sent from {{ site_name }} to {{ full_name }}{% endblocktrans %}
-                <br />
-            </p>
-        </td>
-    </tr>
+    <div style="
+        font-size:1px;
+        display:none!important">
+        %%_PreHeader%%
+    </div>
 
+    <table align="center" style="
+        line-height:1;
+        padding: 10px;
+        width: 600px;
+        border-spacing: 7px;">
+        <tbody>
+            <tr>
+                <td style="padding:0px">
+                    <div style="text-align:right">
+                        <span style="font-size:12px">
+                            <span style="font-family:arial,helvetica,sans-serif">
+                                <a style="color:#333333">View online</a>
+                            </span>
+                        </span>
+                    </div>
+                </td>
+            </tr>
 
+            <tr>
+                <td align="left">
+                    <img src="{% with_link_tracking logo_url %}" style="
+                    height: 61px;
+                    display: block;
+                    padding: 0;
+                    text-align: left">
+                </td>
+            </tr>
 
+            <tr>
+                <td align="center">
+                    <a href="{{ site_name }}" title="Pearson LearningHub" target="_blank" data-saferedirecturl="{{ site_name }}">
+                        <img src="{% with_link_tracking banner_url %}" alt="Pearson LearningHub" style="
+                            display:block;
+                            height:auto;
+                            width:600px;
+                            padding:0px;
+                            text-align:center;">
+                    </a>
+                </td>
+            </tr>
 
+            <tr>
+                <td style="
+                    padding:20px 20px 10px;
+                    background-color: white;">
+                    <span style="font-size:14px">
+                        <span style="font-family:Arial,Helvetica,sans-serif">
 
-   <tr>
-        <td style="width: 100%; 
-            max-width: 800px;
-            background-color: #FFF;
-            color: #000000;
-            margin: auto;
-            text-align: center;
-            border: 1px solid #F3F3F3;">
+                            <span style="color:#333333">
+                                {% if full_name%}
+                                    Dear {{ full_name }},<br><br>
+                                {% else %}
+                                    Dear {{ email_address }},<br><br>
+                                {% endif %}
+                                You have been enrolled in {{ display_name }} at&nbsp;
+                            </span>
 
-            <img src="https://mylearningx.pearson.com/static/pearson-pols-theme/images/PearsonLogo_Primary_Blk_RGB.png" style="width: 150px; padding: 5px;" />
+                            <a href="{{ site_name }}" style="color:#007fa3;text-decoration:underline" title="{{ site_name }}" target="_blank" data-saferedirecturl="{{ site_name }}">
+                                {{ site_name }}
+                            </a>
 
-            <div style="width: 90%; 
-                        background-color: #D4EAE4;
-                        text-align: left;
-                        padding: 2% 5%;
-                        background-image: url('https://mylearningx.pearson.com/static/pearson-pols-theme/images/laptop_transparent-bg.png');
-                        background-size: 50%;
-                        background-position: right bottom;
-                        background-repeat: no-repeat;">
-
-                <h1 style="font-family:'Playfair Display', serif; font-weight: 700;">
-                     You have been enrolled in {{ course_name }}
-                </h1>
-                <p style="padding: 0px;
-                          width: 50%;
-                          min-width: 300px;">
-                    {% blocktrans %}You have been enrolled in {{ course_name }} at {{ site_name }} by a member of the course staff. This course will now appear on your {{ site_name }} dashboard.{% endblocktrans %}
-                    <br />
-                </p>
-           
-           {% trans "Access the Course Materials Now" as course_cta_text %}
-            {% include "ace_common/edx_ace/common/return_to_course_cta.html" with course_cta_text=course_cta_text course_cta_url=course_url %}
-
-            </div>
-        </td>
-    </tr>
- 
-    <tr>
-        <td>
-            <p style="font-family: 'Open Sans', sans-serif;
-                color: #505759;
-                text-align: left;
-                padding: 2% 5%;
-                margin: 0px;">
-                {% blocktrans %}If you are receiving this email in error, please let us know at <a href="mailto:{{ support_email }}">{{ support_email }}</a>.{% endblocktrans %}
-                <br />
-            </p>
-        </td>
-    <tr>
-     </tr>
-    <tr>
-        <td>
-            <p>
-                 {% blocktrans %}This email was automatically sent from {{ site_name }} to {{ full_name }}{% endblocktrans %}
-                <br />
-            </p>
-        </td>
-    </tr>
+                            <span style="color:#333333">
+                                &nbsp;by a member of the course staff. The course should now appear on your&nbsp;
+                            </span>
 
 
+                            <a href="{{ site_name }}" rel="noreferrer" style="color:#007fa3;text-decoration:underline" title="" target="_blank" data-saferedirecturl="{{ site_name }}">
+                                {{ site_name }}
+                            </a>
 
-</table>
+                            <span style="color:#333333">
+
+                                &nbsp;dashboard.
+                                <br><br>
+
+                                To start accessing course materials, please visit
+
+                                <a href="{% with_link_tracking dashboard_url %}" style="color:#007fa3;text-decoration:underline" title="{% with_link_tracking dashboard_url %}" target="_blank" data-saferedirecturl="{% with_link_tracking dashboard_url %}">
+                                    {{ site_name }}
+                                </a>
+
+                            </span><br><br>
+
+                            <span style="color:#333333">
+                                This email was automatically sent from&nbsp;
+                            </span>
+
+                            <a href="{{ site_name }}" style="color:#007fa3;text-decoration:underline" title="{{ site_name }}" target="_blank" data-saferedirecturl="{{ site_name }}">
+                                {{ site_name }}
+                            </a><wbr>&nbsp;
+
+                            <span style="color:#333333">
+                                {% if full_name%}
+                                    to {{ full_name }}
+                                {% else %}
+                                    to {{ email_address }}
+                                {% endif %}
+                            </span>
+                        </span>
+                    </span>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center" style="
+                    color: white;
+                    font-size: 12px;
+                    font-family: Arial,Helvetica,sans-serif;">
+                    <div style="
+                        text-align: center;
+                        background: #007FA3;
+                        padding: 15px 0 15px 0;">
+                        Pearson Education Ltd 2018 &nbsp; &nbsp; Registered No: 872828 &nbsp; &nbsp;
+                        <a href="https://www.google.com/maps/place/80+Strand,+London+WC2R+0RL,+UK" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.google.com/maps/place/80%2BStrand,%2BLondon%2BWC2R%2B0RL,%2BUK&amp;source=gmail&amp;ust=1571217499022000&amp;usg=AFQjCNF60-Jsl55ZzfPThyfsZj4phbX1sw" style="
+                            color: white;
+                            text-decoration: underline;
+                            font-family: Arial,Helvetica,sans-serif;font-size:12px">
+                            80 Strand London WC2R 0RL
+                        </a>
+                        <br>
+                    </div>
+
+                    <div style="
+                        text-align: center;
+                        background: #005A70;
+                        padding: 15px 0 15px 0;">
+                        <a href="https://uk.pearson.com/pearson-privacy-and-you/privacy-policy.html" style="color:white;text-decoration:underline;font-family:Arial,Helvetica,sans-serif;font-size:12px" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://uk.pearson.com/pearson-privacy-and-you/privacy-policy.html&amp;source=gmail&amp;ust=1571217499022000&amp;usg=AFQjCNGdyavdYzMHZFc65fm1B5OYdqc6uQ">
+                        Privacy policy
+                        </a>&nbsp; &nbsp;
+
+                        <span style="font-family:Arial,Helvetica,sans-serif;font-size:12px">
+                            &nbsp;
+                        </span>
+
+                        <a href="http://uk.pearson.com/pearson-privacy/your-data-at-pearson/cookies/cookie-policy" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://uk.pearson.com/pearson-privacy/your-data-at-pearson/cookies/cookie-policy&amp;source=gmail&amp;ust=1571217499022000&amp;usg=AFQjCNGslgDqTVRgk9s8KkOpSF5v336jIA" style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:12px">
+                            <span style="text-decoration:none">
+                                <span style="text-decoration:underline">
+                                    Cookies
+                                </span>
+                            </span>
+                        </a>
+                        <span style="font-family:Arial,Helvetica,sans-serif;font-size:14px">
+                            &nbsp; &nbsp;
+                        </span>
+                        <a style="color:white;text-decoration:underline;font-family:Arial,Helvetica,sans-serif;font-size:12px">
+                            Unsubscribe
+                        </a>
+                        <span style="font-family:Arial,Helvetica,sans-serif;font-size:14px">
+                            &nbsp; &nbsp;
+                        </span>
+
+                        <a style="color:white;text-decoration:underline;font-family:Arial,Helvetica,sans-serif;font-size:12px">
+                            Update profile
+                        </a>
+                        <br>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 {% endblock %}
