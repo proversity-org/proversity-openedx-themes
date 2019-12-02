@@ -1,25 +1,22 @@
 <%page expression_filter="h"/>
 <%namespace name='static' file='/static_content.html'/>
-<%! from django.utils.translation import ugettext as _ %>
-
-<% 
-carousel_courses = []
-carousel_courses.append([])
-current_index = 0
-limit = 4
+<%!
+from django.utils.translation import ugettext as _
+from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
 %>
 
-<div class="hidden">
-  % for course in courses:
-  % if len(carousel_courses[current_index]) < limit:
-    ${carousel_courses[current_index].append(course)}
-  % else:
-    ${carousel_courses.append([])}
-    ${current_index = current_index + 1}
-    ${carousel_courses[current_index].append(course)}
-  % endif
-% endfor
-</div>
+<%
+## Add a new list of lists containing the courses in groups of CAROUSEL_LIMIT_COURSES number.
+## [
+##   ['course one', 'course two', 'course three', 'course four'],
+##   ['course one', ...], ...
+## ]
+CAROUSEL_LIMIT_COURSES = configuration_helpers.get_value('CAROUSEL_LIMIT_COURSES', 4)
+carousel_courses = []
+
+for index_course in range(0, len(courses), CAROUSEL_LIMIT_COURSES):
+  carousel_courses.append(courses[index_course:index_course + CAROUSEL_LIMIT_COURSES])
+%>
 
 
 % if courses:
