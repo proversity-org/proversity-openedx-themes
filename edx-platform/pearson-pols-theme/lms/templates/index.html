@@ -10,6 +10,7 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
 %>
 <%
 search_courses_home = configuration_helpers.get_value('search_courses_home', '')
+support_mobile_banner = configuration_helpers.get_value('support_mobile_banner', '')
 quick_filters_home = configuration_helpers.get_value('quick_filters_home', [])
 home_page_title = configuration_helpers.get_value('home_page_title', 'Welcome')
 home_page_subtitle = configuration_helpers.get_value('home_page_subtitle', 'We think you might be interested in these programs')
@@ -91,6 +92,7 @@ theme = configuration_helpers.get_value('theme', '')
 
       <%include file="${courses_list}" />
 
+    %if support_mobile_banner:
 
         <div class="container no-border">
           <div class="grid">
@@ -126,7 +128,8 @@ theme = configuration_helpers.get_value('theme', '')
             </div>
           </div>
         </div>
-     
+    %endif
+
 
     </section>
 </main>
