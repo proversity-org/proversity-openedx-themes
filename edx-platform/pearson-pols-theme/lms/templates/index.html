@@ -9,6 +9,7 @@ from openedx.core.djangolib.markup import HTML, Text
 from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
 %>
 <%
+support_mobile_banner = configuration_helpers.get_value('support_mobile_banner', '')
 search_courses_home = configuration_helpers.get_value('search_courses_home', '')
 quick_filters_home = configuration_helpers.get_value('quick_filters_home', [])
 home_page_title = configuration_helpers.get_value('home_page_title', 'Welcome')
@@ -307,6 +308,7 @@ theme = configuration_helpers.get_value('theme', '')
 
       <%include file="${courses_list}" />
 
+    %if support_mobile_banner:
 
         <div class="container no-border">
           <div class="grid">
@@ -342,6 +344,7 @@ theme = configuration_helpers.get_value('theme', '')
             </div>
           </div>
         </div>
+    % endif
      
 
     </section>
