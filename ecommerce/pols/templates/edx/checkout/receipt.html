@@ -22,6 +22,7 @@
 {% endblock navbar %}
 
 {% block content %}
+  {{ custom_settings.GOOGLE_TAG_MANAGER_SNIPPET|safe }}
   <div id="receipt-container"
        class="receipt container content-container"
        data-currency="{{ order.currency }}"
