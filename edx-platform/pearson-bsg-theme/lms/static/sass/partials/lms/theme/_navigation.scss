@@ -1,0 +1,168 @@
+.global-header h1.header-logo a .logo {
+    float: left;
+    height: 38px;
+    margin-left: 3px;
+}
+
+.global-header {
+  min-height: 70px;
+}
+
+.vue-header {
+  background-color: $vue-header-footer !important;
+  border: none;
+  color: $vue-btn-text; 
+
+      @media (min-width: 992px) {
+          .tab-nav-link {
+              color: $vue-btn-text !important;
+           }    
+      }
+
+      .nav-links .secondary .nav-item a {
+        color: $vue-btn-text;
+      }
+
+      .nav-links .secondary .dropdown-user-menu .dropdown-item a {
+         color: $vue-dark ;
+      }
+}
+
+.apprenticeships-header {
+  background-color: $app-header;
+ // border: none;
+  color: $app-btn-text;
+  
+  @media (min-width: 992px) {
+    .tab-nav-link {
+      color: $app-btn !important;
+    }
+  }
+
+   .nav-links .secondary .nav-item a, .fa {
+      color: $app-header-text
+    }
+
+    .nav-links .secondary .dropdown-user-menu .dropdown-item a {
+     color: $app-header-text;
+  } 
+}
+
+.vue-btn:hover {
+  background-color: $vue-btn-text !important;
+  border: 1px solid $vue-btn !important;
+  color: $vue-btn !important;
+}
+
+.apprencticeships-btn:hover {
+  background-color: $app-btn-text !important;
+  border: 1px solid $app-btn !important;
+  color: $app-btn  !important;
+}
+
+.settings-language-form {
+  position: absolute;
+}
+
+select, option, optgroup {
+  color: #fff !important;
+  background-color: #003057 !important;
+}
+
+
+@media (min-width: 992px) {
+  header.global-header .nav-links .secondary a.register-btn {
+    background-color: #041e42;
+    color:$font-color-register;
+    border: 1px solid #041e42;
+  }
+
+  header.global-header .nav-links .secondary a.register-btn:hover {
+    background-color: $font-color-login;
+    border: 1px solid #041e42;
+    color:$button-color-login;
+  }
+
+  .vue-btn {
+    background-color: $vue-btn !important;
+    border: 1px solid $vue-btn !important;
+    color: $vue-btn-text !important;
+  }
+
+  .apprenticeships-btn {
+    background-color: $app-btn !important;
+    border: 1px solid $app-btn !important;
+    color: $app-btn-text !important;
+  }
+
+   .vue-btn:hover, .apprenticeships-btn:hover {
+    background-color: $font-color-login;
+    border: 1px solid $primary;
+    color:$button-color-login;
+  }
+}
+
+
+header.global-header .nav-links .secondary a.sign-in-btn {
+    background-color: $button-color-login;
+    border: 1px solid $button-color-login;
+    color:$font-color-login;
+  }
+
+
+@media (min-width: 992px) {
+  header.global-header .nav-links .secondary a.sign-in-btn {
+    background-color: $button-color-login;
+    border: 1px solid $button-color-login;
+    color:$font-color-login;
+  }
+
+  header.global-header .nav-links .secondary a.sign-in-btn:hover {
+    background-color: $font-color-login;
+    border: 1px solid $primary;
+    color:$button-color-login;
+  }
+
+  
+}
+
+ .main-header .nav-links .main
+ .mobile-nav-item.hidden-mobile.nav-item.nav-tab .btn {
+  padding: 10px;
+  color: $inverse;
+}
+
+@media (min-width: 992px){
+  .global-header .nav-links .main .nav-tab a {
+      padding: 10px;
+  }
+}
+
+@media (max-width: 992px){
+  .global-header .nav-links .main .nav-tab a {
+      padding: 10px;
+  }
+
+  div.mobile-menu div.mobile-nav-link a {
+    background-color: $light-gray;
+    border-bottom: 1px solid $primary;
+    color: #003057;
+  }
+}
+
+@media (min-width: 768px) {
+  div.content-wrapper {
+    padding: 0 34px 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  header.global-header h1.header-logo a .logo {
+      margin-left: -50%;
+  }
+
+  .global-header .hamburger-menu {
+    position: relative;
+  }
+
+}
