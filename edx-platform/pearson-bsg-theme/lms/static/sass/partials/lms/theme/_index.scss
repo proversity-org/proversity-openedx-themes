@@ -1,0 +1,420 @@
+//Course catalog
+.find-courses .courses-container {
+  padding: 20px;
+}
+
+.find-courses {
+  padding: 0px;
+}
+
+div.content-wrapper.main-container {
+  margin-bottom:0px;
+}
+//app banner
+@media (max-width: 480px) {
+  .btn-center ul li {
+    padding: 0;
+  }
+}
+
+
+.btn-center button {
+      padding: 6px 30px;
+    }
+
+
+.btn-center {
+  text-align: center;
+  margin: 15px 0;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline;
+      padding: 0 15px 0 0;
+      &:last-child {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.grid {
+  display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 15px -15px;
+    background: none !important;
+}
+
+.grid .items {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    min-height: 150px;
+    min-width: 15%;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+
+    h1 {  
+      font-family: "Playfair Display", serif; 
+      margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+  .grid .items {
+    min-height: 1px;
+    min-width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid .items {
+    min-height: 1px;
+    min-width: 100%;
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+
+.pull-right {
+  float: right !important;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+//Landing  page
+header.banner {
+  background-size: cover;
+  background-position: center center;
+  min-height: 10vh;
+  overflow: hidden;
+  max-height: 300px;
+}
+
+  .vue {
+ //   color: $vue-banner-text;
+    background-color: $vue-banner-bg;
+  }
+
+  .apprenticeships {
+//    color: $app-banner-text;
+    background-color: $app-banner-bg;
+  }
+
+
+.home-banner {
+  .title {
+    color: #007FA3;
+    margin: 0px;
+    background-color: none;
+    width: 90%;
+    padding: 5%;
+  }
+
+  .vue {
+    color: $vue-banner-text;
+  //  background-color: $vue-banner-bg;
+  }
+
+  .apprenticeships {
+    color: $app-banner-text;
+   // background-color: $app-banner-bg;
+  } 
+}
+
+.course-info header.course-profile .intro-inner-wrapper .media .hero {
+  border: 1px solid #D4EAE4;
+}
+
+.course-info .details {
+  padding: 10px 2% 10px 4%;
+  width: 62%;
+  margin-right: 0px;
+}
+
+div.course-summary {
+  padding: 10px 20px 10px 20px;
+}
+
+body.view-in-course .wrapper-course-material .course-material {
+   height: 45px;
+}
+
+
+.course-info header.course-profile .intro-inner-wrapper .intro>.heading-group {
+  border-bottom: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+
+
+.course-info .button-enroll-bottom {
+  padding: 20px;
+}
+
+.course-info .details h2 {
+   font-family: Playfair Display, serif;
+   font-weight: 700;
+   margin-bottom: 15px;
+   font-size: 1.6rem; 
+}
+
+.course-info header.course-profile .intro-inner-wrapper .intro>.heading-group h1 {
+  font-family: Playfair Display, serif;
+  text-shadow: none; 
+}
+
+p {
+  font-family: Open Sans, sans-serif; 
+}
+
+
+.course-info header.course-profile .intro-inner-wrapper {
+  margin: 20px;
+  background-color: #F3F3F3;
+  box-shadow: none;
+}
+
+.course-info header.course-profile {
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.home-banner .title .title-super {
+  font-family: Playfair Display, serif;
+  font-size: 4rem;
+  line-height: 4rem;
+}
+.home-banner .title .title-sub {
+  font-family: Open Sans, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  padding-top: 20px;
+}
+
+.banner.itp-site {
+  .title {
+    float: right;
+    max-width: 500px;
+    
+    @media (max-width:550px) {
+      float: none;
+
+    }
+  }
+  .title .title-super {
+    font-family: Playfair Display, sans-serif;
+    font-size: 4rem;
+
+    @media (max-width: 550px) {
+      font-size: 2.6rem;
+    }
+  }
+
+  .title .title-sub {
+    font-size: 2rem;
+
+    @media (max-width:550px) {
+      font-size:1.3rem;
+    }
+  }
+}
+
+  .banner.demo-site .title .title-super {
+    font-family: Playfair Display, serif;
+    font-size:2.7rem;
+  }
+  .banner.demo-site .title .title-sub {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    line-height: 1.3;
+  }
+
+  .banner.demo-site .title {
+    float: left;
+    margin-left: 30px;
+    max-width: 500px;
+    background: #007FA3;
+  }
+
+
+  @media (max-width: 1100px) {
+    .home-banner {
+      .title {
+          width: 90%;
+          padding: 5%;
+        }
+
+       .vue {
+          color: $vue-banner-text;
+          background-color: $vue-banner-bg;
+        }
+
+      .apprenticeships {
+          color: $app-banner-text;
+          background-color: $app-banner-bg;
+        }
+    }
+}
+  @media (max-width: 550px) {
+    .home-banner {
+
+      .title {
+      float:none;
+      background: none;
+      width: 90%;
+      padding: 5%;
+      }
+
+      .vue {
+          color: $vue-banner-text;
+          background-color: $vue-banner-bg;
+        }
+
+      .apprenticeships {
+          color: $app-banner-text;
+          background-color: $app-banner-bg;
+        }
+
+  }
+    .home-banner .title .title-super {
+      font-size: 2.6rem;
+
+    }
+    .home-banner .title .title-sub {
+      font-size: 1.4rem;
+      line-height: 1.1;
+      margin-top:7px;
+    }
+
+
+  }
+
+  .content-wrapper .course-info .container {
+    max-width: none;
+    padding-top:20px;
+  }
+
+  .course-info .h3 {
+    font-weight: 600;
+    font-size: 1.1em;
+  }
+
+  div.content-wrapper.main-container {
+    padding: 0px;
+    margin-top: 0px;
+  }
+
+  .courses-container {
+    background-color: #F5F5F5;
+    padding: 40px;
+  }
+
+  .vue-container {
+    background-color: $vue-courses-bg !important;
+  }
+
+  .courses-container-apprenticeships {
+    background-color: $app-courses-bg !important;
+  }
+
+  .course-info .course-sidebar {
+    float: right;
+  }
+
+  .courses-container .courses .course {
+    border: none;
+  }
+
+  .course-search-home {
+    display: flex;
+    flex-direction: column;
+
+    label,
+    input {
+      font-style: normal;
+      width: 100%;
+    }
+
+    label {
+      cursor: none;
+      font-size: 30px;
+      padding: 10px;
+    }
+
+    .quick-filters-home {
+      display: flex;
+      padding: 10px 5px;
+
+      .quick-filter-label {
+        display: flex;
+        align-items: center;
+      }
+
+      ul {
+        margin: 0;
+        display: flex;
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        padding: 5px;
+        cursor: pointer;
+        background: $primary;
+        color: $white;
+        border-radius: 5px;
+        margin: 0 5px;
+      }
+    }
+
+    .search-home-container {
+      position: relative;
+
+      .icon {
+        position: absolute;
+        top: 8px;
+        right: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // overrides
+
+
+
+
