@@ -7,8 +7,8 @@
 // Make the theme white on black
 
 //color
-$primary: #007FA3;
-$primary-black: #007FA3;
+$primary: #041E42;
+$primary-black: #041E42;
 $inverse: #FFF;
 $secondary: #003057;
 $container-bg: $inverse;
@@ -36,7 +36,7 @@ $pearson-grey-courseware-2: #c8c8c8;
 $pearson-grey-courseware-3: #fcfcfc;
 $pearson-grey-courseware-4: #828c92;
 $pearson-blue-courseware: #005abb;
-$pearson-dark-blue-courseware: #0f1d4e;
+$pearson-dark-blue-courseware: #041E42;
 
 //Vue theme styling
 $vue-banner-bg: #D4EAE4;
@@ -95,9 +95,9 @@ $serif: Playfair Display;
 @import 'edx-bootstrap/sass/open-edx/theme';
 
 //navigation
-$button-color-login: #003057;
+$button-color-login: #041E42;
 $font-color-login: #FFF;
-$button-color-register: #003057;
+$button-color-register: #041E42;
 $font-color-register: #FFF;
 
 //login and register
