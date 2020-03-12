@@ -1,0 +1,113 @@
+// Sample dark theme to demonstrate SASS overrides
+
+// Theme colors
+//
+// Note: define colors needed by your theme first
+
+// Make the theme white on black
+
+//color
+$primary: #041E42;
+$primary-black: #041E42;
+$inverse: #FFF;
+$secondary: #003057;
+$container-bg: $inverse;
+$homepage-background: $inverse;
+$body-bg:$inverse;
+$action-primary-bg: $primary;
+$course-profile-bg: $inverse;
+$body-color:$secondary;
+$headings-base-color: $secondary !default;
+$course-header-bg: $inverse;
+$sidebar-color:#D9D9D9;
+$primary-font-color: $secondary;
+$link-color: $secondary;
+$link-hover: #4F4F4F;
+$forum-color-copy-light: $secondary;
+$lighter-base-font-color: $secondary;
+$color-button-upgrade: #008638;
+$btn-brand-focus-border-color: rgba(210, 219, 14, 0.5);
+$btn-brand-focus-background: rgba(210, 219, 14, 0.5);
+$pearson-grey: grey;
+$color-hover-icon-courses:#BFBFBF;
+$pearson-grey-font:#ccc;
+$pearson-grey-courseware: #e7e7e7;
+$pearson-grey-courseware-2: #c8c8c8;
+$pearson-grey-courseware-3: #fcfcfc;
+$pearson-grey-courseware-4: #828c92;
+$pearson-blue-courseware: #005abb;
+$pearson-dark-blue-courseware: #041E42;
+
+//Vue theme styling
+$vue-banner-bg: #D4EAE4;
+$vue-banner-text: #003057;
+$vue-btn: #007FA3;
+$vue-btn-text: #fff;
+$vue-header-footer: #003057;
+$vue-header-footer-text: #fff;
+$vue-courses-bg: #fff;
+$vue-dark: #003057;
+
+//Apprenticeships theme styling
+$app-banner-bg: #fff;
+$app-banner-text: #003057;
+$app-btn: #007FA3;
+$app-btn-text: #fff;
+$app-header-footer: #005A70;
+$app-header-footer-text: #fff;
+$app-header: #fff;
+$app-header-text: #007FA3;
+$app-courses-bg: #F3F3F3;
+$app-dark: #003057;
+
+//color inline
+$uxpl-blue-hover-active: $primary;
+$uxpl-gray-base: $secondary;
+$black: $secondary;
+$gray-d2: $secondary;
+$dark: $secondary;
+$lightest: $inverse;
+$white: $inverse;
+$blue: $primary;
+$gray-d3: $secondary;
+$light: #D9D9D9;
+$light-gray:#D9D9D9;
+$warning-color: $primary;
+$gray-l4: $inverse;
+$gray-l5: #D9D9D9;
+$gray-l6: #D9D9D9;
+$gray-l7: #D9D9D9;
+$m-gray-l4: #D9D9D9;
+$dark-gray1: $primary-font-color;
+$dark-gray: $primary-font-color;
+$gray:$secondary;
+$m-blue-d2:$primary;
+$m-blue-d3:$primary;
+$uxpl-blue-hover-active:$primary;
+$m-blue:$primary;
+
+
+// Theme fonts
+$font-family-sans-serif: Open Sans;
+$serif: Playfair Display;
+
+// Initialize the Open edX Bootstrap theme
+@import 'edx-bootstrap/sass/open-edx/theme';
+
+//navigation
+$button-color-login: #041E42;
+$font-color-login: #FFF;
+$button-color-register: #041E42;
+$font-color-register: #FFF;
+
+//login and register
+$background-color-form-login-register: $inverse;
+
+//courses
+$background-color-courses: $inverse;
+
+//profile
+$background-color-profile: $inverse;
+
+//course-info
+$background-color-info: $inverse;
