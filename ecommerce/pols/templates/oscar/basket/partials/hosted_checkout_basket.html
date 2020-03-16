@@ -101,35 +101,38 @@
 
     <div class="total">
         <div class="row">
-            {% if show_voucher_form %}
-                {% block vouchers %}
-                    {% if basket.contains_a_voucher %}
-                        <div class="vouchers col-sm-7 col-xs-8">
-                            {% for voucher in basket.vouchers.all %}
-                                <p class="voucher">
-                                    {% blocktrans with voucher_code=voucher.code %}
-                                        Coupon code {{ voucher_code }} applied
-                                    {% endblocktrans %}
-                                <form action="{% url 'basket:vouchers-remove' pk=voucher.id %}" method="POST">
-                                    {% csrf_token %}
-                                    <button class="remove-voucher" type="submit"><i class="fa fa-times"></i>
-                                    </button>
-                                </form>
-                                </p>
-                            {% endfor %}
-                        </div>
-                    {% else %}
-                        {# Hide the entire section if a custom BasketView doesn't pass in a voucher form #}
-                        {% if voucher_form %}
-                            <div class="use-voucher col-sm-7 col-xs-8">
-                                <p id="voucher_form_link">
-                                    <a href="#voucher">{% trans "Promotional Code" %}</a>
-                                </p>
-                                {% include 'basket/partials/add_voucher_form.html' %}
+            {# If hide_voucher_section is set to True, it will hide the voucher section no matter what. #}
+            {% if not custom_settings.hide_voucher_section %}
+                {% if show_voucher_form %}
+                    {% block vouchers %}
+                        {% if basket.contains_a_voucher %}
+                            <div class="vouchers col-sm-7 col-xs-8">
+                                {% for voucher in basket.vouchers.all %}
+                                    <p class="voucher">
+                                        {% blocktrans with voucher_code=voucher.code %}
+                                            Coupon code {{ voucher_code }} applied
+                                        {% endblocktrans %}
+                                    <form action="{% url 'basket:vouchers-remove' pk=voucher.id %}" method="POST">
+                                        {% csrf_token %}
+                                        <button class="remove-voucher" type="submit"><i class="fa fa-times"></i>
+                                        </button>
+                                    </form>
+                                    </p>
+                                {% endfor %}
                             </div>
+                        {% else %}
+                            {# Hide the entire section if a custom BasketView doesn't pass in a voucher form #}
+                            {% if voucher_form %}
+                                <div class="use-voucher col-sm-7 col-xs-8">
+                                    <p id="voucher_form_link">
+                                        <a href="#voucher">{% trans "Promotional Code" %}</a>
+                                    </p>
+                                    {% include 'basket/partials/add_voucher_form.html' %}
+                                </div>
+                            {% endif %}
                         {% endif %}
-                    {% endif %}
-                {% endblock vouchers %}
+                    {% endblock vouchers %}
+                {% endif %}
             {% endif %}
             <div id="basket_totals_intro" class="col-xs-10">
                     {% trans "Total:" %}
@@ -144,13 +147,17 @@
 
     <div class="row">
         <div class="col-sm-12">
-            {# Switch Basket view in between single and bulk purchase items #}
-            {% if partner_sku %}
-                <div class="pull-left basket-switch-link">
-                    <a href="/basket/add/?sku={{ partner_sku }}" class="btn btn-link">
-                        {{ switch_link_text }}
-                    </a>
-                </div>
+            {# If hide_multiple_or_single_purchase_section is set to True, it will hide this section no matter what. #}
+            {# See: get_basket_switch_data() #}
+            {% if not custom_settings.hide_multiple_or_single_purchase_section %}
+                {# Switch Basket view in between single and bulk purchase items #}
+                {% if partner_sku %}
+                    <div class="pull-left basket-switch-link">
+                        <a href="/basket/add/?sku={{ partner_sku }}" class="btn btn-link">
+                            {{ switch_link_text }}
+                        </a>
+                    </div>
+                {% endif %}
             {% endif %}
 
             <div class="pull-right payment-buttons" data-basket-id="{{ basket.id }}">
