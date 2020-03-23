@@ -1,0 +1,68 @@
+{% extends 'ace_common/edx_ace/common/base_body.html' %}
+
+{% load i18n %}
+{% load static %}
+{% block content %}
+<table width="100%" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation">
+
+   <tr>
+        <td style="width: 100%; 
+            max-width: 800px;
+            background-color: #FFF;
+            color: #000000;
+            margin: auto;
+            text-align: center;
+            border: 1px solid #F3F3F3;">
+
+            <img src="https://mylearningx.pearson.com/static/pearson-polsx-theme/images/PearsonLogo_Primary_Blk_RGB.png" style="width: 150px; padding: 5px;" />
+
+            <div style="width: 90%; 
+                        background-color: #D4EAE4;
+                        text-align: left;
+                        padding: 2% 5%;
+                        background-image: url('https://mylearningx.pearson.com/static/pearson-polsx-theme/images/laptop_transparent-bg.png');
+                        background-size: 50%;
+                        background-position: right bottom;
+                        background-repeat: no-repeat;">
+
+                <h1 style="font-family:'Playfair Display', serif; font-weight: 700;">
+                     {% blocktrans %}You have been removed as a beta tester{% endblocktrans %}
+                </h1>
+                <p style="padding: 0px;
+                          width: 50%;
+                          min-width: 300px;">
+                    {% blocktrans %}You have been removed as a beta tester for {{ course_name }} at {{ site_name }} by a member of the course staff. This course will remain on your dashboard, but you will no longer be part of the beta testing group. Your other courses have not been affected. {% endblocktrans %}
+                    <br />
+                </p>
+           
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <p style="font-family: 'Open Sans', sans-serif;
+                color: #505759;
+                text-align: left;
+                padding: 2% 5%;
+                margin: 0px;">
+                {% blocktrans %}If you are receiving this email in error, please let us know at <a href="mailto:{{ support_email }}">{{ support_email }}</a>.{% endblocktrans %}
+                <br />
+            </p>
+        </td>
+    <tr>
+     </tr>
+    <tr>
+        <td>
+            <p>
+                 {% blocktrans %}This email was automatically sent from {{ site_name }} to {{ email_address }}{% endblocktrans %}
+                <br />
+            </p>
+        </td>
+    </tr>
+
+
+
+
+</table>
+{% endblock %}

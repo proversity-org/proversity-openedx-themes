@@ -1,0 +1,89 @@
+{% extends 'ace_common/edx_ace/common/base_body.html' %}
+
+{% load i18n %}
+{% load static %}
+{% block content %}
+<table width="100%" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation">
+
+     <tr>
+        <td style="width: 100%; 
+            max-width: 800px;
+            background-color: #FFF;
+            color: #000000;
+            margin: auto;
+            text-align: center;
+            border: 1px solid #F3F3F3;">
+
+            <img src="https://mylearningx.pearson.com/static/pearson-polsx-theme/images/PearsonLogo_Primary_Blk_RGB.png" style="width: 150px; padding: 5px;" />
+
+            <div style="width: 90%; 
+                        background-color: #D4EAE4;
+                        text-align: left;
+                        padding: 2% 5%;
+                        background-image: url('https://mylearningx.pearson.com/static/pearson-polsx-theme/images/laptop_transparent-bg.png');
+                        background-size: 50%;
+                        background-position: right bottom;
+                        background-repeat: no-repeat;">
+
+                <h1 style="font-family:'Playfair Display', serif; font-weight: 700;">
+                    {% blocktrans %}
+                    You have been invited to be a beta tester for {{ course_name }} at {{ site_name }}
+                {% endblocktrans %}
+                </h1>
+                <p style="padding: 0px;
+                          width: 50%;
+                          min-width: 300px;">
+                    {% blocktrans %}The invitation has been sent by a member of the course staff. To start accessing course materials, please click the button below.{% endblocktrans %}
+                    <br />
+                </p>
+
+                 {% trans "View Course" as course_cta_text %}
+                 
+            {% if auto_enroll %}
+
+                {% include "ace_common/edx_ace/common/return_to_course_cta.html" with course_cta_text=display_name|default:course.display_name_with_default course_cta_url=course_url %}
+
+            {% elif course_about_url is not None %}
+          
+                {% blocktrans asvar course_cta_text %}Visit {{ course_name }}{% endblocktrans %}
+                {% include "ace_common/edx_ace/common/return_to_course_cta.html" with course_cta_text=course_cta_text course_cta_url=course_about_url %}
+            {% else %}
+         
+                {% blocktrans asvar course_cta_text %}Visit {{ site_name }}{% endblocktrans %}
+                {% include "ace_common/edx_ace/common/return_to_course_cta.html" with course_cta_text=course_cta_text course_cta_url=course_url %}
+            {% endif %}
+
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <p style="font-family: 'Open Sans', sans-serif;
+                color: #505759;
+                text-align: left;
+                padding: 2% 5%;
+                margin: 0px;">
+                {% blocktrans %}If you are receiving this email in error, please let us know at <a href="mailto:{{ support_email }}">{{ support_email }}</a>.{% endblocktrans %}
+                <br />
+            </p>
+        </td>
+    <tr>
+     </tr>
+    <tr>
+        <td>
+            <p>
+                {% blocktrans %}This email message was automatically sent because someone attempted to create an account on {{ site_name }} using this email address.{% endblocktrans %}
+                <br />
+            </p>
+        </td>
+    </tr>
+
+
+
+
+
+
+
+</table>
+{% endblock %}
