@@ -14,7 +14,7 @@
     </tr>
 {% endif %}
     <tr>
-        <td style="width: 100%; 
+        <td style="width: 100%;
             max-width: 800px;
             background-color: #FFF;
             color: #000000;
@@ -22,9 +22,9 @@
             text-align: center;
             border: 1px solid #F3F3F3;">
 
-            <img src="https://mylearningx.pearson.com/static/pearson-pols-theme/images/PearsonLogo_Primary_Blk_RGB.png" style="width: 150px; padding: 5px;" />
+            <img src="https://allangraymakers.proversity.io/static/allan-gray-makers-theme/images/AGM_logo.png" style="width: 150px; padding: 5px;" />
 
-            <div style="width: 90%; 
+            <div style="width: 90%;
                         background-color: #D4EAE4;
                         text-align: left;
                         padding: 2% 5%;
@@ -33,7 +33,7 @@
                         background-position: right bottom;
                         background-repeat: no-repeat;">
 
-                <h1 style="font-family:'Playfair Display', serif; font-weight: 700;">
+                <h1 style="font-weight: 700;">
                     {% trans "You're Nearly Signed Up" %}
                 </h1>
                 <p style="padding: 0px;
@@ -42,14 +42,14 @@
                     {% blocktrans %}To validate your new account, please click on the Validate Account button below.{% endblocktrans %}
                     <br />
                 </p>
-           
+
                  {% trans "Validate Account" as course_cta_text %}
                 {% include "ace_common/edx_ace/common/return_to_course_cta.html" with course_cta_text=course_cta_text course_cta_url=confirm_activation_link %}
 
             </div>
         </td>
     </tr>
- 
+
     <tr>
         <td>
             <p style="font-family: 'Open Sans', sans-serif;
@@ -72,4 +72,4 @@
         </td>
     </tr>
 </table>
-{% endblock %} 
+{% endblock %}
