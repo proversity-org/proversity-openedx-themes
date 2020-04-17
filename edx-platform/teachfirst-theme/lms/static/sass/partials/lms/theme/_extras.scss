@@ -4,6 +4,10 @@
 @import 'button';
 @import 'course';
 
+div#mobile-section {
+  display: none;
+}
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
