@@ -7216,6 +7216,7 @@ section {
 }
 
 .scroll-animation-default {
+  display: none;
   position: absolute;
   left: 50%;
   &:before {
