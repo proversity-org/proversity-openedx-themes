@@ -55,6 +55,9 @@ from six import text_type
       </thead>
       <tbody>
         %for student in students:
+          % if student.get('is_master_course_staff', False):
+            <% continue %>
+          % endif
         <tr>
           <td>
             <a href="${reverse('student_progress', kwargs=dict(course_id=text_type(course_id), student_id=student['id']))}">${student['username']}</a>
@@ -109,6 +112,9 @@ from six import text_type
 
         <tbody>
           %for student in students:
+            % if student.get('is_master_course_staff', False):
+              <% continue %>
+            % endif
           <tr>
             %for section in student['grade_summary']['section_breakdown']:
               ${percent_data( section['percent'], section['detail'] )}
