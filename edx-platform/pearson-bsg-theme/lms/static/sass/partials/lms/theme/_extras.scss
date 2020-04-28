@@ -59,6 +59,7 @@ textarea {
 
 a, a:visited:not(.btn) {
   color: $primary ;
+  text-decoration: underline;
 }
 
 input[type="text"],
