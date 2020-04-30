@@ -1,0 +1,95 @@
+{% extends 'ace_common/edx_ace/common/base_body.html' %}
+
+{% load i18n %}
+{% load static %}
+{% block content %}
+<table width="100%" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation">
+    <tr>
+        <td>
+            <h1>
+                {% blocktrans %}
+                    
+                {% endblocktrans %}
+            </h1>
+
+            <p style="color: rgba(0,0,0,.75);">
+                
+                <br />
+            </p>
+
+            
+
+            <p style="color: rgba(0,0,0,.75);">
+                {% blocktrans %}This email was automatically sent from {{ site_name }} to {{ full_name }}{% endblocktrans %}
+                <br />
+            </p>
+        </td>
+    </tr>
+
+
+
+
+
+   <tr>
+        <td style="width: 100%; 
+            max-width: 800px;
+            background-color: #FFF;
+            color: #000000;
+            margin: auto;
+            text-align: center;
+            border: 1px solid #F3F3F3;">
+
+            <img src="https://allangraymakers.proversity.io/static/allan-gray-makers-theme/images/AGM_logo.png" style="width: 150px; padding: 5px;" />
+
+            <div style="width: 90%; 
+                        background-color: #D4EAE4;
+                        text-align: left;
+                        padding: 2% 5%;
+                        background-image: url('https://mylearningx.pearson.com/static/pearson-pols-theme/images/laptop_transparent-bg.png');
+                        background-size: 50%;
+                        background-position: right bottom;
+                        background-repeat: no-repeat;">
+
+                <h1 style="font-weight: 700;">
+                     You have been enrolled in {{ course_name }}
+                </h1>
+                <p style="padding: 0px;
+                          width: 50%;
+                          min-width: 300px;">
+                    {% blocktrans %}You have been enrolled in {{ course_name }} at {{ site_name }} by a member of the course staff. This course will now appear on your {{ site_name }} dashboard.{% endblocktrans %}
+                    <br />
+                </p>
+           
+           {% trans "Access the Course Materials Now" as course_cta_text %}
+            {% include "ace_common/edx_ace/common/return_to_course_cta.html" with course_cta_text=course_cta_text course_cta_url=course_url %}
+
+            </div>
+        </td>
+    </tr>
+ 
+    <tr>
+        <td>
+            <p style="font-family: 'Open Sans', sans-serif;
+                color: #505759;
+                text-align: left;
+                padding: 2% 5%;
+                margin: 0px;">
+                {% blocktrans %}If you are receiving this email in error, please let us know at <a href="mailto:{{ support_email }}">{{ support_email }}</a>.{% endblocktrans %}
+                <br />
+            </p>
+        </td>
+    <tr>
+     </tr>
+    <tr>
+        <td>
+            <p>
+                 {% blocktrans %}This email was automatically sent from {{ site_name }} to {{ full_name }}{% endblocktrans %}
+                <br />
+            </p>
+        </td>
+    </tr>
+
+
+
+</table>
+{% endblock %}
