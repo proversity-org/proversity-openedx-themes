@@ -90,14 +90,16 @@ from openedx.core.djangolib.markup import HTML, Text
             </tr>
           </thead>
           <tbody>
+            <%!
+            hide_staff_users = configuration_helpers.get_value('HIDE_MASTER_COURSE_STAFF_FROM_STUDENT_LIST', False)
+            %>
             %for member in ccx_members:
+              % if hide_staff_users and (member.user.is_staff or get_user_role(member.user, course) != 'student'):
+                <% continue %>
+              % endif
             <tr>
               <td>${member.user}</td>
-              % if not member.user.is_staff and get_user_role(member.user, course) == 'student':
-                <td>${member.user.email}</td>
-              % else:
-                <td>${_("This email is private.")}</td>
-              %endif
+              <td>${member.user.email}</td>
               % if configuration_helpers.get_value('ALLOW_CCX_REVOKE_ACCESS', True):
                 <td><button type="button" class="revoke"><span class="fa fa-times-circle" aria-hidden="true"></span>${_("Revoke access")}</button></td>
               %endif
