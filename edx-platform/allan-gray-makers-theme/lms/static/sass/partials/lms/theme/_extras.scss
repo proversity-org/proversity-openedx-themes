@@ -222,3 +222,15 @@ iframe.rocket-chat-view {
 .modal .inner-wrapper .close-modal:focus {
   outline: none;
 }
+
+.wrap-instructor-info .instructor-info-action {
+    background-color: #fff !important;
+    color: #0076BB !important;
+    
+}
+
+
+.wrap-instructor-info .instructor-info-action:hover {
+    background-color: #0076BB !important;
+    color: #fff !important;
+}
