@@ -80,6 +80,14 @@
                 box-shadow: 0 1px 5px rgba(0,0,0,0.25);
             ">
                 {% block content %}{% endblock %}
+
+                <p style="color: rgba(0,0,0,.75);">
+
+                {% trans "You received this email because you registered for a Global Communications Academy course. If you received this email in error please contact " %}<a href="mailto:comms.elearning@cabinetoffice.gov.uk">comms.elearning@cabinetoffice.gov.uk</a>. <a href="https://www.gov.uk/government/publications/privacy-notice-for-uk-government-communication-service-international-training" style="color: #0f1d4e;">{%  trans "Privacy notice." %}</a>  
+
+                <br/>
+                </p>
+
             </td>
         </tr>
 
