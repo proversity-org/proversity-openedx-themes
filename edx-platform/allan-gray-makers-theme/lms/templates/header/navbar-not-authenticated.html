@@ -25,9 +25,10 @@ register_url = configuration_helpers.get_value('register_url', '')
   can_discover_courses = settings.FEATURES.get('ENABLE_COURSE_DISCOVERY')
   restrict_enroll_for_course = course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain
   allow_public_account_creation = static.get_value('ALLOW_PUBLIC_ACCOUNT_CREATION', settings.FEATURES.get('ALLOW_PUBLIC_ACCOUNT_CREATION'))
+  show_catalogue_link = configuration_helpers.get_value('show_catalogue_link', 'true')
 %>
   
-% if not theme:
+% if show_catalogue_link:
   <div class="nav-links">
     <div class="main">
         <div class="mobile-nav-item hidden-mobile nav-item nav-tab">
