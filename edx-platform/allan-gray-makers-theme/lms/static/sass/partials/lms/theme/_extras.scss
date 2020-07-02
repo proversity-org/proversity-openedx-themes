@@ -15,7 +15,6 @@
 @import 'dashboard';
 @import 'support';
 @import 'login-register';
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
 
 //registration 
@@ -233,4 +232,11 @@ iframe.rocket-chat-view {
 .wrap-instructor-info .instructor-info-action:hover {
     background-color: #0076BB !important;
     color: #fff !important;
+}
+
+@font-face {
+  font-family: 'DINPro-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/DINPro-Regular_13937.woff") format("woff");
 }
