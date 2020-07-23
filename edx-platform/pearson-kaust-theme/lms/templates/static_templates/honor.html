@@ -1,0 +1,112 @@
+## mako
+
+<%inherit file="/main.html" />
+<%namespace name='static' file='/static_content.html'/>
+<%!
+from django.utils.translation import ugettext as _
+from openedx.core.djangolib.markup import HTML, Text
+%>¯
+
+
+<%block name="title"><title>${_("Terms of Use and Honor Code")}</title></%block>
+
+  
+<section role="legal">
+  <div class="container no-border">
+    <div class="row">
+      <div class="col-md-12 col-xs-12">
+        <button type="button" class="btn btn-default pull-right print">${_("Print Terms of Use and Honor Code")}</button>
+        <h2>${_("Terms of Use")}</h2>
+        <h2>${_("PLEASE READ THE FOLLOWING CAREFULLY")}</h2>
+        <p>${_("IF YOU ARE UNDER 18 YEARS OF AGE, PLEASE BE SURE TO READ THIS AGREEMENT WITH YOUR PARENTS OR GUARDIAN AND ASK QUESTIONS ABOUT THINGS YOU DO NOT UNDERSTAND.")}</p>
+        <p>${_("Pearson Education, Inc. and its subsidiaries and affiliates (&ldquo;Pearson&rdquo;) are providing you this site and its related applications and services (collectively, &ldquo;Service&rdquo;). The Service may be delivered to you through the Internet via your browser or app (mobile or otherwise).&nbsp;&nbsp;")}</p>
+        <p>${_("This Service permits you to enroll in certain educational courses and programs at the listed cost(s).&nbsp; These courses and programs include opportunities to interact with fellow students, advisors, and oftentimes with subject matter experts.&nbsp; Such courses and programs may also include individual assessment of a student's work and, for students who demonstrate their mastery of subjects, a certificate of achievement or other acknowledgment.&nbsp; In some instances, the course content will be fully owned and delivered by Pearson while, in other cases, Pearson will deliver courses that are owned and distributed by a third party.&nbsp; Criteria for successful completion of each course and/or program shall be set by the content owner.")}</p>
+        <p>${_("The courses and programs offered as part of this Service will be offered in a variety of configurations.&nbsp; In some cases Pearson will license courses and programs from a 3rd party and host them entirely within its own learning environment.&nbsp; In other cases, Pearson will provide products and services designed to improve the learning experience on its server while directing the user to a 3rd party for the course level experience.")}</p>
+        <p>${Text(_("Your use of the Service is subject to all terms and policies posted on this site or the legal information section of the app (including the {link_start}Privacy Statement{link_end}; collectively referred to as the &ldquo;Terms of Use&rdquo;).")).format(link_start=HTML("<a href=\"https://docs.google.com/document/d/1TiOqYHhssmmAWyCc3Qg5OWkHjsTkgApgMySXQ16tu6I/edit\" target=\"_blank\">"), link_end=HTML("</a>"))}</p>
+        <p>${Text(_("It is important to us that the Service provides you with a helpful and reliable experience. To protect our rights and yours, we have prepared the Terms of Use that apply to all users of the Service. If you have any questions concerning the Terms of Use, please {link_start}Contact Us{link_end}.")).format(link_start=HTML("<a href=\"mailto:pxadmin@pearson.com\" target=\"_blank\">"),link_end=HTML("</a>"),)}</p>
+        <p>${_("PLEASE NOTE THAT THE USAGE TERMS, PURCHASE TERMS AND/OR PRIVACY POLICIES OF OTHER PEARSON AND THIRD-PARTY PRODUCTS AND SERVICES LINKED TO OR FROM THIS SERVICE MAY VARY FROM THE TERMS HEREIN SO PLEASE MAKE SURE TO CHECK THE TERMS AND POLICIES APPLICABLE TO SUCH OTHER PRODUCTS AND SERVICES PRIOR TO USE.")}</p>
+        <p>${_("BY USING THE SERVICE, YOU REPRESENT THAT YOU HAVE READ AND UNDERSTOOD THE TERMS OF USE AND AGREE TO BE BOUND BY THEM. YOU AGREE TO USE THE SERVICE IN A MANNER CONSISTENT WITH ALL APPLICABLE LAWS AND REGULATIONS AND IN ACCORDANCE WITH THE TERMS OF USE. DO NOT USE THIS SERVICE IF AT ANY TIME YOU DO NOT AGREE WITH ANY PART OF THE TERMS OF USE.")}</p>
+        <h2>${_("Privacy")}</h2>
+        <p>${Text(_("Pearson is concerned about the safety and privacy of all users of the Service. Please read our {link_start}Privacy Statement{link_end}, which is an important part of the Terms of Use.")).format(link_start=HTML("<a href=\"https://docs.google.com/document/d/1TiOqYHhssmmAWyCc3Qg5OWkHjsTkgApgMySXQ16tu6I/edit#heading=h.gjdgxs\" target=\"_blank\">"), link_end=HTML("</a>"),)}</p>
+        <h2>${_("Changes in Terms of Use")}</h2>
+        <p>${Text(_("Pearson has the right to change or modify the Terms of Use at any time, including the&nbsp;{link_start}Privacy Statement{link_end} applicable to your use of the Service. Such changes or modifications shall be effective immediately upon notice, which may be given by means including, but not limited to, posting within the Service, or by electronic or conventional mail, messaging, or by any other means by which you may obtain notice. Any use of the Service by you subsequent to such notice shall be deemed to constitute your acceptance of such changes or modifications.")).format(link_start=HTML("<a href=\"https://docs.google.com/document/d/1TiOqYHhssmmAWyCc3Qg5OWkHjsTkgApgMySXQ16tu6I/edit#heading=h.gjdgxs\" target=\"_blank\">"), link_end=HTML("</a>"),)}</p>
+        <h2>${_("User License")}</h2>
+        <p>${_("You are granted a limited, personal, non-exclusive, non-assignable, and non-transferable license to access and use the Service for non-commercial, personal use only. You may not adapt, download, revise, broadcast, reverse engineer, duplicate, publish, modify, disseminate, display, perform, transfer, or otherwise distribute any content or other material on the Service, unless specifically authorized by Pearson or this Terms of Use.")}</p>
+        <p>${_("Under no circumstances may a user of the Service (i) frame or utilize framing techniques to enclose any part of the Service; (ii) gather, obtain, use, access or otherwise copy any part of the Service by using any bot, spider, crawler, spy ware, engine, device, software or any other automatic device, utility or manual process of any kind; (iii) use the Service or any features available on the Service in any manner with the intent to interrupt, damage, disable, overburden or impair the Service or such services; or (iv) engage in any activity that interferes with another user&rsquo;s access, use or enjoyment of this Service.")}</p>
+        <p>${_("Use of the Service for any purpose other than as contemplated in the Terms of Use is a violation of Pearson&rsquo;s and/or its licensors&rsquo; copyright and proprietary rights. Neither Pearson nor its licensors guarantee the accuracy or completeness of any information or content. You agree that you must evaluate, and bear all risks associated with the use of any content, including any reliance on the accuracy, completeness, or usefulness of such content. All rights not expressly granted herein are reserved by Pearson.")}</p>
+        <p>${_("Certain features of this Service may be provided by third parties and the use of such features may be conditioned upon your agreement to such third parties&rsquo; terms of use and privacy policies. You understand that the Terms of Use applies only to the parts of the Service that reside on Pearson&rsquo;s (or its service provider&rsquo;s) servers and not to those that reside on third-party servers not controlled by Pearson.")}</p>
+        <h2>${_("Representation and Warranty")}</h2>
+        <p>${_("As a condition of your use of the Service, you warrant to Pearson that you will not use the Service for any purpose that is unlawful or prohibited by the Terms of Use. You agree not to obtain or attempt to obtain any materials or information not intentionally made available to you on the Service.")}</p>
+        <h2>${_("Uploads")}</h2>
+        <p>${_("To the extent that the Service may provide you with an opportunity to upload material (&ldquo;Uploads&rdquo;), BE ADVISED THAT PEARSON HAS NO OBLIGATION TO SCREEN, EDIT, OR REVIEW SUCH UPLOADS PRIOR TO THEIR APPEARANCE ON THE SERVICE, and Uploads do not necessarily reflect the views of Pearson. To the fullest extent permitted by applicable laws, in no event shall Pearson have any responsibility or liability for the Uploads (or the loss thereof for any reason) or for any claims, damages, or losses resulting from their use (or loss) and/or appearance on the Service. Please keep in mind that Uploads may be discoverable by, and viewable to, other users of the Service. Pearson reserves the right to monitor the Uploads and to remove anything which it considers in its absolute discretion to be offensive, ineffective or otherwise in breach of the Terms of Use or for any other reason as Pearson deems necessary.")}</p>
+        <p>${_("You hereby represent and warrant that your Uploads shall not contain any viruses or other contaminating or destructive devices or features; that your Uploads will not contain any defamatory, indecent, offensive, tortious, or otherwise unlawful material or content; and that your Uploads will not be used to carry out or solicit any unlawful activity and/or be used to make commercial solicitations. You further represent and warrant that you have all necessary rights in and to the Uploads to be used in connection with the Service and that your Uploads will not infringe any intellectual, proprietary or other rights of third parties.")}</p>
+        <p>${_("BY SUBMITTING AN UPLOAD, YOU GRANT PEARSON THE ROYALTY-FREE, PERPETUAL, IRREVOCABLE, NON-EXCLUSIVE RIGHT AND LICENSE TO USE, REPRODUCE, MODIFY, ADAPT, PUBLISH, PERFORM, TRANSLATE AND DISTRIBUTE SUCH UPLOAD (IN WHOLE OR IN PART) WORLDWIDE AND/OR TO INCORPORATE IT IN OTHER WORKS IN ANY FORM, MEDIA OR TECHNOLOGY NOW KNOWN OR HEREAFTER DEVELOPED FOR THE FULL TERM OF ANY COPYRIGHT THAT MAY EXIST IN SUCH UPLOAD.")}</p>
+        <h2>${_("Termination")}</h2>
+        <p>${_("Pearson reserves the right at any time, and from time to time, to discontinue, temporarily or permanently, the Service or any part thereof or terminate any user&rsquo;s access to the Service or any part thereof. Pearson may also modify, delete or adapt the Service at any time without any notice or obligation to the user at Pearson&rsquo;s sole discretion. Your right to use and otherwise access the Service is automatically terminated if you violate the Terms of Use. You agree that Pearson will not be liable to you or any third party for any modification, suspension, or discontinuation of the Service, or any part thereof. Upon termination for any reason, you must cease all access to the Service. All provisions of the Terms of Use as to limitation and disclaimer of warranties, limitation of liability, Pearson&rsquo;s ownership rights and your representations and indemnities shall survive termination.")}</p>
+        <h2>${_("Links to and from Other Websites")}</h2>
+        <p>${_("You may have linked to the Service from a third-party website and the Service may provide links to other third-party websites or resources (collectively, &ldquo;3P Sites&rdquo;). Because we do not control such 3P Sites you acknowledge and agree that Pearson is not responsible or liable for the content, products or performance of those 3P Sites, and you hereby irrevocably waive any claim against Pearson with respect to such sites. Pearson reserves the right to terminate any link at any time without notice. The inclusion of a link to such 3P Sites does not constitute or imply an endorsement, authorization, sponsorship, or affiliation by Pearson of that 3P Site, or any products or services provided therein. The information practices of those 3P Sites are not covered by the Terms of Use or any other policies or terms applicable to the Service. We recommend that you review any terms of use and privacy policy of those 3P Sites linked to the Service before providing any information to those websites or using their products and services.")}</p>
+        <p>${_("Please note that the Service may also provide links to other sites brought to you by Pearson. The privacy statement and terms of use of other Pearson sites may vary from the Terms of Use. Please review the privacy statements, terms of use and other policies or terms that may apply to other Pearson sites prior to your use of such sites.")}</p>
+        <h2>${_("Copyright and Trademark Notices")}</h2>
+        <p>${_("The entire content of the Service and any supporting software are the proprietary property of Pearson and/or its licensors, and are protected by U.S. and international copyright and other intellectual property laws. The reproduction, redistribution, modification or publication of any part of the Service without the express written consent of Pearson and/or its licensors is strictly prohibited.")}</p>
+        <p>${_("Unless otherwise indicated, trademarks that appear on this Service are trademarks of Pearson or its affiliates. All other trademarks not owned by Pearson or its affiliates that appear in the Service are the property of their respective owners, who may or may not be affiliated with, connected to, or sponsored by Pearson or its affiliates. You agree not to display, disparage, dilute, or taint our trademarks or use any confusing similar marks or use our trademarks in such a way that would misrepresent the ownership of such marks. Any permitted use of our trademarks by you shall be to the benefit of Pearson.")}</p>
+        <h2>${_("Disclaimer of Warranties")}</h2>
+        <p>${_("YOU EXPRESSLY UNDERSTAND AND AGREE THAT:")}</p>
+        <p>${_("(a) YOUR USE OF THE SERVICE IS AT YOUR OWN RISK. THE SERVICE IS PROVIDED ON AN &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; BASIS. YOU ACKNOWLEDGE AND AGREE THAT NO WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, ARE MADE BY PEARSON OR ITS LICENSORS AND PEARSON AND ITS LICENSORS EXPRESSLY DISCLAIM ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT;")}</p>
+        <p>${_("(b) NEITHER PEARSON NOR ITS LICENSORS MAKE ANY WARRANTY THAT (i) THE SERVICE WILL MEET YOUR REQUIREMENTS; (ii) THE SERVICE WILL BE UNINTERRUPTED, AVAILABLE FOR ANY LENGTH OF TIME, SECURE, OR ERROR-FREE; (iii) THE RESULTS THAT MAY BE OBTAINED FROM THE USE OF THE SERVICE WILL BE ACCURATE OR RELIABLE; (iv) THE QUALITY OF ANY PRODUCTS, SERVICES, INFORMATION, OR OTHER MATERIAL PURCHASED OR OBTAINED BY YOU THROUGH THE SERVICE WILL MEET YOUR EXPECTATIONS; AND (v) ANY ERRORS OR DEFECTS IN THE SERVICE WILL BE CORRECTED; AND")}</p>
+        <p>${_("(c) ANY MATERIAL UPLOADED/DOWNLOADED OR OTHERWISE OBTAINED FROM THE SERVICE IS DONE AT YOUR OWN DISCRETION AND RISK; NEITHER PEARSON NOR ITS LICENSORS SHALL BE LIABLE, AND YOU WILL BE SOLELY RESPONSIBLE, FOR ANY AND ALL LOSS, OR CORRUPTION, OF DATA UPLOADED OR INPUTTED BY YOU THROUGH THE USE OF THE SERVICE, AND ALL SERVICING, REPAIR, OR CORRECTION AND ANY DAMAGE TO YOUR HARDWARE AND SOFTWARE THAT MAY RESULT FROM THE USE OF THE SERVICE.")}</p>
+        <h2>${_("Limitation of Liability")}</h2>
+        <p>${_("IN NO EVENT SHALL PEARSON OR ITS EMPLOYEES, AGENTS, LICENSORS, OR CONTRACTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE OR EXEMPLARY DAMAGES, DAMAGES FOR LOSS OF PROFITS, GOODWILL, USE OF DATA, OR OTHER INTANGIBLE LOSSES (EVEN IF SUCH PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES), RESULTING FROM: (i) THE LOSS OF DATA AND/OR THE USE OR THE INABILITY TO USE THE SERVICE; (ii) THE COST OF PROCUREMENT OF SUBSTITUTE GOODS AND SERVICES RESULTING FROM ANY GOODS, DATA, INFORMATION OR SERVICES PURCHASED OR OBTAINED OR MESSAGES RECEIVED OR TRANSACTIONS ENTERED INTO THROUGH OR FROM THE SERVICE; (iii) UNAUTHORIZED ACCESS TO OR ALTERATION OF YOUR TRANSMISSIONS OR DATA; (iv) STATEMENTS OR CONDUCT OF ANY THIRD PARTY ON THE SERVICE; OR (v) ANY OTHER MATTER RELATING TO THE SERVICE.")}</p>
+        <p>${_("Some jurisdictions do not allow the exclusion of certain warranties or the limitation or exclusion of liability for incidental or consequential damages. Accordingly, the limitations above may not apply to you.")}</p>
+        <h2>${_("Indemnification")}</h2>
+        <p>${_("You agree to indemnify and hold Pearson and its subsidiaries, affiliates, officers, agents, directors, licensors, contractors and employees harmless from any claims, actions, costs, liabilities, expenses and damages, including reasonable attorneys&rsquo; fees and expenses, made against Pearson by any third party due to or arising out of your use of the Service, your connection to the Service, your breach of any representation, warranty or obligation, your violation of this Terms of Use, or your violation of any rights of another user.")}</p>
+        <h2>${_("Submissions")}</h2>
+        <p>${_("Pearson always welcomes suggestions and comments regarding the Service. Any comments or suggestions submitted to the Service or Pearson, either online or offline, will become Pearson&rsquo;s property upon their submission. This policy is intended to avoid the possibility of future misunderstandings when projects developed by Pearson might seem to others to be similar to their own submissions or comments.")}</p>
+        <h2>${_("Digital Millennium Copyright Act Compliance")}</h2>
+        <p>${_("If you have any copyright concerns about any materials posted on the Service by others, please let us know. We comply with the provisions of the Digital Millennium Copyright Act applicable to Internet service providers (17 U.S.C. &sect; 512). Unless otherwise stated in any specific DMCA designation provided by Pearson, please provide us with written notice (&ldquo;Notice&rdquo;) by contacting our Designated Agent at the following address:")}</p>
+        <ul>
+        <li type="none">${_("DMCA Designated Agent Pearson Education,Inc.")}</li>
+        <li type="none">${_("221 River Street")}</li>
+        <li type="none">${_("Hoboken,NJ 07030")}</li>
+        <li type="none">${_("Facsimile: (201)785-2721")}</li>
+        <li type="none">${Text(_("email: {link_start}dmca.agent@pearsoned.com{link_end}")).format(link_start=HTML("<a href=\"mailto:dmca.agent@pearsoned.com\" target=\"_blank\">"), link_end=HTML("</a>"),)}</li>
+        </ul>
+        <p>${_("To be effective, the Notice must include the following:")}</p>
+        <ul>
+        <ul>
+        <li>${_("A physical or electronic signature of the owner, or a person authorized to act on behalf of the owner, (&ldquo;Complaining Party&rdquo;) of an exclusive right that is allegedly being infringed upon;")}</li>
+        <li>${_("Information reasonably sufficient to permit Pearson to contact the Complaining Party, such as an address, telephone number, and if available, an electronic mail address;")}</li>
+        <li>${_("Identification of the allegedly infringing material on the Service (&ldquo;Infringing Material&rdquo;), and information reasonably sufficient to permit Pearson to locate such material on the Service;")}</li>
+        <li>${_("Identification of the copyrighted work claimed to have been infringed upon (&ldquo;Infringed Material&rdquo;), or if multiple copyrighted works on the Service are covered by a single Notice, a list of each copyrighted work claimed to have been infringed (please be specific as to which Infringing Material is infringing on which Infringed Material);")}</li>
+        <li>${_("A statement that the Complaining Party has a good faith belief that use of Infringing Material in the manner complained of is not authorized by the copyright owner, its agent, or the law; and")}</li>
+        <li>${_("A statement that the information in the Notice is accurate, and under penalty of perjury, that the Complaining Party is the owner or is authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.")}</li>
+        </ul>
+        </ul>
+        <h2>${_("General Information; Governing Law")}</h2>
+        <p>${_("The Terms of Use constitute the entire agreement between you and Pearson, govern your use of the Service, and supersede any prior agreements between you and Pearson concerning the Service. You also may be subject to additional terms and conditions that may apply when you use affiliated services, third-party content or third-party software. The Terms of Use and the relationship between you and Pearson will be governed by the laws of the State of New York without regard to its conflict of law provisions. You and Pearson agree to submit to the personal and exclusive jurisdiction of the courts located within the County of New York, State of New York. The failure of Pearson to exercise or enforce any right or provision of the Terms of Use shall not constitute a waiver of such right or provision. If any provision of the Terms of Use is found by a court of competent jurisdiction to be invalid, the parties nevertheless agree that the court should endeavor to give effect to the parties&rsquo; intentions as reflected in the provision, and the other provisions of the Terms of Use remain in full force and effect. You agree that regardless of any statute or law to the contrary, any claim or cause of action arising out of or related to use of the Service or the Terms of Use must be filed within one (1) year after such claim or cause of action arose or be forever barred.")}</p>
+        <h2>${_("Ownership")}</h2>
+        <p>${_("This Service is owned and operated by Pearson and the contents of this Service are protected by copyright of Pearson and/or its licensors.")}</p>
+        <h2>${_("Violations")}</h2>
+        <p>${Text(_("Please report any violations of the Terms of Use by {link_start}contacting us{link_end}.")).format(link_start=HTML("<a href=\"mailto:pxadmin@pearson.com\" target=\"_blank\">"), link_end=HTML("</a>"),)}</p>
+                  <p><strong>${_("Last Update to Terms of Use: May 2019")}</strong></p>
+        <p>${_("")}</p>
+        <button type='button' class='btn btn-default pull-right print'>${_("Print Terms of Use and Honor Code")}</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  $(document).ready(function() {
+    $('#content section .container .row div button.print').click(function() {
+      window.print();
+      return false;
+    });
+  });
+</script>
+
+<script>
+  $(document).ready(function () {
+    $("link[href*='/static/css/lms-main-v1']").remove();
+  });
+</script>
