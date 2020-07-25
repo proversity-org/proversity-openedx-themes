@@ -1,0 +1,259 @@
+// Styles for header and navigation templates.
+
+@import '_variables';
+
+.navbar-right {
+  align-items: center;
+  display: flex;
+}
+
+.navbar {
+  height: auto;
+  margin-bottom: 0;
+  border-radius: 0;
+  direction: ltr;
+}
+
+.navbar-default {
+  background-image: linear-gradient(to right, $primary, $primary-gradient);
+  border: none;
+
+  .navbar-text {
+    color: #000;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    padding-top: 20px;
+  }
+
+  .navbar-toggle {
+    border: none;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+    &:hover, &:focus {
+      background: none;
+      border: none !important;
+    }
+
+    &:hover .icon-bar, &:focus .icon-bar {
+      background: #666;
+    }
+
+    .icon-bar {
+      background: #000;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.navbar-content {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background: #6a6d6d;
+  z-index: 9999;
+  overflow-x: hidden;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: inset 4px 0px 30px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 4px 0px 30px 1px rgba(0, 0, 0, 0.2);
+
+  h1, h2 {
+    text-align: center !important;
+    color: #fff;
+  }
+
+  img {
+    display: block;
+    margin: 4px auto;
+    width: 15%;
+    border-radius: 50%;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-align: center !important;
+
+    .active {
+      background: $primary;
+    }
+
+    li {
+      border-bottom: 1px solid #fff;
+
+      a {
+        display: block;
+        padding: 15px;
+        color: #fff !important;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        text-decoration: none;
+
+        &:hover, &:focus {
+          color: #ccc;
+        }
+      }
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+
+  .brand {
+    border-radius: 0;
+    margin: 50px auto;
+    width: auto;
+  }
+
+  .dropdown-options {
+    padding: 0 15px;
+    margin: 15px 0;
+
+    .dropdown-toggle {
+      background: none;
+      border: 1px solid #fff;
+      border-radius: 0;
+      margin: 0 !important;
+      color: #fff !important;
+      width: 100%;
+
+      &:hover, &:focus {
+        background: none;
+        color: #fff !important;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+      }
+
+      span {
+        color: #fff !important;
+      }
+    }
+
+    .dropdown-menu {
+      width: 91%;
+      border-radius: 0;
+      top: 100%;
+      left: 0;
+      padding: 0;
+      margin: 0 15px;
+      z-index: 1030;
+      text-align: center !important;
+
+      li a {
+        padding: 5px 0;
+        color: #000 !important;
+
+        &:hover, &:focus {
+          background: $primary;
+          color: #000;
+        }
+      }
+    }
+  }
+
+  .open > .dropdown-toggle.btn-default {
+    color: #fff;
+    background: none;
+  }
+
+  .search {
+    width: 100%;
+    padding: 0 14px 0 24px;
+
+    input {
+      border-bottom: 1px solid #fff !important;
+      width: 100%;
+
+      &::-webkit-input-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &:-moz-placeholder {
+        color: #fff;
+      }
+    }
+
+    a {
+      position: absolute;
+      top: -1px;
+      right: 20px;
+      color: #fff !important;
+      font-size: 1.5em;
+
+      &:hover, &:focus {
+        text-decoration: none;
+      }
+    }
+
+    button {
+      background: none;
+      border: none;
+      position: absolute;
+      top: 0;
+      right: 43px;
+      color: #000;
+    }
+
+    .fa-search {
+      position: absolute;
+      top: 5px;
+      left: 20px;
+      color: #fff !important;
+      font-size: 1.5em;
+    }
+  }
+
+  .breadcrumbs {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0 15px;
+    text-align: center;
+    width: 100%;
+
+    li {
+      display: inline;
+      border: none;
+
+      &:after {
+        content: ":";
+        padding: 0 5px 0 5px;
+      }
+
+      &:last-child:after {
+        content: none;
+        padding: 0;
+      }
+    }
+  }
+
+  .navbar-content-close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #fff !important;
+    z-index: 5;
+
+    &:hover, &:focus {
+      color: #ccc;
+      text-decoration: none;
+    }
+  }
+}
