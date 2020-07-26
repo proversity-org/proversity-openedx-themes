@@ -9,7 +9,7 @@ from six import text_type
 
 <div class="items course single-course" id="${course.id}" role="region" aria-label="${course.display_name_with_default}">
     <a href="${reverse('about_course', args=[text_type(course.id)])}">
-        <img src="${course.course_image_url}" class="img-responsive" alt="${course.display_name_with_default} ${course.display_number_with_default}" />
+        <img src="${course.course_image_url}" class="img-fluid" alt="${course.display_name_with_default} ${course.display_number_with_default}" />
     </a>
 
     <div class="course-caption">
