@@ -16,6 +16,7 @@ from third_party_auth import provider, pipeline
 home_page_title = configuration_helpers.get_value('home_page_title', 'Welcome')
 home_page_subtitle = configuration_helpers.get_value('home_page_subtitle', 'We think you might be interested in these programs')
 banner_image_url = configuration_helpers.get_value('banner_image_url', '/pearson-kaust-theme/images/sunrise.png')
+support_mobile_banner = configuration_helpers.get_value('support_mobile_banner', '')
 theme = configuration_helpers.get_value('theme', '')
 %>
 
@@ -79,27 +80,25 @@ theme = configuration_helpers.get_value('theme', '')
 
 <%include file="courses_list.html" />
 
-<section>
-  <div class="container no-border">
-    <div class="grid">
-      <div class="items">
-        <h1>${_("Access courses on the go")}</h1>
-
-        <p>${_("Download the app and access your courses wherever you are. Sync videos to your device and watch offline, at a time that suits you.")}</p>
-          <div class="btn-center">
-            <ul>
-              <li><a href="" target="_blank"><img src="${static.url('images/appstore.png')}" /></a></li>
-              <li><a href="" target="_blank"><img src="${static.url('images/playstore.png')}" /></a></li>
+%if support_mobile_banner:
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 text-center btn-center">
+          <h1>${_("Access courses on the go")}</h1>
+          <p>${_("Download the app and access your courses wherever you are. Sync videos to your device and watch offline, at a time that suits you.")}</p>
+            <ul class="list-unstyled">
+              <li class="m-4"><a href="" target="_blank"><img src="${static.url('images/appstore.png')}" /></a></li>
+              <li class="m-4"><a href="" target="_blank"><img src="${static.url('images/playstore.png')}" /></a></li>
             </ul>
-          </div>
-      </div>
-
-      <div class="items d-none d-md-flex">
-        <img src="${static.url('images/app.gif')}" class="img-responsive pull-right" />
+        </div>
+        <div class="col-md-6 d-none d-md-block">
+          <img src="${static.url('images/app.gif')}" class="img-fluid"/>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+% endif
 
 % if show_homepage_promo_video:
   <section id="video-modal" class="modal home-page-video-modal video-modal">
@@ -117,8 +116,8 @@ theme = configuration_helpers.get_value('theme', '')
 </script>
 % endif
 
-<script>
+<!-- <script>
   $(document).ready(function () {
     $("link[href*='/static/css/lms-main-v1']").remove();
   });
-</script>
+</script> -->
