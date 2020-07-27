@@ -2,9 +2,14 @@
 <%namespace name='static' file='../static_content.html'/>
 <%!
 from django.utils.translation import ugettext as _
+from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
 from openedx.core.djangolib.markup import HTML, Text
 %>
 <%inherit file="../main.html" />
+
+<%def name="get_tech_support_link_address()"><%
+    return configuration_helpers.get_value('TECH_SUPPORT_LINK', settings.TECH_SUPPORT_LINK)
+%></%def>
 
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="outside-app">
@@ -24,10 +29,9 @@ from openedx.core.djangolib.markup import HTML, Text
                 % if page_content:
                     ${page_content}
                 % else:
-                    ${Text(_('Please wait a few seconds and then reload the page. If the problem persists, please email us at {email}.')).format(
-                    email=HTML('<a href="mailto:{email}">{email}</a>').format(
-                    email=Text(static.get_tech_support_email_address())
-                    )
+                    ${Text(_('Please wait a few seconds and then reload the page. If the problem persists, please visit {start}Support{end}.')).format(
+                        start=HTML('<a href="{support_link}">').format(support_link=Text(get_tech_support_link_address())),
+                        end=HTML('</a>'),
                     )}
                 % endif
             </%block>
