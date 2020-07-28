@@ -12,10 +12,18 @@ import third_party_auth
 from third_party_auth import provider, pipeline
 %>
 
+<%!
+home_page_title = configuration_helpers.get_value('home_page_title', 'Welcome')
+home_page_subtitle = configuration_helpers.get_value('home_page_subtitle', 'We think you might be interested in these programs')
+banner_image_url = configuration_helpers.get_value('banner_image_url', '/pearson-kaust-theme/images/sunrise.png')
+support_mobile_banner = configuration_helpers.get_value('support_mobile_banner', '')
+theme = configuration_helpers.get_value('theme', '')
+%>
+
 <div class="scroll-animation-default"></div>
 
 <section role="default">
-  <div class="section-media"></div>
+  <div class="section-media" style="background-image: url('${static.url(banner_image_url)}')"></div>
 
   <div class="container no-border">
     <div class="row">
@@ -23,88 +31,74 @@ from third_party_auth import provider, pipeline
         <div class="wrapper waypoint">
           <form class="default">
             <div class="default">
-              % if False:
-                <img src="${static.url('images/sunrise.heading.png')}" class="img-responsive" />
-              % endif 
-              <h1>${_("London Business School")}</h1>
-              <h2>${_("The Entrepreneurial Edge")}</h2>
+              <h1 class="title ${theme}">
+                <span class="title-super">
+                  ${home_page_title}
+                </span>
+              </h1>
+              <h2 class="title-sub">
+                ${home_page_subtitle}
+              </h2>
               % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
-                    % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
-                        <a href="${reverse('course-specific-login', args=[course.id.to_deprecated_string()])}${login_query()}" class="btn btn-lg btn-default">${_("Sign in")}</a>
+                % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
+                    <a href="${reverse('course-specific-login', args=[course.id.to_deprecated_string()])}${login_query()}" class="btn btn-lg btn-default">${_("Sign in")}</a>
+                % else:
+                    % if configuration_helpers.get_value('hide_login_screen', False):
+                        % if third_party_auth.is_enabled():
+
+                            <div class="form-actions form-third-party-auth">
+
+                            % for enabled in provider.Registry.displayed_for_login():
+                                ## Translators: provider_name is the name of an external, third-party user authentication provider (like Google or LinkedIn).
+                                <button type="submit" class="button button-primary button-${enabled.provider_id} login-${enabled.provider_id}" onclick="thirdPartySignin(event, '${pipeline_url[enabled.provider_id]}');">
+                                % if enabled.icon_class:
+                                <span class="icon fa ${enabled.icon_class}" aria-hidden="true"></span>
+                                % else:
+                                <span class="icon" aria-hidden="true"><img class="icon-image" src="${enabled.icon_image.url}" alt="${enabled.name} icon" /></span>
+                                % endif
+                                ${_('Sign in or Sign up')}
+                                </button>
+                            % endfor
+
+                            </div>
+
+                        % endif
                     % else:
-                        % if configuration_helpers.get_value('hide_login_screen', False):
-                            % if third_party_auth.is_enabled():
-
-                                <div class="form-actions form-third-party-auth">
-
-                                % for enabled in provider.Registry.displayed_for_login():
-                                    ## Translators: provider_name is the name of an external, third-party user authentication provider (like Google or LinkedIn).
-                                    <button type="submit" class="button button-primary button-${enabled.provider_id} login-${enabled.provider_id}" onclick="thirdPartySignin(event, '${pipeline_url[enabled.provider_id]}');">
-                                    % if enabled.icon_class:
-                                    <span class="icon fa ${enabled.icon_class}" aria-hidden="true"></span>
-                                    % else:
-                                    <span class="icon" aria-hidden="true"><img class="icon-image" src="${enabled.icon_image.url}" alt="${enabled.name} icon" /></span>
-                                    % endif
-                                    ${_('Sign in or Sign up')}
-                                    </button>
-                                % endfor
-
-                                </div>
-
-                            % endif
-                        % else:
-                            <a href="/login?next=dashboard" class="btn btn-lg btn-secondary">${_("Sign in")}</a>
-                        % endif
-
-                        % if True:
-                            <a href="/register" id="register" class="btn btn-lg btn-default">${_("Register")}</a>
-                        % endif
-
+                        <a href="/login?next=dashboard" class="btn btn-lg btn-secondary">${_("Sign in")}</a>
                     % endif
-                % endif
 
-              <!-- <p><a href="/register" id="register">${_("Register")}</a></p> -->
+                    <a href="/register" id="register" class="btn btn-lg btn-default">${_("Register")}</a>
+                % endif
+              % endif
             </div>
           </form>
         </div>
       </div>
-
     </div>
   </div>
-
-  <div class="extra-message"><p>${_("")}</p></div>
 </section>
 
 <%include file="courses_list.html" />
 
-<section>
-  <div class="container no-border">
-    <div class="grid">
-      <div class="items">
-        <div>
+%if support_mobile_banner:
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 text-center btn-center">
           <h1>${_("Access courses on the go")}</h1>
-
           <p>${_("Download the app and access your courses wherever you are. Sync videos to your device and watch offline, at a time that suits you.")}</p>
-
-          % if False:
-            <p><strong>Coming soon</strong></p>
-          % else:
-            <div class="btn-center">
-              <ul>
-                <li><a href="" target="_blank"><img src="${static.url('images/appstore.png')}" /></a></li>
-                <li><a href="" target="_blank"><img src="${static.url('images/playstore.png')}" /></a></li>
-              </ul>
-            </div>
-          % endif
+            <ul class="list-unstyled">
+              <li class="m-4"><a href="" target="_blank"><img src="${static.url('images/appstore.png')}" /></a></li>
+              <li class="m-4"><a href="" target="_blank"><img src="${static.url('images/playstore.png')}" /></a></li>
+            </ul>
+        </div>
+        <div class="col-md-6 d-none d-md-block">
+          <img src="${static.url('images/app.gif')}" class="img-fluid"/>
         </div>
       </div>
-
-      <div class="items hidden-xs">
-        <img src="${static.url('images/app.gif')}" class="img-responsive pull-right" />
-      </div>
     </div>
-  </div>
-</section>
+  </section>
+% endif
 
 % if show_homepage_promo_video:
   <section id="video-modal" class="modal home-page-video-modal video-modal">
@@ -122,8 +116,8 @@ from third_party_auth import provider, pipeline
 </script>
 % endif
 
-<script>
+<!-- <script>
   $(document).ready(function () {
     $("link[href*='/static/css/lms-main-v1']").remove();
   });
-</script>
+</script> -->
