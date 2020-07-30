@@ -62,22 +62,22 @@ from util.course import get_link_for_about_page, get_encoded_course_sharing_utm_
 
     % if not is_course_blocked and not is_course_expired:
         <a href="${course_target}" data-course-key="${enrollment.course_id}" class="cover course-target-link" tabindex="-1">
-        <img src="${course_overview.image_urls['small']}" class="img-responsive" alt="${_('{course_number} {course_name} Home Page').format(course_number=course_overview.number, course_name=course_overview.display_name_with_default)}" />
+        <img src="${course_overview.image_urls['small']}" class="img-fluid" alt="${_('{course_number} {course_name} Home Page').format(course_number=course_overview.number, course_name=course_overview.display_name_with_default)}" />
       </a>
     % else:
-      <img src="${course_overview.image_urls['small']}" class="img-responsive" alt="${_('{course_number} {course_name} Cover Image').format(course_number=course_overview.number, course_name=course_overview.display_name_with_default)}" />
+      <img src="${course_overview.image_urls['small']}" class="img-fluid" alt="${_('{course_number} {course_name} Cover Image').format(course_number=course_overview.number, course_name=course_overview.display_name_with_default)}" />
     % endif
 
   % else:
 
-    <img src="${course_overview.image_urls['small']}" class="img-responsive" alt="${_('{course_number} {course_name} Cover Image').format(course_number=course_overview.number, course_name=course_overview.display_name_with_default)}" />
+    <img src="${course_overview.image_urls['small']}" class="img-fluid" alt="${_('{course_number} {course_name} Cover Image').format(course_number=course_overview.number, course_name=course_overview.display_name_with_default)}" />
   % endif
 
   % if display_course_modes_on_dashboard and course_verified_certs.get('display_mode') != 'audit':
     <span class="sts-enrollment" title="${course_verified_certs.get('enrollment_title')}">
       <span class="label">${_("Enrolled as: ")}</span>
       % if course_verified_certs.get('show_image'):
-          <img class="deco-graphic" src="${static.url('images/verified-ribbon.png')}" class="img-responsive" alt="${course_verified_certs.get('image_alt')}" />
+          <img class="deco-graphic" src="${static.url('images/verified-ribbon.png')}" class="img-fluid" alt="${course_verified_certs.get('image_alt')}" />
       % endif
       <div class="sts-enrollment-value">${course_verified_certs.get('enrollment_value')}</div>
     </span>

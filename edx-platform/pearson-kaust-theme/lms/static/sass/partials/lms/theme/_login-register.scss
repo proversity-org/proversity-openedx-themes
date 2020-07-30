@@ -1,0 +1,20 @@
+// Login and register template styles.
+
+.forgot-password {
+    &.field-link {
+        display: inline !important;
+        color: $primary-black !important;
+    }
+}
+
+.login-register {
+    &.form-type, h2 {
+        text-align: center;
+    }
+}
+
+.login-form {
+    div label {
+        text-align: center;
+    }
+}
