@@ -24,7 +24,7 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
 <nav class="navbar navbar-default container-fluid">
   <a href="${branding_api.get_home_url()}">
     <%block name="navigation_logo">
-      <img class="img-responsive" src="${branding_api.get_logo_url(is_secure)}" alt="${_("{platform_name} Home Page").format(platform_name=static.get_platform_name())}"/>
+      <img class="img-fluid" src="${branding_api.get_logo_url(is_secure)}" alt="${_("{platform_name} Home Page").format(platform_name=static.get_platform_name())}"/>
     </%block>
   </a>
 
