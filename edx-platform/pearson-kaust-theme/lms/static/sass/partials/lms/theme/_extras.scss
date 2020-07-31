@@ -498,47 +498,9 @@ input[type="submit"], input[type="button"], button, .button, .btn {
   margin: 40px 0 20px 0;
 }
 
-.modal-header {
-  text-align: center;
-
-  .close {
-    background: none !important;
-    border: none !important;
-  }
-}
-
-.modal-title {
-  color: #000;
-  text-align: center;
-  font-weight: normal;
-}
-
 .panel-title {
   text-align: center;
   font-weight: normal;
-}
-
-.modal-body {
-  color: #000;
-
-  p {
-    text-align: center;
-  }
-
-  div form {
-    label {
-      text-align: center;
-    }
-
-    fieldset input {
-      border: 1px solid #000;
-      width: 100%;
-    }
-  }
-}
-
-.feedback_success {
-  display: none;
 }
 
 .panel-group .panel {
@@ -3304,15 +3266,6 @@ body.view-in-course .wrapper-course-material .course-material .course-tabs {
   }
 }
 
-.modal {
-  background: none;
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
 textarea {
   &[name="student-ids"], &[name="student-ids-for-beta"] {
     border: 1px solid #c8c8c8;
@@ -4076,7 +4029,7 @@ legend {
   font-size: 14px;
 }
 
-.btn-brand, .modal .inner-wrapper form .submit input[type="submit"], .leanModal_box .inner-wrapper form .submit input[type="submit"], .wmd-prompt-dialog .inner-wrapper form .submit input[type="submit"] {
+.btn-brand, .inner-wrapper form .submit input[type="submit"], .inner-wrapper form .submit input[type="submit"], .wmd-prompt-dialog .inner-wrapper form .submit input[type="submit"] {
   display: inline-block;
   padding: 6px 12px;
   margin: 0;
@@ -4489,10 +4442,6 @@ input[name="subject"] {
   width: 100%;
 }
 
-.modal .tip, .leanModal_box .tip {
-  font-size: 16px;
-}
-
 .panel-body form textarea {
   width: 100%;
   margin: 15px 0 0 0;
@@ -4747,37 +4696,6 @@ input#action-preview-username {
   width: 50%;
   left: 0;
   margin-left: auto;
-}
-
-.modal .close-modal, .leanModal_box .close-modal, .wmd-prompt-dialog .close-modal {
-  font-size: 1em;
-}
-
-.modal .inner-wrapper header h2, .leanModal_box .inner-wrapper header h2, .wmd-prompt-dialog .inner-wrapper header h2 {
-  font-family: "Lato", "Helvetica", Sans-Serif;
-}
-
-.hd-4, .modal .inner-wrapper header h2, .leanModal_box .inner-wrapper header h2, .wmd-prompt-dialog .inner-wrapper header h2 {
-  font-size: 30px;
-}
-
-.modal .close-modal, .leanModal_box .close-modal, .wmd-prompt-dialog .close-modal {
-  font-size: 1em;
-}
-
-.modal .close-modal:hover, .leanModal_box .close-modal:hover, .wmd-prompt-dialog .close-modal:hover, .modal .close-modal:focus, .leanModal_box .close-modal:focus, .wmd-prompt-dialog .close-modal:focus {
-  background: none;
-  color: $primary;
-}
-
-.modal .inner-wrapper, .leanModal_box .inner-wrapper, .wmd-prompt-dialog .inner-wrapper {
-  text-align: center;
-}
-
-.modal .inner-wrapper p, .leanModal_box .inner-wrapper p, .wmd-prompt-dialog .inner-wrapper p {
-  font-size: 1em;
-  padding: 0 20px;
-  text-align: center;
 }
 
 .discussion-alert-wrapper > {
