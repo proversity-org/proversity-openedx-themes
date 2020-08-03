@@ -4,137 +4,131 @@
   from django.urls import reverse
   from django.utils.translation import ugettext as _
   from branding.api import get_footer
-  from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_enabled, released_languages
-  from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
+  from openedx.core.djangoapps.lang_pref.api import footer_language_selector_is_enabled
 %>
 <% footer = get_footer(is_secure=is_secure) %>
-<%namespace name='static' file='/static_content.html'/>
+<%namespace name='static' file='static_content.html'/>
 
-<footer class="footer" aria-label="${_("Page Footer")}"
-    ## When rendering the footer through the branding API,
-    ## the direction may not be set on the parent element,
-    ## so we set it here.
-    % if bidi:
-      dir=${bidi}
-    % endif
-  >
-  <div class="container">
-
-    % if configuration_helpers.get_value('FOOTER_ALIGNMENT', 'center') == 'center':
-      <div class="grid">
-        <div class="items">
-          <div>
-            <ul>
-              <li><a href="" target="_blank">${_("About")}</a></li>
-              <li><a href="" target="_blank">${_("Contact")}</a></li>
-                % if user.is_authenticated:
-                <li><a href="${marketing_link('EULA')}" target="_blank">${_("Terms of Service")}</a></li>
-              % else:
-                <li><a href="${marketing_link('TOS')}" target="_blank">${_("Terms of Service")}</a></li>
-              % endif
-              <li><a href="${marketing_link('PRIVACY')}" target="_blank">${_("Privacy Policy")}</a></li>
-              <li><a href="${marketing_link('COOKIES')}" target="_blank">${_("Cookie Policy")}</a></li>
+% if uses_bootstrap:
+  <div class="container-fluid wrapper-footer">
+    <footer>
+      <div class="row">
+        <div class="col-md-9">
+          <nav class="navbar site-nav navbar-expand-sm" aria-label="${_('About')}">
+            <ul class="navbar-nav">
+              % for item_num, link in enumerate(footer['navigation_links'], start=1):
+                <li class="nav-item">
+                  <a class="nav-link" href="${link['url']}">${link['title']}</a>
+                </li>
+              % endfor
             </ul>
+          </nav>
 
-            <ul>
-              % if configuration_helpers.get_value('ENABLE_EXTEND_SIDEBAR_MENU', False):
-                % for menu_item in configuration_helpers.get_value('EXTENDED_MENU', []):
-                  <% display_name, url = menu_item.split(",") %>
-                  <li>
-                    <a href="${url}" target="blank">${_(display_name)}</a>
-                  </li>
-                % endfor
-              % endif
-            </ul>
+          ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
+          <p class="copyright">${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}</p>
 
-            <ul class="sponsors">
-              <li><a href="https://proversity.org/" target="_blank"><img src="${static.url('images/proversity.svg')}" /></a></li>
-              <li><a href="${footer['openedx_link']['url']}" target="_blank"><img src="${static.url('images/openedx.svg')}" /></a></li>
+          <nav class="navbar legal-nav navbar-expand-sm" aria-label="${_('Legal')}">
+            <ul class="navbar-nav">
+              % for item_num, link in enumerate(footer['legal_links'], start=1):
+                <li class="nav-item">
+                  <a class="nav-link" href="${link['url']}">${link['title']}</a>
+                </li>
+              % endfor
+              <li class="nav-item">
+                <a class="nav-link" href="${footer['edx_org_link']['url']}">${footer['edx_org_link']['text']}</a>
+              </li>
             </ul>
-          </div>
+          </nav>
+        </div>
+        <div class="col-md-3">
+          ## Please leave this link and use one of the logos provided
+          ## The OpenEdX link may be hidden when this view is served
+          ## through an API to partner sites (such as marketing sites or blogs),
+          ## which are not technically powered by Open edX.
+          % if not hide_openedx_link:
+            <div class="footer-about-openedx">
+              <p>
+                <a href="${footer['openedx_link']['url']}">
+                  <img src="${footer['openedx_link']['image']}" alt="${footer['openedx_link']['title']}" width="140" />
+                </a>
+              </p>
+            </div>
+          % endif
         </div>
       </div>
-    % elif configuration_helpers.get_value('FOOTER_ALIGNMENT', 'center') == 'left':
-      <div class="grid double">
-        <div class="items">
-          <div>
-            <ul>
-              <li><a href="" target="_blank">${_("About")}</a></li>
-              <li><a href="" target="_blank">${_("Contact")}</a></li>
-                % if user.is_authenticated:
-                <li><a href="${marketing_link('EULA')}" target="_blank">${_("Terms of Service")}</a></li>
-              % else:
-                <li><a href="${marketing_link('TOS')}" target="_blank">${_("Terms of Service")}</a></li>
-              % endif
-              <li><a href="${marketing_link('PRIVACY')}" target="_blank">${_("Privacy Policy")}</a></li>
-              <li><a href="${marketing_link('COOKIES')}" target="_blank">${_("Cookie Policy")}</a></li>
-            </ul>
-
-            <ul>
-              % if configuration_helpers.get_value('ENABLE_EXTEND_SIDEBAR_MENU', False):
-                % for menu_item in configuration_helpers.get_value('EXTENDED_MENU', []):
-                  <% display_name, url = menu_item.split(",") %>
-                  <li>
-                    <a href="${url}" target="blank">${_(display_name)}</a>
-                  </li>
-                % endfor
-              % endif
-            </ul>
-          </div>
-        </div>
-
-        <div class="items">
-          <div>
-            <ul class="sponsors">
-              <li><a href="https://proversity.org/" target="_blank"><img src="${static.url('images/proversity.svg')}" /></a></li>
-              <li><a href="${footer['openedx_link']['url']}" target="_blank"><img src="${static.url('images/openedx.svg')}" /></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    % elif configuration_helpers.get_value('FOOTER_ALIGNMENT', 'center') == 'right':
-      <div class="grid double reverse">
-        <div class="items">
-          <div>
-            <ul>
-              <li><a href="" target="_blank">${_("About")}</a></li>
-              <li><a href="" target="_blank">${_("Contact")}</a></li>
-                % if user.is_authenticated:
-                <li><a href="${marketing_link('EULA')}" target="_blank">${_("Terms of Service")}</a></li>
-              % else:
-                <li><a href="${marketing_link('TOS')}" target="_blank">${_("Terms of Service")}</a></li>
-              % endif
-              <li><a href="${marketing_link('PRIVACY')}" target="_blank">${_("Privacy Policy")}</a></li>
-              <li><a href="${marketing_link('COOKIES')}" target="_blank">${_("Cookie Policy")}</a></li>
-            </ul>
-
-            <ul>
-              % if configuration_helpers.get_value('ENABLE_EXTEND_SIDEBAR_MENU', False):
-                % for menu_item in configuration_helpers.get_value('EXTENDED_MENU', []):
-                  <% display_name, url = menu_item.split(",") %>
-                  <li>
-                    <a href="${url}" target="blank">${_(display_name)}</a>
-                  </li>
-                % endfor
-              % endif
-            </ul>
-          </div>
-        </div>
-
-        <div class="items">
-          <div>
-            <ul class="sponsors">
-              <li><a href="https://proversity.org/" target="_blank"><img src="${static.url('images/proversity.svg')}" /></a></li>
-              <li><a href="${footer['openedx_link']['url']}" target="_blank"><img src="${static.url('images/openedx.svg')}" /></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    % endif
-
+    </footer>
   </div>
-</footer>
+% else:
+  <div class="wrapper wrapper-footer">
+    <footer id="footer-openedx" class="grid-container"
+      ## When rendering the footer through the branding API,
+      ## the direction may not be set on the parent element,
+      ## so we set it here.
+      % if bidi:
+        dir=${bidi}
+      % endif
+    >
+      <div class="colophon">
+        <nav class="nav-colophon" aria-label="${_('About')}">
+          <ol>
+              % for item_num, link in enumerate(footer['navigation_links'], start=1):
+              <li class="nav-colophon-0${item_num}">
+                <a id="${link['name']}" href="${link['url']}">${link['title']}</a>
+              </li>
+              % endfor
+          </ol>
+        </nav>
 
+        % if context.get('include_language_selector', footer_language_selector_is_enabled()):
+            <%include file="${static.get_template_path('widgets/footer-language-selector.html')}"/>
+        % endif
+
+        <div class="wrapper-logo">
+          <p>
+            <a href="/">
+              ## The default logo is a placeholder.
+              ## You can either replace this link entirely or update
+              ## the FOOTER_ORGANIZATION_IMAGE in Django settings.
+              ## If you customize FOOTER_ORGANIZATION_IMAGE, then the image
+              ## can be included in the footer on other sites
+              ## (e.g. a blog or marketing front-end) to provide a consistent
+              ## user experience.  See the branding app for details.
+              <img alt="organization logo" src="${footer['logo_image']}">
+            </a>
+          </p>
+        </div>
+
+        ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
+        <p class="copyright">${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}</p>
+
+        <nav class="nav-legal" aria-label="${_('Legal')}">
+          <ul>
+            % for item_num, link in enumerate(footer['legal_links'], start=1):
+              <li class="nav-legal-0${item_num}">
+                <a href="${link['url']}">${link['title']}</a>
+              </li>
+            % endfor
+            <li><a href="${footer['edx_org_link']['url']}">${footer['edx_org_link']['text']}</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      ## Please leave this link and use one of the logos provided
+      ## The OpenEdX link may be hidden when this view is served
+      ## through an API to partner sites (such as marketing sites or blogs),
+      ## which are not technically powered by OpenEdX.
+      % if not hide_openedx_link:
+      <div class="footer-about-openedx">
+        <p>
+          <a href="${footer['openedx_link']['url']}">
+            <img src="${footer['openedx_link']['image']}" alt="${footer['openedx_link']['title']}" width="140" />
+          </a>
+        </p>
+      </div>
+      % endif
+    </footer>
+  </div>
+% endif
 % if include_dependencies:
   <%static:js group='base_vendor'/>
   <%static:css group='style-vendor'/>
@@ -146,104 +140,3 @@
     <link rel="stylesheet" type="text/css" href="${url}"></link>
   % endfor
 % endif
-
-<script>
-  // custom script
-</script>
-
-% if settings.FEATURES.get('ENABLE_COOKIE_CONSENT', False):
-<!-- Cookie Consent -->
-<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.css" />
-<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.js"></script>
-<script>
-  window.cookieconsent.initialise({
-    palette:{
-      popup: {background: "#323538", text: "#ffffff"},
-      button: {background: "#001E62"},
-    },
-    theme: "classic"
-  });
-  $('.cc-window').css("font-family", $('body').css('fontFamily'));
-</script>
-% endif
-
-% if False:
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GOOGLE_TRACKING_ID"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'GOOGLE_TRACKING_ID');
-</script>
-% endif
-
-<% languages = released_languages() %>
-
-<script>
-  function setLanguage(data) {
-    $.ajax({
-      type: 'POST',
-      url: '/i18n/setlang/',
-      data: data,
-      dataType: 'html',
-      success: function() {
-        location.reload();
-      },
-      error: function() {}
-    });
-  }
-
-  function prefLanguage(data, setLangData) {
-    $.ajax({
-      type: 'PATCH',
-      url: '/lang_pref/session_language/',
-      data: JSON.stringify(data),
-      contentType: "application/json",
-      success: function() {
-        setLanguage(setLangData);
-      },
-      error: function() {}
-    });
-  }
-
-  function prefUserLanguage(data, setLangData) {
-    $.ajax({
-      type: 'PATCH',
-      url: '/api/user/v1/preferences/${user.username}' ,
-      data: JSON.stringify(data),
-      contentType: "application/merge-patch+json",
-      success: function() {
-        prefLanguage(data, setLangData);
-      },
-      error: function() {}
-    });
-  }
-
-  % for language in languages:
-    $( "#lang-${language[0]}" ).click(function(e) {
-      e.preventDefault()
-      var data = {
-        'pref-lang': '${language[0]}',
-        'csrfmiddlewaretoken': '${csrf_token}'
-      };
-
-      var setLangData = { 'language': '${language[0]}' };
-      % if user.is_authenticated:
-        prefUserLanguage(data, setLangData);
-      % else:
-        prefLanguage(data, setLangData);
-      % endif
-    });
-  % endfor
-
-  $(document).ready(function () {
-    var sideBarLanguageSelector = $("#sideBarLanguageSelector .selected a").text();
-    $("#sideBarSelectedLanguage").text(sideBarLanguageSelector);
-
-    var navBarLanguageSelector = $("#navBarLanguageSelector .selected a").text();
-    $("#navBarSelectedLanguage").text(navBarLanguageSelector);
-  })
-
-</script>
