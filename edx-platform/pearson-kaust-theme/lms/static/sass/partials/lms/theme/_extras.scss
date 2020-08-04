@@ -8,12 +8,13 @@
 
 @import 'navigation';
 @import 'login-register';
+@import 'footer';
 
 @import url("https://fonts.googleapis.com/css?family=Lato:boldLato:bold,normal");
 @import url("https://fonts.googleapis.com/css?family=Lato:boldLato:bold,normal");
 
 h1, h2, h3, h4 {
-  font-family: "Lato", "Helvetica", Sans-Serif;
+  font-family: $font-family-sans-serif;
   font-weight: bold;
   font-style: normal;
   color: $primary;
@@ -21,7 +22,7 @@ h1, h2, h3, h4 {
 }
 
 body {
-  font-family: "Lato", "Helvetica", Sans-Serif;
+  font-family: $font-family-sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 14px;
@@ -1690,7 +1691,7 @@ section {
 }
 
 h1, h2, h3, h4 {
-  font-family: "Lato", "Helvetica", Sans-Serif;
+  font-family: $font-family-sans-serif;
   font-weight: bold;
   font-style: normal;
   color: $primary;
@@ -1698,7 +1699,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-family: "Lato", "Helvetica", Sans-Serif;
+  font-family: $font-family-sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #000;
@@ -1706,25 +1707,25 @@ h1 {
 }
 
 h2 {
-  font-family: "Lato", "Helvetica", Sans-Serif;
+  font-family: $font-family-sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #000;
 }
 
 h3 {
-  font-family: "Lato", "Helvetica", Sans-Serif;
+  font-family: $font-family-sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #000;
-  font-family: "Lato", "Helvetica", Sans-Serif;
+  font-family: $font-family-sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #000;
 }
 
 body {
-  font-family: "Lato", "Helvetica", Sans-Serif;
+  font-family: $font-family-sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 14px;
@@ -3499,7 +3500,7 @@ div.info-wrapper section.handouts ol li p div.hitarea:hover + h4:visited, p div.
 
 .wrapper-course-material .course-tabs {
   li a {
-    font-family: "Lato", "Helvetica", Sans-Serif;
+    font-family: $font-family-sans-serif;
 
     &:hover {
       color: $primary;
@@ -4456,7 +4457,7 @@ input[name="subject"] {
 }
 
 body, p, label {
-  font-family: "Lato", "Helvetica", Sans-Serif;
+  font-family: $font-family-sans-serif;
   font-size: 14px;
 }
 
@@ -6350,94 +6351,6 @@ iframe {
   li {
     display: inline-block;
     padding: 0 15px 0 0;
-  }
-}
-
-.footer {
-  background: #4e5759;
-  position: static;
-  text-align: center;
-  color: #fff;
-
-  .container {
-    max-width: 1170px !important;
-    padding: 0;
-
-    p {
-      text-align: center;
-      color: #fff;
-
-      a {
-        color: #fff;
-        text-decoration: none;
-
-        &:hover, &:focus {
-          color: #fff;
-        }
-      }
-    }
-
-    ul {
-      list-style-type: none;
-      margin: 0 0 15px 0;
-      padding: 0;
-
-      li {
-        display: inline-block;
-        padding: 0 15px 0 0;
-        color: #fff;
-
-        &:last-child {
-          padding: 0;
-        }
-
-        a {
-          color: #fff;
-          text-decoration: none;
-
-          &:hover, &:focus {
-            color: #fff;
-          }
-        }
-      }
-    }
-
-    .sponsors li {
-      &:first-child {
-        padding: 0 5px 0 0;
-      }
-
-      &:last-child {
-        padding: 0 0 0 5px;
-      }
-    }
-
-    .grid {
-      display: -webkit-box !important;
-      display: -moz-box !important;
-      display: -ms-flexbox !important;
-      display: flex !important;
-
-      .items {
-        min-height: 1px;
-
-        ul {
-          width: 100%;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  .footer .container ul li {
-    display: inline;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer .container .sponsors li a img {
-    width: 45%;
   }
 }
 

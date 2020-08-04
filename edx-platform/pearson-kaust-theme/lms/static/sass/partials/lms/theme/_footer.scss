@@ -1,0 +1,31 @@
+// Styles for footer templates.
+
+.wrapper-footer {
+  box-shadow: none;
+  border-top: none;
+  background-color: $pearson-grey;
+  margin-top: initial;
+  padding: $baseline;
+
+  footer {
+    .footer-about-openedx {
+      float: initial;
+    }
+
+    .navbar-nav {
+      margin: 0 auto;
+    }
+
+    .site-nav {
+      .nav-item {
+        .nav-link {
+          color: $inverse;
+        }
+      }
+    }
+
+    .copyright {
+      color: $inverse;
+    }
+  }
+}
