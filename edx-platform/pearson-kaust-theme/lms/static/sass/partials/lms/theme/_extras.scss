@@ -9,6 +9,7 @@
 @import 'navigation';
 @import 'login-register';
 @import 'footer';
+@import 'support';
 
 @import url("https://fonts.googleapis.com/css?family=Lato:boldLato:bold,normal");
 @import url("https://fonts.googleapis.com/css?family=Lato:boldLato:bold,normal");
@@ -499,43 +500,6 @@ input[type="submit"], input[type="button"], button, .button, .btn {
   margin: 40px 0 20px 0;
 }
 
-.panel-title {
-  text-align: center;
-  font-weight: normal;
-}
-
-.panel-group .panel {
-  border-radius: 0;
-
-  > .open {
-    background: $primary;
-    color: #000;
-    border: 1px solid $primary;
-  }
-}
-
-.panel-heading {
-  background: #6a6d6d !important;
-  border: #6a6d6d !important;
-  color: $primary !important;
-  border-radius: 0;
-  text-align: center;
-  -webkit-transition: all 0.1s;
-  -o-transition: all 0.1s;
-  transition: all 0.1s;
-
-  &:hover, &:focus {
-    background: $primary;
-    color: #000;
-  }
-}
-
-.panel-body form {
-  input, textarea {
-    border: 1px solid #000;
-  }
-}
-
 section {
   position: relative;
   padding: 15px 0;
@@ -596,29 +560,6 @@ section {
 
       .row {
         margin: 30px 0;
-      }
-    }
-  }
-
-  &[role="highlight"] {
-    background: #6a6d6d;
-    padding: 15px 0;
-    margin: 0 -20px;
-
-    .container {
-      .row div {
-        h2, h3 {
-          text-align: center;
-          color: #fff;
-        }
-
-        p {
-          color: #fff;
-        }
-      }
-
-      .carousel .carousel-inner .item .row div .course {
-        margin: 15px 0;
       }
     }
   }
@@ -4439,15 +4380,6 @@ form {
   }
 }
 
-input[name="subject"] {
-  width: 100%;
-}
-
-.panel-body form textarea {
-  width: 100%;
-  margin: 15px 0 0 0;
-}
-
 .course-content .bookmark-button:before {
   padding-right: 5px;
 }
@@ -5134,10 +5066,6 @@ textarea[name="specific_learners"] {
   margin: 15px 0;
 }
 
-input[name="subject"] {
-  text-align: left;
-}
-
 .xmodule_edit.xmodule_HtmlDescriptor .editor {
   margin: 15px 17px 0 15px;
 }
@@ -5442,17 +5370,6 @@ input[name="subject"] {
 label {
   &[for="register-honor_code"], &[for="toggle_optional_fields"] {
     display: inline-block;
-  }
-}
-
-.feedback_form {
-  input[type="text"] {
-    width: 100%;
-    border: 1px solid #ddd;
-  }
-
-  textarea {
-    border: 1px solid #ddd !important;
   }
 }
 

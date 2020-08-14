@@ -3,7 +3,7 @@
 .wrapper-footer {
   box-shadow: none;
   border-top: none;
-  background-color: $pearson-grey;
+  background-image: linear-gradient(to right, $primary, $primary-gradient);
   margin-top: initial;
   padding: $baseline;
 
@@ -20,6 +20,10 @@
       .nav-item {
         .nav-link {
           color: $inverse;
+
+          &:hover {
+            color: $pearson-grey;
+          }
         }
       }
     }
