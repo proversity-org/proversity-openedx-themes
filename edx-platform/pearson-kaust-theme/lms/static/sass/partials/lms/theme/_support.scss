@@ -1,0 +1,35 @@
+// Styles for the support modal.
+
+// Overwriting Bootstrap styles.
+.modal-open {
+  overflow: hidden;
+  padding-right: 0 !important;
+}
+
+.panel-heading {
+  background: $pearson-grey;
+  padding: 5px;
+  margin: 10px 0;
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+
+  .panel-title {
+    color: white;
+    text-align: center;
+    font-weight: normal;
+  }
+}
+
+#feedback_form {
+  input {
+    width: 100%;
+    text-align: initial;
+  }
+
+  textarea[name="details"] {
+    height: 150px;
+    width: 100%;
+    border: 1px solid $pearson-grey-courseware-2;
+  }
+}
