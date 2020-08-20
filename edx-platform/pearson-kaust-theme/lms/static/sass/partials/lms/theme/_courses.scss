@@ -1,0 +1,29 @@
+// Courses and courseware styles.
+
+.page-header  {
+  border: none;
+}
+
+.course-wrapper {
+  main {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+}
+
+.content-wrapper {
+  background: $inverse;
+  padding: 0;
+
+  .container {
+    border: none;
+  }
+
+  .no-border {
+    border: none;
+  }
+
+  .page-content {
+    padding: 20px;
+  }
+}
