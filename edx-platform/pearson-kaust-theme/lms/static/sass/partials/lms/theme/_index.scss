@@ -1,0 +1,39 @@
+// Index page styles.
+
+// Reset and configure platform styles.
+.course-caption {
+  .btn-default {
+    border-color: $inverse;
+    color: $inverse;
+
+    // STATE: hover and focus
+    &:hover,
+    &.is-hovered,
+    &:focus,
+    &.is-focused {
+      border-color: $primary-black;
+      color: $primary-black;
+    }
+
+    // STATE: is pressed or active
+    &:active,
+    &.is-pressed,
+    &.is-active {
+      border-color: $primary-black;
+      color: $primary-black;
+    }
+
+    // STATE: is disabled
+    &:disabled,
+    &.is-disabled {
+      border-color: $pearson-grey-courseware;
+      color: $pearson-grey-courseware;
+    }
+  }
+}
+
+.content-wrapper {
+  &.main-container {
+    margin-top: 0;
+  }
+}
