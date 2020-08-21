@@ -1,0 +1,3483 @@
+# Turkish (Turkey) translations for PROJECT.
+# Copyright (C) 2020 eduNEXT
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: support@edunext.co\n"
+"POT-Creation-Date: 2020-06-30 15:13-0500\n"
+"PO-Revision-Date: 2020-06-30 15:13-0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: tr_TR\n"
+"Language-Team: tr_TR <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: edx-platform/pearson-pols-theme/lms/templates/course.html:33
+#: edx-platform/pearson-pols-theme/lms/templates/course.html:47
+#: edx-platform/pearson-pols-theme/lms/templates/course.html:49
+msgid "Starts"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/course.html:35
+msgid "Starts: {date}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/course.html:39
+msgid "Learn more"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courses_list.html:48
+msgid "View all Courses"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard.html:30
+#: edx-platform/pearson-pols-theme/lms/templates/header/user_dropdown.html:42
+msgid "Dashboard"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard.html:146
+msgid "Loading subscription content..."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard.html:158
+msgid "My Courses"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard.html:163
+#: edx-platform/pearson-pols-theme/lms/templates/index.html:37
+#: edx-platform/pearson-pols-theme/lms/templates/index.html:38
+#: edx-platform/pearson-pols-theme/lms/templates/index.html:74
+#: edx-platform/pearson-pols-theme/lms/templates/index.html:76
+msgid "Search for a course"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard.html:270
+msgid "You are not enrolled in any courses yet."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard.html:276
+msgid "Discover new"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard.html:280
+msgid "Activate your account!"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard.html:290
+msgid "Course-loading errors"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard.html:322
+msgid "Search Your Courses"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/course_experience/course-home-fragment.html:65
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard.html:325
+#: edx-platform/pearson-pols-theme/lms/templates/index.html:41
+msgid "Search"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard.html:328
+msgid "Clear search"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard.html:340
+msgid "Account Status Info"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard.html:347
+msgid "Order History"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard.html:372
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:29
+msgid "Close"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard.html:378
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard.html:403
+msgid "Email Settings for {course_number}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard.html:381
+msgid "window open"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard.html:389
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard.html:411
+msgid "Receive course emails"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard.html:391
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard.html:413
+msgid "Save Settings"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/enrollment.html:60
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard.html:427
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard.html:441
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:308
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:320
+msgid "Unenroll"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/footer.html:31
+msgid "About"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/footer.html:50
+msgid "Legal"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/header/user_dropdown.html:52
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:19
+msgid "Support"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:36
+msgid "{platform_name} Support"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:49
+msgid ""
+"For {strong_start}questions on course lectures, homework, tools, or "
+"materials for this course{strong_end}, post in the {link_start}course "
+"discussion forum{link_end}."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:60
+msgid ""
+"Have {strong_start}general questions about {platform_name}{strong_end}? "
+"You can find lots of helpful information in the {platform_name} "
+"{link_start}FAQ{link_end}."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:70
+msgid ""
+"Have a {strong_start}question about something specific{strong_end}? You "
+"can contact the {platform_name} general support team directly:"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:78
+msgid "Report a problem"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:79
+msgid "Make a suggestion"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:80
+msgid "Ask a question"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:83
+msgid ""
+"Please note: The {platform_name} support team is English speaking. While "
+"we will do our best to address your inquiry in any language, our "
+"responses will be in English."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:98
+msgid "Name"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:100
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:72
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:105
+msgid "E-mail"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:110
+msgid "Briefly describe your issue"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:113
+msgid "Tell us the details"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:114
+msgid ""
+"Describe what you were doing when you encountered the issue. Include any "
+"details that will help us to troubleshoot, including error messages that "
+"you saw."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:119
+msgid "Submit"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:127
+msgid "Thank You!"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:132
+msgid ""
+"Thank you for your inquiry or feedback.  We typically respond to a "
+"request within one business day, Monday to Friday.  In the meantime, "
+"please review our {link_start}detailed FAQs{link_end} where most "
+"questions have already been answered."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_navigation.html:44
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:174
+msgid "Course"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:194
+msgid "- Select -"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:280
+msgid "problem"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:281
+msgid "Report a Problem"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:282
+msgid "Brief description of the problem"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:283
+msgid "Details of the problem you are encountering{asterisk}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:291
+msgid "suggestion"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:292
+msgid "Make a Suggestion"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:293
+msgid "Brief description of your suggestion"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:294
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:303
+msgid "Details"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:300
+msgid "question"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:301
+msgid "Ask a Question"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:302
+msgid "Brief summary of your question"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:331
+msgid "An error has occurred."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:333
+msgid "Please {link_start}send us e-mail{link_end}."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/help_modal.html:340
+msgid "Please try again later."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/index.html:82
+msgid "Quick Filters:"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/index.html:101
+msgid "Access courses on the go"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/index.html:103
+msgid ""
+"Download the app and access your courses wherever you are. Sync videos to"
+" your device and watch offline, at a time that suits you."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-not-authenticated.html:69
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-not-authenticated.html:71
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-not-authenticated.html:86
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-not-authenticated.html:88
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-not-authenticated.html:92
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-not-authenticated.html:94
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:15
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:226
+msgid "Register"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:32
+msgid "Sign up with {provider_name}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:40
+msgid "or"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:48
+msgid "Create your own {platform_name} account below"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:55
+msgid "You've successfully signed in with {selected_provider}."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:56
+msgid ""
+"We just need a little more information before you start learning with "
+"{platform_name}."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:64
+msgid "Please complete the following fields to register for an account. "
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:65
+msgid ""
+"Required fields are noted by <strong class=\"indicator\">bold text and an"
+" asterisk (*)</strong>."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:73
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:106
+msgid "example: username@domain.com"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:75
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:116
+msgid "Full Name"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:76
+msgid "example: Jane Doe"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:77
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:118
+msgid "Your legal name, used for any certificates you earn."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:79
+msgid "Public Username"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:80
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:111
+msgid "example: JaneDoe"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:81
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:112
+msgid "Will be shown in any discussions or forums you participate in"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:81
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:112
+msgid "cannot be changed later"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:85
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:90
+msgid "Password"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:100
+msgid "Welcome {username}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:100
+msgid "Enter a Public Display Name:"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:110
+msgid "Public Display Name"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:127
+msgid "Year of Birth"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:139
+msgid "Gender"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:151
+msgid "City"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:152
+msgid "example: New York"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:158
+msgid "Country"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:170
+msgid "Highest Level of Education Completed"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:182
+msgid "Mailing Address"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:189
+msgid "Please share with us your reasons for registering with {platform_name}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:196
+msgid "I agree to the {link_start}Terms of Service{link_end}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:209
+msgid "I agree to the {link_start}Terms of Service and Honor Code{link_end}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:220
+msgid "The following errors occurred while processing your registration:"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:225
+msgid "Go back to step 1"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:226
+msgid "Create My Account"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-form.html:228
+msgid "Already have an account? Sign in"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-sidebar.html:10
+msgid "Registration Help"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-sidebar.html:16
+msgid "Already registered?"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-sidebar.html:19
+msgid "Log in"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-sidebar.html:29
+msgid "Welcome to {platform_name}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-sidebar.html:30
+msgid ""
+"Registering with {platform_name} gives you access to all of our current, "
+"future free and paid-for places. Not ready to take a course just yet? "
+"Registering puts you on our mailing list - we will update you as courses "
+"are added."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-sidebar.html:34
+msgid "Next Steps"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-sidebar.html:35
+msgid ""
+"As part of joining {platform_name}, you will receive an email message "
+"with instructions for activating your account. Don't see the email? Check"
+" your spam folder and mark {platform_name} emails as 'not spam'. At "
+"{platform_name}, we communicate mostly through email."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-sidebar.html:40
+msgid "Need Help?"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-sidebar.html:41
+msgid "Need help registering with {platform_name}?"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-sidebar.html:43
+msgid "View our FAQs for answers to commonly asked questions."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register-sidebar.html:45
+msgid ""
+"You can find the answers to most of your questions in our list of FAQs. "
+"After you enroll in a course, you can also find answers in the course "
+"discussions."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register.html:16
+msgid "Register for {platform_name}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register.html:91
+msgid "Create My {platform_name} Account"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/register.html:97
+msgid "Processing your account information"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/coach_dashboard.html:13
+msgid "CCX Coach Dashboard"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/coach_dashboard.html:48
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/coach_dashboard.html:49
+msgid "Name your CCX"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/coach_dashboard.html:52
+msgid "Create a new Custom Course for edX"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/coach_dashboard.html:61
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/enrollment.html:10
+msgid "Enrollment"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/coach_dashboard.html:64
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/coach_dashboard.html:79
+msgid "Schedule"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/coach_dashboard.html:67
+msgid "Student Admin"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/coach_dashboard.html:70
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/coach_dashboard.html:85
+msgid "Grading Policy"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/coach_dashboard.html:73
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/coach_dashboard.html:88
+msgid "Course Name"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/coach_dashboard.html:76
+msgid "Batch Enrollment"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/coach_dashboard.html:82
+msgid "Student Grades"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/coach_dashboard.html:160
+msgid "Please enter a valid CCX name."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/enrollment.html:14
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/enrollment.html:19
+msgid "Email Addresses/Usernames"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/enrollment.html:16
+msgid ""
+"Enter one or more email addresses or usernames separated by new lines or "
+"commas."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/enrollment.html:17
+msgid ""
+"Make sure you enter the information carefully. You will not receive "
+"notification for invalid usernames or email addresses."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/enrollment.html:24
+msgid "Auto Enroll"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/enrollment.html:28
+msgid ""
+"If this option is {em_start}checked{em_end}, users who have not yet "
+"registered for {platform_name} will be automatically enrolled."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/enrollment.html:33
+msgid ""
+"If this option is left {em_start}unchecked{em_end}, users who have not "
+"yet registered for {platform_name} will not be enrolled, but will be "
+"allowed to enroll once they make an account."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/enrollment.html:39
+msgid "Checking this box has no effect if 'Unenroll' is selected."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/enrollment.html:46
+msgid "Notify users by email"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/enrollment.html:50
+msgid ""
+"If this option is {em_start}checked{em_end}, users will receive an email "
+"notification."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/enrollment.html:59
+msgctxt "someone"
+msgid "Enroll"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/enrollment.html:73
+msgid "Student List Management"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/enrollment.html:75
+msgid "CCX student list management response message"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/enrollment.html:85
+msgid "Username"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/enrollment.html:86
+msgid "Email"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/enrollment.html:88
+#: edx-platform/pearson-pols-theme/lms/templates/ccx/enrollment.html:98
+msgid "Revoke access"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/course_experience/course-home-fragment.html:48
+msgid "Course Outline"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/course_experience/course-home-fragment.html:56
+#: edx-platform/pearson-pols-theme/lms/templates/course_experience/course-home-fragment.html:62
+msgid "Search the course"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/course_experience/course-home-fragment.html:74
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:195
+msgid "Resume Course"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/course_experience/course-home-fragment.html:76
+msgid "Start Course"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/course_experience/course-home-fragment.html:107
+#: edx-platform/pearson-pols-theme/lms/templates/course_experience/course-home-fragment.html:109
+msgid "Goal: "
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/course_experience/course-home-fragment.html:120
+#: edx-platform/pearson-pols-theme/lms/templates/course_experience/course-home-fragment.html:122
+msgid "Edit your course goal:"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/course_experience/course-home-fragment.html:130
+msgid "Course Tools"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/course_experience/course-home-fragment.html:145
+msgid "Pursue a verified certificate"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/course_experience/course-home-fragment.html:153
+msgid "Upgrade ({price})"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/course_experience/course-home-fragment.html:156
+msgid "Learn More"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/course_experience/course-home-fragment.html:167
+msgid "Course Handouts"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/course_experience/course-outline-fragment.html:26
+msgid "Expand All"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/course_experience/course-outline-fragment.html:68
+msgid "Prerequisite: "
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/course_experience/course-outline-fragment.html:101
+msgid "due {date}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/course_experience/course-outline-fragment.html:103
+msgid "{subsection_format} due {{date}}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/course_experience/course-outline-fragment.html:140
+msgid "This content is graded"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:47
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:85
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:104
+msgid "An error occurred. Please try again later."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:69
+msgid ""
+"The currently logged-in user account does not have permission to enroll "
+"in this course. You may need to {start_logout_tag}log out{end_tag} then "
+"try the enroll button again. Please visit the {start_help_tag}help "
+"page{end_tag} for a possible solution."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:140
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:393
+msgid "You are enrolled in this course"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:143
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:189
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:396
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:204
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:213
+msgid "View Course"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:148
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:408
+msgid "Buy Now"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:152
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:412
+msgid "This course is in your <a href=\"{cart_link}\">cart</a>."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:156
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:416
+msgid "Course is full"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:159
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:419
+msgid "Enrollment in this course is by invitation only"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:164
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:424
+msgid "Enrollment is Closed"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:179
+msgid "Add {course_name} to Cart {start_span}({price} USD){end_span}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:204
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:455
+msgid "Enroll in {course_name}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:236
+msgid "View About Page in studio"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:253
+msgid "Course Number"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:274
+msgid "Classes Start"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:295
+msgid "Classes End"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:308
+msgid "Estimated Effort"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:316
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:323
+msgid "Price"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:333
+msgid "Prerequisites"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:337
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:508
+msgid ""
+"You must successfully complete {link_start}{prc_display}{link_end} before"
+" you begin this course."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:347
+msgid "Requirements"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:364
+msgid "Additional Resources"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:401
+msgid "Activate Your {platform_name} Account"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:439
+msgid "Add {course_name} to Cart <span>({price} USD)</span>"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:472
+msgctxt "self"
+msgid "Enroll"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about.html:477
+msgctxt "self"
+msgid "enroll"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about_sidebar_header.html:23
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about_sidebar_header.html:78
+msgid "Share with friends and family!"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about_sidebar_header.html:34
+msgid "I just enrolled in {title} through {account}: {url}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about_sidebar_header.html:51
+msgid "Take a course with {platform}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about_sidebar_header.html:52
+msgid "I just enrolled in {title} through {platform} {url}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about_sidebar_header.html:67
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about_sidebar_header.html:122
+msgid "Tweet that you've enrolled in this course"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about_sidebar_header.html:70
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about_sidebar_header.html:125
+msgid "Post a Facebook message to say you've enrolled in this course"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about_sidebar_header.html:73
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about_sidebar_header.html:128
+msgid "Email someone to say you've enrolled in this course"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about_sidebar_header.html:89
+msgid "I just enrolled in {number} {title} through {account}: {url}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about_sidebar_header.html:106
+msgid "Take a course with {platform} online"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_about_sidebar_header.html:107
+msgid "I just enrolled in {number} {title} through {platform} {url}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_navigation.html:54
+msgid "current location"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_navigation.html:59
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/tabs.html:34
+msgid "needs attention"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/courseware/course_navigation.html:67
+msgid "Course Material"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:72
+msgid "Course details"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:77
+msgid "{course_number} {course_name} Home Page"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:81
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:86
+msgid "{course_number} {course_name} Cover Image"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:91
+msgid "Enrolled as: "
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:116
+msgid "Coming Soon"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:121
+msgid "Ended - {date}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:124
+msgid "Started - {date}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:127
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:131
+msgid "Starts - {date}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:142
+msgid "for {course_display_name}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:150
+msgid "You must select a session by {expiration_date} to access the course."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:152
+msgid "You must select a session to access the course."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:165
+msgid "Change or Leave Session"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:173
+msgid "You can no longer change sessions."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:175
+msgid "You can change sessions until {entitlement_expiration_date}."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:185
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:187
+msgid "View Archived Course"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:234
+msgid "I'm taking {course_name} online with {facebook_brand}. Check it out!"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:237
+msgid "Share {course_name} on Facebook"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:240
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:245
+msgid "Share on Facebook"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:255
+msgid "I'm taking {course_name} online with {twitter_brand}. Check it out!"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:258
+msgid "Share {course_name} on Twitter"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:261
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:266
+msgid "Share on Twitter"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:284
+msgid "Course options for"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:294
+msgid "Available Actions"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:328
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:330
+msgid "Email Settings"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:370
+msgid "Related Programs"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:392
+msgid ""
+"You can no longer access this course because payment has not yet been "
+"received. You can contact the account holder to request payment, or you "
+"can unenroll from this course"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:396
+msgid ""
+"You can no longer access this course because payment has not yet been "
+"received. You can {contact_link_start}contact the account "
+"holder{contact_link_end} to request payment, or you can "
+"{unenroll_link_start}unenroll{unenroll_link_end} from this course"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:426
+msgid "Verification not yet complete."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:427
+msgid "You only have {days} day left to verify for this course."
+msgid_plural "You only have {days} days left to verify for this course."
+msgstr[0] ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:433
+msgid "Almost there!"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:434
+msgid "You still need to verify for this course."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:438
+msgid "Verify Now"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:441
+msgid "You have submitted your verification information."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:442
+msgid ""
+"You will see a message on your dashboard when the verification process is"
+" complete (usually within 1-2 days)."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:444
+msgid "Your current verification will expire soon!"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:445
+msgid ""
+"You have submitted your reverification information. You will see a "
+"message on your dashboard when the verification process is complete "
+"(usually within 1-2 days)."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:447
+msgid "You have successfully verified your ID with edX"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:449
+msgid "Your current verification is effective until {date}."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:452
+msgid "Your current verification will expire soon."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:455
+msgid ""
+"Your current verification will expire in {days} days. {start_link}Re-"
+"verify your identity now{end_link} using a webcam and a government-issued"
+" photo ID."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:470
+msgid ""
+"Pursue a {cert_name_long} to highlight the knowledge and skills you gain "
+"in this course."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:472
+msgid ""
+"It's official. It's easily shareable. It's a proven motivator to complete"
+" the course. {line_break}{link_start}Learn more about the verified "
+"{cert_name_long}{link_end}."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/dashboard/_dashboard_course_listing.html:492
+msgid "Upgrade to Verified"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/header/header.html:75
+#: edx-platform/pearson-pols-theme/lms/templates/header/user_dropdown.html:33
+msgid "Options Menu"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/header/header.html:87
+#: edx-platform/pearson-pols-theme/lms/templates/header/user_dropdown.html:36
+msgid "More Options"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/header/header.html:92
+msgid ""
+"{begin_strong}Warning:{end_strong} Your browser is not fully supported. "
+"We strongly recommend using {chrome_link} or {ff_link}."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/header/header.html:115
+msgid "Choose Language"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-authenticated.html:39
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-not-authenticated.html:48
+msgid "Courses"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-authenticated.html:47
+msgid "Programs"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-authenticated.html:55
+msgid "Journals"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-authenticated.html:63
+#: edx-platform/pearson-pols-theme/lms/templates/header/user_dropdown.html:47
+msgid "Profile"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-authenticated.html:72
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-not-authenticated.html:34
+msgid "Discover New"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-authenticated.html:79
+msgid "Sysadmin"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-authenticated.html:87
+msgid "Shopping Cart"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-logo-header.html:20
+msgid "{platform_name} Home Page"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-not-authenticated.html:40
+msgid "Supplemental Links"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-not-authenticated.html:44
+msgid "How it Works"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-not-authenticated.html:52
+msgid "Schools"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-not-authenticated.html:58
+msgid "Explore courses"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-not-authenticated.html:76
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-not-authenticated.html:78
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-not-authenticated.html:102
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-not-authenticated.html:104
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-not-authenticated.html:108
+#: edx-platform/pearson-pols-theme/lms/templates/header/navbar-not-authenticated.html:110
+msgid "Sign in"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/header/user_dropdown.html:28
+msgid "Dashboard for:"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/header/user_dropdown.html:38
+msgid "Resume your last course"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/header/user_dropdown.html:50
+msgid "Account"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/header/user_dropdown.html:54
+msgid "Sign Out"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/learner_profile/learner-achievements-fragment.html:22
+msgid "Completed {completion_date_html}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/learner_profile/learner-achievements-fragment.html:43
+#: edx-platform/pearson-pols-theme/lms/templates/learner_profile/learner-achievements-fragment.html:59
+msgid "{course_mode} certificate"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/learner_profile/learner-achievements-fragment.html:74
+msgid "You haven't earned any certificates yet."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/learner_profile/learner-achievements-fragment.html:79
+msgid "Explore New Courses"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:10
+msgid "Terms of Use and Honor Code"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:16
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:91
+msgid "Print Terms of Use and Honor Code"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:18
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:10
+msgid "Terms of Use"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:19
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:25
+msgid "PLEASE READ THE FOLLOWING CAREFULLY"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:20
+msgid ""
+"IF YOU ARE UNDER 18 YEARS OF AGE, PLEASE BE SURE TO READ THIS AGREEMENT "
+"WITH YOUR PARENTS OR GUARDIAN AND ASK QUESTIONS ABOUT THINGS YOU DO NOT "
+"UNDERSTAND."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:21
+msgid ""
+"Pearson Education, Inc. and its subsidiaries and affiliates "
+"(&ldquo;Pearson&rdquo;) are providing you this site and its related "
+"applications and services (collectively, &ldquo;Service&rdquo;). The "
+"Service may be delivered to you through the Internet via your browser or "
+"app (mobile or otherwise).&nbsp;&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:22
+msgid ""
+"This Service permits you to enroll in certain educational courses and "
+"programs at the listed cost(s).&nbsp; These courses and programs include "
+"opportunities to interact with fellow students, advisors, and oftentimes "
+"with subject matter experts.&nbsp; Such courses and programs may also "
+"include individual assessment of a student's work and, for students who "
+"demonstrate their mastery of subjects, a certificate of achievement or "
+"other acknowledgment.&nbsp; In some instances, the course content will be"
+" fully owned and delivered by Pearson while, in other cases, Pearson will"
+" deliver courses that are owned and distributed by a third party.&nbsp; "
+"Criteria for successful completion of each course and/or program shall be"
+" set by the content owner."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:23
+msgid ""
+"The courses and programs offered as part of this Service will be offered "
+"in a variety of configurations.&nbsp; In some cases Pearson will license "
+"courses and programs from a 3rd party and host them entirely within its "
+"own learning environment.&nbsp; In other cases, Pearson will provide "
+"products and services designed to improve the learning experience on its "
+"server while directing the user to a 3rd party for the course level "
+"experience."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:24
+msgid ""
+"Your use of the Service is subject to all terms and policies posted on "
+"this site or the legal information section of the app (including the "
+"{link_start}Privacy Statement{link_end}; collectively referred to as the "
+"&ldquo;Terms of Use&rdquo;)."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:25
+msgid ""
+"It is important to us that the Service provides you with a helpful and "
+"reliable experience. To protect our rights and yours, we have prepared "
+"the Terms of Use that apply to all users of the Service. If you have any "
+"questions concerning the Terms of Use, please {link_start}Contact "
+"Us{link_end}."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:26
+msgid ""
+"PLEASE NOTE THAT THE USAGE TERMS, PURCHASE TERMS AND/OR PRIVACY POLICIES "
+"OF OTHER PEARSON AND THIRD-PARTY PRODUCTS AND SERVICES LINKED TO OR FROM "
+"THIS SERVICE MAY VARY FROM THE TERMS HEREIN SO PLEASE MAKE SURE TO CHECK "
+"THE TERMS AND POLICIES APPLICABLE TO SUCH OTHER PRODUCTS AND SERVICES "
+"PRIOR TO USE."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:27
+msgid ""
+"BY USING THE SERVICE, YOU REPRESENT THAT YOU HAVE READ AND UNDERSTOOD THE"
+" TERMS OF USE AND AGREE TO BE BOUND BY THEM. YOU AGREE TO USE THE SERVICE"
+" IN A MANNER CONSISTENT WITH ALL APPLICABLE LAWS AND REGULATIONS AND IN "
+"ACCORDANCE WITH THE TERMS OF USE. DO NOT USE THIS SERVICE IF AT ANY TIME "
+"YOU DO NOT AGREE WITH ANY PART OF THE TERMS OF USE."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:28
+msgid "Privacy"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:29
+msgid ""
+"Pearson is concerned about the safety and privacy of all users of the "
+"Service. Please read our {link_start}Privacy Statement{link_end}, which "
+"is an important part of the Terms of Use."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:30
+msgid "Changes in Terms of Use"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:31
+msgid ""
+"Pearson has the right to change or modify the Terms of Use at any time, "
+"including the&nbsp;{link_start}Privacy Statement{link_end} applicable to "
+"your use of the Service. Such changes or modifications shall be effective"
+" immediately upon notice, which may be given by means including, but not "
+"limited to, posting within the Service, or by electronic or conventional "
+"mail, messaging, or by any other means by which you may obtain notice. "
+"Any use of the Service by you subsequent to such notice shall be deemed "
+"to constitute your acceptance of such changes or modifications."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:32
+msgid "User License"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:33
+msgid ""
+"You are granted a limited, personal, non-exclusive, non-assignable, and "
+"non-transferable license to access and use the Service for non-"
+"commercial, personal use only. You may not adapt, download, revise, "
+"broadcast, reverse engineer, duplicate, publish, modify, disseminate, "
+"display, perform, transfer, or otherwise distribute any content or other "
+"material on the Service, unless specifically authorized by Pearson or "
+"this Terms of Use."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:34
+msgid ""
+"Under no circumstances may a user of the Service (i) frame or utilize "
+"framing techniques to enclose any part of the Service; (ii) gather, "
+"obtain, use, access or otherwise copy any part of the Service by using "
+"any bot, spider, crawler, spy ware, engine, device, software or any other"
+" automatic device, utility or manual process of any kind; (iii) use the "
+"Service or any features available on the Service in any manner with the "
+"intent to interrupt, damage, disable, overburden or impair the Service or"
+" such services; or (iv) engage in any activity that interferes with "
+"another user&rsquo;s access, use or enjoyment of this Service."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:35
+msgid ""
+"Use of the Service for any purpose other than as contemplated in the "
+"Terms of Use is a violation of Pearson&rsquo;s and/or its "
+"licensors&rsquo; copyright and proprietary rights. Neither Pearson nor "
+"its licensors guarantee the accuracy or completeness of any information "
+"or content. You agree that you must evaluate, and bear all risks "
+"associated with the use of any content, including any reliance on the "
+"accuracy, completeness, or usefulness of such content. All rights not "
+"expressly granted herein are reserved by Pearson."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:36
+msgid ""
+"Certain features of this Service may be provided by third parties and the"
+" use of such features may be conditioned upon your agreement to such "
+"third parties&rsquo; terms of use and privacy policies. You understand "
+"that the Terms of Use applies only to the parts of the Service that "
+"reside on Pearson&rsquo;s (or its service provider&rsquo;s) servers and "
+"not to those that reside on third-party servers not controlled by "
+"Pearson."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:37
+msgid "Representation and Warranty"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:38
+msgid ""
+"As a condition of your use of the Service, you warrant to Pearson that "
+"you will not use the Service for any purpose that is unlawful or "
+"prohibited by the Terms of Use. You agree not to obtain or attempt to "
+"obtain any materials or information not intentionally made available to "
+"you on the Service."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:39
+msgid "Uploads"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:40
+msgid ""
+"To the extent that the Service may provide you with an opportunity to "
+"upload material (&ldquo;Uploads&rdquo;), BE ADVISED THAT PEARSON HAS NO "
+"OBLIGATION TO SCREEN, EDIT, OR REVIEW SUCH UPLOADS PRIOR TO THEIR "
+"APPEARANCE ON THE SERVICE, and Uploads do not necessarily reflect the "
+"views of Pearson. To the fullest extent permitted by applicable laws, in "
+"no event shall Pearson have any responsibility or liability for the "
+"Uploads (or the loss thereof for any reason) or for any claims, damages, "
+"or losses resulting from their use (or loss) and/or appearance on the "
+"Service. Please keep in mind that Uploads may be discoverable by, and "
+"viewable to, other users of the Service. Pearson reserves the right to "
+"monitor the Uploads and to remove anything which it considers in its "
+"absolute discretion to be offensive, ineffective or otherwise in breach "
+"of the Terms of Use or for any other reason as Pearson deems necessary."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:41
+msgid ""
+"You hereby represent and warrant that your Uploads shall not contain any "
+"viruses or other contaminating or destructive devices or features; that "
+"your Uploads will not contain any defamatory, indecent, offensive, "
+"tortious, or otherwise unlawful material or content; and that your "
+"Uploads will not be used to carry out or solicit any unlawful activity "
+"and/or be used to make commercial solicitations. You further represent "
+"and warrant that you have all necessary rights in and to the Uploads to "
+"be used in connection with the Service and that your Uploads will not "
+"infringe any intellectual, proprietary or other rights of third parties."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:42
+msgid ""
+"BY SUBMITTING AN UPLOAD, YOU GRANT PEARSON THE ROYALTY-FREE, PERPETUAL, "
+"IRREVOCABLE, NON-EXCLUSIVE RIGHT AND LICENSE TO USE, REPRODUCE, MODIFY, "
+"ADAPT, PUBLISH, PERFORM, TRANSLATE AND DISTRIBUTE SUCH UPLOAD (IN WHOLE "
+"OR IN PART) WORLDWIDE AND/OR TO INCORPORATE IT IN OTHER WORKS IN ANY "
+"FORM, MEDIA OR TECHNOLOGY NOW KNOWN OR HEREAFTER DEVELOPED FOR THE FULL "
+"TERM OF ANY COPYRIGHT THAT MAY EXIST IN SUCH UPLOAD."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:43
+msgid "Termination"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:44
+msgid ""
+"Pearson reserves the right at any time, and from time to time, to "
+"discontinue, temporarily or permanently, the Service or any part thereof "
+"or terminate any user&rsquo;s access to the Service or any part thereof. "
+"Pearson may also modify, delete or adapt the Service at any time without "
+"any notice or obligation to the user at Pearson&rsquo;s sole discretion. "
+"Your right to use and otherwise access the Service is automatically "
+"terminated if you violate the Terms of Use. You agree that Pearson will "
+"not be liable to you or any third party for any modification, suspension,"
+" or discontinuation of the Service, or any part thereof. Upon termination"
+" for any reason, you must cease all access to the Service. All provisions"
+" of the Terms of Use as to limitation and disclaimer of warranties, "
+"limitation of liability, Pearson&rsquo;s ownership rights and your "
+"representations and indemnities shall survive termination."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:45
+msgid "Links to and from Other Websites"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:46
+msgid ""
+"You may have linked to the Service from a third-party website and the "
+"Service may provide links to other third-party websites or resources "
+"(collectively, &ldquo;3P Sites&rdquo;). Because we do not control such 3P"
+" Sites you acknowledge and agree that Pearson is not responsible or "
+"liable for the content, products or performance of those 3P Sites, and "
+"you hereby irrevocably waive any claim against Pearson with respect to "
+"such sites. Pearson reserves the right to terminate any link at any time "
+"without notice. The inclusion of a link to such 3P Sites does not "
+"constitute or imply an endorsement, authorization, sponsorship, or "
+"affiliation by Pearson of that 3P Site, or any products or services "
+"provided therein. The information practices of those 3P Sites are not "
+"covered by the Terms of Use or any other policies or terms applicable to "
+"the Service. We recommend that you review any terms of use and privacy "
+"policy of those 3P Sites linked to the Service before providing any "
+"information to those websites or using their products and services."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:47
+msgid ""
+"Please note that the Service may also provide links to other sites "
+"brought to you by Pearson. The privacy statement and terms of use of "
+"other Pearson sites may vary from the Terms of Use. Please review the "
+"privacy statements, terms of use and other policies or terms that may "
+"apply to other Pearson sites prior to your use of such sites."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:48
+msgid "Copyright and Trademark Notices"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:49
+msgid ""
+"The entire content of the Service and any supporting software are the "
+"proprietary property of Pearson and/or its licensors, and are protected "
+"by U.S. and international copyright and other intellectual property laws."
+" The reproduction, redistribution, modification or publication of any "
+"part of the Service without the express written consent of Pearson and/or"
+" its licensors is strictly prohibited."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:50
+msgid ""
+"Unless otherwise indicated, trademarks that appear on this Service are "
+"trademarks of Pearson or its affiliates. All other trademarks not owned "
+"by Pearson or its affiliates that appear in the Service are the property "
+"of their respective owners, who may or may not be affiliated with, "
+"connected to, or sponsored by Pearson or its affiliates. You agree not to"
+" display, disparage, dilute, or taint our trademarks or use any confusing"
+" similar marks or use our trademarks in such a way that would "
+"misrepresent the ownership of such marks. Any permitted use of our "
+"trademarks by you shall be to the benefit of Pearson."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:51
+msgid "Disclaimer of Warranties"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:52
+msgid "YOU EXPRESSLY UNDERSTAND AND AGREE THAT:"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:53
+msgid ""
+"(a) YOUR USE OF THE SERVICE IS AT YOUR OWN RISK. THE SERVICE IS PROVIDED "
+"ON AN &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; BASIS. YOU "
+"ACKNOWLEDGE AND AGREE THAT NO WARRANTIES OF ANY KIND, WHETHER EXPRESS OR "
+"IMPLIED, ARE MADE BY PEARSON OR ITS LICENSORS AND PEARSON AND ITS "
+"LICENSORS EXPRESSLY DISCLAIM ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS "
+"OR IMPLIED, INCLUDING, BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF "
+"MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:54
+msgid ""
+"(b) NEITHER PEARSON NOR ITS LICENSORS MAKE ANY WARRANTY THAT (i) THE "
+"SERVICE WILL MEET YOUR REQUIREMENTS; (ii) THE SERVICE WILL BE "
+"UNINTERRUPTED, AVAILABLE FOR ANY LENGTH OF TIME, SECURE, OR ERROR-FREE; "
+"(iii) THE RESULTS THAT MAY BE OBTAINED FROM THE USE OF THE SERVICE WILL "
+"BE ACCURATE OR RELIABLE; (iv) THE QUALITY OF ANY PRODUCTS, SERVICES, "
+"INFORMATION, OR OTHER MATERIAL PURCHASED OR OBTAINED BY YOU THROUGH THE "
+"SERVICE WILL MEET YOUR EXPECTATIONS; AND (v) ANY ERRORS OR DEFECTS IN THE"
+" SERVICE WILL BE CORRECTED; AND"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:55
+msgid ""
+"(c) ANY MATERIAL UPLOADED/DOWNLOADED OR OTHERWISE OBTAINED FROM THE "
+"SERVICE IS DONE AT YOUR OWN DISCRETION AND RISK; NEITHER PEARSON NOR ITS "
+"LICENSORS SHALL BE LIABLE, AND YOU WILL BE SOLELY RESPONSIBLE, FOR ANY "
+"AND ALL LOSS, OR CORRUPTION, OF DATA UPLOADED OR INPUTTED BY YOU THROUGH "
+"THE USE OF THE SERVICE, AND ALL SERVICING, REPAIR, OR CORRECTION AND ANY "
+"DAMAGE TO YOUR HARDWARE AND SOFTWARE THAT MAY RESULT FROM THE USE OF THE "
+"SERVICE."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:56
+msgid "Limitation of Liability"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:57
+msgid ""
+"IN NO EVENT SHALL PEARSON OR ITS EMPLOYEES, AGENTS, LICENSORS, OR "
+"CONTRACTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, "
+"CONSEQUENTIAL, PUNITIVE OR EXEMPLARY DAMAGES, DAMAGES FOR LOSS OF "
+"PROFITS, GOODWILL, USE OF DATA, OR OTHER INTANGIBLE LOSSES (EVEN IF SUCH "
+"PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES), RESULTING "
+"FROM: (i) THE LOSS OF DATA AND/OR THE USE OR THE INABILITY TO USE THE "
+"SERVICE; (ii) THE COST OF PROCUREMENT OF SUBSTITUTE GOODS AND SERVICES "
+"RESULTING FROM ANY GOODS, DATA, INFORMATION OR SERVICES PURCHASED OR "
+"OBTAINED OR MESSAGES RECEIVED OR TRANSACTIONS ENTERED INTO THROUGH OR "
+"FROM THE SERVICE; (iii) UNAUTHORIZED ACCESS TO OR ALTERATION OF YOUR "
+"TRANSMISSIONS OR DATA; (iv) STATEMENTS OR CONDUCT OF ANY THIRD PARTY ON "
+"THE SERVICE; OR (v) ANY OTHER MATTER RELATING TO THE SERVICE."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:58
+msgid ""
+"Some jurisdictions do not allow the exclusion of certain warranties or "
+"the limitation or exclusion of liability for incidental or consequential "
+"damages. Accordingly, the limitations above may not apply to you."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:59
+msgid "Indemnification"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:60
+msgid ""
+"You agree to indemnify and hold Pearson and its subsidiaries, affiliates,"
+" officers, agents, directors, licensors, contractors and employees "
+"harmless from any claims, actions, costs, liabilities, expenses and "
+"damages, including reasonable attorneys&rsquo; fees and expenses, made "
+"against Pearson by any third party due to or arising out of your use of "
+"the Service, your connection to the Service, your breach of any "
+"representation, warranty or obligation, your violation of this Terms of "
+"Use, or your violation of any rights of another user."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:61
+msgid "Submissions"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:62
+msgid ""
+"Pearson always welcomes suggestions and comments regarding the Service. "
+"Any comments or suggestions submitted to the Service or Pearson, either "
+"online or offline, will become Pearson&rsquo;s property upon their "
+"submission. This policy is intended to avoid the possibility of future "
+"misunderstandings when projects developed by Pearson might seem to others"
+" to be similar to their own submissions or comments."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:63
+msgid "Digital Millennium Copyright Act Compliance"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:64
+msgid ""
+"If you have any copyright concerns about any materials posted on the "
+"Service by others, please let us know. We comply with the provisions of "
+"the Digital Millennium Copyright Act applicable to Internet service "
+"providers (17 U.S.C. &sect; 512). Unless otherwise stated in any specific"
+" DMCA designation provided by Pearson, please provide us with written "
+"notice (&ldquo;Notice&rdquo;) by contacting our Designated Agent at the "
+"following address:"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:66
+msgid "DMCA Designated Agent Pearson Education,Inc."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:67
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:302
+msgid "221 River Street"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:68
+msgid "Hoboken,NJ 07030"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:69
+msgid "Facsimile: (201)785-2721"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:70
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:304
+msgid "email: {link_start}dmca.agent@pearsoned.com{link_end}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:72
+msgid "To be effective, the Notice must include the following:"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:75
+msgid ""
+"A physical or electronic signature of the owner, or a person authorized "
+"to act on behalf of the owner, (&ldquo;Complaining Party&rdquo;) of an "
+"exclusive right that is allegedly being infringed upon;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:76
+msgid ""
+"Information reasonably sufficient to permit Pearson to contact the "
+"Complaining Party, such as an address, telephone number, and if "
+"available, an electronic mail address;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:77
+msgid ""
+"Identification of the allegedly infringing material on the Service "
+"(&ldquo;Infringing Material&rdquo;), and information reasonably "
+"sufficient to permit Pearson to locate such material on the Service;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:78
+msgid ""
+"Identification of the copyrighted work claimed to have been infringed "
+"upon (&ldquo;Infringed Material&rdquo;), or if multiple copyrighted works"
+" on the Service are covered by a single Notice, a list of each "
+"copyrighted work claimed to have been infringed (please be specific as to"
+" which Infringing Material is infringing on which Infringed Material);"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:79
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:316
+msgid ""
+"A statement that the Complaining Party has a good faith belief that use "
+"of Infringing Material in the manner complained of is not authorized by "
+"the copyright owner, its agent, or the law; and"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:80
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:317
+msgid ""
+"A statement that the information in the Notice is accurate, and under "
+"penalty of perjury, that the Complaining Party is the owner or is "
+"authorized to act on behalf of the owner of an exclusive right that is "
+"allegedly infringed."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:83
+msgid "General Information; Governing Law"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:84
+msgid ""
+"The Terms of Use constitute the entire agreement between you and Pearson,"
+" govern your use of the Service, and supersede any prior agreements "
+"between you and Pearson concerning the Service. You also may be subject "
+"to additional terms and conditions that may apply when you use affiliated"
+" services, third-party content or third-party software. The Terms of Use "
+"and the relationship between you and Pearson will be governed by the laws"
+" of the State of New York without regard to its conflict of law "
+"provisions. You and Pearson agree to submit to the personal and exclusive"
+" jurisdiction of the courts located within the County of New York, State "
+"of New York. The failure of Pearson to exercise or enforce any right or "
+"provision of the Terms of Use shall not constitute a waiver of such right"
+" or provision. If any provision of the Terms of Use is found by a court "
+"of competent jurisdiction to be invalid, the parties nevertheless agree "
+"that the court should endeavor to give effect to the parties&rsquo; "
+"intentions as reflected in the provision, and the other provisions of the"
+" Terms of Use remain in full force and effect. You agree that regardless "
+"of any statute or law to the contrary, any claim or cause of action "
+"arising out of or related to use of the Service or the Terms of Use must "
+"be filed within one (1) year after such claim or cause of action arose or"
+" be forever barred."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:85
+msgid "Ownership"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:86
+msgid ""
+"This Service is owned and operated by Pearson and the contents of this "
+"Service are protected by copyright of Pearson and/or its licensors."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:87
+msgid "Violations"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:88
+msgid ""
+"Please report any violations of the Terms of Use by "
+"{link_start}contacting us{link_end}."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/honor.html:89
+msgid "Last Update to Terms of Use: May 2019"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:10
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:18
+msgid "Privacy Notice"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:16
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:158
+msgid "Print Privacy Notice"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:19
+msgid "Updated 20 June 2018"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:20
+msgid ""
+"Here, you can find out how we safeguard your information and how we use "
+"it to improve our products and services for the benefit of all our "
+"customers and website users.&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:21
+msgid ""
+"The nature of our business means that, from time to time, we&rsquo;ll "
+"require some personal details from our customers and website users."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:22
+msgid ""
+"The data we collect could just be a name and an email address, but "
+"depending on your level of engagement with Pearson, it could be much more"
+" than that."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:23
+msgid ""
+"The personal information you&rsquo;ve shared with us, along with data on "
+"how you use our websites - what you search for and what preferences you "
+"select, for example - help us to better understand our customers as a "
+"group and as individuals. This in turn helps us to provide a range of "
+"products and services that meet your needs."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:24
+msgid "How we protect your data"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:25
+msgid ""
+"When you share your personal information with any company, you have a "
+"right to expect that information to be treated with total "
+"confidentiality.&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:26
+msgid ""
+"Your privacy is extremely important to us. We&rsquo;re committed to "
+"protecting any personal information you&rsquo;ve given us, and we comply "
+"with all relevant data protection laws."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:27
+msgid "This means that:"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:29
+msgid "We take full responsibility for the information we hold about you"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:30
+msgid "We will protect your privacy at all times"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:31
+msgid "We will never sell your personal information."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:33
+msgid ""
+"Whether you&rsquo;ve supplied your personal details online, by phone or "
+"text, by email or in a letter, we will never use them without a lawful "
+"reason to do so. We&rsquo;ll use them for the purposes for which they "
+"were initially requested and as fully explained in this Privacy "
+"Notice.&nbsp; These explain how your personal data is being managed and "
+"safeguarded by us, including:"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:35
+msgid "what information we collect about you"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:36
+msgid "how we collect and use this information"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:37
+msgid "how we safeguard the information you&rsquo;ve provided"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:38
+msgid "your rights in relation to the information we hold about you"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:39
+msgid "how to report abuse."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:41
+msgid ""
+"At Pearson, we know that you care how your personal information is used "
+"and we appreciate that you trust us to do that carefully and sensibly."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:42
+msgid ""
+"This Privacy Notice is designed to help you understand how we and other "
+"companies in our group collect and use your personal information. We want"
+" you to make informed decisions when using our websites and any features "
+"on them, including any registration and e-commerce services."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:43
+msgid ""
+"This Privacy Notice applies to all the pages on our sites linking to this"
+" Privacy Notice and any features of them and any e-commerce, purchasing "
+"or other areas which require registration on our sites. However, it "
+"won&rsquo;t apply to any third-party sites which are linked to our sites."
+" We recommend that you read the privacy notice of any such sites that you"
+" visit as we are not responsible for them."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:44
+msgid ""
+"When we refer to our website or sites, we mean any of our websites or "
+"applications from which you have accessed this Privacy Notice."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:45
+msgid ""
+"We have included full details of who we and our group companies are at "
+"the end of this Privacy Notice."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:46
+msgid "What information does Pearson collect about me?"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:47
+msgid ""
+"Personal information that we collect may include your name, contact "
+"details (phone numbers, email address and addresses), your date of birth,"
+" job, course information, your personal interests, credit card or billing"
+" information, shopping selections and data about the pages you visit and "
+"your other activity on our site, as well as any other personal "
+"information relating to you that you supply to us.&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:48
+msgid ""
+"Some of our sites may also collect other information that you supply to "
+"us, such as information relating to your education, skills or job "
+"experience, where relevant in the context of the site or the services "
+"provided through the site.&nbsp; Except where stated otherwise on the "
+"site at the time such personal information is submitted, it is only "
+"processed for the purposes for which you have submitted it to us."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:49
+msgid "How does Pearson collect my personal information?"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:50
+msgid "We collect your information in two ways:"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:51
+msgid ""
+"1. Personal information you choose to disclose. You may, for example, "
+"provide us with your information when you post something on our site, "
+"when you register for any features on our site that require registration,"
+" when you contact us (online or offline) or when you order goods or "
+"services from us.&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:52
+msgid ""
+"2. Information collected by us when you interact with our site or when "
+"you open our email communications. We use cookies (a small piece of "
+"computer code that we store for a period of time on your computer or "
+"mobile device) and other similar technologies to collect this "
+"information."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:53
+msgid ""
+"We will inform you prior to collecting your personal information if it is"
+" requested on a voluntary basis and the consequences of not providing "
+"voluntary personal information.&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:54
+msgid ""
+"In a separate automatic operation the web server will collect your IP "
+"address and browser type and details of the website, application or email"
+" communication you came from before entering our site. This information "
+"is used to:"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:56
+msgid "work out how many times our site has been visited"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:57
+msgid ""
+"record which parts of our site have been visited so we can improve the "
+"content and layout of the site"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:58
+msgid "understand the effectiveness of our email communications."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:60
+msgid ""
+"We may from time to time supply this data to third parties in an "
+"anonymised form for uses in connection with our site."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:61
+msgid "What will Pearson do with my personal information?&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:62
+msgid ""
+"We and our group companies use your personal information for a variety of"
+" business purposes which are in our legitimate interests (\"Business "
+"Purposes\"), and/or in order to enter into or perform a contract with you"
+" (\"Contractual\"), and/or with your consent (\"Consent\"), and/or "
+"compliance with our legal obligations (\"Legal Reasons\"). For example, "
+"we may use your personal information:"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:64
+msgid ""
+"to provide you with the relevant services through our applicable site for"
+" Contractual reasons&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:65
+msgid "to process your online purchases for Contractual reasons"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:66
+msgid ""
+"to inform you about and provide more information on products and services"
+" offered by us and our group companies for our Business Purposes or with "
+"your Consent"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:67
+msgid ""
+"to invite you to participate in surveys, discussions and prize draws and "
+"ask for your views on our services via online surveys and discussion "
+"forums for our Business Purposes and/or with your Consent&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:68
+msgid ""
+"to improve the products and services offered to you for our Business "
+"Purposes"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:69
+msgid "for marketing for our Business Purposes and/or with your Consent"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:70
+msgid "for statistical or analytical purposes for our Business Purposes"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:71
+msgid ""
+"to detect, prevent or investigate security breaches or fraud for our "
+"Business Purposes and/or Legal Reasons"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:72
+msgid ""
+"to otherwise to better meet the needs and preferences of our customers "
+"for our Business Purposes.&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:74
+msgid ""
+"We will not allow unrelated third parties to use your personal "
+"information for marketing without your consent. Where we rely on your "
+"consent, you have the right to withdraw it at any time.&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:75
+msgid ""
+"We also use personal information to identify types of user, audit how our"
+" sites are used and to help with the strategic development of our sites. "
+"When doing so, we remove any direct identifiers.&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:79
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:96
+msgid ""
+"We will show your username on any content you submit or post on our sites"
+" (including discussions, bulletin boards and forums)."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:81
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:98
+msgid "Will Pearson share my personal information with anyone else?&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:82
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:99
+msgid ""
+"We will never sell your personal information. We may disclose and share "
+"your personal information with:"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:84
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:101
+msgid "our group companies&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:85
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:102
+msgid "any entity which acquires any part of our business&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:86
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:103
+msgid ""
+"our service providers (including, for example, credit reference agencies "
+"and payment processors, distributors/agents of our products, suppliers "
+"who develop or host our sites)"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:87
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:104
+msgid ""
+"third-party search engines that may index user profile pages and "
+"usernames as part of the URL of the user profile page by default if "
+"required or permitted by law"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:88
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:105
+msgid ""
+"relevant third parties (such as your employer, your school, your internet"
+" service provider, law enforcement agencies) if we reasonably believe you"
+" may be in breach of the law (e.g. if you have posted defamatory content "
+"on our sites) or if required to do so in accordance with applicable law"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:89
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:106
+msgid "other third parties with your consent."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:94
+msgid ""
+"Participation in surveys and discussion forums is entirely voluntary. You"
+" may unsubscribe from being contacted for these purposes at any time. "
+"Survey information will be used for market research with the aim of "
+"improving our services."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:109
+msgid "Email marketing and opt-out"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:110
+msgid ""
+"We will not send you marketing emails if you have opted out of receiving "
+"them. Any marketing emails we send you will include an unsubscribe link "
+"at the end of the email."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:111
+msgid ""
+"Some Pearson sites also provide contact details you may use if you want "
+"to contact us by email, post or telephone in order to unsubscribe. In "
+"addition, some Pearson sites have a \"My Account\" page where you can "
+"choose whether or not to receive marketing communications from us."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:116
+msgid "How does Pearson keep my personal information safe?&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:117
+msgid ""
+"We seek to protect the safety of all your personal information by "
+"implementing appropriate technical and organisational measures. For "
+"example, provided your browser accepts HTTPS (Hyper Text Transfer "
+"Protocol Secure) encryption, we seek to protect your payment information "
+"against unauthorised access through a secure server. Where we use third "
+"parties to process personal information, we require them to ensure the "
+"safety of your information."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:118
+msgid ""
+"Any personal information that you voluntarily post on a public area of "
+"our site, such as a bulletin board or discussion forum, or an interactive"
+" area requiring registration and/or subscription, may be collected and "
+"used by others. Please be careful what personal information you disclose "
+"in this way. You understand that we cannot control the actions of other "
+"users."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:119
+msgid "Will Pearson send my personal information to another country?"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:120
+msgid ""
+"We may transfer your personal information to other countries around the "
+"world, including countries outside of the European Economic Area "
+"(\"EEA\"), which may not have the same data protection laws as those of "
+"the country where you access our sites. Where we transfer your personal "
+"information to countries outside of the EEA we will take appropriate "
+"steps to ensure your personal information is afforded the same level of "
+"protection as described in this Privacy Notice. We have entered into an "
+"intercompany data processing agreement using the European Commission "
+"standard contractual clauses (in the absence of an adequacy decision) for"
+" data transfers to our group companies located outside of the EEA. We "
+"rely on adequacy decisions or any adequate data transfer mechanisms "
+"adopted by the European Commission or a supervisory authority from time "
+"to time for transfers to third parties located in countries outside of "
+"the UK or the EEA."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:121
+msgid "For how long will Pearson keep my personal information?&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:122
+msgid ""
+"We will keep your personal information only for as long as necessary to "
+"fulfil the purposes for which we are processing your personal information"
+" unless the law permits or requires longer. For example, we might need to"
+" keep your personal data for quality assurance of the service we have "
+"provided, or we might need to keep it to defend future legal "
+"claims.&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:123
+msgid "What if I am under 16 years old?&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:124
+msgid ""
+"If you are under 16, please be sure to read this Privacy Notice with your"
+" parent or guardian and ask them questions about anything you don&rsquo;t"
+" understand.&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:125
+msgid "What rights do I have?&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:126
+msgid ""
+"In some regions, such as the EEA (European Economic Area), you may have "
+"certain rights in relation to your personal information, including the "
+"right to:&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:128
+msgid "request access to and obtain a copy of your personal information"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:129
+msgid ""
+"rectification of your personal information if it is no longer accurate or"
+" erasure of your personal information if our retention is no longer "
+"necessary for the purposes for which it was collected"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:130
+msgid ""
+"restrict or object to the processing of your personal information in "
+"certain circumstances&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:131
+msgid "data portability (if applicable).&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:133
+msgid ""
+"If you wish to exercise any of your rights in relation to your personal "
+"information please send your request to us using the details set out in "
+"the \"Contacting Pearson\" section below. We will consider and act upon "
+"any request in accordance with applicable data protection laws.&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:134
+msgid ""
+"You may also have the right to complain to the Information Commissioner "
+"(if you are in the UK) or to your local data protection supervisory "
+"authority if you are unhappy with our privacy practices notified under "
+"this Privacy Notice.&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:135
+msgid "Misuse of personal information"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:136
+msgid ""
+"Any improper collection or misuse of personal information is in violation"
+" of this Privacy Notice and of our Legal Notice or terms of use. Please "
+"report it by emailing "
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:137
+msgid ""
+"You agree not to misuse any personal information available on our sites "
+"or to gather it or use robots or other automated scripts, codes or "
+"functionalities to do so."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:138
+msgid ""
+"We may immediately suspend or terminate your access to our site without "
+"notice if we become aware that you are in breach of applicable terms and "
+"conditions of use or of this Privacy Notice."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:139
+msgid "Changes to this Privacy Notice&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:140
+msgid ""
+"We may update this Privacy Notice from time to time. We will always "
+"include the date of a new version so that you know when there has been a "
+"change.&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:141
+msgid "Contacting Pearson&nbsp;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:142
+msgid ""
+"If you have any questions about our Privacy Notice, please do not "
+"hesitate to contact us at:"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:144
+msgid "Data Protection Officer"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:145
+msgid "Pearson"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:146
+msgid "80 Strand"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:147
+msgid "London"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:148
+msgid "WC2R 0RL"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:149
+msgid "United Kingdom"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:151
+msgid "or email us at {link_start}dataprivacy@pearson.com{link_end}."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/privacy.html:155
+msgid ""
+"This Privacy Notice is provided on behalf of Pearson plc and its group "
+"companies.&nbsp; This means all companies owned or controlled by Pearson "
+"plc (registered office 80 Strand, London WC2R 0RL, United Kingdom, "
+"registered number 53723)."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:20
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:425
+msgid "Print Terms of Use"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:24
+msgid "End User License Agreement"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:26
+msgid ""
+"BY CLICKING \"I ACCEPT\" or \"I AGREE\" or USING THE SERVICES YOU ARE "
+"ENTERING INTO A BINDING CONTRACT WITH PEARSON EDUCATION, INC. AND ITS "
+"AFFILIATES. (COLLECTIVELY, \"PEARSON\")."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:27
+msgid ""
+"{bold_start}IMPORTANT:{bold_end} If you are a minor (a minor often is "
+"someone under the age of 18), you may not register for, or otherwise "
+"access, the Services (as defined below), nor may you consent to the terms"
+" of this {bold_start}End User License Agreement{bold_end} (\"EULA\" which"
+" includes the {bold_start}Privacy Policy{bold_end}) unless your "
+"educational institution or parent consents to and accepts the terms of "
+"this EULA on your behalf."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:33
+msgid ""
+"Children under the age of 13 may not accept the terms of this EULA, "
+"register for, or otherwise access, the Services unless an educational "
+"institution or parent has established an account or registered on their "
+"behalf."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:35
+msgid ""
+"Please reference the accompanying Privacy Policy for more information on "
+"how Pearson receives authorization and consent to collect, process and "
+"otherwise handle your Personal Information (as defined in the Privacy "
+"Policy). "
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:37
+msgid ""
+"If you have any questions about this EULA, please contact us at: "
+"{link_start}pxadmin@pearson.com{link_end}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:43
+msgid ""
+"It is important to us that the Services provide you with a helpful and "
+"reliable experience. To protect our rights and yours, this EULA governs "
+"all uses of the Services.  Access or use of the Services for which you "
+"seek registration or enrollment constitutes acceptance of this EULA as a "
+"binding agreement. By using the Services, you represent that you (1) have"
+" read and understood the terms, (2) agree to use the Services in "
+"compliance with applicable laws and the terms of this EULA and (3) are an"
+" Authorized User (as defined below). You may not use the Services if you "
+"do not agree with the EULA or if you are not an Authorized User."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:45
+msgid "1. Privacy Policy"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:47
+msgid ""
+"Please review our {link_start}Privacy Policy{link_end}, which also "
+"governs your use of the Services, to understand our data collection and "
+"use practices. You acknowledge and explicitly consent to the collection "
+"and use of your data, including Personal Information (as defined in the "
+"Privacy Policy), in accordance with the Privacy Policy.  Further, you "
+"acknowledge that the Privacy Policy may be revised from time to time for "
+"any reason."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:53
+msgid "2. Changes to this EULA."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:55
+msgid ""
+"Pearson may make changes to this EULA from time to time for any reason. "
+"Typically, these changes are made to conform to current practices, comply"
+" with changing regulatory requirements, or other similar purposes. If "
+"Pearson modifies this EULA in a manner that materially changes the terms "
+"or scope of the Services made available to you, we will make reasonable "
+"efforts to notify you by either contacting you via email or posting "
+"reasonable notice in connection with the Services to alert you to such "
+"changes. Your continued use of the Services after reasonable notice of "
+"such changes to the EULA has been provided will constitute your consent "
+"to the revised EULA terms. If you have any questions about this EULA, "
+"please contact us at: {link_start}pxadmin@pearson.com{link_end}"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:62
+msgid "3. The Services"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:64
+msgid ""
+"This website and its related applications and services (collectively the "
+"{bold_start}\"Services\"{bold_end}) is owned by Pearson Education, Inc. "
+"and/or its affiliated companies (collectively, "
+"{bold_start}\"we\"{bold_end}, {bold_start}\"us\"{bold_end}, or "
+"{bold_start}\"Pearson\"{bold_end}). The Services may be delivered to you "
+"through the Internet via your browser or app (mobile or otherwise) and "
+"may include enrollment ({bold_start}\"Enrollment\"{bold_end}) in one or "
+"more online courses ({bold_start}\"Course(s)\"{bold_end}) provided "
+"through the Services. While your User Account (defined below) for the "
+"Services may continue for an indefinite period of time during which you "
+"may enroll in other Courses, your access to those specific Courses "
+"provided through the Services is provided on a subscription basis for a "
+"limited period of time (each a {bold_start}\"Subscription\"{bold_end}). "
+"The Services may be provided directly by Pearson or accessed through a "
+"third party integration or an integrated third party service provider "
+"({bold_start}\"Third Party Service\"{bold_end}). The Services may link to"
+" or provide options to access third party websites or applications."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:69
+msgid "4. Authorized Users and User Accounts"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:71
+msgid ""
+"The Services are available only to individuals, including but not limited"
+" to educational institution, administrators and students, who have gained"
+" lawful access to the Services directly from Pearson or its Third Party "
+"Service provider or through the institution of which such individual is "
+"affiliated ({bold_start}\"Authorized User\" or \"User\"{bold_end}). In "
+"order to initiate access to the Services, you must register for a user "
+"account ({bold_start}\"User Account\"{bold_end}) by providing your first "
+"name, last name, valid email address (and in the case of Enrollments, "
+"your institution, educational institution and Course name or code) and "
+"designating a secret and unique username and password "
+"({bold_start}\"Account Credentials\"{bold_end}), as well as any "
+"additional information that may be required by your institution. In some "
+"cases, your User Account may already be established for you by your "
+"institution, or by way of direct access from an integrated Third Party "
+"Service, such as a learning management system, each of which may have "
+"additional terms of use or requirements for account access. Pearson may "
+"use your Account Credentials to validate your account prior to providing "
+"access to the Services each time you access the Services. "
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:77
+msgid ""
+"You may have only one active User Account at any given time. You agree to"
+" provide accurate and truthful information when creating a User Account "
+"and to promptly update such information should it change. "
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:79
+msgid ""
+"You may not self-register for the Services if you are under the age of 13"
+" unless your educational institution has established an account or "
+"registered on your behalf. If you are under the age of 18, you may not "
+"register or use the Services without first obtaining permission from your"
+" parent or guardian. However, if you are under the age of 18 and enrolled"
+" at an institution of higher education, you may self-register for the "
+"Services.  "
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:81
+msgid ""
+"The Services are not intended for use by residents of countries in which "
+"trade restrictions prohibit the sale of certain U.S. products or "
+"services. You understand and acknowledge that the administrators "
+"associated with your institution or a Third Party Service may have access"
+" to your User Account and may suspend, modify or terminate your account "
+"access at any time and for any reason."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:83
+msgid "5. Protection of Account Credentials"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:85
+msgid ""
+"Your User Account is for your personal use only. Unless we provide an "
+"approved mechanism for such use, allowing others to access or use the "
+"Services through your User Account is strictly prohibited and you are "
+"responsible for all uses of the Services associated with your Account "
+"Credentials, whether the use is made by you personally or by a third "
+"party due to your disclosure of your Account Credentials. "
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:87
+msgid ""
+"In order to protect the security of your Account Credentials and the "
+"Services, it is important that you maintain the confidentiality of your "
+"Account Credentials. You agree not to (1) use Account Credentials other "
+"than your own, or (2) to disclose your Account Credentials to any third "
+"party or service, other than an authorized Third Party Service. You agree"
+" to take reasonable steps to protect the secrecy of your Account "
+"Credentials and immediately notify Pearson at "
+"{link_start}pxadmin@pearson.com{link_end} of any known or suspected loss,"
+" disclosure or theft of your Account Credentials and/or access codes you "
+"obtain in connection with the Services."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:93
+msgid "6. Ownership of the Services"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:95
+msgid ""
+"The website, Course materials and other content provided through the "
+"Services (collectively, {bold_start}\"Materials\"{bold_end}) and any "
+"supporting software, applications and systems (collectively "
+"{bold_start}\"Applications\"{bold_end}) are the exclusive property of "
+"Pearson Education, Inc., its affiliates, and/or its licensors, and are "
+"protected by U.S. and international copyright and other intellectual "
+"property laws. All rights not expressly granted herein are reserved. "
+"Except as may be set forth in this EULA, the reproduction, "
+"redistribution, modification, publication, or adaptation of Materials or "
+"Applications, in whole or in part, without the express written consent of"
+" Pearson and/or its licensors is strictly prohibited. The Services may "
+"allow you to copy or download certain Materials, but please remember that"
+" the availability of this functionality does not mean that the above "
+"restrictions do not apply. "
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:101
+msgid ""
+"Unless otherwise indicated, trademarks, service marks and trade names "
+"(collectively {bold_start}\"Marks\"{bold_end}) that appear on the "
+"Services are the property of Pearson or its licensors. Any trademarks not"
+" owned by Pearson that appear in the Services are the property of their "
+"respective owners. You agree not to misuse or disparage any Marks "
+"associated with the Services or use the Marks (or any confusingly similar"
+" marks) in such a way that would misrepresent the ownership of the Marks "
+"or otherwise confuse the public as to the source or origin of any "
+"products or services. You should not use any Mark without obtaining the "
+"written consent of the Mark owner, using appropriate notice and "
+"attribution of the owner's trademark rights, and using the Marks in "
+"accordance with applicable usage guidelines as provided by a Mark's "
+"respective owner. Any such permitted use of the Marks by you shall be to "
+"the benefit of the respective Mark owner."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:107
+msgid "7. Limited License"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:109
+msgid ""
+"Pearson grants to you a limited, non-transferable, non-exclusive, non-"
+"sublicensable license to use the Services for their intended purpose and "
+"subject to the terms and restrictions set forth in this EULA, the Privacy"
+" Policy and any additional terms which may be established by your "
+"institution or Third Party Service. "
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:111
+msgid ""
+"You may use, display, and, when such functions are available on the "
+"Services, reformat, download, and print, Materials obtained through the "
+"Services solely for your own personal, non-commercial, and personal "
+"educational purposes. "
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:113
+msgid ""
+"You are responsible for meeting the then-current hardware, operating "
+"system, Internet browser and other technical requirements necessary to "
+"properly use and access the Services. All rights not specifically granted"
+" herein are reserved by Pearson. You acknowledge that the license granted"
+" under this EULA does not provide you with title to or ownership of the "
+"Services, or the Materials contained therein, but only a right of limited"
+" use subject to the terms and conditions of this EULA."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:115
+msgid "8. Permitted Uses of Materials."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:117
+msgid ""
+"You may, on an occasional and irregular basis, include insubstantial "
+"portions of the Materials in memoranda, reports and presentations, and "
+"then only to the extent that such use is for educational purposes of a "
+"non-commercial nature within the scope of, or permissible as \"fair "
+"use\", \"fair dealing\" or its equivalent under applicable copyright and "
+"intellectual property law, provided such use does not otherwise diminish "
+"the pedagogical or commercial value of the Materials or the Services and "
+"is otherwise accompanied by appropriate copyright notices. If you wish to"
+" request permission to reproduce the Materials, or if you have any "
+"questions about how to include any notices required under this Section, "
+"please refer to the information and contacts available at "
+"www.pearsoned.com/permissions. "
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:119
+msgid ""
+"Please note that additional permissions may also be required from "
+"Pearson's licensors. Your use of any Materials, whether under \"fair "
+"use\" or by permission, must include all applicable copyright, trademark "
+"and other notices, and appropriate source attribution to Pearson and its "
+"licensors. "
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:121
+msgid ""
+"Before using any Materials designated as \"open\", OER, or available for "
+"public use, you should verify the governing licensing restrictions "
+"associated with such Materials. No right to use \"open\", \"OER\", or "
+"\"available for public use\" content is granted by Pearson outside of the"
+" Services."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:123
+msgid "9. Prohibited Uses of Materials"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:125
+msgid ""
+"Except as you may be expressly permitted by this EULA, you may not use, "
+"modify, adapt, reformat, download, upload, post, reproduce, broadcast, "
+"publish, display, perform, transfer or redistribute any Materials in any "
+"form, format or media or by means without obtaining the prior written "
+"authorization of Pearson and/or its licensors. You acknowledge that the "
+"dissemination of any assessment questions or answers contained in the "
+"Materials will materially diminish the value of the Services and is "
+"strictly forbidden. Without limiting this restriction, you acknowledge "
+"that the following {bold_start}\"Prohibited Uses\"{bold_end} shall not "
+"constitute \"fair use\" and are specifically prohibited under the terms "
+"of this EULA in the absence of written permission and that any such "
+"Prohibited Use constitutes a material breach of the terms of this EULA:"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:132
+msgid ""
+"making the Materials available in print format in connection with "
+"\"course packets\" and/or library reserve materials or otherwise making "
+"the Materials available online outside of the Services, regardless of "
+"whether such use is related to the course for which the Services are "
+"provided;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:133
+msgid ""
+"making the Materials available, by any means, to others (even members of "
+"your institution) who are not Authorized Users and/or in connection with "
+"courses or other activities for which the Services are not authorized for"
+" use;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:134
+msgid ""
+"publishing or otherwise disseminating outside of the Services solutions "
+"to questions or other assessment content contained in the Materials "
+"(whether generated by you, Pearson or a third party);"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:135
+msgid ""
+"reproducing or distributing outside the Services, by any means, any "
+"illustrations, charts, photographs, outlines, extensive text excerpts, "
+"chapters, or e-books included in the Materials for use outside of the "
+"relevant Services."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:138
+msgid "10. Appropriate Use of the Services"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:140
+msgid ""
+"You are expressly prohibited from any conduct which: threatens the "
+"security, integrity or availability of the Services; provides or "
+"facilitates access to the Services by unauthorized users or services; "
+"and/or results in prohibited duplication, transmission or exposure of the"
+" Materials, Applications or User information associated with the "
+"Services. You represent and agree that you shall not use the Services in "
+"violation of this EULA, any applicable local, state, national or "
+"international law or regulation, and/or the academic rules or policies of"
+" your institution. You further agree that you will not use the Services "
+"in a manner which threatens the security, stability or integrity of the "
+"Services or networks connected to the Services ({bold_start}\"Service "
+"Network\"{bold_end}). Without limiting the foregoing, you acknowledge and"
+" agree that you will not take any action to:"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:147
+msgid ""
+"impersonate any person or entity, or falsely state or otherwise "
+"misrepresent your affiliation with a person or entity; including using "
+"another person's User Credentials (including passwords) or making your "
+"User Credentials available for use by others; "
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:148
+msgid ""
+"use or attempt to use any \"deep-link\", \"scraper\", \"robot\", \"bot\","
+" \"spider\", \"data mining\", \"computer code\" or any other automated "
+"device, program, tool, algorithm, process or methodology or manual "
+"process having similar processes or functionality, to access, acquire, "
+"copy, or monitor any portion of the Services, any data or content found "
+"on or accessed through the Services, or any other Materials without the "
+"prior written consent of Pearson;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:149
+msgid ""
+"violate any measure employed to limit or prevent access to the Services "
+"or otherwise obtain or attempt to obtain through any means any content, "
+"functionality or other information which has not been intentionally made "
+"available to you either by visible display on the Services or access "
+"through a visible link on the Services;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:150
+msgid ""
+"decompile, reverse engineer, or otherwise attempt to obtain the source "
+"code of the Services;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:151
+msgid ""
+"attempt, in any manner to gain unauthorized access to the Service "
+"Network, obtain the password, account, or other security information from"
+" or of any other User, or otherwise violate the security of the Service "
+"Network or access encrypted codes;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:152
+msgid ""
+"interfere with or disrupt (or attempt to interfere with or disrupt) the "
+"proper working of the Services or Service Network, or violate any "
+"requirements, procedures, policies or regulations of the Service Network;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:153
+msgid ""
+"take or attempt any action that, in the sole and absolute discretion of "
+"Pearson, imposes or may impose an unreasonable or disproportionately "
+"large load or burden on the Service Network, disrupts the normal flow of "
+"data, or threatens the stability of the Services or Service Network; or"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:154
+msgid ""
+"engage any conduct which, in Pearson's sole and absolute discretion, "
+"diminishes the pedagogical or commercial value of the Services, infringes"
+" any proprietary rights in the Materials or Applications, or otherwise "
+"violates this EULA."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:157
+msgid ""
+"Pearson reserves the right, at its sole discretion, to suspend or "
+"terminate access to and use the Services with respect to any User that "
+"Pearson reasonably believes has undertaken, or participated in, any of "
+"the foregoing activities, violated the terms of this EULA, or whose "
+"actions have, or are likely to, otherwise cause harm to Pearson, the "
+"Services, the Service Network or other Users, or for any other reason at "
+"the sole and absolute discretion of Pearson. Additionally, Pearson may "
+"suspend or terminate your access at any time at the request of your "
+"institution."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:159
+msgid "11. Permissible User Content"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:161
+msgid ""
+"The Services may provide functionalities for Authorized Users to create, "
+"upload or post questions, responses, comments, ideas, articles, "
+"information, data, text, multimedia content, chat conversations or logs, "
+"messages and other materials or submissions ({bold_start}\"User "
+"Content\"{bold_end}). You may only post User Content that is your own "
+"original work or for which you have obtained the necessary rights or "
+"permissions for reproduction and public display through the Services and "
+"include any applicable ownership or attribution notices. "
+"({ital_start}Note: The fact that content is publicly available on the "
+"Internet does not mean that such content may be freely used without "
+"seeking prior permission from the owner.{ital_end}) You are solely "
+"responsible for User Content that you post on the Services and agree not "
+"to create, post, upload or link to any Prohibited User Content (as "
+"defined below). Pearson does not pre-screen User Content and assumes no "
+"responsibility for User Content. The views and opinions expressed in any "
+"User Content do not necessarily reflect those of Pearson or its "
+"licensors. Pearson has the right (but not the obligation), in its sole "
+"discretion, to monitor, refuse to post or otherwise distribute, or remove"
+" any User Content for any reason and to terminate your access to the "
+"Services to prevent further posting or distribution of Prohibited User "
+"Content.  If you discover any Prohibited User Content and would like to "
+"inform us, please contact us at "
+"{link_start}dmca.agent@pearsoned.com{link_end}."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:173
+msgid "12. Use of User Content"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:175
+msgid ""
+"By creating, posting, uploading or linking to User Content, you grant to "
+"Pearson a perpetual, royalty-free, worldwide right and license to use, "
+"host, license, store, reproduce, transmit, adapt, and distribute such "
+"User Content and any derivative works created from such User Content "
+"(such as those resulting from changes we make so that your User Content "
+"works better with the Services) in connection with the Services.  "
+"Further, you acknowledge and agree that your User Content shall be "
+"available to other Users on the same terms as granted by you to Pearson "
+"under this EULA and specifically this Section 12. Pearson shall not be "
+"responsible or liable for the deletion, destruction, damage, loss or "
+"failure to store any User Content. By posting User Content that is owned "
+"by third parties, you represent that you have been granted the right to "
+"grant to Pearson the right to make such User Content available to "
+"Authorized Users to the same extent as the Materials provided with the "
+"Services. You agree to provide proper copyright notices in connection "
+"with any User Content in which you or a third party assert a right of "
+"copyright. Additional terms and options may be presented through the user"
+" interface available on the Services for posting or uploading User "
+"Content which shall have the same force and effect as the terms of this "
+"EULA."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:177
+msgid ""
+"Please note that this section 12 may not apply to some users accessing "
+"the Services from within jurisdictions that prohibit such use of User "
+"Content."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:179
+msgid "13. Prohibited User Content."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:181
+msgid ""
+"You will, at all times comply with all applicable local, state, "
+"provincial, national, and foreign laws in using the Services. You agree "
+"that you will not (directly or through others) contribute, create, "
+"upload, post, link to, or otherwise cause the distribution of any content"
+" or use the Services in any manner that:"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:184
+msgid ""
+"is unlawful, harmful, threatening, abusive, harassing, tortious, "
+"defamatory, indecent, offensive, vulgar, obscene, libelous, invasive of "
+"another's privacy, hateful, or racially, ethnically or otherwise "
+"objectionable or in violation of the rules or policies of the "
+"institution;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:185
+msgid ""
+"infringes any patent, trademark, trade secret, copyright or other "
+"proprietary rights of any party or which you do not have a right to "
+"transmit under any law or under contractual or fiduciary relationship "
+"(such as inside information, proprietary and confidential information "
+"learned or disclosed as part of employment relationships or under "
+"nondisclosure agreements);"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:186
+msgid ""
+"jeopardizes the security, availability or integrity of the Services or "
+"causes harm to any User and his or her property through the use of "
+"malicious code or other contaminating or destructive devices;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:187
+msgid ""
+"transmits advertising material and/or any unsolicited or unauthorized "
+"promotional materials, junk mail, SPAM, chain letters, or any other form "
+"solicitation in violation of any applicable rules, regulations or laws or"
+" otherwise interferes with the proper working of the Services or Service "
+"Network; or"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:188
+msgid "otherwise violates the terms of this EULA."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:191
+msgid "14. User Suggestions"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:193
+msgid ""
+"Pearson always welcomes suggestions and comments regarding the Services. "
+"Suggested improvements, additions or other comments may be submitted by "
+"you to Pearson, whether through the Services, online, offline, verbally, "
+"or in writing ({bold_start}\"User Suggestions\"{bold_end}). Regardless of"
+" the manner of submission, you hereby acknowledge that all right, title "
+"and interest and any other intellectual property rights in the User "
+"Suggestions shall become the exclusive property of Pearson and may be "
+"used for its business purposes at Pearson's sole and absolute discretion "
+"without any payment or accounting to you. This policy is intended to "
+"avoid the possibility of future misunderstandings when products and "
+"services developed by Pearson might seem to others to be similar to their"
+" own submissions or comments. No reference to your personal information "
+"shall be made in connection with the use by Pearson of User Suggestions."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:199
+msgid "15. No Liability for Third Party Websites and Third Party Content"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:201
+msgid ""
+"Pearson assumes no responsibility for third party content "
+"({bold_start}\"Third Party Content\"{bold_end}), services or applications"
+" that may be accessed by way of links on the Services to sites hosted by "
+"third parties that are outside of Pearson's control ({bold_start}\"Third-"
+"Party Sites\"{bold_end}). Pearson does not endorse or guarantee the "
+"accuracy, integrity or quality of Third Party Site or Third Party Content"
+" and disclaims all liability for any errors, omissions, violation of "
+"third-party rights or illegal conduct arising from such content or sites."
+" The inclusion of a link to any Third Party Site in the Services does not"
+" imply that the owners of such Third-Party Sites have sponsored or "
+"endorsed the Services. Pearson is not responsible for the accessibility "
+"of Third-Party Sites accessed through links to the Services. Should you "
+"discover that a link to a Third-Party Site is no longer functional please"
+" contact us at: {link1_start}pxadmin@pearson.com{link_end}. Any links "
+"which directs Users to inappropriate content or Prohibited User Content "
+"should be reported to us at "
+"{link_start}dmca.agent@pearsoned.com{link_end}. "
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:210
+msgid "16. Availability of the Service"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:212
+msgid ""
+"The scope and availability of the Services may vary according to (1) "
+"additional terms presented at the time of purchase or registration, (2) "
+"Enrollment in or registration for a specific Course or Service, and/or "
+"(3) any licensing terms between Pearson and your institution. Pearson is "
+"not responsible for limitations of access resulting from any Third Party "
+"Service or as the result of certain account settings established by your "
+"institution. You are responsible for obtaining Internet access in order "
+"to use the Services. You may access a Course available through the "
+"Services only for the duration of the Subscription purchased (typically "
+"one or two semesters depending on the Course), whether or not the "
+"Services are used and subject to Pearson's right to terminate access "
+"under this EULA. Educational institution access may be provided for an "
+"indefinite time period until otherwise terminated subject to this EULA."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:215
+msgid ""
+"While Pearson makes reasonable efforts to ensure the availability of the "
+"Services to Authorized Users with active Subscriptions, the Services may "
+"be unavailable for limited periods of time due to scheduled routine "
+"maintenance, emergency maintenance or factors beyond Pearson's control, "
+"such as disruptions of internet services or unforeseen threats to the "
+"integrity or security of the Services. "
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:217
+msgid ""
+"Pearson may at any time, with or without notice to you, restrict the use "
+"and accessibility of the Services and/or discontinue any portion, "
+"feature, or content of the Services. Pearson will make reasonable efforts"
+" to provide Authorized Users notice of significant changes to the "
+"Services to Authorized Users with active Subscriptions whenever "
+"reasonably feasible and provide alternative materials or services if "
+"substantial portions of the Services become unavailable. Please contact "
+"us at {link_start}pxadmin@pearson.com{link_end} to request information "
+"and updates about changes to the Services and its availability."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:223
+msgid "17. Termination of Access"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:225
+msgid ""
+"{bold_start}a) Trial Access{bold_end}. On a case-by-case basis, Services "
+"may be made available to you for a trial review period for up to fifteen "
+"(15) days ({bold_start}\"Review Period\"{bold_end}). During the Review "
+"Period, you will be provided access to the Services without charge; "
+"however, access to the Services offered for trial review will be "
+"terminated if payment is not made prior to the end of the Review Period. "
+"Termination of a Service does not automatically terminate your User "
+"Account.  Further, you expressly acknowledge and agree that if at any "
+"time during the Review Period, Pearson, in its sole discretion, "
+"determines that you are utilizing the Review Period as a substitute or "
+"proxy for a paid Service, it may immediately terminate or suspend your "
+"access to the applicable Service for which you've been granted a Review "
+"Period. In the event of any suspension or termination of your access to "
+"such a Service, you acknowledge and agree that: (a) the Service, its "
+"functionality, activities, materials, or any results generated by your "
+"use thereof may not be available to you or any other person; and (b) "
+"neither you nor any other person are authorized to access or use any "
+"results generated by your use of the suspended or terminated Course, its "
+"functionality, activities, or materials regardless of whether such "
+"results are available within the Course or the Services. If your access "
+"to a Course is terminated due to you not purchasing a Course "
+"Subscription, and then Pearson subsequently reinstates your access to the"
+" Course upon later receiving payment, any such reinstated access shall "
+"remain subject to the terms of this EULA (unless Pearson provides new "
+"terms and conditions to You at the time of such reinstated access, in "
+"which case such new terms and conditions shall apply)."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:231
+msgid ""
+"{bold_start}b) Termination by You{bold_end}. Subject to account "
+"restrictions that may be imposed by Pearson, your institution or a Third "
+"Party Service through which access to the Services is provided, you may "
+"terminate your User Account at any time by notifying Pearson of your "
+"decision to do so. Your satisfaction with the Services is important to "
+"us. If you have any concerns or complaints about the Services or wish to "
+"terminate your access to the Services, please contact us at "
+"{link_start}pxadmin@pearson.com{link_end}."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:239
+msgid ""
+"{bold_start}c) Termination by Pearson{bold_end}. Pearson may, in its sole"
+" discretion, and with or without advance notice, suspend your access to "
+"all or any part of the Services, or terminate your rights to use the "
+"Services, for any conduct or use (whether by you or anyone else having "
+"access to the Services under your Account Credentials) that Pearson "
+"reasonably believes violates this EULA."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:245
+msgid ""
+"{bold_start}d) Effect of Termination{bold_end}. Whether termination is "
+"initiated by you, your institution or Pearson, Sections 12, 14, 17-21, "
+"and 25 of this EULA shall survive any such termination. Any User Account "
+"information, data, settings or specifications or customizations of a "
+"Service or Subscription specific to your User Account may be permanently "
+"lost upon termination of a Service or Subscription provided through the "
+"Services, whether by you, Pearson or your institution. User Content and "
+"other user information associated with your use of the Services may still"
+" be accessible by your institution or, to the extent it is posted in a "
+"public forum, to other Users of the Services for which such information "
+"was posted, even after termination."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:251
+msgid "18. Sole Remedy"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:253
+msgid ""
+"Pearson's entire liability to you, and your sole and exclusive remedy, "
+"regarding the use of the Services shall be either restoration of access "
+"for which you have subscribed or purchased, or a refund of any fees paid "
+"directly by you to Pearson for the particular Service or Subscription. "
+"When available, refunds will only be made if requested by you in writing "
+"within the first 15 days after Enrollment or registration. Refunds can "
+"only be provided for purchases made directly from Pearson's website by an"
+" Authorized User. Refunds are not available for lost or stolen access "
+"codes, or any purchases made through third parties (for example, your "
+"campus bookstore). If you are dissatisfied with a Service or wish to "
+"request a refund, please contact us at "
+"{link_start}pxadmin@pearson.com{link_end}."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:259
+msgid "19. Disclaimer of Warranties"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:261
+msgid ""
+"YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT: (a) YOUR USE OF THE SERVICES IS"
+" AT YOUR OWN RISK. THE SERVICES ARE PROVIDED ON AN \"AS IS\" AND \"AS "
+"AVAILABLE\" BASIS; (b) YOU HAVE NOT RELIED ON ANY STATEMENT, INFORMATION "
+"OR ADVICE FROM PEARSON'S REPRESENTATIVES OR RESELLERS WHICH WOULD BE "
+"DEEMED TO BE A WARRANTY OF THESE SERVICES OR FORM THE BASIS FOR ANY "
+"LIABILITY OF PEARSON; (c) TO THE FULLEST EXTENT PERMITTED UNDER "
+"APPLICABLE LAW, PEARSON AND ITS LICENSORS AND CONTRACTORS EXPRESSLY "
+"DISCLAIM ALL WARRANTIES AND CONDITIONS OF ANY KIND, WHETHER EXPRESS, "
+"IMPLIED, INCLUDING, BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF "
+"MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:263
+msgid ""
+"NEITHER PEARSON NOR ITS LICENSORS MAKE ANY REPRESENTATION OR WARRANTY "
+"THAT: (a) THE SERVICES OR YOUR USE THEREOF WILL BE UNINTERRUPTED OR "
+"ERROR-FREE; (b) THE RESULTS THAT MAY BE OBTAINED FROM THE USE OF THE "
+"SERVICES WILL BE ACCURATE OR RELIABLE; OR (c) THE SERVICES WILL MEET YOUR"
+" REQUIREMENTS."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:265
+msgid ""
+"SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES, SO "
+"THE ABOVE EXCLUSIONS MAY NOT APPLY TO YOU."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:267
+msgid "20. Limitation of Liability"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:269
+msgid ""
+"IN NO EVENT SHALL PEARSON OR ITS EMPLOYEES, OFFICERS, AGENTS, CONTRACTORS"
+" OR LICENSORS BE LIABLE FOR ANY COMPENSATORY, INCIDENTAL, DIRECT, "
+"INDIRECT, SPECIAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES OF ANY KIND -- "
+"INCLUDING, WITHOUT LIMITATION ANY CLAIMS OR DAMAGES BASED ON YOUR USE OF "
+"OR INABILITY TO USE THE SERVICES, ANY THIRD PARTY WEBSITES, OR "
+"APPLICATIONS ACCESSED THROUGH THE SERVICES, DAMAGE TO PROPERTY, THIRD "
+"PARTY CLAIMS, LOSS OF PROFITS, GOODWILL, DATA, OR OTHER INTANGIBLE "
+"LOSSES, LOSSES CAUSED BY YOUR RELIANCE ON ANY CONTENT OR INFORMATION "
+"PROVIDED THROUGH THE SERVICES, AND/OR ANY OTHER LOSSES OF ANY KIND "
+"ARISING FROM YOUR USE OF THE SERVICES. PEARSON'S MAXIMUM AGGREGATE "
+"LIABILITY UNDER THIS EULA WILL IN NO EVENT EXCEED THE TOTAL FEES PAID TO "
+"PEARSON BY YOU FOR THE SPECIFIC SERVICES FROM WHICH THE LOSS ARISES. THE "
+"LIMITATIONS SET FORTH IN THIS SECTION SHALL APPLY WHETHER SUCH LIABILITY "
+"IS ASSERTED ON THE BASIS OF CONTRACT, TORT, OR OTHERWISE, EVEN IF PEARSON"
+" HAS BEEN ADVISED OF THE POSSIBILITY OF ANY SUCH LOSS OR DAMAGE, AND/OR "
+"IF ANY OF THE LIMITED REMEDIES IN THIS EULA FAIL THEIR ESSENTIAL PURPOSE."
+" "
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:271
+msgid ""
+"NO ACTION, REGARDLESS OF FORM, ARISING UNDER THIS EULA MAY BE BROUGHT BY "
+"YOU MORE THAN ONE YEAR AFTER THE FACTS SUPPORTING THE CAUSE OF ACTION "
+"HAVE BECOME KNOWN, OR REASONABLY SHOULD HAVE BECOME KNOWN TO YOU. NOTHING"
+" IN THIS EULA IS INTENDED TO EXCLUDE OR LIMIT ANY CONDITION, WARRANTY, "
+"RIGHT OR LIABILITY WHICH MAY NOT BE LAWFULLY EXCLUDED OR LIMITED UNDER "
+"APPLICABLE LAW. ACCORDINGLY, ONLY THE LIMITATIONS WHICH ARE LAWFUL IN "
+"YOUR JURISDICTION WILL APPLY TO YOU AND IN SUCH INSTANCES OUR LIABILITY "
+"WILL BE LIMITED TO THE MAXIMUM EXTENT PERMITTED."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:273
+msgid ""
+"NEW JERSEY RESIDENTS OR PERSONS ACCESSING THE SERVICES FROM NEW JERSEY "
+"ARE NOT SUBJECT TO THIS ONE YEAR LIMITATION PERIOD.  SUCH PERSONS SHOULD "
+"ALSO REVIEW SECTION 28 BELOW."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:275
+msgid "21. Representation and Warranty; Indemnity"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:277
+msgid ""
+"As a condition of your use of the Services, you warrant and represent to "
+"Pearson that you are an Authorized User and will not use the Services for"
+" any purpose that is unlawful or prohibited by this EULA. To the fullest "
+"extent permitted by applicable law, you agree to defend, indemnify and "
+"hold harmless Pearson and its employees, officers, agents, contractors, "
+"and licensors from any claims, damages, expenses, or liabilities arising "
+"from or in any way related to any violation of this EULA or unauthorized "
+"use of the Services."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:279
+msgid "22. Choice of Law and Forum"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:281
+msgid ""
+"You agree that this EULA shall not be governed by the United Nations "
+"Convention on Contracts for the International Sale of Goods and that any "
+"and all actions, disputes or controversies relating to this EULA or your "
+"use of the Services (each a {bold_start}\"Claim\"{bold_end}) shall be "
+"subject to the terms of this provision. Except as provided below, (a) you"
+" submit to the personal and exclusive jurisdiction and venue of the "
+"courts located within the County of New York, State of New York "
+"({bold_start}\"Chosen Forum\"{bold_end}) with respect to any Claim, (b) "
+"irrevocably consent to the service of process via email, personal "
+"delivery, or mailed by certified or registered mail, return receipt "
+"requested, to the mailing address set forth in your User Account; and (c)"
+" agree that any Claim will be governed by and construed subject to laws "
+"of the State of New York ({bold_start}\"Chosen Law\"{bold_end}). If you "
+"reside in Canada, the Chosen Forum shall be the courts located in the "
+"province of Ontario and the Chosen Law shall be the laws of Ontario and "
+"the laws of Canada applicable therein, without giving effect to its "
+"conflict of law principles. If you reside outside of the US and Canada, "
+"the Chosen Forum shall be the courts located in England and the Chosen "
+"Law shall be the laws of England, without giving effect to its conflict "
+"of law principles. Nothing in this paragraph is intended to limit or "
+"contravene the applicability of the local privacy and data security "
+"regulations which would otherwise govern the collection, disclosure and "
+"use of your Personal Information."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:287
+msgid "23. Export Requirements"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:289
+msgid ""
+"This EULA and your use of the Services are subject to applicable "
+"regulations and laws which restrict the export by Pearson or its "
+"contractors and licensors of certain materials and technical data. You "
+"agree not to transfer, directly or indirectly, by electronic means or "
+"otherwise, any Services to any country, or to any agent, representative, "
+"or foreign national of any country, for which the applicable government "
+"or any agency thereof requires an export license or otherwise restricts "
+"such exports. Pursuant to current restrictions of the U.S. Government, "
+"nationals of Cuba, Iran, Myanmar (Burma), North Korea, Sudan and Syria "
+"may not use or access the Services at this time."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:291
+msgid "24. DMCA and Notices of Inappropriate Content"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:293
+msgid ""
+"If you have any copyright concerns about any materials posted on the "
+"Services by others, or otherwise want to report inappropriate content on "
+"the Services, please let us know. We comply with the provisions of the "
+"Digital Millennium Copyright Act applicable to Internet service providers"
+" (17 U.S.C. Section 512). Unless otherwise stated in any specific DMCA "
+"designation provided by Pearson, please provide us with written notice "
+"({bold_start}\"Notice\"{bold_end}) by contacting our Designated Agent at "
+"the following address:"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:300
+msgid "DMCA Designated Agent"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:301
+msgid "Pearson Education,Inc."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:303
+msgid "Hoboken, NJ 07030"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:311
+msgid ""
+"If you are a copyright owner or authorized agent of a copyright owner and"
+" believe in good faith that copyrighted work has been copied, adapted, "
+"reproduced or exhibited through the Services in a manner that constitutes"
+" copyright infringement, you may submit written notification of the "
+"claimed infringing activity to our Designated Agent. To be effective, the"
+" Notice must include the following:"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:314
+msgid ""
+"A physical or electronic signature of the owner, or a person authorized "
+"to act on behalf of the owner, (\"Complaining Party\") of an exclusive "
+"right that is allegedly being infringed upon; Information reasonably "
+"sufficient to permit Pearson to contact the Complaining Party, such as an"
+" address, telephone number, and if available, an electronic mail address;"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:315
+msgid ""
+"Identification of the allegedly infringing material on the Services "
+"(\"Infringing Material\"), and information reasonably sufficient to "
+"permit Pearson to locate such material on the Services; Identification of"
+" the copyrighted work claimed to have been infringed upon (\"Infringed "
+"Material\"), or if multiple copyrighted works on the Services are covered"
+" by a single Notice, a list of each copyrighted work claimed to have been"
+" infringed (please be specific as to which Infringing Material is "
+"infringing on which Infringed Material);"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:320
+msgid "25. Reporting other Prohibited Content"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:322
+msgid ""
+"Pearson also encourages you to report to dmca.agent@pearsoned.com any "
+"content on or accessible through the Services which you believe contains "
+"infringing content, malicious code, or any offensive, libelous, or "
+"otherwise illegal or that is otherwise prohibited under this EULA. To "
+"ensure Pearson can quickly respond to the issue, your email should "
+"include: the originating Pearson page URL; the linked page URL; a "
+"description of the content in question and the basis upon which you "
+"believe the content is prohibited or otherwise inappropriate; and the "
+"contact information through which Pearson may best reach you if you are "
+"willing to further assist Pearson in its investigation."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:324
+msgid "26. Miscellaneous"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:326
+msgid ""
+"This EULA is personal to you, and you may not assign, transfer or "
+"delegate your rights or obligations under this EULA to anyone. Pearson "
+"may assign or delegate its rights or obligations under this EULA, in "
+"whole or in part, subject to Pearson's right and obligations under this "
+"EULA and any agreement it may have with your institution. In the event "
+"that any provision of this EULA is held by a court of competent "
+"jurisdiction to be invalid or unenforceable for any reason, the remainder"
+" of this EULA shall remain valid and enforceable according to its terms. "
+"This EULA is the entire agreement between Pearson and you with respect to"
+" the Services and cannot be modified absent a signed written agreement. "
+"Headings in this EULA are for your convenience only and do not have any "
+"legal meaning or effect. If Pearson waives or fails to enforce any term "
+"or condition of this EULA on any one or more occasions, whether by "
+"conduct or otherwise, its waiver or failure to enforce such terms will "
+"not prevent Pearson from enforcing any terms or condition of this EULA at"
+" any other time. The meaning of this EULA cannot be changed by your or "
+"Pearson's conduct, even if repeated, or by any custom or practice of "
+"others engaged in the same or similar businesses. In addition to being a "
+"part of the registration form, this EULA is accessible through a link on "
+"the Services so that you may reference it at any time. It is the express "
+"wish of the parties that this EULA and all related documents be drawn up "
+"in English. C'est la volont&eacute; expresse des parties que la "
+"pr&eacute;sente convention ainsi que les documents qui s'y rattachent "
+"soint r&eacute;dig&eacute;s en anglais."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:329
+msgid "Version: 1.2"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:330
+msgid "Last Revised: July 2018"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:336
+msgid "Version dated 16 October 2019"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:337
+msgid ""
+"By using this website you accept these Terms of Use. If you do not agree "
+"with them, please do not use the website."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:338
+msgid "Right to use the product"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:341
+msgid "Cookies"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:344
+msgid "You may:"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:348
+msgid "You may not:"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:361
+msgid "User Conduct"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:388
+msgid "Learner Data"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:391
+msgid "Plug-ins and Linking"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:394
+msgid "Limitation of liability"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:402
+msgid "Limited Warranty"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:405
+msgid "Changes"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:410
+msgid "Trademark notice"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:413
+msgid "General"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/static_templates/tos.html:422
+msgid "Pearson company details"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/student_account/login_and_register.html:12
+msgid "Sign in or Register"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/student_account/register.underscore:11
+msgid "Already have an {platformName} account?"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/student_account/register.underscore:12
+msgid "Sign in."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/student_account/register.underscore:23
+msgid "Create an account using"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/student_account/register.underscore:36
+#, python-format
+msgid "Create account using %(providerName)s."
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/student_account/register.underscore:43
+msgid "Use my institution/campus credentials"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/student_account/register.underscore:49
+msgid "or create a new one here"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/student_account/register.underscore:54
+msgid "Welcome"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/student_account/register.underscore:56
+msgid "Create an Account"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/student_account/register.underscore:69
+msgid "Support education research by providing additional information"
+msgstr ""
+
+#: edx-platform/pearson-pols-theme/lms/templates/student_account/register.underscore:76
+msgid "Create Account"
+msgstr ""
+
