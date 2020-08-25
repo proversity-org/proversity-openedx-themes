@@ -1,46 +1,49 @@
-div.login-register-content {
-  background: $background-color-form-login-register;
+.signin-container {
+    box-shadow: 2px 2px 2px $shadow-light-gray;
+    padding: 50px 30px 60px;
 }
 
-.login-register .login-provider {
-  width: auto !important;
-  padding-right: 10px !important;
-  min-width: 165px;
+.signing-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
-.login-register {
-  background: $background-color-form-login-register;
+.login-register .form-wrapper .login-providers {
+    display: flex;
+    text-align: left;
+    background: $gray-lightest;
+    padding: 10px 15px 40px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 2px $shadow-light-gray;
+    border-bottom: 0.1px solid $shadow-gray;
 }
 
-form.login-form {
-  button.action.action-primary.action-update.js-login.login-button {
-    background: $primary;
-    color: $inverse;
-  }
-
-  button.action.action-primary.action-update.js-register.register-button {
-    background: $primary;
-    color: $inverse;
-  }
+.email-email .label-text,
+.password-password .label-text {
+    display: block;
+    margin: 10px 0;
+    height: 0;
 }
 
-.login-register .form-field select {
-  background: $inverse;
+.form-field input.input-block {
+    height: 45px;
+    padding: 15px;
+    margin-bottom: 5px;
 }
 
-
-button.action.action-primary.action-update.js-reset {
-  background: $primary;
+.login-register div.toggle-form {
+    margin-top: 15px;
+    text-align: center;
 }
 
-
-.login-register .status .message-copy {
-  p, p a, li {
-    color: $secondary;
-  }
+.login-register .form-field .tip {
+    color: $medium-light-gray;
 }
 
-
-div.login-register div.toggle-form a.form-toggle {
-  color: $primary;
+.login-register .action-primary {
+    width: 100%;
+    display: block;
 }
