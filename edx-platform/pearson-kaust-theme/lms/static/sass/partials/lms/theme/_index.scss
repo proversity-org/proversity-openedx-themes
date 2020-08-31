@@ -33,6 +33,9 @@
 }
 
 .content-wrapper {
+  // Reset max-width value.
+  max-width: initial;
+
   &.main-container {
     margin-top: 0;
   }
