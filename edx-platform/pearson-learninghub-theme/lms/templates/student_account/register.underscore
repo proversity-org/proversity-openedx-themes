@@ -46,7 +46,7 @@
             </div>
             <div class="section-title lines">
                 <h3>
-                    <span class="text"><%- gettext("or create a new one here") %></span>
+                    <span class="text"> <%- edx.StringUtils.interpolate(gettext("Create a new {platformName} account here"), {platformName: context.platformName }) %></span>
                 </h3>
             </div>
         <% } else { %>
