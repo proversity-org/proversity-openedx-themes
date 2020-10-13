@@ -72,7 +72,7 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
       % if settings.FEATURES.get('ENABLE_FEEDBACK_SUBMISSION', False):
         <li><a href="#" data-toggle="modal" data-target="#supportModal">${_("Support")}</a></li>
       % endif
-      <li><a href="mailto:commselearning@cabinetoffice.gov.uk" target="_blank">${_("Contact")}</a></li>
+      <li><a href="${marketing_link('FAQ')}" target="_blank">${_("FAQ")}</a></li>
     </ul>
 
   </div>
