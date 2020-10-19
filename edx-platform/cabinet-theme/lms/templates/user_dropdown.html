@@ -115,7 +115,7 @@ from openedx.core.djangoapps.user_api.accounts.image_helpers import get_profile_
         % if settings.FEATURES.get('ENABLE_FEEDBACK_SUBMISSION', False):
             <li><a href="#" data-toggle="modal" data-target="#supportModal">${_("Support")}</a></li>
         % endif
-        <li><a href="mailto:commselearning@cabinetoffice.gov.uk" target="_blank">${_("Contact")}</a></li>
+        <li><a href="${marketing_link('FAQ')}" target="_blank">${_("FAQ")}</a></li>
         <!-- <li><a href="${get_online_help_info(online_help_token)['doc_url']}" target="_blank">${_("Help")}</a></li> -->
         % if false:
             <li>
