@@ -1,0 +1,46 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("FAQ")}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="container about">
+        <h1>${_("FAQ")}</h1>
+
+        <p><b>${_("What do I do if I have technical issues?")}</b></p>
+        
+        <p>${_("If you need technical support, please click on the dropdown menu icon in the top right, then choose 'Support' (please attach a screenshot showing the issue and the URL link if possible). Your message will go directly to our Support Team.")}</p>
+        <p>${_("You may also wish to use the Google Chrome browser if you are not doing so already. All course content, activities and videos are best supported by Google Chrome browser.")}</p>
+
+        <p><b>${_("I've reset my password, but I still can't log in")}</b></p>
+		
+        <p>${_("Try resetting your password using the Google Chrome browser or an Incognito Window.")}</p>
+        <p>${_("If you are still unable to reset your password, please contact our Support Team by clicking on the dropdown menu icon in the top right, then choose Support.")}</p>
+
+        <p><b>${_("I'm unable to submit my query using the Support tab")}</b></p>
+		        
+        <p>${_("Use the Google Chrome browser if you are not doing so already.")}</p>
+        <p>${_("If you are still unable to submit your query, contact your course administrator.")}</p>
+
+        <p><b>${_("My account is locked and I'm unable to access the learning platform.")}</b></p>
+		
+        <p>${_("Your account may be locked if you have tried to log in unsuccessfully too many times over a short period. Please wait an hour before logging onto the platform again.")}</p>
+        <p>${_("If the platform does not recognise your password, it is better to reset it before making another attempt to log onto the course.")}</p>
+
+        <p><b>${_("Why don't the green checkmarks appear to record that I've completed a screen, even though I have worked through all the course materials?")}</b></p>
+        <p>${_("The green checkmarks showing that a section has been completed may not appear due to a variety of reasons. These are likely to be technical factors such as the browser you are using, or the quality of your internet connection. ")}</p>
+        <p>${_("Use the Google Chrome browser if you are not doing so already.")}</p>
+        <p>${_("Please note that the green checkmarks are a visual aid for you to indicate your progress through the course. If the green checkmarks do not appear, this will not prevent you from completing the course in full or receiving your certificate.")}</p>
+
+        <p><b>${_("How do I find what I need on the platform?")}</b></p>
+		
+        <p><b>${_("Your Dashboard - ")}</b>${_("click on the dropdown menu icon in the top right, then choose 'Dashboard'. You will be able to see any courses that you are enrolled in here. ")}</p>
+        <p>${_("You can access your courses on this Dashboard page.")}</p>
+
+        <p><b>${_("Language option - ")}</b>${_("when you are logged into the EdX platform, at the top of the screen next to your name you should see a separate button showing which language is currently being used. By clicking this button, you will then be able to select a language you want to have your course displayed in.")}</p>
+        <p>${_("You can also set your course language if you click on the dropdown menu icon in the top right, then choose 'Account'. A further dropdown menu on this screen will allow you to change languages.")}</p>
+
+        <p><b>${_("Support Tab - ")}</b>${_("if you need technical support, please request this within the platform; click on the dropdown menu icon in the top right, then choose 'Support' (please attach a screenshot showing the issue and the URL link if possible). Your message will go directly to our Support Team.")}</p>
+    </section>
+</main>

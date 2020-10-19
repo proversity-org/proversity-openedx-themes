@@ -5,7 +5,9 @@
 <%!
 from django.utils.translation import ugettext as _
 from microsite_configuration import microsite
-platform_name = microsite.get_value('PLATFORM_NAME', '')
+from django.conf import settings
+platform_name = settings.PLATFORM_NAME
+
 %>
 
 <%block name="title"><title>${_("Terms of Service and Honor Code")}</title></%block>
