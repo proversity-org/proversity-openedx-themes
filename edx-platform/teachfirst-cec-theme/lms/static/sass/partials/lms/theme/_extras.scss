@@ -9,7 +9,7 @@ div#mobile-section {
 }
 
 html {
-  font-family: sans-serif;
+  font-family: serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -338,9 +338,9 @@ th {
 }
 
 @font-face {
-  font-family: 'Noe Text';
-  src: url("../fonts/NoeTextBookItalic.ttf") format("truetype"),
-  url("../fonts/NoeTextBookSemibold.ttf") format("truetype");
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Italic.ttf") format("truetype"),
+  url("../fonts/Lato-Bold.ttf") format("truetype");
 }
 
 .glyphicon {
@@ -1410,7 +1410,7 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, 'Helvetica', Serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -4424,7 +4424,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, 'Helvetica', Serif;
   font-size: 12px;
   font-style: normal;
   font-weight: normal;
@@ -4548,7 +4548,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lato, 'Helvetica', Serif;
   font-size: 14px;
   font-style: normal;
   font-weight: normal;
@@ -6395,24 +6395,24 @@ button.close {
 }
 
 @font-face {
-  font-family: "Noe Text";
-  src: url("../fonts/NoeTextSemibold.ttf");
+  font-family: "Lato";
+  src: url("../fonts/Lato-Bold.ttf");
 }
 
 @font-face {
-  font-family: "Noe Text";
-  src: url("../fonts/NoeTextSemibold.otf");
+  font-family: "Lato";
+  src: url("../fonts/Lato-Bold.ttf");
 }
 
 
 @font-face {
-  font-family: "Noe Text It";
-  src: url("../fonts/NoeTextBookItalic.ttf");
+  font-family: "Lato It";
+  src: url("../fonts/Lato-Italic.ttf");
 }
 
 @font-face {
-  font-family: "Noe Text It";
-  src: url("../fonts/NoeTextBookItalic.otf");
+  font-family: "Lato It";
+  src: url("../fonts/Lato-Italic.ttf");
 }
 
 
@@ -6420,15 +6420,15 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Noe Text", Serif;
+  font-family: "Lato", Serif;
   font-weight: bold;
   font-style: normal;
-  color: #002663;
+  color: #00a8a8;
   text-align: left;
 }
 
 h1 {
-  font-family: "Noe Text", Serif;
+  font-family: "Lato", Serif;
   font-weight: 400;
   font-style: normal;
   color: #323538;
@@ -6438,14 +6438,14 @@ h1 {
 h2,
 h3,
 h4 {
-  font-family: "Noe Text", Serif;
+  font-family: "Lato", Serif;
   font-weight: 400;
   font-style: normal;
   color: #323538;
 }
 
 body, p {
-  font-family: "Barlow","Helvetica",Sans-Serif;
+  font-family: Lato, 'Helvetica', Serif;
   font-weight: normal;
   font-style: normal;
   font-size: 18px;
@@ -6491,7 +6491,7 @@ body, p {
   &.right {
     background: none;
   }
-  color: #3764f0;
+  color: #00a8a8;
   text-shadow: none;
   .glyphicon-chevron-left,
   .glyphicon-menu-left,
@@ -6534,8 +6534,8 @@ body, p {
   margin-bottom: 0;
   li {
     margin: 1px 5px 1px 1px;
-    background: #3764f0;
-    border: 5px solid #3764f0;
+    background: #00a8a8;
+    border: 5px solid #00a8a8;
     width: 25px;
     height: 25px;
     border-radius: 25px;
@@ -6545,8 +6545,8 @@ body, p {
   }
   .active {
     margin: 1px 5px 1px 1px;
-    background: #3764f0;
-    border: 5px solid #3764f0;
+    background: #00a8a8;
+    border: 5px solid #00a8a8;
     width: 25px;
     height: 25px;
     &:last-child {
@@ -6661,15 +6661,15 @@ body, p {
 .panel-group .panel {
   border-radius: 0;
   > .open {
-    background: #002663;
+    background: #00a8a8;
     color: #fff;
-    border: 1px solid #002663;
+    border: 1px solid #00a8a8;
   }
 }
 
 .panel-heading {
-  background: #3764f0 !important;
-  border: #3764f0 !important;
+  background: #00a8a8 !important;
+  border: #00a8a8 !important;
   color: #fff !important;
   border-radius: 0;
   text-align: center;
@@ -6678,7 +6678,7 @@ body, p {
   transition: all 0.1s;
   &:hover,
   &:focus {
-    background: #002663;
+    background: #00a8a8;
     color: #fff;
   }
 }
@@ -6706,7 +6706,7 @@ section {
     }
   }
   &[role="default"] {
-    background-color: #002663;
+    background-color: #323538;
     position: relative;
     display: -webkit-box;
     display: -moz-box;
@@ -6730,14 +6730,14 @@ section {
       bottom: 0;
       width: 100%;
       z-index: 1;
-      background-color: #002663;
+      background-color: #323538;
       // background-image: url("/static/CEL/images/sunrise.png");
-      background-position: top;
+      background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      filter: alpha(opacity = 70);
-      -webkit-filter: blur(0px) opacity(40%) grayscale(0%);
-      filter: blur(0px) opacity(70%) grayscale(0%);
+      filter: alpha(opacity = 50);
+      -webkit-filter: blur(0px) opacity(50%) grayscale(0%);
+      filter: blur(0px) opacity(50%) grayscale(0%);
     }
     .extra-message {
       position: absolute;
@@ -6830,14 +6830,14 @@ section {
     .container {
       h1 {
         text-align: center;
-        color: #002663;
+        color: #00a8a8;
       }
       header {
         text-align: center;
-        color: #002663;
+        color: #00a8a8;
         p {
           text-align: center;
-          color: #002663;
+          color: #00a8a8;
         }
       }
       .grid {
@@ -6862,7 +6862,7 @@ section {
           -ms-flex: 1;
           flex: 1;
           p {
-            color: #002663;
+            color: #00a8a8;
           }
         }
         .single-course {
@@ -6880,7 +6880,7 @@ section {
           text-align: center;
           p {
             text-align: center;
-            color: #002663;
+            color: #00a8a8;
           }
         }
       }
@@ -6894,14 +6894,14 @@ section {
     .container {
       h1 {
         text-align: center;
-        color: #002663;
+        color: #323538;
       }
       header {
         text-align: center;
-        color: #002663;
+        color: #323538;
         p {
           text-align: center;
-          color: #002663;
+          color: #323538;
         }
       }
       .grid {
@@ -6926,7 +6926,7 @@ section {
           -ms-flex: 1;
           flex: 1;
           p {
-            color: #002663;
+            color: #323538;
           }
         }
         .single-course {
@@ -6944,7 +6944,7 @@ section {
           text-align: center;
           p {
             text-align: center;
-            color: #002663;
+            color: #323538;
           }
         }
       }
@@ -6981,25 +6981,25 @@ section {
       .row {
         div {
           text-align: center;
-          color: #002663;
+          color: #00a8a8;
           h1,
           h2,
           h3,
           h4 {
             text-align: center;
-            color: #002663;
+            color: #00a8a8;
             font-weight: normal;
           }
           a {
-            color: #002663;
+            color: #00a8a8;
           }
           p {
             text-align: center;
           }
           ul {
             list-style-type: none;
-            border-top: 1px solid #002663;
-            border-bottom: 1px solid #002663;
+            border-top: 1px solid #00a8a8;
+            border-bottom: 1px solid #00a8a8;
             padding: 15px 0;
             margin: 15px 0;
             width: 100%;
@@ -7069,7 +7069,7 @@ section {
     }
   }
   &[role="courseware"] {
-    background-color: #3764f0;
+    background-color: #00a8a8;
     position: relative;
     padding: 15px 0 0 0;
     margin: 0 -20px;
@@ -7110,15 +7110,15 @@ section {
       }
       input[type="text"],
       textarea {
-        border: 1px solid #002663;
+        border: 1px solid #00a8a8;
       }
       .CodeMirror {
-        border: 1px solid #002663;
+        border: 1px solid #00a8a8;
         padding: 5px;
         margin: 5px 0;
         text-align: left;
         &:focus {
-          border: 1px solid #3764f0;
+          border: 1px solid #00a8a8;
           -webkit-box-shadow: 0 0 20px rgba(0, 38, 99, 0.6);
           box-shadow: 0 0 20px rgba(0, 38, 99, 0.6);
         }
@@ -7137,13 +7137,13 @@ section {
     overflow-x: hidden;
     min-height: 100vh;
     a {
-      color: #002663;
+      color: #00a8a8;
       -webkit-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s;
       &:hover,
       &:focus {
-        color: #3764f0;
+        color: #00a8a8;
       }
     }
     .container .row {
@@ -7436,7 +7436,7 @@ section {
   height: 100vh;
   left: 94vh;
   top: 57vh;
-  background: #3764f0;
+  background: #00a8a8;
   overflow: hidden;
   width: 1px;
   height: 1px;
@@ -7587,15 +7587,15 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Noe Text", Serif;
+  font-family: "Lato", Serif;
   font-weight: bold;
   font-style: normal;
-  color: #002663;
+  color: #00a8a8;
   text-align: left;
 }
 
 h1 {
-  font-family: "Noe Text", Serif;
+  font-family: "Lato", Serif;
   font-weight: 400;
   font-style: normal;
   color: #323538;
@@ -7603,14 +7603,14 @@ h1 {
 }
 
 h2 {
-  font-family: "Noe Text", Serif;
+  font-family: "Lato", Serif;
   font-weight: 400;
   font-style: normal;
   color: #323538;
 }
 
 h3 {
-  font-family: "Noe Text", Serif;
+  font-family: "Lato", Serif;
   font-weight: 400;
   font-style: normal;
   color: #323538;
@@ -7620,7 +7620,7 @@ h3 {
 }
 
 body {
-  font-family: "Barlow","Helvetica",Sans-Serif;
+  font-family: Lato, 'Helvetica', Serif;
   font-weight: normal;
   font-style: normal;
   font-size: 18px;
@@ -7729,7 +7729,7 @@ section[role="maintenance"] {
   top: 1em;
   left: 50%;
   padding: .5em 1em;
-  background: #002663;
+  background: #00a8a8;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -7742,7 +7742,7 @@ section[role="maintenance"] {
   top: 1em;
   left: 50%;
   padding: 0;
-  background: #002663;
+  background: #00a8a8;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -7756,7 +7756,7 @@ section[role="maintenance"] {
   width: calc(50% - 4em);
   padding: 1em;
   background: #fff;
-  color: #3764f0;
+  color: #00a8a8;
   text-align: center;
   opacity: 1;
   &:before {
@@ -7783,9 +7783,9 @@ section[role="maintenance"] {
 }
 
 .section-current-left {
-  background: #002663 !important;
+  background: #00a8a8 !important;
   &:before {
-    border-left: 1em solid #002663 !important;
+    border-left: 1em solid #00a8a8 !important;
   }
   .section-heading {
     color: #fff !important;
@@ -7819,10 +7819,10 @@ section[role="maintenance"] {
 }
 
 .section-current-right {
-  background: #002663 !important;
+  background: #00a8a8 !important;
   color: #fff !important;
   &:before {
-    border-right: 1em solid #002663 !important;
+    border-right: 1em solid #00a8a8 !important;
   }
   .section-heading {
     color: #fff !important;
@@ -7858,38 +7858,38 @@ section[role="maintenance"] {
 .section-heading {
   margin-top: 0;
   margin-bottom: .25em;
-  color: #3764f0 !important;
+  color: #00a8a8 !important;
 }
 
 .section-text {
-  color: #3764f0;
+  color: #00a8a8;
   &:last-child {
     margin-bottom: 0;
   }
   h4 {
-    color: #3764f0;
+    color: #00a8a8;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
     &:hover,
     &:focus {
-      color: #002663;
+      color: #00a8a8;
     }
   }
   div {
-    border-bottom: 1px solid #3764f0;
+    border-bottom: 1px solid #00a8a8;
     padding: 15px 0;
     &:last-child {
       border: none;
     }
     a {
-      color: #3764f0;
+      color: #00a8a8;
       -webkit-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s;
       &:hover,
       &:focus {
-        color: #002663;
+        color: #00a8a8;
       }
       p {
         margin: 0;
@@ -7908,7 +7908,7 @@ section[role="maintenance"] {
   margin: 5px 0;
   text-align: center;
   .active a {
-    color: #002663;
+    color: #00a8a8;
     font-weight: 500;
   }
 }
@@ -7920,7 +7920,7 @@ section[role="maintenance"] {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 17px;
   left: 0;
   position: absolute;
@@ -7935,10 +7935,10 @@ section[role="maintenance"] {
     }
   }
   #buorgul {
-    background-color: #3764f0;
+    background-color: #00a8a8;
   }
   #buorgig {
-    background-color: #002663;
+    background-color: #00a8a8;
   }
 }
 
@@ -8203,7 +8203,7 @@ span {
 
 .wrapper-banner,
 .wrapper-banner-user {
-  background: #002663;
+  background: #00a8a8;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -8253,8 +8253,8 @@ span {
 .wrapper-banner {
   .banner .message .wrapper-copy-and-actions .message-actions .action-print,
   .banner-user .message .wrapper-copy-and-actions .message-actions .action-print {
-    background: #002663;
-    border: 1px solid #002663;
+    background: #00a8a8;
+    border: 1px solid #00a8a8;
     font-size: 1em;
   }
 }
@@ -8262,8 +8262,8 @@ span {
 .wrapper-banner-user {
   .banner .message .wrapper-copy-and-actions .message-actions .action-print,
   .banner-user .message .wrapper-copy-and-actions .message-actions .action-print {
-    background: #002663;
-    border: 1px solid #002663;
+    background: #00a8a8;
+    border: 1px solid #00a8a8;
     font-size: 1em;
   }
 }
@@ -8322,7 +8322,7 @@ span {
 .financial-assistance-wrapper .financial-assistance-form .submission-error .message-title,
 .login-register .system-error .message-title,
 .financial-assistance-wrapper .financial-assistance-form .system-error .message-title {
-  font-family: "Barlow","Helvetica",Sans-Serif;
+  font-family: Lato, 'Helvetica', Serif;
   font-size: 18px;
   font-weight: bold;
   text-shadow: none;
@@ -8335,7 +8335,7 @@ span {
 .financial-assistance-wrapper .financial-assistance-form .submission-error .message-copy,
 .login-register .submission-error .message-copy p,
 .financial-assistance-wrapper .financial-assistance-form .submission-error .message-copy p {
-  font-family: "Barlow","Helvetica",Sans-Serif;
+  font-family: Lato, 'Helvetica', Serif;
   font-size: 18px;
   color: #a94442 !important;
   margin: 15px 0 0 0;
@@ -8360,7 +8360,7 @@ span {
 
 .login-register .submission-success .message-title,
 .financial-assistance-wrapper .financial-assistance-form .submission-success .message-title {
-  font-family: "Barlow","Helvetica",Sans-Serif;
+  font-family: Lato, 'Helvetica', Serif;
   font-size: 18px;
   font-weight: bold;
   text-shadow: none;
@@ -8373,7 +8373,7 @@ span {
 .financial-assistance-wrapper .financial-assistance-form .status .message-copy,
 .login-register .status .message-copy p,
 .financial-assistance-wrapper .financial-assistance-form .status .message-copy p {
-  font-family: "Barlow","Helvetica",Sans-Serif;
+  font-family: Lato, 'Helvetica', Serif;
   font-size: 18px;
   color: #3c763d;
   margin: 15px 0 0 0;
@@ -8513,7 +8513,7 @@ p.hd-6 {
 
 .course-outline .block-tree .section ol.outline-item .subsection {
   &:hover {
-    border: 1px solid #002663;
+    border: 1px solid #00a8a8;
   }
   a.outline-item {
     &:hover,
@@ -8553,7 +8553,7 @@ body.view-in-course .wrapper-course-material .course-material .course-tabs {
 }
 
 .tabs .tab a {
-  font-family: "Barlow", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "Barlow", "Helvetica Neue", Helvetica, Arial, serif !important;
   font-weight: 400;
   line-height: 20.72px;
   font-size: 14px;
@@ -8637,12 +8637,12 @@ textarea {
       text-align: left;
       float: left;
       .browse {
-        border: 1px solid #002663;
+        border: 1px solid #00a8a8;
         -webkit-box-shadow: none;
         box-shadow: none;
         display: inline-block;
         font-weight: normal;
-        background-color: #002663;
+        background-color: #00a8a8;
         background-image: none;
         text-decoration: none;
         text-shadow: none;
@@ -8664,13 +8664,13 @@ textarea {
           -webkit-box-shadow: none;
           box-shadow: none;
           cursor: pointer;
-          background-color: #002663;
+          background-color: #00a8a8;
           background-image: -webkit-linear-gradient(#036397, #00476d);
           background-image: none;
         }
         &:active:not(:disabled),
         &:focus:not(:disabled) {
-          border: 1px solid #002663;
+          border: 1px solid #00a8a8;
           -webkit-box-shadow: none;
           box-shadow: none;
         }
@@ -8679,7 +8679,7 @@ textarea {
     width: 100%;
   }
   .btn-blue {
-    background: #002663;
+    background: #00a8a8;
     font-weight: normal;
     display: block;
     margin: 15px 0;
@@ -8693,7 +8693,7 @@ a.light-button:hover:not(:disabled) {
   -webkit-box-shadow: none;
   box-shadow: none;
   cursor: pointer;
-  background-color: #002663;
+  background-color: #00a8a8;
   background-image: none;
 }
 
@@ -8703,7 +8703,7 @@ div.info-wrapper section.handouts ol li div.hitarea {
     -webkit-box-shadow: none;
     box-shadow: none;
     cursor: pointer;
-    background-color: #002663;
+    background-color: #00a8a8;
     background-image: none;
   }
 }
@@ -8712,7 +8712,7 @@ div.info-wrapper section.handouts ol li div.hitarea {
   -webkit-box-shadow: none;
   box-shadow: none;
   cursor: pointer;
-  background-color: #002663;
+  background-color: #00a8a8;
   background-image: none;
 }
 
@@ -8723,7 +8723,7 @@ input {
     -webkit-box-shadow: none;
     box-shadow: none;
     cursor: pointer;
-    background-color: #002663;
+    background-color: #00a8a8;
     background-image: none;
   }
 }
@@ -8739,7 +8739,7 @@ input {
 }
 
 .instructor-dashboard-content-2 input[type="button"] {
-  border: 1px solid #002663;
+  border: 1px solid #00a8a8;
   border-radius: 3px;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -8747,7 +8747,7 @@ input {
   display: inline-block;
   font-size: inherit;
   font-weight: normal;
-  background-color: #002663;
+  background-color: #00a8a8;
   background-image: none;
   padding: 7px 18px;
   text-decoration: none;
@@ -8762,12 +8762,12 @@ input {
     -webkit-box-shadow: none;
     box-shadow: none;
     cursor: pointer;
-    background-color: #002663;
+    background-color: #00a8a8;
     background-image: none;
   }
   &:active:not(:disabled),
   &:focus:not(:disabled) {
-    border: 1px solid #002663;
+    border: 1px solid #00a8a8;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
@@ -8810,14 +8810,14 @@ input {
 }
 
 .instructor-dashboard-wrapper-2 section.idash-section#membership .member-lists-management .auth-list-container .member-list-widget input[type="button"].add {
-  border: 1px solid #002663;
+  border: 1px solid #00a8a8;
   border-radius: 3px;
   -webkit-box-shadow: none;
   box-shadow: none;
   color: #fff;
   display: inline-block;
   font-weight: normal;
-  background-color: #002663;
+  background-color: #00a8a8;
   background-image: none;
   text-decoration: none;
   text-shadow: none;
@@ -8831,56 +8831,56 @@ input {
     -webkit-box-shadow: none;
     box-shadow: none;
     cursor: pointer;
-    background-color: #002663;
+    background-color: #00a8a8;
     background-image: none;
   }
   &:active:not(:disabled),
   &:focus:not(:disabled) {
-    border: 1px solid #002663;
+    border: 1px solid #00a8a8;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
 }
 
 .btn-link {
-  color: #002663;
+  color: #00a8a8;
   &:hover,
   &:focus {
-    color: #3764f0;
+    color: #00a8a8;
     text-decoration: none;
   }
 }
 
 p {
   a {
-    color: #002663;
+    color: #00a8a8;
     &:visited {
       color: #323538;
     }
     &:hover {
-      color: #3764f0;
+      color: #00a8a8;
     }
   }
   div.info-wrapper section.handouts ol li div.hitarea:hover + h4 {
-    color: #3764f0;
+    color: #00a8a8;
   }
 }
 
 div.info-wrapper section.handouts ol li p div.hitarea:hover + h4,
 p div.info-wrapper section.handouts ol li div.hitarea:focus + h4,
 div.info-wrapper section.handouts ol li p div.hitarea:focus + h4 {
-  color: #3764f0;
+  color: #00a8a8;
 }
 
 p {
   a {
     &:focus,
     &:visited:hover {
-      color: #3764f0;
+      color: #00a8a8;
     }
   }
   div.info-wrapper section.handouts ol li div.hitarea:hover + h4:visited {
-    color: #3764f0;
+    color: #00a8a8;
   }
 }
 
@@ -8888,7 +8888,7 @@ div.info-wrapper section.handouts ol li p div.hitarea:hover + h4:visited,
 p div.info-wrapper section.handouts ol li div.hitarea:focus + h4:visited,
 div.info-wrapper section.handouts ol li p div.hitarea:focus + h4:visited,
 p a:visited:focus {
-  color: #3764f0;
+  color: #00a8a8;
 }
 
 .tabs .tab a.active {
@@ -8897,23 +8897,23 @@ p a:visited:focus {
 
 .wrapper-course-material .course-tabs {
   li a {
-    font-family: "Barlow","Helvetica",Sans-Serif;
+    font-family: Lato, 'Helvetica', Serif;
     &:hover {
-      color: #002663;
-      border-bottom-color: #002663;
+      color: #00a8a8;
+      border-bottom-color: #00a8a8;
     }
   }
   div.info-wrapper section.handouts ol li div.hitarea:hover + h4 {
-    color: #002663;
-    border-bottom-color: #002663;
+    color: #00a8a8;
+    border-bottom-color: #00a8a8;
   }
 }
 
 div.info-wrapper section.handouts ol .wrapper-course-material .course-tabs li div.hitarea:hover + h4,
 .wrapper-course-material .course-tabs div.info-wrapper section.handouts ol li div.hitarea:focus + h4,
 div.info-wrapper section.handouts ol .wrapper-course-material .course-tabs li div.hitarea:focus + h4 {
-  color: #002663;
-  border-bottom-color: #002663;
+  color: #00a8a8;
+  border-bottom-color: #00a8a8;
 }
 
 .wrapper-course-material .course-tabs {
@@ -8921,28 +8921,28 @@ div.info-wrapper section.handouts ol .wrapper-course-material .course-tabs li di
     &:focus,
     &.active,
     &:visited:hover {
-      color: #002663;
-      border-bottom-color: #002663;
+      color: #00a8a8;
+      border-bottom-color: #00a8a8;
     }
   }
   div.info-wrapper section.handouts ol li div.hitarea:hover + h4:visited {
-    color: #002663;
-    border-bottom-color: #002663;
+    color: #00a8a8;
+    border-bottom-color: #00a8a8;
   }
 }
 
 div.info-wrapper section.handouts ol .wrapper-course-material .course-tabs li div.hitarea:hover + h4:visited,
 .wrapper-course-material .course-tabs div.info-wrapper section.handouts ol li div.hitarea:focus + h4:visited,
 div.info-wrapper section.handouts ol .wrapper-course-material .course-tabs li div.hitarea:focus + h4:visited {
-  color: #002663;
-  border-bottom-color: #002663;
+  color: #00a8a8;
+  border-bottom-color: #00a8a8;
 }
 
 .wrapper-course-material .course-tabs li a:visited {
   &:focus,
   &.active {
-    color: #002663;
-    border-bottom-color: #002663;
+    color: #00a8a8;
+    border-bottom-color: #00a8a8;
   }
 }
 
@@ -8952,14 +8952,14 @@ div.info-wrapper section.handouts ol .wrapper-course-material .course-tabs li di
 
 .instructor-dashboard-wrapper-2 section.idash-section#cohort_management {
   .cohort-management .message .action-create {
-    border: 1px solid #002663;
+    border: 1px solid #00a8a8;
     border-radius: 3px;
     -webkit-box-shadow: none;
     box-shadow: none;
     color: #fff;
     display: inline-block;
     font-weight: normal;
-    background-color: #002663;
+    background-color: #00a8a8;
     background-image: none;
     padding: 7px 18px;
     text-decoration: none;
@@ -8971,12 +8971,12 @@ div.info-wrapper section.handouts ol .wrapper-course-material .course-tabs li di
       -webkit-box-shadow: none;
       box-shadow: none;
       cursor: pointer;
-      background-color: #002663;
+      background-color: #00a8a8;
       background-image: none;
     }
     &:active:not(:disabled),
     &:focus:not(:disabled) {
-      border: 1px solid #002663;
+      border: 1px solid #00a8a8;
       -webkit-box-shadow: none;
       box-shadow: none;
     }
@@ -9003,13 +9003,13 @@ div.info-wrapper section.handouts ol .wrapper-course-material .course-tabs li di
 }
 
 .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .form-submit {
-  border: 1px solid #002663;
+  border: 1px solid #00a8a8;
   border-radius: 3px;
   -webkit-box-shadow: none;
   box-shadow: none;
   color: #fff;
   font-weight: normal;
-  background-color: #002663;
+  background-color: #00a8a8;
   background-image: none;
   text-decoration: none;
   background-clip: padding-box;
@@ -9024,21 +9024,21 @@ div.info-wrapper section.handouts ol .wrapper-course-material .course-tabs li di
   &:hover:not(:disabled) {
     -webkit-box-shadow: none;
     box-shadow: none;
-    background-color: #002663;
+    background-color: #00a8a8;
     background-image: none;
   }
   &:active:not(:disabled),
   &:focus:not(:disabled) {
-    border: 1px solid #002663;
+    border: 1px solid #00a8a8;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
 }
 
 a {
-  color: #002663;
+  color: #00a8a8;
   &:visited {
-    color: #002663;
+    color: #00a8a8;
   }
 }
 
@@ -9056,14 +9056,14 @@ a {
 }
 
 .instructor-dashboard-wrapper-2 section.idash-section#discussions_management .form-submit {
-  border: 1px solid #002663;
+  border: 1px solid #00a8a8;
   border-radius: 3px;
   -webkit-box-shadow: none;
   box-shadow: none;
   color: #fff;
   display: inline-block;
   font-weight: normal;
-  background-color: #002663;
+  background-color: #00a8a8;
   background-image: none;
   text-decoration: none;
   text-shadow: none;
@@ -9078,12 +9078,12 @@ a {
     -webkit-box-shadow: none;
     box-shadow: none;
     cursor: pointer;
-    background-color: #002663;
+    background-color: #00a8a8;
     background-image: none;
   }
   &:active:not(:disabled),
   &:focus:not(:disabled) {
-    border: 1px solid #002663;
+    border: 1px solid #00a8a8;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
@@ -9142,7 +9142,7 @@ input {
   &[type="reset"]:active:not(:disabled),
   &[type="submit"]:active:not(:disabled),
   &[type="button"]:active:not(:disabled) {
-    border: 1px solid #002663;
+    border: 1px solid #00a8a8;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
@@ -9152,7 +9152,7 @@ button:active:not(:disabled),
 .button:active:not(:disabled),
 .xmodule_display.xmodule_LTIModule div.lti .wrapper-lti-link .lti-link .link_lti_new_window:active:not(:disabled),
 .gray-button:focus:not(:disabled) {
-  border: 1px solid #002663;
+  border: 1px solid #00a8a8;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -9161,7 +9161,7 @@ input {
   &[type="reset"]:focus:not(:disabled),
   &[type="submit"]:focus:not(:disabled),
   &[type="button"]:focus:not(:disabled) {
-    border: 1px solid #002663;
+    border: 1px solid #00a8a8;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
@@ -9170,7 +9170,7 @@ input {
 button:focus:not(:disabled),
 .button:focus:not(:disabled),
 .xmodule_display.xmodule_LTIModule div.lti .wrapper-lti-link .lti-link .link_lti_new_window:focus:not(:disabled) {
-  border: 1px solid #002663;
+  border: 1px solid #00a8a8;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -9299,7 +9299,7 @@ section {
 .forum-nav-browse-filter .icon {
   right: 14px;
   top: 46%;
-  color: #002663;
+  color: #00a8a8;
 }
 
 .forum-nav-browse-menu-item {
@@ -9314,14 +9314,14 @@ section {
   &:hover,
   &:focus,
   &.is-focused {
-    color: #002663;
+    color: #00a8a8;
   }
 }
 
 .forum-nav-thread-wrapper-0 .icon,
 .forum-nav-thread-title {
   font-size: 1em;
-  color: #002663;
+  color: #00a8a8;
 }
 
 .forum-nav-thread-list .thread-preview-body {
@@ -9399,7 +9399,7 @@ section {
 .field-label {
   .field-input:checked + .field-input-label,
   .wrapper-custom-select:checked + .field-input-label {
-    color: #002663;
+    color: #00a8a8;
   }
 }
 
@@ -9500,20 +9500,20 @@ legend {
 }
 
 .date-summary-container .date-summary-todays-date {
-  border-left: 3px solid #002663;
+  border-left: 3px solid #00a8a8;
 }
 
 .xmodule_display {
   &.xmodule_CapaModule div.problem {
     .choicegroup label:hover,
     .choicetextgroup label:hover {
-      border: 2px solid #002663;
+      border: 2px solid #00a8a8;
     }
   }
   &.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_CapaModule {
     .choicegroup label:hover,
     .choicetextgroup label:hover {
-      border: 2px solid #002663;
+      border: 2px solid #00a8a8;
     }
   }
 }
@@ -9561,29 +9561,29 @@ label {
 }
 
 .view-profile .profile-section-one-fields .u-field:not(.u-field-readonly):not(:last-child):hover.mode-placeholder {
-  border-bottom: 2px dashed #002663;
+  border-bottom: 2px dashed #00a8a8;
 }
 
 .u-field.mode-placeholder:hover {
-  border: 2px dashed #002663;
+  border: 2px dashed #00a8a8;
 }
 
 .view-profile .wrapper-profile-section-one {
-  border-top: 5px solid #002663 !important;
+  border-top: 5px solid #00a8a8 !important;
 }
 
 .u-field.mode-placeholder:hover span {
-  color: #002663;
+  color: #00a8a8;
 }
 
 .view-profile .page-content-nav .nav-item {
   &.is-active {
-    border-bottom: 4px solid #002663;
+    border-bottom: 4px solid #00a8a8;
   }
   &:hover,
   &:focus {
-    border-bottom: 4px solid #002663;
-    color: #002663;
+    border-bottom: 4px solid #00a8a8;
+    color: #00a8a8;
   }
 }
 
@@ -9593,7 +9593,7 @@ label {
     padding: 5px 25px 10px;
   }
   button.active {
-    border-bottom: 4px solid #002663;
+    border-bottom: 4px solid #00a8a8;
   }
 }
 
@@ -9610,47 +9610,47 @@ label {
 
 .account-settings-sections .section .account-settings-section-body .u-field .field {
   .u-field-link {
-    border: 1px solid #002663;
-    color: #002663;
+    border: 1px solid #00a8a8;
+    color: #00a8a8;
     &:hover {
-      background-color: #002663;
+      background-color: #00a8a8;
     }
   }
   select {
     ~ .icon-caret-down:after {
-      border-top: 7px solid #002663;
+      border-top: 7px solid #00a8a8;
     }
     padding: 10px;
   }
 }
 
 .course-outline .block-tree .section ol.outline-item .subsection.current {
-  border: 1px solid #002663;
+  border: 1px solid #00a8a8;
 }
 
 .breadcrumbs .nav-item a {
-  color: #002663;
+  color: #00a8a8;
   &:visited,
   &:hover {
-    color: #002663;
+    color: #00a8a8;
   }
 }
 
 .xmodule_display.xmodule_SequenceModule {
   .sequence-nav ol li button .fa-bookmark {
-    color: #002663;
+    color: #00a8a8;
   }
   .sequence-nav-button {
     &.button-next,
     &.button-previous {
-      color: #002663 !important;
+      color: #00a8a8 !important;
     }
     &.focused,
     &:hover,
     &:active,
     &.active {
-      border-bottom: 3px solid #002663;
-      color: #002663 !important;
+      border-bottom: 3px solid #00a8a8;
+      color: #00a8a8 !important;
     }
   }
   .sequence-nav button {
@@ -9658,8 +9658,8 @@ label {
     &:hover,
     &:active,
     &.active {
-      border-bottom: 3px solid #002663;
-      color: #002663 !important;
+      border-bottom: 3px solid #00a8a8;
+      color: #00a8a8 !important;
     }
   }
 }
@@ -9671,7 +9671,7 @@ label {
   &:hover,
   &:focus {
     background: none !important;
-    color: #002663;
+    color: #00a8a8;
     border: none !important;
   }
 }
@@ -9680,10 +9680,10 @@ input {
   &[type="reset"],
   &[type="submit"],
   &[type="button"] {
-    border: 1px solid #002663;
+    border: 1px solid #00a8a8;
     border-radius: 3px;
     display: inline-block;
-    background-color: #002663;
+    background-color: #00a8a8;
     color: #fff;
     background-image: none;
     text-decoration: none;
@@ -9697,10 +9697,10 @@ form {
     &[type="reset"],
     &[type="submit"],
     &[type="button"] {
-      border: 1px solid #002663;
+      border: 1px solid #00a8a8;
       border-radius: 3px;
       display: inline-block;
-      background-color: #002663;
+      background-color: #00a8a8;
       color: #fff;
       background-image: none;
       text-decoration: none;
@@ -9710,10 +9710,10 @@ form {
   }
   button,
   .button {
-    border: 1px solid #002663;
+    border: 1px solid #00a8a8;
     border-radius: 3px;
     display: inline-block;
-    background-color: #002663;
+    background-color: #00a8a8;
     color: #fff;
     background-image: none;
     text-decoration: none;
@@ -9723,10 +9723,10 @@ form {
 }
 
 .xmodule_display.xmodule_LTIModule div.lti .wrapper-lti-link .lti-link .link_lti_new_window {
-  border: 1px solid #002663;
+  border: 1px solid #00a8a8;
   border-radius: 3px;
   display: inline-block;
-  background-color: #002663;
+  background-color: #00a8a8;
   color: #fff;
   background-image: none;
   text-decoration: none;
@@ -9766,7 +9766,7 @@ input[name="subject"] {
 body,
 p,
 label {
-  font-family: "Barlow","Helvetica",Sans-Serif;
+  font-family: Lato, 'Helvetica', Serif;
   font-size: 18px;
 }
 
@@ -9800,14 +9800,14 @@ h2.title {
 
 .discussion-module .btn,
 .wmd-prompt-dialog .btn {
-  color: #002663;
+  color: #00a8a8;
 }
 
 .discussion-module .btn,
 .wmd-prompt-dialog .btn,
 .discussion-module .btn-brand,
 .wmd-prompt-dialog .btn-brand {
-  border: 1px solid #002663;
+  border: 1px solid #00a8a8;
 }
 
 .discussion-module .btn:hover,
@@ -9822,8 +9822,8 @@ h2.title {
 .wmd-prompt-dialog .btn:focus,
 .discussion-module .btn-brand:focus,
 .wmd-prompt-dialog .btn-brand:focus {
-  border-color: #002663 !important;
-  background: #002663 !important;
+  border-color: #00a8a8 !important;
+  background: #00a8a8 !important;
 }
 
 input[name="poll-submit"] {
@@ -9858,8 +9858,8 @@ input[name="poll-submit"] {
 }
 
 .forum-nav-thread.never-read .forum-nav-thread-link {
-  color: #002663;
-  border-left: 3px solid #002663;
+  color: #00a8a8;
+  border-left: 3px solid #00a8a8;
 }
 
 
@@ -9951,23 +9951,23 @@ input[name="poll-submit"] {
   h2,
   label {
     text-align: center;
-    color: #002663;
+    color: #00a8a8;
   }
   input {
     &[type="email"],
     &[type="password"] {
-      border: 1px solid #002663;
+      border: 1px solid #00a8a8;
     }
   }
   span {
-    color: #002663;
+    color: #00a8a8;
   }
 }
 
 .register-form {
   label {
     text-align: center;
-    color: #002663;
+    color: #00a8a8;
     &[for="register-terms_of_service"] {
       display: inline-block;
     }
@@ -9976,14 +9976,14 @@ input[name="poll-submit"] {
     &[type="email"],
     &[type="text"],
     &[type="password"] {
-      border: 1px solid #002663;
+      border: 1px solid #00a8a8;
     }
   }
   textarea {
-    border: 1px solid #002663;
+    border: 1px solid #00a8a8;
   }
   span {
-    color: #002663;
+    color: #00a8a8;
   }
   select {
     display: block;
@@ -9993,18 +9993,18 @@ input[name="poll-submit"] {
 }
 
 .form-wrapper {
-  color: #002663;
+  color: #00a8a8;
   h1,
   h2 {
     text-align: center;
-    color: #002663;
+    color: #00a8a8;
   }
   a {
-    color: #002663;
+    color: #00a8a8;
     text-decoration: underline;
     &:hover,
     &:focus {
-      color: #002663;
+      color: #00a8a8;
     }
   }
 }
@@ -10053,30 +10053,30 @@ input#action-preview-username {
 #passwordreset-form {
   div {
     label {
-      color: #002663;
+      color: #00a8a8;
       text-shadow: none;
-      font-family: "Barlow","Helvetica",Sans-Serif;
+      font-family: Lato, 'Helvetica', Serif;
     }
     input {
-      color: #002663;
-      border: 1px solid #002663 !important;
+      color: #00a8a8;
+      border: 1px solid #00a8a8 !important;
       background: none;
     }
   }
   .section-title h2 {
     text-align: center;
-    color: #002663;
+    color: #00a8a8;
     font-weight: normal;
     font-size: 3em;
   }
   .action-label {
     text-align: center;
-    color: #002663;
+    color: #00a8a8;
   }
 }
 
 #password-reset-email {
-  border: 1px solid #002663 !important;
+  border: 1px solid #00a8a8 !important;
 }
 
 #discussion-alert {
@@ -10094,7 +10094,7 @@ input#action-preview-username {
 .modal .inner-wrapper header h2,
 .leanModal_box .inner-wrapper header h2,
 .wmd-prompt-dialog .inner-wrapper header h2 {
-  font-family: "Noe Text", Serif;
+  font-family: "Lato", Serif;
 }
 
 .hd-4,
@@ -10117,7 +10117,7 @@ input#action-preview-username {
 .leanModal_box .close-modal:focus,
 .wmd-prompt-dialog .close-modal:focus {
   background: none;
-  color: #002663;
+  color: #00a8a8;
 }
 
 .modal .inner-wrapper,
@@ -10140,12 +10140,12 @@ input#action-preview-username {
     margin-right: 20px;
   }
   button {
-    background: #002663;
+    background: #00a8a8;
     color: #fff;
     &:hover,
     &:focus {
-      background: #002663;
-      border-color: #002663;
+      background: #00a8a8;
+      border-color: #00a8a8;
       color: #fff;
     }
   }
@@ -10157,22 +10157,22 @@ input#action-preview-username {
 
 .instructor-dashboard-wrapper-2 section.idash-section#cohort_management {
   .cohort-management-nav .action-create {
-    border: 1px solid #002663;
+    border: 1px solid #00a8a8;
     -webkit-box-shadow: none;
     box-shadow: none;
-    background-color: #002663;
+    background-color: #00a8a8;
     background-image: none;
     text-shadow: none;
     &:hover:not(:disabled) {
       -webkit-box-shadow: none;
       box-shadow: none;
-      background-color: #002663;
+      background-color: #00a8a8;
       background-image: none;
     }
   }
   .toggle-cohort-management-secondary,
   .toggle-cohort-management-discussions {
-    color: #002663;
+    color: #00a8a8;
   }
   .cohort-management-settings .form-fields .label,
   .cohort-management-edit .form-fields .label,
@@ -10190,7 +10190,7 @@ input#action-preview-username {
 }
 
 .wrapper-tabs .tab .toggle-button {
-  color: #002663;
+  color: #00a8a8;
 }
 
 .cohort-management-assignment-type-settings > label {
@@ -10208,15 +10208,15 @@ input#action-preview-username {
 }
 
 .file-upload-form .action-submit {
-  border: 1px solid #002663;
+  border: 1px solid #00a8a8;
   -webkit-box-shadow: none;
   box-shadow: none;
-  background-color: #002663;
+  background-color: #00a8a8;
   background-image: none;
   &:hover:not(:disabled) {
     -webkit-box-shadow: none;
     box-shadow: none;
-    background-color: #002663;
+    background-color: #00a8a8;
     background-image: none;
   }
 }
@@ -10234,17 +10234,17 @@ section.wiki {
   }
   .nav-tabs a {
     text-align: left;
-    color: #002663;
+    color: #00a8a8;
   }
   .breadcrumb li a {
-    color: #002663;
+    color: #00a8a8;
   }
   .btn {
-    border: 1px solid #002663;
+    border: 1px solid #00a8a8;
     -webkit-box-shadow: none;
     box-shadow: none;
     color: #fff;
-    background-color: #002663;
+    background-color: #00a8a8;
     background-image: none;
     text-shadow: none;
     font-size: 0.9em;
@@ -10252,7 +10252,7 @@ section.wiki {
       &:not(:disabled) {
         -webkit-box-shadow: none;
         box-shadow: none;
-        background-color: #002663;
+        background-color: #00a8a8;
         background-image: none;
       }
       color: #fff;
@@ -10262,20 +10262,20 @@ section.wiki {
     }
     &:active:not(:disabled),
     &:focus:not(:disabled) {
-      border: 1px solid #002663;
+      border: 1px solid #00a8a8;
       -webkit-box-shadow: none;
       box-shadow: none;
     }
   }
   .nav-tabs {
     li.active a {
-      color: #002663;
-      border-color: #002663;
+      color: #00a8a8;
+      border-color: #00a8a8;
     }
     a {
       &:hover,
       &:focus {
-        color: #002663;
+        color: #00a8a8;
       }
     }
   }
@@ -10291,11 +10291,11 @@ section.wiki {
   .btn {
     &.btn-primary,
     &.btn-brand {
-      border: 1px solid #002663;
+      border: 1px solid #00a8a8;
       -webkit-box-shadow: none;
       box-shadow: none;
       font-weight: normal;
-      background-color: #002663;
+      background-color: #00a8a8;
       background-image: none;
       text-shadow: none;
       font-size: 0.9em;
@@ -10304,34 +10304,34 @@ section.wiki {
     &.btn-brand:hover:not(:disabled) {
       -webkit-box-shadow: none;
       box-shadow: none;
-      background-color: #002663;
+      background-color: #00a8a8;
       background-image: none;
     }
     &.btn-primary:active:not(:disabled),
     &.btn-brand:active:not(:disabled),
     &.btn-primary:focus:not(:disabled),
     &.btn-brand:focus:not(:disabled) {
-      border: 1px solid #002663;
+      border: 1px solid #00a8a8;
       -webkit-box-shadow: none;
       box-shadow: none;
     }
     &.btn-danger {
-      border: 1px solid #002663;
+      border: 1px solid #00a8a8;
       -webkit-box-shadow: none;
       box-shadow: none;
-      background-color: #002663;
+      background-color: #00a8a8;
       background-image: none;
       text-shadow: none;
       font-size: 0.9em;
       &:hover:not(:disabled) {
         -webkit-box-shadow: none;
         box-shadow: none;
-        background-color: #002663;
+        background-color: #00a8a8;
         background-image: none;
       }
       &:active:not(:disabled),
       &:focus:not(:disabled) {
-        border: 1px solid #002663;
+        border: 1px solid #00a8a8;
         -webkit-box-shadow: none;
         box-shadow: none;
       }
@@ -10370,12 +10370,12 @@ section.wiki {
 }
 
 .view-profile .badge-set-display .badge-display .badge-details .find-button-container {
-  border: 1px solid #002663;
-  color: #002663;
+  border: 1px solid #00a8a8;
+  color: #00a8a8;
 }
 
 div.info-wrapper section.handouts ol li a {
-  color: #002663;
+  color: #00a8a8;
 }
 
 .view-passwordreset {
@@ -10394,7 +10394,7 @@ div.info-wrapper section.handouts ol li a {
 
 #password-reset-complete > div > h4,
 #password-reset-confirm-form > div > h4 {
-  font-family: "Barlow","Helvetica",Sans-Serif;
+  font-family: Lato, 'Helvetica', Serif;
   font-size: 18px;
   font-weight: normal;
   line-height: inherit;
@@ -10412,15 +10412,15 @@ div.info-wrapper section.handouts ol li a {
 }
 
 #password-reset-confirm-form > form > button {
-  background: #002663;
-  font-family: "Barlow","Helvetica",Sans-Serif;
+  background: #00a8a8;
+  font-family: Lato, 'Helvetica', Serif;
   font-weight: normal;
   font-style: normal;
   font-size: 18px;
   &:hover,
   &:focus {
-    background: #002663;
-    font-family: "Barlow","Helvetica",Sans-Serif;
+    background: #00a8a8;
+    font-family: Lato, 'Helvetica', Serif;
     font-weight: normal;
     font-style: normal;
     font-size: 18px;
@@ -10429,7 +10429,7 @@ div.info-wrapper section.handouts ol li a {
 
 .login-register .action-label,
 .financial-assistance-wrapper .financial-assistance-form .action-label {
-  font-family: "Barlow","Helvetica",Sans-Serif;
+  font-family: Lato, 'Helvetica', Serif;
   font-weight: normal;
   font-style: normal;
   font-size: 18px;
@@ -10454,13 +10454,13 @@ div.info-wrapper section.handouts ol li a {
 }
 
 .wrapper-msg.wrapper-auto-cert .auto-cert-message {
-  border-left: 3px solid #002663;
+  border-left: 3px solid #00a8a8;
   .has-actions .msg-actions .btn {
-    background: #002663;
+    background: #00a8a8;
     color: #fff;
     &:hover,
     &:focus {
-      background: #004568;
+      background: #004242;
       color: #fff;
     }
   }
@@ -10475,12 +10475,12 @@ div.info-wrapper section.handouts ol li a {
   &:hover,
   &:focus,
   &.active {
-    color: #002663 !important;
+    color: #00a8a8 !important;
   }
 }
 
 div.info-wrapper section.handouts a {
-  color: #002663;
+  color: #00a8a8;
   text-decoration: none;
 }
 
@@ -10512,7 +10512,7 @@ div.info-wrapper section.handouts a {
 
 .wiki-wrapper section.wiki {
   .article-functions .see-children a {
-    color: #002663;
+    color: #00a8a8;
     &:hover,
     &:focus {
       text-decoration: none;
@@ -10520,7 +10520,7 @@ div.info-wrapper section.handouts a {
     }
   }
   #cheatsheetLink {
-    color: #002663;
+    color: #00a8a8;
     text-decoration: none;
     &:hover,
     &:focus {
@@ -10530,7 +10530,7 @@ div.info-wrapper section.handouts a {
 }
 
 .accordion-toggle {
-  color: #002663;
+  color: #00a8a8;
   &:hover,
   &:focus {
     color: #000;
@@ -10538,7 +10538,7 @@ div.info-wrapper section.handouts a {
 }
 
 .sections a {
-  color: #002663 !important;
+  color: #00a8a8 !important;
   text-decoration: none;
   &:hover,
   &:focus {
@@ -10554,8 +10554,8 @@ div.info-wrapper section.handouts a {
 
 .instructor-dashboard-content-2 .instructor-nav .nav-item .btn-link {
   &.active-section {
-    border-bottom: 3px solid #002663;
-    color: #002663;
+    border-bottom: 3px solid #00a8a8;
+    color: #00a8a8;
     &:hover,
     &:focus {
       background: none;
@@ -10564,12 +10564,12 @@ div.info-wrapper section.handouts a {
   &:hover,
   &:focus {
     background: none;
-    border-bottom: 3px solid #002663;
+    border-bottom: 3px solid #00a8a8;
   }
 }
 
 p a:not(.btn) {
-  color: #002663;
+  color: #00a8a8;
   text-decoration: none;
   &:hover,
   &:focus {
@@ -10598,7 +10598,7 @@ body.view-in-course {
 }
 
 .xmodule_display.xmodule_HtmlModule a:link {
-  color: #3764f0;
+  color: #00a8a8;
   text-decoration: underline;
 }
 
@@ -10607,7 +10607,7 @@ body.view-in-course {
 }
 
 .xmodule_display.xmodule_VideoModule .video .subtitles a {
-  color: #002663;
+  color: #00a8a8;
 }
 
 .discussion-module .inline-discussion-topic {
@@ -10654,7 +10654,7 @@ input[name="subject"] {
 }
 
 .home .page-header-secondary {
-  background: #002663;
+  background: #00a8a8;
   .last-accessed-link {
     &:hover,
     &:focus {
@@ -10669,15 +10669,15 @@ input[name="subject"] {
 }
 
 .view-student-notes .placeholder {
-  border-top: 5px solid #002663;
+  border-top: 5px solid #00a8a8;
   a {
-    color: #002663;
+    color: #00a8a8;
   }
 }
 
 .instructor-dashboard-wrapper-2 {
   .file-download-link a {
-    color: #002663;
+    color: #00a8a8;
   }
   section.idash-section#send_email .list-fields .field input[name="send_to"] + label {
     padding-top: 5px;
@@ -10699,10 +10699,10 @@ input[name="subject"] {
 
 .view-profile {
   .wrapper-profile-section-container-two .u-field.mode-placeholder:hover {
-    border: 2px dashed #002663;
+    border: 2px dashed #00a8a8;
     .u-field-title,
     i {
-      color: #002663;
+      color: #00a8a8;
     }
   }
   .badge-set-display {
@@ -10718,7 +10718,7 @@ input[name="subject"] {
 
 .gradebook-link > a,
 .progress-link > a {
-  color: #002663;
+  color: #00a8a8;
 }
 
 #email_settings_form {
@@ -10731,7 +10731,7 @@ input[name="subject"] {
   .submit input {
     &:hover,
     &:focus {
-      border: 1px solid #002663;
+      border: 1px solid #00a8a8;
     }
   }
 }
@@ -10741,7 +10741,7 @@ input[name="subject"] {
 }
 
 .wrap-instructor-info .instructor-info-action {
-  background: #3764f0;
+  background: #00a8a8;
   color: #fff !important;
   border-top: none;
   border-left: none;
@@ -10756,7 +10756,7 @@ input[name="subject"] {
   }
   &:hover,
   &:focus {
-    background: #004568;
+    background: #004242;
     color: #fff !important;
     border-top: none;
     border-left: none;
@@ -10785,7 +10785,7 @@ input[name="subject"] {
   text-align: center;
   .u-field-account_privacy .btn-change-privacy {
     margin: 0 !important;
-    background: #3764f0;
+    background: #00a8a8;
     color: #fff !important;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -10795,7 +10795,7 @@ input[name="subject"] {
     }
     &:hover,
     &:focus {
-      background: #004568;
+      background: #004242;
       color: #fff !important;
       -webkit-box-shadow: none;
       box-shadow: none;
@@ -10829,7 +10829,7 @@ input[name="subject"] {
     }
   }
   .btn-small {
-    background: #3764f0;
+    background: #00a8a8;
     color: #fff !important;
     border-top: none;
     border-left: none;
@@ -10840,7 +10840,7 @@ input[name="subject"] {
     transition: all 0.3s;
     &:hover,
     &:focus {
-      background: #004568;
+      background: #004242;
       color: #fff !important;
       border-top: none;
       border-left: none;
@@ -10856,7 +10856,7 @@ input[name="subject"] {
     }
   }
   .btn-brand {
-    background: #3764f0;
+    background: #00a8a8;
     color: #fff !important;
     border-top: none;
     border-left: none;
@@ -10867,7 +10867,7 @@ input[name="subject"] {
     transition: all 0.3s;
     &:hover,
     &:focus {
-      background: #004568;
+      background: #004242;
       color: #fff !important;
       border-top: none;
       border-left: none;
@@ -10882,7 +10882,7 @@ input[name="subject"] {
     }
   }
   .btn-default {
-    background: #3764f0;
+    background: #00a8a8;
     color: #fff !important;
     border-top: none;
     border-left: none;
@@ -10893,7 +10893,7 @@ input[name="subject"] {
     transition: all 0.3s;
     &:hover,
     &:focus {
-      background: #004568;
+      background: #004242;
       color: #fff !important;
       border-top: none;
       border-left: none;
@@ -10923,7 +10923,7 @@ input[name="subject"] {
 }
 
 .site-status {
-  background: #002663;
+  background: #00a8a8;
   color: #fff;
   text-align: center;
   padding: 0;
@@ -10951,7 +10951,7 @@ input[name="subject"] {
 }
 
 .course-outline .block-tree .section ol.outline-item .subsection a.outline-item {
-  color: #002663;
+  color: #00a8a8;
 }
 
 label {
@@ -11109,7 +11109,7 @@ body {
 }
 
 .wmd-prompt-dialog .btn {
-  background: #002663 !important;
+  background: #00a8a8 !important;
   color: #ffffff;
   margin: 15px auto !important;
 }
@@ -11125,7 +11125,7 @@ body {
 }
 
 a {
-  color: #3764f0;
+  color: #00a8a8;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
@@ -11133,7 +11133,7 @@ a {
   cursor: pointer;
   &:hover,
   &:focus {
-    color: #002663;
+    color: #00a8a8;
     text-decoration: none;
   }
 }
@@ -11177,7 +11177,7 @@ textarea {
   padding: 5px;
   width: 50%;
   &:focus {
-    border: 1px solid #3764f0;
+    border: 1px solid #00a8a8;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
@@ -11283,13 +11283,13 @@ iframe {
         text-align: center;
       }
       h1 {
-        font-family: "Noe Text", Serif;
+        font-family: "Lato", Serif;
         font-style: normal;
         font-weight: 700;
         font-size: 4em;
       }
       h2 {
-        font-family: "Noe Text", Serif;
+        font-family: "Lato", Serif;
         font-style: normal;
         font-weight: 400;
         font-size: 3em;
@@ -11499,7 +11499,7 @@ iframe {
 }
 
 .footer {
-  background: #3764f0;
+  background: #00a8a8;
   position: static;
   text-align: center;
   color: #fff;
@@ -11608,5 +11608,694 @@ iframe {
 }
 
 .vertical-title {
-  font-family: "Noe Text", Serif;
+  font-family: "Lato", Serif;
+}
+
+/* CCS overrides from old CEC theme */
+
+body {
+  font-family: Lato, 'Helvetica', Serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  font-style: normal;
+  font-family: Lato;
+}
+
+header.header-global, header.header-global.slim {
+  box-shadow: none;
+  border-bottom: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+
+.home > header {
+  background-image: url('/static/CEC/images/sunrise.jpg');
+}
+
+.content-wrapper .course-info header.course-profile {
+  background-image: url('/static/CEC/images/sunrise.jpg');
+}
+
+.home > header .title {
+  width: 75%;
+  margin-left: 12.5%;
+}
+
+.home > header .title > .heading-group {
+  padding-bottom: 0;
+}
+
+header.header-global .nav-courseware li .btn,
+header.header-global .nav-courseware div .btn,
+header.header-global .nav-courseware li .btn,
+header.header-global .nav-courseware div .btn,
+header.header-global.slim .nav-courseware li .btn,
+header.header-global.slim .nav-courseware div .btn,
+header.header-global .wrapper-header .nav-courseware li .btn,
+header.header-global .wrapper-header .nav-courseware div .btn,
+header.header-global.slim .wrapper-header .nav-courseware li .btn,
+header.header-global.slim .wrapper-header .nav-courseware div .btn,
+.login .form-actions button[type="submit"],
+.register .form-actions button[type="submit"],
+.passwordreset .form-actions button[type="submit"],
+#forgot-password-modal #password-reset .form-actions button[type="submit"],
+.view-survey .action-primary {
+  box-shadow: 0 2px 1px 0 #ffffff;
+  background: #00a8a8;
+}
+
+.header-global .nav-courseware li .btn, .header-global .nav-courseware div .btn,
+.login .form-actions button[type="submit"],
+.register .form-actions button[type="submit"],
+.passwordreset .form-actions button[type="submit"],
+#forgot-password-modal #password-reset .form-actions button[type="submit"],
+.view-survey .action-primary {
+  box-shadow: 0 2px 1px 0 #ffffff;
+  background: #00a8a8;
+}
+.header-global .nav-courseware li .btn:hover,
+.header-global .nav-courseware div .btn:hover,
+header.header-global .nav-courseware li .btn:hover,
+header.header-global .nav-courseware div .btn:hover,
+header.header-global.slim .nav-courseware li .btn:hover,
+header.header-global.slim .nav-courseware div .btn:hover,
+header.header-global .wrapper-header .nav-courseware li .btn:hover,
+header.header-global .wrapper-header .nav-courseware div .btn:hover,
+header.header-global.slim .wrapper-header .nav-courseware li .btn:hover,
+header.header-global.slim .wrapper-header .nav-courseware div .btn:hover,
+.login .form-actions button[type="submit"]:hover,
+.register .form-actions button[type="submit"]:hover,
+.passwordreset .form-actions button[type="submit"]:hover,
+#forgot-password-modal #password-reset .form-actions button[type="submit"]:hover,
+.view-survey .action-primary:hover,
+.header-global .nav-courseware li .btn:active,
+.header-global .nav-courseware div .btn:active,
+.login .form-actions button[type="submit"]:active,
+.register .form-actions button[type="submit"]:active,
+.passwordreset .form-actions button[type="submit"]:active,
+#forgot-password-modal #password-reset .form-actions button[type="submit"]:active,
+.view-survey .action-primary:active, .header-global .nav-courseware li .btn:focus,
+.header-global .nav-courseware div .btn:focus,
+.login .form-actions button[type="submit"]:focus,
+.register .form-actions button[type="submit"]:focus,
+.passwordreset .form-actions button[type="submit"]:focus,
+#forgot-password-modal #password-reset .form-actions button[type="submit"]:focus,
+.view-survey .action-primary:focus {
+  box-shadow: 0 0 6px 0 #ffffff;
+  background: #00a8a8;
+}
+
+header.header-global .wrapper-header .nav-global li a,
+header.header-global.slim .wrapper-header .nav-global li a,
+header.header-global .wrapper-header .nav-global li a:visited,
+header.header-global.slim .wrapper-header .nav-global li a:visited,
+.view-howitworks .nav-global-01 a, .view-courses .nav-global-02 a,
+.view-schools .nav-global-03 a, .view-register .nav-global-04 a {
+  color: #00a8a8;
+}
+
+.view-howitworks .nav-global-01 a,
+.view-courses .nav-global-02 a,
+.view-schools .nav-global-03 a,
+.view-register .nav-global-04 a {
+  color: #00a8a8;
+}
+
+header.header-global .wrapper-header h2.course-header > span {
+  color: #00a8a8;
+}
+
+header.header-global .wrapper-header .nav-global li a:hover,
+header.header-global.slim .wrapper-header .nav-global li a:hover {
+  color: #00a8a8;
+}
+
+header.header-global .wrapper-header .user .user-link .label-username,
+header.header-global.slim .wrapper-header .user .user-link .label-username {
+  color: #323538;
+}
+
+header.header-global .wrapper-header .user .dropdown .fa,
+header.header-global.slim .wrapper-header .user .dropdown .fa {
+  color: #323538;
+}
+
+header.header-global .wrapper-header .user .dropdown:hover .fa,
+header.header-global.slim .wrapper-header .user .dropdown:hover .fa {
+  color: #ffffff;
+}
+
+.header-global .user .dropdown-menu li>a {
+  color: #00a8a8;
+  outline: none;
+}
+
+header.header-global .wrapper-header .user .dropdown:hover,
+header.header-global.slim .wrapper-header .user .dropdown:hover {
+  background: #00a8a8;
+}
+
+.view-register .introduction header,
+.view-login .introduction header {
+  background: transparent url("/static/CEC/images/account.jpg") 0 0 no-repeat;
+}
+
+.home>header .title>hgroup h2,
+.home>header .title>hgroup section.outside-app h1,
+section.outside-app .home>header .title>hgroup h1 {
+  text-transform: none;
+}
+
+.action {
+  border: none;
+}
+
+.content-wrapper .home .outer-wrapper .title {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.5);
+  background: #ffffff;
+}
+
+.content-wrapper .home .outer-wrapper .title h1,
+.content-wrapper .home .outer-wrapper .title h2 {
+  color: #00a8a8;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.content-wrapper .home .courses-container .highlighted-courses .courses .courses-listing .courses-listing-item .course {
+  border-bottom: 3px solid #00a8a8;
+}
+
+.wrapper-footer footer .site-details .site-nav a:hover,
+.wrapper-footer footer#footer-edx-v3 .site-details .site-nav a:hover {
+  color: #00a8a8;
+}
+
+.help-tab a {
+  outline: none;
+}
+
+.help-tab a:link:hover,
+.help-tab a:link:focus,
+.help-tab a:visited:hover,
+.help-tab a:visited:focus {
+  background: #00a8a8;
+}
+
+.btn-brand, .btn-brand:hover, .btn-brand.is-hovered, .btn-brand:focus, .btn-brand.is-focused {
+  border-color: #00a8a8;
+  background-color: #ffffff;
+  color: #ffffff;
+}
+
+.btn-brand h3 {
+  color: #ffffff;
+}
+
+.btn-link {
+  color: #00a8a8;
+}
+
+.btn-link:hover, .btn-link:focus {
+  color: #323538;
+}
+
+.btn-link.bookmark-button:hover {
+  text-decoration: none;
+  background: none;
+}
+
+a, p a, a:visited, p a:visited {
+  color: #00a8a8;
+}
+
+p a:hover, p a:focus, p a:visited:hover, p a:visited:focus {
+  color: #00a8a8;
+}
+
+input[type="submit"], input[type="button"], button, .button {
+  color: #ffffff;
+  box-shadow: none;
+  background: #00a8a8;
+  vertical-align: middle;
+  text-shadow: none;
+}
+
+input[type="submit"]:hover:not(:disabled), input[type="button"]:hover:not(:disabled), button:hover:not(:disabled), .button:hover:not(:disabled) {
+  color: #00a8a8;
+  box-shadow: none;
+  background: #ffffff;
+  border: 1px solid #00a8a8;
+  text-shadow: none;
+}
+
+.login a:hover, .login a:active, .login a:focus, .register a:hover, .register a:active, .register a:focus, .passwordreset a:hover, .passwordreset a:active, .passwordreset a:focus, #forgot-password-modal #password-reset a:hover, #forgot-password-modal #password-reset a:active, #forgot-password-modal #password-reset a:focus {
+  border-bottom: 1px dotted #00a8a8;
+}
+
+.login aside .btn-login .btn-login-action:hover, .register aside .btn-login .btn-login-action:hover, .passwordreset aside .btn-login .btn-login-action:hover, #forgot-password-modal #password-reset aside .btn-login .btn-login-action:hover, .login-register .login-provider:hover, .financial-assistance-wrapper .financial-assistance-form .login-provider:hover, .login aside .btn-login .btn-login-action:active, .register aside .btn-login .btn-login-action:active, .passwordreset aside .btn-login .btn-login-action:active, #forgot-password-modal #password-reset aside .btn-login .btn-login-action:active, .login-register .login-provider:active, .financial-assistance-wrapper .financial-assistance-form .login-provider:active, .login aside .btn-login .btn-login-action:focus, .register aside .btn-login .btn-login-action:focus, .passwordreset aside .btn-login .btn-login-action:focus, #forgot-password-modal #password-reset aside .btn-login .btn-login-action:focus, .login-register .login-provider:focus, .financial-assistance-wrapper .financial-assistance-form .login-provider:focus {
+  background: #00a8a8;
+  border: 1px solid #00a8a8;
+  box-shadow: none;
+}
+
+.login a:link, .login a:visited, .login a:hover, .login a:active, .login a:focus, .register a:link, .register a:visited, .register a:hover, .register a:active, .register a:focus, .passwordreset a:link, .passwordreset a:visited, .passwordreset a:hover, .passwordreset a:active, .passwordreset a:focus, #forgot-password-modal #password-reset a:link, #forgot-password-modal #password-reset a:visited, #forgot-password-modal #password-reset a:hover, #forgot-password-modal #password-reset a:active, #forgot-password-modal #password-reset a:focus {
+  color: #00a8a8;
+}
+
+.login form .field.is-focused label, .register form .field.is-focused label, .passwordreset form .field.is-focused label, #forgot-password-modal #password-reset form .field.is-focused label {
+  color: #00a8a8;
+}
+
+.login form .field input, .login form .field textarea, .register form .field input, .register form .field textarea, .passwordreset form .field input, .passwordreset form .field textarea, #forgot-password-modal #password-reset form .field input, #forgot-password-modal #password-reset form .field textarea {
+  outline: none;
+}
+
+.login form .field.is-focused .tip, .register form .field.is-focused .tip, .passwordreset form .field.is-focused .tip, #forgot-password-modal #password-reset form .field.is-focused .tip {
+  color: #00a8a8;
+}
+
+.view-register .introduction header .title .title-super, .view-login .introduction header .title .title-super, .view-passwordreset .introduction header .title .title-super {
+  color: #00a8a8;
+}
+
+textarea:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="tel"]:focus {
+  box-shadow: 0 0 6px 0 #00a8a8;
+  border-color: #00a8a8;
+}
+
+.content-wrapper .dashboard .my-courses .wrapper-header-courses {
+  border-bottom: 2px solid #00a8a8;
+}
+
+.content-wrapper .course-info header.course-profile .intro-inner-wrapper .table .intro .main-cta .register {
+  color: #ffffff;
+  background-color: #ffffff;
+  background-image: none;
+}
+
+.content-wrapper .course-info header.course-profile .intro-inner-wrapper .table .intro .main-cta .register:hover {
+  color: #ffffff;
+  background-color: #ffffff;
+  background-image: none;
+}
+
+.content-wrapper .course-info header.course-profile .intro-inner-wrapper .table .intro .main-cta strong {
+  color: #00a8a8;
+  box-shadow: none;
+  background: #ffffff;
+  border: 1px solid #00a8a8;
+  text-shadow: none;
+  font-weight: bold;
+}
+
+.content-wrapper .course-info header.course-profile .intro-inner-wrapper .table .intro .main-cta strong:hover {
+  color: #ffffff;
+  background: #00a8a8;
+}
+
+body .wrapper-course-material .course-material .course-tabs li.tab a, body.view-in-course .wrapper-course-material .course-material .course-tabs li.tab a, body.discussion .wrapper-course-material .course-material .course-tabs li.tab a {
+  color: #00a8a8;
+}
+
+body .wrapper-course-material .course-material .course-tabs li.tab a:active, body .wrapper-course-material .course-material .course-tabs li.tab a:visited, body.view-in-course .wrapper-course-material .course-material .course-tabs li.tab a:active, body.view-in-course .wrapper-course-material .course-material .course-tabs li.tab a:visited, body.discussion .wrapper-course-material .course-material .course-tabs li.tab a:active, body.discussion .wrapper-course-material .course-material .course-tabs li.tab a:visited {
+  color: #00a8a8;
+}
+
+body .wrapper-course-material .course-material .course-tabs li.tab a:hover, body.view-in-course .wrapper-course-material .course-material .course-tabs li.tab a:hover, body.discussion .wrapper-course-material .course-material .course-tabs li.tab a:hover {
+  color: #323538;
+}
+
+.courses-container .courses .course {
+  border-bottom: 3px solid #00a8a8;
+}
+
+.courses-container .courses .course .course-info .course-title {
+  color: #00a8a8;
+}
+
+.courses-container .courses .course .course-image .cover-image .learn-more {
+  border-color: #00a8a8;
+  background: #00a8a8;
+}
+
+.courseware-bookmarks-button .bookmarks-list-button {
+  color: #323538;
+  border: 1px solid #323538;
+}
+
+.course-info .container .wrap-instructor-info .instructor-info-action {
+  color: #00a8a8;
+  border: 1px solid #00a8a8;
+  background-color: #ffffff;
+}
+
+.course-info .container .wrap-instructor-info .instructor-info-action:hover {
+  background-color: #00a8a8;
+}
+
+.empty-dashboard-message a {
+  background-color: #00a8a8;
+  border: 1px solid #00a8a8;
+  color: #ffffff;
+}
+
+.empty-dashboard-message a:hover, .empty-dashboard-message a:focus {
+  background-color: #00a8a8;
+  border: 1px solid #00a8a8;
+  color: #ffffff;
+}
+
+.content-wrapper .dashboard .my-courses .listing-courses .course-item {
+  border-bottom: 2px solid #00a8a8;
+}
+
+.content-wrapper .dashboard .my-courses .listing-courses .course-item .course-container .course .details .wrapper-course-details .course-title a:hover {
+  color: #00a8a8;
+}
+
+.content-wrapper .dashboard .my-courses .listing-courses .course-item .course-container .course .details .wrapper-course-details .wrapper-course-actions .course-actions .enter-course {
+  color: #323538;
+}
+
+.account-settings-sections .section .account-settings-section-body .u-field .field .u-field-link {
+  border: 1px solid #00a8a8;
+  color: #00a8a8;
+}
+
+.account-settings-sections .section .account-settings-section-body .u-field .field select ~ .icon-caret-down:after {
+  border-top: 7px solid #00a8a8;
+}
+
+.verification-process .report-receipt-provider .provider-buttons-logos .complete-order button:hover,
+.dashboard .my-courses .course .details .enter-course:hover,
+.content-wrapper .dashboard .my-courses .listing-courses .course-item .course-container .course .details .wrapper-course-details .wrapper-course-actions .course-actions .enter-course:hover,
+.dashboard .my-courses .course .wrapper-messages-primary .message.message-status .verification-cta .btn:hover,
+.dashboard .my-courses .course .wrapper-messages-primary .message.message-status .credit-action .credit-btn:hover,
+.btn-secondary:hover,
+.account-settings-sections .section .account-settings-section-body .u-field .field .u-field-link:hover,
+.account-settings-sections .section .account-settings-section-body .u-field .u-field-order .u-field-order-link .u-field-link:hover,
+.courseware-bookmarks-button .bookmarks-list-button:hover,
+.verification-process .report-receipt-provider .provider-buttons-logos .complete-order button:focus,
+.dashboard .my-courses .course .details .enter-course:focus,
+.dashboard .my-courses .course .wrapper-messages-primary .message.message-status .verification-cta .btn:focus,
+.dashboard .my-courses .course .wrapper-messages-primary .message.message-status .credit-action .credit-btn:focus,
+.btn-secondary:focus,
+.account-settings-sections .section .account-settings-section-body .u-field .field .u-field-link:focus,
+.account-settings-sections .section .account-settings-section-body .u-field .u-field-order .u-field-order-link .u-field-link:focus,
+.courseware-bookmarks-button .bookmarks-list-button:focus {
+  background-color: #00a8a8;
+  color: #ffffff;
+}
+
+.mentoring input[type=button], .mentoring input[type=button]:focus {
+  background-image: linear-gradient(to bottom, #00a8a8 0%, #00a8a8 100%);
+  box-shadow: inset 0 1px 0 0 #00a8a8;
+  outline: none;
+}
+
+.mentoring input[type=button][disabled], .mentoring input[type=button][disabled]:hover, .mentoring input[type=button][disabled]:focus {
+  background: #00a8a8;
+  box-shadow: inset 0 1px 0 0 #00a8a8;
+}
+
+.xmodule_display.xmodule_SequenceModule .sequence-nav-button {
+  color: #323538;
+}
+
+.xmodule_display.xmodule_SequenceModule .sequence-nav-button:hover, .xmodule_display.xmodule_SequenceModule .sequence-nav-button:active, .xmodule_display.xmodule_SequenceModule .sequence-nav-button.active, .xmodule_display.xmodule_SequenceModule .sequence-nav button:hover, .xmodule_display.xmodule_SequenceModule .sequence-nav button:active, .xmodule_display.xmodule_SequenceModule .sequence-nav button.active {
+  border-bottom: 3px solid #00a8a8;
+}
+
+div.info-wrapper section.updates>ol>li .toggle-visibility-button, div.info-wrapper section.updates>ol article .toggle-visibility-button, div.info-wrapper section.updates section>li .toggle-visibility-button, div.info-wrapper section.updates section article .toggle-visibility-button {
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+  color: #00a8a8;
+}
+
+.help-buttons button {
+  color: #00a8a8;
+  border: 1px solid #00a8a8;
+}
+
+.help-buttons button:hover:not(:disabled) {
+  color: #ffffff;
+  box-shadow: 0 2px 1px 0 #00a8a8;
+  background: #00a8a8;
+}
+
+.u-field-dropdown button.u-field-value-display {
+  color: #ffffff;
+}
+
+.u-field-dropdown button.u-field-value-display:active, .u-field-dropdown button.u-field-value-display:focus, .u-field-dropdown button.u-field-value-display:hover {
+  color: #00a8a8;
+}
+
+.u-field.editable-toggle.mode-display:hover {
+  background: none;
+}
+
+.u-field.editable-toggle.mode-display:hover .message-can-edit {
+  color: #00a8a8;
+}
+
+.modal .inner-wrapper .close-modal, .leanModal_box .inner-wrapper .close-modal {
+  box-shadow: none;
+  text-shadow: none;
+  background: none;
+  border-radius: 0;
+  border: none;
+}
+
+.modal .inner-wrapper .close-modal:hover, .leanModal_box .inner-wrapper .close-modal:hover {
+  color: #00a8a8;
+  background: none;
+  border: none;
+}
+
+.view-profile .profile-image-field .image-wrapper .u-field-remove-button {
+  color: #00a8a8;
+  box-shadow: none;
+  background: #ffffff;
+  border: 1px solid #00a8a8;
+  text-shadow: none;
+}
+
+.view-profile .profile-image-field .image-wrapper .u-field-remove-button:hover {
+  color: #ffffff;
+  box-shadow: none;
+  background: #00a8a8;
+  border: 1px solid #00a8a8;
+  text-shadow: none;
+}
+
+.view-profile .page-content-nav .nav-item {
+  color: #ffffff;
+  outline: none;
+}
+
+.view-profile .page-content-nav .nav-item.is-active,
+.view-profile .page-content-nav .nav-item:hover,
+.view-profile .page-content-nav .nav-item:focus {
+  border-bottom: 4px solid #00a8a8;
+  color: #ffffff;
+}
+
+.view-profile .page-content-nav .nav-item:hover {
+  color: #00a8a8;
+}
+
+.view-profile .badge-set-display .badge-display .badge-details .find-button-container {
+  border: 1px solid #00a8a8;
+  color: #00a8a8;
+}
+
+.view-profile .profile-section-two-fields .u-field.mode-placeholder:hover {
+  border: 2px dashed #00a8a8;
+}
+
+.view-profile .profile-section-two-fields .u-field.mode-placeholder:hover .u-field-title,
+.view-profile .profile-section-two-fields .u-field.mode-placeholder:hover i {
+  color: #00a8a8;
+}
+
+.view-profile .profile-image-field .image-wrapper .u-field-upload-button:focus,
+.view-profile .profile-image-field .image-wrapper .u-field-upload-button:hover {
+  border-color: #00a8a8;
+  background-color: #00a8a8;
+}
+
+.view-profile .profile-image-field .image-wrapper .upload-button-icon,
+.view-profile .profile-image-field .image-wrapper .upload-button-title {
+  color: #00a8a8;
+}
+
+.u-field.mode-placeholder:hover span {
+  color: #00a8a8;
+}
+
+.wrapper-account-settings .wrapper-header {
+  border-bottom: none;
+}
+
+.wrapper-account-settings .wrapper-header .account-nav button:hover,
+.wrapper-account-settings .wrapper-header .account-nav button:focus {
+  border-bottom: 4px solid #00a8a8;
+}
+
+@media screen and (max-width: 540px) and (min-width: 321px) {
+  .home > header .title {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+
+.navbar-default .navbar-nav li a {
+    color: #00a8a8 !important;
+}
+
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
+    color: #75ffff !important;
+}
+
+button.accordion-trigger .fa, button.prerequisite-button .fa {
+    color: #00a8a8 !important;
+}
+
+.content-wrapper .course-tabs .nav-item.active .nav-link, .content-wrapper .course-tabs .nav-item:hover .nav-link {
+    border-bottom-color: #00a8a8 !important;
+    color: #00a8a8 !important;
+}
+
+.content-wrapper .course-tabs .nav-item .nav-link, .content-wrapper .course-tabs .nav-item:hover .nav-link {
+    color: #00a8a8 !important;
+}
+
+div.info-wrapper section.handouts a {
+    color: #00a8a8 !important;
+}
+
+.home .page-header-secondary {
+    background-color: #00a8a8 !important;
+}
+
+.wrapper-preview-menu {
+    background-color: #cecece !important;
+}
+
+.navbar-default .navbar-right li {
+    color: #00a8a8 !important;
+}
+
+.wrap-instructor-info .instructor-info-action:hover {
+    background-color: #00a8a8 !important;
+}
+
+.xmodule_display.xmodule_SequenceModule .sequence-nav-button.focused, .xmodule_display.xmodule_SequenceModule .sequence-nav-button:hover, .xmodule_display.xmodule_SequenceModule .sequence-nav-button:active, .xmodule_display.xmodule_SequenceModule .sequence-nav-button.active, .xmodule_display.xmodule_SequenceModule .sequence-nav button.focused, .xmodule_display.xmodule_SequenceModule .sequence-nav button:hover, .xmodule_display.xmodule_SequenceModule .sequence-nav button:active, .xmodule_display.xmodule_SequenceModule .sequence-nav button.active {
+    border-bottom: 3px solid #00a8a8 !important;
+}
+
+.instructor-dashboard-content-2 .instructor-nav .nav-item .btn-link:hover,
+.instructor-dashboard-content-2 .instructor-nav .nav-item .btn-link:active,
+.instructor-dashboard-content-2 .instructor-nav .nav-item .btn-link:focus {
+    border-bottom: 3px solid #00a8a8 !important;
+}
+
+.btn-blue {
+  background: #00a8a8 !important;
+}
+
+.btn-blue:hover {
+  background: #00a8a8 !important;
+}
+
+.navbar-toggle .collapsed button,
+.navbar-toggle .collapsed .icon-bar button {
+  color: #fff !important;
+}
+
+.navbar-toggle .collapsed button {
+  color: #fff !important;
+}
+
+.navbar-toggle .collapsed button li {
+  color: #fff !important;
+}
+
+.course-caption {
+  color: #323538 !important;
+}
+
+.course-caption a h4 {
+  color: #323538 !important;
+}
+
+.course-caption div .dropdown-options .dropdown-toggle {
+  border: 1px solid #323538 !important;
+  color: #323538 !important;
+}
+
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase !important;
+  color: #323538 !important;
+}
+
+.wrapper form .default h1 {
+  font-size: 3em;
+  color: #fff !important;
+}
+
+.navbar-content div div div ul li a {
+  color: #323538 !important;
+}
+
+.cc-btn:hover {
+    background-color: rgb(38, 206, 206) !important;
+}
+
+.cc-btn {
+    background-color: #00a8a8 !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background: #00a8a8 !important;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background: #00a8a8 !important;
+}
+
+.btn-primary, .btn-primary {
+  background: #00a8a8 !important;
+}
+
+#expand-collapse-outline-all-button {
+    border: 1px solid #00a8a8;
+}
+
+#expand-collapse-outline-all-button span {
+    color: #fff !important;
+}
+
+.navbar-content div .navbar-content-close-btn, 
+.navbar-content div .navbar-content-close-btn {
+    color: #323538;
+}
+
+.wrapper-preview-menu .preview-menu {
+  max-width: 1920px !important;
+
+} 
+
+.wrapper-preview-menu .preview-actions .action-preview .action-preview-label {
+    color: #323538 !important;
+}
+
+.main-container .content-wrapper {
+  margin-top: 20px !important;
 }
