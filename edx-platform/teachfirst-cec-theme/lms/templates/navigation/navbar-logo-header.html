@@ -52,7 +52,7 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
             </li>
             <li class="brand-alt-left hidden-xs">
 
-               <img src="${static.url(configuration_helpers.get_value('logo_image'))}" class="img-responsive" />
+               <img src="${static.url(configuration_helpers.get_value('brand_alt_logo'))}" class="img-responsive" />
             </li>
           </ul>
           <ul class="nav navbar-nav hidden-lg hidden-md hidden-sm">
@@ -78,7 +78,7 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
         <ul class="nav navbar-nav navbar-right">
           <li class="brand-alt-right hidden-xs">
   
-             <img src="${static.url(configuration_helpers.get_value('logo_image'))}" class="img-responsive" />
+             <img src="${static.url(configuration_helpers.get_value('brand_alt_logo'))}" class="img-responsive" />
           </li>
           % if user.is_authenticated():
 

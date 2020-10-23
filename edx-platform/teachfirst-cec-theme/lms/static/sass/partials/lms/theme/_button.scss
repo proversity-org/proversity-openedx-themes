@@ -1299,7 +1299,7 @@ select[multiple].input-group-sm > {
 }
 
 .btn-default {
-  background: #3764f0;
+  background: #00a8a8;
   color: #fff !important;
   border-top: none;
   border-left: none;
@@ -1313,7 +1313,7 @@ select[multiple].input-group-sm > {
   }
   &:hover,
   &:focus {
-    background: #004568;
+    background: #004242;
     color: #fff !important;
     border-top: none;
     border-left: none;
@@ -1357,7 +1357,7 @@ select[multiple].input-group-sm > {
 }
 
 .btn-secondary {
-  background: #3764f0;
+  background: #00a8a8;
   border: none;
   border-color: #fff;
   color: #fff;
@@ -1366,7 +1366,7 @@ select[multiple].input-group-sm > {
   transition: all 0.3s;
   &:hover,
   &:focus {
-    background: #004568;
+    background: #004242;
     color: #fff !important;
     border: none;
     border-color: #fff;
@@ -1738,7 +1738,7 @@ button {
 
   &:hover {
     background: #fff;
-    color: #3764f0;
+    color: #00a8a8;
   }
 }
 
@@ -1748,7 +1748,7 @@ button {
 }
 
 .recap_actions .btn {
-  background: #3764F0;
+  background: #00a8a8;
   border: none;
 
   &:hover {
