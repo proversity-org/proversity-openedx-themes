@@ -1,0 +1,85 @@
+## mako
+
+<%page expression_filter="h" args="online_help_token"/>
+
+<%namespace name='static' file='/static_content.html'/>
+<%namespace file='/main.html' import="login_query"/>
+<%!
+from django.core.urlresolvers import reverse
+from django.utils.translation import ugettext as _
+from six import text_type
+from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers
+%>
+  
+    <%
+contact_url = configuration_helpers.get_value('contact_url', 'https://www.teachfirst.org.uk/contact-us')
+%>
+
+<div class="row">
+  <div class="col-md-12">
+  
+    <ul>
+      <li>
+        % if not configuration_helpers.get_value('hide_login_screen', False):
+          % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
+            % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
+              <a href="${reverse('course-specific-login', args=[course.id.to_deprecated_string()])}${login_query()}">${_("Sign in")}</a>
+            % else:
+              <a href="/login${login_query()}">${_("Sign in")}</a>
+            % endif
+          % endif
+        % endif
+      </li>
+
+      <%block name="navigation_global_links">
+        % if static.get_value('ENABLE_MKTG_SITE', settings.FEATURES.get('ENABLE_MKTG_SITE', False)):
+          <li>
+            <a href="${marketing_link('HOW_IT_WORKS')}">${_("How it Works")}</a>
+          </li>
+
+          <!-- Courses -->
+
+          <li>
+            <a href="${marketing_link('SCHOOLS')}">${_("Schools")}</a>
+          </li>
+        % endif
+      </%block>
+
+      % if True:
+        <%block name="navigation_other_global_links">
+          % if not settings.FEATURES['DISABLE_LOGIN_BUTTON']:
+            % if course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain:
+              <li>
+                <a href="${reverse('course-specific-register', args=[course.id.to_deprecated_string()])}">${_("Register")}</a>
+              </li>
+            % else:
+              <li>
+                <a href="/register${login_query()}">${_("Register")}</a>
+              </li>
+            % endif
+
+            <!-- Courses -->
+
+          % endif
+        </%block>
+      % endif
+
+      % if configuration_helpers.get_value('ENABLE_EXTEND_SIDEBAR_MENU', False):
+        % for menu_item in configuration_helpers.get_value('EXTENDED_MENU', []):
+          <% display_name, url = menu_item.split(",") %>
+          <li>
+            <a href="${url}" target="blank">${_(display_name)}</a>
+          </li>
+        % endfor
+      % endif
+
+      % if settings.FEATURES.get('ENABLE_FEEDBACK_SUBMISSION', False):
+        <li><a href="#" data-toggle="modal" data-target="#supportModal">${_("Support")}</a></li>
+      % endif
+      <li><a href="${contact_url}" target="_blank">${_("Contact")}</a></li>
+    </ul>
+
+  </div>
+</div>
+
+
