@@ -1,0 +1,12 @@
+## mako
+<%! from django.utils.translation import ugettext as _ %>
+<%page expression_filter="h" args="online_help_token"/>
+<%namespace name='static' file='/static_content.html'/>
+<%inherit file="navigation/navigation.html" />
+
+<%block name="navigation_logo">
+    <img src="${static.url(configuration_helpers.get_value('logo_image'))}" />
+    <!--
+
+  <img src="${static.url('images/brand.svg')}" alt="${_("{platform_name} Home Page").format(platform_name=static.get_platform_name())}"/> -->
+</%block>
