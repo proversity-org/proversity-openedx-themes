@@ -6423,7 +6423,7 @@ h4 {
   font-family: "Lato", Sans-Serif;
   font-weight: bold;
   font-style: normal;
-  color: #002663;
+  color: #323538;
   text-align: left;
 }
 
@@ -6830,14 +6830,14 @@ section {
     .container {
       h1 {
         text-align: center;
-        color: #002663;
+        color: #323538;
       }
       header {
         text-align: center;
-        color: #002663;
+        color: #323538;
         p {
           text-align: center;
-          color: #002663;
+          color: #323538;
         }
       }
       .grid {
@@ -6862,7 +6862,7 @@ section {
           -ms-flex: 1;
           flex: 1;
           p {
-            color: #002663;
+            color: #323538;
           }
         }
         .single-course {
@@ -6880,7 +6880,7 @@ section {
           text-align: center;
           p {
             text-align: center;
-            color: #002663;
+            color: #323538;
           }
         }
       }
@@ -6894,14 +6894,14 @@ section {
     .container {
       h1 {
         text-align: center;
-        color: #002663;
+        color: #323538;
       }
       header {
         text-align: center;
-        color: #002663;
+        color: #323538;
         p {
           text-align: center;
-          color: #002663;
+          color: #323538;
         }
       }
       .grid {
@@ -6926,7 +6926,7 @@ section {
           -ms-flex: 1;
           flex: 1;
           p {
-            color: #002663;
+            color: #323538;
           }
         }
         .single-course {
@@ -6944,7 +6944,7 @@ section {
           text-align: center;
           p {
             text-align: center;
-            color: #002663;
+            color: #323538;
           }
         }
       }
@@ -6981,25 +6981,25 @@ section {
       .row {
         div {
           text-align: center;
-          color: #002663;
+          color: #323538;
           h1,
           h2,
           h3,
           h4 {
             text-align: center;
-            color: #002663;
+            color: #323538;
             font-weight: normal;
           }
           a {
-            color: #002663;
+            color: #323538;
           }
           p {
             text-align: center;
           }
           ul {
             list-style-type: none;
-            border-top: 1px solid #002663;
-            border-bottom: 1px solid #002663;
+            border-top: 1px solid #323538;
+            border-bottom: 1px solid #323538;
             padding: 15px 0;
             margin: 15px 0;
             width: 100%;
@@ -7110,10 +7110,10 @@ section {
       }
       input[type="text"],
       textarea {
-        border: 1px solid #002663;
+        border: 1px solid #323538;
       }
       .CodeMirror {
-        border: 1px solid #002663;
+        border: 1px solid #323538;
         padding: 5px;
         margin: 5px 0;
         text-align: left;
@@ -7137,7 +7137,7 @@ section {
     overflow-x: hidden;
     min-height: 100vh;
     a {
-      color: #002663;
+      color: #323538;
       -webkit-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s;
@@ -11615,6 +11615,16 @@ iframe {
   color: #75ffff !important;
 }
 
+.navbar-default .navbar-nav li a, .navbar-default .navbar-nav li a {
+  color: #00a8a8 !important;
+}
+
 .navbar-default .navbar-right li {
+    color: #00a8a8 !important;
+}
+
+.navbar-default .navbar-right li:hover {
   color: #75ffff !important;
 }
+
+.navbar-default .navbar-right li .dropdown-options .dropdown-toggle{min-width:160px;border:1px solid #00a8a8 !important}.navbar-default .navbar-right li .dropdown-options .dropdown-toggle span{color:#00a8a8 !important}.navbar-default .navbar-right li .dropdown-options .dropdown-toggle:hover, .navbar-default .navbar-right li .dropdown-options .dropdown-toggle:focus{color:#00a8a8 !important}.navbar-default .navbar-right li .dropdown-options .dropdown-menu{top:100%;left:0}.navbar-default .navbar-right li .dropdown-options .dropdown-menu li{padding:0 !important}.navbar-default .navbar-right li .dropdown-options .dropdown-menu li a{display:block;padding:5px 0}
