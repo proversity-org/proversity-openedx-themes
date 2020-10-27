@@ -338,9 +338,9 @@ th {
 }
 
 @font-face {
-  font-family: 'Noe Text';
-  src: url("../fonts/NoeTextBookItalic.ttf") format("truetype"),
-  url("../fonts/NoeTextBookSemibold.ttf") format("truetype");
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Italic.ttf") format("truetype"),
+  url("../fonts/Lato-Bold.ttf") format("truetype");
 }
 
 .glyphicon {
@@ -6395,24 +6395,24 @@ button.close {
 }
 
 @font-face {
-  font-family: "Noe Text";
-  src: url("../fonts/NoeTextSemibold.ttf");
+  font-family: "Lato";
+  src: url("../fonts/Lato-Bold.ttf");
 }
 
 @font-face {
-  font-family: "Noe Text";
-  src: url("../fonts/NoeTextSemibold.otf");
+  font-family: "Lato";
+  src: url("../fonts/Lato-Bold.ttf");
 }
 
 
 @font-face {
-  font-family: "Noe Text It";
-  src: url("../fonts/NoeTextBookItalic.ttf");
+  font-family: "Lato It";
+  src: url("../fonts/Lato-Italic.ttf");
 }
 
 @font-face {
-  font-family: "Noe Text It";
-  src: url("../fonts/NoeTextBookItalic.otf");
+  font-family: "Lato It";
+  src: url("../fonts/Lato-Italic.ttf");
 }
 
 
@@ -6420,7 +6420,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Noe Text", Serif;
+  font-family: "Lato", Sans-Serif;
   font-weight: bold;
   font-style: normal;
   color: #002663;
@@ -6428,7 +6428,7 @@ h4 {
 }
 
 h1 {
-  font-family: "Noe Text", Serif;
+  font-family: "Lato", Sans-Serif;
   font-weight: 400;
   font-style: normal;
   color: #323538;
@@ -6438,7 +6438,7 @@ h1 {
 h2,
 h3,
 h4 {
-  font-family: "Noe Text", Serif;
+  font-family: "Lato", Sans-Serif;
   font-weight: 400;
   font-style: normal;
   color: #323538;
@@ -7587,7 +7587,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Noe Text", Serif;
+  font-family: "Lato", Sans-Serif;
   font-weight: bold;
   font-style: normal;
   color: #002663;
@@ -7595,7 +7595,7 @@ h4 {
 }
 
 h1 {
-  font-family: "Noe Text", Serif;
+  font-family: "Lato", Sans-Serif;
   font-weight: 400;
   font-style: normal;
   color: #323538;
@@ -7603,14 +7603,14 @@ h1 {
 }
 
 h2 {
-  font-family: "Noe Text", Serif;
+  font-family: "Lato", Sans-Serif;
   font-weight: 400;
   font-style: normal;
   color: #323538;
 }
 
 h3 {
-  font-family: "Noe Text", Serif;
+  font-family: "Lato", Sans-Serif;
   font-weight: 400;
   font-style: normal;
   color: #323538;
@@ -10094,7 +10094,7 @@ input#action-preview-username {
 .modal .inner-wrapper header h2,
 .leanModal_box .inner-wrapper header h2,
 .wmd-prompt-dialog .inner-wrapper header h2 {
-  font-family: "Noe Text", Serif;
+  font-family: "Lato", Sans-Serif;
 }
 
 .hd-4,
@@ -11283,13 +11283,13 @@ iframe {
         text-align: center;
       }
       h1 {
-        font-family: "Noe Text", Serif;
+        font-family: "Lato", Sans-Serif;
         font-style: normal;
         font-weight: 700;
         font-size: 4em;
       }
       h2 {
-        font-family: "Noe Text", Serif;
+        font-family: "Lato", Sans-Serif;
         font-style: normal;
         font-weight: 400;
         font-size: 3em;
@@ -11608,5 +11608,13 @@ iframe {
 }
 
 .vertical-title {
-  font-family: "Noe Text", Serif;
+  font-family: "Lato", Sans-Serif;
+}
+
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
+  color: #75ffff !important;
+}
+
+.navbar-default .navbar-right li {
+  color: #75ffff !important;
 }
