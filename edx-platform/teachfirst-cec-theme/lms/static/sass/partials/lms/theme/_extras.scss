@@ -6423,7 +6423,7 @@ h4 {
   font-family: "Lato", Sans-Serif;
   font-weight: bold;
   font-style: normal;
-  color: #323538;
+  color: #00a8a8;
   text-align: left;
 }
 
@@ -6431,7 +6431,7 @@ h1 {
   font-family: "Lato", Sans-Serif;
   font-weight: 400;
   font-style: normal;
-  color: #323538;
+  color: #00a8a8;
   font-size: 3em;
 }
 
@@ -6441,7 +6441,7 @@ h4 {
   font-family: "Lato", Sans-Serif;
   font-weight: 400;
   font-style: normal;
-  color: #323538;
+  color: #00a8a8;
 }
 
 body, p {
@@ -6556,7 +6556,7 @@ body, p {
 }
 
 .open > .dropdown-toggle.btn-default {
-  color: #323538;
+  color: #00a8a8;
   background: none;
 }
 
@@ -6628,7 +6628,7 @@ body, p {
 }
 
 .modal-title {
-  color: #323538;
+  color: #00a8a8;
   text-align: center;
   font-weight: normal;
 }
@@ -6639,7 +6639,7 @@ body, p {
 }
 
 .modal-body {
-  color: #323538;
+  color: #00a8a8;
   p {
     text-align: center;
   }
@@ -6648,7 +6648,7 @@ body, p {
       text-align: center;
     }
     fieldset input {
-      border: 1px solid #323538;
+      border: 1px solid #00a8a8;
       width: 100%;
     }
   }
@@ -6661,9 +6661,9 @@ body, p {
 .panel-group .panel {
   border-radius: 0;
   > .open {
-    background: #323538;
+    background: #00a8a8;
     color: #fff;
-    border: 1px solid #323538;
+    border: 1px solid #00a8a8;
   }
 }
 
@@ -6678,7 +6678,7 @@ body, p {
   transition: all 0.1s;
   &:hover,
   &:focus {
-    background: #323538;
+    background: #00a8a8;
     color: #fff;
   }
 }
@@ -6686,7 +6686,7 @@ body, p {
 .panel-body form {
   input,
   textarea {
-    border: 1px solid #323538;
+    border: 1px solid #00a8a8;
   }
 }
 
@@ -6706,7 +6706,7 @@ section {
     }
   }
   &[role="default"] {
-    background-color: #323538;
+    background-color: #00a8a8;
     position: relative;
     display: -webkit-box;
     display: -moz-box;
@@ -6730,7 +6730,7 @@ section {
       bottom: 0;
       width: 100%;
       z-index: 1;
-      background-color: #323538;
+      background-color: #00a8a8;
       // background-image: url("/static/CEL/images/sunrise.png");
       background-position: top;
       background-repeat: no-repeat;
@@ -6830,14 +6830,14 @@ section {
     .container {
       h1 {
         text-align: center;
-        color: #323538;
+        color: #00a8a8;
       }
       header {
         text-align: center;
-        color: #323538;
+        color: #00a8a8;
         p {
           text-align: center;
-          color: #323538;
+          color: #00a8a8;
         }
       }
       .grid {
@@ -6862,7 +6862,7 @@ section {
           -ms-flex: 1;
           flex: 1;
           p {
-            color: #323538;
+            color: #00a8a8;
           }
         }
         .single-course {
@@ -6880,7 +6880,7 @@ section {
           text-align: center;
           p {
             text-align: center;
-            color: #323538;
+            color: #00a8a8;
           }
         }
       }
@@ -6894,14 +6894,14 @@ section {
     .container {
       h1 {
         text-align: center;
-        color: #323538;
+        color: #00a8a8;
       }
       header {
         text-align: center;
-        color: #323538;
+        color: #00a8a8;
         p {
           text-align: center;
-          color: #323538;
+          color: #00a8a8;
         }
       }
       .grid {
@@ -6926,7 +6926,7 @@ section {
           -ms-flex: 1;
           flex: 1;
           p {
-            color: #323538;
+            color: #00a8a8;
           }
         }
         .single-course {
@@ -6944,7 +6944,7 @@ section {
           text-align: center;
           p {
             text-align: center;
-            color: #323538;
+            color: #00a8a8;
           }
         }
       }
@@ -6981,25 +6981,25 @@ section {
       .row {
         div {
           text-align: center;
-          color: #323538;
+          color: #00a8a8;
           h1,
           h2,
           h3,
           h4 {
             text-align: center;
-            color: #323538;
+            color: #00a8a8;
             font-weight: normal;
           }
           a {
-            color: #323538;
+            color: #00a8a8;
           }
           p {
             text-align: center;
           }
           ul {
             list-style-type: none;
-            border-top: 1px solid #323538;
-            border-bottom: 1px solid #323538;
+            border-top: 1px solid #00a8a8;
+            border-bottom: 1px solid #00a8a8;
             padding: 15px 0;
             margin: 15px 0;
             width: 100%;
@@ -7110,10 +7110,10 @@ section {
       }
       input[type="text"],
       textarea {
-        border: 1px solid #323538;
+        border: 1px solid #00a8a8;
       }
       .CodeMirror {
-        border: 1px solid #323538;
+        border: 1px solid #00a8a8;
         padding: 5px;
         margin: 5px 0;
         text-align: left;
@@ -7137,7 +7137,7 @@ section {
     overflow-x: hidden;
     min-height: 100vh;
     a {
-      color: #323538;
+      color: #00a8a8;
       -webkit-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s;
@@ -7184,7 +7184,7 @@ section {
       .fa-star,
       .fa-star-o,
       .fa-star-half-o {
-        color: #323538;
+        color: #00a8a8;
       }
       &:last-child {
         padding: 0;
@@ -7192,7 +7192,7 @@ section {
     }
     &:nth-of-type(2) li {
       display: block;
-      border-bottom: 1px solid #323538;
+      border-bottom: 1px solid #00a8a8;
       ul {
         list-style-type: none;
         margin: 0 0 15px 0;
@@ -7204,7 +7204,7 @@ section {
           .fa-star-o,
           .fa-star-half-o {
             font-size: 1.5em;
-            color: #323538;
+            color: #00a8a8;
           }
         }
       }
@@ -7463,7 +7463,7 @@ section {
     transition: all 0.3s;
     &:hover,
     &:focus {
-      color: #323538;
+      color: #00a8a8;
       text-decoration: none;
     }
   }
@@ -7560,7 +7560,7 @@ section {
 
 .preview-settings-details {
   input {
-    border: 1px solid #323538;
+    border: 1px solid #00a8a8;
   }
   display: none;
 }
@@ -7590,7 +7590,7 @@ h4 {
   font-family: "Lato", Sans-Serif;
   font-weight: bold;
   font-style: normal;
-  color: #323538;
+  color: #00a8a8;
   text-align: left;
 }
 
@@ -7598,7 +7598,7 @@ h1 {
   font-family: "Lato", Sans-Serif;
   font-weight: 400;
   font-style: normal;
-  color: #323538;
+  color: #00a8a8;
   font-size: 3em;
 }
 
@@ -7606,17 +7606,17 @@ h2 {
   font-family: "Lato", Sans-Serif;
   font-weight: 400;
   font-style: normal;
-  color: #323538;
+  color: #00a8a8;
 }
 
 h3 {
   font-family: "Lato", Sans-Serif;
   font-weight: 400;
   font-style: normal;
-  color: #323538;
+  color: #00a8a8;
   font-weight: 400;
   font-style: normal;
-  color: #323538;
+  color: #00a8a8;
 }
 
 body {
@@ -7729,7 +7729,7 @@ section[role="maintenance"] {
   top: 1em;
   left: 50%;
   padding: .5em 1em;
-  background: #323538;
+  background: #00a8a8;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -7742,7 +7742,7 @@ section[role="maintenance"] {
   top: 1em;
   left: 50%;
   padding: 0;
-  background: #323538;
+  background: #00a8a8;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -7783,9 +7783,9 @@ section[role="maintenance"] {
 }
 
 .section-current-left {
-  background: #323538 !important;
+  background: #00a8a8 !important;
   &:before {
-    border-left: 1em solid #323538 !important;
+    border-left: 1em solid #00a8a8 !important;
   }
   .section-heading {
     color: #fff !important;
@@ -7819,10 +7819,10 @@ section[role="maintenance"] {
 }
 
 .section-current-right {
-  background: #323538 !important;
+  background: #00a8a8 !important;
   color: #fff !important;
   &:before {
-    border-right: 1em solid #323538 !important;
+    border-right: 1em solid #00a8a8 !important;
   }
   .section-heading {
     color: #fff !important;
@@ -7873,7 +7873,7 @@ section[role="maintenance"] {
     transition: all 0.3s;
     &:hover,
     &:focus {
-      color: #323538;
+      color: #00a8a8;
     }
   }
   div {
@@ -7889,7 +7889,7 @@ section[role="maintenance"] {
       transition: all 0.3s;
       &:hover,
       &:focus {
-        color: #323538;
+        color: #00a8a8;
       }
       p {
         margin: 0;
@@ -7908,7 +7908,7 @@ section[role="maintenance"] {
   margin: 5px 0;
   text-align: center;
   .active a {
-    color: #323538;
+    color: #00a8a8;
     font-weight: 500;
   }
 }
@@ -7938,7 +7938,7 @@ section[role="maintenance"] {
     background-color: #00a8a8;
   }
   #buorgig {
-    background-color: #323538;
+    background-color: #00a8a8;
   }
 }
 
@@ -7977,11 +7977,11 @@ section[role="maintenance"] {
   }
   .accomplishment-date {
     .label {
-      color: #323538 !important;
+      color: #00a8a8 !important;
     }
     .copy-meta,
     .copy-base {
-      color: #323538;
+      color: #00a8a8;
       border: none;
       font-size: 16px !important;
       display: inline-block !important;
@@ -8203,7 +8203,7 @@ span {
 
 .wrapper-banner,
 .wrapper-banner-user {
-  background: #323538;
+  background: #00a8a8;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -8253,8 +8253,8 @@ span {
 .wrapper-banner {
   .banner .message .wrapper-copy-and-actions .message-actions .action-print,
   .banner-user .message .wrapper-copy-and-actions .message-actions .action-print {
-    background: #323538;
-    border: 1px solid #323538;
+    background: #00a8a8;
+    border: 1px solid #00a8a8;
     font-size: 1em;
   }
 }
@@ -8262,8 +8262,8 @@ span {
 .wrapper-banner-user {
   .banner .message .wrapper-copy-and-actions .message-actions .action-print,
   .banner-user .message .wrapper-copy-and-actions .message-actions .action-print {
-    background: #323538;
-    border: 1px solid #323538;
+    background: #00a8a8;
+    border: 1px solid #00a8a8;
     font-size: 1em;
   }
 }
@@ -8271,34 +8271,34 @@ span {
 .layout-accomplishment .wrapper-view .accomplishment-main .wrapper-accomplishment-rendering .accomplishment-rendering {
   background: #fff;
   .accomplishment-type .accomplishment-type-label {
-    color: #323538;
+    color: #00a8a8;
   }
   .wrapper-statement-and-signatories .accomplishment-statement .accomplishment-statement-lead {
     .accomplishment-recipient,
     .accomplishment-summary {
-      color: #323538;
+      color: #00a8a8;
     }
     .accomplishment-course {
       .accomplishment-course-name {
-        color: #323538;
+        color: #00a8a8;
       }
       .accomplishment-separator-short {
-        border-bottom: 1px solid #323538;
+        border-bottom: 1px solid #00a8a8;
       }
     }
   }
   .accomplishment-signatories {
     .accomplishment-signatories-title {
-      color: #323538;
+      color: #00a8a8;
     }
     .wrapper-signatories .list-signatories .signatory {
       .signatory-name {
-        color: #323538;
+        color: #00a8a8;
       }
       .signatory-credentials {
         .role,
         .organization {
-          color: #323538;
+          color: #00a8a8;
         }
       }
     }
@@ -8513,7 +8513,7 @@ p.hd-6 {
 
 .course-outline .block-tree .section ol.outline-item .subsection {
   &:hover {
-    border: 1px solid #323538;
+    border: 1px solid #00a8a8;
   }
   a.outline-item {
     &:hover,
@@ -8541,7 +8541,7 @@ body.view-in-course .wrapper-course-material .course-material .course-tabs {
 .hd-7,
 .hd-8 {
   text-align: left;
-  color: #323538;
+  color: #00a8a8;
 }
 
 .badge:empty {
@@ -8637,12 +8637,12 @@ textarea {
       text-align: left;
       float: left;
       .browse {
-        border: 1px solid #323538;
+        border: 1px solid #00a8a8;
         -webkit-box-shadow: none;
         box-shadow: none;
         display: inline-block;
         font-weight: normal;
-        background-color: #323538;
+        background-color: #00a8a8;
         background-image: none;
         text-decoration: none;
         text-shadow: none;
@@ -8664,13 +8664,13 @@ textarea {
           -webkit-box-shadow: none;
           box-shadow: none;
           cursor: pointer;
-          background-color: #323538;
+          background-color: #00a8a8;
           background-image: -webkit-linear-gradient(#036397, #00476d);
           background-image: none;
         }
         &:active:not(:disabled),
         &:focus:not(:disabled) {
-          border: 1px solid #323538;
+          border: 1px solid #00a8a8;
           -webkit-box-shadow: none;
           box-shadow: none;
         }
@@ -8679,7 +8679,7 @@ textarea {
     width: 100%;
   }
   .btn-blue {
-    background: #323538;
+    background: #00a8a8;
     font-weight: normal;
     display: block;
     margin: 15px 0;
@@ -8693,7 +8693,7 @@ a.light-button:hover:not(:disabled) {
   -webkit-box-shadow: none;
   box-shadow: none;
   cursor: pointer;
-  background-color: #323538;
+  background-color: #00a8a8;
   background-image: none;
 }
 
@@ -8703,7 +8703,7 @@ div.info-wrapper section.handouts ol li div.hitarea {
     -webkit-box-shadow: none;
     box-shadow: none;
     cursor: pointer;
-    background-color: #323538;
+    background-color: #00a8a8;
     background-image: none;
   }
 }
@@ -8712,7 +8712,7 @@ div.info-wrapper section.handouts ol li div.hitarea {
   -webkit-box-shadow: none;
   box-shadow: none;
   cursor: pointer;
-  background-color: #323538;
+  background-color: #00a8a8;
   background-image: none;
 }
 
@@ -8723,7 +8723,7 @@ input {
     -webkit-box-shadow: none;
     box-shadow: none;
     cursor: pointer;
-    background-color: #323538;
+    background-color: #00a8a8;
     background-image: none;
   }
 }
@@ -8739,7 +8739,7 @@ input {
 }
 
 .instructor-dashboard-content-2 input[type="button"] {
-  border: 1px solid #323538;
+  border: 1px solid #00a8a8;
   border-radius: 3px;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -8747,7 +8747,7 @@ input {
   display: inline-block;
   font-size: inherit;
   font-weight: normal;
-  background-color: #323538;
+  background-color: #00a8a8;
   background-image: none;
   padding: 7px 18px;
   text-decoration: none;
@@ -8762,12 +8762,12 @@ input {
     -webkit-box-shadow: none;
     box-shadow: none;
     cursor: pointer;
-    background-color: #323538;
+    background-color: #00a8a8;
     background-image: none;
   }
   &:active:not(:disabled),
   &:focus:not(:disabled) {
-    border: 1px solid #323538;
+    border: 1px solid #00a8a8;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
@@ -8810,14 +8810,14 @@ input {
 }
 
 .instructor-dashboard-wrapper-2 section.idash-section#membership .member-lists-management .auth-list-container .member-list-widget input[type="button"].add {
-  border: 1px solid #323538;
+  border: 1px solid #00a8a8;
   border-radius: 3px;
   -webkit-box-shadow: none;
   box-shadow: none;
   color: #fff;
   display: inline-block;
   font-weight: normal;
-  background-color: #323538;
+  background-color: #00a8a8;
   background-image: none;
   text-decoration: none;
   text-shadow: none;
@@ -8831,19 +8831,19 @@ input {
     -webkit-box-shadow: none;
     box-shadow: none;
     cursor: pointer;
-    background-color: #323538;
+    background-color: #00a8a8;
     background-image: none;
   }
   &:active:not(:disabled),
   &:focus:not(:disabled) {
-    border: 1px solid #323538;
+    border: 1px solid #00a8a8;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
 }
 
 .btn-link {
-  color: #323538;
+  color: #00a8a8;
   &:hover,
   &:focus {
     color: #00a8a8;
@@ -8853,9 +8853,9 @@ input {
 
 p {
   a {
-    color: #323538;
+    color: #00a8a8;
     &:visited {
-      color: #323538;
+      color: #00a8a8;
     }
     &:hover {
       color: #00a8a8;
@@ -8899,21 +8899,21 @@ p a:visited:focus {
   li a {
     font-family: "Barlow","Helvetica",Sans-Serif;
     &:hover {
-      color: #323538;
-      border-bottom-color: #323538;
+      color: #00a8a8;
+      border-bottom-color: #00a8a8;
     }
   }
   div.info-wrapper section.handouts ol li div.hitarea:hover + h4 {
-    color: #323538;
-    border-bottom-color: #323538;
+    color: #00a8a8;
+    border-bottom-color: #00a8a8;
   }
 }
 
 div.info-wrapper section.handouts ol .wrapper-course-material .course-tabs li div.hitarea:hover + h4,
 .wrapper-course-material .course-tabs div.info-wrapper section.handouts ol li div.hitarea:focus + h4,
 div.info-wrapper section.handouts ol .wrapper-course-material .course-tabs li div.hitarea:focus + h4 {
-  color: #323538;
-  border-bottom-color: #323538;
+  color: #00a8a8;
+  border-bottom-color: #00a8a8;
 }
 
 .wrapper-course-material .course-tabs {
@@ -8921,28 +8921,28 @@ div.info-wrapper section.handouts ol .wrapper-course-material .course-tabs li di
     &:focus,
     &.active,
     &:visited:hover {
-      color: #323538;
-      border-bottom-color: #323538;
+      color: #00a8a8;
+      border-bottom-color: #00a8a8;
     }
   }
   div.info-wrapper section.handouts ol li div.hitarea:hover + h4:visited {
-    color: #323538;
-    border-bottom-color: #323538;
+    color: #00a8a8;
+    border-bottom-color: #00a8a8;
   }
 }
 
 div.info-wrapper section.handouts ol .wrapper-course-material .course-tabs li div.hitarea:hover + h4:visited,
 .wrapper-course-material .course-tabs div.info-wrapper section.handouts ol li div.hitarea:focus + h4:visited,
 div.info-wrapper section.handouts ol .wrapper-course-material .course-tabs li div.hitarea:focus + h4:visited {
-  color: #323538;
-  border-bottom-color: #323538;
+  color: #00a8a8;
+  border-bottom-color: #00a8a8;
 }
 
 .wrapper-course-material .course-tabs li a:visited {
   &:focus,
   &.active {
-    color: #323538;
-    border-bottom-color: #323538;
+    color: #00a8a8;
+    border-bottom-color: #00a8a8;
   }
 }
 
@@ -8952,14 +8952,14 @@ div.info-wrapper section.handouts ol .wrapper-course-material .course-tabs li di
 
 .instructor-dashboard-wrapper-2 section.idash-section#cohort_management {
   .cohort-management .message .action-create {
-    border: 1px solid #323538;
+    border: 1px solid #00a8a8;
     border-radius: 3px;
     -webkit-box-shadow: none;
     box-shadow: none;
     color: #fff;
     display: inline-block;
     font-weight: normal;
-    background-color: #323538;
+    background-color: #00a8a8;
     background-image: none;
     padding: 7px 18px;
     text-decoration: none;
@@ -8971,12 +8971,12 @@ div.info-wrapper section.handouts ol .wrapper-course-material .course-tabs li di
       -webkit-box-shadow: none;
       box-shadow: none;
       cursor: pointer;
-      background-color: #323538;
+      background-color: #00a8a8;
       background-image: none;
     }
     &:active:not(:disabled),
     &:focus:not(:disabled) {
-      border: 1px solid #323538;
+      border: 1px solid #00a8a8;
       -webkit-box-shadow: none;
       box-shadow: none;
     }
@@ -9003,13 +9003,13 @@ div.info-wrapper section.handouts ol .wrapper-course-material .course-tabs li di
 }
 
 .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .form-submit {
-  border: 1px solid #323538;
+  border: 1px solid #00a8a8;
   border-radius: 3px;
   -webkit-box-shadow: none;
   box-shadow: none;
   color: #fff;
   font-weight: normal;
-  background-color: #323538;
+  background-color: #00a8a8;
   background-image: none;
   text-decoration: none;
   background-clip: padding-box;
@@ -9024,21 +9024,21 @@ div.info-wrapper section.handouts ol .wrapper-course-material .course-tabs li di
   &:hover:not(:disabled) {
     -webkit-box-shadow: none;
     box-shadow: none;
-    background-color: #323538;
+    background-color: #00a8a8;
     background-image: none;
   }
   &:active:not(:disabled),
   &:focus:not(:disabled) {
-    border: 1px solid #323538;
+    border: 1px solid #00a8a8;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
 }
 
 a {
-  color: #323538;
+  color: #00a8a8;
   &:visited {
-    color: #323538;
+    color: #00a8a8;
   }
 }
 
@@ -9056,14 +9056,14 @@ a {
 }
 
 .instructor-dashboard-wrapper-2 section.idash-section#discussions_management .form-submit {
-  border: 1px solid #323538;
+  border: 1px solid #00a8a8;
   border-radius: 3px;
   -webkit-box-shadow: none;
   box-shadow: none;
   color: #fff;
   display: inline-block;
   font-weight: normal;
-  background-color: #323538;
+  background-color: #00a8a8;
   background-image: none;
   text-decoration: none;
   text-shadow: none;
@@ -9078,12 +9078,12 @@ a {
     -webkit-box-shadow: none;
     box-shadow: none;
     cursor: pointer;
-    background-color: #323538;
+    background-color: #00a8a8;
     background-image: none;
   }
   &:active:not(:disabled),
   &:focus:not(:disabled) {
-    border: 1px solid #323538;
+    border: 1px solid #00a8a8;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
@@ -9142,7 +9142,7 @@ input {
   &[type="reset"]:active:not(:disabled),
   &[type="submit"]:active:not(:disabled),
   &[type="button"]:active:not(:disabled) {
-    border: 1px solid #323538;
+    border: 1px solid #00a8a8;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
@@ -9152,7 +9152,7 @@ button:active:not(:disabled),
 .button:active:not(:disabled),
 .xmodule_display.xmodule_LTIModule div.lti .wrapper-lti-link .lti-link .link_lti_new_window:active:not(:disabled),
 .gray-button:focus:not(:disabled) {
-  border: 1px solid #323538;
+  border: 1px solid #00a8a8;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -9161,7 +9161,7 @@ input {
   &[type="reset"]:focus:not(:disabled),
   &[type="submit"]:focus:not(:disabled),
   &[type="button"]:focus:not(:disabled) {
-    border: 1px solid #323538;
+    border: 1px solid #00a8a8;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
@@ -9170,7 +9170,7 @@ input {
 button:focus:not(:disabled),
 .button:focus:not(:disabled),
 .xmodule_display.xmodule_LTIModule div.lti .wrapper-lti-link .lti-link .link_lti_new_window:focus:not(:disabled) {
-  border: 1px solid #323538;
+  border: 1px solid #00a8a8;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -9299,7 +9299,7 @@ section {
 .forum-nav-browse-filter .icon {
   right: 14px;
   top: 46%;
-  color: #323538;
+  color: #00a8a8;
 }
 
 .forum-nav-browse-menu-item {
@@ -9314,14 +9314,14 @@ section {
   &:hover,
   &:focus,
   &.is-focused {
-    color: #323538;
+    color: #00a8a8;
   }
 }
 
 .forum-nav-thread-wrapper-0 .icon,
 .forum-nav-thread-title {
   font-size: 1em;
-  color: #323538;
+  color: #00a8a8;
 }
 
 .forum-nav-thread-list .thread-preview-body {
@@ -9399,7 +9399,7 @@ section {
 .field-label {
   .field-input:checked + .field-input-label,
   .wrapper-custom-select:checked + .field-input-label {
-    color: #323538;
+    color: #00a8a8;
   }
 }
 
@@ -9479,10 +9479,10 @@ legend {
 .forum-nav {
   .search-alert-content .message {
     font-size: 1em;
-    color: #323538;
+    color: #00a8a8;
   }
   .search-alert-controls .control {
-    color: #323538;
+    color: #00a8a8;
     font-size: 1em;
   }
 }
@@ -9500,20 +9500,20 @@ legend {
 }
 
 .date-summary-container .date-summary-todays-date {
-  border-left: 3px solid #323538;
+  border-left: 3px solid #00a8a8;
 }
 
 .xmodule_display {
   &.xmodule_CapaModule div.problem {
     .choicegroup label:hover,
     .choicetextgroup label:hover {
-      border: 2px solid #323538;
+      border: 2px solid #00a8a8;
     }
   }
   &.xmodule_ConditionalModule div.problem .xmodule_display.xmodule_CapaModule {
     .choicegroup label:hover,
     .choicetextgroup label:hover {
-      border: 2px solid #323538;
+      border: 2px solid #00a8a8;
     }
   }
 }
@@ -9561,29 +9561,29 @@ label {
 }
 
 .view-profile .profile-section-one-fields .u-field:not(.u-field-readonly):not(:last-child):hover.mode-placeholder {
-  border-bottom: 2px dashed #323538;
+  border-bottom: 2px dashed #00a8a8;
 }
 
 .u-field.mode-placeholder:hover {
-  border: 2px dashed #323538;
+  border: 2px dashed #00a8a8;
 }
 
 .view-profile .wrapper-profile-section-one {
-  border-top: 5px solid #323538 !important;
+  border-top: 5px solid #00a8a8 !important;
 }
 
 .u-field.mode-placeholder:hover span {
-  color: #323538;
+  color: #00a8a8;
 }
 
 .view-profile .page-content-nav .nav-item {
   &.is-active {
-    border-bottom: 4px solid #323538;
+    border-bottom: 4px solid #00a8a8;
   }
   &:hover,
   &:focus {
-    border-bottom: 4px solid #323538;
-    color: #323538;
+    border-bottom: 4px solid #00a8a8;
+    color: #00a8a8;
   }
 }
 
@@ -9593,7 +9593,7 @@ label {
     padding: 5px 25px 10px;
   }
   button.active {
-    border-bottom: 4px solid #323538;
+    border-bottom: 4px solid #00a8a8;
   }
 }
 
@@ -9610,47 +9610,47 @@ label {
 
 .account-settings-sections .section .account-settings-section-body .u-field .field {
   .u-field-link {
-    border: 1px solid #323538;
-    color: #323538;
+    border: 1px solid #00a8a8;
+    color: #00a8a8;
     &:hover {
-      background-color: #323538;
+      background-color: #00a8a8;
     }
   }
   select {
     ~ .icon-caret-down:after {
-      border-top: 7px solid #323538;
+      border-top: 7px solid #00a8a8;
     }
     padding: 10px;
   }
 }
 
 .course-outline .block-tree .section ol.outline-item .subsection.current {
-  border: 1px solid #323538;
+  border: 1px solid #00a8a8;
 }
 
 .breadcrumbs .nav-item a {
-  color: #323538;
+  color: #00a8a8;
   &:visited,
   &:hover {
-    color: #323538;
+    color: #00a8a8;
   }
 }
 
 .xmodule_display.xmodule_SequenceModule {
   .sequence-nav ol li button .fa-bookmark {
-    color: #323538;
+    color: #00a8a8;
   }
   .sequence-nav-button {
     &.button-next,
     &.button-previous {
-      color: #323538 !important;
+      color: #00a8a8 !important;
     }
     &.focused,
     &:hover,
     &:active,
     &.active {
-      border-bottom: 3px solid #323538;
-      color: #323538 !important;
+      border-bottom: 3px solid #00a8a8;
+      color: #00a8a8 !important;
     }
   }
   .sequence-nav button {
@@ -9658,8 +9658,8 @@ label {
     &:hover,
     &:active,
     &.active {
-      border-bottom: 3px solid #323538;
-      color: #323538 !important;
+      border-bottom: 3px solid #00a8a8;
+      color: #00a8a8 !important;
     }
   }
 }
@@ -9671,7 +9671,7 @@ label {
   &:hover,
   &:focus {
     background: none !important;
-    color: #323538;
+    color: #00a8a8;
     border: none !important;
   }
 }
@@ -9680,10 +9680,10 @@ input {
   &[type="reset"],
   &[type="submit"],
   &[type="button"] {
-    border: 1px solid #323538;
+    border: 1px solid #00a8a8;
     border-radius: 3px;
     display: inline-block;
-    background-color: #323538;
+    background-color: #00a8a8;
     color: #fff;
     background-image: none;
     text-decoration: none;
@@ -9697,10 +9697,10 @@ form {
     &[type="reset"],
     &[type="submit"],
     &[type="button"] {
-      border: 1px solid #323538;
+      border: 1px solid #00a8a8;
       border-radius: 3px;
       display: inline-block;
-      background-color: #323538;
+      background-color: #00a8a8;
       color: #fff;
       background-image: none;
       text-decoration: none;
@@ -9710,10 +9710,10 @@ form {
   }
   button,
   .button {
-    border: 1px solid #323538;
+    border: 1px solid #00a8a8;
     border-radius: 3px;
     display: inline-block;
-    background-color: #323538;
+    background-color: #00a8a8;
     color: #fff;
     background-image: none;
     text-decoration: none;
@@ -9723,10 +9723,10 @@ form {
 }
 
 .xmodule_display.xmodule_LTIModule div.lti .wrapper-lti-link .lti-link .link_lti_new_window {
-  border: 1px solid #323538;
+  border: 1px solid #00a8a8;
   border-radius: 3px;
   display: inline-block;
-  background-color: #323538;
+  background-color: #00a8a8;
   color: #fff;
   background-image: none;
   text-decoration: none;
@@ -9776,7 +9776,7 @@ label {
 
 .home .page-header-main .page-title {
   text-align: left;
-  color: #323538;
+  color: #00a8a8;
 }
 
 .container > div {
@@ -9800,14 +9800,14 @@ h2.title {
 
 .discussion-module .btn,
 .wmd-prompt-dialog .btn {
-  color: #323538;
+  color: #00a8a8;
 }
 
 .discussion-module .btn,
 .wmd-prompt-dialog .btn,
 .discussion-module .btn-brand,
 .wmd-prompt-dialog .btn-brand {
-  border: 1px solid #323538;
+  border: 1px solid #00a8a8;
 }
 
 .discussion-module .btn:hover,
@@ -9822,8 +9822,8 @@ h2.title {
 .wmd-prompt-dialog .btn:focus,
 .discussion-module .btn-brand:focus,
 .wmd-prompt-dialog .btn-brand:focus {
-  border-color: #323538 !important;
-  background: #323538 !important;
+  border-color: #00a8a8 !important;
+  background: #00a8a8 !important;
 }
 
 input[name="poll-submit"] {
@@ -9858,8 +9858,8 @@ input[name="poll-submit"] {
 }
 
 .forum-nav-thread.never-read .forum-nav-thread-link {
-  color: #323538;
-  border-left: 3px solid #323538;
+  color: #00a8a8;
+  border-left: 3px solid #00a8a8;
 }
 
 
@@ -9898,12 +9898,12 @@ input[name="poll-submit"] {
   text-align: center;
   font-size: 1.3125rem;
   .label {
-    color: #323538 !important;
+    color: #00a8a8 !important;
     font-weight: normal;
   }
   .copy-meta,
   .copy-base {
-    color: #323538;
+    color: #00a8a8;
     font-size: 1.3125rem;
     border: none;
   }
@@ -9951,23 +9951,23 @@ input[name="poll-submit"] {
   h2,
   label {
     text-align: center;
-    color: #323538;
+    color: #00a8a8;
   }
   input {
     &[type="email"],
     &[type="password"] {
-      border: 1px solid #323538;
+      border: 1px solid #00a8a8;
     }
   }
   span {
-    color: #323538;
+    color: #00a8a8;
   }
 }
 
 .register-form {
   label {
     text-align: center;
-    color: #323538;
+    color: #00a8a8;
     &[for="register-terms_of_service"] {
       display: inline-block;
     }
@@ -9976,14 +9976,14 @@ input[name="poll-submit"] {
     &[type="email"],
     &[type="text"],
     &[type="password"] {
-      border: 1px solid #323538;
+      border: 1px solid #00a8a8;
     }
   }
   textarea {
-    border: 1px solid #323538;
+    border: 1px solid #00a8a8;
   }
   span {
-    color: #323538;
+    color: #00a8a8;
   }
   select {
     display: block;
@@ -9993,18 +9993,18 @@ input[name="poll-submit"] {
 }
 
 .form-wrapper {
-  color: #323538;
+  color: #00a8a8;
   h1,
   h2 {
     text-align: center;
-    color: #323538;
+    color: #00a8a8;
   }
   a {
-    color: #323538;
+    color: #00a8a8;
     text-decoration: underline;
     &:hover,
     &:focus {
-      color: #323538;
+      color: #00a8a8;
     }
   }
 }
@@ -10053,30 +10053,30 @@ input#action-preview-username {
 #passwordreset-form {
   div {
     label {
-      color: #323538;
+      color: #00a8a8;
       text-shadow: none;
       font-family: "Barlow","Helvetica",Sans-Serif;
     }
     input {
-      color: #323538;
-      border: 1px solid #323538 !important;
+      color: #00a8a8;
+      border: 1px solid #00a8a8 !important;
       background: none;
     }
   }
   .section-title h2 {
     text-align: center;
-    color: #323538;
+    color: #00a8a8;
     font-weight: normal;
     font-size: 3em;
   }
   .action-label {
     text-align: center;
-    color: #323538;
+    color: #00a8a8;
   }
 }
 
 #password-reset-email {
-  border: 1px solid #323538 !important;
+  border: 1px solid #00a8a8 !important;
 }
 
 #discussion-alert {
@@ -10117,7 +10117,7 @@ input#action-preview-username {
 .leanModal_box .close-modal:focus,
 .wmd-prompt-dialog .close-modal:focus {
   background: none;
-  color: #323538;
+  color: #00a8a8;
 }
 
 .modal .inner-wrapper,
@@ -10140,12 +10140,12 @@ input#action-preview-username {
     margin-right: 20px;
   }
   button {
-    background: #323538;
+    background: #00a8a8;
     color: #fff;
     &:hover,
     &:focus {
-      background: #323538;
-      border-color: #323538;
+      background: #00a8a8;
+      border-color: #00a8a8;
       color: #fff;
     }
   }
@@ -10157,22 +10157,22 @@ input#action-preview-username {
 
 .instructor-dashboard-wrapper-2 section.idash-section#cohort_management {
   .cohort-management-nav .action-create {
-    border: 1px solid #323538;
+    border: 1px solid #00a8a8;
     -webkit-box-shadow: none;
     box-shadow: none;
-    background-color: #323538;
+    background-color: #00a8a8;
     background-image: none;
     text-shadow: none;
     &:hover:not(:disabled) {
       -webkit-box-shadow: none;
       box-shadow: none;
-      background-color: #323538;
+      background-color: #00a8a8;
       background-image: none;
     }
   }
   .toggle-cohort-management-secondary,
   .toggle-cohort-management-discussions {
-    color: #323538;
+    color: #00a8a8;
   }
   .cohort-management-settings .form-fields .label,
   .cohort-management-edit .form-fields .label,
@@ -10182,15 +10182,15 @@ input#action-preview-username {
   .cohort-management-edit .form-fields .form-label,
   .cohort-management-group-add .form-fields .form-label,
   .file-upload-form .form-fields .form-label {
-    color: #323538;
+    color: #00a8a8;
   }
   .cohort-management-group-add .cohort-management-group-add-students {
-    border: 1px solid #323538;
+    border: 1px solid #00a8a8;
   }
 }
 
 .wrapper-tabs .tab .toggle-button {
-  color: #323538;
+  color: #00a8a8;
 }
 
 .cohort-management-assignment-type-settings > label {
@@ -10208,15 +10208,15 @@ input#action-preview-username {
 }
 
 .file-upload-form .action-submit {
-  border: 1px solid #323538;
+  border: 1px solid #00a8a8;
   -webkit-box-shadow: none;
   box-shadow: none;
-  background-color: #323538;
+  background-color: #00a8a8;
   background-image: none;
   &:hover:not(:disabled) {
     -webkit-box-shadow: none;
     box-shadow: none;
-    background-color: #323538;
+    background-color: #00a8a8;
     background-image: none;
   }
 }
@@ -10234,17 +10234,17 @@ section.wiki {
   }
   .nav-tabs a {
     text-align: left;
-    color: #323538;
+    color: #00a8a8;
   }
   .breadcrumb li a {
-    color: #323538;
+    color: #00a8a8;
   }
   .btn {
-    border: 1px solid #323538;
+    border: 1px solid #00a8a8;
     -webkit-box-shadow: none;
     box-shadow: none;
     color: #fff;
-    background-color: #323538;
+    background-color: #00a8a8;
     background-image: none;
     text-shadow: none;
     font-size: 0.9em;
@@ -10252,7 +10252,7 @@ section.wiki {
       &:not(:disabled) {
         -webkit-box-shadow: none;
         box-shadow: none;
-        background-color: #323538;
+        background-color: #00a8a8;
         background-image: none;
       }
       color: #fff;
@@ -10262,20 +10262,20 @@ section.wiki {
     }
     &:active:not(:disabled),
     &:focus:not(:disabled) {
-      border: 1px solid #323538;
+      border: 1px solid #00a8a8;
       -webkit-box-shadow: none;
       box-shadow: none;
     }
   }
   .nav-tabs {
     li.active a {
-      color: #323538;
-      border-color: #323538;
+      color: #00a8a8;
+      border-color: #00a8a8;
     }
     a {
       &:hover,
       &:focus {
-        color: #323538;
+        color: #00a8a8;
       }
     }
   }
@@ -10291,11 +10291,11 @@ section.wiki {
   .btn {
     &.btn-primary,
     &.btn-brand {
-      border: 1px solid #323538;
+      border: 1px solid #00a8a8;
       -webkit-box-shadow: none;
       box-shadow: none;
       font-weight: normal;
-      background-color: #323538;
+      background-color: #00a8a8;
       background-image: none;
       text-shadow: none;
       font-size: 0.9em;
@@ -10304,34 +10304,34 @@ section.wiki {
     &.btn-brand:hover:not(:disabled) {
       -webkit-box-shadow: none;
       box-shadow: none;
-      background-color: #323538;
+      background-color: #00a8a8;
       background-image: none;
     }
     &.btn-primary:active:not(:disabled),
     &.btn-brand:active:not(:disabled),
     &.btn-primary:focus:not(:disabled),
     &.btn-brand:focus:not(:disabled) {
-      border: 1px solid #323538;
+      border: 1px solid #00a8a8;
       -webkit-box-shadow: none;
       box-shadow: none;
     }
     &.btn-danger {
-      border: 1px solid #323538;
+      border: 1px solid #00a8a8;
       -webkit-box-shadow: none;
       box-shadow: none;
-      background-color: #323538;
+      background-color: #00a8a8;
       background-image: none;
       text-shadow: none;
       font-size: 0.9em;
       &:hover:not(:disabled) {
         -webkit-box-shadow: none;
         box-shadow: none;
-        background-color: #323538;
+        background-color: #00a8a8;
         background-image: none;
       }
       &:active:not(:disabled),
       &:focus:not(:disabled) {
-        border: 1px solid #323538;
+        border: 1px solid #00a8a8;
         -webkit-box-shadow: none;
         box-shadow: none;
       }
@@ -10370,12 +10370,12 @@ section.wiki {
 }
 
 .view-profile .badge-set-display .badge-display .badge-details .find-button-container {
-  border: 1px solid #323538;
-  color: #323538;
+  border: 1px solid #00a8a8;
+  color: #00a8a8;
 }
 
 div.info-wrapper section.handouts ol li a {
-  color: #323538;
+  color: #00a8a8;
 }
 
 .view-passwordreset {
@@ -10412,14 +10412,14 @@ div.info-wrapper section.handouts ol li a {
 }
 
 #password-reset-confirm-form > form > button {
-  background: #323538;
+  background: #00a8a8;
   font-family: "Barlow","Helvetica",Sans-Serif;
   font-weight: normal;
   font-style: normal;
   font-size: 18px;
   &:hover,
   &:focus {
-    background: #323538;
+    background: #00a8a8;
     font-family: "Barlow","Helvetica",Sans-Serif;
     font-weight: normal;
     font-style: normal;
@@ -10454,9 +10454,9 @@ div.info-wrapper section.handouts ol li a {
 }
 
 .wrapper-msg.wrapper-auto-cert .auto-cert-message {
-  border-left: 3px solid #323538;
+  border-left: 3px solid #00a8a8;
   .has-actions .msg-actions .btn {
-    background: #323538;
+    background: #00a8a8;
     color: #fff;
     &:hover,
     &:focus {
@@ -10475,18 +10475,18 @@ div.info-wrapper section.handouts ol li a {
   &:hover,
   &:focus,
   &.active {
-    color: #323538 !important;
+    color: #00a8a8 !important;
   }
 }
 
 div.info-wrapper section.handouts a {
-  color: #323538;
+  color: #00a8a8;
   text-decoration: none;
 }
 
 
 .wrapper-preview-menu {
-  background: #cecece;
+  background-color: #cecece !important;
   .preview-actions .action-preview .action-preview-label {
     color: #262626;
   }
@@ -10512,7 +10512,7 @@ div.info-wrapper section.handouts a {
 
 .wiki-wrapper section.wiki {
   .article-functions .see-children a {
-    color: #323538;
+    color: #00a8a8;
     &:hover,
     &:focus {
       text-decoration: none;
@@ -10520,7 +10520,7 @@ div.info-wrapper section.handouts a {
     }
   }
   #cheatsheetLink {
-    color: #323538;
+    color: #00a8a8;
     text-decoration: none;
     &:hover,
     &:focus {
@@ -10530,7 +10530,7 @@ div.info-wrapper section.handouts a {
 }
 
 .accordion-toggle {
-  color: #323538;
+  color: #00a8a8;
   &:hover,
   &:focus {
     color: #000;
@@ -10538,7 +10538,7 @@ div.info-wrapper section.handouts a {
 }
 
 .sections a {
-  color: #323538 !important;
+  color: #00a8a8 !important;
   text-decoration: none;
   &:hover,
   &:focus {
@@ -10554,8 +10554,8 @@ div.info-wrapper section.handouts a {
 
 .instructor-dashboard-content-2 .instructor-nav .nav-item .btn-link {
   &.active-section {
-    border-bottom: 3px solid #323538;
-    color: #323538;
+    border-bottom: 3px solid #00a8a8;
+    color: #00a8a8;
     &:hover,
     &:focus {
       background: none;
@@ -10564,12 +10564,12 @@ div.info-wrapper section.handouts a {
   &:hover,
   &:focus {
     background: none;
-    border-bottom: 3px solid #323538;
+    border-bottom: 3px solid #00a8a8;
   }
 }
 
 p a:not(.btn) {
-  color: #323538;
+  color: #00a8a8;
   text-decoration: none;
   &:hover,
   &:focus {
@@ -10607,7 +10607,7 @@ body.view-in-course {
 }
 
 .xmodule_display.xmodule_VideoModule .video .subtitles a {
-  color: #323538;
+  color: #00a8a8;
 }
 
 .discussion-module .inline-discussion-topic {
@@ -10654,7 +10654,7 @@ input[name="subject"] {
 }
 
 .home .page-header-secondary {
-  background: #323538;
+  background: #00a8a8;
   .last-accessed-link {
     &:hover,
     &:focus {
@@ -10669,15 +10669,15 @@ input[name="subject"] {
 }
 
 .view-student-notes .placeholder {
-  border-top: 5px solid #323538;
+  border-top: 5px solid #00a8a8;
   a {
-    color: #323538;
+    color: #00a8a8;
   }
 }
 
 .instructor-dashboard-wrapper-2 {
   .file-download-link a {
-    color: #323538;
+    color: #00a8a8;
   }
   section.idash-section#send_email .list-fields .field input[name="send_to"] + label {
     padding-top: 5px;
@@ -10699,10 +10699,10 @@ input[name="subject"] {
 
 .view-profile {
   .wrapper-profile-section-container-two .u-field.mode-placeholder:hover {
-    border: 2px dashed #323538;
+    border: 2px dashed #00a8a8;
     .u-field-title,
     i {
-      color: #323538;
+      color: #00a8a8;
     }
   }
   .badge-set-display {
@@ -10718,7 +10718,7 @@ input[name="subject"] {
 
 .gradebook-link > a,
 .progress-link > a {
-  color: #323538;
+  color: #00a8a8;
 }
 
 #email_settings_form {
@@ -10731,7 +10731,7 @@ input[name="subject"] {
   .submit input {
     &:hover,
     &:focus {
-      border: 1px solid #323538;
+      border: 1px solid #00a8a8;
     }
   }
 }
@@ -10923,7 +10923,7 @@ input[name="subject"] {
 }
 
 .site-status {
-  background: #323538;
+  background: #00a8a8;
   color: #fff;
   text-align: center;
   padding: 0;
@@ -10951,7 +10951,7 @@ input[name="subject"] {
 }
 
 .course-outline .block-tree .section ol.outline-item .subsection a.outline-item {
-  color: #323538;
+  color: #00a8a8;
 }
 
 label {
@@ -10972,7 +10972,7 @@ label {
 }
 
 .hint-button {
-  color: #323538 !important;
+  color: #00a8a8 !important;
   &:hover,
   &:focus {
     color: #000 !important;
@@ -11109,7 +11109,7 @@ body {
 }
 
 .wmd-prompt-dialog .btn {
-  background: #323538 !important;
+  background: #00a8a8 !important;
   color: #ffffff;
   margin: 15px auto !important;
 }
@@ -11117,7 +11117,7 @@ body {
 body {
   background: #fff;
   overflow-x: hidden;
-  color: #323538;
+  color: #00a8a8;
   min-height: 100vh;
   p {
     text-align: left;
@@ -11133,7 +11133,7 @@ a {
   cursor: pointer;
   &:hover,
   &:focus {
-    color: #323538;
+    color: #00a8a8;
     text-decoration: none;
   }
 }
