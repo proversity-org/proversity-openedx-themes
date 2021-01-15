@@ -10396,3 +10396,18 @@ iframe {
 #navBarLanguageSelector {
   position: absolute !important;
 }
+
+#feedback_submit {
+  .btn-default {
+    background: #78256d !important;
+    color: #fff !important;
+    &:focus {
+      background: #51184a !important;
+      color: #fff !important;
+    }
+    &:hover {
+      background: #51184a !important;
+      color: #fff !important;
+    }
+  }
+}
