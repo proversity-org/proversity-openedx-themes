@@ -10377,3 +10377,18 @@ iframe {
 .content-wrapper section.outside-app h1 {
   text-align: center;
 }
+
+#feedback_submit {
+  .btn-default {
+    background: #78256d !important;
+    color: #fff !important;
+    &:focus {
+      background: #51184a !important;
+      color: #fff !important;
+    }
+    &:hover {
+      background: #51184a !important;
+      color: #fff !important;
+    }
+  }
+}
