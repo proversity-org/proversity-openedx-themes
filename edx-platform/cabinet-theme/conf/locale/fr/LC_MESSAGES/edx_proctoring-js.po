@@ -1,0 +1,1082 @@
+# #-#-#-#-#  django.po (edx-proctoring)  #-#-#-#-#
+# edX translation file
+# Copyright (C) 2018 edX
+# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
+# EdX Team <info@edx.org>, 2018.
+#
+# Translators:
+# rafcha <raphael.chay@gmail.com>, 2016
+# Olivier Marquez <oliviermarquez@gmail.com>, 2016
+# Philippe Chiu <philippe.chiu@gmail.com>, 2016
+# laurentFUN <laurent.at.fun@gmail.com>, 2016
+# moocit-france <contact@moocit.fr>, 2018
+# willyedoo <willyedoo@gmail.com>, 2019
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: edx-proctoring\n"
+"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
+"POT-Creation-Date: 2017-02-15 17:16-0500\n"
+"PO-Revision-Date: 2016-12-20 19:55+0000\n"
+"Last-Translator: willyedoo <willyedoo@gmail.com>, 2019\n"
+"Language-Team: French (https://www.transifex.com/open-edx/teams/6205/fr/)\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: admin.py
+msgid "internally reviewed"
+msgstr "revue interne"
+
+#: admin.py
+msgid "All Unreviewed"
+msgstr "Tous les non-revus"
+
+#: admin.py
+msgid "All Unreviewed Failures"
+msgstr "Tous les échecs non-revus"
+
+#: admin.py
+msgid "active proctored exams"
+msgstr "Les examens surveillés actifs"
+
+#: admin.py
+msgid "courses with active proctored exams"
+msgstr "les cours avec des examens surveillés actifs"
+
+#: admin.py
+msgid "Course Id"
+msgstr "ID de Cours"
+
+#: admin.py
+msgid "Created"
+msgstr "Créé"
+
+#: admin.py
+msgid "Download Software Clicked"
+msgstr "Téléchargement du logiciel demandée"
+
+#: admin.py
+msgid "Ready To Start"
+msgstr "Prêt à Commencer"
+
+#: admin.py
+msgid "Started"
+msgstr "Débuté"
+
+#: admin.py
+msgid "Ready To Submit"
+msgstr "Prêt à Soumettre"
+
+#: admin.py
+msgid "Declined"
+msgstr "Refusé"
+
+#: admin.py
+msgid "Timed Out"
+msgstr "Temps écoulé"
+
+#: admin.py
+msgid "Submitted"
+msgstr "Soumis"
+
+#: admin.py
+msgid "Second Review Required"
+msgstr "Revue additionnelle requise"
+
+#: admin.py
+msgid "Verified"
+msgstr "Vérifié"
+
+#: admin.py
+msgid "Rejected"
+msgstr "Rejeté"
+
+#: admin.py
+msgid "Error"
+msgstr "Erreur"
+
+#: api.py
+msgid "your course"
+msgstr "votre cours"
+
+#: api.py
+#, python-brace-format
+msgid "Proctoring Session Results Update for {course_name} {exam_name}"
+msgstr ""
+"Mise à jour des résultats de l'examen surveillé pour {course_name} "
+"{exam_name}"
+
+#: api.py
+msgid "Taking As Proctored Exam"
+msgstr "Faire en tant qu'examen surveillé"
+
+#: api.py
+msgid "Proctored Option Available"
+msgstr "Option Examen Surveillé Possible"
+
+#: api.py
+msgid "Taking As Open Exam"
+msgstr "Prendre comme session libre."
+
+#: api.py api.py
+msgid "Pending Session Review"
+msgstr "En attente de la revue de la session."
+
+#: api.py
+msgid "Passed Proctoring"
+msgstr "A passé l'examen surveillé."
+
+#: api.py api.py
+msgid "Failed Proctoring"
+msgstr "Echec de l'Examen Surveillé"
+
+#: api.py
+msgid "Proctored Option No Longer Available"
+msgstr "Option Examen Surveillé Plus Disponible."
+
+#: api.py
+msgid "Ungraded Practice Exam"
+msgstr "Examen d'entrainement non noté"
+
+#: api.py
+msgid "Practice Exam Completed"
+msgstr "Examen d'essai complété"
+
+#: api.py
+msgid "Practice Exam Failed"
+msgstr "Examen d'essai échoué"
+
+#: api.py
+msgid "Timed Exam"
+msgstr "Examen minuté"
+
+#: models.py
+msgid "pending"
+msgstr "en attente"
+
+#: models.py
+msgid "satisfactory"
+msgstr "satisfaisant"
+
+#: models.py
+msgid "unsatisfactory"
+msgstr "insatisfaisant"
+
+#: models.py
+msgid "Taking as Proctored"
+msgstr "Faire sous surveillance"
+
+#: models.py
+msgid "Is Sample Attempt"
+msgstr "Est une tentative d'essai"
+
+#: models.py
+msgid "Additional Time (minutes)"
+msgstr "Temps additionnel (minutes)"
+
+#: models.py
+msgid "Review Policy Exception"
+msgstr "Exception aux Règles de Revues"
+
+#: templates/emails/proctoring_attempt_status_email.html
+#, python-format
+msgid ""
+"\n"
+"\n"
+"This email is to let you know that the status of your proctoring session review for %(exam_name)s in\n"
+"<a href=\"%(course_url)s\">%(course_name)s </a> is %(status)s. If you have any questions about proctoring,\n"
+"contact %(platform)s support at %(contact_email)s.\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"Cet email pour vous informer que le statut de votre examen  %(exam_name)s du cours\n"
+"<a href=\"%(course_url)s\">%(course_name)s </a> est %(status)s. Si vous avez des questions à propos des revues,\n"
+"contacter le support %(platform)s sur %(contact_email)s.\n"
+"\n"
+
+#: templates/practice_exam/entrance.html
+msgid ""
+"\n"
+"      Try a proctored exam\n"
+"    "
+msgstr ""
+"\n"
+"Essayer un examen surveillé"
+
+#: templates/practice_exam/entrance.html
+msgid ""
+"\n"
+"      Get familiar with proctoring for real exams later in the course. This practice exam has no impact\n"
+"      on your grade in the course.\n"
+"    "
+msgstr ""
+"\n"
+"      Entrainez-vous à passer un examen surveillé. Cet examen surveillé d'entrainement n'est pas noté\n"
+"      et sans impact sur votre note finale.\n"
+"    "
+
+#: templates/practice_exam/entrance.html
+msgid "Continue to my practice exam"
+msgstr "Continuer mon examen d'essai"
+
+#: templates/practice_exam/entrance.html
+msgid ""
+"\n"
+"        You will be guided through steps to set up online proctoring software and to perform various checks.\n"
+"      "
+msgstr ""
+"\n"
+"Suivez le guide pour installer le logiciel de surveillance en ligne et effectuer les différents contrôles nécessaires."
+
+#: templates/practice_exam/error.html
+msgid ""
+"\n"
+"      There was a problem with your practice proctoring session\n"
+"    "
+msgstr ""
+"\n"
+"Il y a eu un problème avec l'essai de votre session de surveillance"
+
+#: templates/practice_exam/error.html
+msgid ""
+"\n"
+"      Your practice proctoring results: <b class=\"failure\"> Unsatisfactory </b>\n"
+"    "
+msgstr ""
+"\n"
+"     Vos résultats d'examen surveillé d'entrainement: <b class=\"failure\"> Échec </b>\n"
+"    "
+
+#: templates/practice_exam/error.html
+msgid ""
+"\n"
+"      Your proctoring session ended before you completed this practice exam.\n"
+"      You can retry this practice exam if you had problems setting up the online proctoring software.\n"
+"    "
+msgstr ""
+"\n"
+"      Votre session surveillée s'est terminée avant que vous n'ayez pu compléter votre examen d'entrainement.\n"
+"      Vous pouvez reessayer cet examen d'entrainement si vous avez eu des problèmes pour configurer l'outil de surveillance à distance.\n"
+"    "
+
+#: templates/practice_exam/error.html
+msgid "Try this practice exam again"
+msgstr "Recommencer l'examen d'entrainement"
+
+#: templates/practice_exam/submitted.html
+msgid ""
+"\n"
+"      You have submitted this practice proctored exam\n"
+"    "
+msgstr ""
+"\n"
+"      Vous avez envoyé votre examen d'entrainement surveillé\n"
+"    "
+
+#: templates/practice_exam/submitted.html
+msgid ""
+"\n"
+"      Practice exams do not affect your grade or your credit eligibility.\n"
+"      You have completed this practice exam and can continue with your course work.\n"
+"    "
+msgstr ""
+"\n"
+"      Les examens d'entrainement n'affectent pas votre note.\n"
+"      Vous avez terminé cet examen d'entrainement, vous pouvez continuer à parcourir le cours.\n"
+"    "
+
+#: templates/practice_exam/submitted.html
+msgid "You can also retry this practice exam"
+msgstr "Vous pouvez aussi reessayer cet examen d'entrainement"
+
+#: templates/proctored_exam/confirm-decline.html
+msgid ""
+"\n"
+"        Are you sure you want to take this exam without proctoring?\n"
+"      "
+msgstr ""
+"\n"
+"Êtes vous sûr de vouloir faire cet examen sans surveillance?"
+
+#: templates/proctored_exam/confirm-decline.html
+msgid ""
+"\n"
+"        If you take this exam without proctoring, you will <strong> no longer be eligible for academic credit. </strong>\n"
+"      "
+msgstr ""
+"\n"
+"Si vous faite cet examen sans surveillance, vous ne serez <strong>pas eligible à des crédits académiques.</strong>"
+
+#: templates/proctored_exam/confirm-decline.html
+msgid "Continue Exam Without Proctoring"
+msgstr "Continuer l'examen sans surveilance"
+
+#: templates/proctored_exam/confirm-decline.html
+msgid "Go Back"
+msgstr "Retour"
+
+#: templates/proctored_exam/entrance.html
+#: templates/proctored_exam/failed-prerequisites.html
+#: templates/proctored_exam/pending-prerequisites.html
+msgid ""
+"\n"
+"      This exam is proctored\n"
+"    "
+msgstr ""
+"\n"
+"Cet examen est surveillé"
+
+#: templates/proctored_exam/entrance.html
+msgid ""
+"\n"
+"      To be eligible for course credit or for a MicroMasters credential, you must pass the proctoring review for this exam.\n"
+"    "
+msgstr ""
+"\n"
+"Pour être éligible aux crédits académiques, vous devez passer cet examen avec surveillance."
+
+#: templates/proctored_exam/entrance.html
+msgid "Continue to my proctored exam. I want to be eligible for credit."
+msgstr "Poursuivre l'examen surveillé. Je veux être éligible à des crédits."
+
+#: templates/proctored_exam/entrance.html
+msgid ""
+"\n"
+"        You will be guided through steps to set up online proctoring software and to perform various checks.</br>\n"
+"      "
+msgstr ""
+"\n"
+"Suivez le guide pour installer le logiciel de surveillance en ligne et effectuer les différents contrôles nécessaires.</br>"
+
+#: templates/proctored_exam/error.html
+msgid ""
+"\n"
+"      Error with proctored exam\n"
+"    "
+msgstr ""
+"\n"
+"Erreur lors de l'examen surveillé"
+
+#: templates/proctored_exam/error.html
+#, python-format
+msgid ""
+"\n"
+"      A technical error has occurred with your proctored exam. To resolve this problem, contact\n"
+"      <a href=\"mailto:%(tech_support_email)s\">technical support</a>. All exam data, including answers\n"
+"      for completed problems, has been lost. When the problem is resolved you will need to restart\n"
+"      the exam and complete all problems again.\n"
+"    "
+msgstr ""
+"\n"
+"      Une erreur technique est survenue avec votre examen surveillé. Pour résoudre ce problème, contactez\n"
+"      <a href=\"mailto:%(tech_support_email)s\">le support technique</a>. Toutes les données de votre examen, vos réponses\n"
+"      aux exercices sont perdues. Lorsque le problème sera résolu, vous devrez redémarrer\n"
+"      l'examen et répondre de nouveau au questions.\n"
+"    "
+
+#: templates/proctored_exam/error.html templates/proctored_exam/expired.html
+#: templates/proctored_exam/rejected.html
+#: templates/proctored_exam/submitted.html
+#: templates/proctored_exam/verified.html
+#, python-format
+msgid ""
+"\n"
+"      View your credit eligibility status on your <a href=\"%(progress_page_url)s\">Progress</a> page.\n"
+"    "
+msgstr ""
+"\n"
+"      Visusalisez votre note dans l'onglet <a href=\"%(progress_page_url)s\">Progression</a> .\n"
+"    "
+
+#: templates/proctored_exam/error.html templates/proctored_exam/rejected.html
+msgid ""
+"\n"
+"      If you have concerns about your proctoring session results, contact your course team.\n"
+"    "
+msgstr ""
+"\n"
+"      Si vous avez des questions à propos de vos résultats de session surveillée, contactez l'équipe du cours.\n"
+"    "
+
+#: templates/proctored_exam/expired.html templates/timed_exam/expired.html
+msgid ""
+"\n"
+"      The due date for this exam has passed\n"
+"    "
+msgstr ""
+"\n"
+"      La date limite pour cet examen est passée\n"
+"    "
+
+#: templates/proctored_exam/expired.html templates/timed_exam/expired.html
+msgid ""
+"\n"
+"      Because the due date has passed, you are no longer able to take this exam.\n"
+"    "
+msgstr ""
+"\n"
+"Vous ne pouvez plus passer cet examen car, l’échéance est passée."
+
+#: templates/proctored_exam/failed-prerequisites.html
+#, python-format
+msgid ""
+"\n"
+"    You did not satisfy the requirements for taking this exam with proctoring, and are not eligible for credit. See your <a href=\"%(progress_page_url)s\">Progress</a> page for a list of requirements and your status for each.\n"
+"    "
+msgstr ""
+"\n"
+"    Vous n'avez pas satisfait les exigences pour suivre cet examen surveillé, vous n'êtes pas éligible à des crédits. Voir l'onglet <a href=\"%(progress_page_url)s\">Progression</a> pour la liste et le statut de chaque exigence.\n"
+"    "
+
+#: templates/proctored_exam/failed-prerequisites.html
+msgid ""
+"\n"
+"    You did not satisfy the following prerequisites:\n"
+"    "
+msgstr ""
+"\n"
+"Vous n'avez pas satisfait les prérequis suivants:"
+
+#: templates/proctored_exam/failed-prerequisites.html
+msgid ""
+"\n"
+"        Due to unsatisfied prerequisites, you can only take this exam without proctoring.\n"
+"      "
+msgstr ""
+
+#: templates/proctored_exam/failed-prerequisites.html
+#, python-format
+msgid ""
+"\n"
+"      If you have questions about the status of your requirements for course credit, contact %(platform_name)s Support.\n"
+"    "
+msgstr ""
+
+#: templates/proctored_exam/footer.html
+msgid ""
+"\n"
+"        About Proctored Exams\n"
+"        "
+msgstr ""
+"\n"
+"A propos des examens surveillés"
+
+#: templates/proctored_exam/id_verification.html
+msgid ""
+"\n"
+"                Complete your verification before starting the proctored exam.\n"
+"            "
+msgstr ""
+
+#: templates/proctored_exam/id_verification.html
+msgid ""
+"\n"
+"                You must successfully complete identity verification before you can start the proctored exam.\n"
+"            "
+msgstr ""
+
+#: templates/proctored_exam/id_verification.html
+msgid ""
+"\n"
+"                    Your verification is pending. Results should be available 2-3 days after you\n"
+"                    submit your verification.\n"
+"                "
+msgstr ""
+
+#: templates/proctored_exam/id_verification.html
+msgid ""
+"\n"
+"                    Your verification attempt failed. Please read our guidelines to make\n"
+"                    sure you understand the requirements for successfully completing verification,\n"
+"                    then try again.\n"
+"                "
+msgstr ""
+
+#: templates/proctored_exam/id_verification.html
+msgid "Retry Verification"
+msgstr "Réessayer la vérification"
+
+#: templates/proctored_exam/id_verification.html
+msgid ""
+"\n"
+"                    Your verification has expired. You must successfully complete a new identity verification\n"
+"                    before you can start the proctored exam.\n"
+"                "
+msgstr ""
+
+#: templates/proctored_exam/id_verification.html
+#: templates/proctored_exam/id_verification.html
+msgid "Continue to Verification"
+msgstr ""
+
+#: templates/proctored_exam/id_verification.html
+msgid ""
+"\n"
+"                    Make sure you are on a computer with a webcam, and that you have valid photo identification\n"
+"                    such as a driver's license or passport, before you continue.\n"
+"                "
+msgstr ""
+
+#: templates/proctored_exam/instructions.html
+msgid ""
+"\n"
+"      Follow these steps to set up and start your proctored exam.\n"
+"    "
+msgstr ""
+
+#: templates/proctored_exam/instructions.html
+msgid ""
+"\n"
+"        1. Copy this unique exam code. You will be prompted to paste this code later before you start the exam.\n"
+"      "
+msgstr ""
+"\n"
+"        1. Copier le code ci-dessous, il vous sera demandé avant de démarrer l'examen.\n"
+"      "
+
+#: templates/proctored_exam/instructions.html
+msgid ""
+"\n"
+"        Select the exam code, then copy it using Command+C (Mac) or Control+C (Windows).\n"
+"      "
+msgstr ""
+"\n"
+"        Sélectionner le code, puis le copier en utilisant Command+C (Mac) or Control+C (Windows).\n"
+"      "
+
+#: templates/proctored_exam/instructions.html
+msgid ""
+"\n"
+"        2. Follow the link below to set up proctoring.\n"
+"      "
+msgstr ""
+"\n"
+"        2. Cliquez sur le lien ci-dessous lancer la configuration.\n"
+"      "
+
+#: templates/proctored_exam/instructions.html
+msgid "Start System Check"
+msgstr "Démarrer le diagnostique système"
+
+#: templates/proctored_exam/instructions.html
+msgid ""
+"\n"
+"        A new window will open. You will run a system check before downloading the proctoring application.\n"
+"      "
+msgstr ""
+"\n"
+"        Le diagnostique système s'ouvrira dans une nouvelle fenêtre avant de télécharger l'application de surveillance à distance.\n"
+"      "
+
+#: templates/proctored_exam/instructions.html
+msgid ""
+"\n"
+"        You will be asked to verify your identity as part of the proctoring exam set up.\n"
+"        Make sure you are on a computer with a webcam, and that you have valid photo identification\n"
+"        such as a driver's license or passport, before you continue.\n"
+"      "
+msgstr ""
+"\n"
+"        Vous devrez vérifier votre identité durant la configuration de l'examen surveillé.\n"
+"        Assurez-vous d'être sur un ordinateur avec une webcam et d'avoir vos papiers d'identité\n"
+"        avec vous avant de continuer : passeport, carte d'identité.\n"
+"      "
+
+#: templates/proctored_exam/instructions.html
+msgid ""
+"\n"
+"          3. When you have finished setting up proctoring, start the exam.\n"
+"        "
+msgstr ""
+"\n"
+"          3. Lorsque la configuration de l'examen surveillé est complétée, cliquez sur Démarrer l'examen surveillé.\n"
+"        "
+
+#: templates/proctored_exam/instructions.html
+msgid "Start Proctored Exam"
+msgstr "Démarrer l'examen surveillé"
+
+#: templates/proctored_exam/instructions.html
+msgid "Close"
+msgstr "Fermer"
+
+#: templates/proctored_exam/instructions.html
+msgid "Cannot Start Proctored Exam"
+msgstr "Ne peut démarrer l'examen surveillé"
+
+#: templates/proctored_exam/instructions.html
+#: templates/proctored_exam/proctoring_opt_out_button.html
+msgid "Take this exam without proctoring."
+msgstr "Faire cette examen sans surveillance."
+
+#: templates/proctored_exam/instructions.html
+msgid "Doing so means that you are no longer eligible for academic credit."
+msgstr ""
+
+#: templates/proctored_exam/pending-prerequisites.html
+#, python-format
+msgid ""
+"\n"
+"    You have not completed the prerequisites for this exam. All requirements must be satisfied before you can take this proctored exam and be eligible for credit. See your <a href=\"%(progress_page_url)s\">Progress</a> page for a list of requirements in the order that they must be completed.\n"
+"    "
+msgstr ""
+
+#: templates/proctored_exam/pending-prerequisites.html
+msgid ""
+"\n"
+"    The following prerequisites are in a <strong>pending</strong> state and must be successfully completed before you can proceed:\n"
+"    "
+msgstr ""
+
+#: templates/proctored_exam/pending-prerequisites.html
+#, python-format
+msgid ""
+"\n"
+"    You can take this exam with proctoring only when all prerequisites have been successfully completed. Check your <a href=\"%(progress_page_url)s\">Progress</a>  page to see if prerequisite results have been updated. You can also take this exam now without proctoring, but you will not be eligible for credit.\n"
+"    "
+msgstr ""
+
+#: templates/proctored_exam/proctoring_launch_callback.html
+msgid " Your Proctoring Session Has Started "
+msgstr "Votre session d'examen surveillé a démarré"
+
+#: templates/proctored_exam/proctoring_launch_callback.html
+#, python-format
+msgid ""
+" From this point in time, you must follow the <a "
+"href=\"%(link_urls.online_proctoring_rules)s\" target=\"_blank\">online "
+"proctoring rules</a> to pass the proctoring review for your exam. "
+msgstr ""
+" A ce stade vous devez suivre les <a "
+"href=\"%(link_urls.online_proctoring_rules)s\" target=\"_blank\">régles de "
+"surveillance</a> pour satisfaire les revues de votre examen surveillé. "
+
+#: templates/proctored_exam/proctoring_launch_callback.html
+msgid ""
+"\n"
+"            Do not close this window before you finish your exam. if you close this window, your proctoring session ends, and you will not successfully complete the proctored exam.\n"
+"          "
+msgstr ""
+"\n"
+"            Ne fermez pas cette fenêtre avant d'avoir terminé votre examen. Si vous fermez cette fenêtre, votre session d'examen surveillé sera terminé.\n"
+"          "
+
+#: templates/proctored_exam/proctoring_launch_callback.html
+#, python-format
+msgid ""
+"\n"
+"            Return to the %(platform_name)s course window to start your exam. When you have finished your exam and\n"
+"            have marked it as complete, you can close this window to end the proctoring session\n"
+"            and upload your proctoring session data for review.\n"
+"          "
+msgstr ""
+"\n"
+"           Retournez sur la page du cours %(platform_name)s pour démarrer votre examen. Lorsque vous avez fini l'examen et\n"
+"           indiqué qu'il est complété, vous pouvez fermer cette fenêtre pour terminer la session d'examen surveillé\n"
+"            et chargé votre session pour évaluation par nos équipes.\n"
+"          "
+
+#: templates/proctored_exam/proctoring_opt_out_button.html
+msgid ""
+"\n"
+"        I am not interested in academic credit.\n"
+"      "
+msgstr ""
+"\n"
+"Je ne suis pas intéressé par les \"crédits universitaires\" "
+
+#: templates/proctored_exam/ready_to_start.html
+msgid ""
+"\n"
+"      Follow these instructions\n"
+"    "
+msgstr ""
+"\n"
+"Suivez ces instructions"
+
+#: templates/proctored_exam/ready_to_start.html
+#, python-format
+msgid ""
+"\n"
+"        &#8226; When you start your exam you will have %(total_time)s to complete it. </br>\n"
+"        &#8226; You cannot stop the timer once you start. </br>\n"
+"        &#8226; If time expires before you finish your exam, your completed answers will be\n"
+"                submitted for review. </br>\n"
+"      "
+msgstr ""
+
+#: templates/proctored_exam/ready_to_start.html
+msgid ""
+"\n"
+"          Start my exam\n"
+"        "
+msgstr ""
+"\n"
+"Démarrer mon examen"
+
+#: templates/proctored_exam/ready_to_submit.html
+msgid ""
+"\n"
+"      Are you sure you want to end your proctored exam?\n"
+"    "
+msgstr ""
+"\n"
+"      Êtes-vous sûre de vouloir terminer votre examen surveillé?\n"
+"    "
+
+#: templates/proctored_exam/ready_to_submit.html
+#: templates/timed_exam/ready_to_submit.html
+msgid ""
+"\n"
+"      Make sure that you have selected \"Submit\" for each problem before you submit your exam.\n"
+"    "
+msgstr ""
+
+#: templates/proctored_exam/ready_to_submit.html
+msgid ""
+"\n"
+"      After you submit your exam, your responses are graded and your proctoring session is reviewed.\n"
+"      You might be eligible to earn academic credit for this course if you complete all required exams\n"
+"      as well as achieve a final grade that meets credit requirements for the course.\n"
+"    "
+msgstr ""
+"\n"
+"      Après avoir envoyé votre examen, vos réponses seront évaluées et votre session surveillée sera évaluée.\n"
+"      Vous pouvez être éligible à des crédits académiques ou un certificat pour ce cours\n"
+"      si votre note est suffisante et votre session validée.\n"
+"    "
+
+#: templates/proctored_exam/ready_to_submit.html
+msgid ""
+"\n"
+"      Yes, end my proctored exam\n"
+"    "
+msgstr ""
+"\n"
+"      Oui, terminer mon examen surveillé\n"
+"    "
+
+#: templates/proctored_exam/ready_to_submit.html
+msgid ""
+"\n"
+"        No, I'd like to continue working\n"
+"      "
+msgstr ""
+"\n"
+"Non je voudrais continuer à travailler"
+
+#: templates/proctored_exam/rejected.html
+msgid ""
+"\n"
+"      Your proctoring session was reviewed and did not pass requirements\n"
+"    "
+msgstr ""
+"\n"
+"      Votre session surveillée a été évaluée et n'a pas complété les pré-requis\n"
+"    "
+
+#: templates/proctored_exam/rejected.html
+#, python-format
+msgid ""
+"\n"
+"      You are no longer eligible for academic credit for this course, regardless of your final grade.\n"
+"      If you have questions about the status of your proctored exam results, contact %(platform_name)s Support.\n"
+"    "
+msgstr ""
+"\n"
+"      Vous n'êtes plus éligible au certificat ou crédits académiques.\n"
+"      Si vous avez des question à propos des résultats de votre examen surveillé, contactez le support %(platform_name)s.\n"
+"    "
+
+#: templates/proctored_exam/submitted.html
+msgid ""
+"\n"
+"      You have submitted this proctored exam for review\n"
+"    "
+msgstr ""
+"\n"
+"      Vous avez envoyer votre examen surveillé pour évaluation\n"
+"    "
+
+#: templates/proctored_exam/submitted.html
+msgid ""
+"\n"
+"      If the proctoring software window is still open, you can close it now. Confirm that you want to quit the application when you are prompted.\n"
+"    "
+msgstr ""
+"\n"
+"      Si la fenêtre de RPNow est toujours ouverte, vous pouvez maintenant la fermer. Confirmez que vous souhaitez quitter l'application si cela vous est demandé.\n"
+"    "
+
+#: templates/proctored_exam/submitted.html
+msgid ""
+"\n"
+"      &#8226; After you quit the proctoring session, the recorded data is uploaded for review. </br>\n"
+"      &#8226; Proctoring results are usually available within 5 business days after you submit your exam.\n"
+"    "
+msgstr ""
+"\n"
+"      &#8226; Après avoir quitter la session d'examen, vos données enregistrées seront envoyées pour évaluation. </br>\n"
+"      &#8226; Les résultats de l'évaluation de votre session surveillée sont généralement disponibles après 1 semaine.\n"
+"    "
+
+#: templates/proctored_exam/submitted.html
+#, python-format
+msgid ""
+"\n"
+"      If you have questions about the status of your proctored exam results, contact %(platform_name)s Support.\n"
+"    "
+msgstr ""
+"\n"
+"      Si vous avez des questions à propos du statut de votre examen surveillé, contactez le support %(platform_name)s.\n"
+"    "
+
+#: templates/proctored_exam/verified.html
+msgid ""
+"\n"
+"      Your proctoring session was reviewed and passed all requirements\n"
+"    "
+msgstr ""
+"\n"
+"      Votre session surveillée a été évaluée et validée\n"
+"    "
+
+#: templates/proctored_exam/verified.html
+msgid ""
+"\n"
+"      You are eligible to purchase academic credit for this course if you complete all required exams\n"
+"      and also achieve a final grade that meets the credit requirements for the course.\n"
+"    "
+msgstr ""
+"\n"
+"      Vous êtes éligible á des crédits académiques pour ce cours si vous \n"
+"      obtenez la note requise.\n"
+"    "
+
+#: templates/proctored_exam/visit_exam_content.html
+msgid ""
+"\n"
+"      To view your exam questions and responses, select <strong>View my exam</strong>. The exam's review status is shown in the left navigation pane.\n"
+"    "
+msgstr ""
+"\n"
+"      Pour voir votre examen et vos réponses, cliquez sur <strong>Voir mon examen</strong>. Le statut de la revue de l'examen est disponible dans le menu de gauche.\n"
+"    "
+
+#: templates/proctored_exam/visit_exam_content.html
+msgid "View my exam"
+msgstr "Voir mon examen"
+
+#: templates/proctored_exam/visit_exam_content.html
+msgid ""
+"\n"
+"      After the due date for this exam has passed, you will be able to review your answers on this page.\n"
+"    "
+msgstr ""
+"\n"
+"      Une fois l'échéance passées, vous pourrez voir vos réponses sur cette page.\n"
+"    "
+
+#: templates/timed_exam/entrance.html
+#, python-format
+msgid ""
+"\n"
+"    %(exam_name)s is a Timed Exam (%(total_time)s)\n"
+"    "
+msgstr ""
+"\n"
+"    %(exam_name)s est un examen minuté (%(total_time)s)\n"
+"    "
+
+#: templates/timed_exam/entrance.html
+msgid "This exam has a time limit associated with it."
+msgstr "Cet examen est à temps limité"
+
+#: templates/timed_exam/entrance.html
+msgid "To pass this exam, you must complete the problems in the time allowed."
+msgstr ""
+"Pour réussir l'examen, vous devez répondre aux questions dans le temps "
+"imparti."
+
+#: templates/timed_exam/entrance.html
+msgid "After you select "
+msgstr "Après avoir choisi"
+
+#: templates/timed_exam/entrance.html
+msgid "I am ready to start this timed exam,"
+msgstr "Je suis prêt à démarrer cet examen à temps limité,"
+
+#: templates/timed_exam/entrance.html
+msgid "you will have "
+msgstr "vous aurez"
+
+#: templates/timed_exam/entrance.html
+msgid " to complete and submit the exam."
+msgstr "pour compléter et soumettre l'examen."
+
+#: templates/timed_exam/entrance.html
+msgid ""
+"\n"
+"        I am ready to start this timed exam.\n"
+"      "
+msgstr ""
+"\n"
+"Je suis prêt à démarrer cet examen à temps limité."
+
+#: templates/timed_exam/footer.html
+msgid "Can I request additional time to complete my exam?"
+msgstr "Puis-je demander un temps additionnel pour compléter mon examen ?"
+
+#: templates/timed_exam/footer.html
+msgid ""
+"\n"
+"      If you have disabilities,\n"
+"      you might be eligible for an additional time allowance on timed exams.\n"
+"      Ask your course team for information about additional time allowances.\n"
+"    "
+msgstr ""
+"\n"
+"      Si vous avez des incapacités,\n"
+"      vous pouvez demander du temps supplémentaire.\n"
+"      Contactez l'équipe du cours pour les demandes de temps supplémentaire.\n"
+"    "
+
+#: templates/timed_exam/ready_to_submit.html
+msgid ""
+"\n"
+"      Are you sure that you want to submit your timed exam?\n"
+"    "
+msgstr ""
+"\n"
+"      Êtes-vous sûr de vouloir soumettre votre examen à temps limité?\n"
+"    "
+
+#: templates/timed_exam/ready_to_submit.html
+msgid ""
+"\n"
+"      After you submit your exam, your exam will be graded.\n"
+"    "
+msgstr ""
+
+#: templates/timed_exam/ready_to_submit.html
+msgid ""
+"\n"
+"      Yes, submit my timed exam.\n"
+"    "
+msgstr ""
+"\n"
+"Oui, soumettre cet examen à temps limité."
+
+#: templates/timed_exam/ready_to_submit.html
+msgid ""
+"\n"
+"        No, I want to continue working.\n"
+"      "
+msgstr ""
+"\n"
+"Non, je veux continuer à travailler"
+
+#: templates/timed_exam/submitted.html
+msgid ""
+"\n"
+"        The time allotted for this exam has expired. Your exam has been submitted and any work you completed will be graded.\n"
+"      "
+msgstr ""
+"\n"
+"        Le temps alloué pour cet examen a expiré. Votre examen a été soumis et vos réponses vont être évaluées.\n"
+"      "
+
+#: templates/timed_exam/submitted.html
+msgid ""
+"\n"
+"        You have submitted your timed exam.\n"
+"      "
+msgstr ""
+"\n"
+"        Vous avez soumis votre examen à temps limité.\n"
+"      "
+
+#: templates/timed_exam/submitted.html
+#, python-format
+msgid ""
+"\n"
+"      Your grade for this timed exam will be immediately available on the <a href=\"%(progress_page_url)s\">Progress</a> page.\n"
+"    "
+msgstr ""
+"\n"
+"      Votre note pour cet examen à temps limité sera disponible directement dans l'onglet <a href=\"%(progress_page_url)s\">Progression</a>.\n"
+"    "
+
+#: templates/timed_exam/submitted.html
+msgid ""
+"\n"
+"        After the due date has passed, you can review the exam, but you cannot change your answers.\n"
+"      "
+msgstr ""
+"\n"
+"        Après l'échéance, vous pouvez revoir l'examen, sans pouvoir modifier vos réponses.\n"
+"      "
+
+#: utils.py
+#, python-brace-format
+msgid "{num_of_hours} hour"
+msgstr "{num_of_hours} heure"
+
+#: utils.py
+#, python-brace-format
+msgid "{num_of_hours} hours"
+msgstr "{num_of_hours} heures"
+
+#: utils.py utils.py
+#, python-brace-format
+msgid "{num_of_minutes} minutes"
+msgstr "{num_of_minutes} minutes"
+
+#: utils.py
+#, python-brace-format
+msgid " and {num_of_minutes} minute"
+msgstr "et {num_of_minutes} minute"
+
+#: utils.py
+#, python-brace-format
+msgid "{num_of_minutes} minute"
+msgstr "{num_of_minutes} minute"
+
+#: utils.py
+#, python-brace-format
+msgid " and {num_of_minutes} minutes"
+msgstr "et  {num_of_minutes} minutes"
+
+#: views.py
+msgid "could not determine the course_id"
+msgstr "ne peut déterminer l'identifiant du cours - course_id"
+
+#: views.py
+msgid "Must be a Staff User to Perform this request."
+msgstr ""
+"Vous devez être un utilisateur du type Enseignant pour faire cette requête."
+
+#: views.py views.py
+#, python-brace-format
+msgid "you have {remaining_time} remaining"
+msgstr "vous avez {remaining_time} restant"
+
+#: views.py
+msgid "you have less than a minute remaining"
+msgstr "vous avez moins d'une minute restante"
+
+#: views.py
+msgid "timed"
+msgstr "temps limité"
+
+#: views.py
+msgid "practice"
+msgstr "d'essai"
+
+#: views.py
+msgid "proctored"
+msgstr "surveillé"

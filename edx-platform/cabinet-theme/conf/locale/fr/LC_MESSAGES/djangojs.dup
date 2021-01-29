@@ -1,0 +1,9 @@
+Multiple translations found for single string.
+	String "Warning"
+	Present in files [u'cms/static/js/views/xblock_validation.js', u'common/static/bundles/js/factories/xblock_validation.js', u'openassessment/xblock/static/js/openassessment-studio.min.js', u'openassessment/xblock/static/js/src/studio/oa_edit_listeners.js']
+Translations found were:
+	#-#-#-#-#  djangojs.po (edx-platform)  #-#-#-#-#
+Avertissement
+#-#-#-#-#  openassessment-js.po (edx-platform)  #-#-#-#-#
+Attention
+

@@ -1,0 +1,225 @@
+Multiple translations found for single string.
+	String "Display Name"
+	Present in files [u'common/djangoapps/course_modes/models.py', u'common/lib/xmodule/xmodule/annotatable_module.py', u'common/lib/xmodule/xmodule/capa_base.py', u'common/lib/xmodule/xmodule/conditional_module.py', u'common/lib/xmodule/xmodule/html_module.py', u'common/lib/xmodule/xmodule/library_content_module.py', u'common/lib/xmodule/xmodule/lti_module.py', u'common/lib/xmodule/xmodule/split_test_module.py', u'common/lib/xmodule/xmodule/word_cloud_module.py', u'common/lib/xmodule/xmodule/x_module.py', u'openedx/core/lib/xblock_builtin/xblock_discussion/xblock_discussion/__init__.py', u'cms/templates/container.html', u'cms/templates/library.html', u'freetextresponse.py', u'google_drive/google_calendar.py', u'google_drive/google_docs.py', u'google_drive/templates/html/google_calendar_edit.html', u'google_drive/templates/html/google_docs_edit.html', u'lti_consumer.py', u'poll/public/html/poll_edit.html', u'dashboard.py', u'table.py']
+Translations found were:
+	#-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+Nom d'affichage
+#-#-#-#-#  freetextresponse.po (PACKAGE VERSION)  #-#-#-#-#
+Nom d'affichage
+#-#-#-#-#  google_drive.po (PACKAGE VERSION)  #-#-#-#-#
+Nom d'affichage
+#-#-#-#-#  lti_consumer.po (XBlocks)  #-#-#-#-#
+Nom d'affichage
+#-#-#-#-#  poll.po (XBlocks)  #-#-#-#-#
+Nom d'affichage
+#-#-#-#-#  problem_builder.po (PACKAGE VERSION)  #-#-#-#-#
+Affichage du nom
+
+Multiple translations found for single string.
+	String "Correct"
+	Present in files [u'common/lib/capa/capa/capa_problem.py', u'common/lib/xmodule/xmodule/capa_base.py', u'mcq.py', u'templates/html/answer_editable.html', u'templates/html/mcqblock.html', u'templates/html/mentoring_with_steps.html', u'templates/html/mrqblock.html', u'templates/html/ratingblock.html']
+Translations found were:
+	#-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+Correct
+#-#-#-#-#  problem_builder.po (PACKAGE VERSION)  #-#-#-#-#
+Correcte
+
+Multiple translations found for single string.
+	String "Problem Weight"
+	Present in files [u'common/lib/xmodule/xmodule/capa_base.py', u'done/done.py', u'ubcpi/static/html/ubcpi_edit.html', u'ubcpi/ubcpi.py', u'drag_and_drop_v2.py']
+Translations found were:
+	#-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+Poids de l'exercice
+#-#-#-#-#  done.po (PACKAGE VERSION)  #-#-#-#-#
+Coefficient de l'exercice
+#-#-#-#-#  ubcpi.po (XBlocks)  #-#-#-#-#
+Poids de l'exercice
+#-#-#-#-#  drag_and_drop_v2.po (XBlocks)  #-#-#-#-#
+Poids du problème
+
+Multiple translations found for single string.
+	String "Submit"
+	Present in files [u'common/lib/xmodule/xmodule/capa_base.py', u'lms/templates/admin/user_api/accounts/cancel_retirement_action.html', u'cms/templates/index.html', u'cms/templates/videos_index_pagination.html', u'lms/templates/help_modal.html', u'lms/templates/manage_user_standing.html', u'lms/templates/register-shib.html', u'lms/templates/dashboard/_entitlement_reason_survey.html', u'lms/templates/dashboard/_reason_survey.html', u'lms/templates/peer_grading/peer_grading_problem.html', u'lms/templates/survey/survey.html', u'openedx/core/djangoapps/dark_lang/templates/dark_lang/preview-language-fragment.html', u'openedx/core/djangoapps/theming/templates/theming/theming-admin-fragment.html', u'themes/stanford-style/lms/templates/register-shib.html', u'openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html', u'public/js/drag_and_drop.js', u'templates/freetextresponse_view.html', u'poll/public/html/poll.html', u'poll/public/html/survey.html', u'templates/html/mentoring.html', u'templates/html/mentoring_with_steps.html']
+Translations found were:
+	#-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+Soumettre
+#-#-#-#-#  openassessment.po (edx-platform)  #-#-#-#-#
+Envoyer
+#-#-#-#-#  drag_and_drop_v2.po (XBlocks)  #-#-#-#-#
+Envoyer
+#-#-#-#-#  freetextresponse.po (PACKAGE VERSION)  #-#-#-#-#
+Soumettre
+#-#-#-#-#  poll.po (XBlocks)  #-#-#-#-#
+Soumettre
+#-#-#-#-#  problem_builder.po (PACKAGE VERSION)  #-#-#-#-#
+Envoyez
+
+Multiple translations found for single string.
+	String "Submitting"
+	Present in files [u'common/lib/xmodule/xmodule/capa_base.py', u'ubcpi/static/js/src/ubcpi.js', u'drag_and_drop_v2/public/js/drag_and_drop.js']
+Translations found were:
+	#-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+Soumettre
+#-#-#-#-#  ubcpi.po (XBlocks)  #-#-#-#-#
+Soumettre
+#-#-#-#-#  drag_and_drop_v2.po (XBlocks)  #-#-#-#-#
+Réponse
+
+Multiple translations found for single string.
+	String "Weight"
+	Present in files [u'common/lib/xmodule/xmodule/lti_module.py', u'freetextresponse.py', u'mentoring.py', u'mixins.py']
+Translations found were:
+	#-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+Poids
+#-#-#-#-#  freetextresponse.po (PACKAGE VERSION)  #-#-#-#-#
+Poids
+#-#-#-#-#  problem_builder.po (PACKAGE VERSION)  #-#-#-#-#
+Pondération
+
+Multiple translations found for single string.
+	String "The score kept in the xblock KVS -- duplicate of the published score in django DB"
+	Present in files [u'common/lib/xmodule/xmodule/lti_module.py', u'lti_consumer.py']
+Translations found were:
+	#-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+Le score conservé dans le xBlock KVS - duplicata du score publié dans la base de donnée django
+#-#-#-#-#  lti_consumer.po (XBlocks)  #-#-#-#-#
+Le score conservé dans le xBlock KVS - duplicata du score publié dans django DB
+
+Multiple translations found for single string.
+	String "Request user's username"
+	Present in files [u'common/lib/xmodule/xmodule/lti_module.py', u'lti_consumer.py']
+Translations found were:
+	#-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+Demander le nom d'utilisateur de l'utilisateur
+#-#-#-#-#  lti_consumer.po (XBlocks)  #-#-#-#-#
+Demander le nom de l'utilisateur
+
+Multiple translations found for single string.
+	String "Select True to allow third party systems to post grades past the deadline."
+	Present in files [u'common/lib/xmodule/xmodule/lti_module.py', u'lti_consumer.py']
+Translations found were:
+	#-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+Sélectionner vrai / true pour permettre aux systèmes tiers de poster des notes après la date limite.
+#-#-#-#-#  lti_consumer.po (XBlocks)  #-#-#-#-#
+Sélectionner vrai (true) pour permettre aux systèmes tierces de poster des notes après la date limite.
+
+Multiple translations found for single string.
+	String "Could not parse custom parameter: {custom_parameter}. Should be "x=y" string."
+	Present in files [u'common/lib/xmodule/xmodule/lti_module.py', u'lti_consumer.py']
+Translations found were:
+	#-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+Impossible d'analyser le paramètre personnalisé: {custom_parameter}. Il devrait être une chaîne de caractères de la forme "x=y".
+#-#-#-#-#  lti_consumer.po (XBlocks)  #-#-#-#-#
+Impossible d'analyser le paramètre personnalisé: {custom_parameter}. Il devrait être de la forme "x=y" string.
+
+Multiple translations found for single string.
+	String "Username"
+	Present in files [u'lms/djangoapps/class_dashboard/dashboard_data.py', u'lms/djangoapps/instructor/views/api.py', u'lms/djangoapps/instructor/views/tools.py', u'lms/djangoapps/instructor_task/tasks_helper/enrollments.py', u'openedx/core/djangoapps/schedules/admin.py', u'lms/templates/staff_problem_info.html', u'lms/templates/api_admin/catalogs/search.html', u'lms/templates/ccx/enrollment.html', u'lms/templates/instructor/instructor_dashboard_2/metrics.html', u'templates/html/instructor_tool.html']
+Translations found were:
+	#-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+Nom d'utilisateur
+#-#-#-#-#  problem_builder.po (PACKAGE VERSION)  #-#-#-#-#
+Nom d’utilisateur
+
+Multiple translations found for single string.
+	String "Location"
+	Present in files [u'lms/djangoapps/instructor/views/api.py', u'openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html']
+Translations found were:
+	#-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+Adresse
+#-#-#-#-#  openassessment.po (edx-platform)  #-#-#-#-#
+Localisation
+
+Multiple translations found for single string.
+	String "Complete"
+	Present in files [u'lms/djangoapps/instructor/views/instructor_task_helpers.py', u'openassessment/templates/openassessmentblock/response/oa_response_graded.html', u'openassessment/templates/openassessmentblock/response/oa_response_submitted.html', u'openassessment/templates/openassessmentblock/self/oa_self_complete.html', u'openassessment/templates/openassessmentblock/student_training/student_training_complete.html', u'openassessment/xblock/staff_assessment_mixin.py', u'templates/html/completion.html', u'templates/html/slider.html']
+Translations found were:
+	#-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+Complet
+#-#-#-#-#  openassessment.po (edx-platform)  #-#-#-#-#
+Terminé
+#-#-#-#-#  problem_builder.po (PACKAGE VERSION)  #-#-#-#-#
+Terminé
+
+Multiple translations found for single string.
+	String "Incomplete"
+	Present in files [u'lms/djangoapps/instructor/views/instructor_task_helpers.py', u'openassessment/templates/openassessmentblock/response/oa_response_closed.html', u'openassessment/templates/openassessmentblock/self/oa_self_closed.html', u'openassessment/templates/openassessmentblock/student_training/student_training_closed.html', u'message.py']
+Translations found were:
+	#-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+Incomplet
+#-#-#-#-#  openassessment.po (edx-platform)  #-#-#-#-#
+Incomplet
+#-#-#-#-#  problem_builder.po (PACKAGE VERSION)  #-#-#-#-#
+Inachevé
+
+Multiple translations found for single string.
+	String "Search"
+	Present in files [u'lms/templates/wiki/plugins/attachments/index.html', u'lms/templates/dashboard.html', u'lms/templates/index.html', u'lms/templates/api_admin/catalogs/search.html', u'lms/templates/courseware/courses.html', u'lms/templates/courseware/courseware.html', u'lms/templates/edxnotes/edxnotes.html', u'lms/templates/ux/reference/bootstrap/course-skeleton.html', u'openedx/features/course_experience/templates/course_experience/course-home-fragment.html', u'openedx/features/course_search/templates/course_search/course-search-fragment.html', u'themes/edx.org/lms/templates/dashboard.html', u'themes/stanford-style/lms/templates/index.html', u'wiki/plugins/attachments/templates/wiki/plugins/attachments/index.html', u'templates/html/instructor_tool.html']
+Translations found were:
+	#-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+Recherche
+#-#-#-#-#  problem_builder.po (PACKAGE VERSION)  #-#-#-#-#
+Rechercher
+
+Multiple translations found for single string.
+	String "All"
+	Present in files [u'openedx/core/djangoapps/schedules/admin.py', u'templates/html/instructor_tool.html']
+Translations found were:
+	#-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+Tous
+#-#-#-#-#  problem_builder.po (PACKAGE VERSION)  #-#-#-#-#
+Tout
+
+Multiple translations found for single string.
+	String "Required"
+	Present in files [u'lms/templates/peer_grading/peer_grading.html', u'openassessment/templates/openassessmentblock/edit/oa_edit_criterion.html', u'openassessment/templates/openassessmentblock/oa_rubric.html', u'openassessment/templates/openassessmentblock/student_training/student_training.html', u'openassessment/xblock/studio_mixin.py', u'mrq.py']
+Translations found were:
+	#-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+Requis
+#-#-#-#-#  openassessment.po (edx-platform)  #-#-#-#-#
+Requis
+#-#-#-#-#  problem_builder.po (PACKAGE VERSION)  #-#-#-#-#
+Obligatoire
+
+Multiple translations found for single string.
+	String "Remove"
+	Present in files [u'lms/templates/shoppingcart/shopping_cart.html', u'wiki/plugins/attachments/templates/wiki/plugins/attachments/delete.html', u'ubcpi/static/html/ubcpi_edit.html', u'openassessment/templates/openassessmentblock/edit/oa_edit_criterion.html', u'openassessment/templates/openassessmentblock/edit/oa_edit_option.html', u'openassessment/templates/openassessmentblock/edit/oa_edit_prompt.html', u'openassessment/templates/openassessmentblock/edit/oa_training_example.html']
+Translations found were:
+	#-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+Supprimer
+#-#-#-#-#  ubcpi.po (XBlocks)  #-#-#-#-#
+Retirer
+#-#-#-#-#  openassessment.po (edx-platform)  #-#-#-#-#
+Supprimer
+
+Multiple translations found for single string.
+	String "Warning"
+	Present in files [u'cms/templates/course_outline.html', u'ubcpi/static/html/ubcpi.html']
+Translations found were:
+	#-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+Attention
+#-#-#-#-#  ubcpi.po (XBlocks)  #-#-#-#-#
+Avertissement
+
+Multiple translations found for single string.
+	String "Next Step"
+	Present in files [u'ubcpi/static/html/ubcpi.html', u'step.py', u'templates/html/mentoring_with_steps.html']
+Translations found were:
+	#-#-#-#-#  ubcpi.po (XBlocks)  #-#-#-#-#
+Etape suivante
+#-#-#-#-#  problem_builder.po (PACKAGE VERSION)  #-#-#-#-#
+Étape suivante
+
+Multiple translations found for single string.
+	String "Feedback"
+	Present in files [u'openassessment/templates/openassessmentblock/staff_area/oa_student_info_assessment_detail.html', u'public/js/drag_and_drop.js', u'poll/public/html/poll.html', u'poll/public/html/poll_edit.html', u'poll/public/html/survey.html', u'mentoring.py']
+Translations found were:
+	#-#-#-#-#  openassessment.po (edx-platform)  #-#-#-#-#
+Commentaire
+#-#-#-#-#  drag_and_drop_v2.po (XBlocks)  #-#-#-#-#
+Commentaire
+#-#-#-#-#  poll.po (XBlocks)  #-#-#-#-#
+Commentaire
+#-#-#-#-#  problem_builder.po (PACKAGE VERSION)  #-#-#-#-#
+Commentaires
+

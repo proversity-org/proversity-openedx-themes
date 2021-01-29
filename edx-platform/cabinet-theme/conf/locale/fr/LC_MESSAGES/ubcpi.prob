@@ -1,0 +1,30 @@
+Different tags in source and translation
+  msgid: &nbsp;({{weight}} point possible)
+  -----> &nbsp;({{poids}} points possibles)
+  -----> "{{weight}" vs "{{poids}"
+
+Different tags in source and translation
+  msgid: &nbsp;({{weight}} points possible)
+  -----> &nbsp;({{poids}} points possibles)
+  -----> "{{weight}" vs "{{poids}"
+
+Different tags in source and translation
+  msgid: (Option {{rc.answer_original + 1}})
+  -----> (Option {{rc.réponse_originale + 1}})
+  -----> "{{rc.answer_original + 1}" vs "{{rc.réponse_originale + 1}"
+
+Different tags in source and translation
+  msgid: (Option {{rc.answer_revised + 1}})
+  -----> (Option {{rc.réponse_révisée + 1}})
+  -----> "{{rc.answer_revised + 1}" vs "{{rc.réponse_révisée + 1}"
+
+Different tags in source and translation
+  msgid: ({{weight}} point possible)
+  -----> ({{poids}} points possibles)
+  -----> "{{weight}" vs "{{poids}"
+
+Different tags in source and translation
+  msgid: ({{weight}} points possible)
+  -----> ({{poids}} points possibles)
+  -----> "{{weight}" vs "{{poids}"
+

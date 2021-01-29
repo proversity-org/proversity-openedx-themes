@@ -1,0 +1,78 @@
+# Translators:
+# Sébastien Vigneau <sebastien.vigneau@gmail.com>, 2018
+# Françoise Docq, 2018
+# rafcha <raphael.chay@gmail.com>, 2018
+# Eric Fischer <efischer@edx.org>, 2018
+# Manuel Dias <manueldias30@gmail.com>, 2018
+#
+msgid ""
+msgstr ""
+"Last-Translator: Manuel Dias <manueldias30@gmail.com>, 2018\n"
+"Language-Team: French (https://www.transifex.com/open-edx/teams/6205/fr/)\n"
+"Language: fr\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: poll/public/handlebars/poll_results.handlebars
+#: poll/public/handlebars/survey_results.handlebars
+msgid "Results"
+msgstr "Résultats"
+
+#: poll/public/handlebars/poll_results.handlebars
+#: poll/public/handlebars/survey_results.handlebars
+msgid "Submit"
+msgstr "Soumettre"
+
+#: poll/public/handlebars/poll_results.handlebars
+#: poll/public/handlebars/survey_results.handlebars
+msgid "Results gathered from {total} respondent."
+msgid_plural "Results gathered from {total} respondents."
+msgstr[0] ""
+msgstr[1] ""
+
+#: poll/public/handlebars/poll_results.handlebars
+#: poll/public/handlebars/survey_results.handlebars
+msgid "Feedback"
+msgstr "Commentaire"
+
+#: poll/public/handlebars/poll_studio.handlebars
+msgid "move poll up"
+msgstr ""
+
+#: poll/public/handlebars/poll_studio.handlebars
+msgid "move poll down"
+msgstr ""
+
+#: poll/public/handlebars/poll_studio.handlebars
+msgid "Delete"
+msgstr "Supprimer"
+
+#: poll/public/handlebars/poll_studio.handlebars
+msgid "Answer"
+msgstr "Réponse"
+
+#: poll/public/handlebars/poll_studio.handlebars
+msgid "Question"
+msgstr "Question"
+
+#: poll/public/handlebars/poll_studio.handlebars
+msgid "Image URL"
+msgstr ""
+
+#: poll/public/handlebars/poll_studio.handlebars
+msgid "Image alternative text"
+msgstr ""
+
+#: poll/public/handlebars/poll_studio.handlebars
+msgid ""
+"You can make limited use of Markdown in answer texts, preferably only bold "
+"and italics."
+msgstr ""
+
+#: poll/public/handlebars/poll_studio.handlebars
+msgid ""
+"This must have an image URL or text, and can have both.  If you add an "
+"image, you must also provide an alternative text that describes the image in"
+" a way that would allow someone to answer the poll if the image did not "
+"load."
+msgstr ""

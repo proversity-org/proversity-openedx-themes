@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Olivier Marquez <oliviermarquez@gmail.com>, 2019
+# Gérard Vidal <Gerard.Vidal@ens-lyon.fr>, 2019
+# Françoise Docq, 2019
+# laurentFUN <laurent.at.fun@gmail.com>, 2019
+# SLOG90 <slog90@gmail.com>, 2019
+# Eric Fischer <efischer@edx.org>, 2019
+# Manuel Dias <manueldias30@gmail.com>, 2019
+# rafcha <raphael.chay@gmail.com>, 2019
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-07 16:24+0300\n"
+"PO-Revision-Date: 2019-07-04 00:16+0000\n"
+"Last-Translator: rafcha <raphael.chay@gmail.com>, 2019\n"
+"Language-Team: French (https://www.transifex.com/open-edx/teams/6205/fr/)\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: freetextresponse.py
+msgid "Display Correctness?"
+msgstr ""
+
+#: freetextresponse.py
+msgid ""
+"This is a flag that indicates if the indicator icon should be displayed "
+"after a student enters their response"
+msgstr ""
+
+#: freetextresponse.py
+msgid "Display Other Student Responses"
+msgstr "Afficher les réponses des autres étudiants"
+
+#: freetextresponse.py
+msgid ""
+"This will display other student responses to the student after they submit "
+"their response."
+msgstr ""
+
+#: freetextresponse.py
+msgid "System selected answers to give to students"
+msgstr ""
+
+#: freetextresponse.py
+msgid "Display Name"
+msgstr "Nom d'affichage"
+
+#: freetextresponse.py
+msgid "This is the title for this question type"
+msgstr ""
+
+#: freetextresponse.py
+msgid "Full-Credit Key Phrases"
+msgstr ""
+
+#: freetextresponse.py
+msgid ""
+"This is a list of words or phrases, one of which must be present in order "
+"for the student's answer to receive full credit"
+msgstr ""
+
+#: freetextresponse.py
+msgid "Half-Credit Key Phrases"
+msgstr ""
+
+#: freetextresponse.py
+msgid ""
+"This is a list of words or phrases, one of which must be present in order "
+"for the student's answer to receive half credit"
+msgstr ""
+
+#: freetextresponse.py
+msgid "Maximum Number of Attempts"
+msgstr "Nombre maximum d'essais"
+
+#: freetextresponse.py
+msgid ""
+"This is the maximum number of times a student is allowed to attempt the "
+"problem"
+msgstr ""
+
+#: freetextresponse.py
+msgid "Maximum Word Count"
+msgstr "Nombre maximum de mots"
+
+#: freetextresponse.py
+msgid "This is the maximum number of words allowed for this question"
+msgstr ""
+
+#: freetextresponse.py
+msgid "Minimum Word Count"
+msgstr "Nombre minimal de mots"
+
+#: freetextresponse.py
+msgid "This is the minimum number of words required for this question"
+msgstr ""
+
+#: freetextresponse.py
+msgid "Prompt"
+msgstr "Invite"
+
+#: freetextresponse.py
+msgid ""
+"This is the prompt students will see when asked to enter their response"
+msgstr ""
+
+#: freetextresponse.py
+msgid "Please enter your response within this text area"
+msgstr ""
+
+#: freetextresponse.py
+msgid "Submission Received Message"
+msgstr ""
+
+#: freetextresponse.py
+msgid "This is the message students will see upon submitting their response"
+msgstr ""
+
+#: freetextresponse.py
+msgid "Weight"
+msgstr "Poids"
+
+#: freetextresponse.py
+msgid "This assigns an integer value representing the weight of this problem"
+msgstr ""
+
+#: freetextresponse.py
+msgid "Draft Received Message"
+msgstr ""
+
+#: freetextresponse.py
+msgid "This is the message students will see upon submitting a draft response"
+msgstr ""
+
+#: freetextresponse.py
+#, python-brace-format
+msgid "Your response must be between {min} and {max} word."
+msgid_plural "Your response must be between {min} and {max} words."
+msgstr[0] ""
+msgstr[1] ""
+
+#: freetextresponse.py
+#, python-brace-format
+msgid "Invalid Word Count. {word_count_message}"
+msgstr ""
+
+#: freetextresponse.py
+#, python-brace-format
+msgid "{weight} point possible"
+msgid_plural "{weight} points possible"
+msgstr[0] ""
+msgstr[1] ""
+
+#: freetextresponse.py
+#, python-brace-format
+msgid "{score_string}/{weight} point"
+msgid_plural "{score_string}/{weight} points"
+msgstr[0] ""
+msgstr[1] ""
+
+#: freetextresponse.py
+#, python-brace-format
+msgid "You have used {count_attempts} of {max_attempts} submission"
+msgid_plural "You have used {count_attempts} of {max_attempts} submissions"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/freetextresponse_view.html
+msgid ""
+"Allow my response to possibly be visible by other learners after submitting "
+"their response"
+msgstr ""
+
+#: templates/freetextresponse_view.html templates/freetextresponse_view.html
+msgid "Checking..."
+msgstr "Vérification en cours..."
+
+#: templates/freetextresponse_view.html templates/freetextresponse_view.html
+msgid "Submit"
+msgstr "Soumettre"
+
+#: templates/freetextresponse_view.html templates/freetextresponse_view.html
+msgid "Save"
+msgstr "Enregistrer"
+
+#: templates/freetextresponse_view.html
+msgid "Hide"
+msgstr "Cacher"
+
+#: templates/freetextresponse_view.html
+msgid "Show"
+msgstr "Afficher"
+
+#: templates/freetextresponse_view.html
+msgid "peer responses"
+msgstr ""
+
+#: templates/freetextresponse_view.html
+msgid "Submissions by others"
+msgstr ""
+
+#: templates/freetextresponse_view.html templates/freetextresponse_view.html
+msgid "No responses to show at this time"
+msgstr "Aucune réponse pour le moment"
