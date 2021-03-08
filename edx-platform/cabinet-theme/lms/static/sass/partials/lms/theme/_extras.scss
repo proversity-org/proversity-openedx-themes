@@ -9500,7 +9500,7 @@ input[name="subject"] {
   }
 }
 
-.xblock--drag-and-drop .btn-default, .xblock--drag-and-drop .btn-default {
+.xblock--drag-and-drop .btn-default {
   color: #6b6969 !important;
 }
 
@@ -9513,6 +9513,23 @@ input[name="subject"] {
 }
 
 .xblock--drag-and-drop .btn-default:hover span, .xblock--drag-and-drop .btn-default:focus span {
+  color: #6b6969 !important;
+}
+
+// small btn
+.xblock--drag-and-drop .btn-small {
+  color: #6b6969 !important;
+}
+
+.xblock--drag-and-drop .btn-small span, .xblock--drag-and-drop span {
+  color: #6b6969 !important;
+}
+
+.xblock--drag-and-drop .btn-small:hover, .xblock--drag-and-drop .btn-small:focus {
+  color: #6b6969 !important;
+}
+
+.xblock--drag-and-drop .btn-small:hover span, .xblock--drag-and-drop .btn-small:focus span {
   color: #6b6969 !important;
 }
 
