@@ -9550,7 +9550,7 @@ input[name="subject"] {
   }
   .btn-small {
     background: #F0B500;
-    color: #fff !important;
+    // color: #fff !important;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -9560,7 +9560,7 @@ input[name="subject"] {
     transition: all 0.3s;
     &:hover, &:focus {
       background: #8a6800;
-      color: #fff !important;
+      // color: #fff !important;
       border-top: none;
       border-left: none;
       border-right: none;
@@ -9568,9 +9568,9 @@ input[name="subject"] {
       -webkit-box-shadow: none;
       box-shadow: none;
     }
-    &:hover span, &:focus span, span {
-      color: #fff !important;
-    }
+    // &:hover span, &:focus span, span {
+    //   color: #fff !important;
+    // }
   }
   .btn-brand {
     background: #F0B500;
@@ -9598,7 +9598,7 @@ input[name="subject"] {
   }
   .btn-default {
     background: #F0B500;
-    color: #fff !important;
+    // color: #fff !important;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -9608,7 +9608,7 @@ input[name="subject"] {
     transition: all 0.3s;
     &:hover, &:focus {
       background: #8a6800;
-      color: #fff !important;
+      // color: #fff !important;
       border-top: none;
       border-left: none;
       border-right: none;
@@ -9616,9 +9616,9 @@ input[name="subject"] {
       -webkit-box-shadow: none;
       box-shadow: none;
     }
-    &:hover span, &:focus span {
-      color: #fff !important;
-    }
+    // &:hover span, &:focus span {
+    //   color: #fff !important;
+    // }
   }
 }
 
