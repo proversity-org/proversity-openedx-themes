@@ -9500,6 +9500,22 @@ input[name="subject"] {
   }
 }
 
+.xblock--drag-and-drop .btn-default, .xblock--drag-and-drop .btn-default {
+  color: #6b6969 !important;
+}
+
+.xblock--drag-and-drop .btn-default span, .xblock--drag-and-drop span {
+  color: #6b6969 !important;
+}
+
+.xblock--drag-and-drop .btn-default:hover, .xblock--drag-and-drop .btn-default:focus {
+  color: #6b6969 !important;
+}
+
+.xblock--drag-and-drop .btn-default:hover span, .xblock--drag-and-drop .btn-default:focus span {
+  color: #6b6969 !important;
+}
+
 .xblock--drag-and-drop {
   .btn-default {
     &:disabled, &.is-disabled {
