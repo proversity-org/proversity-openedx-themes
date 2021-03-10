@@ -9633,6 +9633,10 @@ input[name="subject"] {
   }
 }
 
+body > div.window-wrap > div.site-status {
+  display: none;
+}
+
 .site-status {
   background: #0f1d4e;
   color: #fff;
