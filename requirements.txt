@@ -1,5 +1,5 @@
 Babel==2.6.0
-Django==1.11.14
+Django==2.2.24
 django-babel==0.6.2
 Mako==1.0.7
 MarkupSafe==1.0
