@@ -54,6 +54,10 @@ abbr[title] {
   border-bottom: 1px dotted;
 }
 
+body > div.window-wrap > b {
+    font-weight: initial;
+}
+
 b, strong {
   font-weight: initial;
 }
